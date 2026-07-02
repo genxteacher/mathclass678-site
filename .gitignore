@@ -1,0 +1,18 @@
+# Built output — Netlify builds this from source; never commit it
+dist/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Session zip artifacts
+*.zip
+
+# Node (future-proofing if npm packages ever added)
+node_modules/
+
+# Editor
+.vscode/
+.idea/

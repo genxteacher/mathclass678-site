@@ -1,0 +1,12 @@
+{
+  "name": "mathclass678-site",
+  "version": "1.5.0",
+  "description": "Static site generator for mathclass678.com — Math Class 678",
+  "private": true,
+  "scripts": {
+    "build": "node build_site.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

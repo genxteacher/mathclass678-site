@@ -1,0 +1,10 @@
+# netlify.toml — ROOT of repo (build configuration)
+# This tells Netlify HOW to build the site.
+# The 404 redirect rules live in dist/netlify.toml, written by build_site.js.
+
+[build]
+  command   = "node build_site.js"
+  publish   = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"

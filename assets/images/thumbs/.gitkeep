@@ -1,0 +1,4 @@
+# Drop product thumbnails here.
+# Web naming: thumb1_[grade]th_[slug].jpg  e.g. thumb1_6th_understanding-ratios.jpg
+# (.png also accepted; photo-content thumbs are optimized to JPEG on intake.)
+# Cards auto-pick them up on next build; CSS art shows until then.
