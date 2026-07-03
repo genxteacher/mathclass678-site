@@ -2952,7 +2952,7 @@ function pageHome() {
     </div>
   </section>
 </main>
-` + footer() + scripts();
+` + footer() + scripts() + '\n<!-- GitHub auto-deploy test — S9. -->';
 }
 
 /* ============================================================================
