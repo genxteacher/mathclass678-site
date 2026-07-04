@@ -2242,6 +2242,82 @@ const STD_ERRORS = {
 const standardsMap = {};
 Object.values(STANDARDS_CONTENT).forEach(s => { standardsMap[s.ccss] = s; });
 
+/* ============================================================================
+   GLOSSARY / WORD WALL branch — data + dual-key lookups   (S11 build)
+   6th-8th key on CCSS (glossaryByCcss); Algebra keys on unit (glossaryByUnit).
+   TPT card URLs + freebie URLs pulled from mc678_site_links.json (link authority).
+   ============================================================================ */
+const GLOSSARY_FILES = { '6th':'WordWall_Content_6th_MASTER.csv','7th':'WordWall_Content_7th_MASTER.csv','8th':'WordWall_Content_8th_MASTER.csv','Algebra':'WordWall_Content_Algebra_MASTER.csv' };
+const GLOSSARY_GRADES = ['6th','7th','8th','Algebra'];
+const GLOSSARY_ACCENT = { '6th':'teal','7th':'coral','8th':'navy','Algebra':'gold' };
+const normTerm = s => String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,'');
+const normTermBase = s => normTerm(String(s||'').replace(/\([^)]*\)/g,' '));
+
+const SITE_LINKS = JSON.parse(fs.readFileSync(path.join(ROOT,'mc678_site_links.json'),'utf8'));
+
+// word_wall TPT url by grade + normalized term (prefer individual Card over Bundle/Set)
+const wwUrlByKey = {};
+(SITE_LINKS.word_wall||[]).forEach(w => {
+  const key = w.grade + '|' + normTerm(w.term);
+  if (!wwUrlByKey[key] || w.kind === 'Card') wwUrlByKey[key] = w.tpt_url;
+  const bkey = w.grade + '|~' + normTermBase(w.term);   // paren-stripped fallback index
+  if (!wwUrlByKey[bkey] || w.kind === 'Card') wwUrlByKey[bkey] = w.tpt_url;
+});
+// Algebra unit bundle URL by unit name (word_wall Bundle rows whose title names the unit)
+const algUnitBundleUrl = {};
+(SITE_LINKS.word_wall||[]).forEach(w => {
+  if (w.grade === 'Algebra' && w.kind !== 'Card' && w.full_title) {
+    algUnitBundleUrl[w.full_title] = w.tpt_url; // keyed by full title; matched loosely below
+  }
+});
+
+const glossary = [];
+GLOSSARY_GRADES.forEach(grade => {
+  const rows = csvToObjects(fs.readFileSync(path.join(ROOT, GLOSSARY_FILES[grade]), 'utf8'));
+  rows.forEach(r => {
+    if (!r.slug || !r.term) return;
+    const allCcss = (r.all_ccss||'').split(';').map(s=>s.trim()).filter(Boolean);
+    const allStrands = (r.all_strands||'').split(';').map(s=>s.trim()).filter(Boolean);
+    const related = (r.related_terms||'').split(';').map(s=>s.trim()).filter(Boolean);
+    const tptUrl = wwUrlByKey[grade + '|' + normTerm(r.term)] || wwUrlByKey[grade + '|~' + normTermBase(r.term)] || TPT_STORE;
+    glossary.push({
+      slug:r.slug, term:r.term, grade, accent:GLOSSARY_ACCENT[grade],
+      primaryCcss:r.primary_ccss||'', allCcss,
+      strand:r.strand||'', allStrands,
+      merged:(r.merged||'').toUpperCase()==='YES',
+      definition:r.definition||'', ex1:r.example_1||'', ex2:r.example_2||'',
+      keyRule:r.key_rule||'', memoryHook:r.memory_hook||'',
+      related, tptUrl,
+      pageUrl:'/word-wall/'+r.slug+'.html',
+      isCcssKeyed: grade !== 'Algebra'
+    });
+  });
+});
+const glossaryBySlug = {}; glossary.forEach(t => glossaryBySlug[t.slug] = t);
+// same term across grades (cross-grade sibling links)
+const glossaryByNorm = {}; glossary.forEach(t => { (glossaryByNorm[normTerm(t.term)] = glossaryByNorm[normTerm(t.term)]||[]).push(t); });
+
+// 6-8 CCSS key: term under every code it touches (many-to-many)
+const glossaryByCcss = {};
+glossary.filter(t=>t.isCcssKeyed).forEach(t => {
+  (t.allCcss.length ? t.allCcss : (t.primaryCcss?[t.primaryCcss]:[])).forEach(code => {
+    (glossaryByCcss[code] = glossaryByCcss[code] || []).push(t);
+  });
+});
+// Algebra unit key: term under its unit(strand)
+const glossaryByUnit = {};
+glossary.filter(t=>!t.isCcssKeyed).forEach(t => {
+  (t.allStrands.length ? t.allStrands : [t.strand]).forEach(u => {
+    (glossaryByUnit[u] = glossaryByUnit[u] || []).push(t);
+  });
+});
+const glossaryByGrade = {};
+GLOSSARY_GRADES.forEach(g => glossaryByGrade[g] = glossary.filter(t=>t.grade===g).sort((a,b)=>a.term.localeCompare(b.term)));
+const ALG_UNIT_ORDER = ['Expressions & Equations','Inequalities','Functions & Sequences','Linear Functions','Systems of Equations & Inequalities','Polynomials & Exponents','Factoring','Quadratic Functions','Exponential Functions & Data'];
+
+
+
+
 
 /* ============================================================================
    SVG assets (inline — no external image deps; brand-tokened)
@@ -2389,6 +2465,7 @@ function nav(active) {
     <nav class="nav__links" id="navlinks" aria-label="Primary">
       ${link('/catalog.html', 'Catalog', 'catalog')}
       ${link('/bundles.html', 'Bundles', 'bundles')}
+      ${link('/word-wall.html', 'Word Wall', 'word-wall')}
       ${link('/free.html', 'Free Resources', 'free')}
       ${link('/about.html', 'About', 'about')}
       ${link('/contact.html', 'Contact', 'contact')}
@@ -2473,6 +2550,7 @@ function footer(opts) {
           <li><a href="/grade-6.html">6th Grade</a></li>
           <li><a href="/grade-7.html">7th Grade</a></li>
           <li><a href="/grade-8.html">8th Grade</a></li>
+          <li><a href="/word-wall.html">Word Wall</a></li>
           <li><a href="/free.html">Free Resources</a></li>
         </ul>
       </div>
@@ -2602,6 +2680,36 @@ const FREE_RESOURCES = [
   { key:'eoy-reflection',       title:'End of Year Reflection + Goals',   sub:'Middle School',                        grade:'all', gradeLabel:'Grades 6\u20138', cat:'End of Year',           thumb:'free_eoy-reflection.jpg',            url:'https://www.teacherspayteachers.com/Product/End-of-Year-Math-Reflection-Goals-Middle-School-6th-7th-8th-FREE-16214595' },
   { key:'sub-plan',             title:'3-Day Emergency Math Sub Plan',    sub:'Middle School',                        grade:'all', gradeLabel:'Grades 6\u20138', cat:'End of Year',           thumb:'free_sub-plan.jpg',                  url:'https://www.teacherspayteachers.com/Product/3-Day-Emergency-Math-Sub-Plan-Middle-School-6th-7th-8th-Grade-FREE-16214563' },
 ];
+
+/* ============================================================================
+   FREEBIE PAGES — Kit-gated, sourced from JSON free_resources   (S11 build)
+   Each page captures email via Kit, then continues to that freebie's TPT listing.
+   Per-freebie Kit form ids drop into FREEBIE_KIT_FORMS as Greg creates them;
+   until then every page uses the master form (email still gated) and the on-page
+   success handler forwards to the correct TPT URL.
+   ============================================================================ */
+const FREEBIE_KIT_FORMS = {}; // { 'FREE-003':'abc123', ... }  <- paste per-freebie Kit form uids here
+const freeThumbByUrl = {}; FREE_RESOURCES.forEach(r => { freeThumbByUrl[r.url] = r.thumb; });
+const _freeSlugBase = {};
+(SITE_LINKS.free_resources||[]).forEach(f => { const b=slugify(f.name); _freeSlugBase[b]=(_freeSlugBase[b]||0)+1; });
+const _freeSlugUsed = {};
+const FREEBIES = (SITE_LINKS.free_resources||[]).map(f => {
+  let base = slugify(f.name);
+  if (_freeSlugBase[base] > 1) base = base + '-grade-' + (gradeNum(f.grade) || String(f.grade).toLowerCase());
+  while (_freeSlugUsed[base]) base = base + '-x';
+  _freeSlugUsed[base] = true;
+  const sheetMatch = products.find(pp => pp.url === f.tpt_url);
+  return {
+    id:f.id, slug:base, name:f.name, fullTitle:f.full_title||f.name,
+    grade:f.grade, gradeLabel: (String(f.grade).match(/^\d$/) ? f.grade+'th Grade' : (f.grade==='6-8'?'Grades 6\u20138':f.grade)),
+    crossListed:!!f.cross_listed, tptUrl:f.tpt_url,
+    thumb: freeThumbByUrl[f.tpt_url] || '',
+    thumbSheet: sheetMatch ? sheetMatch.thumbWeb : '',
+    hasSheetThumb: !!(sheetMatch && sheetMatch.hasThumb),
+    kitFormUid: FREEBIE_KIT_FORMS[f.id] || KIT.uid,
+    pageUrl:'/free/'+base+'.html'
+  };
+});
 
 /* --- free resource card (non-skill-sheet freebies) --- */
 function freeResourceCard(r) {
@@ -2952,7 +3060,7 @@ function pageHome() {
     </div>
   </section>
 </main>
-` + footer() + scripts() + '\n<!-- GitHub auto-deploy test — S9. -->';
+` + footer() + scripts();
 }
 
 /* ============================================================================
@@ -3775,6 +3883,7 @@ function pageStandard(std) {
           <h2 class="std-side-block__title">The skill sheet</h2>
           ${sheetCTAHtml}
         </div>` : ''}
+        ${(function(){ const terms=[...new Map((glossaryByCcss[std.ccss]||[]).map(t=>[t.slug,t])).values()]; if(!terms.length) return ''; const chips=terms.slice(0,14).map(glossaryChip).join(''); return `<div class="std-side-block keyvocab"><h2 class="std-side-block__title">Key vocabulary</h2><div class="keyvocab__chips">${chips}</div><a class="std-backlink" href="/word-wall.html#ww-${terms[0].grade.toLowerCase()}">More in the Word Wall ${ICON.arrow}</a></div>`; })()}
       </aside>
     </div>
   </section>
@@ -3871,6 +3980,7 @@ function pageSheet(p, prev, next) {
           <div class="sheet-facts__ccss">${esc(p.ccss)}</div>
           ${p.ccssText ? `<p class="sheet-facts__text">${esc(p.ccssText)}</p>` : ''}
           ${standardsMap[p.ccss] ? `<a class="std-backlink" href="/standards/${standardsMap[p.ccss].slug}.html">Teaching tips for ${esc(p.ccss)} ${ICON.arrow}</a>` : ''}
+          ${(function(){ const terms=[...new Map((glossaryByCcss[p.ccss]||[]).map(t=>[t.slug,t])).values()]; if(!terms.length) return ''; const chips=terms.slice(0,10).map(glossaryChip).join(''); return `<div class="keyvocab"><h3 class="std-side-block__title">Key vocabulary</h3><div class="keyvocab__chips">${chips}</div></div>`; })()}
           <dl class="sheet-facts__dl">
             <div><dt>Grade</dt><dd>${esc(p.gradeLabel)}</dd></div>
             <div><dt>Strand</dt><dd>${esc(p.strandName)}</dd></div>
@@ -4095,8 +4205,260 @@ function pageBundles() {
 ` + footer() + scripts();
 }
 
+
+/* ============================================================================
+   GLOSSARY / WORD WALL — page renderers   (S11 build)
+   ============================================================================ */
+function kitFormFor(uid){ return `<script async data-uid="${uid}" src="https://mathclass678.kit.com/${uid}/index.js"></`+`script>`; }
+function glossaryChip(t){ return `<a class="gloss-chip gloss-chip--${t.accent}" href="${t.pageUrl}">${esc(t.term)}</a>`; }
+
+function wordWallCardTile(t){
+  return `<span class="gloss-tile gloss-tile--${t.accent}" aria-hidden="true">${SVG.mark}</span>`;
+}
+
+function pageWordWall(){
+  const total = glossary.length;
+  const gradeSection = g => {
+    const terms = glossaryByGrade[g];
+    const label = g === 'Algebra' ? 'Algebra 1' : g + ' Grade';
+    const accent = GLOSSARY_ACCENT[g];
+    let grouped;
+    if (g === 'Algebra') {
+      grouped = ALG_UNIT_ORDER.filter(u=>glossaryByUnit[u]).map(u => ({ head:u, items: glossaryByUnit[u].slice().sort((a,b)=>a.term.localeCompare(b.term)) }));
+    } else {
+      const byStrand = {};
+      terms.forEach(t => { const s = (STRAND_NAME[t.strand]||t.strand||'Other'); (byStrand[s]=byStrand[s]||[]).push(t); });
+      grouped = Object.keys(byStrand).sort().map(s => ({ head:s, items: byStrand[s].sort((a,b)=>a.term.localeCompare(b.term)) }));
+    }
+    return `
+  <section class="section gloss-gradesec" id="ww-${g.toLowerCase()}">
+    <div class="wrap">
+      <div class="gloss-gradesec__head reveal">
+        <span class="eyebrow eyebrow--${accent}">${esc(label)}</span>
+        <h2>${esc(label)} vocabulary</h2>
+        <p>${terms.length} terms${g==='Algebra'?', organized by unit':', organized by domain'}. Each links to a full definition page with worked examples and the key rule.</p>
+      </div>
+      ${grouped.map(grp => `
+      <div class="gloss-group">
+        <h3 class="gloss-group__head">${esc(grp.head)}</h3>
+        <div class="gloss-chips">${grp.items.map(glossaryChip).join('')}</div>
+      </div>`).join('')}
+    </div>
+  </section>`;
+  };
+  const switchLinks = GLOSSARY_GRADES.map(g => `<a class="gloss-switch__link gloss-switch__link--${GLOSSARY_ACCENT[g]}" href="#ww-${g.toLowerCase()}">${g==='Algebra'?'Algebra 1':g+' Grade'}</a>`).join('');
+  return head({
+    title:'Middle School & Algebra 1 Math Word Wall — Free Vocabulary Glossary | Math Class 678',
+    desc:`A free math vocabulary glossary for grades 6, 7, 8 and Algebra 1 \u2014 ${total} terms with student-friendly definitions, worked examples, and key rules. Printable Word Wall cards available on TPT.`,
+    path:'word-wall.html',
+    jsonld: breadcrumbSchema([{name:'Home',url:'/'},{name:'Word Wall',url:'/word-wall.html'}])
+  }) + nav('word-wall') + `
+<main id="main">
+  ${breadcrumb([{name:'Home',url:'/'},{name:'Word Wall'}])}
+  <section class="gloss-hero">
+    <div class="gloss-hero__bg" role="presentation"></div>
+    <div class="wrap gloss-hero__wrap">
+      <div class="gloss-hero__inner reveal">
+        <span class="eyebrow" style="color:var(--gold-soft)">Free math glossary</span>
+        <h1>The Math Class 678 Word Wall</h1>
+        <p>A free, searchable vocabulary reference for grades 6\u20138 and Algebra 1 \u2014 ${total} terms, each with a plain-language definition, two worked examples, and the one rule that matters. The polished, print-ready Word Wall cards for your classroom are available on Teachers Pay Teachers.</p>
+        <div class="gloss-switch">${switchLinks}</div>
+      </div>
+    </div>
+  </section>
+  ${GLOSSARY_GRADES.map(gradeSection).join('')}
+  <section class="section gloss-cta-band">
+    <div class="wrap">
+      <div class="method__head reveal" style="margin-bottom:1.6rem">
+        <span class="eyebrow" style="color:var(--gold-soft)">For your classroom wall</span>
+        <h2>Print-ready Word Wall cards</h2>
+        <p>Every term here is available as a polished, print-and-laminate vocabulary card \u2014 color, black &amp; white, and digital \u2014 on Teachers Pay Teachers.</p>
+      </div>
+      <a class="btn btn--primary" href="${TPT_STORE}" target="_blank" rel="noopener">Browse Word Wall cards on TPT ${ICON.ext}</a>
+    </div>
+  </section>
+</main>
+` + footer() + scripts();
+}
+
+function definedTermJsonLd(t){
+  const canonical = SITE_URL + t.pageUrl;
+  const dt = {
+    '@context':'https://schema.org','@type':'DefinedTerm',
+    name:t.term, description:t.definition,
+    inDefinedTermSet:{ '@type':'DefinedTermSet', name:'Math Class 678 Word Wall', url:SITE_URL+'/word-wall.html' },
+    url:canonical
+  };
+  if (t.primaryCcss) dt.termCode = t.primaryCcss;
+  const crumbs = { '@context':'https://schema.org','@type':'BreadcrumbList', itemListElement:[
+    {'@type':'ListItem',position:1,name:'Home',item:SITE_URL+'/'},
+    {'@type':'ListItem',position:2,name:'Word Wall',item:SITE_URL+'/word-wall.html'},
+    {'@type':'ListItem',position:3,name:(t.grade==='Algebra'?'Algebra 1':t.grade+' Grade'),item:SITE_URL+'/word-wall.html#ww-'+t.grade.toLowerCase()},
+    {'@type':'ListItem',position:4,name:t.term,item:canonical}
+  ]};
+  return JSON.stringify([dt,crumbs]).replace(/</g,'\\u003c');
+}
+
+function pageGlossaryTerm(t){
+  const gLabel = t.grade === 'Algebra' ? 'Algebra 1' : t.grade + ' Grade';
+  const eyebrowUnit = t.grade === 'Algebra' ? t.strand : (STRAND_NAME[t.strand] || t.strand || '');
+  // WHERE THIS SHOWS UP
+  let whereHtml = '';
+  if (t.isCcssKeyed) {
+    const stdLinks = [], sheetLinks = [], bundleSet = {};
+    t.allCcss.forEach(code => {
+      if (standardsMap[code]) stdLinks.push(`<a class="sheet-chip sheet-chip--ccss" href="/standards/${standardsMap[code].slug}.html">${esc(code)} \u00b7 teaching tips</a>`);
+      products.filter(pp => pp.ccss === code && pp.live).forEach(pp => {
+        sheetLinks.push(`<a class="sheet-chip" href="${pp.pageUrl}">${esc(pp.name)}</a>`);
+        (bundlesBySheet[String(pp.num)]||[]).forEach(b => { bundleSet[b.slug] = b; });
+      });
+    });
+    const bundleLinks = Object.values(bundleSet).map(b => `<a class="sheet-chip" href="${b.pageUrl}">${esc(b.name)}</a>`);
+    const blocks = [];
+    if (stdLinks.length)   blocks.push(`<div class="gloss-where__grp"><h3>Standard</h3><div class="gloss-where__chips">${[...new Set(stdLinks)].join('')}</div></div>`);
+    if (sheetLinks.length) blocks.push(`<div class="gloss-where__grp"><h3>Skill sheets</h3><div class="gloss-where__chips">${[...new Set(sheetLinks)].join('')}</div></div>`);
+    if (bundleLinks.length)blocks.push(`<div class="gloss-where__grp"><h3>In these bundles</h3><div class="gloss-where__chips">${[...new Set(bundleLinks)].join('')}</div></div>`);
+    if (blocks.length) whereHtml = `<div class="gloss-side-block"><h2 class="gloss-side-block__title">Where this shows up</h2>${blocks.join('')}</div>`;
+  } else {
+    whereHtml = `<div class="gloss-side-block"><h2 class="gloss-side-block__title">Where this shows up</h2>
+      <div class="gloss-where__grp"><h3>Algebra 1 unit</h3><p class="gloss-where__unit">${esc(t.strand)}</p></div></div>`;
+  }
+  // siblings (same grade / same key)
+  const sibs = t.related.map(s => glossaryBySlug[s]).filter(Boolean).slice(0,6);
+  const sibHtml = sibs.length ? `<div class="gloss-side-block"><h2 class="gloss-side-block__title">Related terms</h2><div class="gloss-where__chips">${sibs.map(glossaryChip).join('')}</div></div>` : '';
+  // cross-grade twins
+  const twins = (glossaryByNorm[normTerm(t.term)]||[]).filter(x => x.slug !== t.slug);
+  const twinHtml = twins.length ? `<div class="gloss-side-block"><h2 class="gloss-side-block__title">Same term, other grades</h2><div class="gloss-where__chips">${twins.map(x=>`<a class="gloss-chip gloss-chip--${x.accent}" href="${x.pageUrl}">${x.grade==='Algebra'?'Algebra 1':x.grade} \u00b7 ${esc(x.term)}</a>`).join('')}</div></div>` : '';
+
+  const exHtml = [t.ex1,t.ex2].filter(Boolean).map(e => `<li>${esc(e)}</li>`).join('');
+  const codeLine = t.isCcssKeyed ? (t.allCcss.join('  \u00b7  ') || t.primaryCcss) : 'Algebra 1 \u00b7 ' + t.strand;
+
+  return head({
+    title:`${t.term} \u2014 ${gLabel} Math Definition & Examples | Math Class 678 Word Wall`,
+    desc:`${t.term}: ${t.definition}`.slice(0,158),
+    path:'word-wall/'+t.slug+'.html',
+    jsonld: definedTermJsonLd(t)
+  }) + nav('word-wall') + `
+<main id="main">
+  ${breadcrumb([{name:'Home',url:'/'},{name:'Word Wall',url:'/word-wall.html'},{name:gLabel,url:'/word-wall.html#ww-'+t.grade.toLowerCase()},{name:t.term}])}
+  <section class="section gloss-term">
+    <div class="wrap gloss-term__grid">
+      <div class="gloss-term__main">
+        <div class="gloss-term__hero">
+          ${wordWallCardTile(t)}
+          <div>
+            <span class="eyebrow eyebrow--${t.accent}">${esc(gLabel)}${eyebrowUnit?' \u00b7 '+esc(eyebrowUnit):''}</span>
+            <h1 class="gloss-term__title">${esc(t.term)}</h1>
+            <p class="gloss-term__code">${esc(codeLine)}</p>
+          </div>
+        </div>
+        <div class="gloss-block gloss-block--def">
+          <h2>Definition</h2>
+          <p class="gloss-def">${esc(t.definition)}</p>
+        </div>
+        ${exHtml ? `<div class="gloss-block">
+          <h2>Examples</h2>
+          <ul class="gloss-ex">${exHtml}</ul>
+        </div>` : ''}
+        ${t.keyRule ? `<div class="gloss-block gloss-block--rule">
+          <h2>Key rule</h2>
+          <p class="gloss-rule">${esc(t.keyRule)}</p>
+        </div>` : ''}
+        ${t.memoryHook ? `<div class="gloss-block gloss-block--hook">
+          <h2>Memory hook</h2>
+          <p class="gloss-hook">${esc(t.memoryHook)}</p>
+        </div>` : ''}
+      </div>
+      <aside class="gloss-term__side">
+        <div class="gloss-side-block gloss-side-block--cta">
+          <span class="gloss-cta__tile gloss-cta__tile--${t.accent}">${SVG.mark}</span>
+          <h2 class="gloss-side-block__title">Get this on your wall</h2>
+          <p>Print-ready ${esc(t.term)} card \u2014 color, black &amp; white, and digital.</p>
+          <a class="btn btn--primary btn--sm" href="${t.tptUrl}" target="_blank" rel="noopener">Get the card on TPT ${ICON.ext}</a>
+        </div>
+        ${whereHtml}
+        ${sibHtml}
+        ${twinHtml}
+        <div class="gloss-side-block">
+          <a class="std-backlink" href="/word-wall.html#ww-${t.grade.toLowerCase()}">All ${esc(gLabel)} terms ${ICON.arrow}</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+` + footer() + scripts();
+}
+
+/* ============================================================================
+   FREEBIE PAGE — Kit-gated, one per free resource   (S11 build)
+   ============================================================================ */
+function pageFreebie(f){
+  const accent = String(f.grade).match(/^6/)?'teal':String(f.grade).match(/^7/)?'coral':String(f.grade).match(/^8/)?'navy':'gold';
+  const thumbHtml = f.thumb
+    ? `<img src="/assets/images/freebies/${f.thumb}" alt="${esc(f.name)} \u2014 free ${esc(f.gradeLabel)} math resource from Math Class 678" width="900" height="900" loading="lazy" decoding="async">`
+    : (f.hasSheetThumb
+        ? `<img src="${f.thumbSheet}" alt="${esc(f.name)} \u2014 free ${esc(f.gradeLabel)} math resource from Math Class 678" width="900" height="900" loading="lazy" decoding="async">`
+        : `<span class="freebie-tile freebie-tile--${accent}">${SVG.mark}</span>`);
+  const offer = JSON.stringify({
+    '@context':'https://schema.org','@type':'LearningResource',
+    name:f.fullTitle, url:SITE_URL+f.pageUrl,
+    isAccessibleForFree:true, educationalUse:['instruction'],
+    audience:{'@type':'EducationalAudience',educationalRole:'teacher'},
+    provider:{'@type':'Organization',name:'Math Class 678',url:SITE_URL}
+  }).replace(/</g,'\\u003c');
+  const bcSchema = breadcrumbSchema([{name:'Home',url:'/'},{name:'Free Resources',url:'/free.html'},{name:f.name,url:f.pageUrl}]);
+  return head({
+    title:`${f.name} \u2014 Free ${f.gradeLabel} Math Download | Math Class 678`,
+    desc:`Get ${f.fullTitle} free. Enter your email and we\u2019ll send you straight to the download on Teachers Pay Teachers.`.slice(0,158),
+    path:'free/'+f.slug+'.html',
+    jsonld:'['+offer+','+bcSchema+']'
+  }) + nav('free') + `
+<main id="main">
+  ${breadcrumb([{name:'Home',url:'/'},{name:'Free Resources',url:'/free.html'},{name:f.name}])}
+  <section class="section freebie freebie--bg">
+    <div class="wrap freebie__grid">
+      <div class="freebie__copy reveal">
+        <span class="eyebrow eyebrow--${accent}">Free \u00b7 ${esc(f.gradeLabel)}</span>
+        <h1>${esc(f.name)}</h1>
+        <p class="freebie__lead">${esc(f.fullTitle)}</p>
+        <ul class="freebie__list">
+          <li>Enter your email and we\u2019ll take you straight to the download</li>
+          <li>Delivered through Teachers Pay Teachers \u2014 the same free listing, so your download and reviews count</li>
+          <li>You\u2019ll also hear when new sheets publish and when the store runs a sale</li>
+        </ul>
+        <p class="freebie__reassure">No spam. Unsubscribe in one click anytime.</p>
+      </div>
+      <div class="freebie__panel reveal">
+        <figure class="freebie__thumb">${thumbHtml}</figure>
+        <div class="freebie__formcard">
+          <span class="freebie__formlabel">Enter your email to get it</span>
+          <div class="freebie-gate" data-tpt="${f.tptUrl}">
+            <div class="freebie-gate__form">${kitFormFor(f.kitFormUid)}</div>
+            <a class="btn btn--primary freebie-gate__continue" href="${f.tptUrl}" target="_blank" rel="noopener" hidden>Continue to your free download on TPT ${ICON.ext}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script>
+(function(){
+  var gate=document.querySelector('.freebie-gate'); if(!gate) return;
+  var tpt=gate.getAttribute('data-tpt');
+  var cont=gate.querySelector('.freebie-gate__continue');
+  var done=false;
+  function success(){ if(done) return; done=true; cont.hidden=false; try{ window.location.href=tpt; }catch(e){} }
+  var obs=new MutationObserver(function(){
+    if(gate.querySelector('[data-element="success"], .formkit-alert-success, .seva-success, .formkit-alert')) success();
+  });
+  obs.observe(gate,{childList:true,subtree:true,attributes:true});
+})();
+</script>
+` + footer() + scripts();
+}
+
 function sitemap() {
-  const pages = ['', 'catalog.html', 'bundles.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
+  const pages = ['', 'catalog.html', 'bundles.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
   const today = new Date().toISOString().slice(0, 10);
   const main = pages.map(p => `  <url><loc>${SITE_URL}/${p}</loc><lastmod>${today}</lastmod></url>`);
   const sheets = products
@@ -4106,9 +4468,11 @@ function sitemap() {
     .map(b => `  <url><loc>${SITE_URL}${b.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
   const standardUrls = Object.values(STANDARDS_CONTENT)
     .map(s => `  <url><loc>${SITE_URL}/standards/${s.slug}.html</loc><lastmod>${today}</lastmod></url>`);
+  const glossaryUrls = glossary.map(t => `  <url><loc>${SITE_URL}${t.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
+  const freebieUrls = FREEBIES.map(f => `  <url><loc>${SITE_URL}${f.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${main.concat(bundleUrls, sheets, standardUrls).join('\n')}
+${main.concat(bundleUrls, sheets, standardUrls, glossaryUrls, freebieUrls).join('\n')}
 </urlset>`;
 }
 const robots = `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`;
@@ -4171,6 +4535,15 @@ Object.values(STANDARDS_CONTENT).forEach(std => {
   write(`standards/${std.slug}.html`, pageStandard(std));
   standardCount++;
 });
+
+/* Word Wall glossary branch — hub + 427 term pages (6th-8th CCSS-keyed, Algebra unit-keyed) */
+write('word-wall.html', pageWordWall());
+let glossaryCount = 0;
+glossary.forEach(t => { write(`word-wall/${t.slug}.html`, pageGlossaryTerm(t)); glossaryCount++; });
+
+/* Kit-gated individual freebie pages (existing free.html kept as-is) */
+let freebieCount = 0;
+FREEBIES.forEach(f => { write(`free/${f.slug}.html`, pageFreebie(f)); freebieCount++; });
 
 copy('styles.css', 'assets/css/styles.css');
 copy('assets/js/catalog.js', 'assets/js/catalog.js');
@@ -4238,6 +4611,8 @@ console.log('  Pages: index, catalog, bundles, free, about, contact, 404');
 console.log('  Sheet landing pages:', sheetCount);
 console.log('  Bundle landing pages:', bundleCount);
 console.log('  Standard content pages:', standardCount);
+console.log('  Word Wall hub + glossary term pages:', 1 + glossaryCount);
+console.log('  Kit-gated freebie pages:', freebieCount);
 console.log('  Products:', products.length, '| live:', live.length, '| free:', counts.free);
 console.log('  Grades: 6th', counts[6], '· 7th', counts[7], '· 8th', counts[8]);
 console.log('  Product thumbnails bundled:', thumbCount);
