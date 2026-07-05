@@ -2688,7 +2688,26 @@ const FREE_RESOURCES = [
    until then every page uses the master form (email still gated) and the on-page
    success handler forwards to the correct TPT URL.
    ============================================================================ */
-const FREEBIE_KIT_FORMS = {}; // { 'FREE-003':'abc123', ... }  <- paste per-freebie Kit form uids here
+const FREEBIE_KIT_FORMS = {
+  'FREE-001': '875fdb8851', // Combining Like Terms (6th)
+  'FREE-002': '040d74c6eb', // Combining Like Terms Poster (6th)
+  'FREE-003': '3f6172755c', // 6th Grade Math About Me (6th)
+  'FREE-004': '5c8c26b69f', // 6th Grade Math End of Year Review (6th)
+  'FREE-005': 'ad7de44228', // 6th Grade Math SMART Goals (6th)
+  'FREE-007': 'b5acf5c22c', // 6th Grade Math Year at a Glance (6th)
+  'FREE-008': '18e51a9a6a', // Combining Like Terms (7th)
+  'FREE-009': '214d64c130', // 7th Grade Math About Me (7th)
+  'FREE-010': '55b3ed978d', // 7th Grade Math End of Year Review (7th)
+  'FREE-011': '90c47668a6', // 7th Grade Math SMART Goals (7th)
+  'FREE-012': '88f3a13f12', // 7th Grade Math Year at a Glance (7th)
+  'FREE-013': '2fc7e939c9', // Pythagorean Theorem Poster (8th)
+  'FREE-014': 'c529aa5601', // 8th Grade Math Pre-Algebra End of Year Review (8th)
+  'FREE-015': '99ec756eac', // 8th Grade Math SMART Goals (8th)
+  'FREE-016': '7818dac0a4', // 3-Day Emergency Math Sub Plan (Grades 6-8)
+  'FREE-017': '612e064cd9', // End of Year Math Reflection + Goals (Grades 6-8)
+  'FREE-018': 'cc703aa799', // Back to School Math Diagnostic (Grades 6-8)
+  'FREE-019': '1663af272a', // Middle School Math Word Wall (Grades 6-8)
+}; // all 18 freebies now on dedicated forms — S13
 const freeThumbByUrl = {}; FREE_RESOURCES.forEach(r => { freeThumbByUrl[r.url] = r.thumb; });
 const _freeSlugBase = {};
 (SITE_LINKS.free_resources||[]).forEach(f => { const b=slugify(f.name); _freeSlugBase[b]=(_freeSlugBase[b]||0)+1; });
