@@ -62,6 +62,14 @@
 /* ---- Reset / base ---- */
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; }
+/* The browser's own [hidden] rule is a default (user-agent) style, which any
+   author rule that sets display (e.g. .btn { display:inline-flex }) will always
+   win against — even at equal selector specificity — because author styles beat
+   user-agent styles regardless of specificity. Without this rule, any element that
+   is both hidden and matches a class-based display rule (like the freebie-gate
+   continue button, .btn.btn--primary[hidden]) renders visible despite the
+   attribute. This restores [hidden] as an absolute override, site-wide. */
+[hidden] { display: none !important; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
