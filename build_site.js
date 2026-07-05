@@ -4446,12 +4446,26 @@ function pageFreebie(f){
   var gate=document.querySelector('.freebie-gate'); if(!gate) return;
   var tpt=gate.getAttribute('data-tpt');
   var cont=gate.querySelector('.freebie-gate__continue');
-  var done=false;
+  var done=false, submitted=false;
+  function isVisible(el){ return !!(el && el.offsetParent !== null && window.getComputedStyle(el).display !== 'none'); }
   function success(){ if(done) return; done=true; cont.hidden=false; try{ window.location.href=tpt; }catch(e){} }
+  /* Gate on a real submit first — Kit's embed renders its own (hidden) success/error
+     containers into the DOM as soon as the script loads, before any user action, so
+     watching for those classes alone fires on page load. Require an actual form submit
+     before we ever look for a success state. */
+  gate.addEventListener('submit', function(){ submitted = true; }, true);
   var obs=new MutationObserver(function(){
-    if(gate.querySelector('[data-element="success"], .formkit-alert-success, .seva-success, .formkit-alert')) success();
+    if(!submitted) return;
+    var hit=gate.querySelector('[data-element="success"], .formkit-alert-success, .seva-success');
+    if(hit && isVisible(hit)) success();
   });
   obs.observe(gate,{childList:true,subtree:true,attributes:true});
+  /* Safety net: if we can't find a match after a real submit (unexpected markup),
+     reveal the continue button rather than leaving the visitor stuck — but never
+     auto-navigate on the fallback, only on a confirmed success match above. */
+  gate.addEventListener('submit', function(){
+    setTimeout(function(){ if(!done && submitted) cont.hidden=false; }, 5000);
+  }, true);
 })();
 </script>
 ` + footer() + scripts();
