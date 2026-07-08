@@ -11,13 +11,13 @@
       "bundles": 30,
       "warmups": 21,
       "posters": 25,
-      "word_wall": 478,
+      "word_wall": 670,
       "notebooks": 81,
       "readiness": 6,
       "i_can": 5,
       "free_resources": 18
     },
-    "updated": "S348"
+    "updated": "S14 (5th grade + Geometry Word Wall link additions)"
   },
   "skill_sheets": [
     {
@@ -6552,6 +6552,1926 @@
       "ccss": null,
       "full_title": "Algebra 1 Systems of Equations & Inequalities Math Word Wall Bundle | 8 Cards",
       "tpt_url": "https://www.teacherspayteachers.com/Product/Algebra-1-Systems-of-Equations-Inequalities-Math-Word-Wall-Bundle-8-Cards-16906294"
+    },
+    {
+      "id": "WW-481",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Place Value",
+      "kind": "Card",
+      "ccss": "5.NBT.A.1",
+      "full_title": "Place Value Word Wall Card | 5th Grade Place Value Math Vocabulary | 5.NBT.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Place-Value-Word-Wall-Card-5th-Grade-Place-Value-Math-Vocabulary-5NBTA1-16929170"
+    },
+    {
+      "id": "WW-482",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Powers of Ten",
+      "kind": "Card",
+      "ccss": "5.NBT.A.2",
+      "full_title": "Powers of Ten Word Wall Card | 5th Grade Place Value Math Vocabulary | 5.NBT.A.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Powers-of-Ten-Word-Wall-Card-5th-Grade-Place-Value-Math-Vocabulary-5NBTA2-16929172"
+    },
+    {
+      "id": "WW-483",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Standard Form",
+      "kind": "Card",
+      "ccss": "5.NBT.A.3a",
+      "full_title": "Standard Form Word Wall | 5th Grade Place Value Math Vocabulary | 5.NBT.A.3a",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Standard-Form-Word-Wall-5th-Grade-Place-Value-Math-Vocabulary-5NBTA3a-16929174"
+    },
+    {
+      "id": "WW-484",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Word Form",
+      "kind": "Card",
+      "ccss": "5.NBT.A.3a",
+      "full_title": "Word Form Word Wall Card | 5th Grade Place Value Math Vocabulary | 5.NBT.A.3a",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Word-Form-Word-Wall-Card-5th-Grade-Place-Value-Math-Vocabulary-5NBTA3a-16929175"
+    },
+    {
+      "id": "WW-485",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Expanded Form",
+      "kind": "Card",
+      "ccss": "5.NBT.A.3a",
+      "full_title": "Expanded Form Word Wall | 5th Grade Place Value Math Vocabulary | 5.NBT.A.3a",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Expanded-Form-Word-Wall-5th-Grade-Place-Value-Math-Vocabulary-5NBTA3a-16929178"
+    },
+    {
+      "id": "WW-486",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Decimal",
+      "kind": "Card",
+      "ccss": "5.NBT.A.3a",
+      "full_title": "Decimal Word Wall Card | 5th Grade Decimals Math Vocabulary Poster | 5.NBT.A.3a",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Decimal-Word-Wall-Card-5th-Grade-Decimals-Math-Vocabulary-Poster-5NBTA3a-16929179"
+    },
+    {
+      "id": "WW-487",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Tenths",
+      "kind": "Card",
+      "ccss": "5.NBT.A.3a",
+      "full_title": "Tenths Word Wall | 5th Grade Decimal Place Value Math Vocabulary | 5.NBT.A.3a",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Tenths-Word-Wall-5th-Grade-Decimal-Place-Value-Math-Vocabulary-5NBTA3a-16929247"
+    },
+    {
+      "id": "WW-488",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Hundredths",
+      "kind": "Card",
+      "ccss": "5.NBT.A.3a",
+      "full_title": "Hundredths Word Wall Card | 5th Grade Math Vocabulary Poster | 5.NBT.A.3a",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Hundredths-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5NBTA3a-16929254"
+    },
+    {
+      "id": "WW-489",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Thousandths",
+      "kind": "Card",
+      "ccss": "5.NBT.A.3a",
+      "full_title": "Thousandths Word Wall Card | 5th Grade Math Vocabulary Poster | 5.NBT.A.3a",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Thousandths-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5NBTA3a-16929185"
+    },
+    {
+      "id": "WW-490",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Compare Decimals",
+      "kind": "Card",
+      "ccss": "5.NBT.A.3b",
+      "full_title": "Compare Decimals Word Wall | 5th Grade Decimals Math Vocabulary | 5.NBT.A.3b",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Compare-Decimals-Word-Wall-5th-Grade-Decimals-Math-Vocabulary-5NBTA3b-16929188"
+    },
+    {
+      "id": "WW-491",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Round Decimals",
+      "kind": "Card",
+      "ccss": "5.NBT.A.4",
+      "full_title": "Round Decimals Word Wall Card | 5th Grade Decimals Math Vocabulary | 5.NBT.A.4",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Round-Decimals-Word-Wall-Card-5th-Grade-Decimals-Math-Vocabulary-5NBTA4-16929189"
+    },
+    {
+      "id": "WW-492",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Multiply Whole Numbers",
+      "kind": "Card",
+      "ccss": "5.NBT.B.5",
+      "full_title": "Multiply Whole Numbers Word Wall Card | 5th Grade Math Vocabulary | 5.NBT.B.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Multiply-Whole-Numbers-Word-Wall-Card-5th-Grade-Math-Vocabulary-5NBTB5-16929190"
+    },
+    {
+      "id": "WW-493",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Division",
+      "kind": "Card",
+      "ccss": "5.NBT.B.6",
+      "full_title": "Division Word Wall Card | 5th Grade Long Division Math Vocabulary | 5.NBT.B.6",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Division-Word-Wall-Card-5th-Grade-Long-Division-Math-Vocabulary-5NBTB6-16929193"
+    },
+    {
+      "id": "WW-494",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Add & Subtract Decimals",
+      "kind": "Card",
+      "ccss": "5.NBT.B.7",
+      "full_title": "Add & Subtract Decimals Word Wall Card | 5th Grade Math Vocabulary | 5.NBT.B.7",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Add-Subtract-Decimals-Word-Wall-Card-5th-Grade-Math-Vocabulary-5NBTB7-16929257"
+    },
+    {
+      "id": "WW-495",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Multiply Decimals",
+      "kind": "Card",
+      "ccss": "5.NBT.B.7",
+      "full_title": "Multiply Decimals Word Wall Card | 5th Grade Math Vocabulary Poster | 5.NBT.B.7",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Multiply-Decimals-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5NBTB7-16929204"
+    },
+    {
+      "id": "WW-496",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Product",
+      "kind": "Card",
+      "ccss": "5.NBT.B.5",
+      "full_title": "Product Word Wall Card | 5th Grade Multiplication Math Vocabulary | 5.NBT.B.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Product-Word-Wall-Card-5th-Grade-Multiplication-Math-Vocabulary-5NBTB5-16929207"
+    },
+    {
+      "id": "WW-497",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Quotient",
+      "kind": "Card",
+      "ccss": "5.NBT.B.6",
+      "full_title": "Quotient Word Wall Card | 5th Grade Division Math Vocabulary Poster | 5.NBT.B.6",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Quotient-Word-Wall-Card-5th-Grade-Division-Math-Vocabulary-Poster-5NBTB6-16929213"
+    },
+    {
+      "id": "WW-498",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "Remainder",
+      "kind": "Card",
+      "ccss": "5.NBT.B.6",
+      "full_title": "Remainder Word Wall Card | 5th Grade Division Math Vocabulary Poster | 5.NBT.B.6",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Remainder-Word-Wall-Card-5th-Grade-Division-Math-Vocabulary-Poster-5NBTB6-16929219"
+    },
+    {
+      "id": "WW-499",
+      "grade": "5th",
+      "strand": "Operations & Algebraic Thinking",
+      "term": "Order of Operations",
+      "kind": "Card",
+      "ccss": "5.OA.A.1",
+      "full_title": "Order of Operations Word Wall Card | 5th Grade Math Vocabulary Poster | 5.OA.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Order-of-Operations-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5OAA1-16929653"
+    },
+    {
+      "id": "WW-500",
+      "grade": "5th",
+      "strand": "Operations & Algebraic Thinking",
+      "term": "Parentheses",
+      "kind": "Card",
+      "ccss": "5.OA.A.1",
+      "full_title": "Parentheses Word Wall | 5th Grade Order of Operations Math Vocabulary | 5.OA.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Parentheses-Word-Wall-5th-Grade-Order-of-Operations-Math-Vocabulary-5OAA1-16929620"
+    },
+    {
+      "id": "WW-501",
+      "grade": "5th",
+      "strand": "Operations & Algebraic Thinking",
+      "term": "Brackets",
+      "kind": "Card",
+      "ccss": "5.OA.A.1",
+      "full_title": "Brackets Word Wall | 5th Grade Order of Operations Math Vocabulary | 5.OA.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Brackets-Word-Wall-5th-Grade-Order-of-Operations-Math-Vocabulary-5OAA1-16929655"
+    },
+    {
+      "id": "WW-502",
+      "grade": "5th",
+      "strand": "Operations & Algebraic Thinking",
+      "term": "Numerical Expression",
+      "kind": "Card",
+      "ccss": "5.OA.A.2",
+      "full_title": "Numerical Expression Word Wall Card | 5th Grade Math Vocabulary | 5.OA.A.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Numerical-Expression-Word-Wall-Card-5th-Grade-Math-Vocabulary-5OAA2-16929628"
+    },
+    {
+      "id": "WW-503",
+      "grade": "5th",
+      "strand": "Operations & Algebraic Thinking",
+      "term": "Evaluate",
+      "kind": "Card",
+      "ccss": "5.OA.A.1",
+      "full_title": "Evaluate Word Wall Card | 5th Grade Expressions Math Vocabulary | 5.OA.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Evaluate-Word-Wall-Card-5th-Grade-Expressions-Math-Vocabulary-5OAA1-16929630"
+    },
+    {
+      "id": "WW-504",
+      "grade": "5th",
+      "strand": "Operations & Algebraic Thinking",
+      "term": "Numerical Pattern",
+      "kind": "Card",
+      "ccss": "5.OA.B.3",
+      "full_title": "Numerical Pattern Word Wall Card | 5th Grade Math Vocabulary Poster | 5.OA.B.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Numerical-Pattern-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5OAB3-16929639"
+    },
+    {
+      "id": "WW-505",
+      "grade": "5th",
+      "strand": "Operations & Algebraic Thinking",
+      "term": "Rule (Pattern)",
+      "kind": "Card",
+      "ccss": "5.OA.B.3",
+      "full_title": "Rule (Pattern) Word Wall Card | 5th Grade Patterns Math Vocabulary | 5.OA.B.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Rule-Pattern-Word-Wall-Card-5th-Grade-Patterns-Math-Vocabulary-5OAB3-16929646"
+    },
+    {
+      "id": "WW-506",
+      "grade": "5th",
+      "strand": "Operations & Algebraic Thinking",
+      "term": "Coordinate Pattern Pairs",
+      "kind": "Card",
+      "ccss": "5.OA.B.3",
+      "full_title": "Coordinate Pattern Pairs Word Wall Card | 5th Grade Math Vocabulary | 5.OA.B.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Coordinate-Pattern-Pairs-Word-Wall-Card-5th-Grade-Math-Vocabulary-5OAB3-16929642"
+    },
+    {
+      "id": "WW-507",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Fraction",
+      "kind": "Card",
+      "ccss": "5.NF.A.1",
+      "full_title": "Fraction Word Wall Card | 5th Grade Fractions Math Vocabulary Poster | 5.NF.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Fraction-Word-Wall-Card-5th-Grade-Fractions-Math-Vocabulary-Poster-5NFA1-16930083"
+    },
+    {
+      "id": "WW-508",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Numerator",
+      "kind": "Card",
+      "ccss": "5.NF.A.1",
+      "full_title": "Numerator Word Wall Card | 5th Grade Fractions Math Vocabulary Poster | 5.NF.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Numerator-Word-Wall-Card-5th-Grade-Fractions-Math-Vocabulary-Poster-5NFA1-16930089"
+    },
+    {
+      "id": "WW-509",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Denominator",
+      "kind": "Card",
+      "ccss": "5.NF.A.1",
+      "full_title": "Denominator Word Wall Card | 5th Grade Fractions Math Vocabulary | 5.NF.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Denominator-Word-Wall-Card-5th-Grade-Fractions-Math-Vocabulary-5NFA1-16930088"
+    },
+    {
+      "id": "WW-510",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Unlike Denominators",
+      "kind": "Card",
+      "ccss": "5.NF.A.1",
+      "full_title": "Unlike Denominators Word Wall Card | 5th Grade Math Vocabulary Poster | 5.NF.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Unlike-Denominators-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5NFA1-16930093"
+    },
+    {
+      "id": "WW-511",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Common Denominator",
+      "kind": "Card",
+      "ccss": "5.NF.A.1",
+      "full_title": "Common Denominator Word Wall Card | 5th Grade Math Vocabulary Poster | 5.NF.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Common-Denominator-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5NFA1-16930096"
+    },
+    {
+      "id": "WW-512",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Equivalent Fractions",
+      "kind": "Card",
+      "ccss": "5.NF.A.1",
+      "full_title": "Equivalent Fractions Word Wall Card | 5th Grade Math Vocabulary | 5.NF.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Equivalent-Fractions-Word-Wall-Card-5th-Grade-Math-Vocabulary-5NFA1-16930101"
+    },
+    {
+      "id": "WW-513",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Add Fractions",
+      "kind": "Card",
+      "ccss": "5.NF.A.1",
+      "full_title": "Add Fractions Word Wall Card | 5th Grade Math Vocabulary Poster | 5.NF.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Add-Fractions-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5NFA1-16930104"
+    },
+    {
+      "id": "WW-514",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Subtract Fractions",
+      "kind": "Card",
+      "ccss": "5.NF.A.1",
+      "full_title": "Subtract Fractions Word Wall Card | 5th Grade Math Vocabulary Poster | 5.NF.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Subtract-Fractions-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5NFA1-16930111"
+    },
+    {
+      "id": "WW-515",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Mixed Number",
+      "kind": "Card",
+      "ccss": "5.NF.A.1",
+      "full_title": "Mixed Number Word Wall Card | 5th Grade Math Vocabulary Poster | 5.NF.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Mixed-Number-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5NFA1-16930110"
+    },
+    {
+      "id": "WW-516",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Improper Fraction",
+      "kind": "Card",
+      "ccss": "5.NF.B.3",
+      "full_title": "Improper Fraction Word Wall Card | 5th Grade Math Vocabulary Poster | 5.NF.B.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Improper-Fraction-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5NFB3-16930115"
+    },
+    {
+      "id": "WW-517",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Regrouping Fractions",
+      "kind": "Card",
+      "ccss": "5.NF.A.1",
+      "full_title": "Regrouping Fractions Word Wall Card | 5th Grade Math Vocabulary | 5.NF.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Regrouping-Fractions-Word-Wall-Card-5th-Grade-Math-Vocabulary-5NFA1-16930118"
+    },
+    {
+      "id": "WW-518",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Benchmark Fraction",
+      "kind": "Card",
+      "ccss": "5.NF.A.2",
+      "full_title": "Benchmark Fraction Word Wall Card | 5th Grade Math Vocabulary Poster | 5.NF.A.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Benchmark-Fraction-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5NFA2-16930120"
+    },
+    {
+      "id": "WW-519",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Fraction as Division",
+      "kind": "Card",
+      "ccss": "5.NF.B.3",
+      "full_title": "Fraction as Division Word Wall Card | 5th Grade Math Vocabulary | 5.NF.B.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Fraction-as-Division-Word-Wall-Card-5th-Grade-Math-Vocabulary-5NFB3-16930123"
+    },
+    {
+      "id": "WW-520",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Multiply Fractions",
+      "kind": "Card",
+      "ccss": "5.NF.B.4a",
+      "full_title": "Multiply Fractions Word Wall Card | 5th Grade Math Vocabulary Poster | 5.NF.B.4a",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Multiply-Fractions-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5NFB4a-16930126"
+    },
+    {
+      "id": "WW-521",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Area Model",
+      "kind": "Card",
+      "ccss": "5.NF.B.4b",
+      "full_title": "Area Model Word Wall Card | 5th Grade Math Vocabulary Poster | 5.NF.B.4b",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Area-Model-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5NFB4b-16930131"
+    },
+    {
+      "id": "WW-522",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Scaling",
+      "kind": "Card",
+      "ccss": "5.NF.B.5",
+      "full_title": "Scaling Word Wall | 5th Grade Multiplying Fractions Math Vocabulary | 5.NF.B.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Scaling-Word-Wall-5th-Grade-Multiplying-Fractions-Math-Vocabulary-5NFB5-16930133"
+    },
+    {
+      "id": "WW-523",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Multiply Mixed Numbers",
+      "kind": "Card",
+      "ccss": "5.NF.B.6",
+      "full_title": "Multiply Mixed Numbers Word Wall Card | 5th Grade Math Vocabulary | 5.NF.B.6",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Multiply-Mixed-Numbers-Word-Wall-Card-5th-Grade-Math-Vocabulary-5NFB6-16930173"
+    },
+    {
+      "id": "WW-524",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Unit Fraction",
+      "kind": "Card",
+      "ccss": "5.NF.B.7a",
+      "full_title": "Unit Fraction Word Wall Card | 5th Grade Math Vocabulary Poster | 5.NF.B.7a",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Unit-Fraction-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5NFB7a-16930138"
+    },
+    {
+      "id": "WW-525",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Divide with Fractions",
+      "kind": "Card",
+      "ccss": "5.NF.B.7",
+      "full_title": "Divide with Fractions Word Wall Card | 5th Grade Math Vocabulary | 5.NF.B.7",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Divide-with-Fractions-Word-Wall-Card-5th-Grade-Math-Vocabulary-5NFB7-16930180"
+    },
+    {
+      "id": "WW-526",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "Simplest Form",
+      "kind": "Card",
+      "ccss": "5.NF.A.1",
+      "full_title": "Simplest Form Word Wall Card | 5th Grade Math Vocabulary Poster | 5.NF.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Simplest-Form-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5NFA1-16930155"
+    },
+    {
+      "id": "WW-527",
+      "grade": "5th",
+      "strand": "Measurement & Data",
+      "term": "Measurement Conversion",
+      "kind": "Card",
+      "ccss": "5.MD.A.1",
+      "full_title": "Measurement Conversion Word Wall Card | 5th Grade Math Vocabulary | 5.MD.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Measurement-Conversion-Word-Wall-Card-5th-Grade-Math-Vocabulary-5MDA1-16930468"
+    },
+    {
+      "id": "WW-528",
+      "grade": "5th",
+      "strand": "Measurement & Data",
+      "term": "Metric System",
+      "kind": "Card",
+      "ccss": "5.MD.A.1",
+      "full_title": "Metric System Word Wall Card | 5th Grade Math Vocabulary Poster | 5.MD.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Metric-System-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5MDA1-16930471"
+    },
+    {
+      "id": "WW-529",
+      "grade": "5th",
+      "strand": "Measurement & Data",
+      "term": "Customary Units",
+      "kind": "Card",
+      "ccss": "5.MD.A.1",
+      "full_title": "Customary Units Word Wall Card | 5th Grade Math Vocabulary Poster | 5.MD.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Customary-Units-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5MDA1-16930469"
+    },
+    {
+      "id": "WW-530",
+      "grade": "5th",
+      "strand": "Measurement & Data",
+      "term": "Line Plot",
+      "kind": "Card",
+      "ccss": "5.MD.B.2",
+      "full_title": "Line Plot Word Wall Card | 5th Grade Math Vocabulary Poster | 5.MD.B.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Line-Plot-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5MDB2-16930473"
+    },
+    {
+      "id": "WW-531",
+      "grade": "5th",
+      "strand": "Measurement & Data",
+      "term": "Volume",
+      "kind": "Card",
+      "ccss": "5.MD.C.3",
+      "full_title": "Volume Word Wall Card | 5th Grade Volume Math Vocabulary Poster | 5.MD.C.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Volume-Word-Wall-Card-5th-Grade-Volume-Math-Vocabulary-Poster-5MDC3-16930472"
+    },
+    {
+      "id": "WW-532",
+      "grade": "5th",
+      "strand": "Measurement & Data",
+      "term": "Cubic Unit",
+      "kind": "Card",
+      "ccss": "5.MD.C.3",
+      "full_title": "Cubic Unit Word Wall Card | 5th Grade Math Vocabulary Poster | 5.MD.C.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Cubic-Unit-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5MDC3-16930474"
+    },
+    {
+      "id": "WW-533",
+      "grade": "5th",
+      "strand": "Measurement & Data",
+      "term": "Volume Formula",
+      "kind": "Card",
+      "ccss": "5.MD.C.5a",
+      "full_title": "Volume Formula Word Wall Card | 5th Grade Math Vocabulary Poster | 5.MD.C.5a",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Volume-Formula-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5MDC5a-16930482"
+    },
+    {
+      "id": "WW-534",
+      "grade": "5th",
+      "strand": "Measurement & Data",
+      "term": "Base Area",
+      "kind": "Card",
+      "ccss": "5.MD.C.5a",
+      "full_title": "Base Area Word Wall Card | 5th Grade Volume Math Vocabulary Poster | 5.MD.C.5a",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Base-Area-Word-Wall-Card-5th-Grade-Volume-Math-Vocabulary-Poster-5MDC5a-16930486"
+    },
+    {
+      "id": "WW-535",
+      "grade": "5th",
+      "strand": "Measurement & Data",
+      "term": "Composite Solid",
+      "kind": "Card",
+      "ccss": "5.MD.C.5c",
+      "full_title": "Composite Solid Word Wall Card | 5th Grade Math Vocabulary Poster | 5.MD.C.5c",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Composite-Solid-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5MDC5c-16930476"
+    },
+    {
+      "id": "WW-536",
+      "grade": "5th",
+      "strand": "Measurement & Data",
+      "term": "Capacity",
+      "kind": "Card",
+      "ccss": "5.MD.A.1",
+      "full_title": "Capacity Word Wall Card | 5th Grade Measurement Math Vocabulary | 5.MD.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Capacity-Word-Wall-Card-5th-Grade-Measurement-Math-Vocabulary-5MDA1-16930475"
+    },
+    {
+      "id": "WW-537",
+      "grade": "5th",
+      "strand": "Geometry",
+      "term": "Coordinate Plane",
+      "kind": "Card",
+      "ccss": "5.G.A.1",
+      "full_title": "Coordinate Plane Word Wall Card | 5th Grade Math Vocabulary Poster | 5.G.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Coordinate-Plane-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5GA1-16930750"
+    },
+    {
+      "id": "WW-538",
+      "grade": "5th",
+      "strand": "Geometry",
+      "term": "Origin",
+      "kind": "Card",
+      "ccss": "5.G.A.1",
+      "full_title": "Origin Word Wall Card | 5th Grade Coordinate Plane Math Vocabulary | 5.G.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Origin-Word-Wall-Card-5th-Grade-Coordinate-Plane-Math-Vocabulary-5GA1-16930752"
+    },
+    {
+      "id": "WW-539",
+      "grade": "5th",
+      "strand": "Geometry",
+      "term": "X-axis",
+      "kind": "Card",
+      "ccss": "5.G.A.1",
+      "full_title": "X-axis Word Wall Card | 5th Grade Math Vocabulary Poster | 5.G.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/X-axis-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5GA1-16930771"
+    },
+    {
+      "id": "WW-540",
+      "grade": "5th",
+      "strand": "Geometry",
+      "term": "Y-axis",
+      "kind": "Card",
+      "ccss": "5.G.A.1",
+      "full_title": "Y-axis Word Wall Card | 5th Grade Math Vocabulary Poster | 5.G.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Y-axis-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5GA1-16930753"
+    },
+    {
+      "id": "WW-541",
+      "grade": "5th",
+      "strand": "Geometry",
+      "term": "Ordered Pair",
+      "kind": "Card",
+      "ccss": "5.G.A.1",
+      "full_title": "Ordered Pair Word Wall Card | 5th Grade Math Vocabulary Poster | 5.G.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Ordered-Pair-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5GA1-16930755"
+    },
+    {
+      "id": "WW-542",
+      "grade": "5th",
+      "strand": "Geometry",
+      "term": "Coordinate",
+      "kind": "Card",
+      "ccss": "5.G.A.1",
+      "full_title": "Coordinate Word Wall Card | 5th Grade Coordinate Plane Math Vocabulary | 5.G.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Coordinate-Word-Wall-Card-5th-Grade-Coordinate-Plane-Math-Vocabulary-5GA1-16930761"
+    },
+    {
+      "id": "WW-543",
+      "grade": "5th",
+      "strand": "Geometry",
+      "term": "Plot a Point",
+      "kind": "Card",
+      "ccss": "5.G.A.2",
+      "full_title": "Plot a Point Word Wall Card | 5th Grade Math Vocabulary Poster | 5.G.A.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Plot-a-Point-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5GA2-16930757"
+    },
+    {
+      "id": "WW-544",
+      "grade": "5th",
+      "strand": "Geometry",
+      "term": "Polygon",
+      "kind": "Card",
+      "ccss": "5.G.B.3",
+      "full_title": "Polygon Word Wall Card | 5th Grade 2D Shapes Math Vocabulary Poster | 5.G.B.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Polygon-Word-Wall-Card-5th-Grade-2D-Shapes-Math-Vocabulary-Poster-5GB3-16930759"
+    },
+    {
+      "id": "WW-545",
+      "grade": "5th",
+      "strand": "Geometry",
+      "term": "Quadrilateral",
+      "kind": "Card",
+      "ccss": "5.G.B.3",
+      "full_title": "Quadrilateral Word Wall Card | 5th Grade 2D Shapes Math Vocabulary | 5.G.B.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Quadrilateral-Word-Wall-Card-5th-Grade-2D-Shapes-Math-Vocabulary-5GB3-16930774"
+    },
+    {
+      "id": "WW-546",
+      "grade": "5th",
+      "strand": "Geometry",
+      "term": "Attribute",
+      "kind": "Card",
+      "ccss": "5.G.B.3",
+      "full_title": "Attribute Word Wall Card | 5th Grade 2D Shapes Math Vocabulary Poster | 5.G.B.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Attribute-Word-Wall-Card-5th-Grade-2D-Shapes-Math-Vocabulary-Poster-5GB3-16930765"
+    },
+    {
+      "id": "WW-547",
+      "grade": "5th",
+      "strand": "Geometry",
+      "term": "Classify 2D Figures",
+      "kind": "Card",
+      "ccss": "5.G.B.3",
+      "full_title": "Classify 2D Figures Word Wall Card | 5th Grade Math Vocabulary Poster | 5.G.B.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Classify-2D-Figures-Word-Wall-Card-5th-Grade-Math-Vocabulary-Poster-5GB3-16930766"
+    },
+    {
+      "id": "WW-548",
+      "grade": "5th",
+      "strand": "Number & Operations in Base Ten",
+      "term": "5th Grade Place Value and Decimals Math Word Wall Bundle | 5.NBT",
+      "kind": "Bundle",
+      "ccss": null,
+      "full_title": "5th Grade Place Value and Decimals Math Word Wall Bundle | 5.NBT",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/5th-Grade-Place-Value-and-Decimals-Math-Word-Wall-Bundle-5NBT-16929344"
+    },
+    {
+      "id": "WW-549",
+      "grade": "5th",
+      "strand": "Operations & Algebraic Thinking",
+      "term": "5th Grade Operations and Algebraic Thinking Math Word Wall Bundle | 5.OA",
+      "kind": "Bundle",
+      "ccss": null,
+      "full_title": "5th Grade Operations and Algebraic Thinking Math Word Wall Bundle | 5.OA",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/5th-Grade-Operations-and-Algebraic-Thinking-Math-Word-Wall-Bundle-5OA-16929663"
+    },
+    {
+      "id": "WW-550",
+      "grade": "5th",
+      "strand": "Number & Operations—Fractions",
+      "term": "5th Grade Fractions Math Word Wall Bundle | 5.NF",
+      "kind": "Bundle",
+      "ccss": null,
+      "full_title": "5th Grade Fractions Math Word Wall Bundle | 5.NF",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/5th-Grade-Fractions-Math-Word-Wall-Bundle-5NF-16930205"
+    },
+    {
+      "id": "WW-551",
+      "grade": "5th",
+      "strand": "Measurement & Data",
+      "term": "5th Grade Measurement and Data Math Word Wall Bundle | 5.MD",
+      "kind": "Bundle",
+      "ccss": null,
+      "full_title": "5th Grade Measurement and Data Math Word Wall Bundle | 5.MD",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/5th-Grade-Measurement-and-Data-Math-Word-Wall-Bundle-5MD-16930490"
+    },
+    {
+      "id": "WW-552",
+      "grade": "5th",
+      "strand": "Geometry",
+      "term": "5th Grade Geometry Math Word Wall Bundle | 5.G",
+      "kind": "Bundle",
+      "ccss": null,
+      "full_title": "5th Grade Geometry Math Word Wall Bundle | 5.G",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/5th-Grade-Geometry-Math-Word-Wall-Bundle-5G-16930803"
+    },
+    {
+      "id": "WW-553",
+      "grade": "5th",
+      "strand": null,
+      "term": "5th Grade Math Word Wall Bundle | 67 Vocabulary Cards Full Year CCSS",
+      "kind": "Bundle",
+      "ccss": null,
+      "full_title": "5th Grade Math Word Wall Bundle | 67 Vocabulary Cards Full Year CCSS",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-Word-Wall-Bundle-67-Vocabulary-Cards-Full-Year-CCSS-16930865"
+    },
+    {
+      "id": "WW-554",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Point",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Point Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Point-Word-Wall-Card-Geometry-Geometry-Basics-Vocabulary-Poster-HSG-COA1-16943709"
+    },
+    {
+      "id": "WW-555",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Line",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Line Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Line-Word-Wall-Card-Geometry-Geometry-Basics-Vocabulary-Poster-HSG-COA1-16943727"
+    },
+    {
+      "id": "WW-556",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Plane",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Plane Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Plane-Word-Wall-Card-Geometry-Geometry-Basics-Vocabulary-Poster-HSG-COA1-16943710"
+    },
+    {
+      "id": "WW-557",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Line Segment",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Line Segment Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Line-Segment-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COA1-16943750"
+    },
+    {
+      "id": "WW-558",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Ray",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Ray Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Ray-Word-Wall-Card-Geometry-Geometry-Basics-Vocabulary-Poster-HSG-COA1-16943711"
+    },
+    {
+      "id": "WW-559",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Angle",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Angle Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Angle-Word-Wall-Card-Geometry-Angles-Vocabulary-Poster-HSG-COA1-16943735"
+    },
+    {
+      "id": "WW-560",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Vertex",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Vertex Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Vertex-Word-Wall-Card-Geometry-Angles-Vocabulary-Poster-HSG-COA1-16943737"
+    },
+    {
+      "id": "WW-561",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Degree",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Degree Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Degree-Word-Wall-Card-Geometry-Angles-Vocabulary-Poster-HSG-COA1-16943715"
+    },
+    {
+      "id": "WW-562",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Acute Angle",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Acute Angle Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Acute-Angle-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COA1-16943754"
+    },
+    {
+      "id": "WW-563",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Right Angle",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Right Angle Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Right-Angle-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COA1-16943758"
+    },
+    {
+      "id": "WW-564",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Obtuse Angle",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Obtuse Angle Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Obtuse-Angle-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COA1-16943719"
+    },
+    {
+      "id": "WW-565",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Straight Angle",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Straight Angle Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Straight-Angle-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COA1-16943764"
+    },
+    {
+      "id": "WW-566",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Midpoint",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Midpoint Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Midpoint-Word-Wall-Card-Geometry-Segments-Vocabulary-Poster-HSG-COA1-16943738"
+    },
+    {
+      "id": "WW-567",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Segment Bisector",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Segment Bisector Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Segment-Bisector-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COA1-16943717"
+    },
+    {
+      "id": "WW-568",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Angle Bisector",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Angle Bisector Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Angle-Bisector-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COA1-16943720"
+    },
+    {
+      "id": "WW-569",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Congruent Segments",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Congruent Segments Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Congruent-Segments-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COA1-16943718"
+    },
+    {
+      "id": "WW-570",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Congruent Angles",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Congruent Angles Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Congruent-Angles-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COA1-16943769"
+    },
+    {
+      "id": "WW-571",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Complementary Angles",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Complementary Angles Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Complementary-Angles-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-COA1-16943771"
+    },
+    {
+      "id": "WW-572",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Supplementary Angles",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Supplementary Angles Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Supplementary-Angles-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-COA1-16943774"
+    },
+    {
+      "id": "WW-573",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Vertical Angles",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Vertical Angles Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Vertical-Angles-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COA1-16943747"
+    },
+    {
+      "id": "WW-574",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Adjacent Angles",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Adjacent Angles Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Adjacent-Angles-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COA1-16943722"
+    },
+    {
+      "id": "WW-575",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Linear Pair",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Linear Pair Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Linear-Pair-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COA1-16943725"
+    },
+    {
+      "id": "WW-576",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Perpendicular",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.1",
+      "full_title": "Perpendicular Word Wall Card | Geometry | HSG-CO.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Perpendicular-Word-Wall-Card-Geometry-Lines-and-Angles-Vocabulary-HSG-COA1-16943779"
+    },
+    {
+      "id": "WW-577",
+      "grade": "Geometry",
+      "strand": "Parallel Lines & Angle Pairs",
+      "term": "Parallel Lines",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.9",
+      "full_title": "Parallel Lines Word Wall Card | Geometry | HSG-CO.C.9",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Parallel-Lines-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COC9-16944412"
+    },
+    {
+      "id": "WW-578",
+      "grade": "Geometry",
+      "strand": "Parallel Lines & Angle Pairs",
+      "term": "Transversal",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.9",
+      "full_title": "Transversal Word Wall Card | Geometry | HSG-CO.C.9",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Transversal-Word-Wall-Card-Geometry-Parallel-Lines-Vocabulary-HSG-COC9-16944418"
+    },
+    {
+      "id": "WW-579",
+      "grade": "Geometry",
+      "strand": "Parallel Lines & Angle Pairs",
+      "term": "Corresponding Angles",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.9",
+      "full_title": "Corresponding Angles Word Wall Card | Geometry | HSG-CO.C.9",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Corresponding-Angles-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-COC9-16944423"
+    },
+    {
+      "id": "WW-580",
+      "grade": "Geometry",
+      "strand": "Parallel Lines & Angle Pairs",
+      "term": "Alternate Interior Angles",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.9",
+      "full_title": "Alternate Interior Angles Word Wall Card | Geometry | HSG-CO.C.9",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Alternate-Interior-Angles-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-COC9-16944430"
+    },
+    {
+      "id": "WW-581",
+      "grade": "Geometry",
+      "strand": "Parallel Lines & Angle Pairs",
+      "term": "Alternate Exterior Angles",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.9",
+      "full_title": "Alternate Exterior Angles Word Wall Card | Geometry | HSG-CO.C.9",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Alternate-Exterior-Angles-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-COC9-16944434"
+    },
+    {
+      "id": "WW-582",
+      "grade": "Geometry",
+      "strand": "Parallel Lines & Angle Pairs",
+      "term": "Co-Interior Angles",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.9",
+      "full_title": "Co-Interior Angles Word Wall Card | Geometry | HSG-CO.C.9",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Co-Interior-Angles-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COC9-16944448"
+    },
+    {
+      "id": "WW-583",
+      "grade": "Geometry",
+      "strand": "Parallel Lines & Angle Pairs",
+      "term": "Perpendicular Lines",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.9",
+      "full_title": "Perpendicular Lines Word Wall Card | Geometry | HSG-CO.C.9",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Perpendicular-Lines-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-COC9-16944451"
+    },
+    {
+      "id": "WW-584",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "Scalene Triangle",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.10",
+      "full_title": "Scalene Triangle Word Wall Card | Geometry | HSG-CO.C.10",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Scalene-Triangle-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COC10-16944647"
+    },
+    {
+      "id": "WW-585",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "Isosceles Triangle",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.10",
+      "full_title": "Isosceles Triangle Word Wall Card | Geometry | HSG-CO.C.10",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Isosceles-Triangle-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-COC10-16944662"
+    },
+    {
+      "id": "WW-586",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "Equilateral Triangle",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.10",
+      "full_title": "Equilateral Triangle Word Wall Card | Geometry | HSG-CO.C.10",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Equilateral-Triangle-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-COC10-16944788"
+    },
+    {
+      "id": "WW-587",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "Triangle Angle Sum",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.10",
+      "full_title": "Triangle Angle Sum Word Wall Card | Geometry | HSG-CO.C.10",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Triangle-Angle-Sum-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-COC10-16945025"
+    },
+    {
+      "id": "WW-588",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "Exterior Angle Theorem",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.10",
+      "full_title": "Exterior Angle Theorem Word Wall Card | Geometry | HSG-CO.C.10",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Exterior-Angle-Theorem-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-COC10-16945033"
+    },
+    {
+      "id": "WW-589",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "SSS Congruence",
+      "kind": "Card",
+      "ccss": "HSG-SRT.B.5",
+      "full_title": "SSS Congruence Word Wall Card | Geometry | HSG-SRT.B.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/SSS-Congruence-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-SRTB5-16945037"
+    },
+    {
+      "id": "WW-590",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "SAS Congruence",
+      "kind": "Card",
+      "ccss": "HSG-SRT.B.5",
+      "full_title": "SAS Congruence Word Wall Card | Geometry | HSG-SRT.B.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/SAS-Congruence-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-SRTB5-16945106"
+    },
+    {
+      "id": "WW-591",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "ASA Congruence",
+      "kind": "Card",
+      "ccss": "HSG-SRT.B.5",
+      "full_title": "ASA Congruence Word Wall Card | Geometry | HSG-SRT.B.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/ASA-Congruence-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-SRTB5-16945114"
+    },
+    {
+      "id": "WW-592",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "AAS Congruence",
+      "kind": "Card",
+      "ccss": "HSG-SRT.B.5",
+      "full_title": "AAS Congruence Word Wall Card | Geometry | HSG-SRT.B.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/AAS-Congruence-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-SRTB5-16945059"
+    },
+    {
+      "id": "WW-593",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "HL Congruence",
+      "kind": "Card",
+      "ccss": "HSG-SRT.B.5",
+      "full_title": "HL Congruence Word Wall Card | Geometry | HSG-SRT.B.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/HL-Congruence-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-SRTB5-16945064"
+    },
+    {
+      "id": "WW-594",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "CPCTC",
+      "kind": "Card",
+      "ccss": "HSG-SRT.B.5",
+      "full_title": "CPCTC Word Wall Card | Geometry | HSG-SRT.B.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/CPCTC-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-SRTB5-16945066"
+    },
+    {
+      "id": "WW-595",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "Median of a Triangle",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.10",
+      "full_title": "Median of a Triangle Word Wall Card | Geometry | HSG-CO.C.10",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Median-of-a-Triangle-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-COC10-16945074"
+    },
+    {
+      "id": "WW-596",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "Altitude of a Triangle",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.10",
+      "full_title": "Altitude of a Triangle Word Wall Card | Geometry | HSG-CO.C.10",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Altitude-of-a-Triangle-Word-Wall-Geometry-Triangles-Vocabulary-HSG-COC10-16945118"
+    },
+    {
+      "id": "WW-597",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "Midsegment",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.10",
+      "full_title": "Midsegment Word Wall Card | Geometry | HSG-CO.C.10",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Midsegment-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COC10-16945121"
+    },
+    {
+      "id": "WW-598",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "Centroid",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.10",
+      "full_title": "Centroid Word Wall Card | Geometry | HSG-CO.C.10",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Centroid-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COC10-16945095"
+    },
+    {
+      "id": "WW-599",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "Circumcenter",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.10",
+      "full_title": "Circumcenter Word Wall Card | Geometry | HSG-CO.C.10",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Circumcenter-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COC10-16945102"
+    },
+    {
+      "id": "WW-600",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "Incenter",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.10",
+      "full_title": "Incenter Word Wall Card | Geometry | HSG-CO.C.10",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Incenter-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COC10-16945104"
+    },
+    {
+      "id": "WW-601",
+      "grade": "Geometry",
+      "strand": "Similarity & Right Triangles",
+      "term": "Similar Figures",
+      "kind": "Card",
+      "ccss": "HSG-SRT.A.2",
+      "full_title": "Similar Figures Word Wall Card | Geometry | HSG-SRT.A.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Similar-Figures-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-SRTA2-16945508"
+    },
+    {
+      "id": "WW-602",
+      "grade": "Geometry",
+      "strand": "Similarity & Right Triangles",
+      "term": "Scale Factor",
+      "kind": "Card",
+      "ccss": "HSG-SRT.A.2",
+      "full_title": "Scale Factor Word Wall Card | Geometry | HSG-SRT.A.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Scale-Factor-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-SRTA2-16945514"
+    },
+    {
+      "id": "WW-603",
+      "grade": "Geometry",
+      "strand": "Similarity & Right Triangles",
+      "term": "AA Similarity",
+      "kind": "Card",
+      "ccss": "HSG-SRT.A.3",
+      "full_title": "AA Similarity Word Wall Card | Geometry | HSG-SRT.A.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/AA-Similarity-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-SRTA3-16945518"
+    },
+    {
+      "id": "WW-604",
+      "grade": "Geometry",
+      "strand": "Similarity & Right Triangles",
+      "term": "Pythagorean Theorem",
+      "kind": "Card",
+      "ccss": "HSG-SRT.C.8",
+      "full_title": "Pythagorean Theorem Word Wall Card | Geometry | HSG-SRT.C.8",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Pythagorean-Theorem-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-SRTC8-16945525"
+    },
+    {
+      "id": "WW-605",
+      "grade": "Geometry",
+      "strand": "Similarity & Right Triangles",
+      "term": "Hypotenuse",
+      "kind": "Card",
+      "ccss": "HSG-SRT.C.8",
+      "full_title": "Hypotenuse Word Wall Card | Geometry | HSG-SRT.C.8",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Hypotenuse-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-SRTC8-16945526"
+    },
+    {
+      "id": "WW-606",
+      "grade": "Geometry",
+      "strand": "Similarity & Right Triangles",
+      "term": "Leg",
+      "kind": "Card",
+      "ccss": "HSG-SRT.C.8",
+      "full_title": "Leg Word Wall Card | Geometry | HSG-SRT.C.8",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Leg-Word-Wall-Card-Geometry-Right-Triangles-Vocabulary-Poster-HSG-SRTC8-16945535"
+    },
+    {
+      "id": "WW-607",
+      "grade": "Geometry",
+      "strand": "Similarity & Right Triangles",
+      "term": "45-45-90 Triangle",
+      "kind": "Card",
+      "ccss": "HSG-SRT.C.8",
+      "full_title": "45-45-90 Triangle Word Wall Card | Geometry | HSG-SRT.C.8",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/45-45-90-Triangle-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-SRTC8-16945541"
+    },
+    {
+      "id": "WW-608",
+      "grade": "Geometry",
+      "strand": "Similarity & Right Triangles",
+      "term": "30-60-90 Triangle",
+      "kind": "Card",
+      "ccss": "HSG-SRT.C.8",
+      "full_title": "30-60-90 Triangle Word Wall Card | Geometry | HSG-SRT.C.8",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/30-60-90-Triangle-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-SRTC8-16945539"
+    },
+    {
+      "id": "WW-609",
+      "grade": "Geometry",
+      "strand": "Similarity & Right Triangles",
+      "term": "Sine",
+      "kind": "Card",
+      "ccss": "HSG-SRT.C.8",
+      "full_title": "Sine Word Wall Card | Geometry | HSG-SRT.C.8",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Sine-Word-Wall-Card-Geometry-Right-Triangle-Trig-Vocabulary-HSG-SRTC8-16945542"
+    },
+    {
+      "id": "WW-610",
+      "grade": "Geometry",
+      "strand": "Similarity & Right Triangles",
+      "term": "Cosine",
+      "kind": "Card",
+      "ccss": "HSG-SRT.C.8",
+      "full_title": "Cosine Word Wall Card | Geometry | HSG-SRT.C.8",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Cosine-Word-Wall-Card-Geometry-Right-Triangle-Trig-Vocabulary-HSG-SRTC8-16945544"
+    },
+    {
+      "id": "WW-611",
+      "grade": "Geometry",
+      "strand": "Similarity & Right Triangles",
+      "term": "Tangent (Trigonometry)",
+      "kind": "Card",
+      "ccss": "HSG-SRT.C.8",
+      "full_title": "Tangent (Trigonometry) Word Wall Card | Geometry | HSG-SRT.C.8",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Tangent-Word-Wall-Card-Geometry-Right-Triangle-Trig-Vocabulary-HSG-SRTC8-16945546"
+    },
+    {
+      "id": "WW-612",
+      "grade": "Geometry",
+      "strand": "Similarity & Right Triangles",
+      "term": "Angle of Elevation",
+      "kind": "Card",
+      "ccss": "HSG-SRT.C.8",
+      "full_title": "Angle of Elevation Word Wall Card | Geometry | HSG-SRT.C.8",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Angle-of-Elevation-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-SRTC8-16945553"
+    },
+    {
+      "id": "WW-613",
+      "grade": "Geometry",
+      "strand": "Quadrilaterals & Polygons",
+      "term": "Parallelogram",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.11",
+      "full_title": "Parallelogram Word Wall Card | Geometry | HSG-CO.C.11",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Parallelogram-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COC11-16945764"
+    },
+    {
+      "id": "WW-614",
+      "grade": "Geometry",
+      "strand": "Quadrilaterals & Polygons",
+      "term": "Rectangle",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.11",
+      "full_title": "Rectangle Word Wall Card | Geometry | HSG-CO.C.11",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Rectangle-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COC11-16946015"
+    },
+    {
+      "id": "WW-615",
+      "grade": "Geometry",
+      "strand": "Quadrilaterals & Polygons",
+      "term": "Rhombus",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.11",
+      "full_title": "Rhombus Word Wall Card | Geometry | HSG-CO.C.11",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Rhombus-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COC11-16946019"
+    },
+    {
+      "id": "WW-616",
+      "grade": "Geometry",
+      "strand": "Quadrilaterals & Polygons",
+      "term": "Square",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.11",
+      "full_title": "Square Word Wall Card | Geometry | HSG-CO.C.11",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Square-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COC11-16946073"
+    },
+    {
+      "id": "WW-617",
+      "grade": "Geometry",
+      "strand": "Quadrilaterals & Polygons",
+      "term": "Trapezoid",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.11",
+      "full_title": "Trapezoid Word Wall Card | Geometry | HSG-CO.C.11",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Trapezoid-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COC11-16946081"
+    },
+    {
+      "id": "WW-618",
+      "grade": "Geometry",
+      "strand": "Quadrilaterals & Polygons",
+      "term": "Kite",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.11",
+      "full_title": "Kite Word Wall Card | Geometry | HSG-CO.C.11",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Kite-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COC11-16946029"
+    },
+    {
+      "id": "WW-619",
+      "grade": "Geometry",
+      "strand": "Quadrilaterals & Polygons",
+      "term": "Polygon",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.11",
+      "full_title": "Polygon Word Wall Card | Geometry | HSG-CO.C.11",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Polygon-Word-Wall-Card-Geometry-Polygons-Vocabulary-Poster-HSG-COC11-16946036"
+    },
+    {
+      "id": "WW-620",
+      "grade": "Geometry",
+      "strand": "Quadrilaterals & Polygons",
+      "term": "Regular Polygon",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.11",
+      "full_title": "Regular Polygon Word Wall Card | Geometry | HSG-CO.C.11",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Regular-Polygon-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COC11-16946043"
+    },
+    {
+      "id": "WW-621",
+      "grade": "Geometry",
+      "strand": "Quadrilaterals & Polygons",
+      "term": "Interior Angle Sum",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.11",
+      "full_title": "Interior Angle Sum Word Wall Card | Geometry | HSG-CO.C.11",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Interior-Angle-Sum-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-COC11-16946049"
+    },
+    {
+      "id": "WW-622",
+      "grade": "Geometry",
+      "strand": "Quadrilaterals & Polygons",
+      "term": "Exterior Angle Sum",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.11",
+      "full_title": "Exterior Angle Sum Word Wall Card | Geometry | HSG-CO.C.11",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Exterior-Angle-Sum-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-COC11-16946053"
+    },
+    {
+      "id": "WW-623",
+      "grade": "Geometry",
+      "strand": "Quadrilaterals & Polygons",
+      "term": "Diagonal",
+      "kind": "Card",
+      "ccss": "HSG-CO.C.11",
+      "full_title": "Diagonal Word Wall Card | Geometry | HSG-CO.C.11",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Diagonal-Word-Wall-Card-Geometry-Polygons-Vocabulary-Poster-HSG-COC11-16946064"
+    },
+    {
+      "id": "WW-624",
+      "grade": "Geometry",
+      "strand": "Transformations",
+      "term": "Translation",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.5",
+      "full_title": "Translation Word Wall Card | Geometry | HSG-CO.A.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Translation-Word-Wall-Card-Geometry-Transformations-Vocabulary-HSG-COA5-16946534"
+    },
+    {
+      "id": "WW-625",
+      "grade": "Geometry",
+      "strand": "Transformations",
+      "term": "Reflection",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.5",
+      "full_title": "Reflection Word Wall Card | Geometry | HSG-CO.A.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Reflection-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COA5-16946536"
+    },
+    {
+      "id": "WW-626",
+      "grade": "Geometry",
+      "strand": "Transformations",
+      "term": "Rotation",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.5",
+      "full_title": "Rotation Word Wall Card | Geometry | HSG-CO.A.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Rotation-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COA5-16946538"
+    },
+    {
+      "id": "WW-627",
+      "grade": "Geometry",
+      "strand": "Transformations",
+      "term": "Dilation",
+      "kind": "Card",
+      "ccss": "HSG-SRT.A.1",
+      "full_title": "Dilation Word Wall Card | Geometry | HSG-SRT.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Dilation-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-SRTA1-16946539"
+    },
+    {
+      "id": "WW-628",
+      "grade": "Geometry",
+      "strand": "Transformations",
+      "term": "Rigid Motion",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.2",
+      "full_title": "Rigid Motion Word Wall Card | Geometry | HSG-CO.A.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Rigid-Motion-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COA2-16946542"
+    },
+    {
+      "id": "WW-629",
+      "grade": "Geometry",
+      "strand": "Transformations",
+      "term": "Pre-Image and Image",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.2",
+      "full_title": "Pre-Image and Image Word Wall Card | Geometry | HSG-CO.A.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Pre-Image-and-Image-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-COA2-16946543"
+    },
+    {
+      "id": "WW-630",
+      "grade": "Geometry",
+      "strand": "Transformations",
+      "term": "Line of Symmetry",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.3",
+      "full_title": "Line of Symmetry Word Wall Card | Geometry | HSG-CO.A.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Line-of-Symmetry-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COA3-16946549"
+    },
+    {
+      "id": "WW-631",
+      "grade": "Geometry",
+      "strand": "Transformations",
+      "term": "Rotational Symmetry",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.3",
+      "full_title": "Rotational Symmetry Word Wall Card | Geometry | HSG-CO.A.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Rotational-Symmetry-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-COA3-16946547"
+    },
+    {
+      "id": "WW-632",
+      "grade": "Geometry",
+      "strand": "Transformations",
+      "term": "Composition of Transformations",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.5",
+      "full_title": "Composition of Transformations Word Wall Card | Geometry | HSG-CO.A.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Composition-of-Transformations-Word-Wall-Geometry-Math-Vocabulary-HSG-COA5-16946552"
+    },
+    {
+      "id": "WW-633",
+      "grade": "Geometry",
+      "strand": "Transformations",
+      "term": "Center of Rotation",
+      "kind": "Card",
+      "ccss": "HSG-CO.A.5",
+      "full_title": "Center of Rotation Word Wall Card | Geometry | HSG-CO.A.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Center-of-Rotation-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-COA5-16946550"
+    },
+    {
+      "id": "WW-634",
+      "grade": "Geometry",
+      "strand": "Circles",
+      "term": "Radius",
+      "kind": "Card",
+      "ccss": "HSG-C.A.2",
+      "full_title": "Radius Word Wall Card | Geometry | HSG-C.A.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Radius-Word-Wall-Card-Geometry-Circles-Vocabulary-Poster-HSG-CA2-16948922"
+    },
+    {
+      "id": "WW-635",
+      "grade": "Geometry",
+      "strand": "Circles",
+      "term": "Diameter",
+      "kind": "Card",
+      "ccss": "HSG-C.A.2",
+      "full_title": "Diameter Word Wall Card | Geometry | HSG-C.A.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Diameter-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-CA2-16948927"
+    },
+    {
+      "id": "WW-636",
+      "grade": "Geometry",
+      "strand": "Circles",
+      "term": "Chord",
+      "kind": "Card",
+      "ccss": "HSG-C.A.2",
+      "full_title": "Chord Word Wall Card | Geometry | HSG-C.A.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Chord-Word-Wall-Card-Geometry-Circles-Vocabulary-Poster-HSG-CA2-16948930"
+    },
+    {
+      "id": "WW-637",
+      "grade": "Geometry",
+      "strand": "Circles",
+      "term": "Secant",
+      "kind": "Card",
+      "ccss": "HSG-C.A.2",
+      "full_title": "Secant Word Wall Card | Geometry | HSG-C.A.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Secant-Word-Wall-Card-Geometry-Circles-Vocabulary-Poster-HSG-CA2-16948932"
+    },
+    {
+      "id": "WW-638",
+      "grade": "Geometry",
+      "strand": "Circles",
+      "term": "Tangent (Circle)",
+      "kind": "Card",
+      "ccss": "HSG-C.A.2",
+      "full_title": "Tangent (Circle) Word Wall Card | Geometry | HSG-C.A.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Tangent-Word-Wall-Card-Geometry-Circles-Vocabulary-Poster-HSG-CA2-16948934"
+    },
+    {
+      "id": "WW-639",
+      "grade": "Geometry",
+      "strand": "Circles",
+      "term": "Central Angle",
+      "kind": "Card",
+      "ccss": "HSG-C.A.2",
+      "full_title": "Central Angle Word Wall Card | Geometry | HSG-C.A.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Central-Angle-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-CA2-16948937"
+    },
+    {
+      "id": "WW-640",
+      "grade": "Geometry",
+      "strand": "Circles",
+      "term": "Inscribed Angle",
+      "kind": "Card",
+      "ccss": "HSG-C.A.2",
+      "full_title": "Inscribed Angle Word Wall Card | Geometry | HSG-C.A.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Inscribed-Angle-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-CA2-16948942"
+    },
+    {
+      "id": "WW-641",
+      "grade": "Geometry",
+      "strand": "Circles",
+      "term": "Arc",
+      "kind": "Card",
+      "ccss": "HSG-C.A.2",
+      "full_title": "Arc Word Wall Card | Geometry | HSG-C.A.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Arc-Word-Wall-Card-Geometry-Circles-Vocabulary-Poster-HSG-CA2-16948953"
+    },
+    {
+      "id": "WW-642",
+      "grade": "Geometry",
+      "strand": "Circles",
+      "term": "Minor and Major Arc",
+      "kind": "Card",
+      "ccss": "HSG-C.A.2",
+      "full_title": "Minor and Major Arc Word Wall Card | Geometry | HSG-C.A.2",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Minor-and-Major-Arc-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-CA2-16948955"
+    },
+    {
+      "id": "WW-643",
+      "grade": "Geometry",
+      "strand": "Circles",
+      "term": "Arc Length",
+      "kind": "Card",
+      "ccss": "HSG-C.B.5",
+      "full_title": "Arc Length Word Wall Card | Geometry | HSG-C.B.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Arc-Length-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-CB5-16948948"
+    },
+    {
+      "id": "WW-644",
+      "grade": "Geometry",
+      "strand": "Circles",
+      "term": "Sector",
+      "kind": "Card",
+      "ccss": "HSG-C.B.5",
+      "full_title": "Sector Word Wall Card | Geometry | HSG-C.B.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Sector-Word-Wall-Card-Geometry-Circles-Vocabulary-Poster-HSG-CB5-16948950"
+    },
+    {
+      "id": "WW-645",
+      "grade": "Geometry",
+      "strand": "Circles",
+      "term": "Equation of a Circle",
+      "kind": "Card",
+      "ccss": "HSG-GPE.A.1",
+      "full_title": "Equation of a Circle Word Wall Card | Geometry | HSG-GPE.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Equation-of-a-Circle-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-GPEA1-16948951"
+    },
+    {
+      "id": "WW-646",
+      "grade": "Geometry",
+      "strand": "Coordinate Geometry",
+      "term": "Distance Formula",
+      "kind": "Card",
+      "ccss": "HSG-GPE.B.7",
+      "full_title": "Distance Formula Word Wall Card | Geometry | HSG-GPE.B.7",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Distance-Formula-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-GPEB7-16949133"
+    },
+    {
+      "id": "WW-647",
+      "grade": "Geometry",
+      "strand": "Coordinate Geometry",
+      "term": "Midpoint Formula",
+      "kind": "Card",
+      "ccss": "HSG-GPE.B.6",
+      "full_title": "Midpoint Formula Word Wall Card | Geometry | HSG-GPE.B.6",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Midpoint-Formula-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-GPEB6-16949135"
+    },
+    {
+      "id": "WW-648",
+      "grade": "Geometry",
+      "strand": "Coordinate Geometry",
+      "term": "Slope",
+      "kind": "Card",
+      "ccss": "HSG-GPE.B.5",
+      "full_title": "Slope Word Wall Card | Geometry | HSG-GPE.B.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Slope-Word-Wall-Card-Geometry-Coordinate-Plane-Vocabulary-Poster-HSG-GPEB5-16949136"
+    },
+    {
+      "id": "WW-649",
+      "grade": "Geometry",
+      "strand": "Coordinate Geometry",
+      "term": "Parallel Slopes",
+      "kind": "Card",
+      "ccss": "HSG-GPE.B.5",
+      "full_title": "Parallel Slopes Word Wall Card | Geometry | HSG-GPE.B.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Parallel-Slopes-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-GPEB5-16949141"
+    },
+    {
+      "id": "WW-650",
+      "grade": "Geometry",
+      "strand": "Coordinate Geometry",
+      "term": "Perpendicular Slopes",
+      "kind": "Card",
+      "ccss": "HSG-GPE.B.5",
+      "full_title": "Perpendicular Slopes Word Wall Card | Geometry | HSG-GPE.B.5",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Perpendicular-Slopes-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-GPEB5-16949143"
+    },
+    {
+      "id": "WW-651",
+      "grade": "Geometry",
+      "strand": "Coordinate Geometry",
+      "term": "Partition a Segment",
+      "kind": "Card",
+      "ccss": "HSG-GPE.B.6",
+      "full_title": "Partition a Segment Word Wall Card | Geometry | HSG-GPE.B.6",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Partition-a-Segment-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-GPEB6-16949147"
+    },
+    {
+      "id": "WW-652",
+      "grade": "Geometry",
+      "strand": "Area, Surface Area & Volume",
+      "term": "Area",
+      "kind": "Card",
+      "ccss": "HSG-GMD.A.1",
+      "full_title": "Area Word Wall Card | Geometry | HSG-GMD.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Area-Word-Wall-Card-Geometry-Area-Vocabulary-Poster-HSG-GMDA1-16949371"
+    },
+    {
+      "id": "WW-653",
+      "grade": "Geometry",
+      "strand": "Area, Surface Area & Volume",
+      "term": "Perimeter",
+      "kind": "Card",
+      "ccss": "HSG-GMD.A.1",
+      "full_title": "Perimeter Word Wall Card | Geometry | HSG-GMD.A.1",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Perimeter-Word-Wall-Card-Geometry-Perimeter-Vocabulary-Poster-HSG-GMDA1-16949374"
+    },
+    {
+      "id": "WW-654",
+      "grade": "Geometry",
+      "strand": "Area, Surface Area & Volume",
+      "term": "Surface Area",
+      "kind": "Card",
+      "ccss": "HSG-GMD.A.3",
+      "full_title": "Surface Area Word Wall Card | Geometry | HSG-GMD.A.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Surface-Area-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-GMDA3-16949377"
+    },
+    {
+      "id": "WW-655",
+      "grade": "Geometry",
+      "strand": "Area, Surface Area & Volume",
+      "term": "Volume of a Prism",
+      "kind": "Card",
+      "ccss": "HSG-GMD.A.3",
+      "full_title": "Volume of a Prism Word Wall Card | Geometry | HSG-GMD.A.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Volume-of-a-Prism-Word-Wall-Card-Geometry-Volume-Vocabulary-HSG-GMDA3-16949379"
+    },
+    {
+      "id": "WW-656",
+      "grade": "Geometry",
+      "strand": "Area, Surface Area & Volume",
+      "term": "Volume of a Cylinder",
+      "kind": "Card",
+      "ccss": "HSG-GMD.A.3",
+      "full_title": "Volume of a Cylinder Word Wall Card | Geometry | HSG-GMD.A.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Volume-of-a-Cylinder-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-GMDA3-16949381"
+    },
+    {
+      "id": "WW-657",
+      "grade": "Geometry",
+      "strand": "Area, Surface Area & Volume",
+      "term": "Volume of a Pyramid",
+      "kind": "Card",
+      "ccss": "HSG-GMD.A.3",
+      "full_title": "Volume of a Pyramid Word Wall Card | Geometry | HSG-GMD.A.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Volume-of-a-Pyramid-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-GMDA3-16949384"
+    },
+    {
+      "id": "WW-658",
+      "grade": "Geometry",
+      "strand": "Area, Surface Area & Volume",
+      "term": "Volume of a Cone",
+      "kind": "Card",
+      "ccss": "HSG-GMD.A.3",
+      "full_title": "Volume of a Cone Word Wall Card | Geometry | HSG-GMD.A.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Volume-of-a-Cone-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-GMDA3-16949385"
+    },
+    {
+      "id": "WW-659",
+      "grade": "Geometry",
+      "strand": "Area, Surface Area & Volume",
+      "term": "Volume of a Sphere",
+      "kind": "Card",
+      "ccss": "HSG-GMD.A.3",
+      "full_title": "Volume of a Sphere Word Wall Card | Geometry | HSG-GMD.A.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Volume-of-a-Sphere-Word-Wall-Card-Geometry-Math-Vocabulary-HSG-GMDA3-16949386"
+    },
+    {
+      "id": "WW-660",
+      "grade": "Geometry",
+      "strand": "Area, Surface Area & Volume",
+      "term": "Cross-Section",
+      "kind": "Card",
+      "ccss": "HSG-GMD.B.4",
+      "full_title": "Cross-Section Word Wall Card | Geometry | HSG-GMD.B.4",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Cross-Section-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-GMDB4-16949388"
+    },
+    {
+      "id": "WW-661",
+      "grade": "Geometry",
+      "strand": "Area, Surface Area & Volume",
+      "term": "Lateral Area",
+      "kind": "Card",
+      "ccss": "HSG-GMD.A.3",
+      "full_title": "Lateral Area Word Wall Card | Geometry | HSG-GMD.A.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Lateral-Area-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-GMDA3-16949391"
+    },
+    {
+      "id": "WW-662",
+      "grade": "Geometry",
+      "strand": "Area, Surface Area & Volume",
+      "term": "Composite Solid",
+      "kind": "Card",
+      "ccss": "HSG-GMD.A.3",
+      "full_title": "Composite Solid Word Wall Card | Geometry | HSG-GMD.A.3",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Composite-Solid-Word-Wall-Card-Geometry-Math-Vocabulary-Poster-HSG-GMDA3-16949394"
+    },
+    {
+      "id": "WW-663",
+      "grade": "Geometry",
+      "strand": "Points, Lines & Angles",
+      "term": "Geometry Foundations: Points, Lines & Angles Word Wall Bundle",
+      "kind": "Bundle",
+      "ccss": null,
+      "full_title": "Geometry Foundations: Points, Lines & Angles Word Wall Bundle",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Geometry-Foundations-Points-Lines-Angles-Word-Wall-Bundle-16943878"
+    },
+    {
+      "id": "WW-664",
+      "grade": "Geometry",
+      "strand": "Parallel Lines & Angle Pairs",
+      "term": "Geometry Parallel Lines & Angle Pairs Word Wall Bundle",
+      "kind": "Bundle",
+      "ccss": null,
+      "full_title": "Geometry Parallel Lines & Angle Pairs Word Wall Bundle",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Geometry-Parallel-Lines-Angle-Pairs-Word-Wall-Bundle-16944468"
+    },
+    {
+      "id": "WW-665",
+      "grade": "Geometry",
+      "strand": "Triangles & Congruence",
+      "term": "Geometry Triangles & Congruence Word Wall Bundle",
+      "kind": "Bundle",
+      "ccss": null,
+      "full_title": "Geometry Triangles & Congruence Word Wall Bundle",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Geometry-Triangles-Congruence-Word-Wall-Bundle-16945166"
+    },
+    {
+      "id": "WW-666",
+      "grade": "Geometry",
+      "strand": "Similarity & Right Triangles",
+      "term": "Geometry Similarity & Right Triangles Word Wall Bundle",
+      "kind": "Bundle",
+      "ccss": null,
+      "full_title": "Geometry Similarity & Right Triangles Word Wall Bundle",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Geometry-Similarity-Right-Triangles-Word-Wall-Bundle-16945580"
+    },
+    {
+      "id": "WW-667",
+      "grade": "Geometry",
+      "strand": "Quadrilaterals & Polygons",
+      "term": "Geometry Quadrilaterals & Polygons Word Wall Bundle",
+      "kind": "Bundle",
+      "ccss": null,
+      "full_title": "Geometry Quadrilaterals & Polygons Word Wall Bundle",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Geometry-Quadrilaterals-Polygons-Word-Wall-Bundle-16946205"
+    },
+    {
+      "id": "WW-668",
+      "grade": "Geometry",
+      "strand": "Transformations",
+      "term": "Geometry Transformations Word Wall Bundle",
+      "kind": "Bundle",
+      "ccss": null,
+      "full_title": "Geometry Transformations Word Wall Bundle",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Geometry-Transformations-Word-Wall-Bundle-16946596"
+    },
+    {
+      "id": "WW-669",
+      "grade": "Geometry",
+      "strand": "Circles",
+      "term": "Geometry Circles Word Wall Bundle",
+      "kind": "Bundle",
+      "ccss": null,
+      "full_title": "Geometry Circles Word Wall Bundle",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Geometry-Circles-Word-Wall-Bundle-16948972"
+    },
+    {
+      "id": "WW-670",
+      "grade": "Geometry",
+      "strand": "Coordinate Geometry",
+      "term": "Geometry Coordinate Geometry Word Wall Bundle",
+      "kind": "Bundle",
+      "ccss": null,
+      "full_title": "Geometry Coordinate Geometry Word Wall Bundle",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Geometry-Coordinate-Geometry-Word-Wall-Bundle-16949155"
+    },
+    {
+      "id": "WW-671",
+      "grade": "Geometry",
+      "strand": "Area, Surface Area & Volume",
+      "term": "Geometry Area, Surface Area & Volume Word Wall Bundle",
+      "kind": "Bundle",
+      "ccss": null,
+      "full_title": "Geometry Area, Surface Area & Volume Word Wall Bundle",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Geometry-Area-Surface-Area-Volume-Word-Wall-Bundle-16949410"
+    },
+    {
+      "id": "WW-672",
+      "grade": "Geometry",
+      "strand": null,
+      "term": "Geometry Math Word Wall Bundle | 109 Vocabulary Cards Full Year CCSS",
+      "kind": "Bundle",
+      "ccss": null,
+      "full_title": "Geometry Math Word Wall Bundle | 109 Vocabulary Cards Full Year CCSS",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Geometry-Math-Word-Wall-Bundle-109-Vocabulary-Cards-Full-Year-CCSS-16949472"
     }
   ],
   "interactive_notebooks": [
