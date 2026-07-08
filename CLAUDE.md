@@ -36,7 +36,7 @@ Desktop fallback; both paths remain valid, Greg's choice per session.
 Greg — 25+ yr middle-school math teacher, sole operator of Math Class 678 (TPT storefront
 math-class-678). Building mathclass678.com as a branded catalog hub for the 103
 4-in-1 Skill Sheets™ (Reference · Practice · Apply · Assess), grades 6–8 CCSS, plus a
-free math vocabulary glossary (Word Wall branch, grades 6–8 + Algebra 1) and a Kit-gated
+free math vocabulary glossary (Word Wall branch, grades 5–8 + Algebra 1 + Geometry) and a Kit-gated
 freebie funnel for growing the email list from external traffic.
 
 The site is a SHOWCASE + LINK-OUT hub. It sells nothing on-site. Every product button
@@ -147,20 +147,28 @@ These serve different traffic and are never cross-linked — see the locked deci
 ## Glossary / Word Wall content authority
 
 Four CSVs are the content ground truth for the Word Wall / glossary branch:
-`WordWall_Content_6th_MASTER.csv` · `WordWall_Content_7th_MASTER.csv` ·
-`WordWall_Content_8th_MASTER.csv` · `WordWall_Content_Algebra_MASTER.csv`.
+`WordWall_Content_5th_MASTER.csv` · `WordWall_Content_6th_MASTER.csv` ·
+`WordWall_Content_7th_MASTER.csv` · `WordWall_Content_8th_MASTER.csv` ·
+`WordWall_Content_Algebra_MASTER.csv` · `WordWall_Content_Geometry_MASTER.csv`.
 
-Status: content-complete and LIVE in code as of S12. The branch is built into
-`build_site.js` and shipped — this is deployed doctrine, not a pending decision.
+Status: content-complete and LIVE in code — 6th/7th/8th/Algebra shipped S12, and
+5th grade + Geometry wired in and shipped S14. All six branches are built into
+`build_site.js` and deployed — this is doctrine, not a pending decision.
 
-Counts: 6th grade 106 terms · 7th grade 110 terms · 8th grade 113 terms ·
-Algebra 1 98 terms · 427 terms total, each a unique, deduplicated, canonical
-glossary entry.
+Counts: 5th grade 67 terms · 6th grade 106 terms · 7th grade 110 terms ·
+8th grade 113 terms · Algebra 1 98 terms · Geometry 109 terms · 603 terms total,
+each a unique, deduplicated, canonical glossary entry. 5th (CCSS 5.NBT/5.NF/…) and
+Geometry (CCSS HSG-*) are CCSS-keyed like 6th–8th, but because the on-site catalog
+is grades 6–8 only, no skill sheets/standards/bundles match their standards — so
+their "Where this shows up" uses the product-light domain/topic-name fallback (the
+Algebra unit-name exception, generalized). Grade accents: 5th = forest (--forest),
+Geometry = slate (--slate) — added S14, never purple.
 
-Column schema (identical across all four files): `slug`, `term`, `grade`,
-`primary_ccss` (6th–8th only, blank for Algebra), `all_ccss` (6th–8th only, `;`-separated,
-blank for Algebra), `strand` (primary strand for 6th–8th, or the Algebra *unit* name —
-this is the Algebra join key, not a CCSS strand), `all_strands` (`;`-separated),
+Column schema (identical across all six files): `slug`, `term`, `grade`,
+`primary_ccss` (populated for 5th/6th/7th/8th/Geometry, blank for Algebra), `all_ccss`
+(same, `;`-separated), `strand` (primary strand for CCSS-keyed grades, the Geometry
+*topic* name, or the Algebra *unit* name — the join key for the product-light branches,
+not a CCSS strand), `all_strands` (`;`-separated),
 `merged` (YES if this canonical entry absorbed multiple source cards), `definition`,
 `example_1`, `example_2`, `key_rule`, `memory_hook`, `related_terms` (2–4 sibling slugs),
 `content_status` (DONE for every shipped row), `source_cards`.
@@ -195,14 +203,14 @@ Word Wall card image or PDF. The card's teaching content is read from the card a
 re-expressed as native brand-styled HTML/SVG; the card's polished, print-ready,
 four-format design remains the product a teacher buys on TPT.
 
-## Site structure (v1.5.1 — built S13)
+## Site structure (v1.6.0 — built S14)
 
 18 total pages that matter for your day-to-day work here, plus generated pages:
 `index.html`, `catalog.html`, `bundles.html`, `word-wall.html`, `free.html`,
 `about.html`, `contact.html`, `get-started.html`, `grade-6/7/8.html`, `404.html`.
 
 Generated from `build_site.js`: `/sheets/{slug}.html` (103) · `/bundles/{slug}.html` (30)
-· `/standards/{slug}.html` (93) · `/word-wall/{slug}.html` (427) · `/free/{slug}.html` (18,
+· `/standards/{slug}.html` (93) · `/word-wall/{slug}.html` (603) · `/free/{slug}.html` (18,
 external-traffic-only, not linked from nav or `/free.html`).
 
 Slug collision handling: two "Combining Like Terms" sheets (#19, #48), their matching
@@ -215,8 +223,15 @@ Positioning: not a product catalog — a free math glossary that happens to sell
 print-ready Word Wall cards. Individual term pages target long-tail search and are the
 single largest evergreen SEO surface on the site.
 
-Dual-key architecture: 6th–8th are CCSS-keyed (`glossaryByCcss`, many-to-many on
-`all_ccss`); Algebra is unit-keyed (`glossaryByUnit` on `strand`, 9 units).
+Dual-key architecture: 5th/6th/7th/8th/Geometry are CCSS-keyed (`glossaryByCcss`,
+many-to-many on `all_ccss`); Algebra is unit-keyed (`glossaryByUnit` on `strand`, 9
+units). 5th and Geometry (added S14) are CCSS-keyed but product-light: no 6–8 catalog
+product matches their standards, so their "Where this shows up" falls back to the
+domain (5th) / topic (Geometry) name rather than sheet/standard/bundle cross-links.
+`isCcssKeyed` is still literally `grade !== 'Algebra'` — Algebra is the only branch with
+no CCSS at all. Grade labels come from `glossGradeLabel()` ("Geometry" and "Algebra 1"
+are named; the rest are "Nth Grade"); accents in `GLOSSARY_ACCENT` (5th forest, 6th teal,
+7th coral, 8th navy, Algebra gold, Geometry slate).
 
 Four rendering spots — three built, one deferred: glossary term page itself (built,
 "Where this shows up" + related terms + cross-grade links), standards page retrofit
@@ -225,8 +240,11 @@ page retrofit ("Key terms in this bundle" — **deferred twice now for
 injection-risk/lower-value reasons; pick up only if Greg asks**).
 
 Schema: `DefinedTerm`/`DefinedTermSet` JSON-LD. Never ship a term page whose "Where this
-shows up" section is empty (Algebra's product-light unit-name variant is the intentional
-exception — it always shows at least the unit name).
+shows up" section is empty. The product-light variant is the general escape hatch: when no
+sheet/standard/bundle resolves, the page shows the unit/domain/topic name instead — Algebra
+(no CCSS at all), plus 5th and Geometry (CCSS but no matching 6–8 catalog product) all rely
+on this. The CCSS branch itself now carries the fallback, so any orphan 6–8 term is covered
+too. Never let a future edit drop the fallback and reintroduce an empty section.
 
 ## Freebie / Kit-gated funnel architecture (live, built S12; dedicated forms added S13)
 

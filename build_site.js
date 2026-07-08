@@ -2247,9 +2247,13 @@ Object.values(STANDARDS_CONTENT).forEach(s => { standardsMap[s.ccss] = s; });
    6th-8th key on CCSS (glossaryByCcss); Algebra keys on unit (glossaryByUnit).
    TPT card URLs + freebie URLs pulled from mc678_site_links.json (link authority).
    ============================================================================ */
-const GLOSSARY_FILES = { '6th':'WordWall_Content_6th_MASTER.csv','7th':'WordWall_Content_7th_MASTER.csv','8th':'WordWall_Content_8th_MASTER.csv','Algebra':'WordWall_Content_Algebra_MASTER.csv' };
-const GLOSSARY_GRADES = ['6th','7th','8th','Algebra'];
-const GLOSSARY_ACCENT = { '6th':'teal','7th':'coral','8th':'navy','Algebra':'gold' };
+const GLOSSARY_FILES = { '5th':'WordWall_Content_5th_MASTER.csv','6th':'WordWall_Content_6th_MASTER.csv','7th':'WordWall_Content_7th_MASTER.csv','8th':'WordWall_Content_8th_MASTER.csv','Algebra':'WordWall_Content_Algebra_MASTER.csv','Geometry':'WordWall_Content_Geometry_MASTER.csv' };
+const GLOSSARY_GRADES = ['5th','6th','7th','8th','Algebra','Geometry'];
+const GLOSSARY_ACCENT = { '5th':'forest','6th':'teal','7th':'coral','8th':'navy','Algebra':'gold','Geometry':'slate' };
+// Grade display helpers. 5th–8th read "Nth Grade"; Algebra/Geometry are named branches.
+// glossGroupNoun labels how each grade's terms are grouped on the hub ("organized by X").
+const glossGradeLabel = g => g==='Algebra' ? 'Algebra 1' : g==='Geometry' ? 'Geometry' : g + ' Grade';
+const glossGroupNoun  = g => g==='Algebra' ? 'unit' : g==='Geometry' ? 'topic' : 'domain';
 const normTerm = s => String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,'');
 const normTermBase = s => normTerm(String(s||'').replace(/\([^)]*\)/g,' '));
 
@@ -4239,7 +4243,7 @@ function pageWordWall(){
   const total = glossary.length;
   const gradeSection = g => {
     const terms = glossaryByGrade[g];
-    const label = g === 'Algebra' ? 'Algebra 1' : g + ' Grade';
+    const label = glossGradeLabel(g);
     const accent = GLOSSARY_ACCENT[g];
     let grouped;
     if (g === 'Algebra') {
@@ -4255,7 +4259,7 @@ function pageWordWall(){
       <div class="gloss-gradesec__head reveal">
         <span class="eyebrow eyebrow--${accent}">${esc(label)}</span>
         <h2>${esc(label)} vocabulary</h2>
-        <p>${terms.length} terms${g==='Algebra'?', organized by unit':', organized by domain'}. Each links to a full definition page with worked examples and the key rule.</p>
+        <p>${terms.length} terms, organized by ${glossGroupNoun(g)}. Each links to a full definition page with worked examples and the key rule.</p>
       </div>
       ${grouped.map(grp => `
       <div class="gloss-group">
@@ -4265,10 +4269,10 @@ function pageWordWall(){
     </div>
   </section>`;
   };
-  const switchLinks = GLOSSARY_GRADES.map(g => `<a class="gloss-switch__link gloss-switch__link--${GLOSSARY_ACCENT[g]}" href="#ww-${g.toLowerCase()}">${g==='Algebra'?'Algebra 1':g+' Grade'}</a>`).join('');
+  const switchLinks = GLOSSARY_GRADES.map(g => `<a class="gloss-switch__link gloss-switch__link--${GLOSSARY_ACCENT[g]}" href="#ww-${g.toLowerCase()}">${glossGradeLabel(g)}</a>`).join('');
   return head({
-    title:'Middle School & Algebra 1 Math Word Wall — Free Vocabulary Glossary | Math Class 678',
-    desc:`A free math vocabulary glossary for grades 6, 7, 8 and Algebra 1 \u2014 ${total} terms with student-friendly definitions, worked examples, and key rules. Printable Word Wall cards available on TPT.`,
+    title:'Grades 5–8, Algebra 1 & Geometry Math Word Wall — Free Vocabulary Glossary | Math Class 678',
+    desc:`A free math vocabulary glossary for grades 5\u20138, Algebra 1, and Geometry \u2014 ${total} terms with student-friendly definitions, worked examples, and key rules. Printable Word Wall cards available on TPT.`,
     path:'word-wall.html',
     jsonld: breadcrumbSchema([{name:'Home',url:'/'},{name:'Word Wall',url:'/word-wall.html'}])
   }) + nav('word-wall') + `
@@ -4280,7 +4284,7 @@ function pageWordWall(){
       <div class="gloss-hero__inner reveal">
         <span class="eyebrow" style="color:var(--gold-soft)">Free math glossary</span>
         <h1>The Math Class 678 Word Wall</h1>
-        <p>A free, searchable vocabulary reference for grades 6\u20138 and Algebra 1 \u2014 ${total} terms, each with a plain-language definition, two worked examples, and the one rule that matters. The polished, print-ready Word Wall cards for your classroom are available on Teachers Pay Teachers.</p>
+        <p>A free, searchable vocabulary reference for grades 5\u20138, Algebra 1, and Geometry \u2014 ${total} terms, each with a plain-language definition, two worked examples, and the one rule that matters. The polished, print-ready Word Wall cards for your classroom are available on Teachers Pay Teachers.</p>
         <div class="gloss-switch">${switchLinks}</div>
       </div>
     </div>
@@ -4312,14 +4316,14 @@ function definedTermJsonLd(t){
   const crumbs = { '@context':'https://schema.org','@type':'BreadcrumbList', itemListElement:[
     {'@type':'ListItem',position:1,name:'Home',item:SITE_URL+'/'},
     {'@type':'ListItem',position:2,name:'Word Wall',item:SITE_URL+'/word-wall.html'},
-    {'@type':'ListItem',position:3,name:(t.grade==='Algebra'?'Algebra 1':t.grade+' Grade'),item:SITE_URL+'/word-wall.html#ww-'+t.grade.toLowerCase()},
+    {'@type':'ListItem',position:3,name:glossGradeLabel(t.grade),item:SITE_URL+'/word-wall.html#ww-'+t.grade.toLowerCase()},
     {'@type':'ListItem',position:4,name:t.term,item:canonical}
   ]};
   return JSON.stringify([dt,crumbs]).replace(/</g,'\\u003c');
 }
 
 function pageGlossaryTerm(t){
-  const gLabel = t.grade === 'Algebra' ? 'Algebra 1' : t.grade + ' Grade';
+  const gLabel = glossGradeLabel(t.grade);
   const eyebrowUnit = t.grade === 'Algebra' ? t.strand : (STRAND_NAME[t.strand] || t.strand || '');
   // WHERE THIS SHOWS UP
   let whereHtml = '';
@@ -4337,7 +4341,16 @@ function pageGlossaryTerm(t){
     if (stdLinks.length)   blocks.push(`<div class="gloss-where__grp"><h3>Standard</h3><div class="gloss-where__chips">${[...new Set(stdLinks)].join('')}</div></div>`);
     if (sheetLinks.length) blocks.push(`<div class="gloss-where__grp"><h3>Skill sheets</h3><div class="gloss-where__chips">${[...new Set(sheetLinks)].join('')}</div></div>`);
     if (bundleLinks.length)blocks.push(`<div class="gloss-where__grp"><h3>In these bundles</h3><div class="gloss-where__chips">${[...new Set(bundleLinks)].join('')}</div></div>`);
-    if (blocks.length) whereHtml = `<div class="gloss-side-block"><h2 class="gloss-side-block__title">Where this shows up</h2>${blocks.join('')}</div>`;
+    if (blocks.length) {
+      whereHtml = `<div class="gloss-side-block"><h2 class="gloss-side-block__title">Where this shows up</h2>${blocks.join('')}</div>`;
+    } else {
+      // Product-light fallback (5th, Geometry — no 6–8 catalog products for these standards):
+      // show the domain/topic name so the section is never empty. Generalizes the Algebra exception.
+      const unitName = STRAND_NAME[t.strand] || t.strand || '';
+      const whereHead = t.grade === 'Geometry' ? 'Geometry topic' : t.grade + ' domain';
+      if (unitName) whereHtml = `<div class="gloss-side-block"><h2 class="gloss-side-block__title">Where this shows up</h2>
+        <div class="gloss-where__grp"><h3>${esc(whereHead)}</h3><p class="gloss-where__unit">${esc(unitName)}</p></div></div>`;
+    }
   } else {
     whereHtml = `<div class="gloss-side-block"><h2 class="gloss-side-block__title">Where this shows up</h2>
       <div class="gloss-where__grp"><h3>Algebra 1 unit</h3><p class="gloss-where__unit">${esc(t.strand)}</p></div></div>`;
