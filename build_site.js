@@ -4946,8 +4946,33 @@ ${main.concat(ilearnUrls, bundleUrls, sheets, standardUrls, glossaryUrls, freebi
 </urlset>`;
 }
 const robots = `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`;
-// Netlify SPA-style fallback not needed (multipage); but ship a redirect for clean 404
-const netlifyToml = `[[redirects]]\n  from = "/*"\n  status = 404\n  to = "/404.html"\n`;
+// Community group vanity link + clean 404. /join MUST come before the /* catch-all
+// (first match wins within the file), so it is not swallowed by the 404 rule.
+// mathclass678.com/join -> the Skool group; the destination lives ONLY here, so
+// the store banner, product PDF back pages, email footer and socials bio all point
+// at /join and never need reissuing if the group ever moves.
+const SKOOL_JOIN_URL = 'https://www.skool.com/math-class-678-2701';
+const netlifyToml = `[[redirects]]
+  from = "/join"
+  to = "${SKOOL_JOIN_URL}"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/join/*"
+  to = "${SKOOL_JOIN_URL}"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  status = 404
+  to = "/404.html"
+`;
+// Belt-and-suspenders: a _redirects file in the publish dir is the canonical
+// Netlify redirect source and is always read. No catch-all here (404s are served
+// automatically), so /join has nothing to compete with.
+const netlifyRedirects = `/join      ${SKOOL_JOIN_URL}   301!\n/join/*    ${SKOOL_JOIN_URL}   301!\n`;
 
 /* ============================================================================
    write everything
@@ -5082,6 +5107,7 @@ write('assets/images/thumbs/.gitkeep', '# Drop product thumbnails here.\n# Web n
 write('robots.txt', robots);
 write('sitemap.xml', sitemap());
 write('netlify.toml', netlifyToml);
+write('_redirects', netlifyRedirects);
 
 /* expected thumbnail filenames manifest — marks which slots still need art */
 const manifest = products.map(p => {
