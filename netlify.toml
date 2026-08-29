@@ -8,3 +8,23 @@
 
 [build.environment]
   NODE_VERSION = "18"
+
+# --- Community group vanity link -------------------------------------------
+# mathclass678.com/join -> the Skool community, as a host-level 301 so it passes
+# link equity, has no redirect flash, and is measurable in Netlify Analytics.
+# This is the ONLY place the raw group URL lives; everything public (store
+# banner, product PDF back pages, email footer, socials bio) points at /join,
+# so the destination can change here without reissuing a single asset.
+# Root netlify.toml is always read by Netlify; specific paths match before the
+# dist/netlify.toml catch-all, so /join wins.
+[[redirects]]
+  from = "/join"
+  to = "https://www.skool.com/math-class-678-2701"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/join/*"
+  to = "https://www.skool.com/math-class-678-2701"
+  status = 301
+  force = true
