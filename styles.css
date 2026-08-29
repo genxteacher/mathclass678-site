@@ -1418,9 +1418,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 /* ---- checkpoint cards ---- */
 .il-cp__list { display:flex; flex-direction:column; gap:1.1rem; margin-top:2rem; }
 .il-cp { background:var(--white); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); display:grid; grid-template-columns:212px 1fr; }
-.il-cp__cover { position:relative; background:var(--il-tint); border-right:1px solid var(--line); min-height:100%; }
+.il-cp__cover { position:relative; background:var(--il-tint); border-right:1px solid var(--line); overflow:hidden; display:flex; align-items:center; }
 .il-cp__cover::before { content:""; position:absolute; left:0; top:0; bottom:0; width:4px; background:var(--il); z-index:2; }
-.il-cp__cover img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center top; display:block; }
+.il-cp__cover img { display:block; width:100%; aspect-ratio:1/1; object-fit:cover; }
 .il-cp__body { padding:1.4rem 1.5rem; display:flex; flex-direction:column; gap:.75rem; min-width:0; }
 .il-cp__top { display:flex; align-items:baseline; gap:.75rem; flex-wrap:wrap; }
 .il-cp__tag { font-family:var(--mono); font-size:.7rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--il); }
@@ -1451,7 +1451,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .il-stds__all { margin:0; font-size:.86rem; color:var(--charcoal-soft); }
 @media (max-width:720px){
   .il-cp { grid-template-columns:1fr; }
-  .il-cp__cover { min-height:0; height:180px; border-right:none; border-bottom:1px solid var(--line); }
+  .il-cp__cover { border-right:none; border-bottom:1px solid var(--line); text-align:center; padding:1.1rem 0; }
+  .il-cp__cover img { width:auto; max-width:240px; aspect-ratio:1/1; margin:0 auto; border-radius:8px; }
   .il-cp__win { margin-left:0; }
 }
 
