@@ -2467,6 +2467,7 @@ function nav(active) {
     </a>
     <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navlinks"><span></span></button>
     <nav class="nav__links" id="navlinks" aria-label="Primary">
+      ${link('/ilearn.html', 'ILEARN', 'ilearn')}
       ${link('/catalog.html', 'Catalog', 'catalog')}
       ${link('/bundles.html', 'Bundles', 'bundles')}
       ${link('/word-wall.html', 'Word Wall', 'word-wall')}
@@ -2549,6 +2550,7 @@ function footer(opts) {
       <div>
         <h4>Browse</h4>
         <ul class="footer__links">
+          <li><a href="/ilearn.html">Indiana ILEARN</a></li>
           <li><a href="/catalog.html">All Skill Sheets</a></li>
           <li><a href="/bundles.html">Bundles</a></li>
           <li><a href="/grade-6.html">6th Grade</a></li>
@@ -2844,6 +2846,18 @@ function pageHome() {
     }, ...ratingSchema]).replace(/</g, '\\u003c')
   }) + nav('home') + `
 <main id="main">
+  <aside class="il-homebanner" aria-label="Indiana ILEARN state testing">
+    <a class="il-homebanner__link" href="/ilearn.html">
+      <div class="wrap il-homebanner__in">
+        <span class="il-homebanner__flag">Flagship &middot; State testing</span>
+        <div class="il-homebanner__copy">
+          <strong>Indiana ILEARN Math, grades 3&ndash;8</strong>
+          <span>Checkpoint &amp; summative practice built to the Indiana Academic Standards &mdash; worked keys, item analysis, and a reteach cycle for every checkpoint.</span>
+        </div>
+        <span class="il-homebanner__cta">Explore ILEARN ${ICON.arrow}</span>
+      </div>
+    </a>
+  </aside>
   <!-- HERO -->
   <section class="hero">
     <div class="hero__bg">${SVG.heroBg}</div>
@@ -4503,8 +4517,416 @@ function pageFreebie(f){
 ` + footer() + scripts();
 }
 
+/* ============================================================================
+   INDIANA ILEARN — flagship state-testing branch (grades 3-8)
+   hub + 6 grade pages + 75 individual listing pages. Data: ilearn_data.json
+   (assembled from the state-testing project's catalog of record). All product
+   CTAs route to live TPT listings. Legal: not affiliated with IDOE (disclaimer
+   on every page).
+   ============================================================================ */
+const ILEARN = JSON.parse(fs.readFileSync(path.join(ROOT, 'ilearn_data.json'), 'utf8'));
+const IL_GRADES = ['3', '4', '5', '6', '7', '8'];
+const IL_SLOT_RANK = { cp1: 1, cp2: 2, cp3: 3, sum: 4, bundle: 5, 'cp1-intervention': 6, 'cp2-intervention': 7, 'cp3-intervention': 8, 'cp1-bundle': 9, 'cp2-bundle': 10, 'cp3-bundle': 11, 'complete-system': 12 };
+const ilByGrade = {};
+IL_GRADES.forEach(g => { ilByGrade[g] = ILEARN.listings.filter(r => String(r.grade) === g).sort((a, b) => (IL_SLOT_RANK[a.slot] || 99) - (IL_SLOT_RANK[b.slot] || 99)); });
+const ilBands = ILEARN.listings.filter(r => r.category === 'band-bundle');
+const ilBySlug = {}; ILEARN.listings.forEach(r => { ilBySlug[r.slug] = r; });
+const ilFind = (g, slot) => ilByGrade[String(g)].find(r => r.slot === slot);
+const ilBandFor = g => ilBands.find(b => b.grade === (Number(g) <= 5 ? 'band-3-5' : 'band-6-8'));
+const ilUrl = r => '/ilearn/' + r.slug + '.html';
+const ilImg = r => r.thumb ? `/assets/images/ilearn/${r.thumb}` : '';
+const ilMoney = n => '$' + Number(n).toFixed(2);
+const IL_SEASON = { cp1: 'Fall', cp2: 'Winter', cp3: 'Spring', sum: 'Year mock' };
+
+/* flat ordering for prev/next across every ILEARN listing page */
+const ilOrder = [];
+IL_GRADES.forEach(g => ilByGrade[g].forEach(r => ilOrder.push(r)));
+ilBands.forEach(b => ilOrder.push(b));
+const ilIndex = {}; ilOrder.forEach((r, i) => { ilIndex[r.slug] = i; });
+
+function ilStandardsList(item, opts) {
+  opts = opts || {};
+  const total = ILEARN.grades[String(item.grade)] ? ILEARN.grades[String(item.grade)].standards_total : (item.standards || []).length;
+  // compact strand summary — used for summative cards on grade pages (full list would be very long)
+  if (opts.summary && item.standards_all && item.standards && item.standards.length) {
+    const strands = [...new Set(item.standards.map(s => s.code.split('.').slice(0, 2).join('.')))];
+    return `<div class="il-stds"><div class="il-stds__h">Standards covered &middot; all ${total}</div>
+      <p class="il-stds__all">Every ${gradeOrdinal(String(item.grade))}-grade Indiana Academic Standard on the year&rsquo;s test &mdash; the full ${strands.map(s => `<span class="il-code">${esc(s)}</span>`).join(' ')} ${strands.length > 1 ? 'strands' : 'strand'}, including standards that appear only on the summative.</p></div>`;
+  }
+  if (item.standards_all && (!item.standards || !item.standards.length)) {
+    return `<div class="il-stds"><div class="il-stds__h">Standards covered &middot; all ${total}</div>
+      <p class="il-stds__all">Every ${gradeOrdinal(String(item.grade))}-grade Indiana Academic Standard on the year&rsquo;s test.</p></div>`;
+  }
+  if (!item.standards || !item.standards.length) return '';
+  const head2 = item.standards_all
+    ? `Standards covered &middot; all ${item.standards.length}`
+    : `Standards covered`;
+  return `<div class="il-stds"><div class="il-stds__h">${head2}</div>
+    <ul>${item.standards.map(s => `<li><span class="il-code">${esc(s.code)}</span> ${esc(s.title)}</li>`).join('')}</ul></div>`;
+}
+
+function ilCover(r, cls) {
+  const src = ilImg(r);
+  if (src) return `<div class="${cls}"><img src="${src}" alt="${esc(r.ord + ' Grade Indiana ILEARN Math ' + r.short + ' cover')}" loading="lazy" decoding="async"></div>`;
+  // fallback quadrant tile for band bundles / missing art
+  return `<div class="${cls} il-cover--tile" aria-hidden="true"><span class="il-tile__q il-tile__q--tl"></span><span class="il-tile__q il-tile__q--tr"></span><span class="il-tile__q il-tile__q--bl"></span><span class="il-tile__q il-tile__q--br"></span></div>`;
+}
+
+function ilTptBtn(r, label) {
+  return `<a class="btn btn--primary il-tpt" href="${r.url}" target="_blank" rel="noopener">${label || 'View on TPT'} ${ICON.ext}</a>`;
+}
+
+function ilDisclaimer() {
+  return `<section class="il-disclaimer"><div class="wrap"><p>${esc(ILEARN.disclaimer)}</p></div></section>`;
+}
+
+/* teacher FAQ — shared across ILEARN pages; also emitted as FAQPage JSON-LD */
+const IL_FAQ = [
+  { q: 'What is an ILEARN checkpoint?', a: 'Indiana’s ILEARN is a through-year assessment: students in grades 3–8 take three checkpoints across the school year plus a summative in the spring, in both math and ELA. Each checkpoint covers a specific set of standards for that part of the year. These practice sets mirror that structure, in the state’s own windows.' },
+  { q: 'Are these aligned to Indiana standards?', a: 'Yes. Every item is original, built to the 2023 Indiana Academic Standards and the published ILEARN checkpoint blueprint, and grouped by the exact standards each checkpoint assesses. Nothing is copied from the live test or borrowed from a generic national bank.' },
+  { q: 'Do I get answer keys?', a: 'Every item is fully worked out, not just given an answer letter, and each set includes an item analysis by standard — so once a packet is scored you can see which standards a student, or the whole class, still needs to work on.' },
+  { q: 'Can I use these for remediation, not just practice?', a: 'Yes. The Intervention & Reteach listings run a six-part cycle for every standard — teacher page, student reference, targeted practice, error analysis, exit ticket and a data sheet — and finish with fresh reassessment items that appear in no other resource.' },
+  { q: 'What’s the difference between a checkpoint, a bundle and the COMPLETE System?', a: 'A checkpoint is one practice test. A Checkpoint Bundle pairs that practice test with its matching reteach cycle at 20% off. The Full-Year Bundle is all four practice tests; the COMPLETE System is every practice test and every reteach cycle for the grade at 25% off.' },
+  { q: 'How are they delivered?', a: 'As print-and-go PDFs through Teachers Pay Teachers. Every button here opens the matching TPT listing, where you can see the full preview and download after purchase.' }
+];
+function ilFaqSection() {
+  return `<section class="section il-faq" id="faq">
+    <div class="wrap">
+      <div class="sec-head reveal"><div class="sec-head__t"><span class="eyebrow">Teacher questions</span><h2>What teachers ask first</h2></div></div>
+      <div class="il-faq__list">
+        ${IL_FAQ.map(f => `<details class="il-faq__item reveal"><summary>${esc(f.q)}</summary><div class="il-faq__a"><p>${esc(f.a)}</p></div></details>`).join('\n        ')}
+      </div>
+    </div>
+  </section>`;
+}
+function ilFaqSchema() {
+  return { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: IL_FAQ.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
+}
+function ilCrumbSchema(crumbs) {
+  return { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, ...(c.url ? { item: SITE_URL + c.url } : {}) })) };
+}
+function ilBreadcrumbNav(crumbs) {
+  return `<nav class="breadcrumb" aria-label="Breadcrumb"><div class="wrap"><ol>${crumbs.map(c => `<li>${c.url ? `<a href="${c.url}">${esc(c.name)}</a>` : `<span>${esc(c.name)}</span>`}</li>`).join('')}</ol></div></nav>`;
+}
+
+/* ---- grade landing page ------------------------------------------------- */
+function pageIlearnGrade(g) {
+  const G = ILEARN.grades[g];
+  const gO = gradeOrdinal(g);
+  const acc = G.accent;
+  const list = ilByGrade[g];
+  const practice = ['cp1', 'cp2', 'cp3', 'sum'].map(s => ilFind(g, s));
+  const fyb = ilFind(g, 'bundle');
+  const sys = ilFind(g, 'complete-system');
+  const band = ilBandFor(g);
+  const totalItems = practice.reduce((a, r) => a + (r.items || 0), 0);
+  const prices = list.map(r => r.price);
+  const winShort = { cp1: 'Sep 14 – Nov 13', cp2: 'Nov 16 – Feb 5', cp3: 'Feb 8 – Apr 9', sum: 'Apr 12 – May 7' };
+
+  const timeline = ['cp1', 'cp2', 'cp3', 'sum'].map(s => {
+    const r = ilFind(g, s);
+    return `<div class="il-tl__node${s === 'sum' ? ' il-tl__node--sum' : ''}"><span class="il-tl__dot"></span><div class="il-tl__ph">${s === 'sum' ? 'Summative' : 'Checkpoint ' + s.slice(2)}</div><div class="il-tl__win">${winShort[s]}</div><div class="il-tl__meta">${s === 'sum' ? 'all ' + G.standards_total + ' standards' : G.cp_standards[s] + ' standards'}</div></div>`;
+  }).join('');
+
+  // checkpoint card with cross-sell to the matching intervention + checkpoint bundle
+  const cpCard = (s) => {
+    const r = ilFind(g, s);
+    const cp = s === 'sum' ? null : s.slice(2);
+    const iv = cp ? ilFind(g, 'cp' + cp + '-intervention') : null;
+    const cb = cp ? ilFind(g, 'cp' + cp + '-bundle') : null;
+    const facts = [];
+    if (!r.standards_all) facts.push(`<span class="il-fact"><span class="mono">${r.standards.length}</span> standards</span>`);
+    else facts.push(`<span class="il-fact"><span class="mono">${G.standards_total}</span> standards</span>`);
+    facts.push(`<span class="il-fact"><span class="mono">${r.items}</span> items</span>`);
+    facts.push(`<span class="il-fact"><span class="mono">${r.pages}</span> pages</span>`);
+    const cross = (iv && cb) ? `<div class="il-cross"><b>Close the gaps:</b> add <a href="${ilUrl(iv)}">${iv.short.replace(' & Reteach', '')}</a> (${iv.standards.length} standards, reteach cycle) &mdash; or take both in the <a href="${ilUrl(cb)}">Checkpoint ${cp} Bundle</a> at 20% off (${ilMoney(cb.price)}).</div>` : '';
+    return `<article class="il-cp reveal il-acc--${acc}${s === 'sum' ? ' il-cp--sum' : ''}">
+      ${ilCover(r, 'il-cp__cover')}
+      <div class="il-cp__body">
+        <div class="il-cp__top"><span class="il-cp__tag">${s === 'sum' ? 'Summative' : 'Checkpoint ' + cp} &middot; ${IL_SEASON[s]}</span><span class="il-cp__win"><b>Window</b> ${r.window}${r.retest ? ' &middot; retest to Apr 9' : ''}</span></div>
+        <h3>${esc(r.short)}</h3>
+        <div class="il-facts">${facts.join('')}</div>
+        <p class="il-cp__desc">${esc(r.seo)}</p>
+        ${ilStandardsList(r, { summary: s === 'sum' })}
+        <div class="il-cp__actions"><span class="il-price">${ilMoney(r.price)}</span>${ilTptBtn(r)}<a class="il-detail" href="${ilUrl(r)}">Full details ${ICON.arrow}</a></div>
+        ${cross}
+      </div>
+    </article>`;
+  };
+
+  // bundle ladder
+  const rung = (r, feature, tierLabel, blurb, metrics) => `<div class="il-rung reveal${feature ? ' il-rung--feature' : ''}">
+    <span class="il-rung__tier">${tierLabel}</span>
+    <h3>${esc(r.short === 'ULTIMATE Bundle' ? (r.grade.replace('band-', 'Grades ') + ' ULTIMATE') : r.short)}</h3>
+    <p class="il-rung__blurb">${blurb}</p>
+    <div class="il-rung__pr"><span class="now">${ilMoney(r.price)}</span>${r.discount ? `<span class="off">${r.discount}% off</span>` : `<span class="off">${r.slot === 'complete-system' ? '25% off' : '20% off'}</span>`}</div>
+    <div class="il-rung__metrics">${metrics.map(m => `<div><b>${m[0]}</b>${m[1]}</div>`).join('')}</div>
+    <div class="il-rung__go">${ilTptBtn(r)}</div>
+  </div>`;
+
+  const ladder = [
+    rung(fyb, false, 'The four practice tests', `All three checkpoint practice tests plus the summative mock &mdash; every one of the ${G.standards_total} ${gO}-grade standards, in one download.`, [[fyb.items, 'items'], [fyb.pages, 'pages'], [4, 'tests']]),
+    rung(sys, true, 'Practice + every reteach', 'Every practice test and every intervention for the whole year. Assess, reteach and reassess all year without repeating a question.', [[sys.items, 'items'], [sys.pages, 'pages'], [7, 'resources']]),
+    band ? rung(band, false, band.grade.replace('band-', 'Grades '), `The whole ${band.grade.replace('band-', '')} band &mdash; every checkpoint and summative across those grades. For a department or a teacher who moves grades.`, [[band.items.toLocaleString(), 'items'], [band.pages.toLocaleString(), 'pages'], [band.listings, 'listings']]) : ''
+  ].join('');
+
+  const gradeChips = IL_GRADES.map(gg => `<a class="il-gchip il-acc--${ILEARN.grades[gg].accent}${gg === g ? ' is-current' : ''}" href="/ilearn/grade-${gg}.html"><span class="il-gchip__dot"></span>Grade ${gg}</a>`).join('');
+
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Indiana ILEARN', url: '/ilearn.html' }, { name: `Grade ${g} Math` }];
+  const jsonld = JSON.stringify([
+    ilCrumbSchema(crumbs),
+    ilFaqSchema(),
+    { '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${gO} Grade Indiana ILEARN Math Practice`, url: `${SITE_URL}/ilearn/grade-${g}.html`, description: `Indiana ILEARN math practice for ${gO} grade: three checkpoints plus the summative, with interventions and bundles.`, isPartOf: { '@type': 'WebSite', name: 'Math Class 678', url: SITE_URL } }
+  ]).replace(/</g, '\\u003c');
+
+  return head({
+    title: `${gO} Grade Indiana ILEARN Math Practice — Checkpoints & Summative | Math Class 678`,
+    desc: `${gO} grade Indiana ILEARN math practice: three checkpoints plus the summative, built to the Indiana Academic Standards. ${totalItems} original items with worked keys and item analysis by standard.`,
+    path: `ilearn/grade-${g}.html`,
+    ogImage: SITE_URL + ilImg(fyb),
+    jsonld
+  }) + nav('ilearn') + `
+<main id="main" class="il-page il-acc--${acc}">
+  ${ilBreadcrumbNav(crumbs)}
+  <section class="il-hero">
+    <div class="wrap il-hero__in">
+      <span class="il-eyebrow"><span class="il-eyebrow__pill">Indiana ILEARN</span> Grade ${g} Math &middot; SY 2026–27</span>
+      <h1>The whole ILEARN year for Grade&nbsp;${g}, one checkpoint at a time.</h1>
+      <p class="il-hero__lede">Three checkpoints and a summative, built to the 2023 Indiana Academic Standards. <b>${totalItems} original items</b> with worked answer keys and an item analysis by standard &mdash; so a scored packet turns into a reteaching list, not just a grade.</p>
+      <div class="il-hero__cta">
+        ${ilTptBtn(fyb, 'See the Full-Year Bundle')}
+        <a class="btn btn--on-dark" href="#checkpoints">Browse the checkpoints</a>
+      </div>
+      <div class="il-hero__stats">
+        <div><span class="v">4</span><span class="k">Assessments</span></div>
+        <div><span class="v">${G.standards_total}</span><span class="k">Standards covered</span></div>
+        <div><span class="v">${totalItems}</span><span class="k">Original items</span></div>
+        <div><span class="v">12</span><span class="k">Grade ${g} listings</span></div>
+      </div>
+      <div class="il-tl">
+        <div class="il-tl__h">The 2026–27 testing year</div>
+        <div class="il-tl__track">${timeline}</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="il-trust"><div class="wrap il-trust__in">
+    <div class="il-trust__item"><b>Built to Indiana standards</b><span>Original items, to the 2023 Academic Standards and checkpoint blueprint</span></div>
+    <div class="il-trust__item"><b>Item analysis by standard</b><span>A scored packet becomes a targeted reteaching list</span></div>
+    <div class="il-trust__item"><b>Worked answer keys</b><span>Every item solved, not just an answer letter</span></div>
+    <div class="il-trust__item"><b>Print-and-go PDFs</b><span>Delivered through TPT, ready the next morning</span></div>
+  </div></section>
+
+  <section class="section il-cycle-sec"><div class="wrap">
+    <div class="sec-head reveal"><div class="sec-head__t"><span class="eyebrow">How the line works</span><h2>One cycle, run three times, then a full-year mock</h2><p>Every checkpoint follows the same teacher workflow. The practice test finds the gap; the intervention closes it &mdash; without a student ever seeing the same question twice.</p></div></div>
+    <div class="il-cycle">
+      <div class="il-cyc reveal"><span class="n">01</span><h3>Assess</h3><p>Run the checkpoint practice test in the state&rsquo;s format, in the state&rsquo;s window.</p></div>
+      <div class="il-cyc reveal"><span class="n">02</span><h3>Analyze</h3><p>The item analysis by standard shows exactly which standards need another pass.</p></div>
+      <div class="il-cyc reveal"><span class="n">03</span><h3>Reteach</h3><p>The intervention runs a six-part cycle per standard: teach, reference, practice, error analysis, exit ticket, data.</p></div>
+      <div class="il-cyc reveal"><span class="n">04</span><h3>Reassess</h3><p>Fresh reassessment items &mdash; in no other resource &mdash; confirm the standard is closed.</p></div>
+    </div>
+  </div></section>
+
+  <section class="section il-cps" id="checkpoints"><div class="wrap">
+    <div class="sec-head reveal"><div class="sec-head__t"><span class="eyebrow">The four assessments</span><h2>Every Grade ${g} checkpoint, in order</h2><p>Each listing is sold on its own, so you can buy only the window you need &mdash; or step up to a bundle and save. Each has its own page with the full standard-by-standard breakdown.</p></div></div>
+    <div class="il-cp__list">
+      ${['cp1', 'cp2', 'cp3', 'sum'].map(cpCard).join('\n      ')}
+    </div>
+  </div></section>
+
+  <section class="section il-ladder-sec" id="bundles"><div class="wrap">
+    <div class="sec-head reveal"><div class="sec-head__t"><span class="eyebrow">Buy the year, save the most</span><h2>Three ways to bundle Grade ${g}</h2><p>Most teachers start with one checkpoint, then come back for the year. Each tier nests the one before it at a deeper discount.</p></div></div>
+    <div class="il-ladder">${ladder}</div>
+  </div></section>
+
+  <section class="section il-grades-sec" id="grades"><div class="wrap">
+    <div class="sec-head reveal"><div class="sec-head__t"><span class="eyebrow">Every grade, same system</span><h2>Teaching another grade? It&rsquo;s built too</h2><p>The Indiana ILEARN line runs the full span of tested grades, each with its own checkpoints, interventions and bundles.</p></div></div>
+    <div class="il-grades-row">${gradeChips}</div>
+    <p class="il-otherlines">Also building for other states &mdash; Texas STAAR is live for grades 3–4 with more on the way. Indiana ILEARN is our flagship line.</p>
+  </div></section>
+
+  ${ilFaqSection()}
+  ${ilDisclaimer()}
+</main>
+` + footer() + scripts();
+}
+
+/* ---- individual listing page ------------------------------------------- */
+function pageIlearnListing(r) {
+  const g = String(r.grade);
+  const isBand = r.category === 'band-bundle';
+  const gO = isBand ? null : gradeOrdinal(g);
+  const acc = isBand ? 'gold' : ILEARN.grades[g].accent;
+  const idx = ilIndex[r.slug];
+  const prev = ilOrder[idx - 1], next = ilOrder[idx + 1];
+
+  // related listings for cross-sell
+  let related = [];
+  if (!isBand) {
+    const cp = r.cp;
+    if (r.category === 'practice' && cp) related = [ilFind(g, 'cp' + cp + '-intervention'), ilFind(g, 'cp' + cp + '-bundle'), ilFind(g, 'bundle')];
+    else if (r.slot === 'sum') related = [ilFind(g, 'bundle'), ilFind(g, 'complete-system')];
+    else if (r.category === 'intervention' && cp) related = [ilFind(g, 'cp' + cp), ilFind(g, 'cp' + cp + '-bundle'), ilFind(g, 'complete-system')];
+    else if (r.category === 'checkpoint-bundle' && cp) related = [ilFind(g, 'cp' + cp), ilFind(g, 'cp' + cp + '-intervention'), ilFind(g, 'complete-system')];
+    else if (r.slot === 'bundle') related = ['cp1', 'cp2', 'cp3', 'sum'].map(s => ilFind(g, s));
+    else if (r.slot === 'complete-system') related = [ilFind(g, 'bundle'), ilFind(g, 'cp1-intervention'), ilFind(g, 'cp2-intervention'), ilFind(g, 'cp3-intervention')];
+    related = related.filter(Boolean).filter(x => x.slug !== r.slug);
+  } else {
+    related = ilBands.filter(b => b.slug !== r.slug);
+  }
+
+  const facts = [];
+  if (r.standards && r.standards.length && !r.standards_all) facts.push(`<span class="il-fact"><span class="mono">${r.standards.length}</span> standards</span>`);
+  else if (r.standards_all && !isBand) facts.push(`<span class="il-fact"><span class="mono">${ILEARN.grades[g].standards_total}</span> standards</span>`);
+  facts.push(`<span class="il-fact"><span class="mono">${(r.items || 0).toLocaleString()}</span> items</span>`);
+  facts.push(`<span class="il-fact"><span class="mono">${(r.pages || 0).toLocaleString()}</span> pages</span>`);
+  if (isBand) facts.push(`<span class="il-fact"><span class="mono">${r.listings}</span> listings</span>`);
+
+  const desc = r.seo || (isBand ? `The ${r.grade.replace('band-', '')} band ULTIMATE bundle: every Indiana ILEARN math checkpoint and summative across grades ${r.grade.replace('band-', '').replace('-', ' through ')}, ${r.items.toLocaleString()} original items across ${r.pages.toLocaleString()} pages at ${r.discount}% off.` : '');
+
+  const relCards = related.map(x => `<a class="il-relcard il-acc--${x.category === 'band-bundle' ? 'gold' : ILEARN.grades[String(x.grade)].accent}" href="${ilUrl(x)}">
+      ${ilCover(x, 'il-relcard__img')}
+      <div class="il-relcard__body"><span class="il-relcard__cat">${esc(x.catLabel)}</span><span class="il-relcard__name">${esc(x.short)}</span><span class="il-relcard__pr">${ilMoney(x.price)}</span></div>
+    </a>`).join('\n      ');
+
+  const crumbs = isBand
+    ? [{ name: 'Home', url: '/' }, { name: 'Indiana ILEARN', url: '/ilearn.html' }, { name: r.short === 'ULTIMATE Bundle' ? r.grade.replace('band-', 'Grades ') + ' ULTIMATE' : r.short }]
+    : [{ name: 'Home', url: '/' }, { name: 'Indiana ILEARN', url: '/ilearn.html' }, { name: `Grade ${g}`, url: `/ilearn/grade-${g}.html` }, { name: r.short }];
+
+  const productSchema = {
+    '@context': 'https://schema.org', '@type': 'Product',
+    name: r.title,
+    description: desc.replace(/<[^>]+>/g, ''),
+    ...(ilImg(r) ? { image: SITE_URL + ilImg(r) } : {}),
+    brand: { '@type': 'Brand', name: 'Math Class 678' },
+    offers: { '@type': 'Offer', price: Number(r.price).toFixed(2), priceCurrency: 'USD', url: r.url, availability: 'https://schema.org/InStock' }
+  };
+  const jsonld = JSON.stringify([ilCrumbSchema(crumbs), productSchema]).replace(/</g, '\\u003c');
+
+  const title = isBand ? (r.grade.replace('band-', 'Grades ') + ' Indiana ILEARN Math ULTIMATE Bundle') : (r.ord + ' Grade Indiana ILEARN Math ' + r.short);
+
+  return head({
+    title: `${title} | Math Class 678`,
+    desc: desc.replace(/<[^>]+>/g, '').slice(0, 300),
+    path: `ilearn/${r.slug}.html`,
+    ogType: 'product',
+    ogImage: ilImg(r) ? SITE_URL + ilImg(r) : undefined,
+    jsonld
+  }) + nav('ilearn') + `
+<main id="main" class="il-page il-listing il-acc--${acc}">
+  ${ilBreadcrumbNav(crumbs)}
+  <section class="il-lh"><div class="wrap il-lh__grid">
+    <div class="il-lh__media">${ilCover(r, 'il-lh__cover')}</div>
+    <div class="il-lh__copy">
+      <span class="il-lh__cat">${esc(r.catLabel)}${isBand ? '' : ' &middot; ' + (r.slot === 'sum' ? 'Summative' : r.cp ? 'Checkpoint ' + r.cp : 'Whole year')}</span>
+      <h1>${esc(title)}</h1>
+      <div class="il-facts il-facts--lg">${facts.join('')}</div>
+      <p class="il-lh__desc">${esc(desc)}</p>
+      <div class="il-lh__actions"><span class="il-price il-price--lg">${ilMoney(r.price)}</span>${ilTptBtn(r, 'View on Teachers Pay Teachers')}</div>
+      ${r.window ? `<p class="il-lh__win"><b>Testing window:</b> ${r.window}${r.retest ? ' &middot; optional retest through Apr 9, 2027' : ''}</p>` : ''}
+      <p class="il-lh__back"><a href="/ilearn/grade-${isBand ? '6' : g}.html">${ICON.arrow} ${isBand ? 'All Indiana ILEARN grades' : 'See the whole Grade ' + g + ' year'}</a></p>
+    </div>
+  </div></section>
+
+  ${(r.standards && r.standards.length) || r.standards_all ? `<section class="section il-lstds"><div class="wrap"><div class="sec-head reveal"><div class="sec-head__t"><span class="eyebrow">Aligned to Indiana standards</span><h2>What this ${r.category === 'intervention' ? 'reteach set' : 'set'} covers</h2></div></div>${ilStandardsList(r)}</div></section>` : ''}
+
+  ${related.length ? `<section class="section il-related"><div class="wrap">
+    <div class="sec-head reveal"><div class="sec-head__t"><span class="eyebrow">${r.category === 'practice' ? 'Close the gaps' : r.slot === 'bundle' || r.slot === 'complete-system' || isBand ? 'What’s inside' : 'Pairs with'}</span><h2>${r.slot === 'bundle' ? 'The tests in this bundle' : r.slot === 'complete-system' || isBand ? 'Everything in this system' : 'Build toward the bundle'}</h2></div></div>
+    <div class="il-relgrid">${relCards}</div>
+  </div></section>` : ''}
+
+  ${ilFaqSection()}
+  ${ilDisclaimer()}
+
+  <nav class="il-prevnext"><div class="wrap">
+    ${prev ? `<a class="il-pn il-pn--prev" href="${ilUrl(prev)}"><span>Previous</span>${esc(prev.category === 'band-bundle' ? prev.grade.replace('band-', 'Grades ') + ' ULTIMATE' : prev.ord + ' ' + prev.short)}</a>` : '<span></span>'}
+    ${next ? `<a class="il-pn il-pn--next" href="${ilUrl(next)}"><span>Next</span>${esc(next.category === 'band-bundle' ? next.grade.replace('band-', 'Grades ') + ' ULTIMATE' : next.ord + ' ' + next.short)}</a>` : '<span></span>'}
+  </div></nav>
+</main>
+` + footer() + scripts();
+}
+
+/* ---- ILEARN hub -------------------------------------------------------- */
+function pageIlearnHub() {
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Indiana ILEARN' }];
+  const gradeCards = IL_GRADES.map(g => {
+    const G = ILEARN.grades[g];
+    const fyb = ilFind(g, 'bundle');
+    return `<a class="il-gradecard reveal il-acc--${G.accent}" href="/ilearn/grade-${g}.html">
+      <div class="il-gradecard__num">${g}</div>
+      <div class="il-gradecard__body">
+        <h3>${gradeOrdinal(g)} Grade ILEARN Math</h3>
+        <p>${esc(G.domain)}</p>
+        <span class="il-gradecard__meta"><span class="mono">${G.standards_total}</span> standards &middot; <span class="mono">12</span> listings</span>
+      </div>
+      <span class="il-gradecard__go">${ICON.arrow}</span>
+    </a>`;
+  }).join('\n      ');
+
+  const bandCards = ilBands.map(b => `<a class="il-bandcard reveal" href="${ilUrl(b)}">
+      <span class="il-bandcard__tier">${b.grade.replace('band-', 'Grades ')} ULTIMATE</span>
+      <span class="il-bandcard__pr">${ilMoney(b.price)} <small>${b.discount}% off</small></span>
+      <span class="il-bandcard__meta">${b.items.toLocaleString()} items &middot; ${b.listings} listings</span>
+    </a>`).join('\n      ');
+
+  const jsonld = JSON.stringify([
+    ilCrumbSchema(crumbs),
+    ilFaqSchema(),
+    { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Indiana ILEARN Math Practice, Grades 3–8', url: `${SITE_URL}/ilearn.html`, description: 'Indiana ILEARN math practice tests, interventions and bundles for grades 3 through 8, built to the Indiana Academic Standards.', isPartOf: { '@type': 'WebSite', name: 'Math Class 678', url: SITE_URL } }
+  ]).replace(/</g, '\\u003c');
+
+  return head({
+    title: 'Indiana ILEARN Math Practice, Grades 3–8 — Checkpoints & Summative | Math Class 678',
+    desc: 'Indiana ILEARN math practice for grades 3–8: three checkpoints plus the summative each year, built to the Indiana Academic Standards, with worked keys, item analysis, interventions and bundles.',
+    path: 'ilearn.html',
+    jsonld
+  }) + nav('ilearn') + `
+<main id="main" class="il-page il-hub il-acc--g6">
+  ${ilBreadcrumbNav(crumbs)}
+  <section class="il-hero il-hero--hub">
+    <div class="wrap il-hero__in">
+      <span class="il-eyebrow"><span class="il-eyebrow__pill">State testing</span> Indiana ILEARN Math &middot; SY 2026–27</span>
+      <h1>Indiana ILEARN math practice, built the way the test is.</h1>
+      <p class="il-hero__lede">Three checkpoints and a summative every year, grades 3 through 8 &mdash; every item original, built to the 2023 Indiana Academic Standards and the published checkpoint blueprint. Worked answer keys and an item analysis by standard turn a scored packet into a reteaching plan.</p>
+      <div class="il-hero__cta"><a class="btn btn--primary" href="#grades">Choose your grade ${ICON.arrow}</a></div>
+      <div class="il-hero__stats">
+        <div><span class="v">6</span><span class="k">Grades &middot; 3–8</span></div>
+        <div><span class="v">75</span><span class="k">Listings</span></div>
+        <div><span class="v">3+1</span><span class="k">Checkpoints + summative</span></div>
+        <div><span class="v">SY26–27</span><span class="k">Aligned windows</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="il-trust"><div class="wrap il-trust__in">
+    <div class="il-trust__item"><b>Built to Indiana standards</b><span>Original items, to the 2023 Academic Standards and checkpoint blueprint</span></div>
+    <div class="il-trust__item"><b>Item analysis by standard</b><span>A scored packet becomes a targeted reteaching list</span></div>
+    <div class="il-trust__item"><b>Assess, reteach, reassess</b><span>A matching intervention for every checkpoint</span></div>
+    <div class="il-trust__item"><b>Print-and-go PDFs</b><span>Delivered through TPT, ready the next morning</span></div>
+  </div></section>
+
+  <section class="section il-gradegrid-sec" id="grades"><div class="wrap">
+    <div class="sec-head reveal"><div class="sec-head__t"><span class="eyebrow">Choose your grade</span><h2>Every tested grade, its own full year</h2><p>Each grade has three checkpoint practice tests, a summative mock, a reteach cycle for every checkpoint, and bundles that pull it all together.</p></div></div>
+    <div class="il-gradegrid">
+      ${gradeCards}
+    </div>
+  </div></section>
+
+  <section class="section il-bands-sec"><div class="wrap">
+    <div class="sec-head reveal"><div class="sec-head__t"><span class="eyebrow">Buy across grades</span><h2>Grade-band ULTIMATE bundles</h2><p>For departments and multi-grade teachers &mdash; every checkpoint and summative across a whole band, at the deepest discount.</p></div></div>
+    <div class="il-bandgrid">
+      ${bandCards}
+    </div>
+  </div></section>
+
+  ${ilFaqSection()}
+  ${ilDisclaimer()}
+</main>
+` + footer() + scripts();
+}
+
 function sitemap() {
-  const pages = ['', 'catalog.html', 'bundles.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
+  const pages = ['', 'catalog.html', 'bundles.html', 'word-wall.html', 'ilearn.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
   const today = new Date().toISOString().slice(0, 10);
   const main = pages.map(p => `  <url><loc>${SITE_URL}/${p}</loc><lastmod>${today}</lastmod></url>`);
   const sheets = products
@@ -4516,9 +4938,11 @@ function sitemap() {
     .map(s => `  <url><loc>${SITE_URL}/standards/${s.slug}.html</loc><lastmod>${today}</lastmod></url>`);
   const glossaryUrls = glossary.map(t => `  <url><loc>${SITE_URL}${t.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
   const freebieUrls = FREEBIES.map(f => `  <url><loc>${SITE_URL}${f.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
+  const ilearnUrls = IL_GRADES.map(g => `  <url><loc>${SITE_URL}/ilearn/grade-${g}.html</loc><lastmod>${today}</lastmod></url>`)
+    .concat(ILEARN.listings.map(r => `  <url><loc>${SITE_URL}/ilearn/${r.slug}.html</loc><lastmod>${today}</lastmod></url>`));
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${main.concat(bundleUrls, sheets, standardUrls, glossaryUrls, freebieUrls).join('\n')}
+${main.concat(ilearnUrls, bundleUrls, sheets, standardUrls, glossaryUrls, freebieUrls).join('\n')}
 </urlset>`;
 }
 const robots = `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`;
@@ -4591,6 +5015,12 @@ glossary.forEach(t => { write(`word-wall/${t.slug}.html`, pageGlossaryTerm(t)); 
 let freebieCount = 0;
 FREEBIES.forEach(f => { write(`free/${f.slug}.html`, pageFreebie(f)); freebieCount++; });
 
+/* Indiana ILEARN flagship branch — hub + 6 grade pages + 75 individual listing pages */
+write('ilearn.html', pageIlearnHub());
+IL_GRADES.forEach(g => write(`ilearn/grade-${g}.html`, pageIlearnGrade(g)));
+let ilearnCount = 0;
+ILEARN.listings.forEach(r => { write(`ilearn/${r.slug}.html`, pageIlearnListing(r)); ilearnCount++; });
+
 copy('styles.css', 'assets/css/styles.css');
 copy('assets/js/catalog.js', 'assets/js/catalog.js');
 
@@ -4637,6 +5067,16 @@ if (fs.existsSync(SRC_FREEBIE_IMGS)) {
   });
 }
 
+// Copy ILEARN cover thumbnails (il_g{N}_{tag}.jpg)
+const SRC_ILEARN_IMGS = path.join(ROOT, 'assets', 'images', 'ilearn');
+let ilearnThumbCount = 0;
+if (fs.existsSync(SRC_ILEARN_IMGS)) {
+  fs.readdirSync(SRC_ILEARN_IMGS).filter(f => /\.(jpe?g|png)$/i.test(f)).forEach(f => {
+    copy(path.join('assets/images/ilearn', f), path.join('assets/images/ilearn', f));
+    ilearnThumbCount++;
+  });
+}
+
 write('assets/images/favicon.svg', favicon);
 write('assets/images/thumbs/.gitkeep', '# Drop product thumbnails here.\n# Web naming: thumb1_[grade]th_[slug].jpg  e.g. thumb1_6th_understanding-ratios.jpg\n# (.png also accepted; photo-content thumbs are optimized to JPEG on intake.)\n# Cards auto-pick them up on next build; CSS art shows until then.\n');
 write('robots.txt', robots);
@@ -4659,6 +5099,8 @@ console.log('  Bundle landing pages:', bundleCount);
 console.log('  Standard content pages:', standardCount);
 console.log('  Word Wall hub + glossary term pages:', 1 + glossaryCount);
 console.log('  Kit-gated freebie pages:', freebieCount);
+console.log('  ILEARN hub + grade + listing pages:', 1 + IL_GRADES.length + ilearnCount);
+console.log('  ILEARN cover thumbnails bundled:', ilearnThumbCount);
 console.log('  Products:', products.length, '| live:', live.length, '| free:', counts.free);
 console.log('  Grades: 6th', counts[6], '· 7th', counts[7], '· 8th', counts[8]);
 console.log('  Product thumbnails bundled:', thumbCount);

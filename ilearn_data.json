@@ -1,0 +1,3677 @@
+{
+ "school_year": "2026-2027",
+ "windows": [
+  [
+   "Checkpoint 1",
+   "Sept 14 - Nov 13, 2026"
+  ],
+  [
+   "Checkpoint 2",
+   "Nov 16, 2026 - Feb 5, 2027"
+  ],
+  [
+   "Checkpoint 3",
+   "Feb 8 - Apr 9, 2027"
+  ],
+  [
+   "Summative",
+   "Apr 12 - May 7, 2027"
+  ]
+ ],
+ "second_opportunity": [
+  [
+   "Checkpoint 1",
+   "Sept 15, 2026 - Apr 9, 2027"
+  ],
+  [
+   "Checkpoint 2",
+   "Nov 17, 2026 - Apr 9, 2027"
+  ],
+  [
+   "Checkpoint 3",
+   "Feb 9 - Apr 9, 2027"
+  ]
+ ],
+ "grades": {
+  "3": {
+   "grade": 3,
+   "ord": "3rd",
+   "domain": "Place value, multiplication and division, an introduction to fractions, and measurement and data.",
+   "accent": "g3",
+   "standards_total": 24,
+   "cp_standards": {
+    "cp1": 5,
+    "cp2": 7,
+    "cp3": 6
+   }
+  },
+  "4": {
+   "grade": 4,
+   "ord": "4th",
+   "domain": "Multi-digit arithmetic, fraction equivalence and operations, and the start of geometry.",
+   "accent": "g4",
+   "standards_total": 25,
+   "cp_standards": {
+    "cp1": 5,
+    "cp2": 7,
+    "cp3": 7
+   }
+  },
+  "5": {
+   "grade": 5,
+   "ord": "5th",
+   "domain": "Decimals, fraction operations, volume, and the coordinate plane.",
+   "accent": "g5",
+   "standards_total": 23,
+   "cp_standards": {
+    "cp1": 4,
+    "cp2": 6,
+    "cp3": 7
+   }
+  },
+  "6": {
+   "grade": 6,
+   "ord": "6th",
+   "domain": "Ratios and rates, the number system, expressions and equations, and statistics.",
+   "accent": "g6",
+   "standards_total": 24,
+   "cp_standards": {
+    "cp1": 6,
+    "cp2": 7,
+    "cp3": 5
+   }
+  },
+  "7": {
+   "grade": 7,
+   "ord": "7th",
+   "domain": "Proportional relationships, rational-number operations, expressions and equations, and probability.",
+   "accent": "g7",
+   "standards_total": 23,
+   "cp_standards": {
+    "cp1": 6,
+    "cp2": 6,
+    "cp3": 5
+   }
+  },
+  "8": {
+   "grade": 8,
+   "ord": "8th",
+   "domain": "Linear equations, functions, the Pythagorean theorem, and bivariate data.",
+   "accent": "g8",
+   "standards_total": 20,
+   "cp_standards": {
+    "cp1": 5,
+    "cp2": 6,
+    "cp3": 5
+   }
+  }
+ },
+ "listings": [
+  {
+   "grade": 3,
+   "category": "practice",
+   "slot": "cp1",
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 1 Practice | Test Prep & Review SY26-27",
+   "price": 12.0,
+   "items": 100,
+   "pages": 28,
+   "tpt_pages": 28,
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-1-Practice-Test-Prep-Review-SY26-27-17252013",
+   "ord": "3rd",
+   "short": "Checkpoint 1 Practice Test",
+   "seo": "3rd Grade Indiana ILEARN Math Checkpoint 1 practice test: 100 original items built from the state's own item specifications, covering place value, rounding, multi-digit addition and subtraction, and money. Worked answer keys, item analysis, and drawn base-ten blocks and coins throughout.",
+   "thumb": "il_g3_cp1.jpg",
+   "standards": [
+    {
+     "code": "3.CA.1",
+     "title": "Add and subtract multi-digit numbers"
+    },
+    {
+     "code": "3.CA.2",
+     "title": "Addition and subtraction word problems"
+    },
+    {
+     "code": "3.M.4",
+     "title": "Value of coins and bills"
+    },
+    {
+     "code": "3.NS.1",
+     "title": "Read and write numbers to 10,000"
+    },
+    {
+     "code": "3.NS.6",
+     "title": "Round to the nearest ten or hundred"
+    }
+   ],
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "3rd-grade-ilearn-checkpoint-1-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 3,
+   "category": "practice",
+   "slot": "cp2",
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 2 Practice | Test Prep & Review SY26-27",
+   "price": 15.0,
+   "items": 140,
+   "pages": 43,
+   "tpt_pages": 43,
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-2-Practice-Test-Prep-Review-SY26-27-17289990",
+   "ord": "3rd",
+   "short": "Checkpoint 2 Practice Test",
+   "seo": "3rd Grade Indiana ILEARN Math Checkpoint 2 practice test: 140 original items across the seven winter standards - multiplication, division, patterns and grade 3's first fractions. Six of the seven are flagged essential by Indiana. Worked answer keys and an item analysis.",
+   "thumb": "il_g3_cp2.jpg",
+   "standards": [
+    {
+     "code": "3.CA.3",
+     "title": "Model multiplication: groups, arrays, number lines"
+    },
+    {
+     "code": "3.CA.4",
+     "title": "Model division: partition, share, inverse"
+    },
+    {
+     "code": "3.CA.5",
+     "title": "Multiplication and division strategies"
+    },
+    {
+     "code": "3.CA.7",
+     "title": "Multiplication and division word problems"
+    },
+    {
+     "code": "3.CA.8",
+     "title": "Number patterns and rules"
+    },
+    {
+     "code": "3.NS.2",
+     "title": "Model unit and non-unit fractions"
+    },
+    {
+     "code": "3.NS.3",
+     "title": "Fractions on a number line"
+    }
+   ],
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "3rd-grade-ilearn-checkpoint-2-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 3,
+   "category": "practice",
+   "slot": "cp3",
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 3 Practice | Test Prep & Review SY26-27",
+   "price": 14.0,
+   "items": 120,
+   "pages": 46,
+   "tpt_pages": 46,
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-3-Practice-Test-Prep-Review-SY26-27-17290018",
+   "ord": "3rd",
+   "short": "Checkpoint 3 Practice Test",
+   "seo": "3rd Grade Indiana ILEARN Math Checkpoint 3 practice test: 120 original items covering bar graphs, pictographs, telling time, area, perimeter and comparing fractions. Worked answer keys, an item analysis, and a drawn figure on every item that needs one.",
+   "thumb": "il_g3_cp3.jpg",
+   "standards": [
+    {
+     "code": "3.DA.1",
+     "title": "Read and build bar graphs and pictographs"
+    },
+    {
+     "code": "3.M.3",
+     "title": "Tell time and solve elapsed-time problems"
+    },
+    {
+     "code": "3.M.5",
+     "title": "Area of a rectangle by counting unit squares"
+    },
+    {
+     "code": "3.M.6",
+     "title": "Perimeter of polygons"
+    },
+    {
+     "code": "3.NS.4",
+     "title": "Generate equivalent fractions"
+    },
+    {
+     "code": "3.NS.5",
+     "title": "Compare fractions"
+    }
+   ],
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "3rd-grade-ilearn-checkpoint-3-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 3,
+   "category": "practice",
+   "slot": "sum",
+   "title": "3rd Grade Indiana ILEARN Math Summative Practice Test | Test Prep SY26-27",
+   "price": 9.0,
+   "items": 61,
+   "pages": 23,
+   "tpt_pages": 23,
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Summative-Practice-Test-Test-Prep-SY26-27-17290039",
+   "ord": "3rd",
+   "short": "Summative Practice Test",
+   "seo": "3rd Grade Indiana ILEARN Math summative practice test: a full-length mock covering every grade 3 standard in one sitting, laid out the way the real spring test is laid out. Worked answer keys and an item analysis so you can see which standards still need work.",
+   "thumb": "il_g3_sum.jpg",
+   "standards": [
+    {
+     "code": "3.CA.1",
+     "title": "Add and subtract multi-digit numbers"
+    },
+    {
+     "code": "3.CA.2",
+     "title": "Addition and subtraction word problems"
+    },
+    {
+     "code": "3.CA.3",
+     "title": "Model multiplication: groups, arrays, number lines"
+    },
+    {
+     "code": "3.CA.4",
+     "title": "Model division: partition, share, inverse"
+    },
+    {
+     "code": "3.CA.5",
+     "title": "Multiplication and division strategies"
+    },
+    {
+     "code": "3.CA.6",
+     "title": "Multiplication and division fact fluency"
+    },
+    {
+     "code": "3.CA.7",
+     "title": "Multiplication and division word problems"
+    },
+    {
+     "code": "3.CA.8",
+     "title": "Number patterns and rules"
+    },
+    {
+     "code": "3.DA.1",
+     "title": "Read and build bar graphs and pictographs"
+    },
+    {
+     "code": "3.G.1",
+     "title": "Classify quadrilaterals by their attributes"
+    },
+    {
+     "code": "3.G.2",
+     "title": "Points, lines, and line segments"
+    },
+    {
+     "code": "3.G.3",
+     "title": "Partition shapes into equal-area unit fractions"
+    },
+    {
+     "code": "3.M.1",
+     "title": "Estimate and measure mass and volume"
+    },
+    {
+     "code": "3.M.2",
+     "title": "Measure length, weight, and temperature"
+    },
+    {
+     "code": "3.M.3",
+     "title": "Tell time and solve elapsed-time problems"
+    },
+    {
+     "code": "3.M.4",
+     "title": "Value of coins and bills"
+    },
+    {
+     "code": "3.M.5",
+     "title": "Area of a rectangle by counting unit squares"
+    },
+    {
+     "code": "3.M.6",
+     "title": "Perimeter of polygons"
+    },
+    {
+     "code": "3.NS.1",
+     "title": "Read and write numbers to 10,000"
+    },
+    {
+     "code": "3.NS.2",
+     "title": "Model unit and non-unit fractions"
+    },
+    {
+     "code": "3.NS.3",
+     "title": "Fractions on a number line"
+    },
+    {
+     "code": "3.NS.4",
+     "title": "Generate equivalent fractions"
+    },
+    {
+     "code": "3.NS.5",
+     "title": "Compare fractions"
+    },
+    {
+     "code": "3.NS.6",
+     "title": "Round to the nearest ten or hundred"
+    }
+   ],
+   "standards_all": true,
+   "window": "Apr 12 - May 7, 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "3rd-grade-ilearn-summative-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 3,
+   "category": "full-year-bundle",
+   "slot": "bundle",
+   "title": "3rd Grade Indiana ILEARN Math Full-Year Bundle | Checkpoints & Summative SY26-27",
+   "price": 40.0,
+   "items": 421,
+   "pages": 140,
+   "tpt_pages": 140,
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Full-Year-Bundle-Checkpoints-Summative-SY26-27-17290059",
+   "ord": "3rd",
+   "short": "Full-Year Bundle",
+   "seo": "3rd Grade Indiana ILEARN Math full year bundle: all three checkpoint practice tests plus the summative mock, 421 original items across 140 pages covering every grade 3 Indiana Academic Standard. Worked answer keys and item analysis throughout, 20% off buying them separately.",
+   "thumb": "il_g3_bundle.jpg",
+   "standards": [],
+   "standards_all": true,
+   "window": "Sept 2026 – May 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "3rd-grade-ilearn-full-year-bundle",
+   "catLabel": "Full-Year Bundle"
+  },
+  {
+   "grade": 4,
+   "category": "practice",
+   "slot": "cp1",
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 1 Practice | Test Prep & Review SY26-27",
+   "price": 12.0,
+   "items": 100,
+   "pages": 26,
+   "tpt_pages": 26,
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Practice-Test-Prep-Review-SY26-27-17252029",
+   "ord": "4th",
+   "short": "Checkpoint 1 Practice Test",
+   "seo": "4th Grade Indiana ILEARN Math Checkpoint 1 practice test: 100 original items built from the state's own item specifications, covering place value to a million, rounding, multi-digit multiplication, the properties, and factors and multiples, with worked answer keys and an item analysis by standard.",
+   "thumb": "il_g4_cp1.jpg",
+   "standards": [
+    {
+     "code": "4.CA.1",
+     "title": "Multiply up to four digits by one digit"
+    },
+    {
+     "code": "4.CA.3",
+     "title": "Properties of multiplication"
+    },
+    {
+     "code": "4.CA.4",
+     "title": "Factors and multiples to 100"
+    },
+    {
+     "code": "4.NS.1",
+     "title": "Read and write whole numbers to 1,000,000"
+    },
+    {
+     "code": "4.NS.7",
+     "title": "Round multi-digit whole numbers"
+    }
+   ],
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "4th-grade-ilearn-checkpoint-1-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 4,
+   "category": "practice",
+   "slot": "cp2",
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 2 Practice | Test Prep & Review SY26-27",
+   "price": 15.5,
+   "items": 140,
+   "pages": 51,
+   "tpt_pages": 51,
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Practice-Test-Prep-Review-SY26-27-17292156",
+   "ord": "4th",
+   "short": "Checkpoint 2 Practice Test",
+   "seo": "4th Grade Indiana ILEARN Math Checkpoint 2 practice test: 140 original items across seven standards - every one of them flagged essential by Indiana - covering division with remainders, measurement, area and perimeter, and comparing fractions, with every item worked out.",
+   "thumb": "il_g4_cp2.jpg",
+   "standards": [
+    {
+     "code": "4.CA.2",
+     "title": "Divide up to four digits by one digit"
+    },
+    {
+     "code": "4.CA.5",
+     "title": "Multiplicative comparison problems"
+    },
+    {
+     "code": "4.M.1",
+     "title": "Measure to the nearest quarter- and eighth-inch"
+    },
+    {
+     "code": "4.M.2",
+     "title": "Convert larger units to smaller units"
+    },
+    {
+     "code": "4.M.4",
+     "title": "Area and perimeter, including complex shapes"
+    },
+    {
+     "code": "4.NS.3",
+     "title": "Generate equivalent fractions"
+    },
+    {
+     "code": "4.NS.4",
+     "title": "Compare fractions"
+    }
+   ],
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "4th-grade-ilearn-checkpoint-2-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 4,
+   "category": "practice",
+   "slot": "cp3",
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 3 Practice | Test Prep & Review SY26-27",
+   "price": 16.0,
+   "items": 140,
+   "pages": 54,
+   "tpt_pages": 54,
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Practice-Test-Prep-Review-SY26-27-17292171",
+   "ord": "4th",
+   "short": "Checkpoint 3 Practice Test",
+   "seo": "4th Grade Indiana ILEARN Math Checkpoint 3 practice test: 140 original items on adding fractions, mixed numbers, decimals to hundredths, line plots and data, built from the current IDOE item specifications, with worked answer keys and an item analysis by standard.",
+   "thumb": "il_g4_cp3.jpg",
+   "standards": [
+    {
+     "code": "4.CA.6",
+     "title": "Add and subtract fractions with like denominators"
+    },
+    {
+     "code": "4.CA.8",
+     "title": "Fraction problems in real-world settings"
+    },
+    {
+     "code": "4.DA.1",
+     "title": "Line plots, bar graphs, and frequency tables"
+    },
+    {
+     "code": "4.DA.2",
+     "title": "Line plots with fractional measurements"
+    },
+    {
+     "code": "4.NS.2",
+     "title": "Model mixed numbers and improper fractions"
+    },
+    {
+     "code": "4.NS.5",
+     "title": "Tenths and hundredths as fractions and decimals"
+    },
+    {
+     "code": "4.NS.6",
+     "title": "Compare decimals to hundredths"
+    }
+   ],
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "4th-grade-ilearn-checkpoint-3-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 4,
+   "category": "practice",
+   "slot": "sum",
+   "title": "4th Grade Indiana ILEARN Math Summative Practice Test | Test Prep SY26-27",
+   "price": 9.0,
+   "items": 65,
+   "pages": 23,
+   "tpt_pages": 23,
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Summative-Practice-Test-Test-Prep-SY26-27-17292189",
+   "ord": "4th",
+   "short": "Summative Practice Test",
+   "seo": "4th Grade Indiana ILEARN Math summative practice test: a 65-item mock form spanning all 25 grade 4 Indiana Academic Standards assessed on the through-year ILEARN, with every item worked out and an item analysis that turns a scored packet into a reteaching list.",
+   "thumb": "il_g4_sum.jpg",
+   "standards": [
+    {
+     "code": "4.CA.1",
+     "title": "Multiply up to four digits by one digit"
+    },
+    {
+     "code": "4.CA.2",
+     "title": "Divide up to four digits by one digit"
+    },
+    {
+     "code": "4.CA.3",
+     "title": "Properties of multiplication"
+    },
+    {
+     "code": "4.CA.4",
+     "title": "Factors and multiples to 100"
+    },
+    {
+     "code": "4.CA.5",
+     "title": "Multiplicative comparison problems"
+    },
+    {
+     "code": "4.CA.6",
+     "title": "Add and subtract fractions with like denominators"
+    },
+    {
+     "code": "4.CA.7",
+     "title": "Add and subtract mixed numbers"
+    },
+    {
+     "code": "4.CA.8",
+     "title": "Fraction problems in real-world settings"
+    },
+    {
+     "code": "4.CA.9",
+     "title": "Number patterns and rules"
+    },
+    {
+     "code": "4.DA.1",
+     "title": "Line plots, bar graphs, and frequency tables"
+    },
+    {
+     "code": "4.DA.2",
+     "title": "Line plots with fractional measurements"
+    },
+    {
+     "code": "4.G.1",
+     "title": "Parallelograms, rhombuses, and trapezoids"
+    },
+    {
+     "code": "4.G.2",
+     "title": "Rays, angles, and parallel or perpendicular lines"
+    },
+    {
+     "code": "4.G.3",
+     "title": "Classify triangles and quadrilaterals"
+    },
+    {
+     "code": "4.M.1",
+     "title": "Measure to the nearest quarter- and eighth-inch"
+    },
+    {
+     "code": "4.M.2",
+     "title": "Convert larger units to smaller units"
+    },
+    {
+     "code": "4.M.3",
+     "title": "Four operations in measurement problems"
+    },
+    {
+     "code": "4.M.4",
+     "title": "Area and perimeter, including complex shapes"
+    },
+    {
+     "code": "4.NS.1",
+     "title": "Read and write whole numbers to 1,000,000"
+    },
+    {
+     "code": "4.NS.2",
+     "title": "Model mixed numbers and improper fractions"
+    },
+    {
+     "code": "4.NS.3",
+     "title": "Generate equivalent fractions"
+    },
+    {
+     "code": "4.NS.4",
+     "title": "Compare fractions"
+    },
+    {
+     "code": "4.NS.5",
+     "title": "Tenths and hundredths as fractions and decimals"
+    },
+    {
+     "code": "4.NS.6",
+     "title": "Compare decimals to hundredths"
+    },
+    {
+     "code": "4.NS.7",
+     "title": "Round multi-digit whole numbers"
+    }
+   ],
+   "standards_all": true,
+   "window": "Apr 12 - May 7, 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "4th-grade-ilearn-summative-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 4,
+   "category": "full-year-bundle",
+   "slot": "bundle",
+   "title": "4th Grade Indiana ILEARN Math Full-Year Bundle | Checkpoints & Summative SY26-27",
+   "price": 42.0,
+   "items": 445,
+   "pages": 154,
+   "tpt_pages": 154,
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Full-Year-Bundle-Checkpoints-Summative-SY26-27-17292203",
+   "ord": "4th",
+   "short": "Full-Year Bundle",
+   "seo": "4th Grade Indiana ILEARN Math full year bundle: all three checkpoint practice tests plus the summative mock, 445 original items across 154 pages covering all 25 grade 4 Indiana Academic Standards. Worked answer keys and item analysis throughout, 20% off.",
+   "thumb": "il_g4_bundle.jpg",
+   "standards": [],
+   "standards_all": true,
+   "window": "Sept 2026 – May 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "4th-grade-ilearn-full-year-bundle",
+   "catLabel": "Full-Year Bundle"
+  },
+  {
+   "grade": 5,
+   "category": "practice",
+   "slot": "cp1",
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 1 Practice | Test Prep & Review SY26-27",
+   "price": 10.0,
+   "items": 80,
+   "pages": 25,
+   "tpt_pages": 25,
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Practice-Test-Prep-Review-SY26-27-17252052",
+   "ord": "5th",
+   "short": "Checkpoint 1 Practice Test",
+   "seo": "5th Grade Indiana ILEARN Math Checkpoint 1 practice test: 100 original items built from the state's own item specifications, covering all four Checkpoint 1 essential standards, with worked answer keys and an item analysis. Every volume item shows a drawn prism you can actually count.",
+   "thumb": "il_g5_cp1.jpg",
+   "standards": [
+    {
+     "code": "5.CA.1",
+     "title": "Divide by two-digit divisors, with remainders"
+    },
+    {
+     "code": "5.CA.2",
+     "title": "Multiplication and division problems, and what a remainder means"
+    },
+    {
+     "code": "5.M.4",
+     "title": "Volume by packing a prism with unit cubes"
+    },
+    {
+     "code": "5.M.5",
+     "title": "Apply V = l &times; w &times; h and V = B &times; h"
+    }
+   ],
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "5th-grade-ilearn-checkpoint-1-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 5,
+   "category": "practice",
+   "slot": "cp2",
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 2 Practice | Test Prep & Review SY26-27",
+   "price": 14.0,
+   "items": 120,
+   "pages": 47,
+   "tpt_pages": 47,
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Practice-Test-Prep-Review-SY26-27-17296475",
+   "ord": "5th",
+   "short": "Checkpoint 2 Practice Test",
+   "seo": "5th Grade Indiana ILEARN Math Checkpoint 2 practice test: 120 original items across the six winter standards, with worked answer keys and an item analysis. Every fraction comparison sits on a real number line, and not one item says simplify, because grade 5's specification bans the word.",
+   "thumb": "il_g5_cp2.jpg",
+   "standards": [
+    {
+     "code": "5.CA.3",
+     "title": "Add and subtract fractions with unlike denominators"
+    },
+    {
+     "code": "5.CA.4",
+     "title": "Fraction addition and subtraction in real-world problems"
+    },
+    {
+     "code": "5.CA.9",
+     "title": "Add, subtract, multiply, and divide decimals to hundredths"
+    },
+    {
+     "code": "5.CA.10",
+     "title": "Decimal and money problems in real-world settings"
+    },
+    {
+     "code": "5.NS.1",
+     "title": "Compare and order fractions and decimals on a number line"
+    },
+    {
+     "code": "5.NS.4",
+     "title": "Model percents as parts of 100"
+    }
+   ],
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "5th-grade-ilearn-checkpoint-2-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 5,
+   "category": "practice",
+   "slot": "cp3",
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 3 Practice | Test Prep & Review SY26-27",
+   "price": 17.0,
+   "items": 140,
+   "pages": 57,
+   "tpt_pages": 57,
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Practice-Test-Prep-Review-SY26-27-17296476",
+   "ord": "5th",
+   "short": "Checkpoint 3 Practice Test",
+   "seo": "5th Grade Indiana ILEARN Math Checkpoint 3 practice test: 140 original items covering all seven spring standards, every one of which Indiana flags essential. Worked answer keys, item analysis, and 131 drawn figures - a tape diagram or area model on every fraction item.",
+   "thumb": "il_g5_cp3.jpg",
+   "standards": [
+    {
+     "code": "5.CA.5",
+     "title": "Multiply fractions with a model"
+    },
+    {
+     "code": "5.CA.6",
+     "title": "Divide fractions with a model"
+    },
+    {
+     "code": "5.CA.7",
+     "title": "Fraction multiplication in real-world problems"
+    },
+    {
+     "code": "5.CA.8",
+     "title": "Fraction division in real-world problems"
+    },
+    {
+     "code": "5.DA.1",
+     "title": "Line plots, histograms, and choosing a display"
+    },
+    {
+     "code": "5.DA.2",
+     "title": "Mean, median, mode, and outliers"
+    },
+    {
+     "code": "5.M.3",
+     "title": "Area of triangles, parallelograms, and trapezoids"
+    }
+   ],
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "5th-grade-ilearn-checkpoint-3-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 5,
+   "category": "practice",
+   "slot": "sum",
+   "title": "5th Grade Indiana ILEARN Math Summative Practice Test | Test Prep SY26-27",
+   "price": 9.0,
+   "items": 60,
+   "pages": 23,
+   "tpt_pages": 23,
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Summative-Practice-Test-Test-Prep-SY26-27-17296484",
+   "ord": "5th",
+   "short": "Summative Practice Test",
+   "seo": "5th Grade Indiana ILEARN Math summative practice test: a full-length mock covering all 23 grade 5 standards in one sitting, laid out the way the real spring test is laid out. Worked answer keys and an item analysis, with six standards no checkpoint tests at all.",
+   "thumb": "il_g5_sum.jpg",
+   "standards": [
+    {
+     "code": "5.CA.1",
+     "title": "Divide by two-digit divisors, with remainders"
+    },
+    {
+     "code": "5.CA.2",
+     "title": "Multiplication and division problems, and what a remainder means"
+    },
+    {
+     "code": "5.CA.3",
+     "title": "Add and subtract fractions with unlike denominators"
+    },
+    {
+     "code": "5.CA.4",
+     "title": "Fraction addition and subtraction in real-world problems"
+    },
+    {
+     "code": "5.CA.5",
+     "title": "Multiply fractions with a model"
+    },
+    {
+     "code": "5.CA.6",
+     "title": "Divide fractions with a model"
+    },
+    {
+     "code": "5.CA.7",
+     "title": "Fraction multiplication in real-world problems"
+    },
+    {
+     "code": "5.CA.8",
+     "title": "Fraction division in real-world problems"
+    },
+    {
+     "code": "5.CA.9",
+     "title": "Add, subtract, multiply, and divide decimals to hundredths"
+    },
+    {
+     "code": "5.CA.10",
+     "title": "Decimal and money problems in real-world settings"
+    },
+    {
+     "code": "5.CA.11",
+     "title": "Graph and interpret ordered pairs in the first quadrant"
+    },
+    {
+     "code": "5.DA.1",
+     "title": "Line plots, histograms, and choosing a display"
+    },
+    {
+     "code": "5.DA.2",
+     "title": "Mean, median, mode, and outliers"
+    },
+    {
+     "code": "5.G.1",
+     "title": "Classify triangles; radius and diameter of a circle"
+    },
+    {
+     "code": "5.M.1",
+     "title": "Convert measurement units within one system"
+    },
+    {
+     "code": "5.M.2",
+     "title": "Area of a rectangle with fractional side lengths"
+    },
+    {
+     "code": "5.M.3",
+     "title": "Area of triangles, parallelograms, and trapezoids"
+    },
+    {
+     "code": "5.M.4",
+     "title": "Volume by packing a prism with unit cubes"
+    },
+    {
+     "code": "5.M.5",
+     "title": "Apply V = l &times; w &times; h and V = B &times; h"
+    },
+    {
+     "code": "5.NS.1",
+     "title": "Compare and order fractions and decimals on a number line"
+    },
+    {
+     "code": "5.NS.2",
+     "title": "Interpret fractions as parts, sets, and division"
+    },
+    {
+     "code": "5.NS.3",
+     "title": "Patterns when multiplying and dividing by powers of 10"
+    },
+    {
+     "code": "5.NS.4",
+     "title": "Model percents as parts of 100"
+    }
+   ],
+   "standards_all": true,
+   "window": "Apr 12 - May 7, 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "5th-grade-ilearn-summative-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 5,
+   "category": "full-year-bundle",
+   "slot": "bundle",
+   "title": "5th Grade Indiana ILEARN Math Full-Year Bundle | Checkpoints & Summative SY26-27",
+   "price": 40.0,
+   "items": 400,
+   "pages": 152,
+   "tpt_pages": 152,
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Full-Year-Bundle-Checkpoints-Summative-SY26-27-17296487",
+   "ord": "5th",
+   "short": "Full-Year Bundle",
+   "seo": "5th Grade Indiana ILEARN Math full year bundle: all three checkpoint practice tests plus the summative mock, 400 original items across 157 pages covering every one of the 23 grade 5 Indiana Academic Standards. Worked answer keys and item analysis throughout, 20% off.",
+   "thumb": "il_g5_bundle.jpg",
+   "standards": [],
+   "standards_all": true,
+   "window": "Sept 2026 – May 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "5th-grade-ilearn-full-year-bundle",
+   "catLabel": "Full-Year Bundle"
+  },
+  {
+   "grade": 6,
+   "category": "practice",
+   "slot": "cp1",
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 1 Practice | Test Prep & Review SY26-27",
+   "price": 14.0,
+   "items": 142,
+   "pages": 39,
+   "tpt_pages": 39,
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Practice-Test-Prep-Review-SY26-27-17252079",
+   "ord": "6th",
+   "short": "Checkpoint 1 Practice Test",
+   "seo": "6th Grade Indiana ILEARN Math Checkpoint 1 practice test: 142 original items built from the state's own item specifications, covering all six fall standards including negative numbers, order of operations and percent conversion, with worked answer keys and an item analysis by standard.",
+   "thumb": "il_g6_cp1.jpg",
+   "standards": [
+    {
+     "code": "6.NS.1",
+     "title": "Signed numbers in context, and what 0 means"
+    },
+    {
+     "code": "6.NS.3",
+     "title": "Compare and order rational numbers"
+    },
+    {
+     "code": "6.NS.4",
+     "title": "Problems with positive fractions and decimals"
+    },
+    {
+     "code": "6.NS.5",
+     "title": "Order of operations and properties"
+    },
+    {
+     "code": "6.NS.6",
+     "title": "Greatest common factor and least common multiple"
+    },
+    {
+     "code": "6.RP.1",
+     "title": "Fraction, decimal, percent conversion"
+    }
+   ],
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "6th-grade-ilearn-checkpoint-1-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 6,
+   "category": "practice",
+   "slot": "cp2",
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 2 Practice | Test Prep & Review SY26-27",
+   "price": 21.0,
+   "items": 140,
+   "pages": 51,
+   "tpt_pages": 51,
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Practice-Test-Prep-Review-SY26-27-17304777",
+   "ord": "6th",
+   "short": "Checkpoint 2 Practice Test",
+   "seo": "6th Grade Indiana ILEARN Math Checkpoint 2 practice test: 140 original items across seven standards - expressions, equations, inequalities and data displays - in two files matching the state's own calculator split, with every item worked out and an item analysis by standard.",
+   "thumb": "il_g6_cp2.jpg",
+   "standards": [
+    {
+     "code": "6.AF.1",
+     "title": "Write and evaluate expressions with variables"
+    },
+    {
+     "code": "6.AF.2",
+     "title": "Test whether a value is a solution"
+    },
+    {
+     "code": "6.AF.3",
+     "title": "Solve one-step equations"
+    },
+    {
+     "code": "6.AF.4",
+     "title": "Write and graph inequalities"
+    },
+    {
+     "code": "6.DS.1",
+     "title": "Select, create, and interpret data displays"
+    },
+    {
+     "code": "6.DS.3",
+     "title": "Summarize data: center, spread, shape"
+    },
+    {
+     "code": "6.NS.7",
+     "title": "Equivalent expressions; like terms"
+    }
+   ],
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "6th-grade-ilearn-checkpoint-2-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 6,
+   "category": "practice",
+   "slot": "cp3",
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 3 Practice | Test Prep & Review SY26-27",
+   "price": 13.0,
+   "items": 100,
+   "pages": 29,
+   "tpt_pages": 29,
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Practice-Test-Prep-Review-SY26-27-17304778",
+   "ord": "6th",
+   "short": "Checkpoint 3 Practice Test",
+   "seo": "6th Grade Indiana ILEARN Math Checkpoint 3 practice test: 100 original items on ratios, unit rates, proportional relationships and measurement conversion, built from the current IDOE item specifications, with worked answer keys and an item analysis by standard.",
+   "thumb": "il_g6_cp3.jpg",
+   "standards": [
+    {
+     "code": "6.GM.1",
+     "title": "Convert between measurement systems"
+    },
+    {
+     "code": "6.RP.2",
+     "title": "Unit rate and rate language"
+    },
+    {
+     "code": "6.RP.3",
+     "title": "Equivalent ratio tables; plotting pairs"
+    },
+    {
+     "code": "6.RP.4",
+     "title": "Solve rate and ratio problems with models"
+    },
+    {
+     "code": "6.RP.5",
+     "title": "Equations for proportional relationships"
+    }
+   ],
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "6th-grade-ilearn-checkpoint-3-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 6,
+   "category": "practice",
+   "slot": "sum",
+   "title": "6th Grade Indiana ILEARN Math Summative Practice Test | Test Prep SY26-27",
+   "price": 9.0,
+   "items": 62,
+   "pages": 19,
+   "tpt_pages": 19,
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Summative-Practice-Test-Test-Prep-SY26-27-17304780",
+   "ord": "6th",
+   "short": "Summative Practice Test",
+   "seo": "6th Grade Indiana ILEARN Math summative practice test: a 62-item mock form spanning all 24 grade 6 Indiana Academic Standards assessed on the through-year ILEARN, with every item worked out and an item analysis that turns a scored packet into a reteaching list.",
+   "thumb": "il_g6_sum.jpg",
+   "standards": [
+    {
+     "code": "6.AF.1",
+     "title": "Write and evaluate expressions with variables"
+    },
+    {
+     "code": "6.AF.2",
+     "title": "Test whether a value is a solution"
+    },
+    {
+     "code": "6.AF.3",
+     "title": "Solve one-step equations"
+    },
+    {
+     "code": "6.AF.4",
+     "title": "Write and graph inequalities"
+    },
+    {
+     "code": "6.AF.5",
+     "title": "Four-quadrant graphing and distance"
+    },
+    {
+     "code": "6.DS.1",
+     "title": "Select, create, and interpret data displays"
+    },
+    {
+     "code": "6.DS.2",
+     "title": "Statistical questions; interpret displays"
+    },
+    {
+     "code": "6.DS.3",
+     "title": "Summarize data: center, spread, shape"
+    },
+    {
+     "code": "6.GM.1",
+     "title": "Convert between measurement systems"
+    },
+    {
+     "code": "6.GM.2",
+     "title": "Interior angles of triangles and quadrilaterals"
+    },
+    {
+     "code": "6.GM.3",
+     "title": "Area of complex shapes"
+    },
+    {
+     "code": "6.GM.4",
+     "title": "Volume with fractional edge lengths"
+    },
+    {
+     "code": "6.NS.1",
+     "title": "Signed numbers in context, and what 0 means"
+    },
+    {
+     "code": "6.NS.3",
+     "title": "Compare and order rational numbers"
+    },
+    {
+     "code": "6.NS.4",
+     "title": "Problems with positive fractions and decimals"
+    },
+    {
+     "code": "6.NS.5",
+     "title": "Order of operations and properties"
+    },
+    {
+     "code": "6.NS.6",
+     "title": "Greatest common factor and least common multiple"
+    },
+    {
+     "code": "6.NS.7",
+     "title": "Equivalent expressions; like terms"
+    },
+    {
+     "code": "6.NS.8",
+     "title": "Evaluate an exponential expression"
+    },
+    {
+     "code": "6.RP.1",
+     "title": "Fraction, decimal, percent conversion"
+    },
+    {
+     "code": "6.RP.2",
+     "title": "Unit rate and rate language"
+    },
+    {
+     "code": "6.RP.3",
+     "title": "Equivalent ratio tables; plotting pairs"
+    },
+    {
+     "code": "6.RP.4",
+     "title": "Solve rate and ratio problems with models"
+    },
+    {
+     "code": "6.RP.5",
+     "title": "Equations for proportional relationships"
+    }
+   ],
+   "standards_all": true,
+   "window": "Apr 12 - May 7, 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "6th-grade-ilearn-summative-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 6,
+   "category": "full-year-bundle",
+   "slot": "bundle",
+   "title": "6th Grade Indiana ILEARN Math Full-Year Bundle | Checkpoints & Summative SY26-27",
+   "price": 45.6,
+   "items": 444,
+   "pages": 138,
+   "tpt_pages": 138,
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Full-Year-Bundle-Checkpoints-Summative-SY26-27-17304790",
+   "ord": "6th",
+   "short": "Full-Year Bundle",
+   "seo": "6th Grade Indiana ILEARN Math full year bundle: all three checkpoint practice tests plus the summative mock, 444 original items across 138 pages covering every one of the 24 grade 6 Indiana Academic Standards. Worked answer keys and item analysis throughout, 20% off.",
+   "thumb": "il_g6_bundle.jpg",
+   "standards": [],
+   "standards_all": true,
+   "window": "Sept 2026 – May 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "6th-grade-ilearn-full-year-bundle",
+   "catLabel": "Full-Year Bundle"
+  },
+  {
+   "grade": 7,
+   "category": "practice",
+   "slot": "cp1",
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 1 Practice | Test Prep & Review SY26-27",
+   "price": 14.0,
+   "items": 120,
+   "pages": 28,
+   "tpt_pages": 28,
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Practice-Test-Prep-Review-SY26-27-17252104",
+   "ord": "7th",
+   "short": "Checkpoint 1 Practice Test",
+   "seo": "7th Grade Indiana ILEARN Math Checkpoint 1 practice test: 120 original items built from the state's own item specifications, covering signed sums, absolute value distance, the distributive property, signed quotients, prime factorization and square roots, with worked answer keys throughout.",
+   "thumb": "il_g7_cp1.jpg",
+   "standards": [
+    {
+     "code": "7.NS.1",
+     "title": "Additive inverses and sums of rationals"
+    },
+    {
+     "code": "7.NS.2",
+     "title": "Distance as the absolute value of a difference"
+    },
+    {
+     "code": "7.NS.3",
+     "title": "Signed products and the distributive property"
+    },
+    {
+     "code": "7.NS.4",
+     "title": "Signed quotients and equivalent forms"
+    },
+    {
+     "code": "7.NS.5",
+     "title": "Prime factorization with exponents"
+    },
+    {
+     "code": "7.NS.6",
+     "title": "Squaring and square roots"
+    }
+   ],
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "7th-grade-ilearn-checkpoint-1-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 7,
+   "category": "practice",
+   "slot": "cp2",
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 2 Practice | Test Prep & Review SY26-27",
+   "price": 14.0,
+   "items": 120,
+   "pages": 48,
+   "tpt_pages": 48,
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Practice-Test-Prep-Review-SY26-27-17258265",
+   "ord": "7th",
+   "short": "Checkpoint 2 Practice Test",
+   "seo": "7th Grade Indiana ILEARN Math Checkpoint 2 practice test: 120 original items on unit rate, percent problems, proportional equations and graphs, slope and scale drawings, built from the current IDOE item specifications, with every item worked out and an item analysis by standard.",
+   "thumb": "il_g7_cp2.jpg",
+   "standards": [
+    {
+     "code": "7.AF.5",
+     "title": "Constant and varying rates of change"
+    },
+    {
+     "code": "7.AF.6",
+     "title": "Slope from a graph; graphing from slope and a point"
+    },
+    {
+     "code": "7.GM.1",
+     "title": "Scale drawings, actual lengths and areas"
+    },
+    {
+     "code": "7.RP.1",
+     "title": "Identify the unit rate or constant of proportionality"
+    },
+    {
+     "code": "7.RP.2",
+     "title": "Percent problems: tax, tip, markup, interest"
+    },
+    {
+     "code": "7.RP.3",
+     "title": "Equations and graphs of proportional relationships"
+    }
+   ],
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "7th-grade-ilearn-checkpoint-2-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 7,
+   "category": "practice",
+   "slot": "cp3",
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 3 Practice | Test Prep & Review SY26-27",
+   "price": 12.0,
+   "items": 100,
+   "pages": 34,
+   "tpt_pages": 34,
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Practice-Test-Prep-Review-SY26-27-17258275",
+   "ord": "7th",
+   "short": "Checkpoint 3 Practice Test",
+   "seo": "7th Grade Indiana ILEARN Math Checkpoint 3 practice test: 100 original items on expanding and factoring, multi-step rational problems, solving equations and inequalities, and circle area and circumference, with worked answer keys and an item analysis by standard.",
+   "thumb": "il_g7_cp3.jpg",
+   "standards": [
+    {
+     "code": "7.AF.1",
+     "title": "Equivalent expressions; factoring and distributing"
+    },
+    {
+     "code": "7.AF.2",
+     "title": "Real-world problems with rational numbers"
+    },
+    {
+     "code": "7.AF.3",
+     "title": "Solving and modeling linear equations"
+    },
+    {
+     "code": "7.AF.4",
+     "title": "Solving, graphing, and interpreting inequalities"
+    },
+    {
+     "code": "7.GM.2",
+     "title": "Area and circumference of a circle"
+    }
+   ],
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "7th-grade-ilearn-checkpoint-3-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 7,
+   "category": "practice",
+   "slot": "sum",
+   "title": "7th Grade Indiana ILEARN Math Summative Practice | Test Prep & Year Review 26-27",
+   "price": 18.0,
+   "items": 230,
+   "pages": 96,
+   "tpt_pages": 96,
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Summative-Practice-Test-Prep-Year-Review-26-27-17258291",
+   "ord": "7th",
+   "short": "Summative Practice Test",
+   "seo": "7th Grade Indiana ILEARN Math summative practice test: a 230-item mock form spanning all 23 grade 7 Indiana Academic Standards assessed on the through-year ILEARN, including the six that appear on no checkpoint, with every item worked out.",
+   "thumb": "il_g7_sum.jpg",
+   "standards": [
+    {
+     "code": "7.AF.1",
+     "title": "Equivalent expressions; factoring and distributing"
+    },
+    {
+     "code": "7.AF.2",
+     "title": "Real-world problems with rational numbers"
+    },
+    {
+     "code": "7.AF.3",
+     "title": "Solving and modeling linear equations"
+    },
+    {
+     "code": "7.AF.4",
+     "title": "Solving, graphing, and interpreting inequalities"
+    },
+    {
+     "code": "7.AF.5",
+     "title": "Constant and varying rates of change"
+    },
+    {
+     "code": "7.AF.6",
+     "title": "Slope from a graph; graphing from slope and a point"
+    },
+    {
+     "code": "7.DSP.1",
+     "title": "Samples, bias, and valid inferences"
+    },
+    {
+     "code": "7.DSP.2",
+     "title": "Comparing two populations by centre and spread"
+    },
+    {
+     "code": "7.DSP.3",
+     "title": "Overlap of distributions; outliers"
+    },
+    {
+     "code": "7.DSP.4",
+     "title": "Probability and the language of likelihood"
+    },
+    {
+     "code": "7.DSP.5",
+     "title": "Probability models and sample spaces"
+    },
+    {
+     "code": "7.GM.1",
+     "title": "Scale drawings, actual lengths and areas"
+    },
+    {
+     "code": "7.GM.2",
+     "title": "Area and circumference of a circle"
+    },
+    {
+     "code": "7.NS.1",
+     "title": "Additive inverses and sums of rationals"
+    },
+    {
+     "code": "7.NS.2",
+     "title": "Distance as the absolute value of a difference"
+    },
+    {
+     "code": "7.NS.3",
+     "title": "Signed products and the distributive property"
+    },
+    {
+     "code": "7.NS.4",
+     "title": "Signed quotients and equivalent forms"
+    },
+    {
+     "code": "7.NS.5",
+     "title": "Prime factorization with exponents"
+    },
+    {
+     "code": "7.NS.6",
+     "title": "Squaring and square roots"
+    },
+    {
+     "code": "7.NS.7",
+     "title": "Fluent computation with rational numbers"
+    },
+    {
+     "code": "7.RP.1",
+     "title": "Identify the unit rate or constant of proportionality"
+    },
+    {
+     "code": "7.RP.2",
+     "title": "Percent problems: tax, tip, markup, interest"
+    },
+    {
+     "code": "7.RP.3",
+     "title": "Equations and graphs of proportional relationships"
+    }
+   ],
+   "standards_all": true,
+   "window": "Apr 12 - May 7, 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "7th-grade-ilearn-summative-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 7,
+   "category": "full-year-bundle",
+   "slot": "bundle",
+   "title": "7th Grade Indiana ILEARN Math Full Year Bundle | Checkpoints & Summative 26-27",
+   "price": 46.4,
+   "items": 570,
+   "pages": 211,
+   "tpt_pages": 211,
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Full-Year-Bundle-Checkpoints-Summative-26-27-17258320",
+   "ord": "7th",
+   "short": "Full-Year Bundle",
+   "seo": "7th Grade Indiana ILEARN Math full year bundle: all three checkpoint practice tests plus the summative mock, 570 original items across 211 pages covering all 23 grade 7 Indiana Academic Standards. Worked answer keys and item analysis throughout, 20% off.",
+   "thumb": "il_g7_bundle.jpg",
+   "standards": [],
+   "standards_all": true,
+   "window": "Sept 2026 – May 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "7th-grade-ilearn-full-year-bundle",
+   "catLabel": "Full-Year Bundle"
+  },
+  {
+   "grade": 8,
+   "category": "practice",
+   "slot": "cp1",
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 1 Practice | Test Prep & Review SY26-27",
+   "price": 12.0,
+   "items": 100,
+   "pages": 25,
+   "tpt_pages": 23,
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Practice-Test-Prep-Review-SY26-27-17252110",
+   "ord": "8th",
+   "short": "Checkpoint 1 Practice Test",
+   "seo": "8th Grade Indiana ILEARN Math Checkpoint 1 practice test: 100 original items built from the state's own item specifications, covering irrational approximation, exponent properties, multi-step rational problems and linear equations, with worked answer keys throughout.",
+   "thumb": "il_g8_cp1.jpg",
+   "standards": [
+    {
+     "code": "8.AF.1",
+     "title": "Solving linear equations and inequalities with rational coefficients"
+    },
+    {
+     "code": "8.AF.2",
+     "title": "Classifying one/infinite/no-solution linear equations"
+    },
+    {
+     "code": "8.NS.2",
+     "title": "Comparing, plotting, and estimating with irrational numbers"
+    },
+    {
+     "code": "8.NS.3",
+     "title": "Properties of integer exponents with common rational bases"
+    },
+    {
+     "code": "8.NS.4",
+     "title": "Multi-step real-world problems with rational numbers"
+    }
+   ],
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "8th-grade-ilearn-checkpoint-1-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 8,
+   "category": "practice",
+   "slot": "cp2",
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 2 Practice | Test Prep & Review SY26-27",
+   "price": 14.0,
+   "items": 120,
+   "pages": 52,
+   "tpt_pages": 50,
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Practice-Test-Prep-Review-SY26-27-17305535",
+   "ord": "8th",
+   "short": "Checkpoint 2 Practice Test",
+   "seo": "8th Grade Indiana ILEARN Math Checkpoint 2 practice test: 120 original items on functions, slope-intercept form, comparing linear functions across tables, graphs and equations, and solving systems by graphing, with every item worked out and an item analysis by standard.",
+   "thumb": "il_g8_cp2.jpg",
+   "standards": [
+    {
+     "code": "8.AF.3",
+     "title": "The definition of a function; ordered pairs, tables, graphs"
+    },
+    {
+     "code": "8.AF.4",
+     "title": "Qualitative graphs: increasing/decreasing, linear/nonlinear, max/min"
+    },
+    {
+     "code": "8.AF.5",
+     "title": "y = mx + b as THE linear function; linear vs. nonlinear"
+    },
+    {
+     "code": "8.AF.6",
+     "title": "Construct a linear function; interpret rate of change and y-intercept"
+    },
+    {
+     "code": "8.AF.7",
+     "title": "Compare two linear functions in different representations"
+    },
+    {
+     "code": "8.AF.8",
+     "title": "Approximating a system's solution by graphing"
+    }
+   ],
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "8th-grade-ilearn-checkpoint-2-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 8,
+   "category": "practice",
+   "slot": "cp3",
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 3 Practice | Test Prep & Review SY26-27",
+   "price": 12.0,
+   "items": 100,
+   "pages": 47,
+   "tpt_pages": 47,
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Practice-Test-Prep-Review-SY26-27-17305536",
+   "ord": "8th",
+   "short": "Checkpoint 3 Practice Test",
+   "seo": "8th Grade Indiana ILEARN Math Checkpoint 3 practice test: 100 original items on scatter plots, lines of best fit, transformations in the coordinate plane, volume of cones, spheres and pyramids, and the Pythagorean Theorem, with worked answer keys and an item analysis.",
+   "thumb": "il_g8_cp3.jpg",
+   "standards": [
+    {
+     "code": "8.DSP.1",
+     "title": "Scatter plots: clustering, outliers, and association"
+    },
+    {
+     "code": "8.DSP.2",
+     "title": "Line of best fit: interpret slope and y-intercept in context"
+    },
+    {
+     "code": "8.GM.1",
+     "title": "Dilations, translations, rotations, reflections in the coordinate plane"
+    },
+    {
+     "code": "8.GM.2",
+     "title": "Volume of cones, spheres, pyramids; surface area of spheres"
+    },
+    {
+     "code": "8.GM.3",
+     "title": "The Pythagorean Theorem, including the 3-D box diagonal"
+    }
+   ],
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "8th-grade-ilearn-checkpoint-3-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 8,
+   "category": "practice",
+   "slot": "sum",
+   "title": "8th Grade Indiana ILEARN Math Summative Practice | Test Prep & Year Review 26-27",
+   "price": 18.0,
+   "items": 200,
+   "pages": 79,
+   "tpt_pages": 79,
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Summative-Practice-Test-Prep-Year-Review-26-27-17305537",
+   "ord": "8th",
+   "short": "Summative Practice Test",
+   "seo": "8th Grade Indiana ILEARN Math summative practice test: a 200-item mock form spanning all 20 grade 8 Indiana Academic Standards assessed on the through-year ILEARN, including the four that appear on no checkpoint, with every item worked out.",
+   "thumb": "il_g8_sum.jpg",
+   "standards": [
+    {
+     "code": "8.AF.1",
+     "title": "Solving linear equations and inequalities with rational coefficients"
+    },
+    {
+     "code": "8.AF.2",
+     "title": "Classifying one/infinite/no-solution linear equations"
+    },
+    {
+     "code": "8.AF.3",
+     "title": "The definition of a function; ordered pairs, tables, graphs"
+    },
+    {
+     "code": "8.AF.4",
+     "title": "Qualitative graphs: increasing/decreasing, linear/nonlinear, max/min"
+    },
+    {
+     "code": "8.AF.5",
+     "title": "y = mx + b as THE linear function; linear vs. nonlinear"
+    },
+    {
+     "code": "8.AF.6",
+     "title": "Construct a linear function; interpret rate of change and y-intercept"
+    },
+    {
+     "code": "8.AF.7",
+     "title": "Compare two linear functions in different representations"
+    },
+    {
+     "code": "8.AF.8",
+     "title": "Approximating a system's solution by graphing"
+    },
+    {
+     "code": "8.DSP.1",
+     "title": "Scatter plots: clustering, outliers, and association"
+    },
+    {
+     "code": "8.DSP.2",
+     "title": "Line of best fit: interpret slope and y-intercept in context"
+    },
+    {
+     "code": "8.DSP.3",
+     "title": "Compound-event probability: independent and dependent"
+    },
+    {
+     "code": "8.DSP.4",
+     "title": "Independent, dependent, complementary, mutually exclusive events"
+    },
+    {
+     "code": "8.DSP.5",
+     "title": "The multiplication counting principle"
+    },
+    {
+     "code": "8.GM.1",
+     "title": "Dilations, translations, rotations, reflections in the coordinate plane"
+    },
+    {
+     "code": "8.GM.2",
+     "title": "Volume of cones, spheres, pyramids; surface area of spheres"
+    },
+    {
+     "code": "8.GM.3",
+     "title": "The Pythagorean Theorem, including the 3-D box diagonal"
+    },
+    {
+     "code": "8.NS.1",
+     "title": "Rational vs. irrational; decimal equivalents; repeating decimal to fraction"
+    },
+    {
+     "code": "8.NS.2",
+     "title": "Comparing, plotting, and estimating with irrational numbers"
+    },
+    {
+     "code": "8.NS.3",
+     "title": "Properties of integer exponents with common rational bases"
+    },
+    {
+     "code": "8.NS.4",
+     "title": "Multi-step real-world problems with rational numbers"
+    }
+   ],
+   "standards_all": true,
+   "window": "Apr 12 - May 7, 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "8th-grade-ilearn-summative-practice-test",
+   "catLabel": "Practice Test"
+  },
+  {
+   "grade": 8,
+   "category": "full-year-bundle",
+   "slot": "bundle",
+   "title": "8th Grade Indiana ILEARN Math Full Year Bundle | Checkpoints & Summative 26-27",
+   "price": 44.8,
+   "items": 520,
+   "pages": 208,
+   "tpt_pages": 205,
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Full-Year-Bundle-Checkpoints-Summative-26-27-17305541",
+   "ord": "8th",
+   "short": "Full-Year Bundle",
+   "seo": "8th Grade Indiana ILEARN Math full year bundle: all three checkpoint practice tests plus the summative mock, 520 original items across 208 pages covering all 20 grade 8 Indiana Academic Standards. Worked answer keys and item analysis throughout, 20% off.",
+   "thumb": "il_g8_bundle.jpg",
+   "standards": [],
+   "standards_all": true,
+   "window": "Sept 2026 – May 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "8th-grade-ilearn-full-year-bundle",
+   "catLabel": "Full-Year Bundle"
+  },
+  {
+   "grade": 3,
+   "category": "intervention",
+   "slot": "cp1-intervention",
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 1 Intervention & Reteach SY26-27",
+   "price": 16.5,
+   "items": 60,
+   "pages": 42,
+   "tpt_pages": 36,
+   "standards": [
+    {
+     "code": "3.CA.1",
+     "title": "Add and subtract multi-digit numbers"
+    },
+    {
+     "code": "3.CA.2",
+     "title": "Addition and subtraction word problems"
+    },
+    {
+     "code": "3.M.4",
+     "title": "Value of coins and bills"
+    },
+    {
+     "code": "3.NS.1",
+     "title": "Read and write numbers to 10,000"
+    },
+    {
+     "code": "3.NS.6",
+     "title": "Round to the nearest ten or hundred"
+    }
+   ],
+   "reassessment": 20,
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-1-Intervention-Reteach-SY26-27-17450012",
+   "ord": "3rd",
+   "short": "Checkpoint 1 Intervention & Reteach",
+   "seo": "3rd Grade Indiana ILEARN Math Checkpoint 1 intervention and reteach: a six-part cycle for each of the five fall standards - teacher page, student reference, targeted practice, error analysis, exit ticket and data sheet. 20 reassessment items appear in no other resource.",
+   "thumb": "il_g3_iv1.jpg",
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "3rd-grade-ilearn-checkpoint-1-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 3,
+   "category": "intervention",
+   "slot": "cp2-intervention",
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 2 Intervention & Reteach SY26-27",
+   "price": 19.5,
+   "items": 84,
+   "pages": 60,
+   "tpt_pages": 53,
+   "standards": [
+    {
+     "code": "3.CA.3",
+     "title": "Model multiplication: groups, arrays, number lines"
+    },
+    {
+     "code": "3.CA.4",
+     "title": "Model division: partition, share, inverse"
+    },
+    {
+     "code": "3.CA.5",
+     "title": "Multiplication and division strategies"
+    },
+    {
+     "code": "3.CA.7",
+     "title": "Multiplication and division word problems"
+    },
+    {
+     "code": "3.CA.8",
+     "title": "Number patterns and rules"
+    },
+    {
+     "code": "3.NS.2",
+     "title": "Model unit and non-unit fractions"
+    },
+    {
+     "code": "3.NS.3",
+     "title": "Fractions on a number line"
+    }
+   ],
+   "reassessment": 28,
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-2-Intervention-Reteach-SY26-27-17450048",
+   "ord": "3rd",
+   "short": "Checkpoint 2 Intervention & Reteach",
+   "seo": "3rd Grade Indiana ILEARN Math Checkpoint 2 intervention and reteach: a six-part cycle for each of the seven winter standards, six of them essential. Teacher page, student reference, targeted practice, error analysis, exit ticket and data sheet for every standard.",
+   "thumb": "il_g3_iv2.jpg",
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "3rd-grade-ilearn-checkpoint-2-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 3,
+   "category": "intervention",
+   "slot": "cp3-intervention",
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 3 Intervention & Reteach SY26-27",
+   "price": 18.0,
+   "items": 72,
+   "pages": 58,
+   "tpt_pages": 52,
+   "standards": [
+    {
+     "code": "3.DA.1",
+     "title": "Read and build bar graphs and pictographs"
+    },
+    {
+     "code": "3.M.3",
+     "title": "Tell time and solve elapsed-time problems"
+    },
+    {
+     "code": "3.M.5",
+     "title": "Area of a rectangle by counting unit squares"
+    },
+    {
+     "code": "3.M.6",
+     "title": "Perimeter of polygons"
+    },
+    {
+     "code": "3.NS.4",
+     "title": "Generate equivalent fractions"
+    },
+    {
+     "code": "3.NS.5",
+     "title": "Compare fractions"
+    }
+   ],
+   "reassessment": 24,
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-3-Intervention-amp-Reteach-SY26-27-17450081",
+   "ord": "3rd",
+   "short": "Checkpoint 3 Intervention & Reteach",
+   "seo": "3rd Grade Indiana ILEARN Math Checkpoint 3 intervention and reteach: a six-part cycle for each of the six spring standards - graphs, time, area, perimeter and fractions. 24 reassessment items appear in no other resource in this shop.",
+   "thumb": "il_g3_iv3.jpg",
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "3rd-grade-ilearn-checkpoint-3-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 5,
+   "category": "intervention",
+   "slot": "cp1-intervention",
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 1 Intervention & Reteach SY26-27",
+   "price": 15.0,
+   "items": 48,
+   "pages": 35,
+   "tpt_pages": 31,
+   "standards": [
+    {
+     "code": "5.CA.1",
+     "title": "Divide by two-digit divisors, with remainders"
+    },
+    {
+     "code": "5.CA.2",
+     "title": "Multiplication and division problems, and what a remainder means"
+    },
+    {
+     "code": "5.M.4",
+     "title": "Volume by packing a prism with unit cubes"
+    },
+    {
+     "code": "5.M.5",
+     "title": "Apply V = l &times; w &times; h and V = B &times; h"
+    }
+   ],
+   "reassessment": 16,
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Intervention-Reteach-SY26-27-17442330",
+   "ord": "5th",
+   "short": "Checkpoint 1 Intervention & Reteach",
+   "seo": "5th Grade Indiana ILEARN Math Checkpoint 1 intervention and reteach: a six-part cycle for each of the four fall standards - teacher page, student reference, targeted practice, error analysis, exit ticket and data sheet. 16 reassessment items appear in no other resource.",
+   "thumb": "il_g5_iv1.jpg",
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "5th-grade-ilearn-checkpoint-1-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 5,
+   "category": "intervention",
+   "slot": "cp2-intervention",
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 2 Intervention & Reteach SY26-27",
+   "price": 18.0,
+   "items": 72,
+   "pages": 55,
+   "tpt_pages": 49,
+   "standards": [
+    {
+     "code": "5.CA.3",
+     "title": "Add and subtract fractions with unlike denominators"
+    },
+    {
+     "code": "5.CA.4",
+     "title": "Fraction addition and subtraction in real-world problems"
+    },
+    {
+     "code": "5.CA.9",
+     "title": "Add, subtract, multiply, and divide decimals to hundredths"
+    },
+    {
+     "code": "5.CA.10",
+     "title": "Decimal and money problems in real-world settings"
+    },
+    {
+     "code": "5.NS.1",
+     "title": "Compare and order fractions and decimals on a number line"
+    },
+    {
+     "code": "5.NS.4",
+     "title": "Model percents as parts of 100"
+    }
+   ],
+   "reassessment": 24,
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Intervention-Reteach-SY26-27-17442345",
+   "ord": "5th",
+   "short": "Checkpoint 2 Intervention & Reteach",
+   "seo": "5th Grade Indiana ILEARN Math Checkpoint 2 intervention and reteach: a six-part cycle for each of the six winter standards - teacher page, student reference, targeted practice, error analysis, exit ticket and data sheet. 24 reassessment items appear in no other resource.",
+   "thumb": "il_g5_iv2.jpg",
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "5th-grade-ilearn-checkpoint-2-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 5,
+   "category": "intervention",
+   "slot": "cp3-intervention",
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 3 Intervention & Reteach SY26-27",
+   "price": 19.5,
+   "items": 84,
+   "pages": 67,
+   "tpt_pages": 61,
+   "standards": [
+    {
+     "code": "5.CA.5",
+     "title": "Multiply fractions with a model"
+    },
+    {
+     "code": "5.CA.6",
+     "title": "Divide fractions with a model"
+    },
+    {
+     "code": "5.CA.7",
+     "title": "Fraction multiplication in real-world problems"
+    },
+    {
+     "code": "5.CA.8",
+     "title": "Fraction division in real-world problems"
+    },
+    {
+     "code": "5.DA.1",
+     "title": "Line plots, histograms, and choosing a display"
+    },
+    {
+     "code": "5.DA.2",
+     "title": "Mean, median, mode, and outliers"
+    },
+    {
+     "code": "5.M.3",
+     "title": "Area of triangles, parallelograms, and trapezoids"
+    }
+   ],
+   "reassessment": 28,
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Intervention-Reteach-SY26-27-17442366",
+   "ord": "5th",
+   "short": "Checkpoint 3 Intervention & Reteach",
+   "seo": "5th Grade Indiana ILEARN Math Checkpoint 3 intervention and reteach: a six-part cycle for each of the seven spring standards, all seven flagged essential by Indiana. Teacher page, student reference, targeted practice, error analysis, exit ticket and data sheet per standard.",
+   "thumb": "il_g5_iv3.jpg",
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "5th-grade-ilearn-checkpoint-3-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 6,
+   "category": "intervention",
+   "slot": "cp1-intervention",
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 1 Intervention & Reteach SY26-27",
+   "price": 18.0,
+   "items": 72,
+   "pages": 46,
+   "tpt_pages": 40,
+   "standards": [
+    {
+     "code": "6.NS.1",
+     "title": "Signed numbers in context, and what 0 means"
+    },
+    {
+     "code": "6.NS.3",
+     "title": "Compare and order rational numbers"
+    },
+    {
+     "code": "6.NS.4",
+     "title": "Problems with positive fractions and decimals"
+    },
+    {
+     "code": "6.NS.5",
+     "title": "Order of operations and properties"
+    },
+    {
+     "code": "6.NS.6",
+     "title": "Greatest common factor and least common multiple"
+    },
+    {
+     "code": "6.RP.1",
+     "title": "Fraction, decimal, percent conversion"
+    }
+   ],
+   "reassessment": 24,
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Intervention-Reteach-SY26-27-17455538",
+   "ord": "6th",
+   "short": "Checkpoint 1 Intervention & Reteach",
+   "seo": "6th Grade Indiana ILEARN Math Checkpoint 1 intervention and reteach: a six-part cycle for each of the six fall standards - teacher page, student reference, targeted practice, error analysis, exit ticket and data sheet. 24 reassessment items appear in no other resource.",
+   "thumb": "il_g6_iv1.jpg",
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "6th-grade-ilearn-checkpoint-1-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 6,
+   "category": "intervention",
+   "slot": "cp2-intervention",
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 2 Intervention & Reteach SY26-27",
+   "price": 19.5,
+   "items": 84,
+   "pages": 54,
+   "tpt_pages": 47,
+   "standards": [
+    {
+     "code": "6.AF.1",
+     "title": "Write and evaluate expressions with variables"
+    },
+    {
+     "code": "6.AF.2",
+     "title": "Test whether a value is a solution"
+    },
+    {
+     "code": "6.AF.3",
+     "title": "Solve one-step equations"
+    },
+    {
+     "code": "6.AF.4",
+     "title": "Write and graph inequalities"
+    },
+    {
+     "code": "6.DS.1",
+     "title": "Select, create, and interpret data displays"
+    },
+    {
+     "code": "6.DS.3",
+     "title": "Summarize data: center, spread, shape"
+    },
+    {
+     "code": "6.NS.7",
+     "title": "Equivalent expressions; like terms"
+    }
+   ],
+   "reassessment": 28,
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Intervention-Reteach-SY26-27-17455585",
+   "ord": "6th",
+   "short": "Checkpoint 2 Intervention & Reteach",
+   "seo": "6th Grade Indiana ILEARN Math Checkpoint 2 intervention and reteach: a six-part cycle for all seven winter standards, algebra and data displays together in one document. Teacher page, student reference, targeted practice, error analysis and 28 brand-new reassessment items.",
+   "thumb": "il_g6_iv2.jpg",
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "6th-grade-ilearn-checkpoint-2-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 6,
+   "category": "intervention",
+   "slot": "cp3-intervention",
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 3 Intervention & Reteach SY26-27",
+   "price": 16.5,
+   "items": 60,
+   "pages": 41,
+   "tpt_pages": 36,
+   "standards": [
+    {
+     "code": "6.GM.1",
+     "title": "Convert between measurement systems"
+    },
+    {
+     "code": "6.RP.2",
+     "title": "Unit rate and rate language"
+    },
+    {
+     "code": "6.RP.3",
+     "title": "Equivalent ratio tables; plotting pairs"
+    },
+    {
+     "code": "6.RP.4",
+     "title": "Solve rate and ratio problems with models"
+    },
+    {
+     "code": "6.RP.5",
+     "title": "Equations for proportional relationships"
+    }
+   ],
+   "reassessment": 20,
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Intervention-Reteach-SY26-27-17455652",
+   "ord": "6th",
+   "short": "Checkpoint 3 Intervention & Reteach",
+   "seo": "6th Grade Indiana ILEARN Math Checkpoint 3 intervention and reteach: a six-part cycle for each of the five ratio and proportion standards - teacher page, student reference, targeted practice, error analysis, exit ticket and data sheet. 20 reassessment items appear nowhere else.",
+   "thumb": "il_g6_iv3.jpg",
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "6th-grade-ilearn-checkpoint-3-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 4,
+   "category": "intervention",
+   "slot": "cp1-intervention",
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 1 Intervention & Reteach SY26-27",
+   "price": 16.5,
+   "items": 60,
+   "pages": 41,
+   "tpt_pages": 36,
+   "standards": [
+    {
+     "code": "4.CA.1",
+     "title": "Multiply up to four digits by one digit"
+    },
+    {
+     "code": "4.CA.3",
+     "title": "Properties of multiplication"
+    },
+    {
+     "code": "4.CA.4",
+     "title": "Factors and multiples to 100"
+    },
+    {
+     "code": "4.NS.1",
+     "title": "Read and write whole numbers to 1,000,000"
+    },
+    {
+     "code": "4.NS.7",
+     "title": "Round multi-digit whole numbers"
+    }
+   ],
+   "reassessment": 20,
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Intervention-Reteach-SY26-27-17456701",
+   "ord": "4th",
+   "short": "Checkpoint 1 Intervention & Reteach",
+   "seo": "4th Grade Indiana ILEARN Math Checkpoint 1 intervention and reteach: a six-part cycle for each of the five fall standards - teacher page, student reference, targeted practice, error analysis, exit ticket and data sheet. 20 reassessment items appear in no other resource.",
+   "thumb": "il_g4_iv1.jpg",
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "4th-grade-ilearn-checkpoint-1-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 4,
+   "category": "intervention",
+   "slot": "cp2-intervention",
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 2 Intervention & Reteach SY26-27",
+   "price": 19.5,
+   "items": 84,
+   "pages": 65,
+   "tpt_pages": 59,
+   "standards": [
+    {
+     "code": "4.CA.2",
+     "title": "Divide up to four digits by one digit"
+    },
+    {
+     "code": "4.CA.5",
+     "title": "Multiplicative comparison problems"
+    },
+    {
+     "code": "4.M.1",
+     "title": "Measure to the nearest quarter- and eighth-inch"
+    },
+    {
+     "code": "4.M.2",
+     "title": "Convert larger units to smaller units"
+    },
+    {
+     "code": "4.M.4",
+     "title": "Area and perimeter, including complex shapes"
+    },
+    {
+     "code": "4.NS.3",
+     "title": "Generate equivalent fractions"
+    },
+    {
+     "code": "4.NS.4",
+     "title": "Compare fractions"
+    }
+   ],
+   "reassessment": 28,
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Intervention-Reteach-SY26-27-17456738",
+   "ord": "4th",
+   "short": "Checkpoint 2 Intervention & Reteach",
+   "seo": "4th Grade Indiana ILEARN Math Checkpoint 2 intervention and reteach: a six-part cycle for all seven winter standards, every one flagged essential by Indiana. Teacher page, student reference, targeted practice, error analysis and 28 brand-new reassessment items.",
+   "thumb": "il_g4_iv2.jpg",
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "4th-grade-ilearn-checkpoint-2-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 4,
+   "category": "intervention",
+   "slot": "cp3-intervention",
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 3 Intervention & Reteach SY26-27",
+   "price": 19.5,
+   "items": 84,
+   "pages": 66,
+   "tpt_pages": 63,
+   "standards": [
+    {
+     "code": "4.CA.6",
+     "title": "Add and subtract fractions with like denominators"
+    },
+    {
+     "code": "4.CA.8",
+     "title": "Fraction problems in real-world settings"
+    },
+    {
+     "code": "4.DA.1",
+     "title": "Line plots, bar graphs, and frequency tables"
+    },
+    {
+     "code": "4.DA.2",
+     "title": "Line plots with fractional measurements"
+    },
+    {
+     "code": "4.NS.2",
+     "title": "Model mixed numbers and improper fractions"
+    },
+    {
+     "code": "4.NS.5",
+     "title": "Tenths and hundredths as fractions and decimals"
+    },
+    {
+     "code": "4.NS.6",
+     "title": "Compare decimals to hundredths"
+    }
+   ],
+   "reassessment": 28,
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Intervention-Reteach-SY26-27-17456797",
+   "ord": "4th",
+   "short": "Checkpoint 3 Intervention & Reteach",
+   "seo": "4th Grade Indiana ILEARN Math Checkpoint 3 intervention and reteach: a six-part cycle for each of the seven spring standards - fractions, decimals and data - with teacher pages, student references, error analysis and 28 reassessment items that appear nowhere else.",
+   "thumb": "il_g4_iv3.jpg",
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "4th-grade-ilearn-checkpoint-3-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 7,
+   "category": "intervention",
+   "slot": "cp1-intervention",
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 1 Intervention & Reteach SY26-27",
+   "price": 18.0,
+   "items": 72,
+   "pages": 47,
+   "tpt_pages": 41,
+   "standards": [
+    {
+     "code": "7.NS.1",
+     "title": "Additive inverses and sums of rationals"
+    },
+    {
+     "code": "7.NS.2",
+     "title": "Distance as the absolute value of a difference"
+    },
+    {
+     "code": "7.NS.3",
+     "title": "Signed products and the distributive property"
+    },
+    {
+     "code": "7.NS.4",
+     "title": "Signed quotients and equivalent forms"
+    },
+    {
+     "code": "7.NS.5",
+     "title": "Prime factorization with exponents"
+    },
+    {
+     "code": "7.NS.6",
+     "title": "Squaring and square roots"
+    }
+   ],
+   "reassessment": 24,
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Intervention-Reteach-SY26-27-17457433",
+   "ord": "7th",
+   "short": "Checkpoint 1 Intervention & Reteach",
+   "seo": "7th Grade Indiana ILEARN Math Checkpoint 1 intervention and reteach: a six-part cycle for each of the six fall standards - teacher page, student reference, targeted practice, error analysis, exit ticket and data sheet. 24 reassessment items appear in no other resource.",
+   "thumb": "il_g7_iv1.jpg",
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "7th-grade-ilearn-checkpoint-1-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 7,
+   "category": "intervention",
+   "slot": "cp2-intervention",
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 2 Intervention & Reteach SY26-27",
+   "price": 18.0,
+   "items": 72,
+   "pages": 53,
+   "tpt_pages": 47,
+   "standards": [
+    {
+     "code": "7.AF.5",
+     "title": "Constant and varying rates of change"
+    },
+    {
+     "code": "7.AF.6",
+     "title": "Slope from a graph; graphing from slope and a point"
+    },
+    {
+     "code": "7.GM.1",
+     "title": "Scale drawings, actual lengths and areas"
+    },
+    {
+     "code": "7.RP.1",
+     "title": "Identify the unit rate or constant of proportionality"
+    },
+    {
+     "code": "7.RP.2",
+     "title": "Percent problems: tax, tip, markup, interest"
+    },
+    {
+     "code": "7.RP.3",
+     "title": "Equations and graphs of proportional relationships"
+    }
+   ],
+   "reassessment": 24,
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Intervention-Reteach-SY26-27-17457475",
+   "ord": "7th",
+   "short": "Checkpoint 2 Intervention & Reteach",
+   "seo": "7th Grade Indiana ILEARN Math Checkpoint 2 intervention and reteach: a six-part cycle for each of the six winter standards - proportionality, percent, slope and scale - with teacher pages, student references, error analysis and 24 brand-new reassessment items.",
+   "thumb": "il_g7_iv2.jpg",
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "7th-grade-ilearn-checkpoint-2-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 7,
+   "category": "intervention",
+   "slot": "cp3-intervention",
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 3 Intervention & Reteach SY26-27",
+   "price": 16.5,
+   "items": 60,
+   "pages": 41,
+   "tpt_pages": 37,
+   "standards": [
+    {
+     "code": "7.AF.1",
+     "title": "Equivalent expressions; factoring and distributing"
+    },
+    {
+     "code": "7.AF.2",
+     "title": "Real-world problems with rational numbers"
+    },
+    {
+     "code": "7.AF.3",
+     "title": "Solving and modeling linear equations"
+    },
+    {
+     "code": "7.AF.4",
+     "title": "Solving, graphing, and interpreting inequalities"
+    },
+    {
+     "code": "7.GM.2",
+     "title": "Area and circumference of a circle"
+    }
+   ],
+   "reassessment": 20,
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Intervention-Reteach-SY26-27-17457519",
+   "ord": "7th",
+   "short": "Checkpoint 3 Intervention & Reteach",
+   "seo": "7th Grade Indiana ILEARN Math Checkpoint 3 intervention and reteach: a six-part cycle for each of the five spring standards - expressions, equations, inequalities and circles - with teacher pages, error analysis and 20 reassessment items that appear nowhere else.",
+   "thumb": "il_g7_iv3.jpg",
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "7th-grade-ilearn-checkpoint-3-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 8,
+   "category": "intervention",
+   "slot": "cp1-intervention",
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 1 Intervention & Reteach SY26-27",
+   "price": 16.5,
+   "items": 60,
+   "pages": 39,
+   "tpt_pages": 35,
+   "standards": [
+    {
+     "code": "8.AF.1",
+     "title": "Solving linear equations and inequalities with rational coefficients"
+    },
+    {
+     "code": "8.AF.2",
+     "title": "Classifying one/infinite/no-solution linear equations"
+    },
+    {
+     "code": "8.NS.2",
+     "title": "Comparing, plotting, and estimating with irrational numbers"
+    },
+    {
+     "code": "8.NS.3",
+     "title": "Properties of integer exponents with common rational bases"
+    },
+    {
+     "code": "8.NS.4",
+     "title": "Multi-step real-world problems with rational numbers"
+    }
+   ],
+   "reassessment": 20,
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Intervention-Reteach-SY26-27-17459558",
+   "ord": "8th",
+   "short": "Checkpoint 1 Intervention & Reteach",
+   "seo": "8th Grade Indiana ILEARN Math Checkpoint 1 intervention and reteach: a six-part cycle for each of the five fall standards - teacher page, student reference, targeted practice, error analysis, exit ticket and data sheet. 20 reassessment items appear in no other resource.",
+   "thumb": "il_g8_iv1.jpg",
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "8th-grade-ilearn-checkpoint-1-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 8,
+   "category": "intervention",
+   "slot": "cp2-intervention",
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 2 Intervention & Reteach SY26-27",
+   "price": 18.0,
+   "items": 72,
+   "pages": 56,
+   "tpt_pages": 50,
+   "standards": [
+    {
+     "code": "8.AF.3",
+     "title": "The definition of a function; ordered pairs, tables, graphs"
+    },
+    {
+     "code": "8.AF.4",
+     "title": "Qualitative graphs: increasing/decreasing, linear/nonlinear, max/min"
+    },
+    {
+     "code": "8.AF.5",
+     "title": "y = mx + b as THE linear function; linear vs. nonlinear"
+    },
+    {
+     "code": "8.AF.6",
+     "title": "Construct a linear function; interpret rate of change and y-intercept"
+    },
+    {
+     "code": "8.AF.7",
+     "title": "Compare two linear functions in different representations"
+    },
+    {
+     "code": "8.AF.8",
+     "title": "Approximating a system's solution by graphing"
+    }
+   ],
+   "reassessment": 24,
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Intervention-Reteach-SY26-27-17459593",
+   "ord": "8th",
+   "short": "Checkpoint 2 Intervention & Reteach",
+   "seo": "8th Grade Indiana ILEARN Math Checkpoint 2 intervention and reteach: a six-part cycle for each of the six winter standards - functions, slope-intercept form, comparing functions and systems - with teacher pages, error analysis and 24 brand-new reassessment items.",
+   "thumb": "il_g8_iv2.jpg",
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "8th-grade-ilearn-checkpoint-2-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 8,
+   "category": "intervention",
+   "slot": "cp3-intervention",
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 3 Intervention & Reteach SY26-27",
+   "price": 16.5,
+   "items": 60,
+   "pages": 50,
+   "tpt_pages": 45,
+   "standards": [
+    {
+     "code": "8.DSP.1",
+     "title": "Scatter plots: clustering, outliers, and association"
+    },
+    {
+     "code": "8.DSP.2",
+     "title": "Line of best fit: interpret slope and y-intercept in context"
+    },
+    {
+     "code": "8.GM.1",
+     "title": "Dilations, translations, rotations, reflections in the coordinate plane"
+    },
+    {
+     "code": "8.GM.2",
+     "title": "Volume of cones, spheres, pyramids; surface area of spheres"
+    },
+    {
+     "code": "8.GM.3",
+     "title": "The Pythagorean Theorem, including the 3-D box diagonal"
+    }
+   ],
+   "reassessment": 20,
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Intervention-Reteach-SY26-27-17459623",
+   "ord": "8th",
+   "short": "Checkpoint 3 Intervention & Reteach",
+   "seo": "8th Grade Indiana ILEARN Math Checkpoint 3 intervention and reteach: a six-part cycle for each of the five spring standards - scatter plots, transformations, volume and the Pythagorean Theorem - with teacher pages and 20 reassessment items that appear nowhere else.",
+   "thumb": "il_g8_iv3.jpg",
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "8th-grade-ilearn-checkpoint-3-intervention-reteach",
+   "catLabel": "Intervention & Reteach"
+  },
+  {
+   "grade": 3,
+   "category": "checkpoint-bundle",
+   "slot": "cp1-bundle",
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 1 Bundle | Practice + Reteach SY26-27",
+   "price": 22.8,
+   "items": 160,
+   "pages": 70,
+   "tpt_pages": 64,
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-1-Bundle-Practice-Reteach-SY26-27-17450029",
+   "note": "Both halves exist. Ships as soon as the intervention listing is up.",
+   "ord": "3rd",
+   "short": "Checkpoint 1 Bundle",
+   "seo": "3rd Grade Indiana ILEARN Math Checkpoint 1 practice and reteach bundle: the 100-item fall practice test plus the full intervention cycle for all five standards, 20% off buying them separately. Assess, find the standard, reteach it, then reassess with items they have not seen.",
+   "thumb": "il_g3_ivb1.jpg",
+   "standards": [
+    {
+     "code": "3.CA.1",
+     "title": "Add and subtract multi-digit numbers"
+    },
+    {
+     "code": "3.CA.2",
+     "title": "Addition and subtraction word problems"
+    },
+    {
+     "code": "3.M.4",
+     "title": "Value of coins and bills"
+    },
+    {
+     "code": "3.NS.1",
+     "title": "Read and write numbers to 10,000"
+    },
+    {
+     "code": "3.NS.6",
+     "title": "Round to the nearest ten or hundred"
+    }
+   ],
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "3rd-grade-ilearn-checkpoint-1-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 3,
+   "category": "checkpoint-bundle",
+   "slot": "cp2-bundle",
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 2 Bundle | Practice + Reteach SY26-27",
+   "price": 27.6,
+   "items": 224,
+   "pages": 103,
+   "tpt_pages": 96,
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-2-Bundle-Practice-Reteach-SY26-27-17450068",
+   "note": "Both halves exist. Ships as soon as the intervention listing is up.",
+   "ord": "3rd",
+   "short": "Checkpoint 2 Bundle",
+   "seo": "3rd Grade Indiana ILEARN Math Checkpoint 2 practice and reteach bundle: the 140-item winter practice test plus the full intervention cycle for all seven standards, 20% off buying them separately. Assess, find the standard, reteach it, then reassess with fresh items.",
+   "thumb": "il_g3_ivb2.jpg",
+   "standards": [
+    {
+     "code": "3.CA.3",
+     "title": "Model multiplication: groups, arrays, number lines"
+    },
+    {
+     "code": "3.CA.4",
+     "title": "Model division: partition, share, inverse"
+    },
+    {
+     "code": "3.CA.5",
+     "title": "Multiplication and division strategies"
+    },
+    {
+     "code": "3.CA.7",
+     "title": "Multiplication and division word problems"
+    },
+    {
+     "code": "3.CA.8",
+     "title": "Number patterns and rules"
+    },
+    {
+     "code": "3.NS.2",
+     "title": "Model unit and non-unit fractions"
+    },
+    {
+     "code": "3.NS.3",
+     "title": "Fractions on a number line"
+    }
+   ],
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "3rd-grade-ilearn-checkpoint-2-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 3,
+   "category": "checkpoint-bundle",
+   "slot": "cp3-bundle",
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 3 Bundle | Practice + Reteach SY26-27",
+   "price": 25.6,
+   "items": 192,
+   "pages": 104,
+   "tpt_pages": 98,
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-3-Bundle-Practice-Reteach-SY26-27-17450105",
+   "note": "Both halves exist. Ships as soon as the intervention listing is up.",
+   "ord": "3rd",
+   "short": "Checkpoint 3 Bundle",
+   "seo": "3rd Grade Indiana ILEARN Math Checkpoint 3 practice and reteach bundle: the 120-item spring practice test plus the full intervention cycle for all six standards, 20% off buying them separately. Assess, find the standard, reteach it, then reassess with fresh items.",
+   "thumb": "il_g3_ivb3.jpg",
+   "standards": [
+    {
+     "code": "3.DA.1",
+     "title": "Read and build bar graphs and pictographs"
+    },
+    {
+     "code": "3.M.3",
+     "title": "Tell time and solve elapsed-time problems"
+    },
+    {
+     "code": "3.M.5",
+     "title": "Area of a rectangle by counting unit squares"
+    },
+    {
+     "code": "3.M.6",
+     "title": "Perimeter of polygons"
+    },
+    {
+     "code": "3.NS.4",
+     "title": "Generate equivalent fractions"
+    },
+    {
+     "code": "3.NS.5",
+     "title": "Compare fractions"
+    }
+   ],
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "3rd-grade-ilearn-checkpoint-3-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 3,
+   "category": "complete-system",
+   "slot": "complete-system",
+   "title": "3rd Grade Indiana ILEARN Math COMPLETE System | Checkpoints & Reteach SY26-27",
+   "price": 70.5,
+   "items": 637,
+   "pages": 300,
+   "tpt_pages": 281,
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-COMPLETE-System-Checkpoints-Reteach-SY26-27-17450133",
+   "note": "All seven components exist. $94.00 list at 25% off = $70.50. Post after the three intervention listings and the Full-Year Bundle are live, since it nests them.",
+   "ord": "3rd",
+   "short": "COMPLETE System",
+   "seo": "3rd Grade Indiana ILEARN Math complete system: every practice test and every reteach cycle for the whole year - four assessments and three interventions, 637 original items across 281 pages, 25% off. Assess, reteach and reassess through all three checkpoints and the summative.",
+   "thumb": "il_g3_sys.jpg",
+   "standards": [],
+   "standards_all": true,
+   "window": "Sept 2026 – May 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "3rd-grade-ilearn-complete-system",
+   "catLabel": "COMPLETE System"
+  },
+  {
+   "grade": 5,
+   "category": "checkpoint-bundle",
+   "slot": "cp1-bundle",
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 1 Bundle | Practice + Reteach SY26-27",
+   "price": 20.0,
+   "items": 128,
+   "pages": 60,
+   "tpt_pages": 56,
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Bundle-Practice-Reteach-SY26-27-17442408",
+   "note": "Both halves exist. Ships as soon as the intervention listing is up.",
+   "ord": "5th",
+   "short": "Checkpoint 1 Bundle",
+   "seo": "5th Grade Indiana ILEARN Math Checkpoint 1 practice and reteach bundle: the 100-item fall practice test plus the full intervention cycle for all four standards, 20% off buying them separately. Assess, find the standard, reteach it, then reassess with items they have not seen.",
+   "thumb": "il_g5_ivb1.jpg",
+   "standards": [
+    {
+     "code": "5.CA.1",
+     "title": "Divide by two-digit divisors, with remainders"
+    },
+    {
+     "code": "5.CA.2",
+     "title": "Multiplication and division problems, and what a remainder means"
+    },
+    {
+     "code": "5.M.4",
+     "title": "Volume by packing a prism with unit cubes"
+    },
+    {
+     "code": "5.M.5",
+     "title": "Apply V = l &times; w &times; h and V = B &times; h"
+    }
+   ],
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "5th-grade-ilearn-checkpoint-1-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 5,
+   "category": "checkpoint-bundle",
+   "slot": "cp2-bundle",
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 2 Bundle | Practice + Reteach SY26-27",
+   "price": 25.6,
+   "items": 192,
+   "pages": 102,
+   "tpt_pages": 96,
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Bundle-Practice-Reteach-SY26-27-17442414",
+   "note": "Both halves exist. Ships as soon as the intervention listing is up.",
+   "ord": "5th",
+   "short": "Checkpoint 2 Bundle",
+   "seo": "5th Grade Indiana ILEARN Math Checkpoint 2 practice and reteach bundle: the 120-item winter practice test plus the full intervention cycle for all six standards, 20% off buying them separately. Assess, find the standard, reteach it, then reassess with items they have not seen.",
+   "thumb": "il_g5_ivb2.jpg",
+   "standards": [
+    {
+     "code": "5.CA.3",
+     "title": "Add and subtract fractions with unlike denominators"
+    },
+    {
+     "code": "5.CA.4",
+     "title": "Fraction addition and subtraction in real-world problems"
+    },
+    {
+     "code": "5.CA.9",
+     "title": "Add, subtract, multiply, and divide decimals to hundredths"
+    },
+    {
+     "code": "5.CA.10",
+     "title": "Decimal and money problems in real-world settings"
+    },
+    {
+     "code": "5.NS.1",
+     "title": "Compare and order fractions and decimals on a number line"
+    },
+    {
+     "code": "5.NS.4",
+     "title": "Model percents as parts of 100"
+    }
+   ],
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "5th-grade-ilearn-checkpoint-2-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 5,
+   "category": "checkpoint-bundle",
+   "slot": "cp3-bundle",
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 3 Bundle | Practice + Reteach SY26-27",
+   "price": 29.2,
+   "items": 224,
+   "pages": 124,
+   "tpt_pages": 118,
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Bundle-Practice-Reteach-SY26-27-17442423",
+   "note": "Both halves exist. Ships as soon as the intervention listing is up.",
+   "ord": "5th",
+   "short": "Checkpoint 3 Bundle",
+   "seo": "5th Grade Indiana ILEARN Math Checkpoint 3 practice and reteach bundle: the 140-item spring practice test plus the full intervention cycle for all seven standards, 20% off buying them separately. Assess, find the standard, reteach it, then reassess with fresh items.",
+   "thumb": "il_g5_ivb3.jpg",
+   "standards": [
+    {
+     "code": "5.CA.5",
+     "title": "Multiply fractions with a model"
+    },
+    {
+     "code": "5.CA.6",
+     "title": "Divide fractions with a model"
+    },
+    {
+     "code": "5.CA.7",
+     "title": "Fraction multiplication in real-world problems"
+    },
+    {
+     "code": "5.CA.8",
+     "title": "Fraction division in real-world problems"
+    },
+    {
+     "code": "5.DA.1",
+     "title": "Line plots, histograms, and choosing a display"
+    },
+    {
+     "code": "5.DA.2",
+     "title": "Mean, median, mode, and outliers"
+    },
+    {
+     "code": "5.M.3",
+     "title": "Area of triangles, parallelograms, and trapezoids"
+    }
+   ],
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "5th-grade-ilearn-checkpoint-3-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 5,
+   "category": "complete-system",
+   "slot": "complete-system",
+   "title": "5th Grade Indiana ILEARN Math COMPLETE System | Checkpoints & Reteach SY26-27",
+   "price": 76.88,
+   "items": 604,
+   "pages": 309,
+   "tpt_pages": 293,
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-COMPLETE-System-Checkpoints-Reteach-SY26-27-17442464",
+   "note": "All seven components exist. $102.50 list at 25% off = $76.88, inside the roadmap's $60-85 Complete-System band. Post LAST: it nests the three intervention listings and the Full-Year Bundle, so every one of them has to be live first.",
+   "ord": "5th",
+   "short": "COMPLETE System",
+   "seo": "5th Grade Indiana ILEARN Math complete system: every practice test and every reteach cycle for the whole year - four assessments and three interventions, 604 original items across 297 pages, 25% off. Assess, reteach and reassess through all three checkpoints and the summative.",
+   "thumb": "il_g5_sys.jpg",
+   "standards": [],
+   "standards_all": true,
+   "window": "Sept 2026 – May 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "5th-grade-ilearn-complete-system",
+   "catLabel": "COMPLETE System"
+  },
+  {
+   "grade": 6,
+   "category": "checkpoint-bundle",
+   "slot": "cp1-bundle",
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 1 Bundle | Practice + Reteach SY26-27",
+   "price": 25.6,
+   "items": 214,
+   "pages": 85,
+   "tpt_pages": 79,
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Bundle-Practice-Reteach-SY26-27-17455558",
+   "note": "Both halves exist. Ships as soon as the intervention listing is up.",
+   "ord": "6th",
+   "short": "Checkpoint 1 Bundle",
+   "seo": "6th Grade Indiana ILEARN Math Checkpoint 1 bundle: the practice test that finds the gap and the reteach cycle that closes it, 214 original items across 79 pages, 20% off. Assess, analyze, reteach and reassess the six fall standards without repeating a single question.",
+   "thumb": "il_g6_ivb1.jpg",
+   "standards": [
+    {
+     "code": "6.NS.1",
+     "title": "Signed numbers in context, and what 0 means"
+    },
+    {
+     "code": "6.NS.3",
+     "title": "Compare and order rational numbers"
+    },
+    {
+     "code": "6.NS.4",
+     "title": "Problems with positive fractions and decimals"
+    },
+    {
+     "code": "6.NS.5",
+     "title": "Order of operations and properties"
+    },
+    {
+     "code": "6.NS.6",
+     "title": "Greatest common factor and least common multiple"
+    },
+    {
+     "code": "6.RP.1",
+     "title": "Fraction, decimal, percent conversion"
+    }
+   ],
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "6th-grade-ilearn-checkpoint-1-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 6,
+   "category": "checkpoint-bundle",
+   "slot": "cp2-bundle",
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 2 Bundle | Practice + Reteach SY26-27",
+   "price": 32.4,
+   "items": 224,
+   "pages": 105,
+   "tpt_pages": 98,
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Bundle-Practice-Reteach-SY26-27-17455625",
+   "note": "The practice half is TWO files under one listing -- grade 6's algebra and data segments. The reteach half is one file covering all seven standards.",
+   "ord": "6th",
+   "short": "Checkpoint 2 Bundle",
+   "seo": "6th Grade Indiana ILEARN Math Checkpoint 2 bundle: the practice test that finds the gap and the reteach cycle that closes it, 224 original items across 99 pages, 20% off. Covers all seven winter standards - expressions, equations, inequalities and data displays.",
+   "thumb": "il_g6_ivb2.jpg",
+   "standards": [
+    {
+     "code": "6.AF.1",
+     "title": "Write and evaluate expressions with variables"
+    },
+    {
+     "code": "6.AF.2",
+     "title": "Test whether a value is a solution"
+    },
+    {
+     "code": "6.AF.3",
+     "title": "Solve one-step equations"
+    },
+    {
+     "code": "6.AF.4",
+     "title": "Write and graph inequalities"
+    },
+    {
+     "code": "6.DS.1",
+     "title": "Select, create, and interpret data displays"
+    },
+    {
+     "code": "6.DS.3",
+     "title": "Summarize data: center, spread, shape"
+    },
+    {
+     "code": "6.NS.7",
+     "title": "Equivalent expressions; like terms"
+    }
+   ],
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "6th-grade-ilearn-checkpoint-2-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 6,
+   "category": "checkpoint-bundle",
+   "slot": "cp3-bundle",
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 3 Bundle | Practice + Reteach SY26-27",
+   "price": 23.6,
+   "items": 160,
+   "pages": 70,
+   "tpt_pages": 65,
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Bundle-Practice-Reteach-SY26-27-17455676",
+   "note": "Both halves exist. Ships as soon as the intervention listing is up.",
+   "ord": "6th",
+   "short": "Checkpoint 3 Bundle",
+   "seo": "6th Grade Indiana ILEARN Math Checkpoint 3 bundle: the practice test that finds the gap and the reteach cycle that closes it, 160 original items across 65 pages, 20% off. Covers the five ratio, unit rate and proportional relationship standards for the spring window.",
+   "thumb": "il_g6_ivb3.jpg",
+   "standards": [
+    {
+     "code": "6.GM.1",
+     "title": "Convert between measurement systems"
+    },
+    {
+     "code": "6.RP.2",
+     "title": "Unit rate and rate language"
+    },
+    {
+     "code": "6.RP.3",
+     "title": "Equivalent ratio tables; plotting pairs"
+    },
+    {
+     "code": "6.RP.4",
+     "title": "Solve rate and ratio problems with models"
+    },
+    {
+     "code": "6.RP.5",
+     "title": "Equations for proportional relationships"
+    }
+   ],
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "6th-grade-ilearn-checkpoint-3-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 6,
+   "category": "complete-system",
+   "slot": "complete-system",
+   "title": "6th Grade Indiana ILEARN Math COMPLETE System | Checkpoints & Reteach SY26-27",
+   "price": 74.7,
+   "items": 660,
+   "pages": 279,
+   "tpt_pages": 261,
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-COMPLETE-System-Checkpoints-Reteach-SY26-27-17455718",
+   "note": "Post LAST: it nests all seven of the grade's other listings, so every one of them has to be live first.",
+   "ord": "6th",
+   "short": "COMPLETE System",
+   "seo": "6th Grade Indiana ILEARN Math complete system: every practice test and every reteach cycle for the whole year - four assessments and three interventions, 660 original items across 262 pages, 25% off. Assess, reteach and reassess through all three checkpoints and the summative.",
+   "thumb": "il_g6_sys.jpg",
+   "standards": [],
+   "standards_all": true,
+   "window": "Sept 2026 – May 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "6th-grade-ilearn-complete-system",
+   "catLabel": "COMPLETE System"
+  },
+  {
+   "grade": 4,
+   "category": "checkpoint-bundle",
+   "slot": "cp1-bundle",
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 1 Bundle | Practice + Reteach SY26-27",
+   "price": 22.8,
+   "items": 160,
+   "pages": 67,
+   "tpt_pages": 62,
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Bundle-Practice-Reteach-SY26-27-17456719",
+   "note": "Both halves exist. Ships as soon as the intervention listing is up.",
+   "ord": "4th",
+   "short": "Checkpoint 1 Bundle",
+   "seo": "4th Grade Indiana ILEARN Math Checkpoint 1 bundle: the practice test that finds the gap and the reteach cycle that closes it, 160 original items across 62 pages, 20% off. Assess, analyze, reteach and reassess the five fall standards without repeating a question.",
+   "thumb": "il_g4_ivb1.jpg",
+   "standards": [
+    {
+     "code": "4.CA.1",
+     "title": "Multiply up to four digits by one digit"
+    },
+    {
+     "code": "4.CA.3",
+     "title": "Properties of multiplication"
+    },
+    {
+     "code": "4.CA.4",
+     "title": "Factors and multiples to 100"
+    },
+    {
+     "code": "4.NS.1",
+     "title": "Read and write whole numbers to 1,000,000"
+    },
+    {
+     "code": "4.NS.7",
+     "title": "Round multi-digit whole numbers"
+    }
+   ],
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "4th-grade-ilearn-checkpoint-1-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 4,
+   "category": "checkpoint-bundle",
+   "slot": "cp2-bundle",
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 2 Bundle | Practice + Reteach SY26-27",
+   "price": 28.0,
+   "items": 224,
+   "pages": 116,
+   "tpt_pages": 110,
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Bundle-Practice-Reteach-SY26-27-17456746",
+   "note": "All seven standards essential -- the strongest bundle in the line to lead with.",
+   "ord": "4th",
+   "short": "Checkpoint 2 Bundle",
+   "seo": "4th Grade Indiana ILEARN Math Checkpoint 2 bundle: the practice test that finds the gap and the reteach cycle that closes it, 224 original items across 112 pages, 20% off. Covers seven standards, every one of them flagged essential by Indiana.",
+   "thumb": "il_g4_ivb2.jpg",
+   "standards": [
+    {
+     "code": "4.CA.2",
+     "title": "Divide up to four digits by one digit"
+    },
+    {
+     "code": "4.CA.5",
+     "title": "Multiplicative comparison problems"
+    },
+    {
+     "code": "4.M.1",
+     "title": "Measure to the nearest quarter- and eighth-inch"
+    },
+    {
+     "code": "4.M.2",
+     "title": "Convert larger units to smaller units"
+    },
+    {
+     "code": "4.M.4",
+     "title": "Area and perimeter, including complex shapes"
+    },
+    {
+     "code": "4.NS.3",
+     "title": "Generate equivalent fractions"
+    },
+    {
+     "code": "4.NS.4",
+     "title": "Compare fractions"
+    }
+   ],
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "4th-grade-ilearn-checkpoint-2-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 4,
+   "category": "checkpoint-bundle",
+   "slot": "cp3-bundle",
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 3 Bundle | Practice + Reteach SY26-27",
+   "price": 28.4,
+   "items": 224,
+   "pages": 120,
+   "tpt_pages": 117,
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Bundle-Practice-Reteach-SY26-27-17456809",
+   "note": "Both halves exist. Ships as soon as the intervention listing is up.",
+   "ord": "4th",
+   "short": "Checkpoint 3 Bundle",
+   "seo": "4th Grade Indiana ILEARN Math Checkpoint 3 bundle: the practice test that finds the gap and the reteach cycle that closes it, 224 original items across 117 pages, 20% off. Covers fractions, decimals to hundredths, line plots and data for the spring window.",
+   "thumb": "il_g4_ivb3.jpg",
+   "standards": [
+    {
+     "code": "4.CA.6",
+     "title": "Add and subtract fractions with like denominators"
+    },
+    {
+     "code": "4.CA.8",
+     "title": "Fraction problems in real-world settings"
+    },
+    {
+     "code": "4.DA.1",
+     "title": "Line plots, bar graphs, and frequency tables"
+    },
+    {
+     "code": "4.DA.2",
+     "title": "Line plots with fractional measurements"
+    },
+    {
+     "code": "4.NS.2",
+     "title": "Model mixed numbers and improper fractions"
+    },
+    {
+     "code": "4.NS.5",
+     "title": "Tenths and hundredths as fractions and decimals"
+    },
+    {
+     "code": "4.NS.6",
+     "title": "Compare decimals to hundredths"
+    }
+   ],
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "4th-grade-ilearn-checkpoint-3-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 4,
+   "category": "complete-system",
+   "slot": "complete-system",
+   "title": "4th Grade Indiana ILEARN Math COMPLETE System | Checkpoints & Reteach SY26-27",
+   "price": 73.12,
+   "items": 673,
+   "pages": 326,
+   "tpt_pages": 312,
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-COMPLETE-System-Checkpoints-Reteach-SY26-27-17456828",
+   "note": "Post LAST: it nests all seven of the grade's other listings.",
+   "ord": "4th",
+   "short": "COMPLETE System",
+   "seo": "4th Grade Indiana ILEARN Math complete system: every practice test and every reteach cycle for the whole year - four assessments and three interventions, 673 original items across 316 pages, 25% off. Assess, reteach and reassess through all three checkpoints and the summative.",
+   "thumb": "il_g4_sys.jpg",
+   "standards": [],
+   "standards_all": true,
+   "window": "Sept 2026 – May 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "4th-grade-ilearn-complete-system",
+   "catLabel": "COMPLETE System"
+  },
+  {
+   "grade": 7,
+   "category": "checkpoint-bundle",
+   "slot": "cp1-bundle",
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 1 Bundle | Practice + Reteach SY26-27",
+   "price": 25.6,
+   "items": 192,
+   "pages": 75,
+   "tpt_pages": 69,
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Bundle-Practice-Reteach-SY26-27-17457449",
+   "note": "Both halves exist. Ships as soon as the intervention listing is up.",
+   "ord": "7th",
+   "short": "Checkpoint 1 Bundle",
+   "seo": "7th Grade Indiana ILEARN Math Checkpoint 1 bundle: the practice test that finds the gap and the reteach cycle that closes it, 192 original items across 69 pages, 20% off. Assess, analyze, reteach and reassess the six fall standards without repeating a question.",
+   "thumb": "il_g7_ivb1.jpg",
+   "standards": [
+    {
+     "code": "7.NS.1",
+     "title": "Additive inverses and sums of rationals"
+    },
+    {
+     "code": "7.NS.2",
+     "title": "Distance as the absolute value of a difference"
+    },
+    {
+     "code": "7.NS.3",
+     "title": "Signed products and the distributive property"
+    },
+    {
+     "code": "7.NS.4",
+     "title": "Signed quotients and equivalent forms"
+    },
+    {
+     "code": "7.NS.5",
+     "title": "Prime factorization with exponents"
+    },
+    {
+     "code": "7.NS.6",
+     "title": "Squaring and square roots"
+    }
+   ],
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "7th-grade-ilearn-checkpoint-1-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 7,
+   "category": "checkpoint-bundle",
+   "slot": "cp2-bundle",
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 2 Bundle | Practice + Reteach SY26-27",
+   "price": 25.6,
+   "items": 192,
+   "pages": 101,
+   "tpt_pages": 95,
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Bundle-Practice-Reteach-SY26-27-17457507",
+   "note": "Both halves exist. Ships as soon as the intervention listing is up.",
+   "ord": "7th",
+   "short": "Checkpoint 2 Bundle",
+   "seo": "7th Grade Indiana ILEARN Math Checkpoint 2 bundle: the practice test that finds the gap and the reteach cycle that closes it, 192 original items across 95 pages, 20% off. Covers unit rate, percent, proportional graphs, slope and scale drawings.",
+   "thumb": "il_g7_ivb2.jpg",
+   "standards": [
+    {
+     "code": "7.AF.5",
+     "title": "Constant and varying rates of change"
+    },
+    {
+     "code": "7.AF.6",
+     "title": "Slope from a graph; graphing from slope and a point"
+    },
+    {
+     "code": "7.GM.1",
+     "title": "Scale drawings, actual lengths and areas"
+    },
+    {
+     "code": "7.RP.1",
+     "title": "Identify the unit rate or constant of proportionality"
+    },
+    {
+     "code": "7.RP.2",
+     "title": "Percent problems: tax, tip, markup, interest"
+    },
+    {
+     "code": "7.RP.3",
+     "title": "Equations and graphs of proportional relationships"
+    }
+   ],
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "7th-grade-ilearn-checkpoint-2-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 7,
+   "category": "checkpoint-bundle",
+   "slot": "cp3-bundle",
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 3 Bundle | Practice + Reteach SY26-27",
+   "price": 22.8,
+   "items": 160,
+   "pages": 75,
+   "tpt_pages": 71,
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Bundle-Practice-Reteach-SY26-27-17457531",
+   "note": "Both halves exist. Ships as soon as the intervention listing is up.",
+   "ord": "7th",
+   "short": "Checkpoint 3 Bundle",
+   "seo": "7th Grade Indiana ILEARN Math Checkpoint 3 bundle: the practice test that finds the gap and the reteach cycle that closes it, 160 original items across 71 pages, 20% off. Covers expressions, equations, inequalities and circles for the spring window.",
+   "thumb": "il_g7_ivb3.jpg",
+   "standards": [
+    {
+     "code": "7.AF.1",
+     "title": "Equivalent expressions; factoring and distributing"
+    },
+    {
+     "code": "7.AF.2",
+     "title": "Real-world problems with rational numbers"
+    },
+    {
+     "code": "7.AF.3",
+     "title": "Solving and modeling linear equations"
+    },
+    {
+     "code": "7.AF.4",
+     "title": "Solving, graphing, and interpreting inequalities"
+    },
+    {
+     "code": "7.GM.2",
+     "title": "Area and circumference of a circle"
+    }
+   ],
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "7th-grade-ilearn-checkpoint-3-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 7,
+   "category": "complete-system",
+   "slot": "complete-system",
+   "title": "7th Grade Indiana ILEARN Math COMPLETE System | Checkpoints & Reteach SY26-27",
+   "price": 74.18,
+   "items": 774,
+   "pages": 352,
+   "tpt_pages": 336,
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-COMPLETE-System-Checkpoints-Reteach-SY26-27-17457551",
+   "note": "Post LAST: it nests all seven of the grade's other listings.",
+   "ord": "7th",
+   "short": "COMPLETE System",
+   "seo": "7th Grade Indiana ILEARN Math complete system: every practice test and every reteach cycle for the whole year - four assessments and three interventions, 774 original items across 336 pages, 25% off. Assess, reteach and reassess through all three checkpoints and the summative.",
+   "thumb": "il_g7_sys.jpg",
+   "standards": [],
+   "standards_all": true,
+   "window": "Sept 2026 – May 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "7th-grade-ilearn-complete-system",
+   "catLabel": "COMPLETE System"
+  },
+  {
+   "grade": 8,
+   "category": "checkpoint-bundle",
+   "slot": "cp1-bundle",
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 1 Bundle | Practice + Reteach SY26-27",
+   "price": 22.8,
+   "items": 160,
+   "pages": 64,
+   "tpt_pages": 60,
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Bundle-Practice-Reteach-SY26-27-17459578",
+   "note": "Both halves exist. Ships as soon as the intervention listing is up.",
+   "ord": "8th",
+   "short": "Checkpoint 1 Bundle",
+   "seo": "8th Grade Indiana ILEARN Math Checkpoint 1 bundle: the practice test that finds the gap and the reteach cycle that closes it, 160 original items across 60 pages, 20% off. Assess, analyze, reteach and reassess the five fall standards without repeating a question.",
+   "thumb": "il_g8_ivb1.jpg",
+   "standards": [
+    {
+     "code": "8.AF.1",
+     "title": "Solving linear equations and inequalities with rational coefficients"
+    },
+    {
+     "code": "8.AF.2",
+     "title": "Classifying one/infinite/no-solution linear equations"
+    },
+    {
+     "code": "8.NS.2",
+     "title": "Comparing, plotting, and estimating with irrational numbers"
+    },
+    {
+     "code": "8.NS.3",
+     "title": "Properties of integer exponents with common rational bases"
+    },
+    {
+     "code": "8.NS.4",
+     "title": "Multi-step real-world problems with rational numbers"
+    }
+   ],
+   "standards_all": false,
+   "window": "Sept 14 - Nov 13, 2026",
+   "retest": "Sept 15, 2026 - Apr 9, 2027",
+   "cp": 1,
+   "slug": "8th-grade-ilearn-checkpoint-1-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 8,
+   "category": "checkpoint-bundle",
+   "slot": "cp2-bundle",
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 2 Bundle | Practice + Reteach SY26-27",
+   "price": 25.6,
+   "items": 192,
+   "pages": 108,
+   "tpt_pages": 102,
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Bundle-Practice-Reteach-SY26-27-17459604",
+   "note": "Both halves exist. Ships as soon as the intervention listing is up.",
+   "ord": "8th",
+   "short": "Checkpoint 2 Bundle",
+   "seo": "8th Grade Indiana ILEARN Math Checkpoint 2 bundle: the practice test that finds the gap and the reteach cycle that closes it, 192 original items across 102 pages, 20% off. Covers functions, slope-intercept form, comparing functions and systems of equations.",
+   "thumb": "il_g8_ivb2.jpg",
+   "standards": [
+    {
+     "code": "8.AF.3",
+     "title": "The definition of a function; ordered pairs, tables, graphs"
+    },
+    {
+     "code": "8.AF.4",
+     "title": "Qualitative graphs: increasing/decreasing, linear/nonlinear, max/min"
+    },
+    {
+     "code": "8.AF.5",
+     "title": "y = mx + b as THE linear function; linear vs. nonlinear"
+    },
+    {
+     "code": "8.AF.6",
+     "title": "Construct a linear function; interpret rate of change and y-intercept"
+    },
+    {
+     "code": "8.AF.7",
+     "title": "Compare two linear functions in different representations"
+    },
+    {
+     "code": "8.AF.8",
+     "title": "Approximating a system's solution by graphing"
+    }
+   ],
+   "standards_all": false,
+   "window": "Nov 16, 2026 - Feb 5, 2027",
+   "retest": "Nov 17, 2026 - Apr 9, 2027",
+   "cp": 2,
+   "slug": "8th-grade-ilearn-checkpoint-2-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 8,
+   "category": "checkpoint-bundle",
+   "slot": "cp3-bundle",
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 3 Bundle | Practice + Reteach SY26-27",
+   "price": 22.8,
+   "items": 160,
+   "pages": 97,
+   "tpt_pages": 92,
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Bundle-Practice-Reteach-SY26-27-17459634",
+   "note": "Both halves exist. Ships as soon as the intervention listing is up.",
+   "ord": "8th",
+   "short": "Checkpoint 3 Bundle",
+   "seo": "8th Grade Indiana ILEARN Math Checkpoint 3 bundle: the practice test that finds the gap and the reteach cycle that closes it, 160 original items across 92 pages, 20% off. Covers scatter plots, transformations, volume and the Pythagorean Theorem for the spring window.",
+   "thumb": "il_g8_ivb3.jpg",
+   "standards": [
+    {
+     "code": "8.DSP.1",
+     "title": "Scatter plots: clustering, outliers, and association"
+    },
+    {
+     "code": "8.DSP.2",
+     "title": "Line of best fit: interpret slope and y-intercept in context"
+    },
+    {
+     "code": "8.GM.1",
+     "title": "Dilations, translations, rotations, reflections in the coordinate plane"
+    },
+    {
+     "code": "8.GM.2",
+     "title": "Volume of cones, spheres, pyramids; surface area of spheres"
+    },
+    {
+     "code": "8.GM.3",
+     "title": "The Pythagorean Theorem, including the 3-D box diagonal"
+    }
+   ],
+   "standards_all": false,
+   "window": "Feb 8 - Apr 9, 2027",
+   "retest": "Feb 9 - Apr 9, 2027",
+   "cp": 3,
+   "slug": "8th-grade-ilearn-checkpoint-3-bundle",
+   "catLabel": "Checkpoint Bundle"
+  },
+  {
+   "grade": 8,
+   "category": "complete-system",
+   "slot": "complete-system",
+   "title": "8th Grade Indiana ILEARN Math COMPLETE System | Checkpoints & Reteach SY26-27",
+   "price": 71.85,
+   "items": 712,
+   "pages": 353,
+   "tpt_pages": 338,
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-COMPLETE-System-Checkpoints-Reteach-SY26-27-17459656",
+   "note": "Post LAST: it nests all seven of the grade's other listings.",
+   "ord": "8th",
+   "short": "COMPLETE System",
+   "seo": "8th Grade Indiana ILEARN Math complete system: every practice test and every reteach cycle for the whole year - four assessments and three interventions, 712 original items across 338 pages, 25% off. Assess, reteach and reassess through all three checkpoints and the summative.",
+   "thumb": "il_g8_sys.jpg",
+   "standards": [],
+   "standards_all": true,
+   "window": "Sept 2026 – May 2027",
+   "retest": null,
+   "cp": null,
+   "slug": "8th-grade-ilearn-complete-system",
+   "catLabel": "COMPLETE System"
+  },
+  {
+   "grade": "band-3-5",
+   "category": "band-bundle",
+   "slot": "ultimate",
+   "title": "Grades 3-5 Indiana ILEARN Math ULTIMATE Bundle | Checkpoints & Summatives 26-27",
+   "price": 91.5,
+   "list_price": 122.0,
+   "discount": 25,
+   "items": 1266,
+   "pages": 446,
+   "tpt_pages": 480,
+   "listings": 12,
+   "url": "https://www.teacherspayteachers.com/Product/Grades-3-5-Indiana-ILEARN-Math-ULTIMATE-Bundle-Checkpoints-Summatives-26-27-17305919",
+   "short": "ULTIMATE Bundle",
+   "thumb": "",
+   "standards": [],
+   "window": "Sept 2026 – May 2027",
+   "retest": null,
+   "slug": "grades-3-5-ilearn-ultimate-bundle",
+   "catLabel": "ULTIMATE Bundle"
+  },
+  {
+   "grade": "band-6-8",
+   "category": "band-bundle",
+   "slot": "ultimate",
+   "title": "Grades 6-8 Indiana ILEARN Math ULTIMATE Bundle | Checkpoints & Summatives 26-27",
+   "price": 102.6,
+   "list_price": 136.8,
+   "discount": 25,
+   "items": 1534,
+   "pages": 557,
+   "tpt_pages": 554,
+   "listings": 12,
+   "url": "https://www.teacherspayteachers.com/Product/Grades-6-8-Indiana-ILEARN-Math-ULTIMATE-Bundle-Checkpoints-Summatives-26-27-17305934",
+   "short": "ULTIMATE Bundle",
+   "thumb": "",
+   "standards": [],
+   "window": "Sept 2026 – May 2027",
+   "retest": null,
+   "slug": "grades-6-8-ilearn-ultimate-bundle",
+   "catLabel": "ULTIMATE Bundle"
+  },
+  {
+   "grade": "band-3-8",
+   "category": "band-bundle",
+   "slot": "ultimate",
+   "title": "Grades 3-8 Indiana ILEARN Math ULTIMATE Bundle | Checkpoints & Summatives 26-27",
+   "price": 181.16,
+   "list_price": 258.8,
+   "discount": 30,
+   "items": 2800,
+   "pages": 1003,
+   "tpt_pages": 1034,
+   "listings": 24,
+   "url": "https://www.teacherspayteachers.com/Product/Grades-3-8-Indiana-ILEARN-Math-ULTIMATE-Bundle-Every-Checkpoint-Summative-17305954",
+   "short": "ULTIMATE Bundle",
+   "thumb": "",
+   "standards": [],
+   "window": "Sept 2026 – May 2027",
+   "retest": null,
+   "slug": "grades-3-8-ilearn-ultimate-bundle",
+   "catLabel": "ULTIMATE Bundle"
+  }
+ ],
+ "disclaimer": "Math Class 678 is an independent educational resource and is not affiliated with, sponsored by, authorized by, or endorsed by the Indiana Department of Education. ILEARN is a registered trademark of the Indiana Department of Education, used here only to identify the assessment these materials help students prepare for. All practice items, figures, and worked solutions are original and were built to the 2023 Indiana Academic Standards and the published ILEARN checkpoint blueprint."
+}
