@@ -742,6 +742,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .rcard__grade--7   { background: rgba(216,93,93,.12);  color: var(--coral); }
 .rcard__grade--8   { background: rgba(42,74,127,.12);  color: var(--navy); }
 .rcard__grade--all { background: rgba(26,60,52,.10);   color: var(--forest); }
+.rcard__grade--5   { background: rgba(26,60,52,.10);   color: var(--forest); }
+.rcard__grade--alg { background: rgba(212,160,23,.16);  color: #8a6a0f; }
+.rcard__grade--geo { background: var(--slate-tint);     color: var(--slate); }
 
 .rcard__cat {
   font-family: var(--mono);

@@ -2275,6 +2275,17 @@ const algUnitBundleUrl = {};
   }
 });
 
+// Since 2026-09-13 the individual Word Wall card listings are retired on TPT; every grade is
+// sold as ONE whole-grade word wall. Term pages link to their grade's wall, not a single card.
+const WORD_WALL_GRADE_URL = {
+  '5th':      'https://www.teacherspayteachers.com/Product/5th-Grade-Math-Word-Wall-67-Vocabulary-Cards-Full-Year-CCSS-Bulletin-Board-17647726',
+  '6th':      'https://www.teacherspayteachers.com/Product/6th-Grade-Math-Word-Wall-110-Vocabulary-Cards-Full-Year-CCSS-Bulletin-Board-17647734',
+  '7th':      'https://www.teacherspayteachers.com/Product/7th-Grade-Math-Word-Wall-115-Vocabulary-Cards-Full-Year-CCSS-Bulletin-Board-17647743',
+  '8th':      'https://www.teacherspayteachers.com/Product/8th-Grade-Math-Word-Wall-120-Vocabulary-Cards-Full-Year-CCSS-Bulletin-Board-17647754',
+  'Algebra':  'https://www.teacherspayteachers.com/Product/Algebra-1-Math-Word-Wall-98-Vocabulary-Cards-8th-9th-Grade-Bulletin-Board-17647770',
+  'Geometry': 'https://www.teacherspayteachers.com/Product/Geometry-Math-Word-Wall-109-Vocabulary-Cards-9th-10th-Grade-Bulletin-Board-17647783',
+};
+
 const glossary = [];
 GLOSSARY_GRADES.forEach(grade => {
   const rows = csvToObjects(fs.readFileSync(path.join(ROOT, GLOSSARY_FILES[grade]), 'utf8'));
@@ -2283,7 +2294,7 @@ GLOSSARY_GRADES.forEach(grade => {
     const allCcss = (r.all_ccss||'').split(';').map(s=>s.trim()).filter(Boolean);
     const allStrands = (r.all_strands||'').split(';').map(s=>s.trim()).filter(Boolean);
     const related = (r.related_terms||'').split(';').map(s=>s.trim()).filter(Boolean);
-    const tptUrl = wwUrlByKey[grade + '|' + normTerm(r.term)] || wwUrlByKey[grade + '|~' + normTermBase(r.term)] || TPT_STORE;
+    const tptUrl = WORD_WALL_GRADE_URL[grade] || TPT_STORE;
     glossary.push({
       slug:r.slug, term:r.term, grade, accent:GLOSSARY_ACCENT[grade],
       primaryCcss:r.primary_ccss||'', allCcss,
@@ -2678,7 +2689,14 @@ const FREE_RESOURCES = [
   { key:'year-at-a-glance-7th', title:'Year at a Glance',                 sub:'I Can Checklist + CCSS Curriculum Map',grade:7,     gradeLabel:'7th Grade',       cat:'Classroom & Planning',  thumb:'free_year-at-a-glance-7th.jpg',      url:'https://www.teacherspayteachers.com/Product/7th-Grade-Math-Year-at-a-Glance-FREE-I-Can-Checklist-CCSS-Curriculum-Map-16495555' },
   { key:'clt-poster',           title:'Combining Like Terms Poster',       sub:'Anchor Chart \u00b7 6.EE.A.3',        grade:6,     gradeLabel:'6th Grade',       cat:'Classroom & Planning',  thumb:'free_clt-poster.jpg',                url:'https://www.teacherspayteachers.com/Product/FREE-Combining-Like-Terms-Poster-6th-Grade-Math-Anchor-Chart-6EEA3-16654146' },
   { key:'pyth-poster',          title:'Pythagorean Theorem Poster',        sub:'Anchor Chart \u00b7 8.G.B.7',         grade:8,     gradeLabel:'8th Grade',       cat:'Classroom & Planning',  thumb:'free_pythagorean-theorem-poster.jpg', url:'https://www.teacherspayteachers.com/Product/FREE-Pythagorean-Theorem-Poster-8th-Grade-Math-Anchor-Chart-8GB7-16654289' },
-  { key:'word-wall',            title:'Middle School Math Word Wall',      sub:'80 Vocabulary Cards',                  grade:'all', gradeLabel:'Grades 6\u20138', cat:'Classroom & Planning',  thumb:'free_word-wall.jpg',                 url:'https://www.teacherspayteachers.com/Product/Middle-School-Math-Word-Wall-80-Vocabulary-Cards-6th-7th-8th-Grade-Math-FREE-16283183' },
+  // Word Walls — one free 3-card sampler per whole-grade word wall (posted 2026-09-13), plus the 80-card set
+  { key:'ww-sampler-5th', title:'5th Grade Math Word Wall Sampler', sub:'3 Free Vocabulary Cards', grade:5, gradeLabel:'5th Grade', cat:'Word Walls', thumb:'free_ww-sampler-5th.jpg', url:'https://www.teacherspayteachers.com/Product/5th-Grade-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-17648377' },
+  { key:'ww-sampler-6th', title:'6th Grade Math Word Wall Sampler', sub:'3 Free Vocabulary Cards', grade:6, gradeLabel:'6th Grade', cat:'Word Walls', thumb:'free_ww-sampler-6th.jpg', url:'https://www.teacherspayteachers.com/Product/6th-Grade-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-16772218' },
+  { key:'ww-sampler-7th', title:'7th Grade Math Word Wall Sampler', sub:'3 Free Vocabulary Cards', grade:7, gradeLabel:'7th Grade', cat:'Word Walls', thumb:'free_ww-sampler-7th.jpg', url:'https://www.teacherspayteachers.com/Product/7th-Grade-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-17648382' },
+  { key:'ww-sampler-8th', title:'8th Grade Math Word Wall Sampler', sub:'3 Free Vocabulary Cards', grade:8, gradeLabel:'8th Grade', cat:'Word Walls', thumb:'free_ww-sampler-8th.jpg', url:'https://www.teacherspayteachers.com/Product/8th-Grade-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-17648384' },
+  { key:'ww-sampler-algebra-1', title:'Algebra 1 Word Wall Sampler', sub:'3 Free Vocabulary Cards', grade:'alg', gradeLabel:'Algebra 1', cat:'Word Walls', thumb:'free_ww-sampler-algebra-1.jpg', url:'https://www.teacherspayteachers.com/Product/Algebra-1-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-8th-9th-Grade-17648391' },
+  { key:'ww-sampler-geometry', title:'Geometry Word Wall Sampler', sub:'3 Free Vocabulary Cards', grade:'geo', gradeLabel:'Geometry', cat:'Word Walls', thumb:'free_ww-sampler-geometry.jpg', url:'https://www.teacherspayteachers.com/Product/Geometry-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-9th-10th-Grade-17648397' },
+  { key:'word-wall',            title:'Middle School Math Word Wall',      sub:'80 Vocabulary Cards',                  grade:'all', gradeLabel:'Grades 6\u20138', cat:'Word Walls',            thumb:'free_word-wall.jpg',                 url:'https://www.teacherspayteachers.com/Product/Middle-School-Math-Word-Wall-80-Vocabulary-Cards-6th-7th-8th-Grade-Math-FREE-16283183' },
   // End of Year
   { key:'eoy-review-6th',       title:'End of Year Review',               sub:'Skills Check Worksheet',               grade:6,     gradeLabel:'6th Grade',       cat:'End of Year',           thumb:'free_eoy-review-6th.jpg',            url:'https://www.teacherspayteachers.com/Product/6th-Grade-Math-End-of-Year-Review-FREE-Skills-Check-Worksheet-Spring-2026-16213887' },
   { key:'eoy-review-7th',       title:'End of Year Review',               sub:'Skills Check Worksheet',               grade:7,     gradeLabel:'7th Grade',       cat:'End of Year',           thumb:'free_eoy-review-7th.jpg',            url:'https://www.teacherspayteachers.com/Product/7th-Grade-Math-End-of-Year-Review-FREE-Skills-Check-Worksheet-Spring-2026-16214437' },
@@ -3344,7 +3362,13 @@ function pageFree() {
       key:    'Classroom & Planning',
       eyebrow:'Classroom & Planning',
       h2:     'Resources for the wall and the plan book',
-      desc:   'Anchor chart posters to keep up all year, a middle school math vocabulary word wall, and year-at-a-glance curriculum maps for 6th and 7th grade.'
+      desc:   'Anchor chart posters to keep up all year, and year-at-a-glance curriculum maps for 6th and 7th grade.'
+    },
+    {
+      key:    'Word Walls',
+      eyebrow:'Word Walls',
+      h2:     'Try the word wall cards free',
+      desc:   'Three real cards from each whole-grade math word wall, 5th grade through Geometry, in color and grayscale \u2014 plus 80 free middle school vocabulary cards.'
     },
     {
       key:    'End of Year',
@@ -3376,7 +3400,7 @@ function pageFree() {
         <div class="free-hero__inner">
           <span class="eyebrow" style="color:var(--gold-soft)">No cost \u00b7 ready to use</span>
           <h1>Free resources from Math Class 678</h1>
-          <p>Skill sheets, anchor chart posters, back-to-school tools, curriculum maps, and end-of-year reviews \u2014 all grades 6\u20138, all free on Teachers Pay Teachers.</p>
+          <p>Skill sheets, anchor chart posters, word wall samplers, back-to-school tools, curriculum maps, and end-of-year reviews \u2014 all free on Teachers Pay Teachers.</p>
         </div>
         <div class="free-hero__photo">
           <img src="/assets/images/free_hero.jpg" alt="Free 4-in-1 Skill Sheet packets for 6th and 7th grade math with teal and coral accent bands" class="free-hero__img" width="1440" height="960" loading="lazy" decoding="async">
@@ -4318,11 +4342,63 @@ function pageWordWall(){
 ` + footer() + scripts();
 }
 
+
+// Glossary maths. The master CSVs author exponents with a caret (x^2, 10^5) so
+// they stay easy to edit; nothing ever ships a caret. supHtml() renders real
+// <sup> markup for the page, supText() gives a raised-glyph form for the
+// plain-text slots (meta description, JSON-LD) where markup is not allowed.
+const SUP_GLYPH = {'0':'⁰','1':'¹','2':'²','3':'³','4':'⁴',
+                   '5':'⁵','6':'⁶','7':'⁷','8':'⁸','9':'⁹'};
+const CARET_RE = /([A-Za-z0-9)\]])\^(-?)(\d+)/g;
+function supHtml(s){ return esc(String(s||'')).replace(CARET_RE,
+  (m,b,neg,n) => b + '<sup>' + (neg ? '−' : '') + n + '</sup>'); }
+function supText(s){ return String(s||'').replace(CARET_RE,
+  (m,b,neg,n) => b + (neg ? '⁻' : '') + [...n].map(c => SUP_GLYPH[c] || c).join('')); }
+
+// Titles must survive Google's ~60-character cut, so the site suffix is only
+// added when it fits.
+function glossTitle(term, gradeLabel){
+  const base = `${term} — ${gradeLabel} Math Definition`;
+  const full = `${base} | Math Class 678`;
+  return full.length <= 60 ? full : base;
+}
+
+// A description that earns the click: the definition first, then the grade and
+// standard, which is also what separates two cross-grade pages that share a
+// definition. Trimmed on a word boundary, never mid-word.
+function glossDesc(definition, gradeLabel, code, max){
+  max = max || 156;
+  const def = supText(definition).replace(/\s+/g,' ').trim();
+  const esclen = t => t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').length;
+  const tails = [
+    `${gradeLabel} math vocabulary${code ? ', ' + code : ''}. Printable Word Wall card with examples.`,
+    `${gradeLabel} math vocabulary${code ? ', ' + code : ''}. Printable Word Wall card.`,
+    `${gradeLabel} math vocabulary${code ? ', ' + code : ''}.`,
+    `${gradeLabel} math vocabulary.`,
+  ];
+  // Budget on the escaped length: &amp; and &lt; cost more than one character,
+  // and it is the attribute Google truncates.
+  const fits = (a, b) => esclen(b ? a + ' ' + b : a) <= max;
+
+  for (const tail of tails) if (fits(def, tail)) return def + ' ' + tail;
+
+  // Too long to keep whole: trim the definition on a word boundary so the grade
+  // and standard still make it in — that is what separates two cross-grade pages.
+  const shortest = tails[tails.length - 1];
+  let cut = def;
+  while (cut.length > 40 && !fits(cut + '…', shortest)) {
+    cut = cut.slice(0, cut.lastIndexOf(' '));
+  }
+  cut = cut.replace(/[,;:.\s]+$/,'');
+  return fits(cut + '…', shortest) ? cut + '… ' + shortest : def.slice(0, max - 1);
+}
+
+
 function definedTermJsonLd(t){
   const canonical = SITE_URL + t.pageUrl;
   const dt = {
     '@context':'https://schema.org','@type':'DefinedTerm',
-    name:t.term, description:t.definition,
+    name:t.term, description:supText(t.definition),
     inDefinedTermSet:{ '@type':'DefinedTermSet', name:'Math Class 678 Word Wall', url:SITE_URL+'/word-wall.html' },
     url:canonical
   };
@@ -4376,12 +4452,12 @@ function pageGlossaryTerm(t){
   const twins = (glossaryByNorm[normTerm(t.term)]||[]).filter(x => x.slug !== t.slug);
   const twinHtml = twins.length ? `<div class="gloss-side-block"><h2 class="gloss-side-block__title">Same term, other grades</h2><div class="gloss-where__chips">${twins.map(x=>`<a class="gloss-chip gloss-chip--${x.accent}" href="${x.pageUrl}">${x.grade==='Algebra'?'Algebra 1':x.grade} \u00b7 ${esc(x.term)}</a>`).join('')}</div></div>` : '';
 
-  const exHtml = [t.ex1,t.ex2].filter(Boolean).map(e => `<li>${esc(e)}</li>`).join('');
+  const exHtml = [t.ex1,t.ex2].filter(Boolean).map(e => `<li>${supHtml(e)}</li>`).join('');
   const codeLine = t.isCcssKeyed ? (t.allCcss.join('  \u00b7  ') || t.primaryCcss) : 'Algebra 1 \u00b7 ' + t.strand;
 
   return head({
-    title:`${t.term} \u2014 ${gLabel} Math Definition & Examples | Math Class 678 Word Wall`,
-    desc:`${t.term}: ${t.definition}`.slice(0,158),
+    title:glossTitle(t.term, gLabel),
+    desc:glossDesc(t.definition, gLabel, t.isCcssKeyed ? t.primaryCcss : t.strand, 156),
     path:'word-wall/'+t.slug+'.html',
     jsonld: definedTermJsonLd(t)
   }) + nav('word-wall') + `
@@ -4400,7 +4476,7 @@ function pageGlossaryTerm(t){
         </div>
         <div class="gloss-block gloss-block--def">
           <h2>Definition</h2>
-          <p class="gloss-def">${esc(t.definition)}</p>
+          <p class="gloss-def">${supHtml(t.definition)}</p>
         </div>
         ${exHtml ? `<div class="gloss-block">
           <h2>Examples</h2>
@@ -4408,19 +4484,19 @@ function pageGlossaryTerm(t){
         </div>` : ''}
         ${t.keyRule ? `<div class="gloss-block gloss-block--rule">
           <h2>Key rule</h2>
-          <p class="gloss-rule">${esc(t.keyRule)}</p>
+          <p class="gloss-rule">${supHtml(t.keyRule)}</p>
         </div>` : ''}
         ${t.memoryHook ? `<div class="gloss-block gloss-block--hook">
           <h2>Memory hook</h2>
-          <p class="gloss-hook">${esc(t.memoryHook)}</p>
+          <p class="gloss-hook">${supHtml(t.memoryHook)}</p>
         </div>` : ''}
       </div>
       <aside class="gloss-term__side">
         <div class="gloss-side-block gloss-side-block--cta">
           <span class="gloss-cta__tile gloss-cta__tile--${t.accent}">${SVG.mark}</span>
           <h2 class="gloss-side-block__title">Get this on your wall</h2>
-          <p>Print-ready ${esc(t.term)} card \u2014 color, black &amp; white, and digital.</p>
-          <a class="btn btn--primary btn--sm" href="${t.tptUrl}" target="_blank" rel="noopener">Get the card on TPT ${ICON.ext}</a>
+          <p>The ${esc(t.term)} card is part of the print-ready ${esc(gLabel)} Math Word Wall \u2014 every ${esc(gLabel)} term, in color and grayscale.</p>
+          <a class="btn btn--primary btn--sm" href="${t.tptUrl}" target="_blank" rel="noopener">Get the ${esc(gLabel)} word wall on TPT ${ICON.ext}</a>
         </div>
         ${whereHtml}
         ${sibHtml}
