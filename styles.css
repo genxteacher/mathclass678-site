@@ -1559,3 +1559,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .il-bandcard__pr small { font-family:var(--body); font-size:.7rem; font-weight:700; color:var(--gold); background:#f7efd8; padding:.15rem .5rem; border-radius:100px; margin-left:.3rem; vertical-align:middle; }
 .il-bandcard__meta { font-family:var(--mono); font-size:.76rem; color:var(--charcoal-soft); }
 @media (max-width:820px){ .il-bandgrid { grid-template-columns:1fr; } }
+
+/* Word Wall hub: per-grade buy row and the grade button grid in the closing band (2026-09-13) */
+.gloss-gradesec__buy { display:flex; flex-wrap:wrap; align-items:center; gap:.6rem 1.2rem; margin-top:1rem; }
+.gloss-cta-grid { display:flex; flex-wrap:wrap; gap:.6rem; margin:0 0 1.2rem; }

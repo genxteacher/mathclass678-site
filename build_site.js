@@ -2286,6 +2286,17 @@ const WORD_WALL_GRADE_URL = {
   'Geometry': 'https://www.teacherspayteachers.com/Product/Geometry-Math-Word-Wall-109-Vocabulary-Cards-9th-10th-Grade-Bulletin-Board-17647783',
 };
 
+// The free 3-card sampler for each grade's word wall (posted 2026-09-13), and the bundle of all six.
+const WORD_WALL_SAMPLER_URL = {
+  '5th':      'https://www.teacherspayteachers.com/Product/5th-Grade-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-17648377',
+  '6th':      'https://www.teacherspayteachers.com/Product/6th-Grade-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-16772218',
+  '7th':      'https://www.teacherspayteachers.com/Product/7th-Grade-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-17648382',
+  '8th':      'https://www.teacherspayteachers.com/Product/8th-Grade-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-17648384',
+  'Algebra':  'https://www.teacherspayteachers.com/Product/Algebra-1-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-8th-9th-Grade-17648391',
+  'Geometry': 'https://www.teacherspayteachers.com/Product/Geometry-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-9th-10th-Grade-17648397',
+};
+const WORD_WALL_COMPLETE_URL = 'https://www.teacherspayteachers.com/Product/Math-Word-Wall-Complete-Bundle-5th-8th-Grade-Algebra-1-Geometry-619-Cards-17647807';
+
 const glossary = [];
 GLOSSARY_GRADES.forEach(grade => {
   const rows = csvToObjects(fs.readFileSync(path.join(ROOT, GLOSSARY_FILES[grade]), 'utf8'));
@@ -4298,6 +4309,10 @@ function pageWordWall(){
         <span class="eyebrow eyebrow--${accent}">${esc(label)}</span>
         <h2>${esc(label)} vocabulary</h2>
         <p>${terms.length} terms, organized by ${glossGroupNoun(g)}. Each links to a full definition page with worked examples and the key rule.</p>
+        <div class="gloss-gradesec__buy">
+          <a class="btn btn--primary btn--sm" href="${WORD_WALL_GRADE_URL[g]}" target="_blank" rel="noopener">Get the ${esc(label)} word wall on TPT ${ICON.ext}</a>
+          <a class="std-backlink" href="${WORD_WALL_SAMPLER_URL[g]}" target="_blank" rel="noopener">Try 3 cards free ${ICON.arrow}</a>
+        </div>
       </div>
       ${grouped.map(grp => `
       <div class="gloss-group">
@@ -4333,9 +4348,12 @@ function pageWordWall(){
       <div class="method__head reveal" style="margin-bottom:1.6rem">
         <span class="eyebrow" style="color:var(--gold-soft)">For your classroom wall</span>
         <h2>Print-ready Word Wall cards</h2>
-        <p>Every term here is available as a polished, print-and-laminate vocabulary card \u2014 color, black &amp; white, and digital \u2014 on Teachers Pay Teachers.</p>
+        <p>Every grade\u2019s cards come as one print-ready word wall on Teachers Pay Teachers \u2014 color and grayscale, full-page and half-page. Or get all six in one bundle.</p>
       </div>
-      <a class="btn btn--primary" href="${TPT_STORE}" target="_blank" rel="noopener">Browse Word Wall cards on TPT ${ICON.ext}</a>
+      <div class="gloss-cta-grid">
+        ${GLOSSARY_GRADES.map(g => `<a class="btn btn--on-dark btn--sm" href="${WORD_WALL_GRADE_URL[g]}" target="_blank" rel="noopener">${esc(glossGradeLabel(g))} word wall ${ICON.ext}</a>`).join('')}
+      </div>
+      <a class="btn btn--primary" href="${WORD_WALL_COMPLETE_URL}" target="_blank" rel="noopener">Get all six: the Complete Bundle ${ICON.ext}</a>
     </div>
   </section>
 </main>
