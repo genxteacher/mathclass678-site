@@ -12,7 +12,7 @@ const path = require('path');
 
 const ROOT = __dirname;
 const DIST = path.join(ROOT, 'dist');
-const SITE_URL = 'https://mathclass678.com';
+const SITE_URL = 'https://www.mathclass678.com';
 const TPT_STORE = 'https://www.teacherspayteachers.com/store/math-class-678';
 const CONTACT = { tpt: 'tpt@mathclass678.com', support: 'support@mathclass678.com' };
 const SOCIAL = { pinterest: 'https://www.pinterest.com/mathclass678', instagram: 'https://www.instagram.com/mathclass.678', tiktok: 'https://www.tiktok.com/@mathclass678' };
