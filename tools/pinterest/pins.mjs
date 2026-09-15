@@ -316,7 +316,7 @@ body{display:flex;flex-direction:column;background:${C.off};color:${C.char};font
 .bar{height:16px;background:linear-gradient(90deg,${C.teal} 0 25%,${C.gold} 25% 50%,${C.coral} 50% 75%,${C.navy} 75%)}
 header{background:${C.forest};padding:60px 76px 58px;position:relative}
 header::after{content:"";position:absolute;left:76px;bottom:0;width:120px;height:8px;background:var(--acc)}
-.eyebrow{font:600 25px/1.3 "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:${C.goldSoft};margin-bottom:22px}
+.eyebrow{font:600 25px/1.3 "IBM Plex Mono",monospace;letter-spacing:.06em;color:${C.goldSoft};margin-bottom:22px}
 h1{font-family:Fraunces,serif;font-weight:800;font-size:calc(var(--kt)*92px);line-height:1.04;letter-spacing:-.01em;color:#fff;font-variation-settings:"opsz" 144}
 .fit{flex:1;min-height:0;padding:0 76px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
 .inner{display:flex;flex-direction:column;gap:calc(34*var(--u));padding-block:calc(44*var(--u))}
@@ -354,7 +354,7 @@ footer{height:196px;background:${C.forest};display:grid;grid-template-columns:au
 .cta{font:600 29px/1.2 Inter,sans-serif;color:${C.goldSoft};margin-top:14px}
 </style></head><body>
 <div class="bar"></div>
-<header><div class="eyebrow">${esc(eyebrow)}</div><h1>${esc(title)}</h1></header>
+<header><div class="eyebrow">${esc(eyebrow.split(' · ').map(part => /\d\.[A-Z]/.test(part) ? part : part.toUpperCase()).join(' · '))}</div><h1>${esc(title)}</h1></header>
 <main class="fit"><div class="inner">${body}</div></main>
 <footer><div class="mark"><i style="background:${C.teal}"></i><i style="background:${C.gold}"></i><i style="background:${C.coral}"></i><i style="background:${C.navy}"></i></div>
 <div><div class="dom">mathclass678.com</div><div class="cta">${esc(cta)}</div></div></footer>
