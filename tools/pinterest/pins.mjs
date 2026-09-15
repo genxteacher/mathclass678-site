@@ -54,11 +54,11 @@ const STRAND_BOARD = {
   '6|EE': '6th Grade Expressions and Equations | 6.EE Math', '6|G': '6th Grade Geometry | Area Volume Surface Area 6.G',
   '6|NS': '6th Grade Number System | 6.NS Math', '6|RP': '6th Grade Ratios and Rates | 6.RP Math',
   '6|SP': '6th Grade Statistics and Probability | 6.SP Math',
-  '7|RP': '7th Grade Proportional Relationships | 7.RP Math', '7|NS': '7th Grade Integers and Rational Numbers | 7.NS Math',
+  '7|RP': '7th Grade Proportional Relationships | 7.RP Math', '7|NS': '7th Grade Integers and Rationals | 7.NS Math',
   '7|EE': '7th Grade Expressions and Equations | 7.EE Math', '7|G': '7th Grade Geometry | Angles Area Circles 7.G',
   '7|SP': '7th Grade Statistics and Probability | 7.SP Math',
   '8|NS': '8th Grade Number System | Irrational Numbers 8.NS', '8|EE': '8th Grade Expressions and Equations | 8.EE Math',
-  '8|F': '8th Grade Functions | 8.F Math', '8|G': '8th Grade Geometry | Transformations Pythagorean Theorem 8.G',
+  '8|F': '8th Grade Functions | 8.F Math', '8|G': '8th Grade Geometry | Pythagorean Theorem 8.G',
   '8|SP': '8th Grade Statistics and Probability | 8.SP Math',
 };
 const SYSTEM_BOARD = '4-in-1 Skill Sheets | Middle School Math System';
@@ -427,6 +427,7 @@ for (const p of pins) {
     if (m) throw new Error(`${p.slug} ${f}: "${m[0]}"`);
   }
   if (!p.board) throw new Error(`${p.slug}: no board`);
+  if (p.board.length > 50) throw new Error(`board name over Pinterest's 50 characters: ${p.board}`);
   if (/object Object|>undefined<|: undefined|\bNaN\b/.test(p.html + p.title + p.desc)) throw new Error(`${p.slug}: unfilled text`);
 }
 if (new Set(pins.map(p => p.link)).size !== pins.length) throw new Error('two pins share a link');
