@@ -243,7 +243,11 @@ function pick(plan) {
     const rows = D.glossary[src].filter(r => strands.includes(r.strand) && !wwSkip(r));
     out.push(...rows.slice(0, PER_GRADE_VOCAB).map(r => vocabPin(g, r)));
   }
-  const stds = STANDARDS.filter(s => plan.standards.test(s.ccss));
+  // Rotate grades (6, 7, 8, 6, 7, 8, ...) so no grade takes all the example, tip and sheet slots.
+  const byGrade = {};
+  STANDARDS.filter(s => plan.standards.test(s.ccss)).forEach(s => (byGrade[s.grade] ||= []).push(s));
+  const stds = [];
+  for (let i = 0; Object.values(byGrade).some(l => l.length > i); i++) Object.keys(byGrade).sort().forEach(g => byGrade[g][i] && stds.push(byGrade[g][i]));
   const exs = [];
   for (let round = 0; round < 3 && exs.length < plan.examples; round++)
     for (const s of stds) {
@@ -252,7 +256,7 @@ function pick(plan) {
     }
   out.push(...exs);
   out.push(...stds.map(tipPin).filter(Boolean).slice(0, plan.tips));
-  const nums = [...new Set(stds.flatMap(s => s.sheets || []))];
+  const nums = [...new Set(stds.flatMap(s => (s.sheets || []).slice(0, 1)).concat(stds.flatMap(s => s.sheets || [])))];
   out.push(...nums.map(n => sheetByNum[n]).filter(Boolean).map(sheetPin).filter(Boolean).slice(0, plan.sheets));
   out.push(...plan.bundles.map(slug => bundlePin(D.BUNDLES.find(b => b.slug === slug))));
   out.push(...plan.free.map(slug => { const f = FREEBIES.find(x => x.slug === slug); if (!f) throw new Error('no freebie ' + slug); return freePin(f); }));
