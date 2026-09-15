@@ -1163,8 +1163,8 @@ const STANDARDS_CONTENT = {
       'The anchor students hold onto: See subtraction? KCC it: Keep the first number · Change − to + · Change the second sign. Then SUMS finishes — fractions get a common denominator first.',
     ],
     examples: [
-      { label: 'Unlike Denominators', problem: '(,[object Object],) + ,[object Object]', steps: ['LCD = 4: 1/2 = 2/4', 'Signs differ → 3/4 − 2/4 = 1/4', 'Larger value is negative → −1/4', 'A: −1/4'], answer: '−1/4' },
-      { label: 'KCC a Subtraction', problem: '[object Object], − ,[object Object]', steps: ['KCC: 2/5 + (−4/5)', 'Signs differ → 4/5 − 2/5 = 2/5', 'Larger value is negative → −2/5', 'A: −2/5'], answer: '−2/5' },
+      { label: 'Unlike Denominators', problem: '(−3/4) + 1/2', steps: ['LCD = 4: 1/2 = 2/4', 'Signs differ → 3/4 − 2/4 = 1/4', 'Larger value is negative → −1/4', 'A: −1/4'], answer: '−1/4' },
+      { label: 'KCC a Subtraction', problem: '2/5 − 4/5', steps: ['KCC: 2/5 + (−4/5)', 'Signs differ → 4/5 − 2/5 = 2/5', 'Larger value is negative → −2/5', 'A: −2/5'], answer: '−2/5' },
     ],
     tip: 'Head off the two predictable errors before they happen. First: Denominators never add — find the LCD first: 3/12 + 8/12 = 11/12 Second: KCC changes BOTH signs: 3/5 + 1/5 = 4/5 — subtracting a negative ADDS'
   },
@@ -1203,8 +1203,8 @@ const STANDARDS_CONTENT = {
       'The anchor students hold onto: MAPS still rules the signs: Multiply or DIVIDE the absolute values · Ask if the signs match · Positive if same · Switch to negative if different. See division? KCF it first.',
     ],
     examples: [
-      { label: 'Multiply Straight Across', problem: '(,[object Object],) × ,[object Object]', steps: ['Multiply across: 2×3 = 6, 3×5 = 15', 'Signs differ → negative', '−6/15 = −2/5', 'A: −2/5'], answer: '−2/5' },
-      { label: 'KCF a Division', problem: '(,[object Object],) ÷ ,[object Object]', steps: ['KCF: (−5/6) × (12/5)', 'Multiply across: 60/30 = 2', 'Signs differ → negative', 'A: −2'], answer: '−2' },
+      { label: 'Multiply Straight Across', problem: '(−2/3) × 3/5', steps: ['Multiply across: 2×3 = 6, 3×5 = 15', 'Signs differ → negative', '−6/15 = −2/5', 'A: −2/5'], answer: '−2/5' },
+      { label: 'KCF a Division', problem: '(−5/6) ÷ 5/12', steps: ['KCF: (−5/6) × (12/5)', 'Multiply across: 60/30 = 2', 'Signs differ → negative', 'A: −2'], answer: '−2' },
     ],
     tip: 'Head off the two predictable errors before they happen. First: Convert first: 2 1/2 = 5/2, so 5/2 × 3 = 15/2 = 7 1/2 Second: KEEP the first — FLIP the divisor: (1/2) × (4/3) = 2/3'
   },
@@ -1216,8 +1216,8 @@ const STANDARDS_CONTENT = {
       'The anchor students hold onto: DIVIDE to turn a fraction into a decimal: numerator ÷ denominator. CLASSIFY the result — it always terminates or repeats; a bar marks the repeating digits. SHIFT the point two places right for a percent.',
     ],
     examples: [
-      { label: 'Terminating Decimal', problem: '[object Object], → decimal → percent', steps: ['Divide: 3 ÷ 8 = 0.375', 'The division ends — terminating', 'Shift two right: 0.375 = 37.5%', 'A: 0.375 = 37.5%'], answer: '0.375 = 37.5%' },
-      { label: 'Repeating Decimal', problem: '[object Object], → decimal (bar notation)', steps: ['Divide: 5 ÷ 6 = 0.8333…', 'The 3 never stops — repeating', 'Write a bar over the repeating 3', 'A: 0.83 with a bar over the 3'], answer: '0.833… — bar over the 3' },
+      { label: 'Terminating Decimal', problem: '3/8 → decimal → percent', steps: ['Divide: 3 ÷ 8 = 0.375', 'The division ends — terminating', 'Shift two right: 0.375 = 37.5%', 'A: 0.375 = 37.5%'], answer: '0.375 = 37.5%' },
+      { label: 'Repeating Decimal', problem: '5/6 → decimal (bar notation)', steps: ['Divide: 5 ÷ 6 = 0.8333…', 'The 3 never stops — repeating', 'Write a bar over the repeating 3', 'A: 0.83 with a bar over the 3'], answer: '0.833… — bar over the 3' },
     ],
     tip: 'Head off the two predictable errors before they happen. First: Percent means per 100 — shift TWO places: 0.45 = 45% Second: 1 ÷ 3 never ends — bar the repeat: 0.333…'
   },
