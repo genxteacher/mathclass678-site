@@ -5200,6 +5200,18 @@ if (fs.existsSync(SRC_FREEBIE_IMGS)) {
   });
 }
 
+// Copy Pinterest pin images (assets/pins/<batch>/*.jpg) — the Media URLs in pinterest/<batch>.csv point here
+const SRC_PINS = path.join(ROOT, 'assets', 'pins');
+let pinImageCount = 0;
+if (fs.existsSync(SRC_PINS)) {
+  fs.readdirSync(SRC_PINS).filter(b => fs.statSync(path.join(SRC_PINS, b)).isDirectory()).forEach(b => {
+    fs.readdirSync(path.join(SRC_PINS, b)).filter(f => /\.jpe?g$/i.test(f)).forEach(f => {
+      copy(path.join('assets/pins', b, f), path.join('assets/pins', b, f));
+      pinImageCount++;
+    });
+  });
+}
+
 // Copy ILEARN cover thumbnails (il_g{N}_{tag}.jpg)
 const SRC_ILEARN_IMGS = path.join(ROOT, 'assets', 'images', 'ilearn');
 let ilearnThumbCount = 0;
