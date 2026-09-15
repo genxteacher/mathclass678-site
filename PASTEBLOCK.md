@@ -8,8 +8,7 @@
 ## Greg's actions
 1. Push this repo (GitHub Desktop) so the pin images are live on www.mathclass678.com.
 2. Create any missing boards (names must match the CSV exactly; list in the Pinterest plan).
-3. Upload `pinterest/2026-09.csv` before Sept 16, 5:30 am Central (Settings > Import content > Bulk create Pins).
-4. Upload `pinterest/2026-10.csv` on or after Oct 15.
+3. Pinterest caps an account at 100 scheduled pins, so the batch CSVs are NOT uploaded directly. The first 15 rows of 2026-09 are scheduled; everything else (both sites) is dealt into weekly files by `tools/site_export/pin_uploads.py` in the state testing repo: upload `~/Documents/Pinterest Uploads/<Sunday>.csv` each Sunday.
 
 ## Open
 - 6 worked examples on 3 standards pages show "[object Object]" (7.NS.A.1d, 7.NS.A.2c, 7.NS.A.2d) — fix the strings in STANDARDS_CONTENT.
