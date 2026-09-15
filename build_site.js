@@ -2489,7 +2489,7 @@ function nav(active) {
     </a>
     <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navlinks"><span></span></button>
     <nav class="nav__links" id="navlinks" aria-label="Primary">
-      ${link('/ilearn.html', 'ILEARN', 'ilearn')}
+      <a class="nav__link" href="https://statetestmath.com/">State Tests</a>
       ${link('/catalog.html', 'Catalog', 'catalog')}
       ${link('/bundles.html', 'Bundles', 'bundles')}
       ${link('/word-wall.html', 'Word Wall', 'word-wall')}
@@ -2572,7 +2572,7 @@ function footer(opts) {
       <div>
         <h4>Browse</h4>
         <ul class="footer__links">
-          <li><a href="/ilearn.html">Indiana ILEARN</a></li>
+          <li><a href="https://statetestmath.com/">State test practice</a></li>
           <li><a href="/catalog.html">All Skill Sheets</a></li>
           <li><a href="/bundles.html">Bundles</a></li>
           <li><a href="/grade-6.html">6th Grade</a></li>
@@ -2875,15 +2875,15 @@ function pageHome() {
     }, ...ratingSchema]).replace(/</g, '\\u003c')
   }) + nav('home') + `
 <main id="main">
-  <aside class="il-homebanner" aria-label="Indiana ILEARN state testing">
-    <a class="il-homebanner__link" href="/ilearn.html">
+  <aside class="il-homebanner" aria-label="State test practice">
+    <a class="il-homebanner__link" href="https://statetestmath.com/">
       <div class="wrap il-homebanner__in">
-        <span class="il-homebanner__flag">Flagship &middot; State testing</span>
+        <span class="il-homebanner__flag">State testing</span>
         <div class="il-homebanner__copy">
-          <strong>Indiana ILEARN Math, grades 3&ndash;8</strong>
-          <span>Checkpoint &amp; summative practice built to the Indiana Academic Standards &mdash; worked keys, item analysis, and a reteach cycle for every checkpoint.</span>
+          <strong>State test math practice now lives at State Test Math</strong>
+          <span>Indiana ILEARN, Georgia, Florida, Texas and North Carolina practice for grades 3&ndash;8 and Algebra 1 &mdash; checkpoints, reteach and full-year sets.</span>
         </div>
-        <span class="il-homebanner__cta">Explore ILEARN ${ICON.arrow}</span>
+        <span class="il-homebanner__cta">Visit State Test Math ${ICON.arrow}</span>
       </div>
     </a>
   </aside>
@@ -5020,7 +5020,7 @@ function pageIlearnHub() {
 }
 
 function sitemap() {
-  const pages = ['', 'catalog.html', 'bundles.html', 'word-wall.html', 'ilearn.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
+  const pages = ['', 'catalog.html', 'bundles.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
   const today = new Date().toISOString().slice(0, 10);
   const main = pages.map(p => `  <url><loc>${SITE_URL}/${p}</loc><lastmod>${today}</lastmod></url>`);
   const sheets = products
@@ -5032,11 +5032,9 @@ function sitemap() {
     .map(s => `  <url><loc>${SITE_URL}/standards/${s.slug}.html</loc><lastmod>${today}</lastmod></url>`);
   const glossaryUrls = glossary.map(t => `  <url><loc>${SITE_URL}${t.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
   const freebieUrls = FREEBIES.map(f => `  <url><loc>${SITE_URL}${f.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
-  const ilearnUrls = IL_GRADES.map(g => `  <url><loc>${SITE_URL}/ilearn/grade-${g}.html</loc><lastmod>${today}</lastmod></url>`)
-    .concat(ILEARN.listings.map(r => `  <url><loc>${SITE_URL}/ilearn/${r.slug}.html</loc><lastmod>${today}</lastmod></url>`));
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${main.concat(ilearnUrls, bundleUrls, sheets, standardUrls, glossaryUrls, freebieUrls).join('\n')}
+${main.concat(bundleUrls, sheets, standardUrls, glossaryUrls, freebieUrls).join('\n')}
 </urlset>`;
 }
 const robots = `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`;
@@ -5066,7 +5064,24 @@ const netlifyToml = `[[redirects]]
 // Belt-and-suspenders: a _redirects file in the publish dir is the canonical
 // Netlify redirect source and is always read. No catch-all here (404s are served
 // automatically), so /join has nothing to compete with.
-const netlifyRedirects = `/join      ${SKOOL_JOIN_URL}   301!\n/join/*    ${SKOOL_JOIN_URL}   301!\n`;
+// The Indiana ILEARN branch moved to statetestmath.com (2026-09-14). Every old page goes to the
+// matching new page: checkpoint listings to that checkpoint's page, grade-wide bundles to the
+// grade page, band bundles and the hub to /indiana/. Each rule is written with and without .html.
+const STM = 'https://statetestmath.com';
+function ilearnTarget(r) {
+  if (r.category === 'band-bundle') return `${STM}/indiana/`;
+  const g = String(r.grade).replace(/\D/g, '');
+  const m = String(r.slot || '').match(/^cp([123])/);
+  if (m) return `${STM}/indiana/grade-${g}/checkpoint-${m[1]}/`;
+  if (r.slot === 'sum') return `${STM}/indiana/grade-${g}/summative/`;
+  return `${STM}/indiana/grade-${g}/`;
+}
+const ilearnRules = [['/ilearn.html', `${STM}/indiana/`], ['/ilearn', `${STM}/indiana/`]]
+  .concat(IL_GRADES.flatMap(g => [[`/ilearn/grade-${g}.html`, `${STM}/indiana/grade-${g}/`], [`/ilearn/grade-${g}`, `${STM}/indiana/grade-${g}/`]]))
+  .concat(ILEARN.listings.flatMap(r => [[`/ilearn/${r.slug}.html`, ilearnTarget(r)], [`/ilearn/${r.slug}`, ilearnTarget(r)]]))
+  .concat([['/ilearn/*', `${STM}/indiana/`]]);
+const ILEARN_REDIRECTS = ilearnRules.map(([from, to]) => `${from}   ${to}   301!`).join('\n') + '\n';
+const netlifyRedirects = `/join      ${SKOOL_JOIN_URL}   301!\n/join/*    ${SKOOL_JOIN_URL}   301!\n` + ILEARN_REDIRECTS;
 
 /* ============================================================================
    write everything
@@ -5135,10 +5150,9 @@ let freebieCount = 0;
 FREEBIES.forEach(f => { write(`free/${f.slug}.html`, pageFreebie(f)); freebieCount++; });
 
 /* Indiana ILEARN flagship branch — hub + 6 grade pages + 75 individual listing pages */
-write('ilearn.html', pageIlearnHub());
-IL_GRADES.forEach(g => write(`ilearn/grade-${g}.html`, pageIlearnGrade(g)));
-let ilearnCount = 0;
-ILEARN.listings.forEach(r => { write(`ilearn/${r.slug}.html`, pageIlearnListing(r)); ilearnCount++; });
+// The ILEARN branch moved to statetestmath.com on 2026-09-14; its pages are no longer written
+// here and every old URL 301s to its new home (ILEARN_REDIRECTS below).
+const ilearnCount = 0;
 
 copy('styles.css', 'assets/css/styles.css');
 copy('assets/js/catalog.js', 'assets/js/catalog.js');
