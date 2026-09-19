@@ -2579,6 +2579,7 @@ function footer(opts) {
           <li><a href="/readiness.html">Readiness Checks</a></li>
           <li><a href="/i-can.html">I Can Posters</a></li>
           <li><a href="/sub-plans.html">Sub Plans</a></li>
+          <li><a href="/mistake-of-the-week.html">Mistake of the Week</a></li>
           <li><a href="/grade-6.html">6th Grade</a></li>
           <li><a href="/grade-7.html">7th Grade</a></li>
           <li><a href="/grade-8.html">8th Grade</a></li>
@@ -5133,6 +5134,7 @@ function motwSection() {
   return `<section class="section cr-alt">
     <div class="wrap">
       ${secHead('Also a warm-up routine', 'Mistake of the Week', 'Once a week, students find a worked mistake, fix it and explain it. Twelve weeks per grade, with a free three-week sampler.')}
+      <p style="margin:-1.2rem 0 1.6rem"><a class="cr-link" href="/mistake-of-the-week.html">See every week for every grade ${ICON.arrow}</a></p>
       <div class="cr-grid">
         ${wuTile({ url: MOTW.motwfree.url, external: true, img: MOTW.motwfree.img, name: 'Mistake of the Week sampler', kicker: 'Free · grades 6–8', badge: 'Free', cta: 'Get it free on TPT' })}
         ${g.map(([k, lab, acc]) => wuTile({ url: MOTW[k].url, external: true, img: MOTW[k].img, accent: acc, name: `Mistake of the Week, ${lab}`, kicker: '12 weeks' })).join('')}
@@ -5158,7 +5160,7 @@ function gradeClassroomBand(grade) {
       <div class="cr-grid">
         ${wuTile({ url: `/warm-ups/${c.slug}.html`, img: c.yr.img, accent: acc, name: `${c.label} Math Warm-Ups`, kicker: '180 days \u00b7 four problems a day', cta: 'See every week' })}
         ${r ? wuTile({ url: '/readiness.html#' + r.key, img: r.img, accent: acc, name: `${r.grade} Math Readiness Check`, kicker: `${r.prior} skills \u00b7 ${r.questions} questions`, cta: 'See what it covers' }) : ''}
-        ${m ? wuTile({ url: m.url, external: true, img: m.img, accent: acc, name: `Mistake of the Week, ${c.label}`, kicker: 'Error analysis \u00b7 12 weeks' }) : ''}
+        ${m ? wuTile({ url: `/mistake-of-the-week.html#grade-${grade}`, img: m.img, accent: acc, name: `Mistake of the Week, ${c.label}`, kicker: 'Error analysis \u00b7 12 weeks', cta: 'See all 12 weeks' }) : ''}
         ${SP['sp' + grade] ? wuTile({ url: '/sub-plans.html', img: SP['sp' + grade].img, accent: acc, name: `${c.label} Emergency Sub Plans`, kicker: `3 days \u00b7 reviews ${SP['sp' + grade].prior} skills`, cta: 'See the three days' }) : ''}
       </div>
     </div>
@@ -5274,7 +5276,7 @@ function pageWarmupsCourse(c) {
   if (c.first20) related.push(wuTile({ url: c.first20.url, external: true, img: c.first20.img, accent, name: `${c.label} Warm-Ups: First 20 Days`, kicker: 'Back to school · trackers included' }));
   const rk = WU_READINESS[c.key];
   if (rk) { const r = RC.checks.find(x => x.key === rk); related.push(wuTile({ url: '/readiness.html#' + rk, img: r.img, accent, name: `${r.grade} Math Readiness Check`, kicker: `${r.prior} skills · ${r.questions} questions`, cta: 'See what it covers' })); }
-  if (WU_MOTW[c.key]) { const m = MOTW[WU_MOTW[c.key]]; related.push(wuTile({ url: m.url, external: true, img: m.img, accent, name: `Mistake of the Week, ${c.label}`, kicker: 'Error analysis · 12 weeks' })); }
+  if (WU_MOTW[c.key]) { const m = MOTW[WU_MOTW[c.key]]; related.push(wuTile({ url: `/mistake-of-the-week.html#grade-${c.key.slice(1)}`, img: m.img, accent, name: `Mistake of the Week, ${c.label}`, kicker: 'Error analysis · 12 weeks', cta: 'See all 12 weeks' })); }
   if (WU_GRADE_PAGE[c.key]) related.push(wuTile({ url: WU_GRADE_PAGE[c.key], accent, name: `${c.label} 4-in-1 Skill Sheets`, kicker: 'One complete lesson per skill', cta: 'Browse the sheets' }));
   const buy = [
     wuTile({ url: c.yr.url, external: true, img: c.yr.img, accent, name: 'Full Year', kicker: '180 days · all four quarters', feature: true }),
@@ -5712,8 +5714,123 @@ function pageSubPlans() {
 }
 
 
+/* ============================================================================
+   MISTAKE OF THE WEEK   (v1.13.0 · 2026-09-19)
+   One page for the five listings (6th, 7th, 8th, the 36-week bundle, the free 3-week sampler).
+   The 36 weekly skills and codes and the grade 6 week 1 example come from the product's own
+   content file (mc678-motw/src/content.js) via the exporter; each week links the site's page for
+   the 4-in-1 Skill Sheet that teaches that skill. Counts in the copy are the listings' own.
+   ============================================================================ */
+const MW_SHEET_PAGE = Object.fromEntries(products.map(p => [((p.url || '').match(/(\d{7,9})$/) || [])[1], p.pageUrl]));
+const MW_ACC = { 6: 'teal', 7: 'coral', 8: 'navy' };
+const MW_INCLUDED = [
+  '12 mistake posters and 12 fix reveals, in color and black-and-white ink-saver versions',
+  '24 Now You Try check items with a full answer key',
+  'A 51-slide editable PowerPoint deck plus a Google Slides copy link',
+  'Response slips, a student Mistake Log, a 3-point rubric and sentence stems',
+  'A pacing map with CCSS codes and a 3-panel bulletin board banner',
+];
+const MW_FAQ = [
+  { q: 'How long does it take each week?', a: 'Five minutes on Monday: students find the mistake, fix it and explain the rule in their own words. On Friday, two fresh Now You Try items check whether the fix stuck.' },
+  { q: 'Why teach with wrong answers?', a: 'Students who can follow a worked example still repeat the same few mistakes on every quiz, because nobody asked them to look at a wrong answer and say why it is wrong. Explaining an error is also what constructed-response questions ask for when they say critique the reasoning.' },
+  { q: 'Does it work in Google Slides?', a: 'Yes. Every grade has a 51-slide editable PowerPoint deck and a Google Slides copy link.' },
+  { q: 'Can I try it first?', a: 'Yes. The free 3-week sampler has one complete week each for 6th, 7th and 8th grade, with response slips, a rubric and an answer key.' },
+];
+
+function pageMistakeOfTheWeek() {
+  const ex = MOTW.example;
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Mistake of the Week' }];
+  const gradeKey = { 6: 'motw6', 7: 'motw7', 8: 'motw8' };
+  const table = g => {
+    const ws = MOTW.weeks[g];
+    return `<section class="cr-quarter cr-quarter--${MW_ACC[g]} reveal" id="grade-${g}">
+      <div class="cr-quarter__head">
+        <div><span class="cr-quarter__n">${g}th grade</span><h3>12 weeks of ${g}th grade mistakes</h3><p>One skill a week, each tied to the 4-in-1 Skill Sheet that teaches it</p></div>
+        ${tptBtn(MOTW[gradeKey[g]], `${g}th grade on TPT`, 'btn--ghost')}
+      </div>
+      <table class="cr-weeks"><thead><tr><th scope="col">Week</th><th scope="col">Skill</th><th scope="col">Standard</th><th scope="col">Skill Sheet</th></tr></thead>
+        <tbody>${ws.map(w => {
+          const id = (w.sheetUrl.match(/(\d{7,9})$/) || [])[1];
+          const href = MW_SHEET_PAGE[id] || w.sheetUrl;
+          const ext = !MW_SHEET_PAGE[id];
+          return `<tr><td>${w.wk}</td><td>${esc(w.skill)}</td><td class="cr-code">${esc(w.ccss)}</td><td><a href="${esc(href)}"${ext ? ' target="_blank" rel="noopener"' : ''}>${esc(w.sheetName)}</a></td></tr>`;
+        }).join('')}</tbody></table>
+    </section>`;
+  };
+  return head({
+    title: 'Mistake of the Week | Math Error Analysis Warm-Ups, Grades 6–8',
+    desc: 'Math error analysis warm-ups for 6th, 7th and 8th grade: one mistake poster each Monday, five minutes to find it, fix it and explain it, for 12 weeks per grade.',
+    path: 'mistake-of-the-week.html',
+    ogImage: MOTW.motw6.img ? SITE_URL + MOTW.motw6.img : undefined,
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Mistake of the Week', url: '/mistake-of-the-week.html' }]),
+      faqSchema(MW_FAQ),
+      itemListSchema('Mistake of the Week', ['motw6', 'motw7', 'motw8', 'motwbundle', 'motwfree'].map(k => ({ url: MOTW[k].url, name: MOTW[k].title })))),
+  }) + nav('motw') + `
+<main id="main">
+  ${breadcrumb(crumbs)}
+  ${crHero('Error analysis warm-ups', 'Find it. Fix it. Explain it.',
+    'One mistake poster on the wall each Monday. Your class has five minutes to find the one thing that went wrong, fix it and explain the rule in their own words, and on Friday two fresh Now You Try items check whether the fix stuck. Twelve weeks per grade, for 6th, 7th and 8th grade.',
+    `<a class="btn btn--primary" href="#grades">Choose your grade ${ICON.arrow}</a><a class="btn btn--ghost cr-btn--light" href="${esc(MOTW.motwfree.url)}" target="_blank" rel="noopener">Free 3-week sampler ${ICON.ext}</a>`)}
+
+  <section class="section">
+    <div class="wrap cr-split">
+      <div>
+        ${secHead(`Week 1 · ${ex.grade}th grade · ${ex.ccss}`, 'Try one with your class')}
+        <div class="mw-poster reveal">
+          <p class="mw-poster__stem">${esc(ex.stem)}</p>
+          <p class="mw-poster__claim"><b>${esc(ex.who)} says:</b> “${esc(ex.claim)}”</p>
+          <p class="mw-poster__prompt">${esc(ex.prompt)}</p>
+          <details class="mw-poster__reveal"><summary>Show the fix</summary>
+            <p class="mw-poster__rule">${esc(ex.rule)}</p>
+            <ol>${ex.steps.map(s => `<li>${esc(s)}</li>`).join('')}</ol>
+          </details>
+        </div>
+      </div>
+      <figure class="cr-split__img reveal">${MOTW.motw6.img ? `<img src="${MOTW.motw6.img}" alt="Mistake of the Week, 6th grade math error analysis warm-ups" width="640" height="640" loading="lazy" decoding="async">` : ''}</figure>
+    </div>
+  </section>
+
+  <section class="section cr-alt" id="grades">
+    <div class="wrap">
+      ${secHead('Choose your grade', 'Twelve weeks per grade', 'Every grade runs the same five-minute Monday routine, so students arrive in 7th and 8th grade already knowing how to find, fix and explain a mistake.')}
+      <div class="cr-grid">
+        ${[6, 7, 8].map(g => wuTile({ url: MOTW[gradeKey[g]].url, external: true, img: MOTW[gradeKey[g]].img, accent: MW_ACC[g], name: `Mistake of the Week, ${g}th Grade`, kicker: '12 weeks · 24 Now You Try items' })).join('')}
+        ${wuTile({ url: MOTW.motwbundle.url, external: true, img: MOTW.motwbundle.img, feature: true, name: 'Mistake of the Week Bundle', kicker: '6th, 7th & 8th grade · 36 weeks' })}
+        ${wuTile({ url: MOTW.motwfree.url, external: true, img: MOTW.motwfree.img, name: 'Mistake of the Week sampler', kicker: 'Free · one week per grade', badge: 'Free', cta: 'Get it free on TPT' })}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      ${secHead('In every grade', 'Posters, reveals, checks and slides')}
+      <ul class="cr-list">${MW_INCLUDED.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+    </div>
+  </section>
+
+  <section class="section cr-alt">
+    <div class="wrap">
+      ${secHead('Every week', 'What each grade’s mistakes cover', 'Each week’s skill and standard, and the 4-in-1 Skill Sheet to reteach it when the mistake shows up in your class.')}
+      ${[6, 7, 8].map(table).join('\n')}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap cr-cta">
+      <div><span class="eyebrow">For a department</span><h2>One routine in every room</h2><p>The bundle adds a 95-page all-grades teacher file: a department guide with a 6–8 vertical map of where each strand’s mistakes connect, a rollout plan and a 15-minute PLC protocol for sorting student slips.</p></div>
+      ${tptBtn(MOTW.motwbundle, 'View the bundle')}
+    </div>
+  </section>
+
+  ${faqBlock(MW_FAQ, 'Mistake of the Week questions')}
+  ${noteBand()}
+</main>
+` + footer() + scripts();
+}
+
+
 function sitemap() {
-  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'sub-plans.html', 'i-can.html', 'i-can/personal-finance.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
+  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'sub-plans.html', 'mistake-of-the-week.html', 'i-can.html', 'i-can/personal-finance.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
   const today = new Date().toISOString().slice(0, 10);
   const main = pages.map(p => `  <url><loc>${SITE_URL}/${p}</loc><lastmod>${today}</lastmod></url>`);
   const sheets = products
@@ -5814,6 +5931,7 @@ write('warm-ups.html', pageWarmupsHub());
 WU.courses.forEach(c => write(`warm-ups/${c.slug}.html`, pageWarmupsCourse(c)));
 write('readiness.html', pageReadiness());
 write('sub-plans.html', pageSubPlans());
+write('mistake-of-the-week.html', pageMistakeOfTheWeek());
 write('i-can.html', pageICanHub());
 ICAN_SETS.forEach(st => write(`i-can/${st.slug}.html`, pageICanSet(st)));
 write('i-can/personal-finance.html', pageICanPF());

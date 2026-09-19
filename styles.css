@@ -1663,3 +1663,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .catalog-hero { background-size: cover; background-position: center; color: var(--offwhite); }
 .catalog-hero h1 { color: var(--offwhite); font-size: var(--fs-h1); margin-top: 1rem; letter-spacing: -.015em; }
 .catalog-hero p { color: rgba(247,245,240,.86); font-size: var(--fs-lead); margin-top: 1rem; max-width: 62ch; }
+
+/* Mistake of the Week example poster (v1.13.0) */
+.mw-poster { background:var(--white); border:1px solid var(--line); border-left:6px solid var(--coral); border-radius:var(--radius); padding:1.4rem 1.5rem; box-shadow:var(--shadow-sm); }
+.mw-poster__stem { font-family:var(--display); font-size:1.35rem; margin:0 0 .8rem; }
+.mw-poster__claim { font-size:1.05rem; margin:0 0 .6rem; }
+.mw-poster__prompt { color:var(--charcoal-soft); font-style:italic; margin:0 0 1rem; }
+.mw-poster__reveal summary { cursor:pointer; font-weight:600; color:var(--forest); }
+.mw-poster__reveal[open] summary { margin-bottom:.6rem; }
+.mw-poster__rule { font-weight:600; margin:0 0 .5rem; }
+.mw-poster__reveal ol { margin:0; padding-left:1.2rem; color:var(--charcoal-soft); }
+.cr-weeks td a { color:var(--forest); text-decoration:underline; text-underline-offset:2px; }

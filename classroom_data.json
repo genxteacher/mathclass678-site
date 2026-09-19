@@ -1499,6 +1499,282 @@
    "url": "https://www.teacherspayteachers.com/Product/Mistake-of-the-Week-Bundle-6th-7th-8th-Grade-Math-Error-Analysis-36-Weeks-16968111",
    "key": "motwbundle",
    "img": null
+  },
+  "example": {
+   "grade": 6,
+   "skill": "Greatest Common Factor",
+   "ccss": "6.NS.B.4",
+   "who": "Maya",
+   "stem": "Find the GCF of 24 and 36.",
+   "claim": "6 divides both, so the GCF is 6.",
+   "prompt": "6 does divide both. Is there a bigger number that also divides both?",
+   "rule": "The GCF is the largest factor the two numbers share, not simply a factor that works.",
+   "hero": "GCF(24, 36) = 12",
+   "steps": [
+    "List the common factors of 24 and 36: 1, 2, 3, 4, 6, 12.",
+    "The greatest one on that list is 12.",
+    "GCF(24, 36) = 12."
+   ]
+  },
+  "weeks": {
+   "6": [
+    {
+     "wk": 1,
+     "skill": "Greatest Common Factor",
+     "ccss": "6.NS.B.4",
+     "sheetName": "Greatest Common Factor",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Greatest-Common-Factor-4-in-1-Skill-Sheet-for-6th-Grade-Math-CCSS-6NSB4-16335993"
+    },
+    {
+     "wk": 2,
+     "skill": "Least Common Multiple",
+     "ccss": "6.NS.B.4",
+     "sheetName": "Least Common Multiple",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Least-Common-Multiple-4-in-1-Skill-Sheet-for-6th-Grade-Math-CCSS-6NSB4-16336054"
+    },
+    {
+     "wk": 3,
+     "skill": "Dividing Fractions",
+     "ccss": "6.NS.A.1",
+     "sheetName": "Dividing Fractions by Fractions",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Dividing-Fractions-by-Fractions-4-in-1-Skill-Sheet-for-6th-Grade-Math-CCSS-16447059"
+    },
+    {
+     "wk": 4,
+     "skill": "Multiplying Decimals",
+     "ccss": "6.NS.B.3",
+     "sheetName": "Multi-Digit Operations",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Multi-Digit-Operations-4-in-1-Skill-Sheet-6th-Grade-Math-CCSS-6NSB2B3-16447084"
+    },
+    {
+     "wk": 5,
+     "skill": "Understanding Ratios",
+     "ccss": "6.RP.A.1",
+     "sheetName": "Understanding Ratios",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Understanding-Ratios-4-in-1-Skill-Sheet-for-6th-Grade-Math-CCSS-6RPA1-16446844"
+    },
+    {
+     "wk": 6,
+     "skill": "Unit Rates",
+     "ccss": "6.RP.A.2",
+     "sheetName": "Unit Rate Concept",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Unit-Rate-Concept-4-in-1-Skill-Sheet-for-6th-Grade-Math-CCSS-6RPA2-16446870"
+    },
+    {
+     "wk": 7,
+     "skill": "Percent of a Number",
+     "ccss": "6.RP.A.3c",
+     "sheetName": "Ratio Reasoning Application",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Ratio-Reasoning-Application-4-in-1-Skill-Sheet-for-6th-Math-CCSS-6RPA3-16446896"
+    },
+    {
+     "wk": 8,
+     "skill": "Exponents",
+     "ccss": "6.EE.A.1",
+     "sheetName": "Exponents",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Exponents-4-in-1-Skill-Sheet-for-6th-Grade-Math-CCSS-6EEA1-16447175"
+    },
+    {
+     "wk": 9,
+     "skill": "Combining Like Terms",
+     "ccss": "6.EE.A.3",
+     "sheetName": "Combining Like Terms",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Combining-Like-Terms-4-in-1-Skill-Sheet-for-6th-Grade-Math-CCSS-6EEA3-16336294"
+    },
+    {
+     "wk": 10,
+     "skill": "One-Step Equations",
+     "ccss": "6.EE.B.7",
+     "sheetName": "Solving One-Step Equations",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Solving-One-Step-Equations-4-in-1-Skill-Sheet-6th-Grade-Math-CCSS-6EEB7-16336566"
+    },
+    {
+     "wk": 11,
+     "skill": "Area of a Triangle",
+     "ccss": "6.G.A.1",
+     "sheetName": "Area of Polygons",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Area-of-Polygons-Triangles-Quadrilaterals-Composite-Figures-6th-Math-16462908"
+    },
+    {
+     "wk": 12,
+     "skill": "Volume with Fractional Edges",
+     "ccss": "6.G.A.2",
+     "sheetName": "Volume with Fractional Edge Lengths",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Volume-with-Fractional-Edge-Lengths-4-in-1-Skill-Sheet-for-6th-Grade-Math-16462912"
+    }
+   ],
+   "7": [
+    {
+     "wk": 1,
+     "skill": "Adding Integers",
+     "ccss": "7.NS.A.1b",
+     "sheetName": "Adding Integers",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Adding-Integers-4-in-1-Skill-Sheet-for-7th-Grade-Math-CCSS-7NSA1b-16336791"
+    },
+    {
+     "wk": 2,
+     "skill": "Subtracting Integers",
+     "ccss": "7.NS.A.1c",
+     "sheetName": "Subtracting Integers",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Subtracting-Integers-4-in-1-Skill-Sheet-for-7th-Grade-Math-CCSS-7NSA1c-16336846"
+    },
+    {
+     "wk": 3,
+     "skill": "Multiplying Integers",
+     "ccss": "7.NS.A.2a",
+     "sheetName": "Multiplying Integers",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Multiplying-Integers-4-in-1-Skill-Sheet-for-7th-Grade-Math-CCSS-7NSA2a-16336882"
+    },
+    {
+     "wk": 4,
+     "skill": "Dividing Integers",
+     "ccss": "7.NS.A.2b",
+     "sheetName": "Dividing Integers",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Dividing-Integers-4-in-1-Skill-Sheet-for-7th-Grade-Math-CCSS-7NSA2b-16336921"
+    },
+    {
+     "wk": 5,
+     "skill": "Subtracting Mixed Numbers",
+     "ccss": "7.NS.A.1d",
+     "sheetName": "Adding & Subtracting Rationals",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Adding-Subtracting-Rationals-4-in-1-Skill-Sheet-7th-Math-CCSS-7NSA1d-16337149"
+    },
+    {
+     "wk": 6,
+     "skill": "Multiplying Mixed Numbers",
+     "ccss": "7.NS.A.2c",
+     "sheetName": "Multiplying & Dividing Rationals",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Multiplying-Dividing-Rationals-4-in-1-Skill-Sheet-7th-Math-CCSS-7NSA2c-16337232"
+    },
+    {
+     "wk": 7,
+     "skill": "Decimals to Percents",
+     "ccss": "7.RP.A.3",
+     "sheetName": "Percent Problems",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Percent-Problems-4-in-1-Skill-Sheet-for-7th-Grade-Math-CCSS-7RPA3-16463550"
+    },
+    {
+     "wk": 8,
+     "skill": "Combining Like Terms",
+     "ccss": "7.EE.A.1",
+     "sheetName": "Combining Like Terms",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Combining-Like-Terms-4-in-1-Skill-Sheet-for-7th-Grade-Math-CCSS-7EEA1-16337315"
+    },
+    {
+     "wk": 9,
+     "skill": "Distributive Property",
+     "ccss": "7.EE.A.1",
+     "sheetName": "Distributive Property",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Distributive-Property-4-in-1-Skill-Sheet-for-7th-Grade-Math-CCSS-7EEA1-16337364"
+    },
+    {
+     "wk": 10,
+     "skill": "Distribute and Combine",
+     "ccss": "7.EE.A.1",
+     "sheetName": "Rewriting Expressions",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Rewriting-Expressions-4-in-1-Skill-Sheet-for-7th-Grade-Math-CCSS-7EEA2-16463822"
+    },
+    {
+     "wk": 11,
+     "skill": "Two-Step Equations",
+     "ccss": "7.EE.B.4a",
+     "sheetName": "Two-Step Equations",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Two-Step-Equations-4-in-1-Skill-Sheet-for-7th-Grade-Math-CCSS-7EEB4a-16337427"
+    },
+    {
+     "wk": 12,
+     "skill": "Two-Step Inequalities",
+     "ccss": "7.EE.B.4b",
+     "sheetName": "Two-Step Inequalities",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Two-Step-Inequalities-4-in-1-Skill-Sheet-for-7th-Grade-Math-CCSS-7EEB4b-16463811"
+    }
+   ],
+   "8": [
+    {
+     "wk": 1,
+     "skill": "Properties of Exponents",
+     "ccss": "8.EE.A.1",
+     "sheetName": "Exponent Rules",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Exponent-Rules-Laws-of-Exponents-4-in-1-Skill-Sheet-8th-Grade-Math-16514441"
+    },
+    {
+     "wk": 2,
+     "skill": "Square Roots and Solutions",
+     "ccss": "8.EE.A.2",
+     "sheetName": "Square & Cube Roots",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Square-Cube-Roots-Perfect-Squares-Cubes-4-in-1-Skill-Sheet-8th-Grade-16514795"
+    },
+    {
+     "wk": 3,
+     "skill": "Operations with Scientific Notation",
+     "ccss": "8.EE.A.4",
+     "sheetName": "Operations with Scientific Notation",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Scientific-Notation-Operations-8th-Grade-Math-All-4-Operations-16514620"
+    },
+    {
+     "wk": 4,
+     "skill": "Rational vs. Irrational Numbers",
+     "ccss": "8.NS.A.1",
+     "sheetName": "Rational vs Irrational Numbers",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Rational-vs-Irrational-Numbers-Worksheet-4-in-1-Skill-Sheet-8th-Grade-Math-16514405"
+    },
+    {
+     "wk": 5,
+     "skill": "Multi-Step Equations",
+     "ccss": "8.EE.C.7",
+     "sheetName": "Multi-Step Equations",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Multi-Step-Equations-8th-Grade-Math-Worksheet-Combine-Like-Terms-16514621"
+    },
+    {
+     "wk": 6,
+     "skill": "Comparing Slopes",
+     "ccss": "8.EE.B.5",
+     "sheetName": "Proportional Relationships (Graphing)",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Proportional-Relationships-Unit-Rate-Slope-4-in-1-Skill-Sheet-8th-Grade-16514743"
+    },
+    {
+     "wk": 7,
+     "skill": "Slope from Two Points",
+     "ccss": "8.EE.B.6",
+     "sheetName": "Slope-Intercept Form",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Slope-Intercept-Form-y-mx-b-4-in-1-Skill-Sheet-for-8th-Grade-Math-16514715"
+    },
+    {
+     "wk": 8,
+     "skill": "Systems of Equations",
+     "ccss": "8.EE.C.8",
+     "sheetName": "Systems by Substitution",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Systems-by-Substitution-4-in-1-Skill-Sheet-for-8th-Grade-Math-8EEC8b-16514897"
+    },
+    {
+     "wk": 9,
+     "skill": "Identifying Functions",
+     "ccss": "8.F.A.1",
+     "sheetName": "Functions Definition",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Functions-Definition-Worksheet-8th-Grade-Math-Input-Output-Tables-16514609"
+    },
+    {
+     "wk": 10,
+     "skill": "Rate of Change from a Table",
+     "ccss": "8.F.B.4",
+     "sheetName": "Constructing Linear Functions",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Constructing-Linear-Functions-4-in-1-Skill-Sheet-for-8th-Grade-Math-8FB4-16514935"
+    },
+    {
+     "wk": 11,
+     "skill": "The Pythagorean Theorem",
+     "ccss": "8.G.B.7",
+     "sheetName": "Pythagorean Theorem",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Pythagorean-Theorem-Right-Triangles-4-in-1-Skill-Sheet-8th-Grade-Math-16515201"
+    },
+    {
+     "wk": 12,
+     "skill": "Volume of a Sphere",
+     "ccss": "8.G.C.9",
+     "sheetName": "Volume of Cones, Cylinders, Spheres",
+     "sheetUrl": "https://www.teacherspayteachers.com/Product/Volume-Cones-Cylinders-Spheres-4-in-1-Skill-Sheet-8th-Grade-16515226"
+    }
+   ]
   }
  },
  "ican": {
