@@ -3494,7 +3494,7 @@ function pageAbout() {
       name: 'Greg',
       jobTitle: 'Middle School Math Teacher',
       image: SITE_URL + '/assets/images/founder_portrait.jpg',
-      description: 'A middle school math teacher with more than 25 years in grades 6–8 classrooms, and the author of the Math Class 678 4-in-1 Skill Sheets.',
+      description: 'A middle school math teacher with more than 25 years in grades 6–8 classrooms, who plans and checks the Math Class 678 resources.',
       worksFor: { '@type': 'Organization', name: 'Math Class 678', url: SITE_URL },
       knowsAbout: ['Middle school mathematics', 'Common Core State Standards', 'Grades 6-8 math instruction', 'Curriculum design']
     }
@@ -3510,8 +3510,8 @@ function pageAbout() {
   <section class="page-hero">
     <div class="wrap page-hero__inner">
       <span class="eyebrow">About</span>
-      <h1>Built in a real classroom, not a content farm</h1>
-      <p>Math Class 678 is a one-teacher studio. Every sheet comes out of twenty-five years of watching middle schoolers work through the same standards, make the same mistakes, and need the same things on the page.</p>
+      <h1>Planned and checked by a classroom teacher</h1>
+      <p>Math Class 678 is run by one teacher. Every resource is planned around twenty-five years of watching middle schoolers work through the same standards, make the same mistakes, and need the same things on the page, and checked by that teacher before it goes up.</p>
     </div>
   </section>
 
@@ -3520,7 +3520,7 @@ function pageAbout() {
       <div class="prose reveal">
         <p>I am Greg, and I have taught middle-school math for more than twenty-five years. In that time I have taught the same standards hundreds of times over — ratios in sixth grade, proportional reasoning in seventh, slope and linear functions in eighth — and watched class after class hit the same walls in the same places. <strong>Math Class 678</strong> is everything I learned in those years, turned into the resource I always wished I could hand a new teacher down the hall.</p>
 
-        <p>The idea started the way most good classroom ideas do: out of frustration. I would find a reference chart I liked from one place, a practice worksheet from another, and a quiz from a third — and spend a prep period stitching three mismatched files into something coherent, only to do it again for the next skill the next week. So I built the thing I actually needed. One standard, one sheet, the whole lesson in one place.</p>
+        <p>The idea started the way most good classroom ideas do: out of frustration. I would find a reference chart I liked from one place, a practice worksheet from another, and a quiz from a third — and spend a prep period stitching three mismatched files into something coherent, only to do it again for the next skill the next week. So I planned the thing I actually needed. One standard, one sheet, the whole lesson in one place.</p>
 
         <blockquote class="about-pull">
           <p>I did not set out to make worksheets. I set out to stop reinventing the same lesson every Sunday night.</p>
@@ -3530,13 +3530,13 @@ function pageAbout() {
         <p>Middle-school math breaks down into discrete, teachable skills, and each Common Core standard deserves its own complete treatment. Bundle ten skills into a forty-page packet and the structure of the math disappears; the student cannot see where one idea ends and the next begins. Split a single skill across a reference sheet, a worksheet, and a separate quiz and you spend the period hunting through three files. The 4-in-1 format keeps the whole arc of a skill — see it, practice it, apply it, prove it — in one printable you can hand out in thirty seconds.</p>
 
         <h2>The mistakes are the part you cannot fake</h2>
-        <p>Anyone can generate practice problems. What twenty-five years actually buys you is knowing exactly how a thirteen-year-old will get a problem wrong. When students distribute, a predictable share of them will multiply the first term and forget the second. When they write inequalities, they will reverse the symbol for "at least." Those specific, recurring errors are baked into every sheet as common-misconception callouts with redirect language ready to use — because the hardest part of teaching a skill is not explaining it right, it is catching it going wrong.</p>
+        <p>Practice problems are the easy part. What twenty-five years actually buys you is knowing exactly how a thirteen-year-old will get a problem wrong. When students distribute, a predictable share of them will multiply the first term and forget the second. When they write inequalities, they will reverse the symbol for "at least." Those specific, recurring errors are built into every sheet as a Watch Out pair on the reference page and an error-analysis problem in Apply — because the hardest part of teaching a skill is not explaining it right, it is catching it going wrong.</p>
 
         <h2>Designed to survive your copier</h2>
-        <p>Every reproduction page is built against a restrained two-color system so each line stays legible after a pass through a tired school Xerox at 7:40 in the morning. The layouts assume the realities of the job: the sub day, the fire drill, the kid who was absent, the copier that only does black and white. These are not decorative documents. They are made to be used hard.</p>
+        <p>Every sheet comes with an ink-saver edition, so each line stays legible after a pass through a tired school Xerox at 7:40 in the morning. The layouts assume the realities of the job: the sub day, the fire drill, the kid who was absent, the copier that only does black and white. These are not decorative documents. They are made to be used hard.</p>
 
         <h2>How the catalog works</h2>
-        <p>This site is a showcase and a directory. It sells nothing on its own — every sheet lives on <a href="${TPT_STORE}" target="_blank" rel="noopener">Teachers Pay Teachers</a>, and every button here routes you straight to the listing. Browse the <a href="/catalog.html">full catalog</a>, jump to your <a href="/grade-7.html">grade</a>, or start with the <a href="/free.html">free resources</a> before spending a dollar.</p>
+        <p>This site is a showcase and a directory. It sells nothing on its own — every resource lives on <a href="${TPT_STORE}" target="_blank" rel="noopener">Teachers Pay Teachers</a>, and every button here routes you straight to the listing. Browse the <a href="/catalog.html">full catalog</a>, jump to your <a href="/grade-7.html">grade</a>, or start with the <a href="/free.html">free resources</a> before spending a dollar.</p>
       </div>
       <aside class="reveal">
         <figure class="about__figure">
@@ -6610,12 +6610,15 @@ console.log('  Site asset images bundled:', siteImgCount);
    ============================================================================ */
 (function claimGate() {
   const BANNED = [/\bsixteen\b/i, /ten-slide/i, /\b10-slide\b/i, /twelve pages/i, /editable teacher (slides|deck)/i,
-    /built by a (25-year )?teacher/i, /written by one teacher/i, /is written by Greg/i, /cloze guided notes/i];
+    /built by a (25-year )?teacher/i, /written by one teacher/i, /is written by Greg/i, /cloze guided notes/i,
+    /\bauthor of the Math Class 678\b/i, /one-teacher studio/i, /not a content farm/i, /two-color system/i];
   const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : e.name.endsWith('.html') ? [path.join(d, e.name)] : []);
   const hits = [];
   for (const f of walk(DIST)) {
     const html = fs.readFileSync(f, 'utf8').replace(/<(script|style)\b[\s\S]*?<\/\1>/g, ' ').replace(/<p>“[\s\S]*?”<\/p>|<blockquote[\s\S]*?<\/blockquote>/g, ' ');
-    const text = html.replace(/<[^>]+>/g, ' ');
+    // JSON-LD is read by search engines, so it is checked too (v1.16.1: the About page's Person said "author of").
+    const ld = (fs.readFileSync(f, 'utf8').match(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g) || []).join(' ');
+    const text = html.replace(/<[^>]+>/g, ' ') + ' ' + ld;
     for (const re of BANNED) if (re.test(text) || re.test(html.match(/<meta name="description" content="([^"]*)"/)?.[1] || '')) hits.push(`${path.relative(DIST, f)}: ${re}`);
   }
   if (hits.length) { console.error('CLAIM GATE FAILED:\n  ' + hits.slice(0, 20).join('\n  ')); process.exit(1); }
