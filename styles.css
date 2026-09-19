@@ -1674,3 +1674,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .mw-poster__rule { font-weight:600; margin:0 0 .5rem; }
 .mw-poster__reveal ol { margin:0; padding-left:1.2rem; color:var(--charcoal-soft); }
 .cr-weeks td a { color:var(--forest); text-decoration:underline; text-underline-offset:2px; }
+
+/* Algebra 1 sheet pages (v1.14.0) */
+.a1-media { background: #faf3dc; }
+.a1-rule { border-left: 5px solid #b8860b; background: #faf3dc; border-radius: var(--radius-sm); padding: 1rem 1.2rem; }
+.a1-rule__rule { font-family: var(--display); font-size: 1.2rem; color: var(--forest); }
+.a1-watch { display: grid; gap: .6rem; }
+.a1-watch p { margin: 0; padding: .8rem 1rem; border-radius: var(--radius-sm); }
+.a1-watch__wrong { background: var(--coral-tint); border-left: 4px solid var(--coral); }
+.a1-watch__right { background: var(--teal-tint); border-left: 4px solid var(--teal); }

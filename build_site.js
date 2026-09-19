@@ -2493,9 +2493,9 @@ function nav(active) {
       ${link('/warm-ups.html', 'Warm-Ups', 'warm-ups')}
       ${link('/readiness.html', 'Readiness', 'readiness')}
       ${link('/i-can.html', 'I Can', 'i-can')}
+      ${link('/algebra-1.html', 'Algebra 1', 'algebra-1')}
       ${link('/word-wall.html', 'Word Wall', 'word-wall')}
       ${link('/free.html', 'Free', 'free')}
-      ${link('/about.html', 'About', 'about')}
       <a class="btn btn--primary btn--sm nav__cta" href="${TPT_STORE}" target="_blank" rel="noopener">TPT Store ${ICON.ext}</a>
     </nav>
   </div>
@@ -2583,6 +2583,7 @@ function footer(opts) {
           <li><a href="/grade-6.html">6th Grade</a></li>
           <li><a href="/grade-7.html">7th Grade</a></li>
           <li><a href="/grade-8.html">8th Grade</a></li>
+          <li><a href="/algebra-1.html">Algebra 1</a></li>
           <li><a href="/word-wall.html">Word Wall</a></li>
           <li><a href="/free.html">Free Resources</a></li>
         </ul>
@@ -3163,7 +3164,7 @@ function pageCatalog() {
       <span class="eyebrow">The catalog</span>
       <h1>Every skill sheet, one place</h1>
       <p>All ${counts.all} 4-in-1 Skill Sheets across grades 6 to 8, sequenced by Common Core standard. Filter by grade or strand, or search by skill. Each card opens a page with the standard, the skill, and a link to Teachers Pay Teachers.</p>
-      <p class="catalog-hero__gradelinks">Or jump to a grade hub: <a href="/grade-6.html">6th grade</a> · <a href="/grade-7.html">7th grade</a> · <a href="/grade-8.html">8th grade</a></p>
+      <p class="catalog-hero__gradelinks">Or jump to a grade hub: <a href="/grade-6.html">6th grade</a> · <a href="/grade-7.html">7th grade</a> · <a href="/grade-8.html">8th grade</a> · <a href="/algebra-1.html">Algebra 1</a></p>
     </div>
   </section>
     <div class="wrap">
@@ -5829,8 +5830,233 @@ function pageMistakeOfTheWeek() {
 }
 
 
+/* ============================================================================
+   ALGEBRA 1   (v1.14.0 · 2026-09-19)
+   99 4-in-1 Skill Sheets in 14 units, 14 unit bundles and the curriculum bundle -- the site linked
+   13 of them. Hub + one page per unit + one page per sheet. Data: classroom_data.json `algebra1`,
+   exported from the mc678-algebra1 repo (catalog, each sheet's config: I Can, key rule, watch-out
+   pair; each sheet's generated listing: hook, the problem it solves, what's included). Math in the
+   config text uses caret exponents, rendered by supHtml().
+   ============================================================================ */
+const A1 = CLASSROOM.algebra1;
+const A1_UNITS = A1.units.map(u => Object.assign(u, { pageUrl: `/algebra-1/unit-${u.n}-${u.slug}.html` }));
+const A1_SHEETS = A1_UNITS.flatMap(u => u.sheets.map(s => Object.assign(s, { unit: u, pageUrl: `/algebra-1/${s.slug}.html` })));
+const A1_FREE = A1_SHEETS.filter(s => s.free);
+const A1_FAQ = [
+  { q: 'What is in each Algebra 1 skill sheet?', a: 'One skill, taught start to finish: a Reference page with definitions, a worked example, a Watch Out error pair and the key rule; a Practice page; an Apply page with a word problem, a reasoning prompt and an error-analysis task; a half-page exit ticket; and a full answer key with every item worked.' },
+  { q: 'Can I try one first?', a: `Yes. ${A1_FREE.map(s => s.skill).join(' and ')} ${A1_FREE.length > 1 ? 'are' : 'is'} free, and it is the full sheet, exactly what every paid sheet looks like.` },
+  { q: 'How are the sheets organized?', a: `By unit: ${A1_UNITS.length} units that follow a typical Algebra 1 sequence, from ${A1_UNITS[0].name} to ${A1_UNITS[A1_UNITS.length - 1].name}. Each unit has its own bundle, and the curriculum bundle holds all ${A1_SHEETS.length} sheets.` },
+  { q: 'Which standards do they cover?', a: 'Each sheet is built to one Common Core high school standard, printed on the sheet and listed on its page here, so you can match sheets to your pacing guide.' },
+];
+function a1Chips(list) { return `<div class="cr-chips">${list.join('')}</div>`; }
+/* Algebra 1 text carries real <sup> tags from the export (and, in one listing, caret digits). Escape
+   everything, then allow <sup> back and let supHtml's caret rule raise any 10^8. */
+function a1Html(s) { return supHtml(String(s || '').replace(/<\/?sup>/g, m => m === '<sup>' ? '\u27e6' : '\u27e7')).replace(/\u27e6/g, '<sup>').replace(/\u27e7/g, '</sup>'); }
+const SUPDIG = { '0': '\u2070', '1': '\u00b9', '2': '\u00b2', '3': '\u00b3', '4': '\u2074', '5': '\u2075', '6': '\u2076', '7': '\u2077', '8': '\u2078', '9': '\u2079', '-': '\u207b', '\u2212': '\u207b' };
+function a1Plain(s) { return String(s || '').replace(/<sup>(.*?)<\/sup>/g, (m, x) => /^[\d\u2212-]+$/.test(x) ? [...x].map(c => SUPDIG[c] || c).join('') : '^' + x); }
+
+/* ---------------------------------------------------------------- /algebra-1.html */
+function pageAlgebra1Hub() {
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Algebra 1' }];
+  const units = A1_UNITS.map(u => wuTile({ url: u.pageUrl, img: u.bundle.img || (u.sheets[0] && u.sheets[0].img), accent: 'gold',
+    name: `Unit ${u.n}: ${u.name}`, kicker: `${u.sheets.length} skill sheets`,
+    desc: u.sheets.slice(0, 4).map(s => s.skill).join(' · ') + (u.sheets.length > 4 ? ' · …' : ''), cta: 'See the unit' })).join('');
+  const inc = (A1_FREE[0] || A1_SHEETS[0]).included;
+  return head({
+    title: 'Algebra 1 Worksheets | 99 Skill Sheets with Notes & Answer Keys',
+    desc: `Algebra 1 worksheets for every skill: ${A1_SHEETS.length} no-prep 4-in-1 Skill Sheets in ${A1_UNITS.length} units, each with guided notes, practice, an exit ticket and a full answer key.`,
+    path: 'algebra-1.html',
+    ogImage: (A1.curriculum.img || (A1_FREE[0] || A1_SHEETS[0]).img) ? SITE_URL + (A1.curriculum.img || (A1_FREE[0] || A1_SHEETS[0]).img) : undefined,
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Algebra 1', url: '/algebra-1.html' }]),
+      faqSchema(A1_FAQ),
+      itemListSchema('Algebra 1 units', A1_UNITS.map(u => ({ url: u.pageUrl, name: `Unit ${u.n}: ${u.name}` })))),
+  }) + nav('algebra-1') + `
+<main id="main">
+  ${breadcrumb(crumbs)}
+  ${crHero('Algebra 1 · 4-in-1 Skill Sheets', 'Algebra 1, one skill at a time',
+    `${A1_SHEETS.length} no-prep skill sheets in ${A1_UNITS.length} units, each one skill taught start to finish: a Reference page with the key rule and the mistake to watch for, practice, application, an exit ticket and a full answer key.`,
+    `${tptBtn(A1.curriculum, 'Curriculum bundle on TPT')}${A1_FREE[0] ? `<a class="btn btn--ghost cr-btn--light" href="${A1_FREE[0].pageUrl}">Try ${esc(A1_FREE[0].skill)} free ${ICON.arrow}</a>` : ''}`)}
+
+  <section class="section">
+    <div class="wrap">
+      ${secHead('The course', `${A1_UNITS.length} units, ${A1_SHEETS.length} skills`, 'Open a unit to see every skill sheet in it, its standard and the unit bundle.')}
+      <div class="cr-grid">${units}</div>
+    </div>
+  </section>
+
+  <section class="section cr-alt">
+    <div class="wrap cr-split">
+      <div>
+        ${secHead('In every sheet', 'One skill, taught start to finish')}
+        <ul class="cr-list">${inc.map(x => `<li>${a1Html(x)}</li>`).join('')}</ul>
+      </div>
+      <figure class="cr-split__img reveal">${(() => { const im = A1.curriculum.img || (A1_FREE[0] || A1_SHEETS[0]).img; return im ? `<img src="${im}" alt="Algebra 1 4-in-1 Skill Sheet: reference, practice, apply and assess pages" width="640" height="640" loading="lazy" decoding="async">` : ''; })()}</figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap cr-cta">
+      <div><span class="eyebrow">The whole course</span><h2>The Algebra 1 Curriculum Bundle</h2><p>All ${A1_SHEETS.length} skill sheets in one purchase, with every answer key and teacher deck.</p></div>
+      ${tptBtn(A1.curriculum, 'View the curriculum bundle')}
+    </div>
+  </section>
+
+  <section class="section cr-alt">
+    <div class="wrap">
+      ${secHead('Also for Algebra 1', 'Warm-ups, a readiness check and learning targets')}
+      <div class="cr-grid">
+        ${(() => { const c = WU.courses.find(x => x.key === 'GA1'); return c ? wuTile({ url: `/warm-ups/${c.slug}.html`, img: c.yr.img, accent: 'gold', name: 'Algebra 1 Warm-Ups', kicker: '180 days · four problems a day', cta: 'See every week' }) : ''; })()}
+        ${(() => { const r = RC.checks.find(x => x.key === 'rca1'); return r ? wuTile({ url: '/readiness.html#rca1', img: r.img, accent: 'gold', name: 'Algebra 1 Readiness Check', kicker: `${r.prior} skills · ${r.questions} questions`, cta: 'See what it covers' }) : ''; })()}
+        ${(() => { const s = ICAN_SETS.find(x => x.slug === 'common-core'); const c = s && s.courses.find(x => x.course === 'Algebra 1'); return c ? wuTile({ url: '/i-can/common-core.html', img: c.img, accent: 'gold', name: 'Algebra 1 I Can Posters', kicker: c.posters ? `${c.posters} posters` : 'Learning targets', cta: 'See the posters' }) : ''; })()}
+      </div>
+    </div>
+  </section>
+
+  ${faqBlock(A1_FAQ, 'Algebra 1 questions')}
+  ${noteBand()}
+</main>
+` + footer() + scripts();
+}
+
+/* ---------------------------------------------------------------- /algebra-1/unit-N-*.html */
+function pageAlgebra1Unit(u, prev, next) {
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Algebra 1', url: '/algebra-1.html' }, { name: `Unit ${u.n}` }];
+  const stds = [...new Set(u.sheets.map(s => s.ccss))];
+  let desc = `Algebra 1 Unit ${u.n}, ${u.name}: ${u.sheets.length} no-prep skill sheets (${u.sheets.slice(0, 3).map(s => s.skill).join(', ')}${u.sheets.length > 3 ? ' and more' : ''}) with notes and answer keys.`;
+  if (desc.length > 170) desc = `Algebra 1 Unit ${u.n}, ${u.name}: ${u.sheets.length} no-prep 4-in-1 skill sheets with guided notes, practice, an exit ticket and a full answer key.`;
+  let title = `Algebra 1 Unit ${u.n}: ${u.name} Worksheets`;
+  if (title.length > 70) title = `Algebra 1 Unit ${u.n}: ${u.name}`;
+  return head({
+    title, desc, path: u.pageUrl.slice(1),
+    ogImage: (u.bundle.img || u.sheets[0].img) ? SITE_URL + (u.bundle.img || u.sheets[0].img) : undefined,
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Algebra 1', url: '/algebra-1.html' }, { name: `Unit ${u.n}: ${u.name}`, url: u.pageUrl }]),
+      itemListSchema(`Algebra 1 Unit ${u.n} skill sheets`, u.sheets.map(s => ({ url: s.pageUrl, name: s.skill })))),
+  }) + nav('algebra-1') + `
+<main id="main">
+  ${breadcrumb(crumbs)}
+  ${crHero(`Algebra 1 · Unit ${u.n}`, u.name,
+    `${u.sheets.length} skill sheets, one skill each: ${u.sheets.map(s => s.skill).join(', ')}.`,
+    `${tptBtn(u.bundle, 'Unit bundle on TPT')}`)}
+
+  <section class="section">
+    <div class="wrap">
+      ${secHead('The skills', `${u.sheets.length} sheets in this unit`, `Built to ${stds.join(', ')}.`)}
+      <div class="cr-grid">${u.sheets.map(s => wuTile({ url: s.pageUrl, img: s.img, accent: 'gold', name: s.skill, kicker: `${s.code} · ${s.ccss}${s.free ? ' · free' : ''}`, desc: s.ican ? `I can ${a1Plain(s.ican)}` : '', cta: 'See the sheet' })).join('')}</div>
+    </div>
+  </section>
+
+  <section class="section cr-alt">
+    <div class="wrap cr-split">
+      <div>
+        ${secHead('Save with the bundle', `Unit ${u.n} in one purchase`, `All ${u.sheets.length} ${u.name} skill sheets, with every answer key.`)}
+        ${tptBtn(u.bundle, 'View the unit bundle')}
+        <p style="margin-top:1rem"><a class="cr-link" href="${esc(A1.curriculum.url)}" target="_blank" rel="noopener">Or the whole course: the curriculum bundle ${ICON.ext}</a></p>
+      </div>
+      <figure class="cr-split__img reveal">${(() => { const im = u.bundle.img || u.sheets[0].img; return im ? `<img src="${im}" alt="Algebra 1 ${esc(u.name)}: ${esc(u.sheets[0].skill)} skill sheet" width="640" height="640" loading="lazy" decoding="async">` : ''; })()}</figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      ${secHead('Other units', 'The rest of the course')}
+      ${a1Chips(A1_UNITS.filter(x => x !== u).map(x => `<a class="cr-chip cr-chip--gold" href="${x.pageUrl}">Unit ${x.n}: ${esc(x.name)}</a>`).concat([`<a class="cr-chip" href="/algebra-1.html">All of Algebra 1</a>`]))}
+    </div>
+  </section>
+
+  <nav class="section sheetnav" aria-label="Browse adjacent units" style="padding-top:0">
+    <div class="wrap sheetnav__row">
+      ${prev ? `<a class="sheetnav__link sheetnav__prev" href="${prev.pageUrl}"><span class="sheetnav__dir">Previous unit</span><span class="sheetnav__name">${esc(prev.name)}</span></a>` : '<span class="sheetnav__link is-empty"></span>'}
+      ${next ? `<a class="sheetnav__link sheetnav__next" href="${next.pageUrl}"><span class="sheetnav__dir">Next unit</span><span class="sheetnav__name">${esc(next.name)}</span></a>` : '<span class="sheetnav__link is-empty"></span>'}
+    </div>
+  </nav>
+  ${noteBand()}
+</main>
+` + footer() + scripts();
+}
+
+/* ---------------------------------------------------------------- /algebra-1/<sheet>.html */
+function pageAlgebra1Sheet(s, prev, next) {
+  const u = s.unit;
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Algebra 1', url: '/algebra-1.html' }, { name: `Unit ${u.n}`, url: u.pageUrl }, { name: s.skill }];
+  let title = `${s.skill} | Algebra 1 Worksheet & Guided Notes (${s.ccss})`;
+  if (title.length > 70) title = `${s.skill} | Algebra 1 Worksheet (${s.ccss})`;
+  if (title.length > 70) title = `${s.skill} | Algebra 1 Worksheet`;
+  if (title.length > 70) title = `${s.skill} | Algebra 1`;
+  let desc = `${s.skill} for Algebra 1: a no-prep 4-in-1 skill sheet with guided notes, practice, an exit ticket and a full answer key. I can ${a1Plain(s.ican)}`;
+  if (desc.length > 170) desc = `${s.skill} for Algebra 1: a no-prep 4-in-1 skill sheet with guided notes, practice, an exit ticket and a full answer key, built to ${s.ccss}.`;
+  if (desc.length > 170) desc = desc.slice(0, 166).replace(/\s+\S*$/, '') + '…';
+  const cta = tptBtn(s, s.free ? 'Get it free on TPT' : 'View on TPT');
+  return head({
+    title, desc, path: s.pageUrl.slice(1), ogType: 'article',
+    ogImage: s.img ? SITE_URL + s.img : undefined,
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Algebra 1', url: '/algebra-1.html' }, { name: `Unit ${u.n}: ${u.name}`, url: u.pageUrl }, { name: s.skill, url: s.pageUrl }]),
+      { '@context': 'https://schema.org', '@type': 'LearningResource', name: `${s.skill} — Algebra 1 4-in-1 Skill Sheet`, url: SITE_URL + s.pageUrl,
+        educationalLevel: 'Algebra 1', learningResourceType: 'Worksheet', inLanguage: 'en', teaches: s.ican ? `I can ${a1Plain(s.ican)}` : s.skill,
+        educationalAlignment: { '@type': 'AlignmentObject', alignmentType: 'teaches', educationalFramework: 'Common Core State Standards', targetName: s.ccss },
+        image: s.img ? SITE_URL + s.img : undefined, provider: { '@type': 'Organization', name: 'Math Class 678', url: SITE_URL },
+        offers: { '@type': 'Offer', url: s.url, availability: 'https://schema.org/InStock' } }),
+  }) + nav('algebra-1') + `
+<main id="main" class="sheet">
+  ${breadcrumb(crumbs)}
+  <section class="section sheet-hero">
+    <div class="wrap sheet-hero__grid">
+      <div class="sheet-hero__media a1-media">
+        ${s.img ? `<img src="${s.img}" alt="${esc(s.skill)}, Algebra 1 4-in-1 Skill Sheet (${esc(s.ccss)})" width="640" height="640" loading="eager" fetchpriority="high" decoding="async">` : ''}
+      </div>
+      <div class="sheet-hero__copy">
+        <div class="sheet-hero__tags">
+          <span class="sheet-chip sheet-chip--ccss">${esc(s.ccss)}</span>
+          <span class="sheet-chip">Algebra 1</span>
+          <span class="sheet-chip">Unit ${u.n}: ${esc(u.name)}</span>
+          ${s.free ? '<span class="sheet-chip">Free</span>' : ''}
+        </div>
+        <h1>${esc(s.skill)}</h1>
+        ${s.ican ? `<p class="sheet-hero__ican">I can ${a1Html(s.ican)}</p>` : ''}
+        <div class="sheet-hero__cta">${cta}<a class="btn btn--ghost" href="${u.pageUrl}">Back to Unit ${u.n} ${ICON.arrow}</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section sheet-detail" style="padding-top:0">
+    <div class="wrap sheet-detail__grid">
+      <div class="sheet-detail__main">
+        ${s.problem ? `<div class="sheet-block"><h2>The problem this sheet solves</h2><p>${a1Html(s.problem)}</p></div>` : ''}
+        ${s.key_rule ? `<div class="sheet-block a1-rule"><h2>The key rule</h2><p class="a1-rule__rule">${a1Html(s.key_rule)}</p>${s.key_rule_hint ? `<p>${a1Html(s.key_rule_hint)}</p>` : ''}</div>` : ''}
+        ${s.watch_wrong ? `<div class="sheet-block"><h2>Watch out</h2><div class="a1-watch"><p class="a1-watch__wrong"><b>The mistake:</b> ${a1Html(s.watch_wrong)}</p><p class="a1-watch__right"><b>The fix:</b> ${a1Html(s.watch_right)}</p></div></div>` : ''}
+        <div class="sheet-block"><h2>What is included</h2><ul class="cr-list">${s.included.map(x => `<li>${a1Html(x)}</li>`).join('')}</ul></div>
+      </div>
+      <aside class="sheet-detail__side">
+        <div class="sheet-facts">
+          <h2 class="sheet-facts__title">Standard</h2>
+          <div class="sheet-facts__ccss">${esc(s.ccss)}</div>
+          <dl class="sheet-facts__dl">
+            <div><dt>Course</dt><dd>Algebra 1</dd></div>
+            <div><dt>Unit</dt><dd><a href="${u.pageUrl}">Unit ${u.n}: ${esc(u.name)}</a></dd></div>
+            <div><dt>Sheet</dt><dd>${esc(s.code)}</dd></div>
+            <div><dt>Format</dt><dd>4-in-1 Skill Sheet</dd></div>
+          </dl>
+          ${cta}
+          <p style="margin-top:1rem"><a class="cr-link" href="${esc(u.bundle.url)}" target="_blank" rel="noopener">In the Unit ${u.n} bundle ${ICON.ext}</a></p>
+          <p><a class="cr-link" href="${esc(A1.curriculum.url)}" target="_blank" rel="noopener">In the curriculum bundle ${ICON.ext}</a></p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <nav class="section sheetnav" aria-label="Browse adjacent sheets" style="padding-top:0">
+    <div class="wrap sheetnav__row">
+      ${prev ? `<a class="sheetnav__link sheetnav__prev" href="${prev.pageUrl}"><span class="sheetnav__dir">Previous</span><span class="sheetnav__name">${esc(prev.skill)}</span></a>` : '<span class="sheetnav__link is-empty"></span>'}
+      ${next ? `<a class="sheetnav__link sheetnav__next" href="${next.pageUrl}"><span class="sheetnav__dir">Next</span><span class="sheetnav__name">${esc(next.skill)}</span></a>` : '<span class="sheetnav__link is-empty"></span>'}
+    </div>
+  </nav>
+  ${noteBand()}
+</main>
+` + footer() + scripts();
+}
+
+
 function sitemap() {
-  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'sub-plans.html', 'mistake-of-the-week.html', 'i-can.html', 'i-can/personal-finance.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
+  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'sub-plans.html', 'mistake-of-the-week.html', 'algebra-1.html', 'i-can.html', 'i-can/personal-finance.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
   const today = new Date().toISOString().slice(0, 10);
   const main = pages.map(p => `  <url><loc>${SITE_URL}/${p}</loc><lastmod>${today}</lastmod></url>`);
   const sheets = products
@@ -5843,7 +6069,8 @@ function sitemap() {
   const glossaryUrls = glossary.map(t => `  <url><loc>${SITE_URL}${t.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
   const freebieUrls = FREEBIES.map(f => `  <url><loc>${SITE_URL}${f.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
   const warmupUrls = WU.courses.map(c => `  <url><loc>${SITE_URL}/warm-ups/${c.slug}.html</loc><lastmod>${today}</lastmod></url>`)
-    .concat(ICAN_SETS.map(st => `  <url><loc>${SITE_URL}/i-can/${st.slug}.html</loc><lastmod>${today}</lastmod></url>`));
+    .concat(ICAN_SETS.map(st => `  <url><loc>${SITE_URL}/i-can/${st.slug}.html</loc><lastmod>${today}</lastmod></url>`))
+    .concat(A1_UNITS.concat(A1_SHEETS).map(x => `  <url><loc>${SITE_URL}${x.pageUrl}</loc><lastmod>${today}</lastmod></url>`));
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${main.concat(warmupUrls, bundleUrls, sheets, standardUrls, glossaryUrls, freebieUrls).join('\n')}
@@ -5932,6 +6159,9 @@ WU.courses.forEach(c => write(`warm-ups/${c.slug}.html`, pageWarmupsCourse(c)));
 write('readiness.html', pageReadiness());
 write('sub-plans.html', pageSubPlans());
 write('mistake-of-the-week.html', pageMistakeOfTheWeek());
+write('algebra-1.html', pageAlgebra1Hub());
+A1_UNITS.forEach((u, i) => write(u.pageUrl.slice(1), pageAlgebra1Unit(u, A1_UNITS[i - 1], A1_UNITS[i + 1])));
+A1_SHEETS.forEach((sh, i) => write(sh.pageUrl.slice(1), pageAlgebra1Sheet(sh, A1_SHEETS[i - 1], A1_SHEETS[i + 1])));
 write('i-can.html', pageICanHub());
 ICAN_SETS.forEach(st => write(`i-can/${st.slug}.html`, pageICanSet(st)));
 write('i-can/personal-finance.html', pageICanPF());
@@ -5997,7 +6227,7 @@ if (fs.existsSync(SRC_SITE_IMGS)) {
 }
 
 // Warm-ups, readiness and Mistake of the Week card images (written by the state-testing exporter)
-['warmups', 'readiness', 'motw', 'ican', 'subplans'].forEach(dir => {
+['warmups', 'readiness', 'motw', 'ican', 'subplans', 'algebra1'].forEach(dir => {
   const src = path.join(ROOT, 'assets', 'images', dir);
   if (!fs.existsSync(src)) return;
   fs.readdirSync(src).filter(f => /\.(jpe?g|png)$/i.test(f)).forEach(f => copy(path.join('assets/images', dir, f), path.join('assets/images', dir, f)));
