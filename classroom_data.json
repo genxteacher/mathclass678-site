@@ -6225,5 +6225,557 @@
    "key": "UALL",
    "img": null
   }
+ },
+ "money": {
+  "labs": [
+   {
+    "id": "16977786",
+    "title": "Reading a Paycheck: Gross vs Net Pay | Real-World Money Lab + Calculator",
+    "url": "https://www.teacherspayteachers.com/Product/Reading-a-Paycheck-Gross-vs-Net-Pay-Real-World-Money-Lab-Calculator-16977786",
+    "key": "money",
+    "name": "First Paycheck",
+    "topic": "Reading a Paycheck: Gross vs Net Pay",
+    "slug": "reading-a-paycheck",
+    "hook": "Your students think their first paycheck will be $300. It won't be. This lab walks them through what actually happens to a paycheck — and turns \"reading a pay stub\" into a real math skill they'll use for the rest of their lives.",
+    "summary": "Students get hired at a restaurant, decode a realistic pay stub, compute every deduction by hand, use a live paycheck calculator to explore \"what-if\" questions, then make a real decision: choose between two job offers by comparing take-home pay — where the higher hourly wage actually pays less. No prep; answer key and rubric included.",
+    "pages": 7,
+    "steps": [
+     {
+      "step": "You're Hired",
+      "what": "step into a real first-job scenario with a clear \"I can\" target"
+     },
+     {
+      "step": "Decode Your Pay Stub",
+      "what": "read an authentic, itemized pay stub (gross, deductions, net)"
+     },
+     {
+      "step": "Build the Paycheck by Hand",
+      "what": "compute all four deductions and net pay themselves, no calculator"
+     },
+     {
+      "step": "Your Paycheck Calculator",
+      "what": "four \"what-if\" tasks in a self-calculating spreadsheet"
+     },
+     {
+      "step": "Two Offers, Make the Call",
+      "what": "compare take-home pay and justify a choice with the numbers"
+     },
+     {
+      "step": "Show What You Know",
+      "what": "a scored mastery check on a fresh paycheck"
+     },
+     {
+      "step": "Reality Check",
+      "what": "reflection + a real-world connection"
+     }
+    ],
+    "realmath": "The percent work (7.RP.A.3) is done BY the student — twice, by hand, and it's assessed. Social Security (6.2%) and Medicare (1.45%) are exact; federal and state income tax are clearly labeled as estimates with a teacher note, so nothing is taught as fact that isn't. Every number is verified and consistent to the cent.",
+    "printdigital": "Print-and-go, or assign the editable Word packet in Google Docs and the calculator in Google Sheets. No devices today? A Printed Calculator Readouts page lets a fully print-only class run the whole lab.",
+    "included": [
+     "7-page student lab (PDF + editable Word)",
+     "Self-calculating paycheck spreadsheet (Excel / Google Sheets)",
+     "2-page teacher guide with full answer key + 10-point rubric",
+     "Printed Calculator Readouts (print fallback) + Terms of Use"
+    ],
+    "standards": "CCSS 7.RP.A.3 — use proportional relationships to solve multistep percent problems. Aligned to CEE / Jump$tart National Standards for Personal Financial Education: Earning Income.",
+    "free": true,
+    "img": "/assets/images/money/16977786.jpg"
+   },
+   {
+    "id": "16977801",
+    "title": "Budgeting: Income vs. Expenses | Real-World Money Lab + Calculator",
+    "url": "https://www.teacherspayteachers.com/Product/Budgeting-Income-vs-Expenses-Real-World-Money-Lab-Calculator-16977801",
+    "key": "money",
+    "name": "Make It to Payday",
+    "topic": "Budgeting: Income vs. Expenses",
+    "slug": "budgeting",
+    "hook": "Your students think a $1,600 paycheck means $1,600 to spend. It doesn't, once rent, groceries, and a handful of small recurring habits are accounted for. This lab turns budgeting — adding a column of expenses and subtracting from income, including when the answer goes negative — into a real signed-number skill.",
+    "summary": "Students build a monthly budget, decode a realistic budget/statement, compute the leftover (or deficit) by hand, explore a live budget calculator, then make a real decision: cancel one $150 concert, or trim three small recurring habits that add up to the exact same $150 — and keep the concert. No prep; answer key and rubric included.",
+    "pages": 10,
+    "steps": [
+     {
+      "step": "Building the Budget",
+      "what": "step into a real monthly-budget scenario with a clear “I can” target"
+     },
+     {
+      "step": "Decode the Monthly Budget",
+      "what": "read an authentic budget showing income and categorized expenses"
+     },
+     {
+      "step": "Build the Budget by Hand",
+      "what": "add expenses and subtract from income, including a sign watch-out for a deficit"
+     },
+     {
+      "step": "Your Budget Calculator",
+      "what": "four “what-if” tasks in a self-calculating spreadsheet, including a work-backward cut"
+     },
+     {
+      "step": "Cut the Concert or the Habits, Make the Call",
+      "what": "find two paths to the same $150 in savings and justify a choice"
+     },
+     {
+      "step": "Show What You Know",
+      "what": "a scored mastery check that can land as a deficit, on fresh numbers"
+     },
+     {
+      "step": "Reality Check",
+      "what": "reflection + the 50/30/20 guideline as a real-world connection"
+     }
+    ],
+    "realmath": "The signed-number work (7.NS.A.3) is done BY the student — twice, by hand, and it's assessed, including a mastery check deliberately built to land on a NEGATIVE leftover so students must handle the sign, not just the arithmetic. Every dollar figure is realistic, datestamped, and verified to the cent.",
+    "printdigital": "Print-and-go, or assign the editable Word packet in Google Docs and the calculator in Google Sheets. No devices today? A Printed Calculator Readouts page lets a fully print-only class run the whole lab.",
+    "included": [
+     "10-page student lab (PDF + editable Word)",
+     "Self-calculating spreadsheet (Excel / Google Sheets)",
+     "3-page teacher guide with full answer key + 10-point rubric",
+     "Printed Calculator Readouts (print fallback) + Terms of Use"
+    ],
+    "standards": "CCSS 7.NS.A.3 — solve real-world problems involving the four operations with rational numbers. Aligned to CEE / Jump$tart National Standards for Personal Financial Education: Spending / Saving.",
+    "free": false,
+    "img": "/assets/images/money/16977801.jpg"
+   },
+   {
+    "id": "16977849",
+    "title": "Checking Accounts & Overdrafts: Don’t Bounce It | Money Lab + Calculator",
+    "url": "https://www.teacherspayteachers.com/Product/Checking-Accounts-Overdrafts-Dont-Bounce-It-Money-Lab-Calculator-16977849",
+    "key": "money",
+    "name": "Don’t Bounce It",
+    "topic": "Checking Accounts & Overdrafts",
+    "slug": "checking-accounts-overdrafts",
+    "hook": "Your students think overdraft “protection” sounds like the safe choice. It usually isn't. This lab turns a check register into the real signed-number skill of keeping a running balance — and shows exactly what an overdraft costs.",
+    "summary": "Students manage a checking account through seven real transactions, decode an authentic check register, keep the running balance by hand (crossing below zero at one point), explore a live balance calculator, then decide between overdraft coverage ON ($105 in stacked fees) or OFF (a declined purchase, $0 in fees). No prep; answer key and rubric included.",
+    "pages": 10,
+    "steps": [
+     {
+      "step": "Your First Checking Account",
+      "what": "step into a real checking-account scenario with a clear “I can” target"
+     },
+     {
+      "step": "Decode Your Check Register",
+      "what": "read an authentic register of deposits and withdrawals"
+     },
+     {
+      "step": "Keep the Running Balance by Hand",
+      "what": "add deposits and subtract withdrawals line by line, no calculator"
+     },
+     {
+      "step": "Your Running-Balance Calculator",
+      "what": "four “what-if” tasks, including one that stacks three overdraft fees"
+     },
+     {
+      "step": "Overdraft Coverage, Make the Call",
+      "what": "compare $105 in fees vs. $0 and decide which option really protects you"
+     },
+     {
+      "step": "Show What You Know",
+      "what": "a scored mastery check that crosses zero, on a fresh register"
+     },
+     {
+      "step": "Reality Check",
+      "what": "reflection + the real Reg E overdraft-opt-in rule as a civic connection"
+     }
+    ],
+    "realmath": "The signed-number work (7.NS.A.3) is done BY the student — twice, by hand, and it's assessed, with the running balance genuinely allowed to cross below $0. Every balance is exact and verified to the cent; the $35 overdraft fee is clearly labeled as a realistic example that varies by bank (many now charge $0).",
+    "printdigital": "Print-and-go, or assign the editable Word packet in Google Docs and the calculator in Google Sheets. No devices today? A Printed Calculator Readouts page lets a fully print-only class run the whole lab.",
+    "included": [
+     "10-page student lab (PDF + editable Word)",
+     "Self-calculating spreadsheet (Excel / Google Sheets)",
+     "2-page teacher guide with full answer key + 10-point rubric",
+     "Printed Calculator Readouts (print fallback) + Terms of Use"
+    ],
+    "standards": "CCSS 7.NS.A.3 — solve real-world problems involving the four operations with rational numbers. Aligned to CEE / Jump$tart National Standards for Personal Financial Education: Spending.",
+    "free": false,
+    "img": "/assets/images/money/16977849.jpg"
+   },
+   {
+    "id": "16977845",
+    "title": "Compound Interest — the Snowball Effect | Real-World Money Lab + Calculator",
+    "url": "https://www.teacherspayteachers.com/Product/Compound-Interest-the-Snowball-Effect-Real-World-Money-Lab-Calculator-16977845",
+    "key": "money",
+    "name": "Snowball",
+    "topic": "Compound Interest — the Snowball Effect",
+    "slug": "compound-interest-the-snowball-effect",
+    "hook": "Your students think interest earns the same amount every year. It doesn't — and that difference is the most important idea in personal saving. This lab turns compound growth into a hands-on “snowball” students build year by year, in their own numbers.",
+    "summary": "Students track a $1,000 deposit at 10% APY, decode a real savings statement, build the year-by-year compounding by hand (carrying each new balance down), explore a live calculator, then compare a Simple Saver and a Compound Saver account at the SAME rate — and discover compound interest still wins. No prep; answer key and rubric included.",
+    "pages": 10,
+    "steps": [
+     {
+      "step": "The $1,000 Snowball",
+      "what": "step into a real saving scenario with a clear “I can” target"
+     },
+     {
+      "step": "Decode Your Savings Statement",
+      "what": "read an authentic annual statement showing balance growth"
+     },
+     {
+      "step": "Build the Snowball by Hand",
+      "what": "compute each year's interest on the GROWING balance, not the original, no calculator"
+     },
+     {
+      "step": "Your Compound Interest Calculator",
+      "what": "four “what-if” tasks, including a goal-seek and a counter-intuitive rate comparison"
+     },
+     {
+      "step": "Two Savings Accounts, Make the Call",
+      "what": "prove that at an identical rate, compound interest still beats simple — and the gap grows"
+     },
+     {
+      "step": "Show What You Know",
+      "what": "a scored mastery check on a fresh account"
+     },
+     {
+      "step": "Reality Check",
+      "what": "reflection + a real-world connection"
+     }
+    ],
+    "realmath": "The compounding work (7.RP.A.3, with an HS-extension note toward exponential functions) is done BY the student — twice, by hand, verified year-by-year against the closed-form formula. Every dollar figure is exact and cross-checked; the honest-number model flags 10% as a generous example (real savings rates run lower, real investing returns are typically higher over time).",
+    "printdigital": "Print-and-go, or assign the editable Word packet in Google Docs and the calculator in Google Sheets. No devices today? A Printed Calculator Readouts page lets a fully print-only class run the whole lab.",
+    "included": [
+     "10-page student lab (PDF + editable Word)",
+     "Self-calculating spreadsheet (Excel / Google Sheets)",
+     "3-page teacher guide with full answer key + 10-point rubric",
+     "Printed Calculator Readouts (print fallback) + Terms of Use"
+    ],
+    "standards": "CCSS 7.RP.A.3 — use proportional relationships to solve multistep percent problems (HS extension noted for exponential growth). Aligned to CEE / Jump$tart National Standards for Personal Financial Education: Saving.",
+    "free": false,
+    "img": "/assets/images/money/16977845.jpg"
+   },
+   {
+    "id": "16977791",
+    "title": "Credit Cards & the Minimum-Payment Trap: The Real Price | Money Lab + Calculator",
+    "url": "https://www.teacherspayteachers.com/Product/Credit-Cards-the-Minimum-Payment-Trap-The-Real-Price-Money-Lab-Calculator-16977791",
+    "key": "money",
+    "name": "The Real Price",
+    "topic": "Credit Cards & the Minimum-Payment Trap",
+    "slug": "credit-cards-the-minimum-payment-trap",
+    "hook": "Your students think paying “the minimum” on a credit card is basically paying it off. It isn't — it can take years and cost hundreds of extra dollars. This lab turns APR into a real monthly interest calculation students can use to see the true cost of debt.",
+    "summary": "Students face a $900 credit-card balance at 24% APR, decode a real statement (including the CARD Act's required Minimum Payment Warning), compute monthly interest by hand, explore a live payoff calculator, then compare paying only the minimum against paying $100/month — a difference of about $576 and 52 months. No prep; answer key and rubric included.",
+    "pages": 10,
+    "steps": [
+     {
+      "step": "The $900 Statement",
+      "what": "step into a real credit-card scenario with a clear “I can” target"
+     },
+     {
+      "step": "Decode Your Credit Card Statement",
+      "what": "read an authentic statement with APR, balance, and minimum payment"
+     },
+     {
+      "step": "Build the Interest by Hand",
+      "what": "convert APR to a monthly rate and compute interest, no calculator"
+     },
+     {
+      "step": "Your Credit Card Payoff Calculator",
+      "what": "explore how balance, payment, and payoff time interact"
+     },
+     {
+      "step": "Two Payoff Plans, Make the Call",
+      "what": "compare the minimum payment against a real monthly payment and justify the smarter plan"
+     },
+     {
+      "step": "Show What You Know",
+      "what": "a scored mastery check on a fresh balance"
+     },
+     {
+      "step": "Reality Check",
+      "what": "reflection + a real-world connection"
+     }
+    ],
+    "realmath": "The percent/rate work (7.RP.A.3) is done BY the student — twice, by hand, and it's assessed. The APR-to-monthly-rate conversion and every interest figure are exact and verified to the cent; the minimum-payment payoff timeline is modeled with a real amortization engine, independently checked month by month.",
+    "printdigital": "Print-and-go, or assign the editable Word packet in Google Docs and the calculator in Google Sheets. No devices today? A Printed Calculator Readouts page lets a fully print-only class run the whole lab.",
+    "included": [
+     "10-page student lab (PDF + editable Word)",
+     "Self-calculating spreadsheet (Excel / Google Sheets)",
+     "2-page teacher guide with full answer key + 10-point rubric",
+     "Printed Calculator Readouts (print fallback) + Terms of Use"
+    ],
+    "standards": "CCSS 7.RP.A.3 — use proportional relationships to solve multistep percent problems. Aligned to CEE / Jump$tart National Standards for Personal Financial Education: Managing Credit.",
+    "free": false,
+    "img": "/assets/images/money/16977791.jpg"
+   },
+   {
+    "id": "16977807",
+    "title": "Markup, Markdown & Percent Change: Sale Sleuth | Money Lab + Calculator",
+    "url": "https://www.teacherspayteachers.com/Product/Markup-Markdown-Percent-Change-Sale-Sleuth-Money-Lab-Calculator-16977807",
+    "key": "money",
+    "name": "Sale Sleuth",
+    "topic": "Markup, Markdown & Percent Change",
+    "slug": "markup-markdown-percent-change",
+    "hook": "Your students think “25% off + an extra 20% off” beats “45% off.” It doesn't. This lab turns markup, markdown, and stacked discounts — the exact math behind every sale sign — into a skill students can use to outsmart the store.",
+    "summary": "Students follow a hoodie from a $25 store cost to a $40 tag to a $30 sale price, decode a real price tag, compute markup and markdown by hand, explore a live calculator, then settle a decision between two competing “sales” that sound different but aren't what they seem. No prep; answer key and rubric included.",
+    "pages": 10,
+    "steps": [
+     {
+      "step": "Behind the Price Tag",
+      "what": "step into a real shopping scenario with a clear “I can” target"
+     },
+     {
+      "step": "Decode the Price Tag",
+      "what": "read an authentic price tag showing cost, markup, and a storewide sale"
+     },
+     {
+      "step": "Build Markup & Markdown by Hand",
+      "what": "find the tag price and the sale price, no calculator"
+     },
+     {
+      "step": "Your Markup & Markdown Calculator",
+      "what": "four “what-if” tasks in a self-calculating spreadsheet"
+     },
+     {
+      "step": "Two “Sales,” Make the Call",
+      "what": "compare a straight 45% off vs. a stacked 25%+20% off and prove which really saves more"
+     },
+     {
+      "step": "Show What You Know",
+      "what": "a scored mastery check on a fresh item"
+     },
+     {
+      "step": "Reality Check",
+      "what": "reflection + a real-world connection"
+     }
+    ],
+    "realmath": "The percent work (7.RP.A.3) is done BY the student — twice, by hand, and it's assessed. Every markup, markdown, and “true percent off” is exact and verified to the cent, with the stacked-discount misconception (percents don't add) called out explicitly for both students and teachers.",
+    "printdigital": "Print-and-go, or assign the editable Word packet in Google Docs and the calculator in Google Sheets. No devices today? A Printed Calculator Readouts page lets a fully print-only class run the whole lab.",
+    "included": [
+     "10-page student lab (PDF + editable Word)",
+     "Self-calculating spreadsheet (Excel / Google Sheets)",
+     "2-page teacher guide with full answer key + 10-point rubric",
+     "Printed Calculator Readouts (print fallback) + Terms of Use"
+    ],
+    "standards": "CCSS 7.RP.A.3 — use proportional relationships to solve multistep percent problems. Aligned to CEE / Jump$tart National Standards for Personal Financial Education: Spending.",
+    "free": false,
+    "img": "/assets/images/money/16977807.jpg"
+   },
+   {
+    "id": "16977790",
+    "title": "Sales Tax, Tip & Discount: Checkout Challenge | Money Lab + Calculator",
+    "url": "https://www.teacherspayteachers.com/Product/Sales-Tax-Tip-Discount-Checkout-Challenge-Money-Lab-Calculator-16977790",
+    "key": "money",
+    "name": "Checkout Challenge",
+    "topic": "Sales Tax, Tip & Discount",
+    "slug": "sales-tax-tip-discount",
+    "hook": "Your students think a $40 bill means paying $40. It doesn't. This lab turns “how much do I actually owe” into a real percent-applications skill they'll use at every checkout for the rest of their lives.",
+    "summary": "Students split a restaurant bill, decode an itemized receipt, compute sales tax and tip by hand, use a live calculator to explore “what-if” totals, then make a real decision: which of two coupons — a flat $8 off or 15% off — actually saves more. No prep; answer key and rubric included.",
+    "pages": 10,
+    "steps": [
+     {
+      "step": "You're Treating",
+      "what": "step into a real group-lunch scenario with a clear “I can” target"
+     },
+     {
+      "step": "Decode the Receipt",
+      "what": "read an authentic, itemized restaurant receipt (subtotal, tax, tip, total)"
+     },
+     {
+      "step": "Build the Total by Hand",
+      "what": "compute sales tax and tip and find the real total, no calculator"
+     },
+     {
+      "step": "Your Checkout Calculator",
+      "what": "four “what-if” tasks in a self-calculating spreadsheet"
+     },
+     {
+      "step": "Two Coupons, Make the Call",
+      "what": "compare a flat $8 off vs. 15% off and justify the better deal with the numbers"
+     },
+     {
+      "step": "Show What You Know",
+      "what": "a scored mastery check on a fresh bill"
+     },
+     {
+      "step": "Reality Check",
+      "what": "reflection + a real-world connection"
+     }
+    ],
+    "realmath": "The percent work (7.RP.A.3) is done BY the student — twice, by hand, and it's assessed. Sales tax (7%, Indiana's rate) and an 18% tip are clearly labeled as realistic examples, not universal facts — students learn tax varies by state and tip is a personal choice. Every number is verified and consistent to the cent.",
+    "printdigital": "Print-and-go, or assign the editable Word packet in Google Docs and the calculator in Google Sheets. No devices today? A Printed Calculator Readouts page lets a fully print-only class run the whole lab.",
+    "included": [
+     "10-page student lab (PDF + editable Word)",
+     "Self-calculating spreadsheet (Excel / Google Sheets)",
+     "2-page teacher guide with full answer key + 10-point rubric",
+     "Printed Calculator Readouts (print fallback) + Terms of Use"
+    ],
+    "standards": "CCSS 7.RP.A.3 — use proportional relationships to solve multistep percent problems. Aligned to CEE / Jump$tart National Standards for Personal Financial Education: Spending.",
+    "free": false,
+    "img": "/assets/images/money/16977790.jpg"
+   },
+   {
+    "id": "16977796",
+    "title": "Saving Goals — Amount, Rate & Time: Goal Getter | Money Lab + Calculator",
+    "url": "https://www.teacherspayteachers.com/Product/Saving-Goals-Amount-Rate-Time-Goal-Getter-Money-Lab-Calculator-16977796",
+    "key": "money",
+    "name": "Goal Getter",
+    "topic": "Saving Goals — Amount, Rate & Time",
+    "slug": "saving-goals-amount-rate-time",
+    "hook": "Your students think “I'll start saving next month” costs nothing. It does — waiting quietly raises the monthly amount needed to hit a fixed deadline. This lab turns Amount = Rate × Time into a real savings-planning skill.",
+    "summary": "Students plan a $1,200 goal on a 12-month deadline, decode a real savings-goal tracker, find the required monthly amount by hand (learning to round UP so they don't fall short), explore a live goal planner, then compare starting now ($100/month) against waiting 4 months ($150/month) — proving time is the cheapest ingredient in any savings plan. No prep; answer key and rubric included.",
+    "pages": 10,
+    "steps": [
+     {
+      "step": "Set the Goal",
+      "what": "step into a real savings-goal scenario with a clear “I can” target"
+     },
+     {
+      "step": "Decode the Goal Tracker",
+      "what": "read an authentic tracker showing progress toward a goal"
+     },
+     {
+      "step": "Find the Monthly Amount by Hand",
+      "what": "divide the goal by the months available, including a round-UP rule, no calculator"
+     },
+     {
+      "step": "Your Goal Planner",
+      "what": "explore catch-up amounts, goal changes, and a mid-plan setback"
+     },
+     {
+      "step": "When to Start, Make the Call",
+      "what": "prove that waiting to start raises the required monthly amount"
+     },
+     {
+      "step": "Show What You Know",
+      "what": "a scored mastery check on a fresh goal"
+     },
+     {
+      "step": "Reality Check",
+      "what": "reflection + a real-world connection"
+     }
+    ],
+    "realmath": "The proportional-planning work (7.RP.A.3) is done BY the student — twice, by hand, and it's assessed, including the honest “round UP to the cent” rule (rounding down can leave a goal just short at the deadline). A single ~4% APY interest estimate is labeled and cross-referenced to the companion Compound Interest lab, never computed by hand here.",
+    "printdigital": "Print-and-go, or assign the editable Word packet in Google Docs and the calculator in Google Sheets. No devices today? A Printed Calculator Readouts page lets a fully print-only class run the whole lab.",
+    "included": [
+     "10-page student lab (PDF + editable Word)",
+     "Self-calculating spreadsheet (Excel / Google Sheets)",
+     "2-page teacher guide with full answer key + 10-point rubric",
+     "Printed Calculator Readouts (print fallback) + Terms of Use"
+    ],
+    "standards": "CCSS 7.RP.A.3 — use proportional relationships to solve multistep percent problems. Aligned to CEE / Jump$tart National Standards for Personal Financial Education: Saving.",
+    "free": false,
+    "img": "/assets/images/money/16977796.jpg"
+   },
+   {
+    "id": "16977789",
+    "title": "Simple Interest & Loan Cost: Borrow or Wait? | Real-World Money Lab + Calculator",
+    "url": "https://www.teacherspayteachers.com/Product/Simple-Interest-Loan-Cost-Borrow-or-Wait-Real-World-Money-Lab-Calculator-16977789",
+    "key": "money",
+    "name": "Borrow or Wait?",
+    "topic": "Simple Interest & Loan Cost",
+    "slug": "simple-interest-loan-cost",
+    "hook": "Your students think the loan with the smaller monthly payment is always the cheaper one. It isn't. This lab turns I = P × r × t into the tool that exposes what a loan really costs.",
+    "summary": "Students price a $600 laptop loan, decode a real loan quote, compute simple interest by hand, explore a live loan calculator, then compare two loan offers by TOTAL cost — proving the 2-year loan's smaller monthly payment actually costs $60 more overall. No prep; answer key and rubric included.",
+    "pages": 10,
+    "steps": [
+     {
+      "step": "The $600 Laptop",
+      "what": "step into a real borrowing scenario with a clear “I can” target"
+     },
+     {
+      "step": "Decode Your Loan Quote",
+      "what": "read an authentic loan quote (principal, rate, term, monthly payment)"
+     },
+     {
+      "step": "Build the Interest by Hand",
+      "what": "apply I = P × r × t, including a time-unit watch-out"
+     },
+     {
+      "step": "Your Simple Interest Loan Calculator",
+      "what": "four “what-if” tasks in a self-calculating spreadsheet"
+     },
+     {
+      "step": "Two Loan Offers, Make the Call",
+      "what": "compare total cost, not the monthly payment, and justify the better deal"
+     },
+     {
+      "step": "Show What You Know",
+      "what": "a scored mastery check on a fresh loan"
+     },
+     {
+      "step": "Reality Check",
+      "what": "reflection + a real-world connection"
+     }
+    ],
+    "realmath": "The interest work (7.RP.A.3) is done BY the student — twice, by hand, and it's assessed. Every interest and total-repayment figure is exact and verified to the cent, with a labeled note that real loan rates vary widely (about 7–36%) and many loans compound rather than staying simple — a natural bridge to the companion Compound Interest lab.",
+    "printdigital": "Print-and-go, or assign the editable Word packet in Google Docs and the calculator in Google Sheets. No devices today? A Printed Calculator Readouts page lets a fully print-only class run the whole lab.",
+    "included": [
+     "10-page student lab (PDF + editable Word)",
+     "Self-calculating spreadsheet (Excel / Google Sheets)",
+     "2-page teacher guide with full answer key + 10-point rubric",
+     "Printed Calculator Readouts (print fallback) + Terms of Use"
+    ],
+    "standards": "CCSS 7.RP.A.3 — use proportional relationships to solve multistep percent problems. Aligned to CEE / Jump$tart National Standards for Personal Financial Education: Managing Credit.",
+    "free": false,
+    "img": "/assets/images/money/16977789.jpg"
+   },
+   {
+    "id": "16977813",
+    "title": "Unit Rate & the Best Buy: Cart Smarts | Real-World Money Lab + Calculator",
+    "url": "https://www.teacherspayteachers.com/Product/Unit-Rate-the-Best-Buy-Cart-Smarts-Real-World-Money-Lab-Calculator-16977813",
+    "key": "money",
+    "name": "Cart Smarts",
+    "topic": "Unit Rate & the Best Buy",
+    "slug": "unit-rate-the-best-buy",
+    "hook": "Your students think the biggest jar or the loudest “DEAL!” sign is automatically the cheapest. It isn't. This lab turns unit rate — price ÷ size — into the tool that busts the bulk fallacy for good.",
+    "summary": "Students face three peanut-butter jars at three sizes and three prices, decode real shelf tags, compute unit price by hand, explore a live best-buy calculator, then settle a showdown between a plain family-size jar and a flashy “3 for $9” promo — proving the promo is actually the worse buy. No prep; answer key and rubric included.",
+    "pages": 10,
+    "steps": [
+     {
+      "step": "The Shelf Showdown",
+      "what": "step into a real grocery-aisle scenario with a clear “I can” target"
+     },
+     {
+      "step": "Decode the Shelf Tags",
+      "what": "read three authentic shelf tags for the same product at different sizes"
+     },
+     {
+      "step": "Find the Unit Price by Hand",
+      "what": "divide price by size to find each unit price, no calculator"
+     },
+     {
+      "step": "Your Best-Buy Calculator",
+      "what": "four “what-if” tasks in a self-calculating spreadsheet, including a coupon that flips the best buy"
+     },
+     {
+      "step": "Family Size vs. the Promo, Make the Call",
+      "what": "prove which option is really cheaper per ounce"
+     },
+     {
+      "step": "Show What You Know",
+      "what": "a scored mastery check on a fresh product"
+     },
+     {
+      "step": "Reality Check",
+      "what": "reflection + a real-world connection"
+     }
+    ],
+    "realmath": "The unit-rate work (7.RP.A.1) is done BY the student — twice, by hand, and it's assessed. Every price in this lab was chosen so the by-hand division lands on an exact cent, so students can check their own work precisely; a worked example shows a case where the bigger size IS cheaper, reinforcing “always compute, never assume.”",
+    "printdigital": "Print-and-go, or assign the editable Word packet in Google Docs and the calculator in Google Sheets. No devices today? A Printed Calculator Readouts page lets a fully print-only class run the whole lab.",
+    "included": [
+     "10-page student lab (PDF + editable Word)",
+     "Self-calculating spreadsheet (Excel / Google Sheets)",
+     "3-page teacher guide with full answer key + 10-point rubric",
+     "Printed Calculator Readouts (print fallback) + Terms of Use"
+    ],
+    "standards": "CCSS 7.RP.A.1 — compute unit rates associated with ratios of quantities. Aligned to CEE / Jump$tart National Standards for Personal Financial Education: Spending.",
+    "free": false,
+    "img": "/assets/images/money/16977813.jpg"
+   }
+  ],
+  "bundle": {
+   "id": "16977873",
+   "title": "Consumer Math Essentials Bundle — 9 Money Labs + Free Bonus Lab + Calculators",
+   "url": "https://www.teacherspayteachers.com/Product/Consumer-Math-Essentials-Bundle-9-Money-Labs-Free-Bonus-Lab-Calculators-16977873",
+   "key": "money",
+   "name": "Consumer Math Essentials",
+   "intro": "Ten real-world Money Labs, one price — the 9 paid labs plus the free First Paycheck lab included as a bonus. Every lab in the Consumer Math series follows the same proven format: decode a real document, build the math by hand, explore with a self-calculating spreadsheet, make a real decision, prove mastery, and reflect — no drill sheets, no busywork.",
+   "included": [
+    "10-page student lab (PDF + editable Word)",
+    "Self-calculating spreadsheet (Excel / Google Sheets)",
+    "2–3-page teacher guide with full answer key + 10-point rubric",
+    "Printed Calculator Readouts (print fallback) + Terms of Use",
+    "Covers 5 of 6 CEE / Jump$tart Personal Financial Education Topics",
+    "Spending · Saving · Managing Credit — plus Earning Income via the included bonus lab, First Paycheck (not part of the $34.99 price math, but its files ship with this bundle). Only Investing and Managing Risk are not yet covered — on the roadmap."
+   ],
+   "standards": "CCSS 7.RP.A.1, 7.RP.A.3, 7.NS.A.3 across the 10 labs. Aligned to CEE / Jump$tart National Standards for Personal Financial Education (Spending, Saving, Managing Credit, Earning Income).",
+   "img": null
+  }
  }
 }

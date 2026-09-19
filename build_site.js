@@ -2580,6 +2580,7 @@ function footer(opts) {
           <li><a href="/i-can.html">I Can Posters</a></li>
           <li><a href="/sub-plans.html">Sub Plans</a></li>
           <li><a href="/mistake-of-the-week.html">Mistake of the Week</a></li>
+          <li><a href="/money-labs.html">Money Labs</a></li>
           <li><a href="/grade-6.html">6th Grade</a></li>
           <li><a href="/grade-7.html">7th Grade</a></li>
           <li><a href="/grade-8.html">8th Grade</a></li>
@@ -5612,6 +5613,7 @@ function pageICanPF() {
       <div class="cr-grid">${paid.map(p => wuTile({ url: p.url, external: true, img: p.img, name: `${p.state} Personal Finance I Can Posters`, kicker: p.posters ? `${p.posters} posters` : 'High school' })).join('')}</div>
     </div>
   </section>
+  <section class="section"><div class="wrap cr-cta"><div><span class="eyebrow">Goes with the posters</span><h2>Money Labs</h2><p>Real-world consumer math for grades 7 to 10: paychecks, budgets, credit cards, loans and interest, each with a self-calculating spreadsheet.</p></div><a class="btn btn--primary" href="/money-labs.html">See the Money Labs ${ICON.arrow}</a></div></section>
   ${free.length ? `<section class="section cr-alt"><div class="wrap">${secHead('Try it first', 'Free sample')}<div class="cr-grid">${free.map(p => wuTile({ url: p.url, external: true, img: p.img, name: p.title.split('|')[0].trim(), kicker: `Free · ${p.state}`, badge: 'Free', cta: 'Get it free on TPT' })).join('')}</div></div></section>` : ''}
   <section class="cr-note"><div class="wrap"><p>State course standards are named to show alignment. Math Class 678 is an independent publisher, not affiliated with, sponsored by, or endorsed by any state education agency. Every product is sold on <a href="${TPT_STORE}" target="_blank" rel="noopener">Teachers Pay Teachers</a>.</p></div></section>
 </main>
@@ -6055,8 +6057,179 @@ function pageAlgebra1Sheet(s, prev, next) {
 }
 
 
+/* ============================================================================
+   MONEY LABS   (v1.15.0 · 2026-09-19)
+   Ten real-world consumer-math labs and the Consumer Math Essentials bundle, which the site did not
+   link. Data: classroom_data.json `money`, parsed from each lab's own listing (hook, the seven steps
+   students work through, the "real math" note, print + digital, what's included, standard).
+   ============================================================================ */
+const MONEY = CLASSROOM.money;
+// House style has no exclamation points; the one in the labs' copy is a quoted sale sign (“DEAL!”).
+const ML_LABS = MONEY.labs.map(l => Object.assign(l, { pageUrl: `/money-labs/${l.slug}.html`, hook: l.hook.replace(/!(?=”|")/g, ''), summary: l.summary.replace(/!(?=”|")/g, '') }));
+const ML_FREE = ML_LABS.filter(l => l.free);
+const ML_FORMAT = [
+  ['Decode', 'Read a real document: a pay stub, a receipt, a loan quote, a credit card statement.'],
+  ['Build it by hand', 'Do the math on paper, with no calculator, and get scored on it.'],
+  ['Explore', 'Run “what-if” questions in a self-calculating spreadsheet.'],
+  ['Decide', 'Make a real decision with a surprising answer, and justify it with the numbers.'],
+  ['Prove it', 'A scored mastery check on fresh numbers, then a reality-check reflection.'],
+];
+const ML_FAQ = [
+  { q: 'What grades are the Money Labs for?', a: 'Grades 7 to 10: each lab is built on a 7th grade percent, unit rate or rational-number standard and stays accessible through high school, so it fits financial literacy, consumer math, FACS, CTE and intervention.' },
+  { q: 'Do students need devices?', a: 'No. Every lab runs print-and-go, and a Printed Calculator Readouts page lets a print-only class run the whole lab. With devices, assign the editable Word packet in Google Docs and the calculator in Google Sheets.' },
+  { q: 'Does the calculator do the math for them?', a: 'No. Students do the math by hand first and are scored on it. The spreadsheet is for exploring what-if questions afterward, never a substitute for the calculation.' },
+  { q: 'Is there a free lab?', a: `Yes. ${ML_FREE.map(l => `${l.name} (${l.topic})`).join(' and ')} is free, and it is included in the bundle as a bonus lab.` },
+];
+
+/* ---------------------------------------------------------------- /money-labs.html */
+function pageMoneyLabs() {
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Money Labs' }];
+  const tiles = ML_LABS.map(l => wuTile({ url: l.pageUrl, img: l.img, accent: l.free ? 'teal' : 'gold', name: l.name,
+    kicker: `${l.topic}${l.free ? ' · free' : ''}`, cta: 'See the lab' })).join('');
+  return head({
+    title: 'Money Labs | Real-World Financial Literacy Math, Grades 7–10',
+    desc: `Ten real-world money math labs for grades 7 to 10: paychecks, budgets, tax and tip, credit cards, loans and interest, each with a self-calculating spreadsheet.`,
+    path: 'money-labs.html',
+    ogImage: ML_LABS[0] && ML_LABS[0].img ? SITE_URL + ML_LABS[0].img : undefined,
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Money Labs', url: '/money-labs.html' }]),
+      faqSchema(ML_FAQ),
+      itemListSchema('Money Labs', ML_LABS.map(l => ({ url: l.pageUrl, name: `${l.name}: ${l.topic}` })))),
+  }) + nav('money') + `
+<main id="main">
+  ${breadcrumb(crumbs)}
+  ${crHero('Consumer math · grades 7–10', 'Real-world money math, done by hand',
+    `${ML_LABS.length} labs on the money decisions students are about to make: a first paycheck, a budget, a checkout total, a credit card, a loan, a savings goal. Each one starts from a real document, has students do the math by hand, then puts a live calculator in their hands to test a real decision.`,
+    `<a class="btn btn--primary" href="#labs">See the ${ML_LABS.length} labs ${ICON.arrow}</a>${ML_FREE[0] ? `<a class="btn btn--ghost cr-btn--light" href="${ML_FREE[0].pageUrl}">Try ${esc(ML_FREE[0].name)} free ${ICON.arrow}</a>` : ''}`)}
+
+  <section class="section">
+    <div class="wrap">
+      ${secHead('Every lab, the same format', 'Decode, build, explore, decide, prove it', 'No drill sheets: each lab ends in a decision students have to defend with their own numbers.')}
+      <ol class="cr-roles">${ML_FORMAT.map(([t, d], i) => `<li class="cr-role reveal"><span class="cr-role__n">${i + 1}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></li>`).join('')}</ol>
+    </div>
+  </section>
+
+  <section class="section cr-alt" id="labs">
+    <div class="wrap">
+      ${secHead('The labs', `${ML_LABS.length} decisions, ${ML_LABS.length} labs`)}
+      <div class="cr-grid">${tiles}</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap cr-split">
+      <div>
+        ${secHead('In every lab', 'Print-and-go or digital')}
+        <ul class="cr-list">${(ML_LABS.find(l => !l.free) || ML_LABS[0]).included.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+      </div>
+      <figure class="cr-split__img reveal">${ML_LABS[1] && ML_LABS[1].img ? `<img src="${ML_LABS[1].img}" alt="${esc(ML_LABS[1].name)} money lab: ${esc(ML_LABS[1].topic)}" width="640" height="640" loading="lazy" decoding="async">` : ''}</figure>
+    </div>
+  </section>
+
+  ${MONEY.bundle ? `<section class="section cr-alt"><div class="wrap cr-cta"><div><span class="eyebrow">The whole series</span><h2>${esc(MONEY.bundle.name)} Bundle</h2><p>All ${ML_LABS.length - ML_FREE.length} paid labs in one purchase, with the free ${esc(ML_FREE.map(l => l.name).join(' and '))} lab included as a bonus.</p></div>${tptBtn(MONEY.bundle, 'View the bundle')}</div></section>` : ''}
+
+  <section class="section">
+    <div class="wrap cr-cta">
+      <div><span class="eyebrow">Teaching a personal finance course?</span><h2>Personal finance I Can posters</h2><p>Learning targets for the high school personal finance standards of ${ICAN.personal_finance.filter(p => !p.free).length} states.</p></div>
+      <a class="btn btn--primary" href="/i-can/personal-finance.html">See the posters ${ICON.arrow}</a>
+    </div>
+  </section>
+
+  ${faqBlock(ML_FAQ, 'Money Lab questions')}
+  ${noteBand()}
+</main>
+` + footer() + scripts();
+}
+
+/* ---------------------------------------------------------------- /money-labs/<lab>.html */
+function pageMoneyLab(l, prev, next) {
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Money Labs', url: '/money-labs.html' }, { name: l.name }];
+  const code = (l.standards.match(/\d\.[A-Z]{2}\.[A-Z]\.\d/) || [''])[0];
+  let title = `${l.topic} Lesson | Real-World Money Lab, Grades 7–10`;
+  if (title.length > 70) title = `${l.topic} | Money Lab, Grades 7–10`;
+  if (title.length > 70) title = `${l.topic} | Money Lab`;
+  let desc = l.hook.split(/(?<=[.?!])\s+/).slice(0, 2).join(' ') + ` A ${l.pages}-page money lab for grades 7 to 10.`;
+  if (desc.length > 170) desc = `${l.topic}: a ${l.pages}-page real-world money lab for grades 7 to 10, with a self-calculating spreadsheet, answer key and rubric.`;
+  if (desc.length > 170) desc = desc.slice(0, 166).replace(/\s+\S*$/, '') + '…';
+  if (desc.length < 70) desc = `${l.topic}: a ${l.pages}-page real-world money lab for grades 7 to 10, with a self-calculating spreadsheet, answer key and rubric.`;
+  const cta = tptBtn(l, l.free ? 'Get it free on TPT' : 'View on TPT');
+  return head({
+    title, desc, path: l.pageUrl.slice(1), ogType: 'article',
+    ogImage: l.img ? SITE_URL + l.img : undefined,
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Money Labs', url: '/money-labs.html' }, { name: l.name, url: l.pageUrl }]),
+      { '@context': 'https://schema.org', '@type': 'LearningResource', name: `${l.name}: ${l.topic}`, url: SITE_URL + l.pageUrl,
+        educationalLevel: 'Grades 7-10', learningResourceType: 'Lesson', inLanguage: 'en', description: l.summary,
+        educationalAlignment: code ? { '@type': 'AlignmentObject', alignmentType: 'teaches', educationalFramework: 'Common Core State Standards', targetName: code } : undefined,
+        image: l.img ? SITE_URL + l.img : undefined, provider: { '@type': 'Organization', name: 'Math Class 678', url: SITE_URL },
+        offers: { '@type': 'Offer', url: l.url, availability: 'https://schema.org/InStock' } }),
+  }) + nav('money') + `
+<main id="main" class="sheet">
+  ${breadcrumb(crumbs)}
+  <section class="section sheet-hero">
+    <div class="wrap sheet-hero__grid">
+      <div class="sheet-hero__media a1-media">${l.img ? `<img src="${l.img}" alt="${esc(l.name)} money lab: ${esc(l.topic)}" width="640" height="640" loading="eager" fetchpriority="high" decoding="async">` : ''}</div>
+      <div class="sheet-hero__copy">
+        <div class="sheet-hero__tags">
+          ${code ? `<span class="sheet-chip sheet-chip--ccss">${esc(code)}</span>` : ''}
+          <span class="sheet-chip">${esc(l.name)} lab</span>
+          <span class="sheet-chip">Grades 7–10</span>
+          <span class="sheet-chip">${l.pages}-page lab</span>
+          ${l.free ? '<span class="sheet-chip">Free</span>' : ''}
+        </div>
+        <h1>${esc(l.topic)}</h1>
+        <p class="sheet-hero__ican">${esc(l.hook)}</p>
+        <div class="sheet-hero__cta">${cta}<a class="btn btn--ghost" href="/money-labs.html">All Money Labs ${ICON.arrow}</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section sheet-detail" style="padding-top:0">
+    <div class="wrap sheet-detail__grid">
+      <div class="sheet-detail__main">
+        <div class="sheet-block"><h2>The lab</h2><p>${esc(l.summary)}</p></div>
+        <div class="sheet-block"><h2>What students do</h2>
+          <ol class="ml-steps">${l.steps.map(s => `<li><b>${esc(s.step)}</b>${s.what ? ` — ${esc(s.what)}` : ''}</li>`).join('')}</ol></div>
+        ${l.realmath ? `<div class="sheet-block a1-rule"><h2>Real math, done right</h2><p>${esc(l.realmath)}</p></div>` : ''}
+        ${l.printdigital ? `<div class="sheet-block"><h2>Print or digital</h2><p>${esc(l.printdigital)}</p></div>` : ''}
+        <div class="sheet-block"><h2>What is included</h2><ul class="cr-list">${l.included.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>
+      </div>
+      <aside class="sheet-detail__side">
+        <div class="sheet-facts">
+          <h2 class="sheet-facts__title">Standard</h2>
+          <div class="sheet-facts__ccss">${esc(code || 'Personal finance')}</div>
+          <p class="sheet-facts__text">${esc(l.standards)}</p>
+          <dl class="sheet-facts__dl">
+            <div><dt>Grades</dt><dd>7–10</dd></div>
+            <div><dt>Length</dt><dd>${l.pages}-page student lab</dd></div>
+            <div><dt>Format</dt><dd>PDF, editable Word, spreadsheet</dd></div>
+          </dl>
+          ${cta}
+          ${MONEY.bundle ? `<p style="margin-top:1rem"><a class="cr-link" href="${esc(MONEY.bundle.url)}" target="_blank" rel="noopener">In the ${esc(MONEY.bundle.name)} bundle ${ICON.ext}</a></p>` : ''}
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section cr-alt">
+    <div class="wrap">
+      ${secHead('The series', 'More Money Labs')}
+      ${a1Chips(ML_LABS.filter(x => x !== l).map(x => `<a class="cr-chip cr-chip--gold" href="${x.pageUrl}">${esc(x.name)}</a>`).concat([`<a class="cr-chip" href="/money-labs.html">All Money Labs</a>`]))}
+    </div>
+  </section>
+
+  <nav class="section sheetnav" aria-label="Browse adjacent labs" style="padding-top:0">
+    <div class="wrap sheetnav__row">
+      ${prev ? `<a class="sheetnav__link sheetnav__prev" href="${prev.pageUrl}"><span class="sheetnav__dir">Previous</span><span class="sheetnav__name">${esc(prev.name)}</span></a>` : '<span class="sheetnav__link is-empty"></span>'}
+      ${next ? `<a class="sheetnav__link sheetnav__next" href="${next.pageUrl}"><span class="sheetnav__dir">Next</span><span class="sheetnav__name">${esc(next.name)}</span></a>` : '<span class="sheetnav__link is-empty"></span>'}
+    </div>
+  </nav>
+  ${noteBand()}
+</main>
+` + footer() + scripts();
+}
+
+
 function sitemap() {
-  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'sub-plans.html', 'mistake-of-the-week.html', 'algebra-1.html', 'i-can.html', 'i-can/personal-finance.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
+  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'sub-plans.html', 'mistake-of-the-week.html', 'money-labs.html', 'algebra-1.html', 'i-can.html', 'i-can/personal-finance.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
   const today = new Date().toISOString().slice(0, 10);
   const main = pages.map(p => `  <url><loc>${SITE_URL}/${p}</loc><lastmod>${today}</lastmod></url>`);
   const sheets = products
@@ -6070,6 +6243,7 @@ function sitemap() {
   const freebieUrls = FREEBIES.map(f => `  <url><loc>${SITE_URL}${f.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
   const warmupUrls = WU.courses.map(c => `  <url><loc>${SITE_URL}/warm-ups/${c.slug}.html</loc><lastmod>${today}</lastmod></url>`)
     .concat(ICAN_SETS.map(st => `  <url><loc>${SITE_URL}/i-can/${st.slug}.html</loc><lastmod>${today}</lastmod></url>`))
+    .concat(ML_LABS.map(x => `  <url><loc>${SITE_URL}${x.pageUrl}</loc><lastmod>${today}</lastmod></url>`))
     .concat(A1_UNITS.concat(A1_SHEETS).map(x => `  <url><loc>${SITE_URL}${x.pageUrl}</loc><lastmod>${today}</lastmod></url>`));
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -6159,6 +6333,8 @@ WU.courses.forEach(c => write(`warm-ups/${c.slug}.html`, pageWarmupsCourse(c)));
 write('readiness.html', pageReadiness());
 write('sub-plans.html', pageSubPlans());
 write('mistake-of-the-week.html', pageMistakeOfTheWeek());
+write('money-labs.html', pageMoneyLabs());
+ML_LABS.forEach((l, i) => write(l.pageUrl.slice(1), pageMoneyLab(l, ML_LABS[i - 1], ML_LABS[i + 1])));
 write('algebra-1.html', pageAlgebra1Hub());
 A1_UNITS.forEach((u, i) => write(u.pageUrl.slice(1), pageAlgebra1Unit(u, A1_UNITS[i - 1], A1_UNITS[i + 1])));
 A1_SHEETS.forEach((sh, i) => write(sh.pageUrl.slice(1), pageAlgebra1Sheet(sh, A1_SHEETS[i - 1], A1_SHEETS[i + 1])));
@@ -6227,7 +6403,7 @@ if (fs.existsSync(SRC_SITE_IMGS)) {
 }
 
 // Warm-ups, readiness and Mistake of the Week card images (written by the state-testing exporter)
-['warmups', 'readiness', 'motw', 'ican', 'subplans', 'algebra1'].forEach(dir => {
+['warmups', 'readiness', 'motw', 'ican', 'subplans', 'algebra1', 'money'].forEach(dir => {
   const src = path.join(ROOT, 'assets', 'images', dir);
   if (!fs.existsSync(src)) return;
   fs.readdirSync(src).filter(f => /\.(jpe?g|png)$/i.test(f)).forEach(f => copy(path.join('assets/images', dir, f), path.join('assets/images', dir, f)));

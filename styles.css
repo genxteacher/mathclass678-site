@@ -1683,3 +1683,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .a1-watch p { margin: 0; padding: .8rem 1rem; border-radius: var(--radius-sm); }
 .a1-watch__wrong { background: var(--coral-tint); border-left: 4px solid var(--coral); }
 .a1-watch__right { background: var(--teal-tint); border-left: 4px solid var(--teal); }
+
+/* Money Lab steps (v1.15.0) */
+.ml-steps { margin: 0; padding-left: 1.3rem; display: flex; flex-direction: column; gap: .5rem; }
+.ml-steps li::marker { color: #b8860b; font-weight: 700; }
