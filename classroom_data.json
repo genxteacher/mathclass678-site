@@ -2805,5 +2805,57 @@
     "img": "/assets/images/ican/17626261.jpg"
    }
   ]
+ },
+ "subplans": {
+  "sp6": {
+   "id": "17666286",
+   "title": "6th Grade Emergency Math Sub Plans | 3 Days No Prep Self-Checking Review",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Emergency-Math-Sub-Plans-3-Days-No-Prep-Self-Checking-Review-17666286",
+   "key": "sp6",
+   "grade": "6th Grade",
+   "prior": "5th grade",
+   "pages": 17,
+   "img": "/assets/images/subplans/sp6.jpg"
+  },
+  "sp7": {
+   "id": "17666324",
+   "title": "7th Grade Emergency Math Sub Plans | 3 Days No Prep Self-Checking Review",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Emergency-Math-Sub-Plans-3-Days-No-Prep-Self-Checking-Review-17666324",
+   "key": "sp7",
+   "grade": "7th Grade",
+   "prior": "6th grade",
+   "pages": 17,
+   "img": "/assets/images/subplans/sp7.jpg"
+  },
+  "sp8": {
+   "id": "17666348",
+   "title": "8th Grade Emergency Math Sub Plans | 3 Days No Prep Self-Checking Review",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Emergency-Math-Sub-Plans-3-Days-No-Prep-Self-Checking-Review-17666348",
+   "key": "sp8",
+   "grade": "8th Grade",
+   "prior": "7th grade",
+   "pages": 17,
+   "img": "/assets/images/subplans/sp8.jpg"
+  },
+  "spbundle": {
+   "id": "17666366",
+   "title": "6th 7th 8th Grade Emergency Math Sub Plans Bundle | 9 Days No Prep Review",
+   "url": "https://www.teacherspayteachers.com/Product/6th-7th-8th-Grade-Emergency-Math-Sub-Plans-Bundle-9-Days-No-Prep-Review-17666366",
+   "key": "spbundle",
+   "grade": "6th, 7th & 8th Grade",
+   "prior": null,
+   "pages": 17,
+   "img": null
+  },
+  "spfree": {
+   "id": "16214563",
+   "title": "Emergency Sub Plans Middle School Math FREE | 6th 7th 8th Grade 3 Day Packet",
+   "url": "https://www.teacherspayteachers.com/Product/Emergency-Sub-Plans-Middle-School-Math-FREE-6th-7th-8th-Grade-3-Day-Packet-16214563",
+   "key": "spfree",
+   "grade": "Middle School",
+   "prior": null,
+   "pages": 7,
+   "img": "/assets/images/subplans/spfree.jpg"
+  }
  }
 }

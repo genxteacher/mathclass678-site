@@ -2578,6 +2578,7 @@ function footer(opts) {
           <li><a href="/warm-ups.html">Warm-Ups</a></li>
           <li><a href="/readiness.html">Readiness Checks</a></li>
           <li><a href="/i-can.html">I Can Posters</a></li>
+          <li><a href="/sub-plans.html">Sub Plans</a></li>
           <li><a href="/grade-6.html">6th Grade</a></li>
           <li><a href="/grade-7.html">7th Grade</a></li>
           <li><a href="/grade-8.html">8th Grade</a></li>
@@ -5153,11 +5154,12 @@ function gradeClassroomBand(grade) {
   if (!c) return '';
   return `<section class="section cr-alt">
     <div class="wrap">
-      ${secHead(`Also for ${c.label.replace('Grade', 'grade')}`, 'Warm-ups, a readiness check and error analysis')}
+      ${secHead(`Also for ${c.label.replace('Grade', 'grade')}`, 'Warm-ups, a readiness check, error analysis and sub plans')}
       <div class="cr-grid">
         ${wuTile({ url: `/warm-ups/${c.slug}.html`, img: c.yr.img, accent: acc, name: `${c.label} Math Warm-Ups`, kicker: '180 days \u00b7 four problems a day', cta: 'See every week' })}
         ${r ? wuTile({ url: '/readiness.html#' + r.key, img: r.img, accent: acc, name: `${r.grade} Math Readiness Check`, kicker: `${r.prior} skills \u00b7 ${r.questions} questions`, cta: 'See what it covers' }) : ''}
         ${m ? wuTile({ url: m.url, external: true, img: m.img, accent: acc, name: `Mistake of the Week, ${c.label}`, kicker: 'Error analysis \u00b7 12 weeks' }) : ''}
+        ${SP['sp' + grade] ? wuTile({ url: '/sub-plans.html', img: SP['sp' + grade].img, accent: acc, name: `${c.label} Emergency Sub Plans`, kicker: `3 days \u00b7 reviews ${SP['sp' + grade].prior} skills`, cta: 'See the three days' }) : ''}
       </div>
     </div>
   </section>`;
@@ -5614,8 +5616,104 @@ function pageICanPF() {
 }
 
 
+/* ============================================================================
+   EMERGENCY SUB PLANS   (v1.12.0 · 2026-09-19)
+   Five listings (6th, 7th, 8th, the 9-day bundle and the free 3-day packet), one page. Every fact
+   below is stated in the listings' own descriptions; `prior` and page counts come from the export.
+   ============================================================================ */
+const SP = CLASSROOM.subplans;
+const SP_DAYS = [
+  ['Day 1', 'Secret Message', 'A 4-problem warm-up, then 12 problems whose answers decode a message from a 16-entry decoder. A three-level Challenge Round and a write-your-own-problem task.'],
+  ['Day 2', 'Maze Race', 'A warm-up, then a 25-cell maze with only one 13-cell route, which correct answers keep students on. A route record, a trap report and a three-level Challenge Round.'],
+  ['Day 3', 'Error Detective', 'A warm-up, then 10 students’ worked problems with 4 mistakes to find and fix. A three-level Challenge Round and a make-your-own-case task.'],
+];
+const SP_INCLUDED = [
+  'A Start Here page, and a Skills Reviewed page with the standard code for every problem',
+  'A Welcome, Substitute page for your class periods and procedures, filled in once',
+  'The plan for each day: what to hand out, what to say, and how to tell it’s working',
+  'A Substitute Report page',
+  'Answer keys that name the likely mistake behind each wrong answer',
+  'One two-sided sheet per student per day that prints clearly in black and white',
+];
+const SP_FAQ = [
+  { q: 'Can a substitute with no math background run these?', a: 'Yes. Every activity tells students whether they are right: correct answers spell a message, keep them on the only route through a maze, or add up to a printed total. The plan for each day tells the substitute what to hand out and what to say.' },
+  { q: 'Will they fit any week of the year?', a: 'Yes. Each grade’s three days review the grade before, so they never depend on where your class is in the curriculum.' },
+  { q: 'How long does each day take?', a: 'Each day is designed to fill a class period: a warm-up, the main activity and a three-level Challenge Round.' },
+  { q: 'Do students need devices?', a: 'No. Every day is one two-sided printed sheet per student, and it prints clearly in black and white.' },
+];
+
+function pageSubPlans() {
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Sub Plans' }];
+  const grades = [['sp6', 'teal'], ['sp7', 'coral'], ['sp8', 'navy']].map(([k, acc]) => SP[k]);
+  const acc = { sp6: 'teal', sp7: 'coral', sp8: 'navy' };
+  return head({
+    title: 'Emergency Math Sub Plans | 6th, 7th & 8th Grade, No Prep',
+    desc: 'No-prep emergency math sub plans for 6th, 7th and 8th grade: three self-checking days per grade that review the grade before, with a free 3-day packet to try first.',
+    path: 'sub-plans.html',
+    ogImage: SP.sp6.img ? SITE_URL + SP.sp6.img : undefined,
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Sub Plans', url: '/sub-plans.html' }]),
+      faqSchema(SP_FAQ),
+      itemListSchema('Emergency math sub plans', [SP.sp6, SP.sp7, SP.sp8, SP.spbundle, SP.spfree].map(p => ({ url: p.url, name: p.title })))),
+  }) + nav('sub-plans') + `
+<main id="main">
+  ${breadcrumb(crumbs)}
+  ${crHero('Emergency sub plans', 'Sub plans that check themselves',
+    'Three no-prep days per grade for the morning you wake up sick. A substitute with no math background can run every day, because every activity tells students whether they are right: correct answers spell a message, keep them on the only route through a maze, or add up to a printed total.',
+    `<a class="btn btn--primary" href="#grades">Choose your grade ${ICON.arrow}</a><a class="btn btn--ghost cr-btn--light" href="${esc(SP.spfree.url)}" target="_blank" rel="noopener">Free 3-day packet ${ICON.ext}</a>`)}
+
+  <section class="section">
+    <div class="wrap">
+      ${secHead('Three days, one routine', 'Every grade runs the same three days', 'Review only, designed to fill a class period, and built so students see right away when an answer needs another look.')}
+      <ol class="cr-roles">${SP_DAYS.map(([d, t, x], i) => `<li class="cr-role reveal"><span class="cr-role__n">${i + 1}</span><h3>${esc(t)}</h3><p>${esc(x)}</p></li>`).join('')}</ol>
+    </div>
+  </section>
+
+  <section class="section cr-alt" id="grades">
+    <div class="wrap">
+      ${secHead('Choose your grade', 'Each grade reviews the one before', 'So the plans work in any week of the year, wherever your class is in the curriculum.')}
+      <div class="cr-grid">
+        ${grades.map(p => wuTile({ url: p.url, external: true, img: p.img, accent: acc[p.key], name: `${p.grade} Emergency Math Sub Plans`, kicker: `3 days · reviews ${p.prior} skills${p.pages ? ` · ${p.pages} pages` : ''}` })).join('')}
+        ${wuTile({ url: SP.spbundle.url, external: true, img: SP.spbundle.img, feature: true, name: '6th, 7th & 8th Grade Sub Plans Bundle', kicker: '9 days · three per grade' })}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap cr-split">
+      <div>
+        ${secHead('In every grade', 'Everything the substitute needs')}
+        <ul class="cr-list">${SP_INCLUDED.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+      </div>
+      <figure class="cr-split__img reveal">${SP.sp7.img ? `<img src="${SP.sp7.img}" alt="7th grade emergency math sub plans: three no-prep self-checking days" width="640" height="640" loading="lazy" decoding="async">` : ''}</figure>
+    </div>
+  </section>
+
+  <section class="section cr-alt">
+    <div class="wrap cr-split">
+      <div>
+        ${secHead('Try it first', 'A free 3-day packet', `A logic detective puzzle, a math mystery that decodes a secret message and a maze race, each self-checking, with teacher directions and an answer key.${SP.spfree.pages ? ` ${SP.spfree.pages} pages, for 6th, 7th or 8th grade.` : ''}`)}
+        ${tptBtn(SP.spfree, 'Get it free on TPT')}
+      </div>
+      <figure class="cr-split__img reveal">${SP.spfree.img ? `<img src="${SP.spfree.img}" alt="Free 3-day emergency math sub plan packet for middle school" width="640" height="640" loading="lazy" decoding="async">` : ''}</figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap cr-cta">
+      <div><span class="eyebrow">When you're back</span><h2>Pick up with the daily warm-up</h2><p>Four spiral-review problems a day, so the class settles straight back into the routine.</p></div>
+      <a class="btn btn--primary" href="/warm-ups.html">See the warm-ups ${ICON.arrow}</a>
+    </div>
+  </section>
+
+  ${faqBlock(SP_FAQ, 'Sub plan questions')}
+  ${noteBand()}
+</main>
+` + footer() + scripts();
+}
+
+
 function sitemap() {
-  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'i-can.html', 'i-can/personal-finance.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
+  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'sub-plans.html', 'i-can.html', 'i-can/personal-finance.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
   const today = new Date().toISOString().slice(0, 10);
   const main = pages.map(p => `  <url><loc>${SITE_URL}/${p}</loc><lastmod>${today}</lastmod></url>`);
   const sheets = products
@@ -5715,6 +5813,7 @@ write('get-started.html', pageGetStarted());
 write('warm-ups.html', pageWarmupsHub());
 WU.courses.forEach(c => write(`warm-ups/${c.slug}.html`, pageWarmupsCourse(c)));
 write('readiness.html', pageReadiness());
+write('sub-plans.html', pageSubPlans());
 write('i-can.html', pageICanHub());
 ICAN_SETS.forEach(st => write(`i-can/${st.slug}.html`, pageICanSet(st)));
 write('i-can/personal-finance.html', pageICanPF());
@@ -5780,7 +5879,7 @@ if (fs.existsSync(SRC_SITE_IMGS)) {
 }
 
 // Warm-ups, readiness and Mistake of the Week card images (written by the state-testing exporter)
-['warmups', 'readiness', 'motw', 'ican'].forEach(dir => {
+['warmups', 'readiness', 'motw', 'ican', 'subplans'].forEach(dir => {
   const src = path.join(ROOT, 'assets', 'images', dir);
   if (!fs.existsSync(src)) return;
   fs.readdirSync(src).filter(f => /\.(jpe?g|png)$/i.test(f)).forEach(f => copy(path.join('assets/images', dir, f), path.join('assets/images', dir, f)));
