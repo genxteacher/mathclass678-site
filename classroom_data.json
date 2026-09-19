@@ -1,0 +1,1504 @@
+{
+ "generated_by": "state testing repo: tools/site_export/mc678_classroom.py",
+ "warmups": {
+  "courses": [
+   {
+    "key": "G5",
+    "label": "5th Grade",
+    "slug": "grade-5",
+    "quarters": [
+     {
+      "id": "17012384",
+      "title": "5th Grade Math Warm-Ups Q1 Bell Ringers | Place Value Decimals & Multiplication",
+      "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-Warm-Ups-Q1-Bell-Ringers-Place-Value-Decimals-Multiplication-17012384",
+      "key": "G5_Q1",
+      "n": 1,
+      "name": "Place Value & Decimals",
+      "pages": 157,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Place value relationships",
+        "std": "5.NBT.A.1"
+       },
+       {
+        "week": 2,
+        "topic": "Powers of 10",
+        "std": "5.NBT.A.2"
+       },
+       {
+        "week": 3,
+        "topic": "Read and write decimals to thousandths",
+        "std": "5.NBT.A.3a"
+       },
+       {
+        "week": 4,
+        "topic": "Compare decimals to thousandths",
+        "std": "5.NBT.A.3b"
+       },
+       {
+        "week": 5,
+        "topic": "Round decimals",
+        "std": "5.NBT.A.4"
+       },
+       {
+        "week": 6,
+        "topic": "Multi-digit multiplication",
+        "std": "5.NBT.B.5"
+       },
+       {
+        "week": 7,
+        "topic": "Multi-digit multiplication",
+        "std": "5.NBT.B.5"
+       },
+       {
+        "week": 8,
+        "topic": "Grouping symbols",
+        "std": "5.OA.A.1"
+       },
+       {
+        "week": 9,
+        "topic": "Write and interpret expressions",
+        "std": "5.OA.A.2"
+       }
+      ],
+      "img": "/assets/images/warmups/g5_q1.jpg"
+     },
+     {
+      "id": "17012386",
+      "title": "5th Grade Math Warm-Ups Q2 Bell Ringers | Division & Decimal Operations",
+      "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-Warm-Ups-Q2-Bell-Ringers-Division-Decimal-Operations-17012386",
+      "key": "G5_Q2",
+      "n": 2,
+      "name": "Division & Decimals",
+      "pages": 157,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Divide by one-digit divisors",
+        "std": "5.NBT.B.6"
+       },
+       {
+        "week": 2,
+        "topic": "Two-digit divisors",
+        "std": "5.NBT.B.6"
+       },
+       {
+        "week": 3,
+        "topic": "Two-digit divisors",
+        "std": "5.NBT.B.6"
+       },
+       {
+        "week": 4,
+        "topic": "Add decimals",
+        "std": "5.NBT.B.7"
+       },
+       {
+        "week": 5,
+        "topic": "Subtract decimals",
+        "std": "5.NBT.B.7"
+       },
+       {
+        "week": 6,
+        "topic": "Multiply decimals",
+        "std": "5.NBT.B.7"
+       },
+       {
+        "week": 7,
+        "topic": "Multiply decimals",
+        "std": "5.NBT.B.7"
+       },
+       {
+        "week": 8,
+        "topic": "Divide decimals",
+        "std": "5.NBT.B.7"
+       },
+       {
+        "week": 9,
+        "topic": "Mixed decimal operations",
+        "std": "5.NBT.B.7"
+       }
+      ],
+      "img": "/assets/images/warmups/g5_q2.jpg"
+     },
+     {
+      "id": "17012378",
+      "title": "5th Grade Math Warm-Ups Q3 Bell Ringers | Add Subtract Multiply Divide Fractions",
+      "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-Warm-Ups-Q3-Bell-Ringers-Add-Subtract-Multiply-Divide-Fractions-17012378",
+      "key": "G5_Q3",
+      "n": 3,
+      "name": "Fractions",
+      "pages": 158,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Add fractions with unlike denominators",
+        "std": "5.NF.A.1"
+       },
+       {
+        "week": 2,
+        "topic": "Subtract fractions with unlike denominators",
+        "std": "5.NF.A.1"
+       },
+       {
+        "week": 3,
+        "topic": "Fraction problems and estimation",
+        "std": "5.NF.A.2"
+       },
+       {
+        "week": 4,
+        "topic": "Fractions as division",
+        "std": "5.NF.B.3"
+       },
+       {
+        "week": 5,
+        "topic": "Multiply a fraction by a whole number",
+        "std": "5.NF.B.4a"
+       },
+       {
+        "week": 6,
+        "topic": "Area with fractional side lengths",
+        "std": "5.NF.B.4b"
+       },
+       {
+        "week": 7,
+        "topic": "Scaling and resizing",
+        "std": "5.NF.B.5"
+       },
+       {
+        "week": 8,
+        "topic": "Multiply mixed numbers",
+        "std": "5.NF.B.6"
+       },
+       {
+        "week": 9,
+        "topic": "Divide with unit fractions",
+        "std": "5.NF.B.7"
+       }
+      ],
+      "img": "/assets/images/warmups/g5_q3.jpg"
+     },
+     {
+      "id": "17012377",
+      "title": "5th Grade Math Warm-Ups Q4 Bell Ringers | Measurement Geometry Volume & Data",
+      "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-Warm-Ups-Q4-Bell-Ringers-Measurement-Geometry-Volume-Data-17012377",
+      "key": "G5_Q4",
+      "n": 4,
+      "name": "Measurement & Volume",
+      "pages": 158,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Metric measurement conversion",
+        "std": "5.MD.A.1"
+       },
+       {
+        "week": 2,
+        "topic": "Customary measurement conversion",
+        "std": "5.MD.A.1"
+       },
+       {
+        "week": 3,
+        "topic": "Volume by counting unit cubes",
+        "std": "5.MD.C.4"
+       },
+       {
+        "week": 4,
+        "topic": "Volume formulas",
+        "std": "5.MD.C.5b"
+       },
+       {
+        "week": 5,
+        "topic": "Composite volume",
+        "std": "5.MD.C.5c"
+       },
+       {
+        "week": 6,
+        "topic": "The coordinate plane",
+        "std": "5.G.A.2"
+       },
+       {
+        "week": 7,
+        "topic": "Classify two-dimensional figures",
+        "std": "5.G.B.4"
+       },
+       {
+        "week": 8,
+        "topic": "Line plots with fractions",
+        "std": "5.MD.B.2"
+       },
+       {
+        "week": 9,
+        "topic": "Numerical patterns and ordered pairs",
+        "std": "5.OA.B.3"
+       }
+      ],
+      "img": "/assets/images/warmups/g5_q4.jpg"
+     }
+    ],
+    "s1": {
+     "id": "17012394",
+     "title": "5th Grade Math Warm-Ups Semester 1 Bundle | Q1-Q2 Bell Ringers Spiral Review",
+     "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-Warm-Ups-Semester-1-Bundle-Q1-Q2-Bell-Ringers-Spiral-Review-17012394",
+     "key": "G5_S1",
+     "img": "/assets/images/warmups/g5_s1.jpg"
+    },
+    "s2": {
+     "id": "17012400",
+     "title": "5th Grade Math Warm-Ups Semester 2 Bundle | Q3-Q4 Bell Ringers Spiral Review",
+     "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-Warm-Ups-Semester-2-Bundle-Q3-Q4-Bell-Ringers-Spiral-Review-17012400",
+     "key": "G5_S2",
+     "img": "/assets/images/warmups/g5_s2.jpg"
+    },
+    "yr": {
+     "id": "17012411",
+     "title": "5th Grade Math Warm-Ups FULL YEAR Bundle | 720 Daily Bell Ringers Spiral Review",
+     "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-Warm-Ups-FULL-YEAR-Bundle-720-Daily-Bell-Ringers-Spiral-Review-17012411",
+     "key": "G5_YR",
+     "img": "/assets/images/warmups/g5_yr.jpg"
+    }
+   },
+   {
+    "key": "G6",
+    "label": "6th Grade",
+    "slug": "grade-6",
+    "quarters": [
+     {
+      "id": "16471750",
+      "title": "6th Grade Math Warm-Ups Q1 | Ratios & Rates Bell Ringers Spiral Review",
+      "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Q1-Ratios-Rates-Bell-Ringers-Spiral-Review-16471750",
+      "key": "G6_Q1",
+      "n": 1,
+      "name": "Ratios, Rates & Percent",
+      "pages": 157,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Ratios — concept and notation",
+        "std": "6.RP.A.1"
+       },
+       {
+        "week": 2,
+        "topic": "Ratios — concept and notation",
+        "std": "6.RP.A.1"
+       },
+       {
+        "week": 3,
+        "topic": "Unit rates",
+        "std": "6.RP.A.2"
+       },
+       {
+        "week": 4,
+        "topic": "Unit rates",
+        "std": "6.RP.A.2"
+       },
+       {
+        "week": 5,
+        "topic": "Ratio tables and equivalent ratios",
+        "std": "6.RP.A.3a"
+       },
+       {
+        "week": 6,
+        "topic": "Ratio tables and equivalent ratios",
+        "std": "6.RP.A.3a"
+       },
+       {
+        "week": 7,
+        "topic": "Percent problems",
+        "std": "6.RP.A.3c"
+       },
+       {
+        "week": 8,
+        "topic": "Unit conversion",
+        "std": "6.RP.A.3d"
+       },
+       {
+        "week": 9,
+        "topic": "GCF and LCM",
+        "std": "6.NS.B.4"
+       }
+      ],
+      "img": "/assets/images/warmups/g6_q1.jpg"
+     },
+     {
+      "id": "16471956",
+      "title": "6th Grade Math Warm-Ups Q2 | Number System Bell Ringers Spiral Review",
+      "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Q2-Number-System-Bell-Ringers-Spiral-Review-16471956",
+      "key": "G6_Q2",
+      "n": 2,
+      "name": "The Number System",
+      "pages": 158,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "GCF and LCM",
+        "std": "6.NS.B.4"
+       },
+       {
+        "week": 2,
+        "topic": "GCF and LCM",
+        "std": "6.NS.B.4"
+       },
+       {
+        "week": 3,
+        "topic": "Dividing fractions",
+        "std": "6.NS.A.1"
+       },
+       {
+        "week": 4,
+        "topic": "Dividing fractions",
+        "std": "6.NS.A.1"
+       },
+       {
+        "week": 5,
+        "topic": "Multi-digit division",
+        "std": "6.NS.B.2"
+       },
+       {
+        "week": 6,
+        "topic": "Multi-digit decimal operations",
+        "std": "6.NS.B.3"
+       },
+       {
+        "week": 7,
+        "topic": "Positive and negative numbers",
+        "std": "6.NS.C.5"
+       },
+       {
+        "week": 8,
+        "topic": "Rational numbers on the number line",
+        "std": "6.NS.C.6"
+       },
+       {
+        "week": 9,
+        "topic": "Comparing and ordering rationals",
+        "std": "6.NS.C.7"
+       }
+      ],
+      "img": "/assets/images/warmups/g6_q2.jpg"
+     },
+     {
+      "id": "16472163",
+      "title": "6th Grade Math Warm-Ups Q3 | Expressions & Equations Bell Ringers Spiral Review",
+      "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Q3-Expressions-Equations-Bell-Ringers-Spiral-Review-16472163",
+      "key": "G6_Q3",
+      "n": 3,
+      "name": "Expressions & Equations",
+      "pages": 157,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Exponents and order of operations",
+        "std": "6.EE.A.1"
+       },
+       {
+        "week": 2,
+        "topic": "Exponents and order of operations",
+        "std": "6.EE.A.1"
+       },
+       {
+        "week": 3,
+        "topic": "Writing and evaluating expressions",
+        "std": "6.EE.A.2"
+       },
+       {
+        "week": 4,
+        "topic": "Writing and evaluating expressions",
+        "std": "6.EE.A.2"
+       },
+       {
+        "week": 5,
+        "topic": "Equivalent expressions",
+        "std": "6.EE.A.3"
+       },
+       {
+        "week": 6,
+        "topic": "Solving equations",
+        "std": "6.EE.B.7"
+       },
+       {
+        "week": 7,
+        "topic": "Solving equations",
+        "std": "6.EE.B.7"
+       },
+       {
+        "week": 8,
+        "topic": "Inequalities",
+        "std": "6.EE.B.8"
+       },
+       {
+        "week": 9,
+        "topic": "Area of polygons",
+        "std": "6.G.A.1"
+       }
+      ],
+      "img": "/assets/images/warmups/g6_q3.jpg"
+     },
+     {
+      "id": "16472879",
+      "title": "6th Grade Math Warm-Ups Q4 | Geometry & Statistics Bell Ringers Spiral Review",
+      "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Q4-Geometry-Statistics-Bell-Ringers-Spiral-Review-16472879",
+      "key": "G6_Q4",
+      "n": 4,
+      "name": "Geometry & Statistics",
+      "pages": 158,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Volume — fractional edge lengths",
+        "std": "6.G.A.2"
+       },
+       {
+        "week": 2,
+        "topic": "Volume — fractional edge lengths",
+        "std": "6.G.A.2"
+       },
+       {
+        "week": 3,
+        "topic": "Nets and surface area",
+        "std": "6.G.A.4"
+       },
+       {
+        "week": 4,
+        "topic": "Polygons on the coordinate plane",
+        "std": "6.G.A.3"
+       },
+       {
+        "week": 5,
+        "topic": "Measures of center and spread",
+        "std": "6.SP.A.3"
+       },
+       {
+        "week": 6,
+        "topic": "Displaying data distributions",
+        "std": "6.SP.B.4"
+       },
+       {
+        "week": 7,
+        "topic": "Displaying data distributions",
+        "std": "6.SP.B.4"
+       },
+       {
+        "week": 8,
+        "topic": "Ratio and proportion spiral",
+        "std": "6.RP.A.3"
+       },
+       {
+        "week": 9,
+        "topic": "Expressions and equations spiral",
+        "std": "6.EE.B.7"
+       }
+      ],
+      "img": "/assets/images/warmups/g6_q4.jpg"
+     }
+    ],
+    "s1": {
+     "id": "16995274",
+     "title": "6th Grade Math Warm-Ups Semester 1 Bundle | Bell Ringers Spiral Review",
+     "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Semester-1-Bundle-Bell-Ringers-Spiral-Review-16995274",
+     "key": "G6_S1",
+     "img": "/assets/images/warmups/g6_s1.jpg"
+    },
+    "s2": {
+     "id": "16995277",
+     "title": "6th Grade Math Warm-Ups Semester 2 Bundle | Bell Ringers Spiral Review",
+     "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Semester-2-Bundle-Bell-Ringers-Spiral-Review-16995277",
+     "key": "G6_S2",
+     "img": "/assets/images/warmups/g6_s2.jpg"
+    },
+    "yr": {
+     "id": "16473089",
+     "title": "6th Grade Math Warm-Ups Full Year Bundle | 180 Days Spiral Review CCSS",
+     "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Full-Year-Bundle-180-Days-Spiral-Review-CCSS-16473089",
+     "key": "G6_YR",
+     "img": "/assets/images/warmups/g6_yr.jpg"
+    },
+    "free": {
+     "id": "17172936",
+     "title": "FREE 6th Grade Math Warm-Ups | Week 1 Daily Spiral Review Bell Ringers",
+     "url": "https://www.teacherspayteachers.com/Product/FREE-6th-Grade-Math-Warm-Ups-Week-1-Daily-Spiral-Review-Bell-Ringers-17172936",
+     "key": "F_G6",
+     "img": "/assets/images/warmups/f_g6.jpg"
+    },
+    "first20": {
+     "id": "16163674",
+     "title": "6th Grade Math Warm-Ups First 20 Days | Bell Ringers | Printable + Google Slides",
+     "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-First-20-Days-Bell-Ringers-Printable-Google-Slides-16163674",
+     "key": "D20_G6",
+     "img": "/assets/images/warmups/d20_g6.jpg"
+    }
+   },
+   {
+    "key": "G7",
+    "label": "7th Grade",
+    "slug": "grade-7",
+    "quarters": [
+     {
+      "id": "16483322",
+      "title": "7th Grade Math Warm-Ups Q1 | Ratios & Proportions Bell Ringers Spiral Review",
+      "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Q1-Ratios-Proportions-Bell-Ringers-Spiral-Review-16483322",
+      "key": "G7_Q1",
+      "n": 1,
+      "name": "Ratios & Proportions",
+      "pages": 157,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Unit rates with fractions",
+        "std": "7.RP.A.1"
+       },
+       {
+        "week": 2,
+        "topic": "Unit rates with fractions",
+        "std": "7.RP.A.1"
+       },
+       {
+        "week": 3,
+        "topic": "Identify proportional relationships",
+        "std": "7.RP.A.2a"
+       },
+       {
+        "week": 4,
+        "topic": "Constant of proportionality",
+        "std": "7.RP.A.2b"
+       },
+       {
+        "week": 5,
+        "topic": "Equation y = kx",
+        "std": "7.RP.A.2c"
+       },
+       {
+        "week": 6,
+        "topic": "Interpret graph points",
+        "std": "7.RP.A.2d"
+       },
+       {
+        "week": 7,
+        "topic": "Percent problems",
+        "std": "7.RP.A.3"
+       },
+       {
+        "week": 8,
+        "topic": "Percent problems",
+        "std": "7.RP.A.3"
+       },
+       {
+        "week": 9,
+        "topic": "Percent problems",
+        "std": "7.RP.A.3"
+       }
+      ],
+      "img": "/assets/images/warmups/g7_q1.jpg"
+     },
+     {
+      "id": "16483561",
+      "title": "7th Grade Math Warm-Ups Q2 | Integers & Rational Numbers Bell Ringers",
+      "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Q2-Integers-Rational-Numbers-Bell-Ringers-16483561",
+      "key": "G7_Q2",
+      "n": 2,
+      "name": "Rational Numbers",
+      "pages": 157,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Additive inverses",
+        "std": "7.NS.A.1a"
+       },
+       {
+        "week": 2,
+        "topic": "Integer addition on number line",
+        "std": "7.NS.A.1b"
+       },
+       {
+        "week": 3,
+        "topic": "Subtraction as additive inverse",
+        "std": "7.NS.A.1c"
+       },
+       {
+        "week": 4,
+        "topic": "Properties — rational number ops",
+        "std": "7.NS.A.1d"
+       },
+       {
+        "week": 5,
+        "topic": "Multiply integers — sign rules",
+        "std": "7.NS.A.2a"
+       },
+       {
+        "week": 6,
+        "topic": "Rational number products/quotients",
+        "std": "7.NS.A.2c"
+       },
+       {
+        "week": 7,
+        "topic": "Rational numbers to decimals",
+        "std": "7.NS.A.2d"
+       },
+       {
+        "week": 8,
+        "topic": "Real-world rational number ops",
+        "std": "7.NS.A.3"
+       },
+       {
+        "week": 9,
+        "topic": "Properties — rational number ops",
+        "std": "7.NS.A.1d"
+       }
+      ],
+      "img": "/assets/images/warmups/g7_q2.jpg"
+     },
+     {
+      "id": "16483423",
+      "title": "7th Grade Math Warm-Ups Q3 | Expressions & Equations Bell Ringers Spiral Review",
+      "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Q3-Expressions-Equations-Bell-Ringers-Spiral-Review-16483423",
+      "key": "G7_Q3",
+      "n": 3,
+      "name": "Expressions & Equations",
+      "pages": 157,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Add/subtract linear expressions",
+        "std": "7.EE.A.1"
+       },
+       {
+        "week": 2,
+        "topic": "Equivalent expressions",
+        "std": "7.EE.A.2"
+       },
+       {
+        "week": 3,
+        "topic": "Multi-step rational number problems",
+        "std": "7.EE.B.3"
+       },
+       {
+        "week": 4,
+        "topic": "Multi-step rational number problems",
+        "std": "7.EE.B.3"
+       },
+       {
+        "week": 5,
+        "topic": "Solve two-step equations",
+        "std": "7.EE.B.4a"
+       },
+       {
+        "week": 6,
+        "topic": "Solve two-step equations",
+        "std": "7.EE.B.4a"
+       },
+       {
+        "week": 7,
+        "topic": "Solve and graph inequalities",
+        "std": "7.EE.B.4b"
+       },
+       {
+        "week": 8,
+        "topic": "Solve and graph inequalities",
+        "std": "7.EE.B.4b"
+       },
+       {
+        "week": 9,
+        "topic": "Add/subtract linear expressions",
+        "std": "7.EE.A.1"
+       }
+      ],
+      "img": "/assets/images/warmups/g7_q3.jpg"
+     },
+     {
+      "id": "16483554",
+      "title": "7th Grade Math Warm-Ups Q4 | Geometry & Statistics Bell Ringers Spiral Review",
+      "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Q4-Geometry-Statistics-Bell-Ringers-Spiral-Review-16483554",
+      "key": "G7_Q4",
+      "n": 4,
+      "name": "Geometry & Probability",
+      "pages": 157,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Scale drawings",
+        "std": "7.G.A.1"
+       },
+       {
+        "week": 2,
+        "topic": "Triangles from conditions",
+        "std": "7.G.A.2"
+       },
+       {
+        "week": 3,
+        "topic": "Cross-sections of 3D figures",
+        "std": "7.G.A.3"
+       },
+       {
+        "week": 4,
+        "topic": "Circumference and area of circles",
+        "std": "7.G.B.4"
+       },
+       {
+        "week": 5,
+        "topic": "Angle relationships",
+        "std": "7.G.B.5"
+       },
+       {
+        "week": 6,
+        "topic": "Area, surface area, volume",
+        "std": "7.G.B.6"
+       },
+       {
+        "week": 7,
+        "topic": "Statistical sampling",
+        "std": "7.SP.A.1"
+       },
+       {
+        "week": 8,
+        "topic": "Measures of center and variability",
+        "std": "7.SP.B.4"
+       },
+       {
+        "week": 9,
+        "topic": "Compound events",
+        "std": "7.SP.C.8"
+       }
+      ],
+      "img": "/assets/images/warmups/g7_q4.jpg"
+     }
+    ],
+    "s1": {
+     "id": "16998900",
+     "title": "7th Grade Math Warm-Ups Semester 1 Bundle | Bell Ringers Spiral Review",
+     "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Semester-1-Bundle-Bell-Ringers-Spiral-Review-16998900",
+     "key": "G7_S1",
+     "img": "/assets/images/warmups/g7_s1.jpg"
+    },
+    "s2": {
+     "id": "16998901",
+     "title": "7th Grade Math Warm-Ups Semester 2 Bundle | Bell Ringers Spiral Review",
+     "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Semester-2-Bundle-Bell-Ringers-Spiral-Review-16998901",
+     "key": "G7_S2",
+     "img": "/assets/images/warmups/g7_s2.jpg"
+    },
+    "yr": {
+     "id": "16483678",
+     "title": "7th Grade Math Warm-Ups Full Year Bundle | 180 Days Spiral Review CCSS",
+     "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Full-Year-Bundle-180-Days-Spiral-Review-CCSS-16483678",
+     "key": "G7_YR",
+     "img": "/assets/images/warmups/g7_yr.jpg"
+    },
+    "free": {
+     "id": "17173206",
+     "title": "FREE 7th Grade Math Warm-Ups | Week 1 Daily Spiral Review Bell Ringers",
+     "url": "https://www.teacherspayteachers.com/Product/FREE-7th-Grade-Math-Warm-Ups-Week-1-Daily-Spiral-Review-Bell-Ringers-17173206",
+     "key": "F_G7",
+     "img": "/assets/images/warmups/f_g7.jpg"
+    },
+    "first20": {
+     "id": "16163730",
+     "title": "7th Grade Math Warm-Ups First 20 Days | Bell Ringers | Printable + Google Slides",
+     "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-First-20-Days-Bell-Ringers-Printable-Google-Slides-16163730",
+     "key": "D20_G7",
+     "img": "/assets/images/warmups/d20_g7.jpg"
+    }
+   },
+   {
+    "key": "G8",
+    "label": "8th Grade",
+    "slug": "grade-8",
+    "quarters": [
+     {
+      "id": "16487837",
+      "title": "8th Grade Math Warm-Ups Q1 | Exponents & Real Numbers Bell Ringers Spiral Review",
+      "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Q1-Exponents-Real-Numbers-Bell-Ringers-Spiral-Review-16487837",
+      "key": "G8_Q1",
+      "n": 1,
+      "name": "Exponents & Real Numbers",
+      "pages": 160,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Rational vs. irrational numbers",
+        "std": "8.NS.A.1"
+       },
+       {
+        "week": 2,
+        "topic": "Estimate irrational numbers",
+        "std": "8.NS.A.2"
+       },
+       {
+        "week": 3,
+        "topic": "Properties of integer exponents",
+        "std": "8.EE.A.1"
+       },
+       {
+        "week": 4,
+        "topic": "Zero and negative exponents",
+        "std": "8.EE.A.1"
+       },
+       {
+        "week": 5,
+        "topic": "Square roots and cube roots",
+        "std": "8.EE.A.2"
+       },
+       {
+        "week": 6,
+        "topic": "Solve x² = p and x³ = p",
+        "std": "8.EE.A.2"
+       },
+       {
+        "week": 7,
+        "topic": "Scientific notation",
+        "std": "8.EE.A.3"
+       },
+       {
+        "week": 8,
+        "topic": "Operations in scientific notation",
+        "std": "8.EE.A.4"
+       },
+       {
+        "week": 9,
+        "topic": "Exponents and roots — spiral review",
+        "std": "8.EE.A.2"
+       }
+      ],
+      "img": "/assets/images/warmups/g8_q1.jpg"
+     },
+     {
+      "id": "16487956",
+      "title": "8th Grade Math Warm-Ups Q2 | Linear Equations & Functions Bell Ringers",
+      "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Q2-Linear-Equations-Functions-Bell-Ringers-16487956",
+      "key": "G8_Q2",
+      "n": 2,
+      "name": "Linear Functions & Systems",
+      "pages": 160,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Proportional relationships and slope",
+        "std": "8.EE.B.5"
+       },
+       {
+        "week": 2,
+        "topic": "Slope, y-intercept, and y = mx + b",
+        "std": "8.EE.B.6"
+       },
+       {
+        "week": 3,
+        "topic": "Understanding functions",
+        "std": "8.F.A.1"
+       },
+       {
+        "week": 4,
+        "topic": "Compare two functions",
+        "std": "8.F.A.2"
+       },
+       {
+        "week": 5,
+        "topic": "Linear vs. nonlinear functions",
+        "std": "8.F.A.3"
+       },
+       {
+        "week": 6,
+        "topic": "One, none, or infinitely many solutions",
+        "std": "8.EE.C.7a"
+       },
+       {
+        "week": 7,
+        "topic": "Solve multi-step linear equations",
+        "std": "8.EE.C.7b"
+       },
+       {
+        "week": 8,
+        "topic": "Solve systems by graphing",
+        "std": "8.EE.C.8b"
+       },
+       {
+        "week": 9,
+        "topic": "Systems of equations in context",
+        "std": "8.EE.C.8c"
+       }
+      ],
+      "img": "/assets/images/warmups/g8_q2.jpg"
+     },
+     {
+      "id": "16488011",
+      "title": "8th Grade Math Warm-Ups Q3 | Transformations & Pythagorean Bell Ringers",
+      "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Q3-Transformations-Pythagorean-Bell-Ringers-16488011",
+      "key": "G8_Q3",
+      "n": 3,
+      "name": "Transformations & Pythagorean Theorem",
+      "pages": 160,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Rate of change from tables",
+        "std": "8.F.B.4"
+       },
+       {
+        "week": 2,
+        "topic": "Qualitative graphs",
+        "std": "8.F.B.5"
+       },
+       {
+        "week": 3,
+        "topic": "Rigid transformations",
+        "std": "8.G.A.1"
+       },
+       {
+        "week": 4,
+        "topic": "Transformations on the coordinate plane",
+        "std": "8.G.A.3"
+       },
+       {
+        "week": 5,
+        "topic": "Dilations and similarity",
+        "std": "8.G.A.4"
+       },
+       {
+        "week": 6,
+        "topic": "Angle relationships",
+        "std": "8.G.A.5"
+       },
+       {
+        "week": 7,
+        "topic": "The Pythagorean Theorem",
+        "std": "8.G.B.7"
+       },
+       {
+        "week": 8,
+        "topic": "Pythagorean Theorem in three dimensions",
+        "std": "8.G.B.7"
+       },
+       {
+        "week": 9,
+        "topic": "Distance on the coordinate plane",
+        "std": "8.G.B.8"
+       }
+      ],
+      "img": "/assets/images/warmups/g8_q3.jpg"
+     },
+     {
+      "id": "16488075",
+      "title": "8th Grade Math Warm-Ups Q4 | Volume & Scatter Plots Bell Ringers CCSS",
+      "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Q4-Volume-Scatter-Plots-Bell-Ringers-CCSS-16488075",
+      "key": "G8_Q4",
+      "n": 4,
+      "name": "Volume & Scatter Plots",
+      "pages": 160,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Volume of cylinders",
+        "std": "8.G.C.9"
+       },
+       {
+        "week": 2,
+        "topic": "Volume of cones",
+        "std": "8.G.C.9"
+       },
+       {
+        "week": 3,
+        "topic": "Volume of spheres and composite solids",
+        "std": "8.G.C.9"
+       },
+       {
+        "week": 4,
+        "topic": "Scatter plots — clusters and outliers",
+        "std": "8.SP.A.1"
+       },
+       {
+        "week": 5,
+        "topic": "Patterns of association",
+        "std": "8.SP.A.1"
+       },
+       {
+        "week": 6,
+        "topic": "Line of best fit",
+        "std": "8.SP.A.2"
+       },
+       {
+        "week": 7,
+        "topic": "Interpret the equation of a best-fit line",
+        "std": "8.SP.A.3"
+       },
+       {
+        "week": 8,
+        "topic": "Two-way tables",
+        "std": "8.SP.A.4"
+       },
+       {
+        "week": 9,
+        "topic": "Volume and statistics — spiral review",
+        "std": "8.G.C.9"
+       }
+      ],
+      "img": "/assets/images/warmups/g8_q4.jpg"
+     }
+    ],
+    "s1": {
+     "id": "17011023",
+     "title": "8th Grade Math Warm-Ups Semester 1 Bundle | Bell Ringers Spiral Review",
+     "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Semester-1-Bundle-Bell-Ringers-Spiral-Review-17011023",
+     "key": "G8_S1",
+     "img": "/assets/images/warmups/g8_s1.jpg"
+    },
+    "s2": {
+     "id": "17011037",
+     "title": "8th Grade Math Warm-Ups Semester 2 Bundle | Bell Ringers Spiral Review",
+     "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Semester-2-Bundle-Bell-Ringers-Spiral-Review-17011037",
+     "key": "G8_S2",
+     "img": "/assets/images/warmups/g8_s2.jpg"
+    },
+    "yr": {
+     "id": "16488236",
+     "title": "8th Grade Math Warm-Ups Full Year Bundle | 180 Days Spiral Review CCSS",
+     "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Full-Year-Bundle-180-Days-Spiral-Review-CCSS-16488236",
+     "key": "G8_YR",
+     "img": "/assets/images/warmups/g8_yr.jpg"
+    },
+    "free": {
+     "id": "17173207",
+     "title": "FREE 8th Grade Math Warm-Ups | Week 1 Daily Spiral Review Bell Ringers",
+     "url": "https://www.teacherspayteachers.com/Product/FREE-8th-Grade-Math-Warm-Ups-Week-1-Daily-Spiral-Review-Bell-Ringers-17173207",
+     "key": "F_G8",
+     "img": "/assets/images/warmups/f_g8.jpg"
+    },
+    "first20": {
+     "id": "16164424",
+     "title": "8th Grade Math Warm-Ups First 20 Days | Bell Ringers | Printable + Google Slides",
+     "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-First-20-Days-Bell-Ringers-Printable-Google-Slides-16164424",
+     "key": "D20_G8",
+     "img": "/assets/images/warmups/d20_g8.jpg"
+    }
+   },
+   {
+    "key": "GA1",
+    "label": "Algebra 1",
+    "slug": "algebra-1",
+    "quarters": [
+     {
+      "id": "16513182",
+      "title": "Algebra 1 Warm-Ups Quarter 1 Bell Ringers Expressions Equations PPT Slides",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-Quarter-1-Bell-Ringers-Expressions-Equations-PPT-Slides-16513182",
+      "key": "GA1_Q1",
+      "n": 1,
+      "name": "Expressions & Equations",
+      "pages": 160,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Parts of an Expression",
+        "std": "HSA-SSE.A.1a"
+       },
+       {
+        "week": 2,
+        "topic": "Interpreting Expressions in Context",
+        "std": "HSA-SSE.A.1b"
+       },
+       {
+        "week": 3,
+        "topic": "Properties of Equality",
+        "std": "HSA-REI.A.1"
+       },
+       {
+        "week": 4,
+        "topic": "One- & Two-Step Equations",
+        "std": "HSA-REI.B.3"
+       },
+       {
+        "week": 5,
+        "topic": "Multi-Step Equations",
+        "std": "HSA-REI.B.3"
+       },
+       {
+        "week": 6,
+        "topic": "Variables on Both Sides & Special Solutions",
+        "std": "HSA-REI.B.3"
+       },
+       {
+        "week": 7,
+        "topic": "Solve & Graph Linear Inequalities",
+        "std": "HSA-REI.B.3"
+       },
+       {
+        "week": 8,
+        "topic": "Create Equations & Inequalities from Context",
+        "std": "HSA-CED.A.1"
+       },
+       {
+        "week": 9,
+        "topic": "Literal Equations & Rearranging Formulas",
+        "std": "HSA-CED.A.4"
+       }
+      ],
+      "img": "/assets/images/warmups/ga1_q1.jpg"
+     },
+     {
+      "id": "16513186",
+      "title": "Algebra 1 Warm-Ups Quarter 2 Bell Ringers Functions Graphing PPT Google Slides",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-Quarter-2-Bell-Ringers-Functions-Graphing-PPT-Google-Slides-16513186",
+      "key": "GA1_Q2",
+      "n": 2,
+      "name": "Functions & Graphing",
+      "pages": 161,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "What Is a Function?",
+        "std": "HSF-IF.A.1"
+       },
+       {
+        "week": 2,
+        "topic": "Function Notation",
+        "std": "HSF-IF.A.2"
+       },
+       {
+        "week": 3,
+        "topic": "Intercepts and Slope from a Graph",
+        "std": "HSF-IF.B.4"
+       },
+       {
+        "week": 4,
+        "topic": "Domain & Range in Context",
+        "std": "HSF-IF.B.5"
+       },
+       {
+        "week": 5,
+        "topic": "Average Rate of Change",
+        "std": "HSF-IF.B.6"
+       },
+       {
+        "week": 6,
+        "topic": "Graphing Linear Functions",
+        "std": "HSF-IF.C.7a"
+       },
+       {
+        "week": 7,
+        "topic": "Creating Equations & Inequalities in Two Variables",
+        "std": "HSA-CED.A.2"
+       },
+       {
+        "week": 8,
+        "topic": "Solving Systems Graphically",
+        "std": "HSA-REI.C.6"
+       },
+       {
+        "week": 9,
+        "topic": "Graphing Linear Inequalities in Two Variables",
+        "std": "HSA-REI.D.12"
+       }
+      ],
+      "img": "/assets/images/warmups/ga1_q2.jpg"
+     },
+     {
+      "id": "16513191",
+      "title": "Algebra 1 Warm-Ups Quarter 3 Bell Ringers Polynomials Quadratics PPT Slides",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-Quarter-3-Bell-Ringers-Polynomials-Quadratics-PPT-Slides-16513191",
+      "key": "GA1_Q3",
+      "n": 3,
+      "name": "Polynomials & Quadratics",
+      "pages": 161,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Add, Subtract & Multiply Polynomials",
+        "std": "HSA-APR.A.1"
+       },
+       {
+        "week": 2,
+        "topic": "Recognizing Structure in Expressions",
+        "std": "HSA-SSE.A.2"
+       },
+       {
+        "week": 3,
+        "topic": "Factoring Trinomials (x² + bx + c)",
+        "std": "HSA-SSE.B.3a"
+       },
+       {
+        "week": 4,
+        "topic": "Factoring ax²+bx+c & Difference of Squares",
+        "std": "HSA-SSE.B.3a"
+       },
+       {
+        "week": 5,
+        "topic": "Completing the Square & Vertex Form",
+        "std": "HSA-SSE.B.3b"
+       },
+       {
+        "week": 6,
+        "topic": "Solving Quadratics by Factoring & Completing the Square",
+        "std": "HSA-REI.B.4a"
+       },
+       {
+        "week": 7,
+        "topic": "Quadratic Formula & Discriminant",
+        "std": "HSA-REI.B.4b"
+       },
+       {
+        "week": 8,
+        "topic": "Graphing Quadratics",
+        "std": "HSF-IF.C.7a"
+       },
+       {
+        "week": 9,
+        "topic": "Key Features of Quadratic Graphs in Context",
+        "std": "HSF-IF.B.4"
+       }
+      ],
+      "img": "/assets/images/warmups/ga1_q3.jpg"
+     },
+     {
+      "id": "16513194",
+      "title": "Algebra 1 Warm-Ups Quarter 4 Bell Ringers Exponents Statistics PPT Slides",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-Quarter-4-Bell-Ringers-Exponents-Statistics-PPT-Slides-16513194",
+      "key": "GA1_Q4",
+      "n": 4,
+      "name": "Exponentials & Statistics",
+      "pages": 161,
+      "weeks": [
+       {
+        "week": 1,
+        "topic": "Linear vs. Exponential",
+        "std": "HSF-LE.A.1a"
+       },
+       {
+        "week": 2,
+        "topic": "Growth vs. Decay & Growth Factor",
+        "std": "HSF-LE.A.1c"
+       },
+       {
+        "week": 3,
+        "topic": "Constructing Exponential & Linear Functions",
+        "std": "HSF-LE.A.2"
+       },
+       {
+        "week": 4,
+        "topic": "Exponential Eventually Exceeds Linear",
+        "std": "HSF-LE.A.3"
+       },
+       {
+        "week": 5,
+        "topic": "Graphing Exponential Functions",
+        "std": "HSF-IF.C.7e"
+       },
+       {
+        "week": 6,
+        "topic": "Shapes of Distributions",
+        "std": "HSS-ID.A.1"
+       },
+       {
+        "week": 7,
+        "topic": "Center & Spread",
+        "std": "HSS-ID.A.2"
+       },
+       {
+        "week": 8,
+        "topic": "Two-Way Frequency Tables",
+        "std": "HSS-ID.B.5"
+       },
+       {
+        "week": 9,
+        "topic": "Scatter Plots & Line of Best Fit",
+        "std": "HSS-ID.B.6a"
+       }
+      ],
+      "img": "/assets/images/warmups/ga1_q4.jpg"
+     }
+    ],
+    "s1": {
+     "id": "16992249",
+     "title": "Algebra 1 Warm-Ups Semester 1 Bundle Quarters 1-2 Bell Ringers PPT Google Slides",
+     "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-Semester-1-Bundle-Quarters-1-2-Bell-Ringers-PPT-Google-Slides-16992249",
+     "key": "GA1_S1",
+     "img": "/assets/images/warmups/ga1_s1.jpg"
+    },
+    "s2": {
+     "id": "16992256",
+     "title": "Algebra 1 Warm-Ups Semester 2 Bundle Quarters 3-4 Bell Ringers PPT Google Slides",
+     "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-Semester-2-Bundle-Quarters-3-4-Bell-Ringers-PPT-Google-Slides-16992256",
+     "key": "GA1_S2",
+     "img": "/assets/images/warmups/ga1_s2.jpg"
+    },
+    "yr": {
+     "id": "16992279",
+     "title": "Algebra 1 Warm-Ups FULL YEAR Bundle Daily Bell Ringers PPT Google Slides Growing",
+     "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-FULL-YEAR-Bundle-Daily-Bell-Ringers-PPT-Google-Slides-Growing-16992279",
+     "key": "GA1_YR",
+     "img": "/assets/images/warmups/ga1_yr.jpg"
+    },
+    "free": {
+     "id": "17173208",
+     "title": "FREE Algebra 1 Warm-Ups | Week 1 Daily Bell Ringers Spiral Review",
+     "url": "https://www.teacherspayteachers.com/Product/FREE-Algebra-1-Warm-Ups-Week-1-Daily-Bell-Ringers-Spiral-Review-17173208",
+     "key": "F_GA1",
+     "img": "/assets/images/warmups/f_ga1.jpg"
+    }
+   }
+  ],
+  "b678": {
+   "id": "16488350",
+   "title": "6th 7th 8th Grade Math Warm-Ups Bundle | 540 Daily Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/6th-7th-8th-Grade-Math-Warm-Ups-Bundle-540-Daily-Bell-Ringers-Spiral-Review-16488350",
+   "key": "B678",
+   "img": "/assets/images/warmups/b678.jpg"
+  },
+  "bts": {
+   "id": "16164456",
+   "title": "Back to School Math Warm-Ups Bell Ringers | 6th 7th 8th Grade Bell Work Do Now",
+   "url": "https://www.teacherspayteachers.com/Product/Back-to-School-Math-Warm-Ups-Bell-Ringers-6th-7th-8th-Grade-Bell-Work-Do-Now-16164456",
+   "key": "BTS",
+   "img": "/assets/images/warmups/bts.jpg"
+  }
+ },
+ "readiness": {
+  "checks": [
+   {
+    "id": "17620895",
+    "title": "6th Grade Math Readiness Check Beginning of Year Diagnostic Pre-Assessment",
+    "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Readiness-Check-Beginning-of-Year-Diagnostic-Pre-Assessment-17620895",
+    "key": "rc6",
+    "grade": "6th Grade",
+    "prior": "5th grade",
+    "domains": [
+     "Place Value and Decimals",
+     "Multi-Digit Multiplication and Division",
+     "Adding and Subtracting Fractions",
+     "Multiplying and Dividing Fractions",
+     "Order of Operations",
+     "Coordinate Plane and Volume"
+    ],
+    "questions": 24,
+    "img": "/assets/images/readiness/rc6.jpg"
+   },
+   {
+    "id": "16643645",
+    "title": "7th Grade Math Readiness Check | Beginning of Year Diagnostic Pre-Assessment",
+    "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Readiness-Check-Beginning-of-Year-Diagnostic-Pre-Assessment-16643645",
+    "key": "rc7",
+    "grade": "7th Grade",
+    "prior": "6th grade",
+    "domains": [
+     "Ratios and Unit Rates",
+     "Fraction Division and Decimal Operations",
+     "GCF and LCM",
+     "Integers and Rational Numbers",
+     "Expressions and One-Step Equations",
+     "Geometry"
+    ],
+    "questions": 24,
+    "img": "/assets/images/readiness/rc7.jpg"
+   },
+   {
+    "id": "16643647",
+    "title": "8th Grade Math Readiness Check | Beginning of Year Diagnostic Pre-Assessment",
+    "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Readiness-Check-Beginning-of-Year-Diagnostic-Pre-Assessment-16643647",
+    "key": "rc8",
+    "grade": "8th Grade",
+    "prior": "7th grade",
+    "domains": [
+     "Rational Number Operations",
+     "Proportional Relationships",
+     "Percent Problems",
+     "Expressions, Equations and Inequalities",
+     "Geometry"
+    ],
+    "questions": 24,
+    "img": "/assets/images/readiness/rc8.jpg"
+   },
+   {
+    "id": "16643650",
+    "title": "Algebra 1 Math Readiness Check | Beginning of Year Diagnostic Pre-Assessment",
+    "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Math-Readiness-Check-Beginning-of-Year-Diagnostic-Pre-Assessment-16643650",
+    "key": "rca1",
+    "grade": "Algebra 1",
+    "prior": "8th grade",
+    "domains": [
+     "Exponents, Roots and Scientific Notation",
+     "Solving Linear Equations",
+     "Slope and Linear Equations",
+     "Functions",
+     "Systems of Equations",
+     "Pythagorean Theorem and Distance"
+    ],
+    "questions": 24,
+    "img": "/assets/images/readiness/rca1.jpg"
+   }
+  ],
+  "rc68": {
+   "id": "16643670",
+   "title": "6th 7th 8th Grade Math Diagnostic | Beginning of Year Readiness Pre-Assessment",
+   "url": "https://www.teacherspayteachers.com/Product/6th-7th-8th-Grade-Math-Diagnostic-Beginning-of-Year-Readiness-Pre-Assessment-16643670",
+   "key": "rc68",
+   "img": null
+  },
+  "rc78a": {
+   "id": "17371117",
+   "title": "7th, 8th & Algebra 1 Math Readiness Check Bundle | Beginning of Year Diagnostic",
+   "url": "https://www.teacherspayteachers.com/Product/7th-8th-Algebra-1-Math-Readiness-Check-Bundle-Beginning-of-Year-Diagnostic-17371117",
+   "key": "rc78a",
+   "img": null
+  },
+  "mini": {
+   "id": "16643656",
+   "title": "Back to School Math Diagnostic FREE | 6th 7th 8th Grade Beginning of Year",
+   "url": "https://www.teacherspayteachers.com/Product/Back-to-School-Math-Diagnostic-FREE-6th-7th-8th-Grade-Beginning-of-Year-16643656",
+   "key": "mini",
+   "img": "/assets/images/readiness/mini.jpg"
+  },
+  "eoy6": {
+   "id": "16213887",
+   "title": "6th Grade End of Year Math Assessment FREE | Final Review Skills Check Test",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-End-of-Year-Math-Assessment-FREE-Final-Review-Skills-Check-Test-16213887",
+   "key": "eoy6",
+   "img": "/assets/images/readiness/eoy6.jpg"
+  },
+  "eoy7": {
+   "id": "16214437",
+   "title": "7th Grade End of Year Math Assessment FREE | Final Review Skills Check Test",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-End-of-Year-Math-Assessment-FREE-Final-Review-Skills-Check-Test-16214437",
+   "key": "eoy7",
+   "img": "/assets/images/readiness/eoy7.jpg"
+  },
+  "eoy8": {
+   "id": "16214461",
+   "title": "8th Grade End of Year Math Assessment FREE | Final Review Skills Check Test",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-End-of-Year-Math-Assessment-FREE-Final-Review-Skills-Check-Test-16214461",
+   "key": "eoy8",
+   "img": "/assets/images/readiness/eoy8.jpg"
+  }
+ },
+ "motw": {
+  "motw6": {
+   "id": "16967975",
+   "title": "Mistake of the Week™ | 6th Grade Math Error Analysis Warm-Ups | 12 Weeks",
+   "url": "https://www.teacherspayteachers.com/Product/Mistake-of-the-Week-6th-Grade-Math-Error-Analysis-Warm-Ups-12-Weeks-16967975",
+   "key": "motw6",
+   "img": "/assets/images/motw/motw6.jpg"
+  },
+  "motw7": {
+   "id": "16647155",
+   "title": "Mistake of the Week™ | 7th Grade Math Error Analysis Warm-Ups | 12 Weeks",
+   "url": "https://www.teacherspayteachers.com/Product/Mistake-of-the-Week-7th-Grade-Math-Error-Analysis-Warm-Ups-12-Weeks-16647155",
+   "key": "motw7",
+   "img": "/assets/images/motw/motw7.jpg"
+  },
+  "motw8": {
+   "id": "16968052",
+   "title": "Mistake of the Week™ | 8th Grade Math Error Analysis Warm-Ups | 12 Weeks",
+   "url": "https://www.teacherspayteachers.com/Product/Mistake-of-the-Week-8th-Grade-Math-Error-Analysis-Warm-Ups-12-Weeks-16968052",
+   "key": "motw8",
+   "img": "/assets/images/motw/motw8.jpg"
+  },
+  "motwfree": {
+   "id": "17672163",
+   "title": "FREE Math Error Analysis Warm-Ups | Mistake of the Week™ Sampler | 6th 7th 8th",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-Math-Error-Analysis-Warm-Ups-Mistake-of-the-Week-Sampler-6th-7th-8th-17672163",
+   "key": "motwfree",
+   "img": "/assets/images/motw/motwfree.jpg"
+  },
+  "motwbundle": {
+   "id": "16968111",
+   "title": "Mistake of the Week™ Bundle | 6th 7th 8th Grade Math Error Analysis | 36 Weeks",
+   "url": "https://www.teacherspayteachers.com/Product/Mistake-of-the-Week-Bundle-6th-7th-8th-Grade-Math-Error-Analysis-36-Weeks-16968111",
+   "key": "motwbundle",
+   "img": null
+  }
+ }
+}

@@ -2490,10 +2490,11 @@ function nav(active) {
       <a class="nav__link" href="https://statetestmath.com/">State Tests</a>
       ${link('/catalog.html', 'Catalog', 'catalog')}
       ${link('/bundles.html', 'Bundles', 'bundles')}
+      ${link('/warm-ups.html', 'Warm-Ups', 'warm-ups')}
+      ${link('/readiness.html', 'Readiness', 'readiness')}
       ${link('/word-wall.html', 'Word Wall', 'word-wall')}
       ${link('/free.html', 'Free Resources', 'free')}
       ${link('/about.html', 'About', 'about')}
-      ${link('/contact.html', 'Contact', 'contact')}
       <a class="btn btn--primary btn--sm nav__cta" href="${TPT_STORE}" target="_blank" rel="noopener">TPT Store ${ICON.ext}</a>
     </nav>
   </div>
@@ -2573,6 +2574,8 @@ function footer(opts) {
           <li><a href="https://statetestmath.com/">State test practice</a></li>
           <li><a href="/catalog.html">All Skill Sheets</a></li>
           <li><a href="/bundles.html">Bundles</a></li>
+          <li><a href="/warm-ups.html">Warm-Ups</a></li>
+          <li><a href="/readiness.html">Readiness Checks</a></li>
           <li><a href="/grade-6.html">6th Grade</a></li>
           <li><a href="/grade-7.html">7th Grade</a></li>
           <li><a href="/grade-8.html">8th Grade</a></li>
@@ -3337,6 +3340,8 @@ function pageGrade(grade) {
   ${strandSections}
 
   ${bundleSection}
+
+  ${gradeClassroomBand(grade)}
 
   <section class="ctaband">
     <div class="wrap ctaband__inner reveal">
@@ -5017,8 +5022,407 @@ function pageIlearnHub() {
 ` + footer() + scripts();
 }
 
+/* ============================================================================
+   WARM-UPS + READINESS CHECKS   (v1.10.0 · 2026-09-19)
+   The store's #2 and #3 earning lines, which this site did not link at all. Data comes from
+   classroom_data.json, written by the state-testing repo's tools/site_export/mc678_classroom.py
+   from the listings' own sources of record (listing IDs, quarter names, each week's topic and
+   standard, readiness domains read from the live descriptions). Nothing here is typed by hand
+   that the data already knows, so a retitle or a new quarter only needs a re-export.
+   ============================================================================ */
+const CLASSROOM = JSON.parse(fs.readFileSync(path.join(ROOT, 'classroom_data.json'), 'utf8'));
+const WU = CLASSROOM.warmups;
+const RC = CLASSROOM.readiness;
+const MOTW = CLASSROOM.motw;
+// course key -> the site's grade accent (5th is forest, Algebra 1 gold, as on the Word Wall)
+const WU_ACCENT = { G5: 'forest', G6: 'teal', G7: 'coral', G8: 'navy', GA1: 'gold' };
+const WU_GRADE_PAGE = { G6: '/grade-6.html', G7: '/grade-7.html', G8: '/grade-8.html' };
+const WU_READINESS = { G6: 'rc6', G7: 'rc7', G8: 'rc8', GA1: 'rca1' };
+const WU_MOTW = { G6: 'motw6', G7: 'motw7', G8: 'motw8' };
+const CCSS_NOTE = 'Standard codes refer to the Common Core State Standards for Mathematics. Math Class 678 is an independent publisher, not affiliated with, sponsored by, or endorsed by NGA Center or CCSSO.';
+
+const WU_ROLES = [
+  ['Today’s Skill', 'The standard you are teaching now.'],
+  ['Recent Review', 'A standard taught in the last few weeks.'],
+  ['Spiral Review', 'An earlier or prerequisite skill, so nothing fades.'],
+  ['Word Problem', 'The skill applied in context.'],
+];
+const WU_INCLUDED = [
+  '45 warm-ups per quarter, four problems a day (9 weeks × 5 days); 180 in a full year',
+  'A projectable Teacher Deck for every week, in PowerPoint and PDF, with an answer-reveal slide after each day',
+  'A Google Slides copy link for every week and for each whole quarter',
+  'Student pages in four layouts: color or print-friendly, one day per page or two',
+  'Answer keys in color and print-friendly',
+  'Editable Word and PowerPoint files alongside every PDF',
+  'A Teacher Guide with the standards map and every Google Slides link',
+];
+const WU_FAQ = [
+  { q: 'How long does a warm-up take?', a: 'Five to eight minutes. Project the day’s slide while you take attendance, give students time to work the four problems, then advance to the answer-reveal slide for a quick check.' },
+  { q: 'Do they work in Google Slides?', a: 'Yes. Every week has a Google Slides copy link, and every quarter has a whole-quarter link, so you can make your own copy in Drive. The same decks come as PowerPoint and PDF.' },
+  { q: 'Can I buy one quarter at a time?', a: 'Yes. Each quarter is its own listing, the two semesters are bundles of two quarters, and the full year holds all four. Every option has the same four-part day and the same layouts.' },
+  { q: 'What do the four problems cover?', a: 'The same four roles every day: the standard you are teaching now, a recently taught standard, an earlier or prerequisite skill, and a word problem. The weekly topics and standards for every quarter are listed on each grade’s page.' },
+  { q: 'Is there a free week to try first?', a: 'Yes. Week 1 of Quarter 1 is free for 6th, 7th and 8th grade and Algebra 1, with the answer-reveal deck, student pages and answer key.' },
+];
+const RC_FAQ = [
+  { q: 'Why test last year’s skills instead of this year’s?', a: 'A pretest on this year’s standards quizzes students on material they have never been taught, so nearly everyone misses it and the results say nothing. Every item here maps to a standard from the grade before, so the results show what students kept over the summer.' },
+  { q: 'How long does it take?', a: 'The full check is 24 free-response questions, each with a self-rating. The free Day 1 Mini is five questions per grade and takes about ten minutes, including the self-ratings.' },
+  { q: 'What do I do with the results?', a: 'Score by domain on the Class Gap-Tracker, one row per domain and one column per student. A domain half the class misses is where your first warm-ups and reteach go, and the Shore Up These Skills page maps every domain to a resource for it.' },
+  { q: 'Can I edit it?', a: 'Yes. Every check comes as a fully editable Word file as well as a print-ready PDF.' },
+];
+
+function tptBtn(p, label, cls) {
+  return `<a class="btn ${cls || 'btn--primary'}" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(label)} ${ICON.ext}</a>`;
+}
+function faqBlock(list, heading) {
+  return `<section class="section faq" id="faq">
+    <div class="wrap">
+      <div class="sec-head" style="justify-content:center;text-align:center"><div class="sec-head__t"><span class="eyebrow">Questions</span><h2>${esc(heading)}</h2></div></div>
+      <div class="faq__list">
+        ${list.map(item => `<details class="faq__item reveal"><summary class="faq__q">${esc(item.q)}</summary><div class="faq__a"><p>${esc(item.a)}</p></div></details>`).join('\n        ')}
+      </div>
+    </div>
+  </section>`;
+}
+function faqSchema(list) {
+  return { '@context': 'https://schema.org', '@type': 'FAQPage',
+    mainEntity: list.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) };
+}
+function itemListSchema(name, items) {
+  return { '@context': 'https://schema.org', '@type': 'ItemList', name,
+    itemListElement: items.map((it, i) => ({ '@type': 'ListItem', position: i + 1, url: it.url.startsWith('http') ? it.url : SITE_URL + it.url, name: it.name })) };
+}
+function jsonld(...blocks) { return JSON.stringify(blocks.length === 1 ? blocks[0] : blocks); }
+
+/* A product tile that links out to TPT. `img` falls back to the brand tile. */
+function wuTile(o) {
+  return `<article class="cr-tile cr-tile--${o.accent || 'forest'}${o.feature ? ' cr-tile--feature' : ''} reveal">
+    <a class="cr-tile__media" href="${esc(o.url)}"${o.external ? ' target="_blank" rel="noopener"' : ''} tabindex="-1" aria-hidden="true">
+      ${o.img ? `<img src="${o.img}" alt="" width="640" height="640" loading="lazy" decoding="async">`
+              : `<span class="cr-tile__art"><span class="cr-tile__art-mark">${SVG.cardQuad}</span><span class="cr-tile__art-name">${esc(o.name)}</span></span>`}
+      ${o.badge && !o.img ? `<span class="cr-tile__badge">${esc(o.badge)}</span>` : ''}
+    </a>
+    <div class="cr-tile__body">
+      ${o.kicker ? `<span class="cr-tile__kicker">${esc(o.kicker)}</span>` : ''}
+      <h3 class="cr-tile__name"><a href="${esc(o.url)}"${o.external ? ' target="_blank" rel="noopener"' : ''}>${esc(o.name)}</a></h3>
+      ${o.desc ? `<p class="cr-tile__desc">${esc(o.desc)}</p>` : ''}
+      <span class="cr-tile__cta">${esc(o.cta || 'View on TPT')} ${o.external ? ICON.ext : ICON.arrow}</span>
+    </div>
+  </article>`;
+}
+function crHero(eyebrow, h1, lead, actions) {
+  return `<section class="section catalog-hero cr-hero" style="background-image:linear-gradient(180deg, rgba(26,60,52,.88), rgba(26,60,52,.94)), url('/assets/images/catalog_header.png')">
+    <div class="wrap">
+      <span class="eyebrow eyebrow--light">${esc(eyebrow)}</span>
+      <h1>${esc(h1)}</h1>
+      <p>${esc(lead)}</p>
+      ${actions ? `<div class="cr-hero__actions">${actions}</div>` : ''}
+    </div>
+  </section>`;
+}
+function secHead(eyebrow, h2, p) {
+  return `<div class="sec-head"><div class="sec-head__t"><span class="eyebrow">${esc(eyebrow)}</span><h2>${esc(h2)}</h2>${p ? `<p>${esc(p)}</p>` : ''}</div></div>`;
+}
+function rolesBlock() {
+  return `<ol class="cr-roles">${WU_ROLES.map(([t, d], i) => `<li class="cr-role reveal"><span class="cr-role__n">${i + 1}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></li>`).join('')}</ol>`;
+}
+function motwSection() {
+  const g = [['motw6', '6th Grade', 'teal'], ['motw7', '7th Grade', 'coral'], ['motw8', '8th Grade', 'navy']];
+  return `<section class="section cr-alt">
+    <div class="wrap">
+      ${secHead('Also a warm-up routine', 'Mistake of the Week', 'Once a week, students find a worked mistake, fix it and explain it. Twelve weeks per grade, with a free three-week sampler.')}
+      <div class="cr-grid">
+        ${wuTile({ url: MOTW.motwfree.url, external: true, img: MOTW.motwfree.img, name: 'Mistake of the Week sampler', kicker: 'Free · grades 6–8', badge: 'Free', cta: 'Get it free on TPT' })}
+        ${g.map(([k, lab, acc]) => wuTile({ url: MOTW[k].url, external: true, img: MOTW[k].img, accent: acc, name: `Mistake of the Week, ${lab}`, kicker: '12 weeks' })).join('')}
+        ${wuTile({ url: MOTW.motwbundle.url, external: true, img: MOTW.motwbundle.img, name: 'Mistake of the Week Bundle', kicker: '6th, 7th & 8th grade · 36 weeks', feature: true })}
+      </div>
+    </div>
+  </section>`;
+}
+function noteBand() {
+  return `<section class="cr-note"><div class="wrap"><p>${esc(CCSS_NOTE)} Every product is sold on <a href="${TPT_STORE}" target="_blank" rel="noopener">Teachers Pay Teachers</a>.</p></div></section>`;
+}
+
+
+/* Grade hubs (/grade-6/7/8.html) point to that grade's warm-ups, readiness check and Mistake of the
+   Week, so the new pages are two clicks from the homepage and share link equity with the sheets. */
+function gradeClassroomBand(grade) {
+  const key = 'G' + grade, c = WU.courses.find(x => x.key === key), acc = WU_ACCENT[key];
+  const r = RC.checks.find(x => x.key === WU_READINESS[key]), m = MOTW[WU_MOTW[key]];
+  if (!c) return '';
+  return `<section class="section cr-alt">
+    <div class="wrap">
+      ${secHead(`Also for ${c.label.replace('Grade', 'grade')}`, 'Warm-ups, a readiness check and error analysis')}
+      <div class="cr-grid">
+        ${wuTile({ url: `/warm-ups/${c.slug}.html`, img: c.yr.img, accent: acc, name: `${c.label} Math Warm-Ups`, kicker: '180 days \u00b7 four problems a day', cta: 'See every week' })}
+        ${r ? wuTile({ url: '/readiness.html#' + r.key, img: r.img, accent: acc, name: `${r.grade} Math Readiness Check`, kicker: `${r.prior} skills \u00b7 ${r.questions} questions`, cta: 'See what it covers' }) : ''}
+        ${m ? wuTile({ url: m.url, external: true, img: m.img, accent: acc, name: `Mistake of the Week, ${c.label}`, kicker: 'Error analysis \u00b7 12 weeks' }) : ''}
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ---------------------------------------------------------------- /warm-ups.html */
+function pageWarmupsHub() {
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Warm-Ups' }];
+  const courses = WU.courses.map(c => wuTile({
+    url: `/warm-ups/${c.slug}.html`, img: c.yr.img, accent: WU_ACCENT[c.key],
+    name: `${c.label} Math Warm-Ups`, kicker: '180 days · 4 quarters',
+    desc: c.quarters.map(q => q.name).join(' · '), cta: 'See every week',
+  })).join('');
+  const f20 = WU.courses.filter(c => c.first20);
+  const frees = WU.courses.filter(c => c.free);
+  return head({
+    title: 'Math Warm-Ups, Grades 5–8 & Algebra 1 | Daily Spiral Review',
+    desc: 'Daily math warm-ups for 5th to 8th grade and Algebra 1: four spiral-review problems a day, 180 days a year, with answer-reveal slides, Google Slides and answer keys.',
+    path: 'warm-ups.html',
+    ogImage: SITE_URL + WU.courses[1].yr.img,
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Warm-Ups', url: '/warm-ups.html' }]),
+      faqSchema(WU_FAQ),
+      itemListSchema('Math warm-ups by grade', WU.courses.map(c => ({ url: `/warm-ups/${c.slug}.html`, name: `${c.label} Math Warm-Ups` })))),
+  }) + nav('warm-ups') + `
+<main id="main">
+  ${breadcrumb(crumbs)}
+  ${crHero('Daily warm-ups', 'Four problems a day. Every skill keeps coming back.',
+    'Spiral-review bell ringers for 5th, 6th, 7th and 8th grade and Algebra 1. Put one slide on the board while you take attendance; students work four problems in five to eight minutes, and the next slide reveals the answers. The routine never changes, so students learn it once.',
+    `<a class="btn btn--primary" href="#grades">Choose your grade ${ICON.arrow}</a><a class="btn btn--ghost cr-btn--light" href="#free">Try a week free</a>`)}
+
+  <section class="section">
+    <div class="wrap">
+      ${secHead('How a day works', 'The same four roles, every day', 'Each warm-up has four problems, always in this order, so the routine takes care of itself and the time goes to the math.')}
+      ${rolesBlock()}
+    </div>
+  </section>
+
+  <section class="section cr-alt" id="grades">
+    <div class="wrap">
+      ${secHead('Choose your grade', 'A full year for every grade', 'Open a grade to see all 36 weeks: the topic and standard for every week of every quarter, and every way to buy it.')}
+      <div class="cr-grid">${courses}</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap cr-split">
+      <div>
+        ${secHead('In every quarter', 'Ready to project, print or assign')}
+        <ul class="cr-list">${WU_INCLUDED.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+      </div>
+      <figure class="cr-split__img reveal"><img src="${WU.courses[2].quarters[0].img}" alt="7th grade math warm-ups, Quarter 1: a week of warm-ups with the answer-reveal deck" width="640" height="640" loading="lazy" decoding="async"></figure>
+    </div>
+  </section>
+
+  <section class="section cr-alt" id="free">
+    <div class="wrap">
+      ${secHead('Try it first', 'A full week, free', 'Week 1 of Quarter 1 with the answer-reveal deck, student pages and answer key. If it works in your room, the quarter picks up at Week 2.')}
+      <div class="cr-grid">${frees.map(c => wuTile({ url: c.free.url, external: true, img: c.free.img, accent: WU_ACCENT[c.key], name: `${c.label} Warm-Ups, Week 1`, kicker: 'Free', badge: 'Free', cta: 'Get it free on TPT' })).join('')}</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      ${secHead('Back to school', 'The first 20 days', 'Twenty warm-ups that review the skills this year builds on, with trackers to see who needs a quick reteach before new content starts.')}
+      <div class="cr-grid">
+        ${f20.map(c => wuTile({ url: c.first20.url, external: true, img: c.first20.img, accent: WU_ACCENT[c.key], name: `${c.label} Warm-Ups: First 20 Days`, kicker: '20 days · trackers included' })).join('')}
+        ${wuTile({ url: WU.bts.url, external: true, img: WU.bts.img, name: 'Back to School Warm-Ups Bundle', kicker: '6th, 7th & 8th grade · 60 days', feature: true })}
+      </div>
+    </div>
+  </section>
+
+  <section class="section cr-alt">
+    <div class="wrap cr-split">
+      <div>
+        ${secHead('More than one prep', 'All three middle school grades', '540 warm-ups: the full year for 6th, 7th and 8th grade in one bundle. Every grade uses the same four-part day and the same layouts, so students moving up already know the routine.')}
+        ${tptBtn(WU.b678, 'View the 6th, 7th & 8th grade bundle')}
+      </div>
+      <figure class="cr-split__img reveal"><img src="${WU.b678.img}" alt="6th, 7th and 8th grade math warm-ups bundle, 540 days" width="640" height="640" loading="lazy" decoding="async"></figure>
+    </div>
+  </section>
+
+  ${motwSection()}
+
+  <section class="section">
+    <div class="wrap cr-cta">
+      <div><span class="eyebrow">Before the first warm-up</span><h2>Find out what they kept over the summer</h2><p>A 24-question readiness check on last year’s skills tells you which spiral topics need the most time.</p></div>
+      <a class="btn btn--primary" href="/readiness.html">See the readiness checks ${ICON.arrow}</a>
+    </div>
+  </section>
+
+  ${faqBlock(WU_FAQ, 'Warm-up questions')}
+  ${noteBand()}
+</main>
+` + footer() + scripts();
+}
+
+/* ---------------------------------------------------------------- /warm-ups/<course>.html */
+function pageWarmupsCourse(c) {
+  const accent = WU_ACCENT[c.key];
+  const name = `${c.label} Math Warm-Ups`;
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Warm-Ups', url: '/warm-ups.html' }, { name: c.label }];
+  const quarters = c.quarters.map(q => `<section class="cr-quarter cr-quarter--${accent} reveal" id="quarter-${q.n}">
+      <div class="cr-quarter__head">
+        <div><span class="cr-quarter__n">Quarter ${q.n}</span><h3>${esc(q.name)}</h3><p>45 days · ${q.weeks.length} weeks · ${q.pages} pages in the full set</p></div>
+        ${tptBtn(q, `Quarter ${q.n} on TPT`, 'btn--ghost')}
+      </div>
+      <table class="cr-weeks"><thead><tr><th scope="col">Week</th><th scope="col">Today’s Skill</th><th scope="col">Standard</th></tr></thead>
+        <tbody>${q.weeks.map(w => `<tr><td>${w.week}</td><td>${esc(w.topic)}</td><td class="cr-code">${esc(w.std)}</td></tr>`).join('')}</tbody></table>
+    </section>`).join('\n');
+  const stdCount = new Set(c.quarters.flatMap(q => q.weeks.map(w => w.std))).size;
+  const related = [];
+  if (c.first20) related.push(wuTile({ url: c.first20.url, external: true, img: c.first20.img, accent, name: `${c.label} Warm-Ups: First 20 Days`, kicker: 'Back to school · trackers included' }));
+  const rk = WU_READINESS[c.key];
+  if (rk) { const r = RC.checks.find(x => x.key === rk); related.push(wuTile({ url: '/readiness.html#' + rk, img: r.img, accent, name: `${r.grade} Math Readiness Check`, kicker: `${r.prior} skills · ${r.questions} questions`, cta: 'See what it covers' })); }
+  if (WU_MOTW[c.key]) { const m = MOTW[WU_MOTW[c.key]]; related.push(wuTile({ url: m.url, external: true, img: m.img, accent, name: `Mistake of the Week, ${c.label}`, kicker: 'Error analysis · 12 weeks' })); }
+  if (WU_GRADE_PAGE[c.key]) related.push(wuTile({ url: WU_GRADE_PAGE[c.key], accent, name: `${c.label} 4-in-1 Skill Sheets`, kicker: 'One complete lesson per skill', cta: 'Browse the sheets' }));
+  const buy = [
+    wuTile({ url: c.yr.url, external: true, img: c.yr.img, accent, name: 'Full Year', kicker: '180 days · all four quarters', feature: true }),
+    wuTile({ url: c.s1.url, external: true, img: c.s1.img, accent, name: 'Semester 1', kicker: 'Quarters 1 and 2 · 90 days' }),
+    wuTile({ url: c.s2.url, external: true, img: c.s2.img, accent, name: 'Semester 2', kicker: 'Quarters 3 and 4 · 90 days' }),
+  ].concat(c.quarters.map(q => wuTile({ url: q.url, external: true, img: q.img, accent, name: `Quarter ${q.n}: ${q.name}`, kicker: '45 days' })));
+  const others = WU.courses.filter(x => x.key !== c.key);
+  return head({
+    title: `${name} | 180 Days of Spiral Review Bell Ringers`,
+    desc: `${c.label} math warm-ups for the whole year: 36 weeks of spiral review, four problems a day, with every week\u2019s topic and standard, answer-reveal slides and Google Slides.`,
+    path: `warm-ups/${c.slug}.html`,
+    ogImage: SITE_URL + c.yr.img,
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Warm-Ups', url: '/warm-ups.html' }, { name: c.label, url: `/warm-ups/${c.slug}.html` }]),
+      { '@context': 'https://schema.org', '@type': 'LearningResource', name, url: `${SITE_URL}/warm-ups/${c.slug}.html`,
+        educationalLevel: c.label, learningResourceType: 'Warm-up activity', inLanguage: 'en',
+        teaches: c.quarters.map(q => q.name), provider: { '@type': 'Organization', name: 'Math Class 678', url: SITE_URL },
+        offers: { '@type': 'Offer', url: c.yr.url, availability: 'https://schema.org/InStock' } },
+      itemListSchema(`${name} on TPT`, [{ url: c.yr.url, name: c.yr.title }, { url: c.s1.url, name: c.s1.title }, { url: c.s2.url, name: c.s2.title }]
+        .concat(c.quarters.map(q => ({ url: q.url, name: q.title }))))),
+  }) + nav('warm-ups') + `
+<main id="main" class="cr-page cr-page--${accent}">
+  ${breadcrumb(crumbs)}
+  ${crHero(`${c.label} · daily warm-ups`, name,
+    `180 days of spiral review, four problems a day, across four quarters: ${c.quarters.map(q => q.name).join(', ')}. ${stdCount} standards, every one on the week-by-week list below.`,
+    `${tptBtn(c.yr, 'Full year on TPT')}${c.free ? `<a class="btn btn--ghost cr-btn--light" href="${esc(c.free.url)}" target="_blank" rel="noopener">Try Week 1 free ${ICON.ext}</a>` : ''}`)}
+
+  <section class="section">
+    <div class="wrap">
+      ${secHead('Buy the way you plan', 'A full year, a semester or one quarter', 'Every option has the same four-part day, the same layouts and the same answer-reveal decks.')}
+      <div class="cr-grid">${buy.join('')}</div>
+    </div>
+  </section>
+
+  <section class="section cr-alt">
+    <div class="wrap">
+      ${secHead('Every week, every quarter', `What ${c.label.toLowerCase().replace('algebra 1', 'Algebra 1')} warm-ups cover`, 'Each week’s Today’s Skill and its standard. The other three problems each day spiral back through what came before.')}
+      ${quarters}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      ${secHead('How a day works', 'The same four roles, every day')}
+      ${rolesBlock()}
+    </div>
+  </section>
+
+  ${related.length ? `<section class="section cr-alt"><div class="wrap">${secHead('Goes with it', `More for ${c.label.replace('Grade', 'grade')}`)}<div class="cr-grid">${related.join('')}</div></div></section>` : ''}
+
+  <section class="section">
+    <div class="wrap">
+      ${secHead('Other grades', 'Warm-ups for every grade')}
+      <div class="cr-chips">${others.map(o => `<a class="cr-chip cr-chip--${WU_ACCENT[o.key]}" href="/warm-ups/${o.slug}.html">${esc(o.label)}</a>`).join('')}<a class="cr-chip" href="/warm-ups.html">All warm-ups</a></div>
+    </div>
+  </section>
+
+  ${faqBlock(WU_FAQ.slice(0, 4), `${c.label} warm-up questions`)}
+  ${noteBand()}
+</main>
+` + footer() + scripts();
+}
+
+/* ---------------------------------------------------------------- /readiness.html */
+function pageReadiness() {
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Readiness Checks' }];
+  const acc = { rc6: 'teal', rc7: 'coral', rc8: 'navy', rca1: 'gold' };
+  const wuFor = { rc6: 'grade-6', rc7: 'grade-7', rc8: 'grade-8', rca1: 'algebra-1' };
+  const checks = RC.checks.map(r => `<article class="cr-check cr-check--${acc[r.key]} reveal" id="${r.key}">
+      <a class="cr-check__img" href="${esc(r.url)}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">${r.img ? `<img src="${r.img}" alt="" width="640" height="640" loading="lazy" decoding="async">` : ''}</a>
+      <div class="cr-check__body">
+        <span class="cr-tile__kicker">${esc(r.prior)} skills · ${r.questions} questions</span>
+        <h3>${esc(r.grade)} Math Readiness Check</h3>
+        <p>Diagnoses the ${esc(r.prior)} skills ${esc(r.grade === 'Algebra 1' ? 'Algebra 1' : r.grade.replace('Grade', 'grade'))} is built on, in ${r.domains.length} domains:</p>
+        <ul class="cr-domains">${r.domains.map(d => `<li>${esc(d)}</li>`).join('')}</ul>
+        <div class="cr-check__actions">${tptBtn(r, 'View on TPT')}<a class="cr-link" href="/warm-ups/${wuFor[r.key]}.html">${esc(r.grade)} warm-ups ${ICON.arrow}</a></div>
+      </div>
+    </article>`).join('\n');
+  const inBox = ['A Teacher Guide: when to give it, how to score it by domain, and how to read the self-ratings',
+    '24 free-response questions in lettered domains, every item tagged to its standard',
+    'A Got it / Not sure / Need help self-rating on every item',
+    'An answer key with item-by-item standards mapping',
+    'A Class Gap-Tracker: one row per domain, one column per student',
+    'A Shore Up These Skills page mapping every domain to a reteach resource',
+    'A fully editable Word file plus a print-ready PDF'];
+  return head({
+    title: 'Beginning-of-Year Math Diagnostic | Grades 6–8 & Algebra 1',
+    desc: 'Math readiness checks for 6th, 7th and 8th grade and Algebra 1: 24 questions on last year’s skills, with self-ratings, a Class Gap-Tracker and an editable Word file.',
+    path: 'readiness.html',
+    ogImage: RC.checks[0].img ? SITE_URL + RC.checks[0].img : undefined,
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Readiness Checks', url: '/readiness.html' }]),
+      faqSchema(RC_FAQ),
+      itemListSchema('Math readiness checks', RC.checks.map(r => ({ url: r.url, name: r.title })))),
+  }) + nav('readiness') + `
+<main id="main">
+  ${breadcrumb(crumbs)}
+  ${crHero('Beginning-of-year diagnostic', 'Find out what they kept over the summer',
+    'Most pretests quiz students on this year’s standards, material they have never been taught, so nearly everyone misses them and the data tells you nothing. These checks test the skills from the grade before, so the results show retention you can act on in the first week.',
+    `<a class="btn btn--primary" href="#checks">Choose your grade ${ICON.arrow}</a><a class="btn btn--ghost cr-btn--light" href="${esc(RC.mini.url)}" target="_blank" rel="noopener">Try the free Day 1 Mini ${ICON.ext}</a>`)}
+
+  <section class="section">
+    <div class="wrap cr-split">
+      <div>
+        ${secHead('In every check', 'A diagnosis, not a grade')}
+        <ul class="cr-list">${inBox.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+      </div>
+      <figure class="cr-split__img reveal">${RC.checks[0].img ? `<img src="${RC.checks[0].img}" alt="6th grade math readiness check: student pages, Class Gap-Tracker and answer key" width="640" height="640" loading="lazy" decoding="async">` : ''}</figure>
+    </div>
+  </section>
+
+  <section class="section cr-alt" id="checks">
+    <div class="wrap">
+      ${secHead('Choose your grade', 'Four checks, four sets of prior skills')}
+      <div class="cr-checks">${checks}</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      ${secHead('Teach more than one grade', 'Readiness check bundles')}
+      <div class="cr-grid">
+        ${wuTile({ url: RC.rc68.url, external: true, img: RC.rc68.img, name: '6th, 7th & 8th Grade Readiness Checks', kicker: 'Three checks · 24 questions each', feature: true })}
+        ${wuTile({ url: RC.rc78a.url, external: true, img: RC.rc78a.img, name: '7th, 8th & Algebra 1 Readiness Checks', kicker: 'Three checks · 24 questions each', feature: true })}
+        ${wuTile({ url: RC.mini.url, external: true, img: RC.mini.img, name: 'Day 1 Mini Readiness Check', kicker: 'Free · grades 6–8 · five questions each', badge: 'Free', cta: 'Get it free on TPT' })}
+      </div>
+    </div>
+  </section>
+
+  <section class="section cr-alt">
+    <div class="wrap">
+      ${secHead('At the end of the year', 'Free end-of-year skills checks', 'Ten mixed-review problems per grade, with an answer key, for the last weeks of school.')}
+      <div class="cr-grid">
+        ${[['eoy6', '6th Grade', 'teal'], ['eoy7', '7th Grade', 'coral'], ['eoy8', '8th Grade', 'navy']].map(([k, lab, a]) => wuTile({ url: RC[k].url, external: true, img: RC[k].img, accent: a, name: `${lab} End-of-Year Skills Check`, kicker: 'Free', badge: 'Free', cta: 'Get it free on TPT' })).join('')}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap cr-cta">
+      <div><span class="eyebrow">After the check</span><h2>Close the gaps with a daily routine</h2><p>Warm-ups spiral back through earlier skills every day, so the domains the check flags keep coming back without extra planning.</p></div>
+      <a class="btn btn--primary" href="/warm-ups.html">See the warm-ups ${ICON.arrow}</a>
+    </div>
+  </section>
+
+  ${faqBlock(RC_FAQ, 'Readiness check questions')}
+  ${noteBand()}
+</main>
+` + footer() + scripts();
+}
+
+
 function sitemap() {
-  const pages = ['', 'catalog.html', 'bundles.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
+  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
   const today = new Date().toISOString().slice(0, 10);
   const main = pages.map(p => `  <url><loc>${SITE_URL}/${p}</loc><lastmod>${today}</lastmod></url>`);
   const sheets = products
@@ -5030,9 +5434,10 @@ function sitemap() {
     .map(s => `  <url><loc>${SITE_URL}/standards/${s.slug}.html</loc><lastmod>${today}</lastmod></url>`);
   const glossaryUrls = glossary.map(t => `  <url><loc>${SITE_URL}${t.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
   const freebieUrls = FREEBIES.map(f => `  <url><loc>${SITE_URL}${f.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
+  const warmupUrls = WU.courses.map(c => `  <url><loc>${SITE_URL}/warm-ups/${c.slug}.html</loc><lastmod>${today}</lastmod></url>`);
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${main.concat(bundleUrls, sheets, standardUrls, glossaryUrls, freebieUrls).join('\n')}
+${main.concat(warmupUrls, bundleUrls, sheets, standardUrls, glossaryUrls, freebieUrls).join('\n')}
 </urlset>`;
 }
 const robots = `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`;
@@ -5113,6 +5518,9 @@ write('about.html', pageAbout());
 write('contact.html', pageContact());
 write('404.html', page404());
 write('get-started.html', pageGetStarted());
+write('warm-ups.html', pageWarmupsHub());
+WU.courses.forEach(c => write(`warm-ups/${c.slug}.html`, pageWarmupsCourse(c)));
+write('readiness.html', pageReadiness());
 
 /* per-grade landing pages — SEO hubs for "Nth grade math skill sheets" */
 ['6', '7', '8'].forEach(g => write(`grade-${g}.html`, pageGrade(g)));
@@ -5173,6 +5581,13 @@ if (fs.existsSync(SRC_SITE_IMGS)) {
       siteImgCount++;
     });
 }
+
+// Warm-ups, readiness and Mistake of the Week card images (written by the state-testing exporter)
+['warmups', 'readiness', 'motw'].forEach(dir => {
+  const src = path.join(ROOT, 'assets', 'images', dir);
+  if (!fs.existsSync(src)) return;
+  fs.readdirSync(src).filter(f => /\.(jpe?g|png)$/i.test(f)).forEach(f => copy(path.join('assets/images', dir, f), path.join('assets/images', dir, f)));
+});
 
 // Copy any product/bundle thumbnails present in the source thumbs dir (jpg or png)
 const SRC_THUMBS = path.join(ROOT, 'assets', 'images', 'thumbs');
