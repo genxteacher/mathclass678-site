@@ -1673,6 +1673,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .mw-poster__reveal[open] summary { margin-bottom:.6rem; }
 .mw-poster__rule { font-weight:600; margin:0 0 .5rem; }
 .mw-poster__reveal ol { margin:0; padding-left:1.2rem; color:var(--charcoal-soft); }
+.cr-scroll { overflow-x:auto; }
+.mp-table td:first-child { width:auto; font-family:inherit; color:inherit; font-weight:600; }
+.mp-table small { color:var(--charcoal-soft); }
 .cr-weeks td a { color:var(--forest); text-decoration:underline; text-underline-offset:2px; }
 
 /* Algebra 1 sheet pages (v1.14.0) */

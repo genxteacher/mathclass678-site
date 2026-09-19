@@ -2581,6 +2581,7 @@ function footer(opts) {
           <li><a href="/sub-plans.html">Sub Plans</a></li>
           <li><a href="/mistake-of-the-week.html">Mistake of the Week</a></li>
           <li><a href="/money-labs.html">Money Labs</a></li>
+          <li><a href="/mystery-pictures.html">Mystery Pictures</a></li>
           <li><a href="/grade-6.html">6th Grade</a></li>
           <li><a href="/grade-7.html">7th Grade</a></li>
           <li><a href="/grade-8.html">8th Grade</a></li>
@@ -3460,6 +3461,8 @@ function pageFree() {
     </div>
   </section>`;
   }).join('')}
+
+  ${MP_FREE ? `<section class="section"><div class="wrap cr-cta"><div><span class="eyebrow">Free self-checking Google Sheet</span><h2>${esc(MP_FREE.topic)} Mystery Pictures</h2><p>${MP_FREE.total} ${esc(MP_FREE.grade.toLowerCase())} problems in two levels: every right answer reveals part of a hidden picture, and wrong answers turn red so students fix their own mistakes.</p></div><a class="btn btn--primary" href="/mystery-pictures.html">See the Mystery Pictures ${ICON.arrow}</a></div></section>` : ''}
 
   <!-- BOTTOM CTA -->
   <section class="section gridpaper">
@@ -6140,6 +6143,109 @@ function pageMoneyLabs() {
 ` + footer() + scripts();
 }
 
+/* ============================================================================
+   DIGITAL MYSTERY PICTURES   (v1.16.0 · 2026-09-19)
+   The three self-checking Google Sheets mystery pictures, which the site did not link. Data:
+   classroom_data.json `mystery`, parsed from each listing's own copy (levels, the two pictures,
+   typed or dropdown answers, CCSS codes). Integer Operations is free.
+   ============================================================================ */
+const MYSTERY = CLASSROOM.mystery.slice().sort((a, b) => (b.free - a.free) || a.grade.localeCompare(b.grade));
+const MP_FREE = MYSTERY.find(m => m.free);
+const MP_ACC = ['teal', 'coral', 'gold'];
+const MP_STEPS = [
+  ['Post one link', 'Each student gets their own copy of the Google Sheet. There is nothing to set up or print.'],
+  ['Answer a problem', 'Students type an answer and press Enter, or pick it from a dropdown in the Rational Number Operations set.'],
+  ['Green reveals the picture', 'A right answer turns green, uncovers another band of the hidden pixel-art picture and adds one to the SOLVED counter.'],
+  ['Red means try again', 'A wrong answer turns red, and no picture shows until it is right, so students catch their own mistakes.'],
+];
+const MP_WHY = [
+  'No grading: the Sheet checks every answer, and printable answer keys come in the PDF',
+  'Two levels and two pictures in every set, so early finishers move to Level 2 without spoiling Level 1',
+  'Works on Chromebooks, laptops and tablets',
+  'Fits stations, homework, early finishers and sub days',
+];
+const MP_FAQ = [
+  { q: 'Do I need to set anything up?', a: 'No. Post the link. It makes each student their own copy of the Google Sheet, and the answer key is hidden inside it.' },
+  { q: 'What happens when a student gets one wrong?', a: 'The answer turns red and no part of the picture appears until it is right. In the Rational Number Operations set every wrong choice is a common mistake, so a wrong pick is worth a conversation.' },
+  { q: 'How many problems are in each set?', a: `${MYSTERY[0].total} problems: two levels of ${MYSTERY[0].per_level}, each level with its own picture.` },
+  { q: 'Is one free?', a: MP_FREE ? `Yes. ${MP_FREE.topic} (${MP_FREE.grade.toLowerCase()}) is free on TPT.` : 'Not at the moment.' },
+];
+// A cluster code (7.NS.A.1) links the tips page for the part the set practises: integers or rationals.
+const MP_PART = { 'Integer Operations': { '7.NS.A.1': 'b', '7.NS.A.2': 'a' }, 'Rational Number Operations': { '7.NS.A.1': 'd', '7.NS.A.2': 'c' } };
+const mpStd = (c, m) => {
+  const k = standardsMap[c] ? c : c + ((MP_PART[m.topic] || {})[c] || 'a');
+  return standardsMap[k] ? `<a href="/standards/${standardsMap[k].slug}.html">${esc(c)}</a>` : esc(c);
+};
+const mpName = m => `${m.topic} Mystery Pictures`;
+
+/* ---------------------------------------------------------------- /mystery-pictures.html */
+function pageMysteryPictures() {
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Mystery Pictures' }];
+  const tiles = MYSTERY.map((m, i) => wuTile({ url: m.url, external: true, img: m.img, accent: MP_ACC[i % 3], name: mpName(m),
+    kicker: `${m.grade}${m.free ? ' · free' : ''} · ${m.total} problems`, badge: m.free ? 'Free' : '', cta: m.free ? 'Get it free on TPT' : 'View on TPT' })).join('');
+  const rows = MYSTERY.map(m => `<tr><td><a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.topic)}</a>${m.free ? ' (free)' : ''}</td><td>${esc(m.grade)}</td>`
+    + m.levels.map((l, i) => `<td>${esc(l.charAt(0).toUpperCase() + l.slice(1))}<br><small>Reveals a ${esc(m.pics[i] || '')}</small></td>`).join('')
+    + `<td>${m.dropdown ? 'Dropdown' : 'Typed'}</td><td class="cr-code">${m.codes.map(c => mpStd(c, m)).join(', ')}</td></tr>`).join('');
+  return head({
+    title: 'Digital Mystery Pictures | Self-Checking Google Sheets Math, 6–7',
+    desc: `Self-checking math mystery pictures in Google Sheets for 6th and 7th grade: every right answer reveals part of a hidden picture. ${MYSTERY.length} sets, one free.`,
+    path: 'mystery-pictures.html',
+    ogImage: MYSTERY[0] && MYSTERY[0].img ? SITE_URL + MYSTERY[0].img : undefined,
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Mystery Pictures', url: '/mystery-pictures.html' }]),
+      faqSchema(MP_FAQ),
+      itemListSchema('Digital Mystery Pictures', MYSTERY.map(m => ({ url: m.url, name: m.title })))),
+  }) + nav('mystery') + `
+<main id="main">
+  ${breadcrumb(crumbs)}
+  ${crHero('Self-checking Google Sheets · grades 6–7', 'Practice that reveals a picture',
+    `Every right answer uncovers another band of a hidden pixel-art picture. Wrong answers turn red, so students fix their own mistakes, and by the last problem the whole picture is on screen and every answer has been checked. ${MYSTERY.length} sets, ${MYSTERY[0].total} problems each.`,
+    `<a class="btn btn--primary" href="#sets">See the ${MYSTERY.length} sets ${ICON.arrow}</a>${MP_FREE ? `<a class="btn btn--ghost cr-btn--light" href="${esc(MP_FREE.url)}" target="_blank" rel="noopener">${esc(MP_FREE.topic)} free ${ICON.ext}</a>` : ''}`)}
+
+  <section class="section">
+    <div class="wrap">
+      ${secHead('How it works', 'One link, no grading', 'A live SOLVED counter shows students how far they have come.')}
+      <ol class="cr-roles">${MP_STEPS.map(([t, d], i) => `<li class="cr-role reveal"><span class="cr-role__n">${i + 1}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></li>`).join('')}</ol>
+    </div>
+  </section>
+
+  <section class="section cr-alt" id="sets">
+    <div class="wrap">
+      ${secHead('The sets', `${MYSTERY.length} topics, two pictures each`)}
+      <div class="cr-grid">${tiles}</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      ${secHead('What each set covers', 'Two levels, two pictures', 'Level 2 is the harder skill, so students who finish early move on without spoiling Level 1 for anyone still working.')}
+      <div class="cr-scroll"><table class="cr-weeks mp-table"><thead><tr><th scope="col">Set</th><th scope="col">Grade</th><th scope="col">Level 1</th><th scope="col">Level 2</th><th scope="col">Answers</th><th scope="col">Standards</th></tr></thead>
+        <tbody>${rows}</tbody></table></div>
+    </div>
+  </section>
+
+  <section class="section cr-alt">
+    <div class="wrap cr-split">
+      <div>
+        ${secHead('Why teachers use them', 'No prep, no grading')}
+        <ul class="cr-list">${MP_WHY.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+      </div>
+      <figure class="cr-split__img reveal">${MYSTERY[1] && MYSTERY[1].img ? `<img src="${MYSTERY[1].img}" alt="${esc(mpName(MYSTERY[1]))}, ${esc(MYSTERY[1].grade.toLowerCase())} self-checking Google Sheets" width="640" height="640" loading="lazy" decoding="async">` : ''}</figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap cr-cta">
+      <div><span class="eyebrow">When a mistake keeps coming back</span><h2>Mistake of the Week</h2><p>A five-minute Monday routine: students find a mistake, fix it and explain the rule, twelve weeks per grade.</p></div>
+      <a class="btn btn--primary" href="/mistake-of-the-week.html">See Mistake of the Week ${ICON.arrow}</a>
+    </div>
+  </section>
+
+  ${faqBlock(MP_FAQ, 'Mystery Picture questions')}
+  ${noteBand()}
+</main>
+` + footer() + scripts();
+}
+
 /* ---------------------------------------------------------------- /money-labs/<lab>.html */
 function pageMoneyLab(l, prev, next) {
   const crumbs = [{ name: 'Home', url: '/' }, { name: 'Money Labs', url: '/money-labs.html' }, { name: l.name }];
@@ -6229,7 +6335,7 @@ function pageMoneyLab(l, prev, next) {
 
 
 function sitemap() {
-  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'sub-plans.html', 'mistake-of-the-week.html', 'money-labs.html', 'algebra-1.html', 'i-can.html', 'i-can/personal-finance.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
+  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'sub-plans.html', 'mistake-of-the-week.html', 'money-labs.html', 'mystery-pictures.html', 'algebra-1.html', 'i-can.html', 'i-can/personal-finance.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
   const today = new Date().toISOString().slice(0, 10);
   const main = pages.map(p => `  <url><loc>${SITE_URL}/${p}</loc><lastmod>${today}</lastmod></url>`);
   const sheets = products
@@ -6334,6 +6440,7 @@ write('readiness.html', pageReadiness());
 write('sub-plans.html', pageSubPlans());
 write('mistake-of-the-week.html', pageMistakeOfTheWeek());
 write('money-labs.html', pageMoneyLabs());
+write('mystery-pictures.html', pageMysteryPictures());
 ML_LABS.forEach((l, i) => write(l.pageUrl.slice(1), pageMoneyLab(l, ML_LABS[i - 1], ML_LABS[i + 1])));
 write('algebra-1.html', pageAlgebra1Hub());
 A1_UNITS.forEach((u, i) => write(u.pageUrl.slice(1), pageAlgebra1Unit(u, A1_UNITS[i - 1], A1_UNITS[i + 1])));
@@ -6403,7 +6510,7 @@ if (fs.existsSync(SRC_SITE_IMGS)) {
 }
 
 // Warm-ups, readiness and Mistake of the Week card images (written by the state-testing exporter)
-['warmups', 'readiness', 'motw', 'ican', 'subplans', 'algebra1', 'money'].forEach(dir => {
+['warmups', 'readiness', 'motw', 'ican', 'subplans', 'algebra1', 'money', 'mystery'].forEach(dir => {
   const src = path.join(ROOT, 'assets', 'images', dir);
   if (!fs.existsSync(src)) return;
   fs.readdirSync(src).filter(f => /\.(jpe?g|png)$/i.test(f)).forEach(f => copy(path.join('assets/images', dir, f), path.join('assets/images', dir, f)));
