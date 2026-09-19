@@ -2492,8 +2492,9 @@ function nav(active) {
       ${link('/bundles.html', 'Bundles', 'bundles')}
       ${link('/warm-ups.html', 'Warm-Ups', 'warm-ups')}
       ${link('/readiness.html', 'Readiness', 'readiness')}
+      ${link('/i-can.html', 'I Can', 'i-can')}
       ${link('/word-wall.html', 'Word Wall', 'word-wall')}
-      ${link('/free.html', 'Free Resources', 'free')}
+      ${link('/free.html', 'Free', 'free')}
       ${link('/about.html', 'About', 'about')}
       <a class="btn btn--primary btn--sm nav__cta" href="${TPT_STORE}" target="_blank" rel="noopener">TPT Store ${ICON.ext}</a>
     </nav>
@@ -2576,6 +2577,7 @@ function footer(opts) {
           <li><a href="/bundles.html">Bundles</a></li>
           <li><a href="/warm-ups.html">Warm-Ups</a></li>
           <li><a href="/readiness.html">Readiness Checks</a></li>
+          <li><a href="/i-can.html">I Can Posters</a></li>
           <li><a href="/grade-6.html">6th Grade</a></li>
           <li><a href="/grade-7.html">7th Grade</a></li>
           <li><a href="/grade-8.html">8th Grade</a></li>
@@ -5421,8 +5423,199 @@ function pageReadiness() {
 }
 
 
+/* ============================================================================
+   I CAN STATEMENT POSTERS   (v1.11.0 · 2026-09-19)
+   126 live listings the site linked 2 of. One page per standards set (Common Core + each state),
+   a personal-finance page, and a hub. Data: classroom_data.json `ican`, exported from the live
+   listings (course, poster count and each set's own notice sentence read from its descriptions).
+   Sets flagged `hidden` are not published (Georgia: built to GSE, which Georgia has replaced).
+   ============================================================================ */
+const ICAN = CLASSROOM.ican;
+const ICAN_SETS = ICAN.sets.filter(s => !s.hidden);
+const ICAN_NUMWORD = ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve'];
+const ICAN_STATES = ICAN_SETS.filter(s => s.slug !== 'common-core').length;
+const ICAN_ACCENT = c => /^5th/.test(c) ? 'forest' : /^6th/.test(c) ? 'teal' : /^7th|Compacted/.test(c) ? 'coral'
+  : /^8th|Pre-Algebra/.test(c) ? 'navy' : 'gold';
+const ICAN_POSTER = [
+  'One full-page poster per standard, carrying its code',
+  'A student-facing I Can statement for the target',
+  'A worked math visual that teaches the skill, not clip art',
+  'A matching ink-saver version of every poster, white background, same content',
+  'A cover and a one-page How to Use guide',
+];
+const ICAN_FAQ = [
+  { q: 'What is on each poster?', a: 'The standard’s code, a student-facing I Can statement, and a worked math visual that teaches the skill, such as a number line, an area model or a balance. One poster per standard.' },
+  { q: 'Do I need color ink?', a: 'No. Every set includes a matching ink-saver version of each poster with a white background and the same content, so you can swap targets every unit without draining a cartridge.' },
+  { q: 'How do teachers display them?', a: 'Print the current unit on cardstock and hang it on binder rings, a curtain rod or clothespins on a wire. Read the target aloud at the start of class and come back to the visual when students get stuck.' },
+  { q: 'Is there a free sample?', a: 'Yes. Most standards sets have a free sample with real posters from the set, so you can see the visual style before you buy a course.' },
+];
+function icanSpan(s) {
+  const cs = s.courses.map(c => c.course);
+  return cs.length > 1 ? `${cs[0]} to ${cs[cs.length - 1]}` : cs[0];
+}
+function icanSetImg(s) {
+  const c = s.courses.find(x => /^6th Grade/.test(x.course)) || s.courses[0];
+  return c && c.img;
+}
+function icanPosters(s) { return s.courses.reduce((n, c) => n + (c.posters || 0), 0); }
+function icanSetName(s) { return s.slug === 'common-core' ? 'Common Core' : s.name; }
+
+/* ---------------------------------------------------------------- /i-can.html */
+function pageICanHub() {
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'I Can Posters' }];
+  const setTiles = ICAN_SETS.map(s => wuTile({
+    url: `/i-can/${s.slug}.html`, img: icanSetImg(s), accent: s.slug === 'common-core' ? 'forest' : 'navy',
+    name: `${icanSetName(s)} I Can Posters`, kicker: `${s.courses.length} courses · ${icanPosters(s)} posters`,
+    desc: s.courses.map(c => c.course).join(' · '), cta: 'See every course',
+  })).join('');
+  const frees = ICAN_SETS.flatMap(s => s.free.map(f => ({ s, f })));
+  return head({
+    title: 'Math I Can Statements Posters | Common Core & State Standards',
+    desc: `Math I Can statement posters for Common Core and ${ICAN_STATES} state standards sets, 5th grade to Algebra 2: one learning target poster per standard, with a worked visual.`,
+    path: 'i-can.html',
+    ogImage: icanSetImg(ICAN_SETS[0]) ? SITE_URL + icanSetImg(ICAN_SETS[0]) : undefined,
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'I Can Posters', url: '/i-can.html' }]),
+      faqSchema(ICAN_FAQ),
+      itemListSchema('Math I Can posters by standards set', ICAN_SETS.map(s => ({ url: `/i-can/${s.slug}.html`, name: `${icanSetName(s)} I Can Posters` })))),
+  }) + nav('i-can') + `
+<main id="main">
+  ${breadcrumb(crumbs)}
+  ${crHero('Learning target posters', 'Every standard, posted as a target students can read',
+    `I Can statement posters for Common Core and ${ICAN_NUMWORD[ICAN_STATES]} state standards sets, from 5th grade to Algebra 2. One poster per standard, each with its code, a student-facing I Can statement and a worked math visual, in color and ink-saver versions.`,
+    `<a class="btn btn--primary" href="#sets">Choose your standards ${ICON.arrow}</a><a class="btn btn--ghost cr-btn--light" href="#free">Free samples</a>`)}
+
+  <section class="section">
+    <div class="wrap cr-split">
+      <div>
+        ${secHead('On every poster', 'A target, a code and a visual that teaches')}
+        <ul class="cr-list">${ICAN_POSTER.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+      </div>
+      <figure class="cr-split__img reveal">${icanSetImg(ICAN_SETS[0]) ? `<img src="${icanSetImg(ICAN_SETS[0])}" alt="6th grade math I Can statement posters, Common Core" width="640" height="640" loading="lazy" decoding="async">` : ''}</figure>
+    </div>
+  </section>
+
+  <section class="section cr-alt" id="sets">
+    <div class="wrap">
+      ${secHead('Choose your standards', 'Built to your state’s own codes', 'Each set uses its standards’ own codes and course names. Open a set to see every course, the poster counts and the bundle.')}
+      <div class="cr-grid">${setTiles}</div>
+    </div>
+  </section>
+
+  <section class="section" id="free">
+    <div class="wrap">
+      ${secHead('Try it first', 'Free samples', 'Real posters from each set, so you can see the visual style before you buy a course.')}
+      <div class="cr-grid">${frees.map(({ s, f }) => wuTile({ url: f.url, external: true, img: f.img, name: f.title.split('|')[0].trim(), kicker: `Free · ${icanSetName(s)}`, badge: 'Free', cta: 'Get it free on TPT' })).join('')}</div>
+    </div>
+  </section>
+
+  <section class="section cr-alt">
+    <div class="wrap cr-cta">
+      <div><span class="eyebrow">High school</span><h2>Personal finance I Can posters</h2><p>Learning targets for the personal finance course standards of ${ICAN.personal_finance.filter(p => !p.free).length} states.</p></div>
+      <a class="btn btn--primary" href="/i-can/personal-finance.html">See the personal finance sets ${ICON.arrow}</a>
+    </div>
+  </section>
+
+  ${faqBlock(ICAN_FAQ, 'I Can poster questions')}
+  <section class="cr-note"><div class="wrap"><p>Standard codes are named to show alignment. Math Class 678 is an independent publisher, not affiliated with, sponsored by, or endorsed by NGA Center, CCSSO or any state education agency. Every product is sold on <a href="${TPT_STORE}" target="_blank" rel="noopener">Teachers Pay Teachers</a>.</p></div></section>
+</main>
+` + footer() + scripts();
+}
+
+/* ---------------------------------------------------------------- /i-can/<set>.html */
+function pageICanSet(s) {
+  const nm = icanSetName(s);
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'I Can Posters', url: '/i-can.html' }, { name: nm }];
+  const courses = s.courses.map(c => wuTile({ url: c.url, external: true, img: c.img, accent: ICAN_ACCENT(c.course),
+    name: `${c.course} I Can Posters`, kicker: c.posters ? `${c.posters} posters · color + ink-saver` : 'Color + ink-saver' })).join('');
+  const bundles = s.bundles.map(b => wuTile({ url: b.url, external: true, img: b.img, feature: true,
+    name: b.title.split('|')[0].trim(), kicker: b.title.split('|').slice(1).join(' · ').trim() || 'Bundle' })).join('');
+  const frees = s.free.map(f => wuTile({ url: f.url, external: true, img: f.img, name: f.title.split('|')[0].trim(), kicker: 'Free', badge: 'Free', cta: 'Get it free on TPT' })).join('');
+  const trackers = s.trackers.map(t => wuTile({ url: t.url, external: true, img: t.img, accent: ICAN_ACCENT(t.course),
+    name: t.title.split('|')[0].trim(), kicker: 'Standards-based grading' })).join('');
+  const lead = s.pitch ? s.pitch.replace(/\s+—\s+/, ': ') :
+    `One learning target poster for every standard in ${s.standards}, each with its code, a student-facing I Can statement and a worked math visual.`;
+  const title = `${nm} Math I Can Statements | Learning Target Posters`;
+  let desc = `${nm} math I Can statement posters, ${icanSpan(s)}: one learning target poster per standard in ${s.standards}, with a worked visual, in color and ink-saver.`;
+  if (desc.length > 170) desc = `${nm} math I Can statement posters, ${icanSpan(s)}: one learning target poster per standard, with a worked visual, in color and ink-saver.`;
+  const others = ICAN_SETS.filter(x => x.slug !== s.slug);
+  const cc = s.slug === 'common-core';
+  return head({
+    title, desc, path: `i-can/${s.slug}.html`,
+    ogImage: icanSetImg(s) ? SITE_URL + icanSetImg(s) : undefined,
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'I Can Posters', url: '/i-can.html' }, { name: nm, url: `/i-can/${s.slug}.html` }]),
+      itemListSchema(`${nm} math I Can posters`, s.courses.map(c => ({ url: c.url, name: c.title })))),
+  }) + nav('i-can') + `
+<main id="main">
+  ${breadcrumb(crumbs)}
+  ${crHero(`I Can posters · ${nm}`, `${nm} Math I Can Statements`, lead,
+    `${s.bundles[0] ? tptBtn(s.bundles[0], 'Bundle on TPT') : ''}${s.free[0] ? `<a class="btn btn--ghost cr-btn--light" href="${esc(s.free[0].url)}" target="_blank" rel="noopener">Free sample ${ICON.ext}</a>` : ''}`)}
+
+  <section class="section">
+    <div class="wrap">
+      ${secHead('Every course', `${s.courses.length} courses, ${icanPosters(s)} posters`, `Built to ${s.standards}. Each course has one poster per standard, with a matching ink-saver set.`)}
+      <div class="cr-grid">${courses}</div>
+    </div>
+  </section>
+
+  ${bundles ? `<section class="section cr-alt"><div class="wrap">${secHead('Bundles', `Save with a ${nm} bundle`, 'Each bundle lists the courses it includes on its TPT page.')}<div class="cr-grid">${bundles}</div></div></section>` : ''}
+  ${trackers ? `<section class="section"><div class="wrap">${secHead('Track mastery', 'Standards-based grading trackers', 'A tracker for each course: every row carries the same standard code and I Can statement as that course\u2019s posters, so the wall, the binder and the gradebook all say the same thing.')}<div class="cr-grid">${trackers}</div></div></section>` : ''}
+  ${frees ? `<section class="section ${trackers ? 'cr-alt' : ''}"><div class="wrap">${secHead('Try it first', 'A free sample', 'Real posters from this set, so you can see the visual style before you buy a course.')}<div class="cr-grid">${frees}</div></div></section>` : ''}
+
+  <section class="section">
+    <div class="wrap cr-split">
+      <div>
+        ${secHead('On every poster', 'A target, a code and a visual that teaches')}
+        <ul class="cr-list">${ICAN_POSTER.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+      </div>
+      <figure class="cr-split__img reveal">${icanSetImg(s) ? `<img src="${icanSetImg(s)}" alt="${esc(nm)} 6th grade math I Can statement posters" width="640" height="640" loading="lazy" decoding="async">` : ''}</figure>
+    </div>
+  </section>
+
+  ${cc ? `<section class="section cr-alt"><div class="wrap cr-cta"><div><span class="eyebrow">Goes with the posters</span><h2>Daily warm-ups on the same standards</h2><p>Four spiral-review problems a day, with the standard for every week listed by grade.</p></div><a class="btn btn--primary" href="/warm-ups.html">See the warm-ups ${ICON.arrow}</a></div></section>` : ''}
+
+  <section class="section">
+    <div class="wrap">
+      ${secHead('Other standards sets', 'I Can posters for other states')}
+      <div class="cr-chips">${others.map(o => `<a class="cr-chip" href="/i-can/${o.slug}.html">${esc(icanSetName(o))}</a>`).join('')}<a class="cr-chip" href="/i-can/personal-finance.html">Personal finance</a><a class="cr-chip" href="/i-can.html">All I Can posters</a></div>
+    </div>
+  </section>
+
+  <section class="cr-note"><div class="wrap"><p>${esc(s.notice || 'Standard codes are named to show alignment. Math Class 678 is an independent publisher.')} Every product is sold on <a href="${TPT_STORE}" target="_blank" rel="noopener">Teachers Pay Teachers</a>.</p></div></section>
+</main>
+` + footer() + scripts();
+}
+
+/* ---------------------------------------------------------------- /i-can/personal-finance.html */
+function pageICanPF() {
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'I Can Posters', url: '/i-can.html' }, { name: 'Personal Finance' }];
+  const paid = ICAN.personal_finance.filter(p => !p.free), free = ICAN.personal_finance.filter(p => p.free);
+  return head({
+    title: 'Personal Finance I Can Posters | High School Learning Targets by State',
+    desc: `Personal finance I Can statement posters for the high school course standards of ${paid.length} states: learning targets students can read, in color and ink-saver versions.`,
+    path: 'i-can/personal-finance.html',
+    ogImage: paid[0] && paid[0].img ? SITE_URL + paid[0].img : undefined,
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'I Can Posters', url: '/i-can.html' }, { name: 'Personal Finance', url: '/i-can/personal-finance.html' }]),
+      itemListSchema('Personal finance I Can posters', paid.map(p => ({ url: p.url, name: p.title })))),
+  }) + nav('i-can') + `
+<main id="main">
+  ${breadcrumb(crumbs)}
+  ${crHero('I Can posters · personal finance', 'Personal Finance I Can Posters',
+    `Learning target posters for the high school personal finance course standards of ${paid.length} states, each with a student-facing I Can statement, in color and ink-saver versions.`, '')}
+  <section class="section">
+    <div class="wrap">
+      ${secHead('Choose your state', `${paid.length} state course sets`)}
+      <div class="cr-grid">${paid.map(p => wuTile({ url: p.url, external: true, img: p.img, name: `${p.state} Personal Finance I Can Posters`, kicker: p.posters ? `${p.posters} posters` : 'High school' })).join('')}</div>
+    </div>
+  </section>
+  ${free.length ? `<section class="section cr-alt"><div class="wrap">${secHead('Try it first', 'Free sample')}<div class="cr-grid">${free.map(p => wuTile({ url: p.url, external: true, img: p.img, name: p.title.split('|')[0].trim(), kicker: `Free · ${p.state}`, badge: 'Free', cta: 'Get it free on TPT' })).join('')}</div></div></section>` : ''}
+  <section class="cr-note"><div class="wrap"><p>State course standards are named to show alignment. Math Class 678 is an independent publisher, not affiliated with, sponsored by, or endorsed by any state education agency. Every product is sold on <a href="${TPT_STORE}" target="_blank" rel="noopener">Teachers Pay Teachers</a>.</p></div></section>
+</main>
+` + footer() + scripts();
+}
+
+
 function sitemap() {
-  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
+  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'i-can.html', 'i-can/personal-finance.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
   const today = new Date().toISOString().slice(0, 10);
   const main = pages.map(p => `  <url><loc>${SITE_URL}/${p}</loc><lastmod>${today}</lastmod></url>`);
   const sheets = products
@@ -5434,7 +5627,8 @@ function sitemap() {
     .map(s => `  <url><loc>${SITE_URL}/standards/${s.slug}.html</loc><lastmod>${today}</lastmod></url>`);
   const glossaryUrls = glossary.map(t => `  <url><loc>${SITE_URL}${t.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
   const freebieUrls = FREEBIES.map(f => `  <url><loc>${SITE_URL}${f.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
-  const warmupUrls = WU.courses.map(c => `  <url><loc>${SITE_URL}/warm-ups/${c.slug}.html</loc><lastmod>${today}</lastmod></url>`);
+  const warmupUrls = WU.courses.map(c => `  <url><loc>${SITE_URL}/warm-ups/${c.slug}.html</loc><lastmod>${today}</lastmod></url>`)
+    .concat(ICAN_SETS.map(st => `  <url><loc>${SITE_URL}/i-can/${st.slug}.html</loc><lastmod>${today}</lastmod></url>`));
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${main.concat(warmupUrls, bundleUrls, sheets, standardUrls, glossaryUrls, freebieUrls).join('\n')}
@@ -5521,6 +5715,9 @@ write('get-started.html', pageGetStarted());
 write('warm-ups.html', pageWarmupsHub());
 WU.courses.forEach(c => write(`warm-ups/${c.slug}.html`, pageWarmupsCourse(c)));
 write('readiness.html', pageReadiness());
+write('i-can.html', pageICanHub());
+ICAN_SETS.forEach(st => write(`i-can/${st.slug}.html`, pageICanSet(st)));
+write('i-can/personal-finance.html', pageICanPF());
 
 /* per-grade landing pages — SEO hubs for "Nth grade math skill sheets" */
 ['6', '7', '8'].forEach(g => write(`grade-${g}.html`, pageGrade(g)));
@@ -5583,7 +5780,7 @@ if (fs.existsSync(SRC_SITE_IMGS)) {
 }
 
 // Warm-ups, readiness and Mistake of the Week card images (written by the state-testing exporter)
-['warmups', 'readiness', 'motw'].forEach(dir => {
+['warmups', 'readiness', 'motw', 'ican'].forEach(dir => {
   const src = path.join(ROOT, 'assets', 'images', dir);
   if (!fs.existsSync(src)) return;
   fs.readdirSync(src).filter(f => /\.(jpe?g|png)$/i.test(f)).forEach(f => copy(path.join('assets/images', dir, f), path.join('assets/images', dir, f)));

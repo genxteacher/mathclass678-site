@@ -1500,5 +1500,1310 @@
    "key": "motwbundle",
    "img": null
   }
+ },
+ "ican": {
+  "sets": [
+   {
+    "slug": "common-core",
+    "name": "Common Core",
+    "standards": "the Common Core State Standards",
+    "hidden": false,
+    "courses": [
+     {
+      "id": "17083177",
+      "title": "5th Grade Math I Can Statements Posters | CCSS Learning Targets Standards",
+      "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-I-Can-Statements-Posters-CCSS-Learning-Targets-Standards-17083177",
+      "key": "common-core",
+      "posters": 5,
+      "course": "5th Grade",
+      "img": "/assets/images/ican/17083177.jpg"
+     },
+     {
+      "id": "17083128",
+      "title": "6th Grade Math I Can Statements Posters | CCSS Learning Targets Standards",
+      "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-I-Can-Statements-Posters-CCSS-Learning-Targets-Standards-17083128",
+      "key": "common-core",
+      "posters": 42,
+      "course": "6th Grade",
+      "img": "/assets/images/ican/17083128.jpg"
+     },
+     {
+      "id": "17083144",
+      "title": "7th Grade Math I Can Statements Posters | CCSS Learning Targets Standards",
+      "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-I-Can-Statements-Posters-CCSS-Learning-Targets-Standards-17083144",
+      "key": "common-core",
+      "posters": 37,
+      "course": "7th Grade",
+      "img": "/assets/images/ican/17083144.jpg"
+     },
+     {
+      "id": "17083159",
+      "title": "8th Grade Math I Can Statements Posters | CCSS Learning Targets Standards",
+      "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-I-Can-Statements-Posters-CCSS-Learning-Targets-Standards-17083159",
+      "key": "common-core",
+      "posters": 33,
+      "course": "8th Grade",
+      "img": "/assets/images/ican/17083159.jpg"
+     },
+     {
+      "id": "17083191",
+      "title": "Algebra 1 Math I Can Statements Posters | CCSS Learning Targets Standards",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Math-I-Can-Statements-Posters-CCSS-Learning-Targets-Standards-17083191",
+      "key": "common-core",
+      "posters": 38,
+      "course": "Algebra 1",
+      "img": "/assets/images/ican/17083191.jpg"
+     },
+     {
+      "id": "17083207",
+      "title": "Geometry Math I Can Statements Posters | CCSS Learning Targets Standards",
+      "url": "https://www.teacherspayteachers.com/Product/Geometry-Math-I-Can-Statements-Posters-CCSS-Learning-Targets-Standards-17083207",
+      "key": "common-core",
+      "posters": 37,
+      "course": "Geometry",
+      "img": "/assets/images/ican/17083207.jpg"
+     },
+     {
+      "id": "17637398",
+      "title": "Algebra 2 I Can Statements Posters | CCSS Learning Targets | Bulletin Board",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-2-I-Can-Statements-Posters-CCSS-Learning-Targets-Bulletin-Board-17637398",
+      "key": "common-core",
+      "posters": 37,
+      "course": "Algebra 2",
+      "img": "/assets/images/ican/17637398.jpg"
+     }
+    ],
+    "bundles": [
+     {
+      "id": "17083437",
+      "title": "Math I Can Statements Posters | 5th Grade to Geometry | CCSS Learning Targets",
+      "url": "https://www.teacherspayteachers.com/Product/Math-I-Can-Statements-Posters-5th-Grade-to-Geometry-CCSS-Learning-Targets-17083437",
+      "key": "common-core",
+      "posters": 221,
+      "img": null
+     },
+     {
+      "id": "17083419",
+      "title": "Algebra 1 and Geometry I Can Posters BUNDLE | High School Targets CCSS",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-1-and-Geometry-I-Can-Posters-BUNDLE-High-School-Targets-CCSS-17083419",
+      "key": "common-core",
+      "posters": 75,
+      "img": null
+     },
+     {
+      "id": "17083399",
+      "title": "6th 7th 8th Grade Math I Can Posters BUNDLE | Learning Targets CCSS",
+      "url": "https://www.teacherspayteachers.com/Product/6th-7th-8th-Grade-Math-I-Can-Posters-BUNDLE-Learning-Targets-CCSS-17083399",
+      "key": "common-core",
+      "posters": 112,
+      "img": null
+     }
+    ],
+    "free": [
+     {
+      "id": "17083220",
+      "title": "FREE Middle School Sample Math I Can Posters | CCSS Learning Targets",
+      "url": "https://www.teacherspayteachers.com/Product/FREE-Middle-School-Sample-Math-I-Can-Posters-CCSS-Learning-Targets-17083220",
+      "key": "common-core",
+      "posters": 2,
+      "img": "/assets/images/ican/17083220.jpg"
+     },
+     {
+      "id": "16495555",
+      "title": "7th Grade Math I Can Statements FREE | Learning Targets CCSS Year at a Glance",
+      "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-I-Can-Statements-FREE-Learning-Targets-CCSS-Year-at-a-Glance-16495555",
+      "key": "common-core",
+      "posters": null,
+      "img": "/assets/images/ican/16495555.jpg"
+     },
+     {
+      "id": "16495554",
+      "title": "6th Grade Math I Can Statements FREE | Learning Targets CCSS Year at a Glance",
+      "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-I-Can-Statements-FREE-Learning-Targets-CCSS-Year-at-a-Glance-16495554",
+      "key": "common-core",
+      "posters": null,
+      "img": "/assets/images/ican/16495554.jpg"
+     },
+     {
+      "id": "17083228",
+      "title": "FREE High School Sample Math I Can Posters | CCSS Learning Targets",
+      "url": "https://www.teacherspayteachers.com/Product/FREE-High-School-Sample-Math-I-Can-Posters-CCSS-Learning-Targets-17083228",
+      "key": "common-core",
+      "posters": 2,
+      "img": "/assets/images/ican/17083228.jpg"
+     }
+    ],
+    "trackers": [],
+    "notice": "Math Class 678 is not affiliated with, sponsored by, or endorsed by NGA Center or CCSSO.",
+    "pitch": null
+   },
+   {
+    "slug": "indiana",
+    "name": "Indiana",
+    "standards": "the 2023 Indiana Academic Standards",
+    "hidden": false,
+    "courses": [
+     {
+      "id": "17083888",
+      "title": "5th Grade Math I Can Statements | Indiana IAS Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-I-Can-Statements-Indiana-IAS-Standards-Learning-Target-Posters-17083888",
+      "key": "indiana",
+      "posters": 23,
+      "course": "5th Grade",
+      "img": "/assets/images/ican/17083888.jpg"
+     },
+     {
+      "id": "17083891",
+      "title": "6th Grade Math I Can Statements | Indiana IAS Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-I-Can-Statements-Indiana-IAS-Standards-Learning-Target-Posters-17083891",
+      "key": "indiana",
+      "posters": 25,
+      "course": "6th Grade",
+      "img": "/assets/images/ican/17083891.jpg"
+     },
+     {
+      "id": "17083895",
+      "title": "7th Grade Math I Can Statements | Indiana IAS Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-I-Can-Statements-Indiana-IAS-Standards-Learning-Target-Posters-17083895",
+      "key": "indiana",
+      "posters": 24,
+      "course": "7th Grade",
+      "img": "/assets/images/ican/17083895.jpg"
+     },
+     {
+      "id": "17083899",
+      "title": "8th Grade Math I Can Statements | Indiana IAS Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-I-Can-Statements-Indiana-IAS-Standards-Learning-Target-Posters-17083899",
+      "key": "indiana",
+      "posters": 20,
+      "course": "8th Grade",
+      "img": "/assets/images/ican/17083899.jpg"
+     },
+     {
+      "id": "17083905",
+      "title": "Algebra 1 Math I Can Statements | Indiana IAS Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Math-I-Can-Statements-Indiana-IAS-Standards-Learning-Target-Posters-17083905",
+      "key": "indiana",
+      "posters": 22,
+      "course": "Algebra 1",
+      "img": "/assets/images/ican/17083905.jpg"
+     },
+     {
+      "id": "17083910",
+      "title": "Geometry Math I Can Statements | Indiana IAS Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Geometry-Math-I-Can-Statements-Indiana-IAS-Standards-Learning-Target-Posters-17083910",
+      "key": "indiana",
+      "posters": 26,
+      "course": "Geometry",
+      "img": "/assets/images/ican/17083910.jpg"
+     },
+     {
+      "id": "17637405",
+      "title": "Algebra 2 I Can Statements Posters | Indiana Learning Targets | Bulletin Board",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-2-I-Can-Statements-Posters-Indiana-Learning-Targets-Bulletin-Board-17637405",
+      "key": "indiana",
+      "posters": 19,
+      "course": "Algebra 2",
+      "img": "/assets/images/ican/17637405.jpg"
+     }
+    ],
+    "bundles": [
+     {
+      "id": "17083919",
+      "title": "Indiana IAS Math I Can Statements BUNDLE | 6th-Geometry Learning Targets",
+      "url": "https://www.teacherspayteachers.com/Product/Indiana-IAS-Math-I-Can-Statements-BUNDLE-6th-Geometry-Learning-Targets-17083919",
+      "key": "indiana",
+      "posters": 140,
+      "img": null
+     }
+    ],
+    "free": [
+     {
+      "id": "17083981",
+      "title": "Indiana IAS Math I Can Statements FREE Sample | Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Indiana-IAS-Math-I-Can-Statements-FREE-Sample-Learning-Target-Posters-17083981",
+      "key": "indiana",
+      "posters": 6,
+      "img": "/assets/images/ican/17083981.jpg"
+     }
+    ],
+    "trackers": [],
+    "notice": "Math Class 678 is not affiliated with, sponsored by, or endorsed by the Indiana Department of Education.",
+    "pitch": "Built for Indiana classrooms — every poster carries a 2023 Indiana Academic Standards code, a student-facing I Can statement, and a real worked math visual that teaches the skill."
+   },
+   {
+    "slug": "texas",
+    "name": "Texas",
+    "standards": "the Texas TEKS",
+    "hidden": false,
+    "courses": [
+     {
+      "id": "17085893",
+      "title": "6th Grade Math I Can Statements | Texas TEKS Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-I-Can-Statements-Texas-TEKS-Standards-Learning-Target-Posters-17085893",
+      "key": "texas",
+      "posters": 52,
+      "course": "6th Grade",
+      "img": "/assets/images/ican/17085893.jpg"
+     },
+     {
+      "id": "17085917",
+      "title": "7th Grade Math I Can Statements | Texas TEKS Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-I-Can-Statements-Texas-TEKS-Standards-Learning-Target-Posters-17085917",
+      "key": "texas",
+      "posters": 43,
+      "course": "7th Grade",
+      "img": "/assets/images/ican/17085917.jpg"
+     },
+     {
+      "id": "17085938",
+      "title": "8th Grade Math I Can Statements | Texas TEKS Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-I-Can-Statements-Texas-TEKS-Standards-Learning-Target-Posters-17085938",
+      "key": "texas",
+      "posters": 45,
+      "course": "8th Grade",
+      "img": "/assets/images/ican/17085938.jpg"
+     },
+     {
+      "id": "17085958",
+      "title": "Algebra 1 Math I Can Statements | Texas TEKS Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Math-I-Can-Statements-Texas-TEKS-Standards-Learning-Target-Posters-17085958",
+      "key": "texas",
+      "posters": 49,
+      "course": "Algebra 1",
+      "img": "/assets/images/ican/17085958.jpg"
+     },
+     {
+      "id": "17085987",
+      "title": "Geometry Math I Can Statements | Texas TEKS Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Geometry-Math-I-Can-Statements-Texas-TEKS-Standards-Learning-Target-Posters-17085987",
+      "key": "texas",
+      "posters": 42,
+      "course": "Geometry",
+      "img": "/assets/images/ican/17085987.jpg"
+     },
+     {
+      "id": "17637414",
+      "title": "Algebra 2 I Can Statements Posters | Texas TEKS Targets | Bulletin Board",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-2-I-Can-Statements-Posters-Texas-TEKS-Targets-Bulletin-Board-17637414",
+      "key": "texas",
+      "posters": 48,
+      "course": "Algebra 2",
+      "img": "/assets/images/ican/17637414.jpg"
+     }
+    ],
+    "bundles": [
+     {
+      "id": "17358371",
+      "title": "Texas TEKS Math I Can Statements BUNDLE | 6th Grade to 8th Grade  Full Year Set",
+      "url": "https://www.teacherspayteachers.com/Product/Texas-TEKS-Math-I-Can-Statements-BUNDLE-6th-Grade-to-8th-Grade-Full-Year-Set-17358371",
+      "key": "texas",
+      "posters": 140,
+      "img": null
+     },
+     {
+      "id": "17086007",
+      "title": "Texas TEKS Math I Can Statements BUNDLE | 6th Grade to Geometry Full Year Set",
+      "url": "https://www.teacherspayteachers.com/Product/Texas-TEKS-Math-I-Can-Statements-BUNDLE-6th-Grade-to-Geometry-Full-Year-Set-17086007",
+      "key": "texas",
+      "posters": 231,
+      "img": null
+     }
+    ],
+    "free": [
+     {
+      "id": "17085998",
+      "title": "Texas TEKS Math I Can Statements FREE Sample | Learning Target Posters 6-12",
+      "url": "https://www.teacherspayteachers.com/Product/Texas-TEKS-Math-I-Can-Statements-FREE-Sample-Learning-Target-Posters-6-12-17085998",
+      "key": "texas",
+      "posters": 5,
+      "img": "/assets/images/ican/17085998.jpg"
+     }
+    ],
+    "trackers": [],
+    "notice": "Math Class 678 is not affiliated with, sponsored by, or endorsed by the Texas Education Agency (TEA).",
+    "pitch": "Built for Texas classrooms — every poster carries a TEKS 111."
+   },
+   {
+    "slug": "florida",
+    "name": "Florida",
+    "standards": "Florida's B.E.S.T. Standards",
+    "hidden": false,
+    "courses": [
+     {
+      "id": "17086192",
+      "title": "6th Grade Math I Can Statements | Florida B.E.S.T. Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-I-Can-Statements-Florida-BEST-Learning-Target-Posters-17086192",
+      "key": "florida",
+      "posters": 40,
+      "course": "6th Grade",
+      "img": "/assets/images/ican/17086192.jpg"
+     },
+     {
+      "id": "17086211",
+      "title": "7th Grade Math I Can Statements | Florida B.E.S.T. Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-I-Can-Statements-Florida-BEST-Learning-Target-Posters-17086211",
+      "key": "florida",
+      "posters": 34,
+      "course": "7th Grade",
+      "img": "/assets/images/ican/17086211.jpg"
+     },
+     {
+      "id": "17086215",
+      "title": "8th Grade Math I Can Statements | Florida B.E.S.T. Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-I-Can-Statements-Florida-BEST-Learning-Target-Posters-17086215",
+      "key": "florida",
+      "posters": 40,
+      "course": "8th Grade",
+      "img": "/assets/images/ican/17086215.jpg"
+     },
+     {
+      "id": "17086225",
+      "title": "Algebra 1 Math I Can Statements | Florida B.E.S.T. Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Math-I-Can-Statements-Florida-BEST-Learning-Target-Posters-17086225",
+      "key": "florida",
+      "posters": 46,
+      "course": "Algebra 1",
+      "img": "/assets/images/ican/17086225.jpg"
+     },
+     {
+      "id": "17086233",
+      "title": "Geometry Math I Can Statements | Florida B.E.S.T. Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Geometry-Math-I-Can-Statements-Florida-BEST-Learning-Target-Posters-17086233",
+      "key": "florida",
+      "posters": 35,
+      "course": "Geometry",
+      "img": "/assets/images/ican/17086233.jpg"
+     },
+     {
+      "id": "17637427",
+      "title": "Geometry Honors I Can Statements Posters | Florida B.E.S.T. Standards",
+      "url": "https://www.teacherspayteachers.com/Product/Geometry-Honors-I-Can-Statements-Posters-Florida-BEST-Standards-17637427",
+      "key": "florida",
+      "posters": 44,
+      "course": "Geometry Honors",
+      "img": "/assets/images/ican/17637427.jpg"
+     },
+     {
+      "id": "17637431",
+      "title": "Algebra 2 I Can Statements Posters | Florida B.E.S.T. | Bulletin Board",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-2-I-Can-Statements-Posters-Florida-BEST-Bulletin-Board-17637431",
+      "key": "florida",
+      "posters": 50,
+      "course": "Algebra 2",
+      "img": "/assets/images/ican/17637431.jpg"
+     }
+    ],
+    "bundles": [
+     {
+      "id": "17086290",
+      "title": "Florida B.E.S.T. Math I Can Statements BUNDLE | 6th-Geometry Learning Targets",
+      "url": "https://www.teacherspayteachers.com/Product/Florida-BEST-Math-I-Can-Statements-BUNDLE-6th-Geometry-Learning-Targets-17086290",
+      "key": "florida",
+      "posters": 195,
+      "img": null
+     }
+    ],
+    "free": [
+     {
+      "id": "17086238",
+      "title": "Florida B.E.S.T. Math I Can Statements FREE Sample | Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Florida-BEST-Math-I-Can-Statements-FREE-Sample-Learning-Target-Posters-17086238",
+      "key": "florida",
+      "posters": 5,
+      "img": "/assets/images/ican/17086238.jpg"
+     }
+    ],
+    "trackers": [],
+    "notice": "Math Class 678 is not affiliated with, sponsored by, or endorsed by the Florida Department of Education.",
+    "pitch": "Built for Florida classrooms — every poster carries a B."
+   },
+   {
+    "slug": "north-carolina",
+    "name": "North Carolina",
+    "standards": "the North Carolina Standard Course of Study",
+    "hidden": false,
+    "courses": [
+     {
+      "id": "17626000",
+      "title": "I Can Statements 6th Grade Math Posters | North Carolina NC SCS Learning Targets",
+      "url": "https://www.teacherspayteachers.com/Product/I-Can-Statements-6th-Grade-Math-Posters-North-Carolina-NC-SCS-Learning-Targets-17626000",
+      "key": "north-carolina",
+      "posters": 31,
+      "course": "6th Grade",
+      "img": "/assets/images/ican/17626000.jpg"
+     },
+     {
+      "id": "17626001",
+      "title": "I Can Statements 7th Grade Math Posters | North Carolina NC SCS Learning Targets",
+      "url": "https://www.teacherspayteachers.com/Product/I-Can-Statements-7th-Grade-Math-Posters-North-Carolina-NC-SCS-Learning-Targets-17626001",
+      "key": "north-carolina",
+      "posters": 23,
+      "course": "7th Grade",
+      "img": "/assets/images/ican/17626001.jpg"
+     },
+     {
+      "id": "17626002",
+      "title": "I Can Statements 8th Grade Math Posters | North Carolina NC SCS Learning Targets",
+      "url": "https://www.teacherspayteachers.com/Product/I-Can-Statements-8th-Grade-Math-Posters-North-Carolina-NC-SCS-Learning-Targets-17626002",
+      "key": "north-carolina",
+      "posters": 25,
+      "course": "8th Grade",
+      "img": "/assets/images/ican/17626002.jpg"
+     },
+     {
+      "id": "17626004",
+      "title": "I Can Statements NC Math 1 Posters | North Carolina Standard Course of Study",
+      "url": "https://www.teacherspayteachers.com/Product/I-Can-Statements-NC-Math-1-Posters-North-Carolina-Standard-Course-of-Study-17626004",
+      "key": "north-carolina",
+      "posters": 50,
+      "course": "NC Math 1",
+      "img": "/assets/images/ican/17626004.jpg"
+     },
+     {
+      "id": "17626008",
+      "title": "I Can Statements NC Math 2 Posters | North Carolina Standard Course of Study",
+      "url": "https://www.teacherspayteachers.com/Product/I-Can-Statements-NC-Math-2-Posters-North-Carolina-Standard-Course-of-Study-17626008",
+      "key": "north-carolina",
+      "posters": 59,
+      "course": "NC Math 2",
+      "img": "/assets/images/ican/17626008.jpg"
+     },
+     {
+      "id": "17626009",
+      "title": "I Can Statements NC Math 3 Posters | North Carolina Standard Course of Study",
+      "url": "https://www.teacherspayteachers.com/Product/I-Can-Statements-NC-Math-3-Posters-North-Carolina-Standard-Course-of-Study-17626009",
+      "key": "north-carolina",
+      "posters": 52,
+      "course": "NC Math 3",
+      "img": "/assets/images/ican/17626009.jpg"
+     }
+    ],
+    "bundles": [
+     {
+      "id": "17626016",
+      "title": "I Can Statements Math Posters BUNDLE | North Carolina NCSCOS 6-8 and NC Math 1-3",
+      "url": "https://www.teacherspayteachers.com/Product/I-Can-Statements-Math-Posters-BUNDLE-North-Carolina-NCSCOS-6-8-and-NC-Math-1-3-17626016",
+      "key": "north-carolina",
+      "posters": 240,
+      "img": null
+     }
+    ],
+    "free": [],
+    "trackers": [],
+    "notice": "This resource is not created, endorsed, reviewed, or approved by the North Carolina Department of Public Instruction or the North Carolina State Board of Education.",
+    "pitch": "Built for North Carolina classrooms — every poster carries a code from the North Carolina Standard Course of Study, a student-facing I Can statement, and a real worked math visual that teaches the skill."
+   },
+   {
+    "slug": "south-carolina",
+    "name": "South Carolina",
+    "standards": "South Carolina's College- and Career-Ready Standards",
+    "hidden": false,
+    "courses": [
+     {
+      "id": "17090998",
+      "title": "6th Grade Math I Can Statements | South Carolina SCCCR Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-I-Can-Statements-South-Carolina-SCCCR-Learning-Target-Posters-17090998",
+      "key": "south-carolina",
+      "posters": 39,
+      "course": "6th Grade",
+      "img": "/assets/images/ican/17090998.jpg"
+     },
+     {
+      "id": "17091014",
+      "title": "6th-7th Compacted Math I Can Statements | South Carolina SCCCR Standards Posters",
+      "url": "https://www.teacherspayteachers.com/Product/6th-7th-Compacted-Math-I-Can-Statements-South-Carolina-SCCCR-Standards-Posters-17091014",
+      "key": "south-carolina",
+      "posters": 66,
+      "course": "6th-7th Compacted",
+      "img": "/assets/images/ican/17091014.jpg"
+     },
+     {
+      "id": "17090996",
+      "title": "7th Grade Math I Can Statements | South Carolina SCCCR Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-I-Can-Statements-South-Carolina-SCCCR-Learning-Target-Posters-17090996",
+      "key": "south-carolina",
+      "posters": 33,
+      "course": "7th Grade",
+      "img": "/assets/images/ican/17090996.jpg"
+     },
+     {
+      "id": "17091007",
+      "title": "8th Grade Math I Can Statements | South Carolina SCCCR Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-I-Can-Statements-South-Carolina-SCCCR-Learning-Target-Posters-17091007",
+      "key": "south-carolina",
+      "posters": 39,
+      "course": "8th Grade",
+      "img": "/assets/images/ican/17091007.jpg"
+     },
+     {
+      "id": "17091008",
+      "title": "Algebra 1 Math I Can Statements | South Carolina SCCCR Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Math-I-Can-Statements-South-Carolina-SCCCR-Learning-Target-Posters-17091008",
+      "key": "south-carolina",
+      "posters": 31,
+      "course": "Algebra 1",
+      "img": "/assets/images/ican/17091008.jpg"
+     },
+     {
+      "id": "17091005",
+      "title": "Geometry & Statistics Math I Can Statements | South Carolina SCCCR Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Geometry-Statistics-Math-I-Can-Statements-South-Carolina-SCCCR-Posters-17091005",
+      "key": "south-carolina",
+      "posters": 36,
+      "course": "Geometry & Statistics",
+      "img": "/assets/images/ican/17091005.jpg"
+     },
+     {
+      "id": "17637478",
+      "title": "Algebra 2 & Probability I Can Statements | South Carolina Learning Targets",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-2-Probability-I-Can-Statements-South-Carolina-Learning-Targets-17637478",
+      "key": "south-carolina",
+      "posters": 29,
+      "course": "Algebra 2 & Probability",
+      "img": "/assets/images/ican/17637478.jpg"
+     }
+    ],
+    "bundles": [
+     {
+      "id": "17091047",
+      "title": "South Carolina SCCCR Math I Can Statements BUNDLE | 6th Grade to Geometry Full",
+      "url": "https://www.teacherspayteachers.com/Product/South-Carolina-SCCCR-Math-I-Can-Statements-BUNDLE-6th-Grade-to-Geometry-Full-17091047",
+      "key": "south-carolina",
+      "posters": 178,
+      "img": null
+     }
+    ],
+    "free": [
+     {
+      "id": "17091018",
+      "title": "South Carolina SCCCR Math I Can Statements FREE Sample | Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/South-Carolina-SCCCR-Math-I-Can-Statements-FREE-Sample-Learning-Target-Posters-17091018",
+      "key": "south-carolina",
+      "posters": 5,
+      "img": "/assets/images/ican/17091018.jpg"
+     }
+    ],
+    "trackers": [],
+    "notice": "Math Class 678 is not affiliated with, sponsored by, or endorsed by the South Carolina Department of Education.",
+    "pitch": "Built for South Carolina classrooms — every poster carries the real 2025 SC CCR Mathematics Standards code, a student-facing I Can statement, and a real worked math visual that teaches the skill."
+   },
+   {
+    "slug": "virginia",
+    "name": "Virginia",
+    "standards": "the Virginia Standards of Learning",
+    "hidden": false,
+    "courses": [
+     {
+      "id": "17090169",
+      "title": "6th Grade Math I Can Statements | Virginia SOL Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-I-Can-Statements-Virginia-SOL-Standards-Learning-Target-Posters-17090169",
+      "key": "virginia",
+      "posters": 70,
+      "course": "6th Grade",
+      "img": "/assets/images/ican/17090169.jpg"
+     },
+     {
+      "id": "17090171",
+      "title": "7th Grade Math I Can Statements | Virginia SOL Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-I-Can-Statements-Virginia-SOL-Standards-Learning-Target-Posters-17090171",
+      "key": "virginia",
+      "posters": 66,
+      "course": "7th Grade",
+      "img": "/assets/images/ican/17090171.jpg"
+     },
+     {
+      "id": "17090174",
+      "title": "8th Grade Math I Can Statements | Virginia SOL Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-I-Can-Statements-Virginia-SOL-Standards-Learning-Target-Posters-17090174",
+      "key": "virginia",
+      "posters": 74,
+      "course": "8th Grade",
+      "img": "/assets/images/ican/17090174.jpg"
+     },
+     {
+      "id": "17090176",
+      "title": "Algebra 1 Math I Can Statements | Virginia SOL Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Math-I-Can-Statements-Virginia-SOL-Standards-Learning-Target-Posters-17090176",
+      "key": "virginia",
+      "posters": 55,
+      "course": "Algebra 1",
+      "img": "/assets/images/ican/17090176.jpg"
+     },
+     {
+      "id": "17090179",
+      "title": "Geometry Math I Can Statements | Virginia SOL Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Geometry-Math-I-Can-Statements-Virginia-SOL-Standards-Learning-Target-Posters-17090179",
+      "key": "virginia",
+      "posters": 56,
+      "course": "Geometry",
+      "img": "/assets/images/ican/17090179.jpg"
+     },
+     {
+      "id": "17637449",
+      "title": "Algebra 2 I Can Statements Posters | Virginia SOL Targets | Bulletin Board",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-2-I-Can-Statements-Posters-Virginia-SOL-Targets-Bulletin-Board-17637449",
+      "key": "virginia",
+      "posters": 77,
+      "course": "Algebra 2",
+      "img": "/assets/images/ican/17637449.jpg"
+     }
+    ],
+    "bundles": [
+     {
+      "id": "17090190",
+      "title": "Virginia SOL Math I Can Statements BUNDLE | 6th Grade to Geometry Full Course",
+      "url": "https://www.teacherspayteachers.com/Product/Virginia-SOL-Math-I-Can-Statements-BUNDLE-6th-Grade-to-Geometry-Full-Course-17090190",
+      "key": "virginia",
+      "posters": 321,
+      "img": null
+     }
+    ],
+    "free": [
+     {
+      "id": "17090181",
+      "title": "Virginia SOL Math I Can Statements FREE Sample | Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Virginia-SOL-Math-I-Can-Statements-FREE-Sample-Learning-Target-Posters-17090181",
+      "key": "virginia",
+      "posters": 5,
+      "img": "/assets/images/ican/17090181.jpg"
+     }
+    ],
+    "trackers": [],
+    "notice": "Math Class 678 is not affiliated with, sponsored by, or endorsed by the Virginia Department of Education.",
+    "pitch": "Built for Virginia classrooms — every poster carries a 2023 Mathematics SOL code, a student-facing I Can statement, and a real worked math visual that teaches the skill."
+   },
+   {
+    "slug": "tennessee",
+    "name": "Tennessee",
+    "standards": "the Tennessee Academic Standards for Mathematics",
+    "hidden": false,
+    "courses": [
+     {
+      "id": "17094452",
+      "title": "6th Grade Math I Can Statements | Tennessee Math Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-I-Can-Statements-Tennessee-Math-Learning-Target-Posters-17094452",
+      "key": "tennessee",
+      "posters": 42,
+      "course": "6th Grade",
+      "img": "/assets/images/ican/17094452.jpg"
+     },
+     {
+      "id": "17094456",
+      "title": "7th Grade Math I Can Statements | Tennessee Math Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-I-Can-Statements-Tennessee-Math-Learning-Target-Posters-17094456",
+      "key": "tennessee",
+      "posters": 35,
+      "course": "7th Grade",
+      "img": "/assets/images/ican/17094456.jpg"
+     },
+     {
+      "id": "17094466",
+      "title": "8th Grade Math I Can Statements | Tennessee Math Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-I-Can-Statements-Tennessee-Math-Learning-Target-Posters-17094466",
+      "key": "tennessee",
+      "posters": 32,
+      "course": "8th Grade",
+      "img": "/assets/images/ican/17094466.jpg"
+     },
+     {
+      "id": "17094476",
+      "title": "Algebra 1 Math I Can Statements | Tennessee Math Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Math-I-Can-Statements-Tennessee-Math-Learning-Target-Posters-17094476",
+      "key": "tennessee",
+      "posters": 45,
+      "course": "Algebra 1",
+      "img": "/assets/images/ican/17094476.jpg"
+     },
+     {
+      "id": "17094482",
+      "title": "Geometry Math I Can Statements | Tennessee Math Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Geometry-Math-I-Can-Statements-Tennessee-Math-Learning-Target-Posters-17094482",
+      "key": "tennessee",
+      "posters": 34,
+      "course": "Geometry",
+      "img": "/assets/images/ican/17094482.jpg"
+     },
+     {
+      "id": "17637501",
+      "title": "Algebra 2 I Can Statements Posters | Tennessee Learning Targets | Bulletin Board",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-2-I-Can-Statements-Posters-Tennessee-Learning-Targets-Bulletin-Board-17637501",
+      "key": "tennessee",
+      "posters": 38,
+      "course": "Algebra 2",
+      "img": "/assets/images/ican/17637501.jpg"
+     }
+    ],
+    "bundles": [
+     {
+      "id": "17094506",
+      "title": "Tennessee Math I Can Statements BUNDLE | 6th Grade to Geometry Full Course",
+      "url": "https://www.teacherspayteachers.com/Product/Tennessee-Math-I-Can-Statements-BUNDLE-6th-Grade-to-Geometry-Full-Course-17094506",
+      "key": "tennessee",
+      "posters": 188,
+      "img": null
+     }
+    ],
+    "free": [
+     {
+      "id": "17094490",
+      "title": "Tennessee Math I Can Statements FREE Sample | Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Tennessee-Math-I-Can-Statements-FREE-Sample-Learning-Target-Posters-17094490",
+      "key": "tennessee",
+      "posters": 5,
+      "img": "/assets/images/ican/17094490.jpg"
+     }
+    ],
+    "trackers": [],
+    "notice": "Math Class 678 is not affiliated with, sponsored by, or endorsed by the Tennessee Department of Education.",
+    "pitch": "Built for Tennessee classrooms — every poster carries the real Tennessee Academic Standards for Mathematics code (2021 State Board adoption, in effect through 2031-32), a student-facing I Can statement, and a real worked math visual that teaches the skill."
+   },
+   {
+    "slug": "new-york",
+    "name": "New York",
+    "standards": "the New York State Next Generation Mathematics Learning Standards",
+    "hidden": false,
+    "courses": [
+     {
+      "id": "17089542",
+      "title": "6th Grade Math I Can Statements | New York NGLS Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-I-Can-Statements-New-York-NGLS-Learning-Target-Posters-17089542",
+      "key": "new-york",
+      "posters": 49,
+      "course": "6th Grade",
+      "img": "/assets/images/ican/17089542.jpg"
+     },
+     {
+      "id": "17089544",
+      "title": "7th Grade Math I Can Statements | New York NGLS Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-I-Can-Statements-New-York-NGLS-Learning-Target-Posters-17089544",
+      "key": "new-york",
+      "posters": 32,
+      "course": "7th Grade",
+      "img": "/assets/images/ican/17089544.jpg"
+     },
+     {
+      "id": "17089546",
+      "title": "8th Grade Math I Can Statements | New York NGLS Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-I-Can-Statements-New-York-NGLS-Learning-Target-Posters-17089546",
+      "key": "new-york",
+      "posters": 32,
+      "course": "8th Grade",
+      "img": "/assets/images/ican/17089546.jpg"
+     },
+     {
+      "id": "17089550",
+      "title": "Algebra 1 Math I Can Statements | New York NGLS Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Math-I-Can-Statements-New-York-NGLS-Learning-Target-Posters-17089550",
+      "key": "new-york",
+      "posters": 47,
+      "course": "Algebra 1",
+      "img": "/assets/images/ican/17089550.jpg"
+     },
+     {
+      "id": "17089552",
+      "title": "Geometry Math I Can Statements | New York NGLS Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Geometry-Math-I-Can-Statements-New-York-NGLS-Learning-Target-Posters-17089552",
+      "key": "new-york",
+      "posters": 42,
+      "course": "Geometry",
+      "img": "/assets/images/ican/17089552.jpg"
+     },
+     {
+      "id": "17637444",
+      "title": "Algebra 2 I Can Statements Posters | New York Learning Targets | Bulletin Board",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-2-I-Can-Statements-Posters-New-York-Learning-Targets-Bulletin-Board-17637444",
+      "key": "new-york",
+      "posters": 50,
+      "course": "Algebra 2",
+      "img": "/assets/images/ican/17637444.jpg"
+     }
+    ],
+    "bundles": [
+     {
+      "id": "17089566",
+      "title": "New York NGLS Math I Can Statements BUNDLE | 6th-Geometry Learning Targets",
+      "url": "https://www.teacherspayteachers.com/Product/New-York-NGLS-Math-I-Can-Statements-BUNDLE-6th-Geometry-Learning-Targets-17089566",
+      "key": "new-york",
+      "posters": 202,
+      "img": null
+     }
+    ],
+    "free": [
+     {
+      "id": "17089554",
+      "title": "New York NGLS Math I Can Statements FREE Sample | Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/New-York-NGLS-Math-I-Can-Statements-FREE-Sample-Learning-Target-Posters-17089554",
+      "key": "new-york",
+      "posters": 5,
+      "img": "/assets/images/ican/17089554.jpg"
+     }
+    ],
+    "trackers": [],
+    "notice": "Math Class 678 is not affiliated with, sponsored by, or endorsed by the New York State Education Department.",
+    "pitch": "Built for New York classrooms — every poster carries the NY-prefixed standard code from the NYS Next Generation Mathematics Learning Standards, a student-facing I Can statement, and a real worked math visual that teaches the skill."
+   },
+   {
+    "slug": "arizona",
+    "name": "Arizona",
+    "standards": "the Arizona Mathematics Standards",
+    "hidden": false,
+    "courses": [
+     {
+      "id": "17094969",
+      "title": "6th Grade Math I Can Statements | Arizona Math Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-I-Can-Statements-Arizona-Math-Standards-Learning-Target-Posters-17094969",
+      "key": "arizona",
+      "posters": 42,
+      "course": "6th Grade",
+      "img": "/assets/images/ican/17094969.jpg"
+     },
+     {
+      "id": "17094974",
+      "title": "7th Grade Math I Can Statements | Arizona Math Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-I-Can-Statements-Arizona-Math-Standards-Learning-Target-Posters-17094974",
+      "key": "arizona",
+      "posters": 34,
+      "course": "7th Grade",
+      "img": "/assets/images/ican/17094974.jpg"
+     },
+     {
+      "id": "17094978",
+      "title": "8th Grade Math I Can Statements | Arizona Math Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-I-Can-Statements-Arizona-Math-Standards-Learning-Target-Posters-17094978",
+      "key": "arizona",
+      "posters": 35,
+      "course": "8th Grade",
+      "img": "/assets/images/ican/17094978.jpg"
+     },
+     {
+      "id": "17094985",
+      "title": "Algebra 1 Math I Can Statements | Arizona Math Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Math-I-Can-Statements-Arizona-Math-Standards-Learning-Target-Posters-17094985",
+      "key": "arizona",
+      "posters": 51,
+      "course": "Algebra 1",
+      "img": "/assets/images/ican/17094985.jpg"
+     },
+     {
+      "id": "17094992",
+      "title": "Geometry Math I Can Statements | Arizona Math Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Geometry-Math-I-Can-Statements-Arizona-Math-Standards-Learning-Target-Posters-17094992",
+      "key": "arizona",
+      "posters": 40,
+      "course": "Geometry",
+      "img": "/assets/images/ican/17094992.jpg"
+     },
+     {
+      "id": "17637511",
+      "title": "Algebra 2 I Can Statements Posters | Arizona Learning Targets | Bulletin Board",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-2-I-Can-Statements-Posters-Arizona-Learning-Targets-Bulletin-Board-17637511",
+      "key": "arizona",
+      "posters": 47,
+      "course": "Algebra 2",
+      "img": "/assets/images/ican/17637511.jpg"
+     }
+    ],
+    "bundles": [
+     {
+      "id": "17095004",
+      "title": "Arizona Math I Can Statements BUNDLE | 6th-Geometry Learning Targets",
+      "url": "https://www.teacherspayteachers.com/Product/Arizona-Math-I-Can-Statements-BUNDLE-6th-Geometry-Learning-Targets-17095004",
+      "key": "arizona",
+      "posters": 202,
+      "img": null
+     }
+    ],
+    "free": [
+     {
+      "id": "17095001",
+      "title": "Arizona Math I Can Statements FREE Sample | Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Arizona-Math-I-Can-Statements-FREE-Sample-Learning-Target-Posters-17095001",
+      "key": "arizona",
+      "posters": 5,
+      "img": "/assets/images/ican/17095001.jpg"
+     }
+    ],
+    "trackers": [
+     {
+      "id": "17208131",
+      "title": "Arizona Math Mastery Tracker Bundle | 6th Grade to Geometry | Standards Tracking",
+      "url": "https://www.teacherspayteachers.com/Product/Arizona-Math-Mastery-Tracker-Bundle-6th-Grade-to-Geometry-Standards-Tracking-17208131",
+      "key": "arizona",
+      "posters": null,
+      "course": "6th Grade",
+      "img": null
+     },
+     {
+      "id": "17208110",
+      "title": "6th 7th 8th Grade Math Mastery Tracker Bundle | Arizona Standards",
+      "url": "https://www.teacherspayteachers.com/Product/6th-7th-8th-Grade-Math-Mastery-Tracker-Bundle-Arizona-Standards-17208110",
+      "key": "arizona",
+      "posters": null,
+      "course": "8th Grade",
+      "img": null
+     },
+     {
+      "id": "17208070",
+      "title": "Standards Based Grading Mastery Tracker 7th Math | Arizona Standards",
+      "url": "https://www.teacherspayteachers.com/Product/Standards-Based-Grading-Mastery-Tracker-7th-Math-Arizona-Standards-17208070",
+      "key": "arizona",
+      "posters": null,
+      "course": "6th to Geometry",
+      "img": "/assets/images/ican/17208070.jpg"
+     },
+     {
+      "id": "17208073",
+      "title": "Standards Based Grading Mastery Tracker 8th Math | Arizona Standards",
+      "url": "https://www.teacherspayteachers.com/Product/Standards-Based-Grading-Mastery-Tracker-8th-Math-Arizona-Standards-17208073",
+      "key": "arizona",
+      "posters": null,
+      "course": "6th to Geometry",
+      "img": "/assets/images/ican/17208073.jpg"
+     },
+     {
+      "id": "17208069",
+      "title": "Standards Based Grading Mastery Tracker 6th Math | Arizona Standards",
+      "url": "https://www.teacherspayteachers.com/Product/Standards-Based-Grading-Mastery-Tracker-6th-Math-Arizona-Standards-17208069",
+      "key": "arizona",
+      "posters": null,
+      "course": "6th to Geometry",
+      "img": "/assets/images/ican/17208069.jpg"
+     },
+     {
+      "id": "17208075",
+      "title": "Standards Based Grading Mastery Tracker Algebra 1 Math | Arizona Standards",
+      "url": "https://www.teacherspayteachers.com/Product/Standards-Based-Grading-Mastery-Tracker-Algebra-1-Math-Arizona-Standards-17208075",
+      "key": "arizona",
+      "posters": null,
+      "course": "6th to Geometry",
+      "img": "/assets/images/ican/17208075.jpg"
+     },
+     {
+      "id": "17208078",
+      "title": "Standards Based Grading Mastery Tracker Geometry Math | Arizona Standards",
+      "url": "https://www.teacherspayteachers.com/Product/Standards-Based-Grading-Mastery-Tracker-Geometry-Math-Arizona-Standards-17208078",
+      "key": "arizona",
+      "posters": null,
+      "course": "6th to Geometry",
+      "img": "/assets/images/ican/17208078.jpg"
+     }
+    ],
+    "notice": "Math Class 678 is not affiliated with, sponsored by, or endorsed by the Arizona Department of Education.",
+    "pitch": "Built for Arizona classrooms — every poster carries the real Arizona Mathematics Standards code (State Board adopted December 2016), a student-facing I Can statement, and a real worked math visual that teaches the skill."
+   },
+   {
+    "slug": "oklahoma",
+    "name": "Oklahoma",
+    "standards": "the Oklahoma Academic Standards",
+    "hidden": false,
+    "courses": [
+     {
+      "id": "17090706",
+      "title": "6th Grade Math I Can Statements | Oklahoma OAS Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-I-Can-Statements-Oklahoma-OAS-Standards-Learning-Target-Posters-17090706",
+      "key": "oklahoma",
+      "posters": 38,
+      "course": "6th Grade",
+      "img": "/assets/images/ican/17090706.jpg"
+     },
+     {
+      "id": "17090709",
+      "title": "7th Grade Math I Can Statements | Oklahoma OAS Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-I-Can-Statements-Oklahoma-OAS-Standards-Learning-Target-Posters-17090709",
+      "key": "oklahoma",
+      "posters": 35,
+      "course": "7th Grade",
+      "img": "/assets/images/ican/17090709.jpg"
+     },
+     {
+      "id": "17090711",
+      "title": "Pre-Algebra Math I Can Statements Oklahoma OAS Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Pre-Algebra-Math-I-Can-Statements-Oklahoma-OAS-Standards-Learning-Target-Posters-17090711",
+      "key": "oklahoma",
+      "posters": 29,
+      "course": "Pre-Algebra",
+      "img": "/assets/images/ican/17090711.jpg"
+     },
+     {
+      "id": "17090712",
+      "title": "Algebra 1 Math I Can Statements | Oklahoma OAS Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Math-I-Can-Statements-Oklahoma-OAS-Standards-Learning-Target-Posters-17090712",
+      "key": "oklahoma",
+      "posters": 33,
+      "course": "Algebra 1",
+      "img": "/assets/images/ican/17090712.jpg"
+     },
+     {
+      "id": "17090713",
+      "title": "Geometry Math I Can Statements | Oklahoma OAS Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Geometry-Math-I-Can-Statements-Oklahoma-OAS-Standards-Learning-Target-Posters-17090713",
+      "key": "oklahoma",
+      "posters": 23,
+      "course": "Geometry",
+      "img": "/assets/images/ican/17090713.jpg"
+     },
+     {
+      "id": "17637457",
+      "title": "Algebra 2 I Can Statements Posters | Oklahoma Learning Targets | Bulletin Board",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-2-I-Can-Statements-Posters-Oklahoma-Learning-Targets-Bulletin-Board-17637457",
+      "key": "oklahoma",
+      "posters": 42,
+      "course": "Algebra 2",
+      "img": "/assets/images/ican/17637457.jpg"
+     }
+    ],
+    "bundles": [
+     {
+      "id": "17090719",
+      "title": "Oklahoma OAS Math I Can Statements BUNDLE | 6th Grade to Geometry Full Course",
+      "url": "https://www.teacherspayteachers.com/Product/Oklahoma-OAS-Math-I-Can-Statements-BUNDLE-6th-Grade-to-Geometry-Full-Course-17090719",
+      "key": "oklahoma",
+      "posters": 158,
+      "img": null
+     }
+    ],
+    "free": [
+     {
+      "id": "17090714",
+      "title": "Oklahoma OAS Math I Can Statements FREE Sample | Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Oklahoma-OAS-Math-I-Can-Statements-FREE-Sample-Learning-Target-Posters-17090714",
+      "key": "oklahoma",
+      "posters": 5,
+      "img": "/assets/images/ican/17090714.jpg"
+     }
+    ],
+    "trackers": [],
+    "notice": "Math Class 678 is not affiliated with, sponsored by, or endorsed by the Oklahoma State Department of Education.",
+    "pitch": "Built for Oklahoma classrooms — every poster carries the real Oklahoma Academic Standards for Mathematics code, a student-facing I Can statement, and a real worked math visual that teaches the skill."
+   },
+   {
+    "slug": "georgia",
+    "name": "Georgia",
+    "standards": "Georgia's GSE",
+    "hidden": true,
+    "courses": [
+     {
+      "id": "17094200",
+      "title": "6th Grade Math I Can Statements | Georgia GSE Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-I-Can-Statements-Georgia-GSE-Standards-Learning-Target-Posters-17094200",
+      "key": "georgia",
+      "posters": 38,
+      "course": "6th Grade",
+      "img": "/assets/images/ican/17094200.jpg"
+     },
+     {
+      "id": "17094211",
+      "title": "7th Grade Math I Can Statements | Georgia GSE Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-I-Can-Statements-Georgia-GSE-Standards-Learning-Target-Posters-17094211",
+      "key": "georgia",
+      "posters": 41,
+      "course": "7th Grade",
+      "img": "/assets/images/ican/17094211.jpg"
+     },
+     {
+      "id": "17094219",
+      "title": "8th Grade Math I Can Statements | Georgia GSE Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-I-Can-Statements-Georgia-GSE-Standards-Learning-Target-Posters-17094219",
+      "key": "georgia",
+      "posters": 36,
+      "course": "8th Grade",
+      "img": "/assets/images/ican/17094219.jpg"
+     },
+     {
+      "id": "17094231",
+      "title": "Algebra 1 Math I Can Statements | Georgia GSE Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Math-I-Can-Statements-Georgia-GSE-Standards-Learning-Target-Posters-17094231",
+      "key": "georgia",
+      "posters": 46,
+      "course": "Algebra 1",
+      "img": "/assets/images/ican/17094231.jpg"
+     },
+     {
+      "id": "17094243",
+      "title": "Geometry Math I Can Statements | Georgia GSE Standards Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Geometry-Math-I-Can-Statements-Georgia-GSE-Standards-Learning-Target-Posters-17094243",
+      "key": "georgia",
+      "posters": 42,
+      "course": "Geometry",
+      "img": "/assets/images/ican/17094243.jpg"
+     },
+     {
+      "id": "17637493",
+      "title": "Advanced Algebra | Algebra 2 I Can Statements | Georgia Learning Targets",
+      "url": "https://www.teacherspayteachers.com/Product/Advanced-Algebra-Algebra-2-I-Can-Statements-Georgia-Learning-Targets-17637493",
+      "key": "georgia",
+      "posters": 45,
+      "course": "Advanced Algebra",
+      "img": "/assets/images/ican/17637493.jpg"
+     }
+    ],
+    "bundles": [
+     {
+      "id": "17094261",
+      "title": "Georgia GSE Math I Can Statements BUNDLE | 6th Grade to Geometry Full Course",
+      "url": "https://www.teacherspayteachers.com/Product/Georgia-GSE-Math-I-Can-Statements-BUNDLE-6th-Grade-to-Geometry-Full-Course-17094261",
+      "key": "georgia",
+      "posters": 203,
+      "img": null
+     }
+    ],
+    "free": [
+     {
+      "id": "17094252",
+      "title": "Georgia GSE Math I Can Statements FREE Sample | Learning Target Posters",
+      "url": "https://www.teacherspayteachers.com/Product/Georgia-GSE-Math-I-Can-Statements-FREE-Sample-Learning-Target-Posters-17094252",
+      "key": "georgia",
+      "posters": 5,
+      "img": "/assets/images/ican/17094252.jpg"
+     }
+    ],
+    "trackers": [],
+    "notice": "Math Class 678 is not affiliated with, sponsored by, or endorsed by the Georgia Department of Education.",
+    "pitch": "Built for Georgia classrooms — every poster carries the real Georgia 2021 K-12 Mathematics Standards code, a student-facing I Can statement, and a real worked math visual that teaches the skill."
+   }
+  ],
+  "personal_finance": [
+   {
+    "id": "17626264",
+    "title": "I Can Statements Personal Financial Literacy Posters | Colorado CAS Standards",
+    "url": "https://www.teacherspayteachers.com/Product/I-Can-Statements-Personal-Financial-Literacy-Posters-Colorado-CAS-Standards-17626264",
+    "key": "pf",
+    "posters": 28,
+    "state": "Colorado",
+    "free": false,
+    "img": "/assets/images/ican/17626264.jpg"
+   },
+   {
+    "id": "17336009",
+    "title": "Florida Personal Finance I Can Posters | SS.912.FL Standards",
+    "url": "https://www.teacherspayteachers.com/Product/Florida-Personal-Finance-I-Can-Posters-SS912FL-Standards-17336009",
+    "key": "pf",
+    "posters": 89,
+    "state": "Florida",
+    "free": false,
+    "img": "/assets/images/ican/17336009.jpg"
+   },
+   {
+    "id": "17332778",
+    "title": "Georgia Financial Literacy I Can Posters | High School Personal Finance",
+    "url": "https://www.teacherspayteachers.com/Product/Georgia-Financial-Literacy-I-Can-Posters-High-School-Personal-Finance-17332778",
+    "key": "pf",
+    "posters": 42,
+    "state": "Georgia",
+    "free": false,
+    "img": "/assets/images/ican/17332778.jpg"
+   },
+   {
+    "id": "17335504",
+    "title": "Indiana Personal Finance I Can Posters | NLPS Course 4540 Standards",
+    "url": "https://www.teacherspayteachers.com/Product/Indiana-Personal-Finance-I-Can-Posters-NLPS-Course-4540-Standards-17335504",
+    "key": "pf",
+    "posters": 67,
+    "state": "Indiana",
+    "free": false,
+    "img": "/assets/images/ican/17335504.jpg"
+   },
+   {
+    "id": "17626258",
+    "title": "I Can Statements Personal Finance Posters | Missouri Course Level Expectations",
+    "url": "https://www.teacherspayteachers.com/Product/I-Can-Statements-Personal-Finance-Posters-Missouri-Course-Level-Expectations-17626258",
+    "key": "pf",
+    "posters": 74,
+    "state": "Missouri",
+    "free": false,
+    "img": "/assets/images/ican/17626258.jpg"
+   },
+   {
+    "id": "17626244",
+    "title": "I Can Statements Personal Finance Posters | North Carolina EPF Standards",
+    "url": "https://www.teacherspayteachers.com/Product/I-Can-Statements-Personal-Finance-Posters-North-Carolina-EPF-Standards-17626244",
+    "key": "pf",
+    "posters": 41,
+    "state": "North Carolina",
+    "free": false,
+    "img": "/assets/images/ican/17626244.jpg"
+   },
+   {
+    "id": "17331672",
+    "title": "Ohio Financial Literacy I Can Posters | High School Personal Finance Standards",
+    "url": "https://www.teacherspayteachers.com/Product/Ohio-Financial-Literacy-I-Can-Posters-High-School-Personal-Finance-Standards-17331672",
+    "key": "pf",
+    "posters": 27,
+    "state": "Ohio",
+    "free": false,
+    "img": "/assets/images/ican/17331672.jpg"
+   },
+   {
+    "id": "17626252",
+    "title": "I Can Statements Personal Financial Literacy Posters | Oklahoma PFL Standards",
+    "url": "https://www.teacherspayteachers.com/Product/I-Can-Statements-Personal-Financial-Literacy-Posters-Oklahoma-PFL-Standards-17626252",
+    "key": "pf",
+    "posters": 40,
+    "state": "Oklahoma",
+    "free": false,
+    "img": "/assets/images/ican/17626252.jpg"
+   },
+   {
+    "id": "17336008",
+    "title": "South Carolina Personal Finance I Can Posters | Course 5141 Standards",
+    "url": "https://www.teacherspayteachers.com/Product/South-Carolina-Personal-Finance-I-Can-Posters-Course-5141-Standards-17336008",
+    "key": "pf",
+    "posters": 50,
+    "state": "South Carolina",
+    "free": false,
+    "img": "/assets/images/ican/17336008.jpg"
+   },
+   {
+    "id": "17106684",
+    "title": "Personal Finance I Can Posters | Tennessee Learning Targets",
+    "url": "https://www.teacherspayteachers.com/Product/Personal-Finance-I-Can-Posters-Tennessee-Learning-Targets-17106684",
+    "key": "pf",
+    "posters": null,
+    "state": "Tennessee",
+    "free": false,
+    "img": "/assets/images/ican/17106684.jpg"
+   },
+   {
+    "id": "17106744",
+    "title": "Personal Finance I Can Poster FREE Sample | Tennessee",
+    "url": "https://www.teacherspayteachers.com/Product/Personal-Finance-I-Can-Poster-FREE-Sample-Tennessee-17106744",
+    "key": "pf",
+    "posters": null,
+    "state": "Tennessee",
+    "free": true,
+    "img": "/assets/images/ican/17106744.jpg"
+   },
+   {
+    "id": "17331671",
+    "title": "Texas Personal Financial Literacy I Can Posters | TEKS 113.76 High School",
+    "url": "https://www.teacherspayteachers.com/Product/Texas-Personal-Financial-Literacy-I-Can-Posters-TEKS-11376-High-School-17331671",
+    "key": "pf",
+    "posters": 54,
+    "state": "Texas",
+    "free": false,
+    "img": "/assets/images/ican/17331671.jpg"
+   },
+   {
+    "id": "17332781",
+    "title": "Virginia Personal Finance I Can Posters | Economics and Personal Finance SOL",
+    "url": "https://www.teacherspayteachers.com/Product/Virginia-Personal-Finance-I-Can-Posters-Economics-and-Personal-Finance-SOL-17332781",
+    "key": "pf",
+    "posters": 73,
+    "state": "Virginia",
+    "free": false,
+    "img": "/assets/images/ican/17332781.jpg"
+   },
+   {
+    "id": "17626261",
+    "title": "I Can Statements Personal Financial Literacy Posters | Wisconsin PFL Standards",
+    "url": "https://www.teacherspayteachers.com/Product/I-Can-Statements-Personal-Financial-Literacy-Posters-Wisconsin-PFL-Standards-17626261",
+    "key": "pf",
+    "posters": 44,
+    "state": "Wisconsin",
+    "free": false,
+    "img": "/assets/images/ican/17626261.jpg"
+   }
+  ]
  }
 }
