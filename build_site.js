@@ -336,8 +336,6 @@ const BUNDLES = [
   { "id":"16734699","grade":"6","tier":"strand","name":"6th Grade Statistics & Probability","slug":"6th-grade-statistics-probability","url":"https://www.teacherspayteachers.com/Product/6th-Grade-Statistics-Data-Bundle-Dot-Plots-Histograms-Box-Plots-Mean-Median-16734699","thumb":"thumb1_hero_6th_StatisticsProbability.png","sheets":[7,8,10,29,30],
     "blurb":"The complete 6th grade Statistics and Probability strand, aligned to 6.SP. Students learn statistical questions, distributions, center versus variability, data displays, and numerical summaries across five 4-in-1 Skill Sheets, each with a reference page, practice, real-world application, and a built-in exit ticket." },
 
-  { "id":"16737025","grade":"6","tier":"topic","name":"6th Grade Expressions","slug":"6th-grade-expressions","url":"https://www.teacherspayteachers.com/Product/6th-Grade-Expressions-Bundle-Order-of-Operations-Exponents-Evaluating-16737025","thumb":"thumb1_hero_6th_Expressions.png","sheets":[1,16,17,64,18,19,20,24],
-    "blurb":"The expressions half of 6.EE: order of operations, exponents, writing and evaluating expressions, parts of an expression, combining like terms, the distributive property, and equivalent expressions. Eight 4-in-1 Skill Sheets, including the free Combining Like Terms sheet, each with reference, practice, application, and assessment." },
 
   { "id":"16737026","grade":"6","tier":"topic","name":"6th Grade Equations & Inequalities","slug":"6th-grade-equations-inequalities","url":"https://www.teacherspayteachers.com/Product/6th-Grade-Equations-Inequalities-Bundle-One-Step-Equations-Graphs-6EE-16737026","thumb":"thumb1_hero_6th_EquationsInequalities.png","sheets":[21,25,26,23],
     "blurb":"The equations half of 6.EE: solving one-step equations, identifying solutions and writing variable expressions, inequalities and their graphs, and independent versus dependent variables. Four 4-in-1 Skill Sheets aligned to 6.EE.B and 6.EE.C, each with a reference page, scaffolded practice, application, and a built-in assessment." },
@@ -5081,7 +5079,14 @@ const ilearnRules = [['/ilearn.html', `${STM}/indiana/`], ['/ilearn', `${STM}/in
   .concat(ILEARN.listings.flatMap(r => [[`/ilearn/${r.slug}.html`, ilearnTarget(r)], [`/ilearn/${r.slug}`, ilearnTarget(r)]]))
   .concat([['/ilearn/*', `${STM}/indiana/`]]);
 const ILEARN_REDIRECTS = ilearnRules.map(([from, to]) => `${from}   ${to}   301!`).join('\n') + '\n';
-const netlifyRedirects = `/join      ${SKOOL_JOIN_URL}   301!\n/join/*    ${SKOOL_JOIN_URL}   301!\n` + ILEARN_REDIRECTS;
+// RETIRED BUNDLES (2026-09-19). A bundle deleted on TPT loses its page here; its old URL 301s to the
+// live bundle that now carries its sheets, so a Google result or an old pin still lands somewhere useful.
+const RETIRED_BUNDLE_REDIRECTS = [
+  // 6th Grade Expressions (16737025) was folded into 6th Grade Expressions & Equations (16734544).
+  ['/bundles/6th-grade-expressions', '/bundles/6th-grade-expressions-equations.html'],
+  ['/bundles/6th-grade-expressions.html', '/bundles/6th-grade-expressions-equations.html'],
+].map(([from, to]) => `${from}   ${to}   301!`).join('\n') + '\n';
+const netlifyRedirects = `/join      ${SKOOL_JOIN_URL}   301!\n/join/*    ${SKOOL_JOIN_URL}   301!\n` + ILEARN_REDIRECTS + RETIRED_BUNDLE_REDIRECTS;
 
 /* ============================================================================
    write everything
