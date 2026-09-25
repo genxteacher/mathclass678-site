@@ -5138,6 +5138,20 @@ function vidCard(o) {
 }
 /* One video plays at a time. */
 const VID_SCRIPT = `<script>document.addEventListener('play',function(e){document.querySelectorAll('video').forEach(function(v){if(v!==e.target)v.pause()})},true)</script>`;
+/* A "see inside" section of video cards for products that have a preview video in VIDEO.by_id (warm-ups,
+   readiness checks, Mistake of the Week). items: [{ p (has .url), name, kicker, accent, feature }]. */
+const vidOf = p => p && VIDEO.by_id[((p.url || '').match(/-(\d{7,9})$/) || [])[1]];
+function videoGrid(items, eyebrow, heading, sub, alt) {
+  const list = items.filter(it => vidOf(it.p));
+  if (!list.length) return '';
+  return `<section class="section${alt ? ' cr-alt' : ''}">
+    <div class="wrap">
+      ${secHead(eyebrow, heading, sub || 'Press play for a 20-second look at the real pages.')}
+      <div class="cr-grid vid-grid">${list.map(it => vidCard({ url: it.p.url, ...vidOf(it.p), accent: it.accent, name: it.name, kicker: it.kicker, feature: it.feature })).join('')}</div>
+    </div>
+  </section>
+  ${VID_SCRIPT}`;
+}
 function videoSchema(items) {
   return items.map(v => ({ '@context': 'https://schema.org', '@type': 'VideoObject', name: v.name, description: v.desc,
     thumbnailUrl: SITE_URL + v.poster, contentUrl: SITE_URL + v.video, uploadDate: VIDEO_DATE, duration: 'PT20S' }));
@@ -5253,6 +5267,10 @@ function pageWarmupsHub() {
     </div>
   </section>
 
+  ${videoGrid(frees.map(c => ({ p: c.free, name: `${c.label} Warm-Ups, Week 1`, kicker: 'Free', accent: WU_ACCENT[c.key] }))
+    .concat([{ p: WU.b678, name: '6th, 7th & 8th Grade Warm-Ups', kicker: '540 days · three full years', feature: true }]),
+    'See inside', 'Watch a week in 20 seconds')}
+
   <section class="section">
     <div class="wrap">
       ${secHead('Back to school', 'The first 20 days', 'Twenty warm-ups that review the skills this year builds on, with trackers to see who needs a quick reteach before new content starts.')}
@@ -5339,6 +5357,10 @@ function pageWarmupsCourse(c) {
       <div class="cr-grid">${buy.join('')}</div>
     </div>
   </section>
+
+  ${videoGrid([{ p: c.yr, name: `${c.label} Warm-Ups, Full Year`, kicker: '180 days · all four quarters', accent, feature: true }]
+    .concat(c.quarters.map(q => ({ p: q, name: `Quarter ${q.n}: ${q.name}`, kicker: '45 days', accent }))),
+    'See inside', 'Watch a quarter in 20 seconds', '', true)}
 
   <section class="section cr-alt">
     <div class="wrap">
@@ -5449,6 +5471,12 @@ function pageReadiness() {
       <a class="btn btn--primary" href="/warm-ups.html">See the warm-ups ${ICON.arrow}</a>
     </div>
   </section>
+
+  ${videoGrid(RC.checks.map(r => ({ p: r, name: `${r.grade} Math Readiness Check`, kicker: `${r.questions} questions · ${r.prior} skills`, accent: { rc6: 'teal', rc7: 'coral', rc8: 'navy', rca1: 'gold' }[r.key] }))
+    .concat([{ p: RC.rc68, name: '6th, 7th & 8th Grade Readiness Checks', kicker: 'Three checks', feature: true },
+             { p: RC.rc78a, name: '7th, 8th & Algebra 1 Readiness Checks', kicker: 'Three checks', feature: true },
+             { p: RC.mini, name: 'Day 1 Mini Readiness Check', kicker: 'Free · grades 6–8' }]),
+    'See inside', 'Watch a readiness check in 20 seconds', '', true)}
 
   ${faqBlock(RC_FAQ, 'Readiness check questions')}
   ${noteBand()}
@@ -5861,6 +5889,11 @@ function pageMistakeOfTheWeek() {
       ${tptBtn(MOTW.motwbundle, 'View the bundle')}
     </div>
   </section>
+
+  ${videoGrid([6, 7, 8].map(g => ({ p: MOTW[{ 6: 'motw6', 7: 'motw7', 8: 'motw8' }[g]], name: `Mistake of the Week, ${g}th Grade`, kicker: '12 weeks', accent: MW_ACC[g] }))
+    .concat([{ p: MOTW.motwbundle, name: 'Mistake of the Week Bundle', kicker: '6th, 7th & 8th grade · 36 weeks', feature: true },
+             { p: MOTW.motwfree, name: 'Mistake of the Week sampler', kicker: 'Free · one week per grade' }]),
+    'See inside', 'Watch the routine in 20 seconds', '', true)}
 
   ${faqBlock(MW_FAQ, 'Mistake of the Week questions')}
   ${noteBand()}

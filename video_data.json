@@ -300,5 +300,175 @@
    "pages": 6,
    "img": "/assets/images/activities/sampler.jpg"
   }
+ },
+ "by_id": {
+  "17012384": {
+   "video": "/assets/videos/wu-g5-q1.mp4",
+   "poster": "/assets/videos/wu-g5-q1.jpg"
+  },
+  "17012386": {
+   "video": "/assets/videos/wu-g5-q2.mp4",
+   "poster": "/assets/videos/wu-g5-q2.jpg"
+  },
+  "17012378": {
+   "video": "/assets/videos/wu-g5-q3.mp4",
+   "poster": "/assets/videos/wu-g5-q3.jpg"
+  },
+  "17012377": {
+   "video": "/assets/videos/wu-g5-q4.mp4",
+   "poster": "/assets/videos/wu-g5-q4.jpg"
+  },
+  "16471750": {
+   "video": "/assets/videos/wu-g6-q1.mp4",
+   "poster": "/assets/videos/wu-g6-q1.jpg"
+  },
+  "16471956": {
+   "video": "/assets/videos/wu-g6-q2.mp4",
+   "poster": "/assets/videos/wu-g6-q2.jpg"
+  },
+  "16472163": {
+   "video": "/assets/videos/wu-g6-q3.mp4",
+   "poster": "/assets/videos/wu-g6-q3.jpg"
+  },
+  "16472879": {
+   "video": "/assets/videos/wu-g6-q4.mp4",
+   "poster": "/assets/videos/wu-g6-q4.jpg"
+  },
+  "16483322": {
+   "video": "/assets/videos/wu-g7-q1.mp4",
+   "poster": "/assets/videos/wu-g7-q1.jpg"
+  },
+  "16483561": {
+   "video": "/assets/videos/wu-g7-q2.mp4",
+   "poster": "/assets/videos/wu-g7-q2.jpg"
+  },
+  "16483423": {
+   "video": "/assets/videos/wu-g7-q3.mp4",
+   "poster": "/assets/videos/wu-g7-q3.jpg"
+  },
+  "16483554": {
+   "video": "/assets/videos/wu-g7-q4.mp4",
+   "poster": "/assets/videos/wu-g7-q4.jpg"
+  },
+  "16487837": {
+   "video": "/assets/videos/wu-g8-q1.mp4",
+   "poster": "/assets/videos/wu-g8-q1.jpg"
+  },
+  "16487956": {
+   "video": "/assets/videos/wu-g8-q2.mp4",
+   "poster": "/assets/videos/wu-g8-q2.jpg"
+  },
+  "16488011": {
+   "video": "/assets/videos/wu-g8-q3.mp4",
+   "poster": "/assets/videos/wu-g8-q3.jpg"
+  },
+  "16488075": {
+   "video": "/assets/videos/wu-g8-q4.mp4",
+   "poster": "/assets/videos/wu-g8-q4.jpg"
+  },
+  "16513182": {
+   "video": "/assets/videos/wu-alg1-q1.mp4",
+   "poster": "/assets/videos/wu-alg1-q1.jpg"
+  },
+  "16513186": {
+   "video": "/assets/videos/wu-alg1-q2.mp4",
+   "poster": "/assets/videos/wu-alg1-q2.jpg"
+  },
+  "16513191": {
+   "video": "/assets/videos/wu-alg1-q3.mp4",
+   "poster": "/assets/videos/wu-alg1-q3.jpg"
+  },
+  "16513194": {
+   "video": "/assets/videos/wu-alg1-q4.mp4",
+   "poster": "/assets/videos/wu-alg1-q4.jpg"
+  },
+  "17012411": {
+   "video": "/assets/videos/wu-g5-yr.mp4",
+   "poster": "/assets/videos/wu-g5-yr.jpg"
+  },
+  "16473089": {
+   "video": "/assets/videos/wu-g6-yr.mp4",
+   "poster": "/assets/videos/wu-g6-yr.jpg"
+  },
+  "16483678": {
+   "video": "/assets/videos/wu-g7-yr.mp4",
+   "poster": "/assets/videos/wu-g7-yr.jpg"
+  },
+  "16488236": {
+   "video": "/assets/videos/wu-g8-yr.mp4",
+   "poster": "/assets/videos/wu-g8-yr.jpg"
+  },
+  "16992279": {
+   "video": "/assets/videos/wu-alg1-yr.mp4",
+   "poster": "/assets/videos/wu-alg1-yr.jpg"
+  },
+  "16488350": {
+   "video": "/assets/videos/wu-bundle-678.mp4",
+   "poster": "/assets/videos/wu-bundle-678.jpg"
+  },
+  "17172936": {
+   "video": "/assets/videos/wu-free-g6.mp4",
+   "poster": "/assets/videos/wu-free-g6.jpg"
+  },
+  "17173206": {
+   "video": "/assets/videos/wu-free-g7.mp4",
+   "poster": "/assets/videos/wu-free-g7.jpg"
+  },
+  "17173207": {
+   "video": "/assets/videos/wu-free-g8.mp4",
+   "poster": "/assets/videos/wu-free-g8.jpg"
+  },
+  "17173208": {
+   "video": "/assets/videos/wu-free-alg1.mp4",
+   "poster": "/assets/videos/wu-free-alg1.jpg"
+  },
+  "17620895": {
+   "video": "/assets/videos/rc-rc6.mp4",
+   "poster": "/assets/videos/rc-rc6.jpg"
+  },
+  "16643645": {
+   "video": "/assets/videos/rc-rc7.mp4",
+   "poster": "/assets/videos/rc-rc7.jpg"
+  },
+  "16643647": {
+   "video": "/assets/videos/rc-rc8.mp4",
+   "poster": "/assets/videos/rc-rc8.jpg"
+  },
+  "16643650": {
+   "video": "/assets/videos/rc-rca1.mp4",
+   "poster": "/assets/videos/rc-rca1.jpg"
+  },
+  "16643670": {
+   "video": "/assets/videos/rc-rc68.mp4",
+   "poster": "/assets/videos/rc-rc68.jpg"
+  },
+  "17371117": {
+   "video": "/assets/videos/rc-rc78a.mp4",
+   "poster": "/assets/videos/rc-rc78a.jpg"
+  },
+  "16643656": {
+   "video": "/assets/videos/rc-mini.mp4",
+   "poster": "/assets/videos/rc-mini.jpg"
+  },
+  "16967975": {
+   "video": "/assets/videos/motw-g6.mp4",
+   "poster": "/assets/videos/motw-g6.jpg"
+  },
+  "16647155": {
+   "video": "/assets/videos/motw-g7.mp4",
+   "poster": "/assets/videos/motw-g7.jpg"
+  },
+  "16968052": {
+   "video": "/assets/videos/motw-g8.mp4",
+   "poster": "/assets/videos/motw-g8.jpg"
+  },
+  "16968111": {
+   "video": "/assets/videos/motw-bundle.mp4",
+   "poster": "/assets/videos/motw-bundle.jpg"
+  },
+  "17672163": {
+   "video": "/assets/videos/motw-free.mp4",
+   "poster": "/assets/videos/motw-free.jpg"
+  }
  }
 }
