@@ -1690,3 +1690,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 /* Money Lab steps (v1.15.0) */
 .ml-steps { margin: 0; padding-left: 1.3rem; display: flex; flex-direction: column; gap: .5rem; }
 .ml-steps li::marker { color: #b8860b; font-weight: 700; }
+
+/* Preview video cards (v1.17.0) */
+.vid-grid { grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); }
+.vid-card__media { position:relative; aspect-ratio:16/9; background:var(--forest-deep); }
+.vid-card__media video, .vid-figure video { display:block; width:100%; height:100%; object-fit:contain; background:var(--forest-deep); }
+.vid-figure { aspect-ratio:16/9; }
+a.cr-tile__cta:hover { color: var(--g, var(--forest)); }
+.act-group + .act-group { margin-top:2.2rem; }
+.act-group .cr-grid { margin-top:1.2rem; }

@@ -2579,6 +2579,7 @@ function footer(opts) {
           <li><a href="/readiness.html">Readiness Checks</a></li>
           <li><a href="/i-can.html">I Can Posters</a></li>
           <li><a href="/sub-plans.html">Sub Plans</a></li>
+          <li><a href="/activity-packs.html">Activity Packs</a></li>
           <li><a href="/mistake-of-the-week.html">Mistake of the Week</a></li>
           <li><a href="/money-labs.html">Money Labs</a></li>
           <li><a href="/mystery-pictures.html">Mystery Pictures</a></li>
@@ -5043,6 +5044,11 @@ const CLASSROOM = JSON.parse(fs.readFileSync(path.join(ROOT, 'classroom_data.jso
 const WU = CLASSROOM.warmups;
 const RC = CLASSROOM.readiness;
 const MOTW = CLASSROOM.motw;
+// 20-second preview videos (the TPT ones, re-encoded at 720p) and the activity pack line, written by the
+// state-testing exporter tools/site_export/mc678_videos.py (v1.17.0 · 2026-09-25)
+const VIDEO = JSON.parse(fs.readFileSync(path.join(ROOT, 'video_data.json'), 'utf8'));
+const ACT = VIDEO.activities;
+const VIDEO_DATE = '2026-09-25';
 // course key -> the site's grade accent (5th is forest, Algebra 1 gold, as on the Word Wall)
 const WU_ACCENT = { G5: 'forest', G6: 'teal', G7: 'coral', G8: 'navy', GA1: 'gold' };
 const WU_GRADE_PAGE = { G6: '/grade-6.html', G7: '/grade-7.html', G8: '/grade-8.html' };
@@ -5118,6 +5124,25 @@ function wuTile(o) {
     </div>
   </article>`;
 }
+/* A product card that plays its 20-second preview video in place (click to play, with sound), then links out to TPT. */
+function vidCard(o) {
+  return `<article class="cr-tile cr-tile--${o.accent || 'forest'}${o.feature ? ' cr-tile--feature' : ''} vid-card reveal">
+    <div class="vid-card__media"><video controls playsinline preload="none" poster="${o.poster}" width="1280" height="720" aria-label="${esc(o.name)}: 20-second preview"><source src="${o.video}" type="video/mp4"></video></div>
+    <div class="cr-tile__body">
+      ${o.kicker ? `<span class="cr-tile__kicker">${esc(o.kicker)}</span>` : ''}
+      <h3 class="cr-tile__name"><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.name)}</a></h3>
+      ${o.desc ? `<p class="cr-tile__desc">${esc(o.desc)}</p>` : ''}
+      <a class="cr-tile__cta" href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.cta || 'View on TPT')} ${ICON.ext}</a>
+    </div>
+  </article>`;
+}
+/* One video plays at a time. */
+const VID_SCRIPT = `<script>document.addEventListener('play',function(e){document.querySelectorAll('video').forEach(function(v){if(v!==e.target)v.pause()})},true)</script>`;
+function videoSchema(items) {
+  return items.map(v => ({ '@context': 'https://schema.org', '@type': 'VideoObject', name: v.name, description: v.desc,
+    thumbnailUrl: SITE_URL + v.poster, contentUrl: SITE_URL + v.video, uploadDate: VIDEO_DATE, duration: 'PT20S' }));
+}
+
 function crHero(eyebrow, h1, lead, actions) {
   return `<section class="section catalog-hero cr-hero" style="background-image:linear-gradient(180deg, rgba(26,60,52,.88), rgba(26,60,52,.94)), url('/assets/images/catalog_header.png')">
     <div class="wrap">
@@ -5661,7 +5686,8 @@ function pageSubPlans() {
     ogImage: SP.sp6.img ? SITE_URL + SP.sp6.img : undefined,
     jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Sub Plans', url: '/sub-plans.html' }]),
       faqSchema(SP_FAQ),
-      itemListSchema('Emergency math sub plans', [SP.sp6, SP.sp7, SP.sp8, SP.spbundle, SP.spfree].map(p => ({ url: p.url, name: p.title })))),
+      itemListSchema('Emergency math sub plans', [SP.sp6, SP.sp7, SP.sp8, SP.spbundle, SP.spfree].map(p => ({ url: p.url, name: p.title }))),
+      ...videoSchema([SP.sp6, SP.sp7, SP.sp8, SP.spbundle, SP.spfree].map(p => ({ ...VIDEO.subplans[p.key], name: `${p.title}: 20-second preview`, desc: 'A 20-second look inside the no-prep, self-checking emergency math sub plans.' })))),
   }) + nav('sub-plans') + `
 <main id="main">
   ${breadcrumb(crumbs)}
@@ -5678,10 +5704,10 @@ function pageSubPlans() {
 
   <section class="section cr-alt" id="grades">
     <div class="wrap">
-      ${secHead('Choose your grade', 'Each grade reviews the one before', 'So the plans work in any week of the year, wherever your class is in the curriculum.')}
-      <div class="cr-grid">
-        ${grades.map(p => wuTile({ url: p.url, external: true, img: p.img, accent: acc[p.key], name: `${p.grade} Emergency Math Sub Plans`, kicker: `3 days · reviews ${p.prior} skills${p.pages ? ` · ${p.pages} pages` : ''}` })).join('')}
-        ${wuTile({ url: SP.spbundle.url, external: true, img: SP.spbundle.img, feature: true, name: '6th, 7th & 8th Grade Sub Plans Bundle', kicker: '9 days · three per grade' })}
+      ${secHead('Choose your grade', 'Each grade reviews the one before', 'So the plans work in any week of the year, wherever your class is in the curriculum. Press play for a 20-second look inside each set.')}
+      <div class="cr-grid vid-grid">
+        ${grades.map(p => vidCard({ url: p.url, ...VIDEO.subplans[p.key], accent: acc[p.key], name: `${p.grade} Emergency Math Sub Plans`, kicker: `3 days · reviews ${p.prior} skills${p.pages ? ` · ${p.pages} pages` : ''}` })).join('')}
+        ${vidCard({ url: SP.spbundle.url, ...VIDEO.subplans.spbundle, feature: true, name: '6th, 7th & 8th Grade Sub Plans Bundle', kicker: '9 days · three per grade' })}
       </div>
     </div>
   </section>
@@ -5702,7 +5728,7 @@ function pageSubPlans() {
         ${secHead('Try it first', 'A free 3-day packet', `A logic detective puzzle, a math mystery that decodes a secret message and a maze race, each self-checking, with teacher directions and an answer key.${SP.spfree.pages ? ` ${SP.spfree.pages} pages, for 6th, 7th or 8th grade.` : ''}`)}
         ${tptBtn(SP.spfree, 'Get it free on TPT')}
       </div>
-      <figure class="cr-split__img reveal">${SP.spfree.img ? `<img src="${SP.spfree.img}" alt="Free 3-day emergency math sub plan packet for middle school" width="640" height="640" loading="lazy" decoding="async">` : ''}</figure>
+      <figure class="cr-split__img vid-figure reveal"><video controls playsinline preload="none" poster="${VIDEO.subplans.spfree.poster}" width="1280" height="720" aria-label="Free 3-day emergency math sub plan: 20-second preview"><source src="${VIDEO.subplans.spfree.video}" type="video/mp4"></video></figure>
     </div>
   </section>
 
@@ -5713,9 +5739,17 @@ function pageSubPlans() {
     </div>
   </section>
 
+  <section class="section cr-alt">
+    <div class="wrap cr-cta">
+      <div><span class="eyebrow">Same activities, one topic at a time</span><h2>Self-checking activity packs</h2><p>A maze, a secret message and an error detective for ${ACT.packs.length} single topics, from order of operations to systems of equations, in print and as self-grading Google Forms.</p></div>
+      <a class="btn btn--primary" href="/activity-packs.html">See the activity packs ${ICON.arrow}</a>
+    </div>
+  </section>
+
   ${faqBlock(SP_FAQ, 'Sub plan questions')}
   ${noteBand()}
 </main>
+${VID_SCRIPT}
 ` + footer() + scripts();
 }
 
@@ -6246,6 +6280,131 @@ function pageMysteryPictures() {
 ` + footer() + scripts();
 }
 
+
+/* ============================================================================
+   ACTIVITY PACKS   (v1.17.0 · 2026-09-25)
+   The 14 single-topic self-checking packs, their 5 bundles and the free maze sampler, each pack with its
+   20-second preview video. Everything counted here comes from the packs' own build data via
+   tools/site_export/mc678_videos.py; nothing is typed in by hand.
+   ============================================================================ */
+const ACT_ACC = { grade6: 'teal', grade7: 'coral', grade8: 'navy', geometry: 'forest', mega: 'gold' };
+const ACT_GROUP_HEAD = {
+  grade6: ['6th grade', 'Five 6th grade topics'],
+  geometry: ['6th and 7th grade', 'Area, surface area and volume'],
+  grade7: ['7th grade', 'Three 7th grade topics'],
+  grade8: ['8th grade', 'Three 8th grade topics'],
+};
+const ACT_STEPS = [
+  ['Maze Race', 'Students solve their way along the one route through a maze. A wrong answer leads into a trap, so they know to go back.'],
+  ['Secret Message', 'Twelve problems whose answers spell a message. A wrong answer gives the wrong letter, so the mistake shows itself.'],
+  ['Error Detective', 'Ten students’ worked problems, four of them with a mistake. Students find each mistake and fix it.'],
+  ['Size It Up', 'Students put their answers in order to spell a word, then solve problems in context. Order of Operations has parentheses puzzles here instead.'],
+];
+const ACT_INCLUDED = [
+  'Four self-checking activities on one topic',
+  'A reference sheet with worked examples and the mistakes to watch for',
+  'A Quick Check exit ticket in two forms, A and B',
+  'Answer keys that name the mistake behind each wrong answer',
+  'Self-grading Google Forms for every activity and both Quick Checks',
+  'A teacher guide, with no prep beyond printing',
+];
+const ACT_FAQ = [
+  { q: 'What does self-checking mean?', a: 'Every activity tells students when an answer is wrong: a wrong turn in the maze leads to a trap, a wrong answer in the secret message gives a letter that does not fit, and the error detective cases add up to a printed total. Students fix mistakes while they work instead of after you grade.' },
+  { q: 'Do they work digitally?', a: 'Yes. Every pack includes self-grading Google Forms for its activities and both Quick Checks, with copy links, so you can assign them in Google Classroom.' },
+  { q: 'How do I use them?', a: 'As a no-prep lesson on the topic, a math station, homework, early-finisher work, test review or a sub day. Each activity stands on its own, so you can use one at a time.' },
+  { q: 'Is there a free one to try?', a: 'Yes. The free Order of Operations maze is a complete self-checking maze with its answer key.' },
+  { q: 'Are they in a bundle?', a: 'Yes. Each pack is in its grade bundle (the three geometry packs have their own), and all 14 are in the 6th-8th grade bundle.' },
+];
+
+function pageActivityPacks() {
+  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Activity Packs' }];
+  const byKey = Object.fromEntries(ACT.packs.map(p => [p.key, p]));
+  const bundle = Object.fromEntries(ACT.bundles.map(b => [b.key, b]));
+  const packCard = p => vidCard({ url: p.url, video: p.video, poster: p.poster, accent: ACT_ACC[p.bundle], name: `${p.name} Activity Pack`,
+    kicker: `${p.grade} · ${p.pages} pages`, desc: `Maze Race, Secret Message, Error Detective and ${p.act4}.` });
+  const group = key => {
+    const b = bundle[key];
+    const packs = b.members.map(m => byKey[m]).filter(p => p && p.bundle === key);
+    return `<section class="cr-quarter cr-quarter--${ACT_ACC[key]} act-group reveal" id="${key}">
+      <div class="cr-quarter__head">
+        <div><span class="cr-quarter__n">${esc(ACT_GROUP_HEAD[key][0])}</span><h3>${esc(ACT_GROUP_HEAD[key][1])}</h3><p>${esc(packs.map(p => p.name).join(', '))}</p></div>
+        ${tptBtn(b, `${b.name} on TPT`, 'btn--ghost')}
+      </div>
+      <div class="cr-grid vid-grid">${packs.map(packCard).join('')}</div>
+    </section>`;
+  };
+  const S = ACT.sampler;
+  return head({
+    title: 'Self-Checking Math Activity Packs | Mazes & Error Analysis, 6–8',
+    desc: `Self-checking math activities for 6th, 7th and 8th grade: ${ACT.packs.length} topic packs with a maze, a secret message and an error detective, in print and Google Forms.`,
+    path: 'activity-packs.html',
+    ogImage: ACT.bundles[4] ? SITE_URL + ACT.bundles[4].img : undefined,
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Activity Packs', url: '/activity-packs.html' }]),
+      faqSchema(ACT_FAQ),
+      itemListSchema('Self-checking math activity packs', ACT.packs.map(p => ({ url: p.url, name: p.title }))),
+      ...videoSchema(ACT.packs.map(p => ({ video: p.video, poster: p.poster, name: `${p.name} Activity Pack: 20-second preview`, desc: `A 20-second look inside the ${p.name} self-checking activity pack for ${p.grade.toLowerCase()}.` })))),
+  }) + nav('activity-packs') + `
+<main id="main">
+  ${breadcrumb(crumbs)}
+  ${crHero('Self-checking activity packs · grades 6–8', 'Activities that check themselves',
+    `${ACT.packs.length} single-topic packs, each with a maze, a secret message, an error detective and one more activity, where a wrong answer shows itself while students work. In print and as self-grading Google Forms. Press play on any pack for a 20-second look inside.`,
+    `<a class="btn btn--primary" href="#packs">See the ${ACT.packs.length} packs ${ICON.arrow}</a><a class="btn btn--ghost cr-btn--light" href="${esc(S.url)}" target="_blank" rel="noopener">Free maze to try ${ICON.ext}</a>`)}
+
+  <section class="section">
+    <div class="wrap">
+      ${secHead('Four activities in every pack', 'Wrong answers show themselves', 'So students catch a mistake the moment they make it, not a day later on a graded paper.')}
+      <ol class="cr-roles">${ACT_STEPS.map(([t, d], i) => `<li class="cr-role reveal"><span class="cr-role__n">${i + 1}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></li>`).join('')}</ol>
+    </div>
+  </section>
+
+  <section class="section cr-alt" id="packs">
+    <div class="wrap">
+      ${secHead('The packs', `${ACT.packs.length} topics, grouped by grade`)}
+      ${['grade6', 'geometry', 'grade7', 'grade8'].map(group).join('')}
+    </div>
+  </section>
+
+  <section class="section" id="bundles">
+    <div class="wrap">
+      ${secHead('Bundles', 'Every pack for your grade in one file', 'The grade bundles and the geometry bundle hold three to five packs each; the 6th-8th grade bundle holds all ' + ACT.packs.length + '.')}
+      <div class="cr-grid">${ACT.bundles.map(b => wuTile({ url: b.url, external: true, img: b.img, accent: ACT_ACC[b.key], feature: b.key === 'mega', name: b.name, kicker: `${b.members.length} packs`, desc: b.sub })).join('')}</div>
+    </div>
+  </section>
+
+  <section class="section cr-alt">
+    <div class="wrap cr-split">
+      <div>
+        ${secHead('In every pack', 'Everything for one topic')}
+        <ul class="cr-list">${ACT_INCLUDED.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+      </div>
+      <figure class="cr-split__img vid-figure reveal"><video controls playsinline preload="none" poster="${byKey['order-of-operations'].poster}" width="1280" height="720" aria-label="Order of Operations Activity Pack: 20-second preview"><source src="${byKey['order-of-operations'].video}" type="video/mp4"></video></figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap cr-split">
+      <div>
+        ${secHead('Try it first', 'A free Order of Operations maze', 'A complete self-checking maze from the Order of Operations pack, with its answer key.')}
+        ${tptBtn(S, 'Get it free on TPT')}
+      </div>
+      <figure class="cr-split__img reveal"><img src="${S.img}" alt="Free order of operations self-checking maze" width="640" height="640" loading="lazy" decoding="async"></figure>
+    </div>
+  </section>
+
+  <section class="section cr-alt">
+    <div class="wrap cr-cta">
+      <div><span class="eyebrow">For a sub day</span><h2>Emergency sub plans</h2><p>Three no-prep days per grade built from the same self-checking activities, with everything the substitute needs.</p></div>
+      <a class="btn btn--primary" href="/sub-plans.html">See the sub plans ${ICON.arrow}</a>
+    </div>
+  </section>
+
+  ${faqBlock(ACT_FAQ, 'Activity pack questions')}
+  ${noteBand()}
+</main>
+${VID_SCRIPT}
+` + footer() + scripts();
+}
+
 /* ---------------------------------------------------------------- /money-labs/<lab>.html */
 function pageMoneyLab(l, prev, next) {
   const crumbs = [{ name: 'Home', url: '/' }, { name: 'Money Labs', url: '/money-labs.html' }, { name: l.name }];
@@ -6335,7 +6494,7 @@ function pageMoneyLab(l, prev, next) {
 
 
 function sitemap() {
-  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'sub-plans.html', 'mistake-of-the-week.html', 'money-labs.html', 'mystery-pictures.html', 'algebra-1.html', 'i-can.html', 'i-can/personal-finance.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
+  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'sub-plans.html', 'activity-packs.html', 'mistake-of-the-week.html', 'money-labs.html', 'mystery-pictures.html', 'algebra-1.html', 'i-can.html', 'i-can/personal-finance.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
   const today = new Date().toISOString().slice(0, 10);
   const main = pages.map(p => `  <url><loc>${SITE_URL}/${p}</loc><lastmod>${today}</lastmod></url>`);
   const sheets = products
@@ -6438,6 +6597,7 @@ write('warm-ups.html', pageWarmupsHub());
 WU.courses.forEach(c => write(`warm-ups/${c.slug}.html`, pageWarmupsCourse(c)));
 write('readiness.html', pageReadiness());
 write('sub-plans.html', pageSubPlans());
+write('activity-packs.html', pageActivityPacks());
 write('mistake-of-the-week.html', pageMistakeOfTheWeek());
 write('money-labs.html', pageMoneyLabs());
 write('mystery-pictures.html', pageMysteryPictures());
@@ -6510,11 +6670,17 @@ if (fs.existsSync(SRC_SITE_IMGS)) {
 }
 
 // Warm-ups, readiness and Mistake of the Week card images (written by the state-testing exporter)
-['warmups', 'readiness', 'motw', 'ican', 'subplans', 'algebra1', 'money', 'mystery'].forEach(dir => {
+['warmups', 'readiness', 'motw', 'ican', 'subplans', 'algebra1', 'money', 'mystery', 'activities'].forEach(dir => {
   const src = path.join(ROOT, 'assets', 'images', dir);
   if (!fs.existsSync(src)) return;
   fs.readdirSync(src).filter(f => /\.(jpe?g|png)$/i.test(f)).forEach(f => copy(path.join('assets/images', dir, f), path.join('assets/images', dir, f)));
 });
+
+// Preview videos and their poster frames (written by the state-testing exporter mc678_videos.py)
+const SRC_VIDEOS = path.join(ROOT, 'assets', 'videos');
+if (fs.existsSync(SRC_VIDEOS)) {
+  fs.readdirSync(SRC_VIDEOS).filter(f => /\.(mp4|jpe?g)$/i.test(f)).forEach(f => copy(path.join('assets/videos', f), path.join('assets/videos', f)));
+}
 
 // Copy any product/bundle thumbnails present in the source thumbs dir (jpg or png)
 const SRC_THUMBS = path.join(ROOT, 'assets', 'images', 'thumbs');

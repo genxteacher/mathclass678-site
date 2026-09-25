@@ -1,0 +1,304 @@
+{
+ "generated_by": "state testing repo: tools/site_export/mc678_videos.py",
+ "subplans": {
+  "sp6": {
+   "video": "/assets/videos/sp6.mp4",
+   "poster": "/assets/videos/sp6.jpg"
+  },
+  "sp7": {
+   "video": "/assets/videos/sp7.mp4",
+   "poster": "/assets/videos/sp7.jpg"
+  },
+  "sp8": {
+   "video": "/assets/videos/sp8.mp4",
+   "poster": "/assets/videos/sp8.jpg"
+  },
+  "spbundle": {
+   "video": "/assets/videos/spbundle.mp4",
+   "poster": "/assets/videos/spbundle.jpg"
+  },
+  "spfree": {
+   "video": "/assets/videos/spfree.mp4",
+   "poster": "/assets/videos/spfree.jpg"
+  }
+ },
+ "activities": {
+  "packs": [
+   {
+    "key": "order-of-operations",
+    "id": "17696243",
+    "url": "https://www.teacherspayteachers.com/Product/Order-of-Operations-Activity-Maze-Secret-Message-Error-Analysis-Worksheets-17696243",
+    "name": "Order of Operations",
+    "title": "Order of Operations Activity | Maze, Secret Message & Error Analysis Worksheets",
+    "grade": "6th Grade",
+    "pages": 16,
+    "act4": "Parentheses Puzzles",
+    "bundle": "grade6",
+    "video": "/assets/videos/act-order-of-operations.mp4",
+    "poster": "/assets/videos/act-order-of-operations.jpg"
+   },
+   {
+    "key": "scientific-notation",
+    "id": "17696485",
+    "url": "https://www.teacherspayteachers.com/Product/Scientific-Notation-Activity-Maze-Secret-Message-Error-Analysis-Worksheets-17696485",
+    "name": "Scientific Notation",
+    "title": "Scientific Notation Activity | Maze, Secret Message & Error Analysis Worksheets",
+    "grade": "8th Grade",
+    "pages": 16,
+    "act4": "Size It Up",
+    "bundle": "grade8",
+    "video": "/assets/videos/act-scientific-notation.mp4",
+    "poster": "/assets/videos/act-scientific-notation.jpg"
+   },
+   {
+    "key": "volume",
+    "id": "17699303",
+    "url": "https://www.teacherspayteachers.com/Product/Volume-of-Prisms-Worksheets-Volume-Activity-Maze-Error-Analysis-5th-7th-17699303",
+    "name": "Volume of Prisms",
+    "title": "Volume of Prisms Worksheets | Volume Activity Maze & Error Analysis | 5th-7th",
+    "grade": "6th-7th Grade",
+    "pages": 16,
+    "act4": "Size It Up",
+    "bundle": "geometry",
+    "video": "/assets/videos/act-volume.mp4",
+    "poster": "/assets/videos/act-volume.jpg"
+   },
+   {
+    "key": "area",
+    "id": "17704084",
+    "url": "https://www.teacherspayteachers.com/Product/Area-of-Polygons-Worksheets-Area-Activity-Maze-Error-Analysis-5th-7th-17704084",
+    "name": "Area of Polygons",
+    "title": "Area of Polygons Worksheets | Area Activity Maze & Error Analysis | 5th-7th",
+    "grade": "6th-7th Grade",
+    "pages": 16,
+    "act4": "Size It Up",
+    "bundle": "geometry",
+    "video": "/assets/videos/act-area.mp4",
+    "poster": "/assets/videos/act-area.jpg"
+   },
+   {
+    "key": "surface-area",
+    "id": "17704148",
+    "url": "https://www.teacherspayteachers.com/Product/Surface-Area-Worksheets-Nets-Activity-Maze-Error-Analysis-6th-7th-17704148",
+    "name": "Surface Area and Nets",
+    "title": "Surface Area Worksheets | Nets Activity, Maze & Error Analysis | 6th-7th",
+    "grade": "6th-7th Grade",
+    "pages": 16,
+    "act4": "Size It Up",
+    "bundle": "geometry",
+    "video": "/assets/videos/act-surface-area.mp4",
+    "poster": "/assets/videos/act-surface-area.jpg"
+   },
+   {
+    "key": "exponents",
+    "id": "17703924",
+    "url": "https://www.teacherspayteachers.com/Product/Exponents-Worksheets-Exponent-Rules-Activity-Maze-Error-Analysis-6-8-17703924",
+    "name": "Exponents",
+    "title": "Exponents Worksheets | Exponent Rules Activity Maze & Error Analysis | 6-8",
+    "grade": "6th-8th Grade",
+    "pages": 16,
+    "act4": "Size It Up",
+    "bundle": "grade6",
+    "video": "/assets/videos/act-exponents.mp4",
+    "poster": "/assets/videos/act-exponents.jpg"
+   },
+   {
+    "key": "integers",
+    "id": "17704184",
+    "url": "https://www.teacherspayteachers.com/Product/Integers-Worksheets-Adding-Subtracting-Multiplying-Activity-Maze-6-7-17704184",
+    "name": "Integers",
+    "title": "Integers Worksheets | Adding Subtracting Multiplying Activity Maze | 6-7",
+    "grade": "6th-7th Grade",
+    "pages": 16,
+    "act4": "Size It Up",
+    "bundle": "grade7",
+    "video": "/assets/videos/act-integers.mp4",
+    "poster": "/assets/videos/act-integers.jpg"
+   },
+   {
+    "key": "coordinate-plane",
+    "id": "17703949",
+    "url": "https://www.teacherspayteachers.com/Product/Coordinate-Plane-Worksheets-Quadrants-Distance-Activity-Maze-6th-Grade-17703949",
+    "name": "The Coordinate Plane",
+    "title": "Coordinate Plane Worksheets | Quadrants & Distance Activity Maze | 6th Grade",
+    "grade": "6th Grade",
+    "pages": 16,
+    "act4": "Size It Up",
+    "bundle": "grade6",
+    "video": "/assets/videos/act-coordinate-plane.mp4",
+    "poster": "/assets/videos/act-coordinate-plane.jpg"
+   },
+   {
+    "key": "ratios",
+    "id": "17703984",
+    "url": "https://www.teacherspayteachers.com/Product/Ratios-Unit-Rate-Worksheets-Ratio-Activity-Maze-Error-Analysis-6th-17703984",
+    "name": "Ratios and Unit Rates",
+    "title": "Ratios & Unit Rate Worksheets | Ratio Activity Maze & Error Analysis | 6th",
+    "grade": "6th Grade",
+    "pages": 16,
+    "act4": "Size It Up",
+    "bundle": "grade6",
+    "video": "/assets/videos/act-ratios.mp4",
+    "poster": "/assets/videos/act-ratios.jpg"
+   },
+   {
+    "key": "one-step-equations",
+    "id": "17704038",
+    "url": "https://www.teacherspayteachers.com/Product/One-Step-Equations-Worksheets-Solving-Activity-Maze-Error-Analysis-6th-17704038",
+    "name": "One-Step Equations",
+    "title": "One Step Equations Worksheets | Solving Activity Maze & Error Analysis | 6th",
+    "grade": "6th Grade",
+    "pages": 16,
+    "act4": "Size It Up",
+    "bundle": "grade6",
+    "video": "/assets/videos/act-one-step-equations.mp4",
+    "poster": "/assets/videos/act-one-step-equations.jpg"
+   },
+   {
+    "key": "two-step-equations",
+    "id": "17704211",
+    "url": "https://www.teacherspayteachers.com/Product/Two-Step-Equations-Worksheets-Multi-Step-Solving-Maze-Error-Analysis-17704211",
+    "name": "Two-Step Equations",
+    "title": "Two Step Equations Worksheets | Multi Step Solving Maze & Error Analysis",
+    "grade": "7th-8th Grade",
+    "pages": 16,
+    "act4": "Size It Up",
+    "bundle": "grade7",
+    "video": "/assets/videos/act-two-step-equations.mp4",
+    "poster": "/assets/videos/act-two-step-equations.jpg"
+   },
+   {
+    "key": "proportional-relationships",
+    "id": "17704233",
+    "url": "https://www.teacherspayteachers.com/Product/Proportional-Relationships-Worksheets-Constant-of-Proportionality-Maze-17704233",
+    "name": "Proportional Relationships",
+    "title": "Proportional Relationships Worksheets | Constant of Proportionality Maze",
+    "grade": "7th Grade",
+    "pages": 16,
+    "act4": "Size It Up",
+    "bundle": "grade7",
+    "video": "/assets/videos/act-proportional-relationships.mp4",
+    "poster": "/assets/videos/act-proportional-relationships.jpg"
+   },
+   {
+    "key": "pythagorean-theorem",
+    "id": "17704326",
+    "url": "https://www.teacherspayteachers.com/Product/Pythagorean-Theorem-Worksheets-Missing-Side-Distance-Maze-8th-Grade-17704326",
+    "name": "Pythagorean Theorem",
+    "title": "Pythagorean Theorem Worksheets | Missing Side & Distance Maze | 8th Grade",
+    "grade": "8th Grade",
+    "pages": 16,
+    "act4": "Size It Up",
+    "bundle": "grade8",
+    "video": "/assets/videos/act-pythagorean-theorem.mp4",
+    "poster": "/assets/videos/act-pythagorean-theorem.jpg"
+   },
+   {
+    "key": "systems-of-equations",
+    "id": "17704366",
+    "url": "https://www.teacherspayteachers.com/Product/Systems-of-Equations-Worksheets-Substitution-Elimination-Maze-8th-17704366",
+    "name": "Systems of Equations",
+    "title": "Systems of Equations Worksheets | Substitution & Elimination Maze | 8th",
+    "grade": "8th Grade",
+    "pages": 16,
+    "act4": "Size It Up",
+    "bundle": "grade8",
+    "video": "/assets/videos/act-systems-of-equations.mp4",
+    "poster": "/assets/videos/act-systems-of-equations.jpg"
+   }
+  ],
+  "bundles": [
+   {
+    "key": "grade6",
+    "id": "17704659",
+    "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Activities-Bundle-Maze-Error-Analysis-Worksheets-17704659",
+    "name": "6th Grade Activity Bundle",
+    "title": "6th Grade Math Activities Bundle | Maze & Error Analysis Worksheets",
+    "members": [
+     "order-of-operations",
+     "exponents",
+     "coordinate-plane",
+     "ratios",
+     "one-step-equations"
+    ],
+    "sub": "Five packs of self-checking activities for the 6th grade year.",
+    "img": "/assets/images/activities/bundle-grade6.jpg"
+   },
+   {
+    "key": "grade7",
+    "id": "17704693",
+    "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Activities-Bundle-Integers-Equations-Proportions-17704693",
+    "name": "7th Grade Activity Bundle",
+    "title": "7th Grade Math Activities Bundle | Integers, Equations & Proportions",
+    "members": [
+     "integers",
+     "two-step-equations",
+     "proportional-relationships"
+    ],
+    "sub": "Integers, two-step equations and proportional relationships, all self-checking.",
+    "img": "/assets/images/activities/bundle-grade7.jpg"
+   },
+   {
+    "key": "grade8",
+    "id": "17704724",
+    "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Activities-Bundle-Sci-Notation-Pythagorean-Systems-17704724",
+    "name": "8th Grade Activity Bundle",
+    "title": "8th Grade Math Activities Bundle | Sci Notation, Pythagorean & Systems",
+    "members": [
+     "scientific-notation",
+     "pythagorean-theorem",
+     "systems-of-equations"
+    ],
+    "sub": "Scientific notation, the Pythagorean Theorem and systems, all self-checking.",
+    "img": "/assets/images/activities/bundle-grade8.jpg"
+   },
+   {
+    "key": "geometry",
+    "id": "17704618",
+    "url": "https://www.teacherspayteachers.com/Product/Geometry-Activities-Bundle-Area-Surface-Area-Volume-Worksheets-6th-7th-17704618",
+    "name": "Geometry Activity Bundle",
+    "title": "Geometry Activities Bundle | Area, Surface Area & Volume Worksheets | 6th-7th",
+    "members": [
+     "area",
+     "surface-area",
+     "volume"
+    ],
+    "sub": "Area, surface area and volume: three packs of self-checking activities.",
+    "img": "/assets/images/activities/bundle-geometry.jpg"
+   },
+   {
+    "key": "mega",
+    "id": "17704809",
+    "url": "https://www.teacherspayteachers.com/Product/Middle-School-Math-Activities-Bundle-14-Self-Checking-Packs-6th-8th-17704809",
+    "name": "6th-8th Grade Activity Bundle",
+    "title": "Middle School Math Activities Bundle | 14 Self-Checking Packs | 6th-8th",
+    "members": [
+     "order-of-operations",
+     "exponents",
+     "coordinate-plane",
+     "ratios",
+     "one-step-equations",
+     "area",
+     "surface-area",
+     "volume",
+     "integers",
+     "two-step-equations",
+     "proportional-relationships",
+     "scientific-notation",
+     "pythagorean-theorem",
+     "systems-of-equations"
+    ],
+    "sub": "14 topic packs, every activity self-checking.",
+    "img": "/assets/images/activities/bundle-mega.jpg"
+   }
+  ],
+  "sampler": {
+   "key": "order-of-operations-sampler",
+   "id": "17703883",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-Order-of-Operations-Maze-Self-Checking-Activity-Worksheet-5th-7th-17703883",
+   "title": "FREE Order of Operations Maze | Self-Checking Activity Worksheet | 5th-7th",
+   "pages": 6,
+   "img": "/assets/images/activities/sampler.jpg"
+  }
+ }
+}
