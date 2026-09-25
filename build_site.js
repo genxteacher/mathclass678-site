@@ -5783,6 +5783,88 @@ ${VID_SCRIPT}
 
 
 /* ============================================================================
+   /tiktok   (v1.19.0 · 2026-09-25)
+   The one link in the TikTok and Instagram bios, and the address typed on every video's end card.
+   Each post card leads with the FREE item the video points to (a free TPT download brings a teacher
+   into the store and its follow button at no cost), then the paid set. Below: every free item on TPT
+   that a post can lead to, general first, then Indiana ILEARN. Data: social_data.json, written by the
+   state-testing exporter tools/site_export/mc678_social.py. /tiktok is a 200 rewrite to this file.
+   Not in the nav or the sitemap: it is a landing page for people arriving from a post.
+   ============================================================================ */
+const SOCIAL_DATA = JSON.parse(fs.readFileSync(path.join(ROOT, 'social_data.json'), 'utf8'));
+
+function socPost(p) {
+  const f = SOCIAL_DATA.free[p.free];
+  return `<article class="soc-post reveal" id="${esc(p.key)}">
+    <div class="soc-post__media"><video controls playsinline preload="none" poster="${p.poster}" width="720" height="1280" aria-label="${esc(p.title)}: 15-second video"><source src="${p.video}" type="video/mp4"></video></div>
+    <div class="soc-post__body">
+      <span class="soc-post__n">Video ${p.n}</span>
+      <h3>${esc(p.title)}</h3>
+      <p>${esc(p.blurb)}</p>
+      <div class="soc-post__free">
+        <span class="soc-post__label">Free to try</span>
+        <strong>${esc(f.name)}</strong>
+        <a class="btn btn--primary" href="${esc(f.url)}" target="_blank" rel="noopener">Get it free on TPT ${ICON.ext}</a>
+      </div>
+      <a class="soc-post__paid" href="${esc(p.paid.url)}" target="_blank" rel="noopener">The full set: ${esc(p.paid.name)} ${ICON.ext}</a>
+    </div>
+  </article>`;
+}
+
+function pageTiktok() {
+  const freeTile = k => { const f = SOCIAL_DATA.free[k];
+    return wuTile({ url: f.url, external: true, img: f.img, name: f.name, desc: f.sub, kicker: 'Free on TPT', cta: 'Get it free on TPT' }); };
+  return head({
+    title: 'From TikTok and Instagram: Free Math Resources | Math Class 678',
+    desc: 'The math videos from Math Class 678 on TikTok and Instagram, and the free middle school math resource behind each one, ready to download on TPT.',
+    path: 'tiktok',
+    jsonld: jsonld(itemListSchema('Free resources from the videos',
+      SOCIAL_DATA.general.concat(SOCIAL_DATA.indiana).map(k => ({ url: SOCIAL_DATA.free[k].url, name: SOCIAL_DATA.free[k].name })))),
+  }) + nav('') + `
+<main id="main" class="soc">
+  <section class="soc-hero">
+    <div class="wrap">
+      <span class="eyebrow eyebrow--light">From TikTok and Instagram</span>
+      <h1>The videos, and the free resources behind them</h1>
+      <p>Find the video you watched. Each one has a free resource on TPT to try with your class first.</p>
+      <div class="soc-hero__actions"><a class="btn btn--primary" href="#videos">Find your video ${ICON.arrow}</a><a class="btn btn--ghost cr-btn--light" href="#free">All free resources</a></div>
+    </div>
+  </section>
+
+  <section class="section" id="videos">
+    <div class="wrap">
+      ${secHead('Newest first', 'From the videos', 'Tap play to watch it again. The first button is the free download.')}
+      <div class="soc-posts">${SOCIAL_DATA.posts.map(socPost).join('')}</div>
+    </div>
+  </section>
+
+  <section class="section cr-alt" id="free">
+    <div class="wrap">
+      ${secHead('Free on TPT', 'Try these with your class', 'Every one is a full, classroom-ready resource, with answer keys.')}
+      <div class="cr-grid">${SOCIAL_DATA.general.map(freeTile).join('')}</div>
+      <h3 class="soc-sub">For Indiana ILEARN teachers</h3>
+      <div class="cr-grid">${SOCIAL_DATA.indiana.map(freeTile).join('')}</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap soc-how">
+      ${secHead('New to TPT?', 'How the free downloads work')}
+      <ol class="cr-roles">
+        <li class="cr-role reveal"><span class="cr-role__n">1</span><h3>Tap Get it free</h3><p>It opens the resource on Teachers Pay Teachers, where every Math Class 678 resource lives.</p></li>
+        <li class="cr-role reveal"><span class="cr-role__n">2</span><h3>Sign in, or make a free account</h3><p>A TPT account costs nothing and keeps every download in your purchases, to print again next year.</p></li>
+        <li class="cr-role reveal"><span class="cr-role__n">3</span><h3>Follow the store</h3><p>Follow Math Class 678 on TPT and you hear about each new free resource when it goes up.</p></li>
+      </ol>
+      <div class="soc-how__actions"><a class="btn btn--primary" href="${TPT_STORE}" target="_blank" rel="noopener">Follow Math Class 678 on TPT ${ICON.ext}</a><a class="btn btn--ghost" href="/free.html">More free resources ${ICON.arrow}</a></div>
+    </div>
+  </section>
+</main>
+${VID_SCRIPT}
+` + footer() + scripts();
+}
+
+
+/* ============================================================================
    MISTAKE OF THE WEEK   (v1.13.0 · 2026-09-19)
    One page for the five listings (6th, 7th, 8th, the 36-week bundle, the free 3-week sampler).
    The 36 weekly skills and codes and the grade 6 week 1 example come from the product's own
@@ -6556,6 +6638,18 @@ const robots = `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`;
 // at /join and never need reissuing if the group ever moves.
 const SKOOL_JOIN_URL = 'https://www.skool.com/math-class-678-2701';
 const netlifyToml = `[[redirects]]
+  from = "/tiktok"
+  to = "/tiktok.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/tiktok/"
+  to = "/tiktok.html"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/join"
   to = "${SKOOL_JOIN_URL}"
   status = 301
@@ -6599,7 +6693,7 @@ const RETIRED_BUNDLE_REDIRECTS = [
   ['/bundles/6th-grade-expressions', '/bundles/6th-grade-expressions-equations.html'],
   ['/bundles/6th-grade-expressions.html', '/bundles/6th-grade-expressions-equations.html'],
 ].map(([from, to]) => `${from}   ${to}   301!`).join('\n') + '\n';
-const netlifyRedirects = `/join      ${SKOOL_JOIN_URL}   301!\n/join/*    ${SKOOL_JOIN_URL}   301!\n` + ILEARN_REDIRECTS + RETIRED_BUNDLE_REDIRECTS;
+const netlifyRedirects = `/tiktok    /tiktok.html   200!\n/tiktok/   /tiktok.html   200!\n/join      ${SKOOL_JOIN_URL}   301!\n/join/*    ${SKOOL_JOIN_URL}   301!\n` + ILEARN_REDIRECTS + RETIRED_BUNDLE_REDIRECTS;
 
 /* ============================================================================
    write everything
@@ -6630,6 +6724,7 @@ write('warm-ups.html', pageWarmupsHub());
 WU.courses.forEach(c => write(`warm-ups/${c.slug}.html`, pageWarmupsCourse(c)));
 write('readiness.html', pageReadiness());
 write('sub-plans.html', pageSubPlans());
+write('tiktok.html', pageTiktok());
 write('activity-packs.html', pageActivityPacks());
 write('mistake-of-the-week.html', pageMistakeOfTheWeek());
 write('money-labs.html', pageMoneyLabs());
@@ -6713,6 +6808,14 @@ if (fs.existsSync(SRC_SITE_IMGS)) {
 const SRC_VIDEOS = path.join(ROOT, 'assets', 'videos');
 if (fs.existsSync(SRC_VIDEOS)) {
   fs.readdirSync(SRC_VIDEOS).filter(f => /\.(mp4|jpe?g)$/i.test(f)).forEach(f => copy(path.join('assets/videos', f), path.join('assets/videos', f)));
+}
+
+// The /tiktok page's 9:16 videos + posters, and the free-item covers (tools/site_export/mc678_social.py)
+const SRC_SOCIAL = path.join(ROOT, 'assets', 'social');
+if (fs.existsSync(SRC_SOCIAL)) {
+  fs.readdirSync(SRC_SOCIAL).filter(f => /\.(mp4|jpe?g)$/i.test(f)).forEach(f => copy(path.join('assets/social', f), path.join('assets/social', f)));
+  const free = path.join(SRC_SOCIAL, 'free');
+  if (fs.existsSync(free)) fs.readdirSync(free).filter(f => /\.jpe?g$/i.test(f)).forEach(f => copy(path.join('assets/social/free', f), path.join('assets/social/free', f)));
 }
 
 // Copy any product/bundle thumbnails present in the source thumbs dir (jpg or png)
