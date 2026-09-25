@@ -2,21 +2,8 @@
  "generated_by": "state-testing tools/site_export/mc678_social.py",
  "posts": [
   {
-   "key": "subplans-g7",
-   "n": 6,
-   "title": "7th Grade Emergency Math Sub Plans",
-   "blurb": "Three no-prep days a sub can run, with work that checks itself.",
-   "video": "/assets/social/subplans-g7.mp4",
-   "poster": "/assets/social/subplans-g7.jpg",
-   "free": "subplans-free",
-   "paid": {
-    "name": "7th Grade Emergency Math Sub Plans",
-    "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Emergency-Math-Sub-Plans-3-Days-No-Prep-Self-Checking-Review-17666324"
-   }
-  },
-  {
    "key": "motw-g6",
-   "n": 5,
+   "n": 6,
    "title": "Spot the mistake: 6th grade combining like terms",
    "blurb": "Jamal's 3x + 2 + 5x = 10x, the fix, and the routine it comes from.",
    "video": "/assets/social/motw-g6.mp4",
@@ -25,6 +12,19 @@
    "paid": {
     "name": "Mistake of the Week, 6th Grade (12 weeks)",
     "url": "https://www.teacherspayteachers.com/Product/Mistake-of-the-Week-6th-Grade-Math-Error-Analysis-Warm-Ups-12-Weeks-16967975"
+   }
+  },
+  {
+   "key": "subplans-g7",
+   "n": 5,
+   "title": "7th Grade Emergency Math Sub Plans",
+   "blurb": "Three no-prep days a sub can run, with work that checks itself.",
+   "video": "/assets/social/subplans-g7.mp4",
+   "poster": "/assets/social/subplans-g7.jpg",
+   "free": "subplans-free",
+   "paid": {
+    "name": "7th Grade Emergency Math Sub Plans",
+    "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Emergency-Math-Sub-Plans-3-Days-No-Prep-Self-Checking-Review-17666324"
    }
   },
   {
