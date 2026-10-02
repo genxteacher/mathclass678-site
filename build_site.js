@@ -211,7 +211,7 @@ const CCSS_TEXT = {
 
 /* ----- Per-sheet about paragraphs (SEO body copy; authored S2, keyed by SheetNumber) ----- */
 const SHEET_ABOUT = {
-  "1": "This 6th grade Order of Operations skill sheet walks students through evaluating numerical expressions in the correct sequence, including expressions with whole-number exponents and grouping symbols. Aligned to CCSS 6.EE.A.1, it pairs a keep-all-year reference page with guided practice, real-world application, and a built-in exit ticket so the full lesson lives on one printable.",
+  "1": "This free 6th grade Order of Operations skill sheet walks students through evaluating numerical expressions in the correct sequence, including expressions with whole-number exponents and grouping symbols. Aligned to CCSS 6.EE.A.1, it pairs a keep-all-year reference page with guided practice, real-world application, and a built-in exit ticket so the full lesson lives on one printable.",
   "2": "Greatest Common Factor for 6th grade gives students a clear method for finding the GCF of two whole numbers and using it to rewrite sums with the distributive property. Built on CCSS 6.NS.B.4, the sheet moves from a worked reference page through sequenced practice and word problems to a short assessment, all in one place.",
   "3": "Least Common Multiple for 6th grade teaches students to find the LCM of two numbers and apply it to real situations like repeating events and shared schedules. Aligned to CCSS 6.NS.B.4, this 4-in-1 sheet covers the concept with a reference page, guided practice, applied problems, and an exit ticket with a full answer key.",
   "4": "Understanding Ratios introduces 6th grade students to ratio language and what it means to compare two quantities by ratio. Aligned to CCSS 6.RP.A.1, the sheet builds from a reference page with worked examples through scaffolded practice and real-world application to a quick assessment, giving you a complete ratios lesson on a single printable.",
@@ -229,7 +229,7 @@ const SHEET_ABOUT = {
   "16": "Exponents for 6th grade teaches students to write and evaluate numerical expressions involving whole-number exponents. Aligned to CCSS 6.EE.A.1, the sheet pairs a reference page that distinguishes a base from an exponent with guided practice, six problems, real-world application, and a built-in assessment, keeping the full lesson on one printable.",
   "17": "Writing Algebraic Expressions helps 6th graders translate words into algebraic expressions using variables and operations. Aligned to CCSS 6.EE.A.2a, this skill sheet moves from a reference page of common phrase-to-symbol translations through guided practice and applied problems to a short exit ticket with a complete answer key.",
   "18": "Evaluating Expressions teaches 6th grade students to evaluate algebraic expressions at specific values of their variables, including expressions drawn from real situations. Aligned to CCSS 6.EE.A.2c, the sheet pairs a reference page with worked substitutions, sequenced practice, real-world application, and a built-in assessment.",
-  "19": "Combining Like Terms is a free 6th grade skill sheet that teaches students to identify like terms and combine them to write equivalent expressions. Aligned to CCSS 6.EE.A.3 and 6.EE.A.4, it is the complete 4-in-1 deliverable at no cost: a reference page, guided practice, real-world application, and a built-in exit ticket with answer key.",
+  "19": "Combining Like Terms is a 6th grade skill sheet that teaches students to identify like terms and combine them to write equivalent expressions. Aligned to CCSS 6.EE.A.3 and 6.EE.A.4, it is the complete 4-in-1 lesson: a reference page, guided practice, real-world application, and a built-in exit ticket with answer key.",
   "20": "Distributive Property for 6th grade teaches students to apply the distributive property to write equivalent expressions. Aligned to CCSS 6.EE.A.3, this skill sheet builds from a reference page with worked examples through six sequenced practice problems and real-world application to a short assessment, all on one printable.",
   "21": "Solving One-Step Equations gives 6th grade students a clear method for solving one-step equations using inverse operations. Aligned to CCSS 6.EE.B.7, the sheet pairs a reference page with a worked example, sequenced practice across addition, subtraction, multiplication, and division equations, applied word problems, and a built-in exit ticket.",
   "22": "Real-World Problems on the Coordinate Plane has 6th graders solve problems by graphing points and finding distances between them. Aligned to CCSS 6.NS.C.8, this 4-in-1 sheet moves from a reference page through guided practice plotting and measuring to real-world application and a short assessment with a full answer key.",
@@ -2509,7 +2509,7 @@ function kitSignup() {
         <div class="kit-signup__copy">
           <span class="eyebrow">Free resource</span>
           <h2>Get a free 4-in-1 Skill Sheet</h2>
-          <p>Sign up and I'll send you Combining Like Terms for 6th grade — a complete 4-in-1 Skill Sheet, no strings attached. You'll also hear when new sheets publish and when the store runs a sale.</p>
+          <p>Sign up and I'll send you Order of Operations for 6th grade — a complete 4-in-1 Skill Sheet with an interactive teacher deck, no strings attached. You'll also hear when new sheets publish and when the store runs a sale.</p>
         </div>
         <div class="kit-signup__form">
           ${KIT_SCRIPT}
@@ -2526,7 +2526,7 @@ function kitHero(opts) {
   opts = opts || {};
   const eyebrow = opts.eyebrow || 'Free 4-in-1 Skill Sheet';
   const heading = opts.heading || 'Get a complete skill sheet free';
-  const lead = opts.lead || 'Enter your email and I\u2019ll send you the Combining Like Terms 4-in-1 Skill Sheet for 6th grade \u2014 reference, practice, application, and an exit ticket with answer key. The full sheet, in the same format as every paid sheet.';
+  const lead = opts.lead || 'Enter your email and I\u2019ll send you the Order of Operations 4-in-1 Skill Sheet for 6th grade \u2014 a 7-page student packet and a 33-slide interactive teacher deck. The full lesson, in the same format as every paid sheet.';
   return `<section class="kit-hero" id="free-sheet">
     <div class="wrap kit-hero__grid">
       <div class="kit-hero__copy reveal">
@@ -2536,13 +2536,13 @@ function kitHero(opts) {
         <ul class="kit-hero__list">
           <li>A complete lesson on one printable, not a watered-down sample</li>
           <li>Reference, practice, real-world application, and an exit ticket with answer key</li>
-          <li>A 14-slide teacher deck with the teaching script in the speaker notes</li>
+          <li>A 33-slide interactive teacher deck that reveals each step one click at a time</li>
         </ul>
         <p class="kit-hero__reassure">No spam. Unsubscribe in one click anytime.</p>
       </div>
       <div class="kit-hero__panel reveal">
         <figure class="kit-hero__thumb">
-          <img src="/assets/images/freebies/free_clt-poster.jpg" alt="Free Combining Like Terms 4-in-1 Skill Sheet and anchor chart poster for 6th grade math" width="900" height="900" loading="lazy" decoding="async">
+          <img src="/assets/images/freebies/free_ooo-sheet.jpg" alt="Free Order of Operations 4-in-1 Skill Sheet and interactive teacher deck for 6th grade math" width="900" height="900" loading="lazy" decoding="async">
         </figure>
         <div class="kit-hero__formcard">
           <span class="kit-hero__formlabel">Send it to my inbox</span>
@@ -2684,7 +2684,7 @@ const FAQ = [
   },
   {
     q: 'Is there anything free to try first?',
-    a: 'Yes. There are two free 4-in-1 Skill Sheets (Combining Like Terms for 6th and 7th grade), plus free anchor chart posters, curriculum maps, back-to-school tools, and end-of-year reviews. Start on the free resources page before spending a dollar.'
+    a: 'Yes. There are two free 4-in-1 Skill Sheets (Order of Operations for 6th grade and Combining Like Terms for 7th grade), plus free anchor chart posters, curriculum maps, back-to-school tools, and end-of-year reviews. Start on the free resources page before spending a dollar.'
   }
 ];
 
@@ -2733,7 +2733,7 @@ const FREE_RESOURCES = [
    success handler forwards to the correct TPT URL.
    ============================================================================ */
 const FREEBIE_KIT_FORMS = {
-  'FREE-001': '875fdb8851', // Combining Like Terms (6th)
+  'FREE-001': '875fdb8851', // Order of Operations (6th) — switched from Combining Like Terms 6th on 2026-10-01 (TPT exclusivity: CLT 6th is paid on TPT)
   'FREE-002': '040d74c6eb', // Combining Like Terms Poster (6th)
   'FREE-003': '3f6172755c', // 6th Grade Math About Me (6th)
   'FREE-004': '5c8c26b69f', // 6th Grade Math End of Year Review (6th)
@@ -2919,7 +2919,7 @@ function pageHome() {
     </div>
   </section>
 
-  ${kitHero({ heading: 'Start with a free skill sheet', lead: 'Enter your email and I\u2019ll send you the Combining Like Terms 4-in-1 Skill Sheet for 6th grade \u2014 a complete lesson on one printable. See exactly how the format works before you spend a dollar.' })}
+  ${kitHero({ heading: 'Start with a free skill sheet', lead: 'Enter your email and I\u2019ll send you the Order of Operations 4-in-1 Skill Sheet for 6th grade \u2014 a complete lesson with an interactive teacher deck. See exactly how the format works before you spend a dollar.' })}
 
   <!-- METHOD BANNER -->
   <section class="method-banner">
@@ -3407,7 +3407,7 @@ function pageFree() {
 
   return head({
     title: 'Free Middle School Math Resources — Grades 6, 7 & 8 | Math Class 678',
-    desc:  'Free 4-in-1 Skill Sheets and classroom resources for middle school math teachers, grades 6–8. Combining Like Terms, anchor charts, curriculum maps, back-to-school tools, and more.',
+    desc:  'Free 4-in-1 Skill Sheets and classroom resources for middle school math teachers, grades 6–8. Order of Operations, Combining Like Terms, anchor charts, curriculum maps, back-to-school tools, and more.',
     path:  'free.html',
     jsonld: breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Free Resources', url: '/free.html' }])
   }) + nav('free') + `
@@ -3659,7 +3659,7 @@ function navMinimal() {
 function pageGetStarted() {
   return head({
     title: 'Get a Free 4-in-1 Skill Sheet — Middle School Math | Math Class 678',
-    desc: 'Sign up and get a complete 4-in-1 Skill Sheet free: Combining Like Terms for 6th grade. Reference, practice, application, and an exit ticket with answer key. Checked by a 25-year teacher.',
+    desc: 'Sign up and get a complete 4-in-1 Skill Sheet free: Order of Operations for 6th grade, with a 7-page packet and a 33-slide interactive teacher deck.',
     path: 'get-started.html'
   }) + navMinimal() + `
 <main id="main" class="landing">
@@ -3668,13 +3668,13 @@ function pageGetStarted() {
       <div class="landing-hero__copy reveal">
         <span class="eyebrow">Free 4-in-1 Skill Sheet</span>
         <h1>A complete math lesson, on the house</h1>
-        <p class="landing-hero__lead">Sign up and I'll send you the <strong>Combining Like Terms</strong> 4-in-1 Skill Sheet for 6th grade — the full sheet, in the same format as every paid sheet. One standard, one printable, the whole lesson in your hand.</p>
+        <p class="landing-hero__lead">Sign up and I'll send you the <strong>Order of Operations</strong> 4-in-1 Skill Sheet for 6th grade — the full sheet, in the same format as every paid sheet. One standard, one printable, the whole lesson in your hand.</p>
         <ul class="landing__list">
           <li><strong>Reference page</strong> students keep — definitions, rules, a worked example, and a visual model</li>
-          <li><strong>Six sequenced practice problems</strong> after a worked example and a Watch Out error pair</li>
+          <li><strong>Six scaffolded practice problems</strong> (two warm-up, two standard, two stretch) after a worked example</li>
           <li><strong>Real-world application</strong> problems that match how students actually see the skill</li>
           <li><strong>Exit ticket</strong> with a full answer key, so you know who is ready before tomorrow</li>
-          <li><strong>A 14-slide teacher deck</strong> with the teaching script in the speaker notes</li>
+          <li><strong>A 33-slide interactive teacher deck</strong> that reveals each step one click at a time</li>
         </ul>
         <p class="landing__reassure">No spam. You will hear from me when new sheets publish and when the store runs a sale — and you can unsubscribe in one click anytime.</p>
       </div>
@@ -3682,7 +3682,7 @@ function pageGetStarted() {
         <div class="landing-form-card">
           <span class="landing-form-card__eyebrow">Send it to my inbox</span>
           <h2 class="landing-form-card__title">Get the free sheet</h2>
-          <p class="landing-form-card__sub">Enter your email and the Combining Like Terms 4-in-1 Skill Sheet is yours.</p>
+          <p class="landing-form-card__sub">Enter your email and the Order of Operations 4-in-1 Skill Sheet is yours.</p>
           <div class="landing-form-card__form">
             ${KIT_SCRIPT}
           </div>
@@ -4091,7 +4091,7 @@ function pageSheet(p, prev, next) {
   </section>`;
   })()}
 
-  ${kitHero({ eyebrow: 'Try before you buy', heading: 'Get a free 4-in-1 Skill Sheet', lead: 'Want to see the format in your own hands first? Enter your email and I\u2019ll send you the Combining Like Terms 4-in-1 Skill Sheet for 6th grade \u2014 a complete lesson on one printable, free.' })}
+  ${kitHero({ eyebrow: 'Try before you buy', heading: 'Get a free 4-in-1 Skill Sheet', lead: 'Want to see the format in your own hands first? Enter your email and I\u2019ll send you the Order of Operations 4-in-1 Skill Sheet for 6th grade \u2014 a complete lesson with an interactive teacher deck, free.' })}
 
   <nav class="section sheetnav" aria-label="Browse adjacent sheets" style="padding-top:0">
     <div class="wrap sheetnav__row">
@@ -6633,10 +6633,10 @@ ${main.concat(warmupUrls, bundleUrls, sheets, standardUrls, glossaryUrls, freebi
 const robots = `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`;
 // Community group vanity link + clean 404. /join MUST come before the /* catch-all
 // (first match wins within the file), so it is not swallowed by the 404 rule.
-// mathclass678.com/join -> the Skool group; the destination lives ONLY here, so
-// the store banner, product PDF back pages, email footer and socials bio all point
-// at /join and never need reissuing if the group ever moves.
-const SKOOL_JOIN_URL = 'https://www.skool.com/math-class-678-2701';
+// mathclass678.com/join -> the TPT store (Follow button). The Skool group was closed on 2026-10-01
+// (TPT exclusivity); the store banner, product PDF back pages, email footer and socials bio still point
+// at /join, so the vanity link stays and now lands on the store instead.
+const SKOOL_JOIN_URL = 'https://www.teacherspayteachers.com/store/math-class-678';
 const netlifyToml = `[[redirects]]
   from = "/tiktok"
   to = "/tiktok.html"
@@ -6692,6 +6692,11 @@ const RETIRED_BUNDLE_REDIRECTS = [
   // 6th Grade Expressions (16737025) was folded into 6th Grade Expressions & Equations (16734544).
   ['/bundles/6th-grade-expressions', '/bundles/6th-grade-expressions-equations.html'],
   ['/bundles/6th-grade-expressions.html', '/bundles/6th-grade-expressions-equations.html'],
+  // 2026-10-01: the free 6th grade sheet became Order of Operations (TPT exclusivity); CLT 6th is paid on TPT.
+  ['/free/combining-like-terms-grade-6.html', '/free/order-of-operations.html'],
+  ['/free/combining-like-terms-grade-6', '/free/order-of-operations.html'],
+  ['/free/combining-like-terms-grade-7.html', '/free/combining-like-terms.html'],
+  ['/free/combining-like-terms-grade-7', '/free/combining-like-terms.html'],
 ].map(([from, to]) => `${from}   ${to}   301!`).join('\n') + '\n';
 const netlifyRedirects = `/tiktok    /tiktok.html   200!\n/tiktok/   /tiktok.html   200!\n/join      ${SKOOL_JOIN_URL}   301!\n/join/*    ${SKOOL_JOIN_URL}   301!\n` + ILEARN_REDIRECTS + RETIRED_BUNDLE_REDIRECTS;
 
