@@ -6781,80 +6781,376 @@
  "mystery": [
   {
    "id": "16907133",
-   "title": "Integer Operations Digital Mystery Pictures 7th Grade Math Google Sheets FREE",
-   "url": "https://www.teacherspayteachers.com/Product/Integer-Operations-Digital-Mystery-Pictures-7th-Grade-Math-Google-Sheets-FREE-16907133",
-   "key": "mystery",
+   "title": "FREE Integer Operations Pixel Art | 7th Grade Mystery Pictures Google Sheets",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-Integer-Operations-Pixel-Art-7th-Grade-Mystery-Pictures-Google-Sheets-16907133",
    "topic": "Integer Operations",
    "grade": "7th Grade",
-   "pics": [
-    "calculator",
-    "rocket"
-   ],
+   "theme": "Arctic",
+   "slug": "integer-operations",
+   "free": true,
    "levels": [
-    "adding and subtracting integers",
-    "multiplying and dividing integers"
+    {
+     "title": "Add and Subtract",
+     "picture": "penguin",
+     "codes": [
+      "7.NS.A.1"
+     ],
+     "problems": 12
+    },
+    {
+     "title": "Multiply and Divide",
+     "picture": "polar bear",
+     "codes": [
+      "7.NS.A.2"
+     ],
+     "problems": 12
+    },
+    {
+     "title": "Real-World Problems",
+     "picture": "snowy owl",
+     "codes": [
+      "7.NS.A.3"
+     ],
+     "problems": 12
+    }
    ],
-   "dropdown": false,
-   "codes": [
-    "7.NS.A.1",
-    "7.NS.A.2"
+   "level_lines": [
+    "Level 1: add and subtract integers (7.NS.A.1)",
+    "Level 2: multiply and divide integers (7.NS.A.2)",
+    "Level 3: real-world problems about Arctic temperatures, depths and money (7.NS.A.3)"
+   ],
+   "fair": [
+    "Every answer is a whole number. Spaces, units and \"x =\" are ignored, so -12, x = -12 and -12°F all count."
    ],
    "per_level": 12,
-   "total": 24,
-   "free": true,
-   "slug": "integer-operations",
+   "total": 36,
+   "wrong_example": "subtracting a negative",
+   "codes": [
+    "7.NS.A.1",
+    "7.NS.A.2",
+    "7.NS.A.3"
+   ],
    "img": "/assets/images/mystery/16907133.jpg"
   },
   {
    "id": "16912913",
-   "title": "One-Step Equations Digital Mystery Pictures 6th Grade Math Google Sheets",
-   "url": "https://www.teacherspayteachers.com/Product/One-Step-Equations-Digital-Mystery-Pictures-6th-Grade-Math-Google-Sheets-16912913",
-   "key": "mystery",
+   "title": "One-Step Equations Pixel Art | 6th Grade Math Mystery Pictures Google Sheets",
+   "url": "https://www.teacherspayteachers.com/Product/One-Step-Equations-Pixel-Art-6th-Grade-Math-Mystery-Pictures-Google-Sheets-16912913",
    "topic": "One-Step Equations",
    "grade": "6th Grade",
-   "pics": [
-    "pencil",
-    "trophy"
-   ],
+   "theme": "Jungle",
+   "slug": "one-step-equations",
+   "free": false,
    "levels": [
-    "solving one-step addition and subtraction equations",
-    "solving one-step multiplication and division equations"
+    {
+     "title": "Addition and Subtraction Equations",
+     "picture": "sloth",
+     "codes": [
+      "6.EE.B.7"
+     ],
+     "problems": 12
+    },
+    {
+     "title": "Multiplication and Division Equations",
+     "picture": "toucan",
+     "codes": [
+      "6.EE.B.7"
+     ],
+     "problems": 12
+    },
+    {
+     "title": "Real-World Problems",
+     "picture": "tree frog",
+     "codes": [
+      "6.EE.B.7"
+     ],
+     "problems": 12
+    }
    ],
-   "dropdown": false,
+   "level_lines": [
+    "Level 1: addition and subtraction equations with whole numbers, decimals and fractions (6.EE.B.7)",
+    "Level 2: multiplication and division equations (6.EE.B.7)",
+    "Level 3: real-world problems about sloths, toucans, tree frogs and a jungle trail (6.EE.B.7)"
+   ],
+   "fair": [
+    "Fractions, decimals and mixed numbers all count: 5/4, 1 1/4 and 1.25 are the same answer.",
+    "Units and \"x =\" are ignored, and fractions never turn into dates."
+   ],
+   "per_level": 12,
+   "total": 36,
+   "wrong_example": "undoing the wrong operation",
    "codes": [
     "6.EE.B.7"
    ],
-   "per_level": 12,
-   "total": 24,
-   "free": false,
-   "slug": "one-step-equations",
    "img": "/assets/images/mystery/16912913.jpg"
   },
   {
-   "id": "16913379",
-   "title": "Rational Number Operations Digital Mystery Pictures 7th Grade Google Sheets",
-   "url": "https://www.teacherspayteachers.com/Product/Rational-Number-Operations-Digital-Mystery-Pictures-7th-Grade-Google-Sheets-16913379",
-   "key": "mystery",
-   "topic": "Rational Number Operations",
-   "grade": "7th Grade",
-   "pics": [
-    "beaker",
-    "lightbulb"
-   ],
+   "id": "16933522",
+   "title": "Ratios and Rates Pixel Art | 6th Grade Math Mystery Pictures Google Sheets",
+   "url": "https://www.teacherspayteachers.com/Product/Ratios-and-Rates-Pixel-Art-6th-Grade-Math-Mystery-Pictures-Google-Sheets-16933522",
+   "topic": "Ratios and Rates",
+   "grade": "6th Grade",
+   "theme": "Food",
+   "slug": "ratios-and-rates",
+   "free": false,
    "levels": [
-    "adding and subtracting rational numbers (positive and negative fractions and decimals)",
-    "multiplying and dividing rational numbers"
+    {
+     "title": "Equivalent Ratios",
+     "picture": "pizza",
+     "codes": [
+      "6.RP.A.3a"
+     ],
+     "problems": 12
+    },
+    {
+     "title": "Unit Rates",
+     "picture": "donut",
+     "codes": [
+      "6.RP.A.3b"
+     ],
+     "problems": 12
+    },
+    {
+     "title": "Real-World Problems",
+     "picture": "boba",
+     "codes": [
+      "6.RP.A.3"
+     ],
+     "problems": 12
+    }
    ],
-   "dropdown": true,
-   "codes": [
-    "7.NS.A.1",
-    "7.NS.A.2"
+   "level_lines": [
+    "Level 1: equivalent ratios with a missing value (6.RP.A.3a)",
+    "Level 2: unit rates and unit prices (6.RP.A.3b)",
+    "Level 3: real-world food problems: recipes, unit prices, percents and conversions (6.RP.A.3)"
+   ],
+   "fair": [
+    "Fractions and decimals both count: 3/4, 0.75 and .75 are the same answer, and a dollar sign is ignored.",
+    "Percents can be typed with or without the % sign."
    ],
    "per_level": 12,
-   "total": 24,
+   "total": 36,
+   "wrong_example": "adding instead of multiplying",
+   "codes": [
+    "6.RP.A.3a",
+    "6.RP.A.3b",
+    "6.RP.A.3"
+   ],
+   "img": "/assets/images/mystery/16933522.jpg"
+  },
+  {
+   "id": "16936716",
+   "title": "Order of Operations Pixel Art | 6th Grade Math Mystery Pictures Google Sheets",
+   "url": "https://www.teacherspayteachers.com/Product/Order-of-Operations-Pixel-Art-6th-Grade-Math-Mystery-Pictures-Google-Sheets-16936716",
+   "topic": "Order of Operations",
+   "grade": "6th Grade",
+   "theme": "Gaming",
+   "slug": "order-of-operations",
    "free": false,
+   "levels": [
+    {
+     "title": "Order of Operations",
+     "picture": "controller",
+     "codes": [
+      "6.EE.A.2c"
+     ],
+     "problems": 12
+    },
+    {
+     "title": "With Exponents",
+     "picture": "dragon",
+     "codes": [
+      "6.EE.A.1"
+     ],
+     "problems": 12
+    },
+    {
+     "title": "Real-World Problems",
+     "picture": "treasure chest",
+     "codes": [
+      "6.EE.A.1",
+      "6.EE.A.2c"
+     ],
+     "problems": 12
+    }
+   ],
+   "level_lines": [
+    "Level 1: order of operations with parentheses and brackets (6.EE.A.2c)",
+    "Level 2: expressions with whole-number exponents (6.EE.A.1)",
+    "Level 3: real-world gaming problems: coins, stars, health points and maps (6.EE.A.1, 6.EE.A.2c)"
+   ],
+   "fair": [
+    "Every answer is a number, and words like \"coins\" are ignored, so 65 and 65 coins both count."
+   ],
+   "per_level": 12,
+   "total": 36,
+   "wrong_example": "adding before multiplying",
+   "codes": [
+    "6.EE.A.2c",
+    "6.EE.A.1"
+   ],
+   "img": "/assets/images/mystery/16936716.jpg"
+  },
+  {
+   "id": "16913379",
+   "title": "Rational Number Operations Pixel Art | 7th Grade Mystery Pictures Google Sheets",
+   "url": "https://www.teacherspayteachers.com/Product/Rational-Number-Operations-Pixel-Art-7th-Grade-Mystery-Pictures-Google-Sheets-16913379",
+   "topic": "Rational Number Operations",
+   "grade": "7th Grade",
+   "theme": "Ocean",
    "slug": "rational-number-operations",
+   "free": false,
+   "levels": [
+    {
+     "title": "Add and Subtract",
+     "picture": "axolotl",
+     "codes": [
+      "7.NS.A.1"
+     ],
+     "problems": 12
+    },
+    {
+     "title": "Multiply and Divide",
+     "picture": "shark",
+     "codes": [
+      "7.NS.A.2"
+     ],
+     "problems": 12
+    },
+    {
+     "title": "Real-World Problems",
+     "picture": "submarine",
+     "codes": [
+      "7.NS.A.3"
+     ],
+     "problems": 12
+    }
+   ],
+   "level_lines": [
+    "Level 1: add and subtract rational numbers (7.NS.A.1)",
+    "Level 2: multiply and divide rational numbers (7.NS.A.2)",
+    "Level 3: real-world problems about divers, tides and temperatures (7.NS.A.3)"
+   ],
+   "fair": [
+    "Fractions, decimals and mixed numbers all count: -3/4, -0.75 and -.75 are the same answer.",
+    "Units and \"x =\" are ignored, and fractions never turn into dates."
+   ],
+   "per_level": 12,
+   "total": 36,
+   "wrong_example": "subtracting a negative",
+   "codes": [
+    "7.NS.A.1",
+    "7.NS.A.2",
+    "7.NS.A.3"
+   ],
    "img": "/assets/images/mystery/16913379.jpg"
+  },
+  {
+   "id": "16914724",
+   "title": "Two-Step Equations Pixel Art | 7th Grade Math Mystery Pictures Google Sheets",
+   "url": "https://www.teacherspayteachers.com/Product/Two-Step-Equations-Pixel-Art-7th-Grade-Math-Mystery-Pictures-Google-Sheets-16914724",
+   "topic": "Two-Step Equations",
+   "grade": "7th Grade",
+   "theme": "Sports",
+   "slug": "two-step-equations",
+   "free": false,
+   "levels": [
+    {
+     "title": "Two-Step Equations with Integers",
+     "picture": "sneaker",
+     "codes": [
+      "7.EE.B.4a"
+     ],
+     "problems": 12
+    },
+    {
+     "title": "Rational Numbers and Parentheses",
+     "picture": "basketball",
+     "codes": [
+      "7.EE.B.4a"
+     ],
+     "problems": 12
+    },
+    {
+     "title": "Real-World Problems",
+     "picture": "skateboard",
+     "codes": [
+      "7.EE.B.4a"
+     ],
+     "problems": 12
+    }
+   ],
+   "level_lines": [
+    "Level 1: two-step equations with integers (7.EE.B.4a)",
+    "Level 2: rational coefficients and parentheses, like 3(x + 2) = 21 (7.EE.B.4a)",
+    "Level 3: real-world sports problems: scores, gym fees, races and a climbing wall (7.EE.B.4a)"
+   ],
+   "fair": [
+    "Fractions, decimals and mixed numbers all count: -3/2, -1 1/2 and -1.5 are the same answer.",
+    "Units and \"x =\" are ignored, and fractions never turn into dates."
+   ],
+   "per_level": 12,
+   "total": 36,
+   "wrong_example": "undoing the steps in the wrong order",
+   "codes": [
+    "7.EE.B.4a"
+   ],
+   "img": "/assets/images/mystery/16914724.jpg"
+  },
+  {
+   "id": "16913742",
+   "title": "Exponents and Scientific Notation Pixel Art | 8th Grade Math Google Sheets",
+   "url": "https://www.teacherspayteachers.com/Product/Exponents-and-Scientific-Notation-Pixel-Art-8th-Grade-Math-Google-Sheets-16913742",
+   "topic": "Exponents and Scientific Notation",
+   "grade": "8th Grade",
+   "theme": "Space",
+   "slug": "exponents-scientific-notation",
+   "free": false,
+   "levels": [
+    {
+     "title": "Exponent Rules",
+     "picture": "astronaut",
+     "codes": [
+      "8.EE.A.1"
+     ],
+     "problems": 12
+    },
+    {
+     "title": "Scientific Notation",
+     "picture": "ringed planet",
+     "codes": [
+      "8.EE.A.3",
+      "8.EE.A.4"
+     ],
+     "problems": 12
+    },
+    {
+     "title": "Real-World Problems",
+     "picture": "alien",
+     "codes": [
+      "8.EE.A.4"
+     ],
+     "problems": 12
+    }
+   ],
+   "level_lines": [
+    "Level 1: integer exponent rules, including zero and negative exponents (8.EE.A.1)",
+    "Level 2: scientific notation: converting, multiplying and dividing (8.EE.A.3, 8.EE.A.4)",
+    "Level 3: real-world space problems: distances, light, rockets and the Moon (8.EE.A.4)"
+   ],
+   "fair": [
+    "Fractions and decimals both count: 1/8 and 0.125 are the same answer.",
+    "Students type just the exponent or the standard-form number, with or without commas, so no one types \"× 10^\"."
+   ],
+   "per_level": 12,
+   "total": 36,
+   "wrong_example": "a negative exponent read as a negative number",
+   "codes": [
+    "8.EE.A.1",
+    "8.EE.A.3",
+    "8.EE.A.4"
+   ],
+   "img": "/assets/images/mystery/16913742.jpg"
   }
  ]
 }

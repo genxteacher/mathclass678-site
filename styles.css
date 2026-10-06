@@ -1732,3 +1732,7 @@ a.cr-tile__cta:hover { color: var(--g, var(--forest)); }
   .soc #videos { padding-top: 1.6rem; }
 }
 .soc .cr-tile__media img { object-position: top; }
+/* v1.19.0 skill sheet page: the 20-second preview above the deck and packet lists */
+.sheet-video { max-width:720px; border-radius:var(--radius, 12px); overflow:hidden; }
+.sheet-block .cr-list { max-width:62ch; color:var(--charcoal-soft); line-height:1.55; }
+.sheet-block h2 + .sheet-video { margin-top:.4rem; }

@@ -469,6 +469,34 @@
   "17672163": {
    "video": "/assets/videos/motw-free.mp4",
    "poster": "/assets/videos/motw-free.jpg"
+  },
+  "16913379": {
+   "video": "/assets/videos/mp-rational-number-operations.mp4",
+   "poster": "/assets/videos/mp-rational-number-operations.jpg"
+  },
+  "16907133": {
+   "video": "/assets/videos/mp-integer-operations.mp4",
+   "poster": "/assets/videos/mp-integer-operations.jpg"
+  },
+  "16912913": {
+   "video": "/assets/videos/mp-one-step-equations.mp4",
+   "poster": "/assets/videos/mp-one-step-equations.jpg"
+  },
+  "16914724": {
+   "video": "/assets/videos/mp-two-step-equations.mp4",
+   "poster": "/assets/videos/mp-two-step-equations.jpg"
+  },
+  "16933522": {
+   "video": "/assets/videos/mp-ratios-and-rates.mp4",
+   "poster": "/assets/videos/mp-ratios-and-rates.jpg"
+  },
+  "16936716": {
+   "video": "/assets/videos/mp-order-of-operations.mp4",
+   "poster": "/assets/videos/mp-order-of-operations.jpg"
+  },
+  "16913742": {
+   "video": "/assets/videos/mp-exponents-scientific-notation.mp4",
+   "poster": "/assets/videos/mp-exponents-scientific-notation.jpg"
   }
  }
 }

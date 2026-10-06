@@ -407,12 +407,27 @@ const BUNDLES = [
     "blurb":"Every 4-in-1 Skill Sheet for grades 6, 7, and 8 in a single bundle, all 103 skills covering the complete Common Core middle school math sequence. From 6th grade ratios to 8th grade functions and geometry, each skill is a full reference, practice, application, and assessment on one printable." }
 ];
 
+/* Skill Sheets v5 (live on TPT Sept 29 - Oct 3 2026): each sheet's packet and Teacher Deck numbers, thumbnail 1
+   and preview video, from the listing packages (state-testing tools/site_export/mc678_skillsheets.py). Every
+   number the site prints about a sheet comes from here, so the pages match the listings. */
+const SS = JSON.parse(fs.readFileSync(path.join(ROOT, 'skillsheet_data.json'), 'utf8')).by_num;
+const SS_ALL = Object.values(SS);
+const ssSame = k => { const v = new Set(SS_ALL.map(r => JSON.stringify(r[k]))); if (v.size !== 1) throw new Error(`skill sheets differ in ${k}; site copy assumes one value`); return SS_ALL[0][k]; };
+const SS_PAGES = ssSame('pages'), SS_KEYP = ssSame('key_pages').length, SS_PRACTICE = ssSame('n_practice'),
+  SS_WARM = ssSame('warm'), SS_STD = ssSame('standard'), SS_STRETCH = ssSame('stretch'), SS_WORD = ssSame('n_word'),
+  SS_ERR = ssSame('n_error'), SS_EXIT = ssSame('n_exit');
+const SS_SLIDES = (() => { const v = SS_ALL.map(r => r.slides); const lo = Math.min(...v), hi = Math.max(...v); return lo === hi ? `${lo}` : `${lo} to ${hi}`; })();
+const NUMW = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+const SS_KIT = `a ${SS_PAGES}-page student packet with a ${NUMW[SS_KEYP]}-page fully worked answer key, and an interactive Teacher Deck of ${SS_SLIDES} slides that builds every step click by click`;
+
 const products = catalog.map(row => {
   const g = gradeNum(row.Grade);
   const ccss = cleanCCSS(row.CCSS);
   const strand = strandOf(row.CCSS);
   const live = /SHIPPED/i.test(row.Status);
-  const free = /FREEBIE/i.test(row.Status) || /FREE/i.test(row.SkillName);
+  const v5 = SS[row.SheetNumber];
+  if (!v5) throw new Error(`sheet ${row.SheetNumber} has no v5 data in skillsheet_data.json`);
+  const free = v5.free;                         // the live price (#1, #48, #75 are free), not the old CSV tag
   // clean skill name: strip parenthetical FREE tags for display
   let name = row.SkillName.replace(/\s*\(\s*\d?(st|nd|rd|th)?\s*[—-]?\s*FREE\s*\)/i, '').replace(/\s*—\s*FREE/i, '').trim();
   let ican = icanByUrl[row.TPT_URL] || '';
@@ -427,7 +442,7 @@ const products = catalog.map(row => {
     strand,
     strandName: STRAND_NAME[strand] || row.Bundle,
     bundle: row.Bundle,
-    live, free,
+    live, free, v5,
     url: row.TPT_URL,
     desc,
     ccssText: CCSS_TEXT[ccss] || '',
@@ -456,9 +471,9 @@ const products = catalog.map(row => {
     for (const e of ['jpg', 'png']) {
       try { if (fs.existsSync(path.join(SRC, `${base}.${e}`))) { ext = e; break; } } catch (_) {}
     }
-    p.hasThumb = !!ext;
+    p.hasThumb = !!ext || !!p.v5.img;
     p.thumbExt = ext || 'jpg';
-    p.thumbWeb = `/assets/images/thumbs/${base}.${p.thumbExt}`;
+    p.thumbWeb = p.v5.img || `/assets/images/thumbs/${base}.${p.thumbExt}`;   // v5: the listing's thumbnail 1
     p.thumbAbs = SITE_URL + p.thumbWeb;
   });
 })();
@@ -2664,7 +2679,7 @@ function productCard(p) {
 const FAQ = [
   {
     q: 'What is a 4-in-1 Skill Sheet?',
-    a: 'Each sheet covers one Common Core standard and moves a student through four phases on a single printable: a color Reference page with definitions, a worked example and a Watch Out error pair; six sequenced Practice problems; Apply word problems with an error analysis; and an Assess exit ticket, with a full answer key. A 14-slide teacher deck is included, with the teaching script in the speaker notes.'
+    a: `Each sheet covers one Common Core standard and moves a student through four phases: a guided Reference page with fill-in notes, a worked example and a Watch Out error pair; ${NUMW[SS_PRACTICE]} Practice problems from warm-up to stretch, with an answer bank for self-checking; Apply, with ${NUMW[SS_WORD]} real-world problems and an error analysis; and an Assess exit ticket with an I-can self-rating. It comes as ${SS_KIT}, with speaker notes on every problem.`
   },
   {
     q: 'Can I print just one standard at a time?',
@@ -2684,7 +2699,7 @@ const FAQ = [
   },
   {
     q: 'Is there anything free to try first?',
-    a: 'Yes. There are two free 4-in-1 Skill Sheets (Order of Operations for 6th grade and Combining Like Terms for 7th grade), plus free anchor chart posters, curriculum maps, back-to-school tools, and end-of-year reviews. Start on the free resources page before spending a dollar.'
+    a: 'Yes. There are three free 4-in-1 Skill Sheets, one per grade (Order of Operations for 6th grade, Combining Like Terms for 7th grade and Multi-Step Equations for 8th grade), plus free anchor chart posters, curriculum maps, back-to-school tools, and end-of-year reviews. Start on the free resources page before spending a dollar.'
   }
 ];
 
@@ -2903,7 +2918,7 @@ function pageHome() {
       <div class="hero__copy">
         <span class="eyebrow hero__eyebrow">${counts.all} sheets · grades 6–8 · CCSS</span>
         <h1><span class="phase gold">Reference.</span> Practice.<br>Apply. <span class="phase">Assess.</span></h1>
-        <p class="hero__lead">Standards-aligned 4-in-1 Skill Sheets for grades 6, 7, and 8 math, checked by a teacher with 25 years in the classroom. Every skill on one printable sheet: a reference page, six practice problems, application problems and a built-in exit ticket, plus a 14-slide teacher deck.</p>
+        <p class="hero__lead">Standards-aligned 4-in-1 Skill Sheets for grades 6, 7, and 8 math, checked by a teacher with 25 years in the classroom. Every skill as a full lesson: a guided reference page, ${NUMW[SS_PRACTICE]} practice problems, application problems and a built-in exit ticket, plus an interactive Teacher Deck that builds every step click by click.</p>
         <div class="hero__cta">
           <a class="btn btn--primary" href="/catalog.html">Browse all sheets ${ICON.arrow}</a>
           <a class="btn btn--on-dark" href="/free.html">Free resources</a>
@@ -2932,13 +2947,13 @@ function pageHome() {
       <div class="spread__copy reveal">
         <span class="eyebrow">What's inside</span>
         <h2>A complete lesson in one printable</h2>
-        <p>Every 4-in-1 Skill Sheet carries a full lesson on one standard — a four-page student packet, a two-page answer key and a 14-slide teacher deck, sequenced from first instruction to formative check. Everything you need for the skill, nothing from the next one.</p>
+        <p>Every 4-in-1 Skill Sheet carries a full lesson on one standard — ${SS_KIT}, sequenced from first instruction to formative check. Everything you need for the skill, nothing from the next one.</p>
         <ul class="spread__list">
-          <li>Color reference page students keep all year — definitions, key rules, worked examples, visual model</li>
-          <li>A reference page with definitions, a worked example and a Watch Out error pair, plus six sequenced practice problems</li>
-          <li>Real-world word problems and a half-sheet notebook insert</li>
-          <li>Exit ticket strips with Work: and Answer: labels, plus a full teacher answer key</li>
-          <li>A 14-slide teacher deck with the teaching script in the speaker notes</li>
+          <li>A guided Reference page: words to own, the key rule, a worked example and a Watch Out error pair, filled in as you teach</li>
+          <li>${NUMW[SS_PRACTICE].charAt(0).toUpperCase() + NUMW[SS_PRACTICE].slice(1)} practice problems (${NUMW[SS_WARM]} warm-up, ${NUMW[SS_STD]} standard, ${NUMW[SS_STRETCH]} stretch) with an answer bank for self-checking</li>
+          <li>${NUMW[SS_WORD].charAt(0).toUpperCase() + NUMW[SS_WORD].slice(1)} real-world problems and an error analysis</li>
+          <li>An exit ticket, two per page, with an I-can self-rating, and a fully worked answer key with the common mistakes</li>
+          <li>An interactive Teacher Deck of ${SS_SLIDES} slides: a your-turn slide for every problem, then the solution one line per click</li>
         </ul>
       </div>
       <div class="reveal">
@@ -2976,7 +2991,7 @@ function pageHome() {
         </article>
         <article class="why__card why__card--7 reveal">
           <h3>First instruction</h3>
-          <p>The reference page and the 14-slide teacher deck carry a full lesson, so a sheet can anchor your direct instruction, not just the practice that follows it.</p>
+          <p>The guided reference page and the interactive Teacher Deck carry a full lesson, so a sheet can anchor your direct instruction, not just the practice that follows it.</p>
         </article>
         <article class="why__card why__card--8 reveal">
           <h3>Formative checks</h3>
@@ -3437,7 +3452,7 @@ function pageFree() {
       <div class="rcat__head reveal">
         <span class="eyebrow">Free 4-in-1 Skill Sheets</span>
         <h2>The full method, no cost</h2>
-        <p>Two complete 4-in-1 Skill Sheets \u2014 the same architecture as every paid sheet. A reference page, six sequenced practice problems, application problems, an exit ticket with answer key, and a 14-slide teacher deck. Nothing stripped out.</p>
+        <p>${NUMW[frees.length].charAt(0).toUpperCase() + NUMW[frees.length].slice(1)} complete 4-in-1 Skill Sheets, one per grade \u2014 the same as every paid sheet: ${SS_KIT}. Nothing stripped out.</p>
       </div>
       <div class="free-grid">
         ${frees.map(productCard).join('\n')}
@@ -3463,7 +3478,7 @@ function pageFree() {
   </section>`;
   }).join('')}
 
-  ${MP_FREE ? `<section class="section"><div class="wrap cr-cta"><div><span class="eyebrow">Free self-checking Google Sheet</span><h2>${esc(MP_FREE.topic)} Mystery Pictures</h2><p>${MP_FREE.total} ${esc(MP_FREE.grade.toLowerCase())} problems in two levels: every right answer reveals part of a hidden picture, and wrong answers turn red so students fix their own mistakes.</p></div><a class="btn btn--primary" href="/mystery-pictures.html">See the Mystery Pictures ${ICON.arrow}</a></div></section>` : ''}
+  ${MP_FREE ? `<section class="section"><div class="wrap cr-cta"><div><span class="eyebrow">Free self-checking Google Sheet</span><h2>${esc(MP_FREE.topic)} Pixel Art</h2><p>${MP_FREE.total} ${esc(MP_FREE.grade.toLowerCase())} problems in three levels: every right answer uncovers part of a hidden picture, and a wrong answer shows a hint written for that mistake.</p></div><a class="btn btn--primary" href="/mystery-pictures.html">See the Mystery Pictures ${ICON.arrow}</a></div></section>` : ''}
 
   <!-- BOTTOM CTA -->
   <section class="section gridpaper">
@@ -3800,7 +3815,11 @@ function sheetJsonLd(p) {
       { '@type': 'ListItem', position: 4, name: p.name, item: canonical }
     ]
   };
-  return JSON.stringify([learning, crumbs]).replace(/</g, '\\u003c');
+  const out = [learning, crumbs];
+  if (p.v5.video) out.push({ '@context': 'https://schema.org', '@type': 'VideoObject', name: `${p.name}: 20-second preview`,
+    description: `The ${p.name} Teacher Deck and student packet for ${gradeOrdinal(p.grade)} grade (${p.ccss}).`,
+    thumbnailUrl: SITE_URL + p.v5.poster, contentUrl: SITE_URL + p.v5.video, uploadDate: '2026-10-05', duration: 'PT20S' });
+  return JSON.stringify(out).replace(/</g, '\\u003c');
 }
 
 
@@ -4054,10 +4073,36 @@ function pageSheet(p, prev, next) {
           <h2>About this skill sheet</h2>
           <p>${esc(p.about)}</p>
         </div>
-        <div class="sheet-block">
-          <h2>What is inside</h2>
-          <p>Every 4-in-1 Skill Sheet moves a student through four phases on a single printable: a color <strong>Reference</strong> page with definitions, a worked example and a Watch Out error pair; six sequenced <strong>Practice</strong> problems; <strong>Apply</strong> word problems with an error analysis; and an <strong>Assess</strong> exit ticket, with a full two-page answer key and an ink-saver edition. A 14-slide teacher deck is included, with the teaching script in the speaker notes.</p>
+${(() => {
+          const v = p.v5, n = x => NUMW[x] || String(x);
+          const k1 = v.key_pages[0], k2 = v.key_pages[v.key_pages.length - 1];
+          const vid = v.video ? `<figure class="vid-figure sheet-video"><video controls playsinline preload="none" poster="${v.poster}" width="1280" height="720" aria-label="${esc(p.name)} Teacher Deck and packet: 20-second preview"><source src="${v.video}" type="video/mp4"></video></figure>` : '';
+          return `<div class="sheet-block">
+          <h2>See inside</h2>
+          ${vid}
         </div>
+        <div class="sheet-block">
+          <h2>The interactive Teacher Deck (${v.slides} slides, PowerPoint)</h2>
+          <ul class="cr-list">
+            <li>The Reference page taught on screen: ${v.blanks} fill-in blanks, each filled on its own click as students write it</li>
+            <li>The worked example one slide per step (${n(v.we_steps)} steps), each with the reason for the step</li>
+            <li>${n(v.n_practice).replace(/^./, c => c.toUpperCase())} practice and ${n(v.n_apply)} apply problems: a your-turn slide with a think-time bar, then the solution one line per click</li>
+            <li>Speaker notes on each problem: the question to ask, the worked answer and the common error to listen for</li>
+            <li>A completed deck PDF (${v.completed_pages} pages) with every slide fully built, to print or post</li>
+          </ul>
+        </div>
+        <div class="sheet-block">
+          <h2>The student packet (${v.pages} pages)</h2>
+          <ul class="cr-list">
+            <li><strong>Reference</strong>: guided notes with ${n(v.n_defs)} definitions, the key rule, a worked example and a Watch Out error pair</li>
+            <li><strong>Practice</strong>: ${n(v.warm)} warm-up, ${n(v.standard)} standard and ${n(v.stretch)} stretch problems, with an answer bank for self-checking</li>
+            <li><strong>Apply</strong>: ${n(v.n_word)} real-world problems and ${n(v.n_error)} error analysis</li>
+            <li><strong>Assess</strong>: an exit ticket of ${n(v.n_exit)} items, two per page, with an I-can self-rating</li>
+            <li>Answer key (pages ${k1}–${k2}): every problem worked step by step, plus ${n(v.n_mistakes)} common mistakes and what to do about each</li>
+            <li>Color and ink-saver editions of the whole packet</li>
+          </ul>
+        </div>`;
+        })()}
       </div>
       <aside class="sheet-detail__side">
         <div class="sheet-facts">
@@ -4069,7 +4114,7 @@ function pageSheet(p, prev, next) {
           <dl class="sheet-facts__dl">
             <div><dt>Grade</dt><dd>${esc(p.gradeLabel)}</dd></div>
             <div><dt>Strand</dt><dd>${esc(p.strandName)}</dd></div>
-            <div><dt>Format</dt><dd>4-in-1 Skill Sheet</dd></div>
+            <div><dt>Format</dt><dd>${p.v5.pages}-page packet + ${p.v5.slides}-slide Teacher Deck</dd></div>
             ${p.free ? '<div><dt>Price</dt><dd>Free on TPT</dd></div>' : ''}
           </dl>
           ${cta}
@@ -6293,81 +6338,95 @@ function pageMoneyLabs() {
 }
 
 /* ============================================================================
-   DIGITAL MYSTERY PICTURES   (v1.16.0 · 2026-09-19)
-   The three self-checking Google Sheets mystery pictures, which the site did not link. Data:
-   classroom_data.json `mystery`, parsed from each listing's own copy (levels, the two pictures,
-   typed or dropdown answers, CCSS codes). Integer Operations is free.
+   DIGITAL MYSTERY PICTURES   (v1.16.0 · 2026-09-19; v2 line v1.19.0 · 2026-10-05)
+   The seven self-checking Google Sheets pixel-art sets (v2, live Oct 2 2026): three levels of 12, a picture
+   per level, a hint for each common mistake, a completion code per level. Data: classroom_data.json
+   `mystery`, written by the state-testing exporter from the sets' own build data (levels, pictures,
+   standards) and the listing kit (live id, title, level lines). Integer Operations is free. Videos:
+   video_data.json by_id.
    ============================================================================ */
 const MYSTERY = CLASSROOM.mystery.slice().sort((a, b) => (b.free - a.free) || a.grade.localeCompare(b.grade));
 const MP_FREE = MYSTERY.find(m => m.free);
-const MP_ACC = ['teal', 'coral', 'gold'];
+const MP_GRADES = [...new Set(MYSTERY.map(m => parseInt(m.grade, 10)))].sort();
+const MP_SPAN = `${MP_GRADES[0]}–${MP_GRADES[MP_GRADES.length - 1]}`;
+const MP_PER = MYSTERY[0].per_level, MP_TOTAL = MYSTERY[0].total, MP_LEVELS = MYSTERY[0].levels.length;
+if (MYSTERY.some(m => m.total !== MP_TOTAL || m.per_level !== MP_PER || m.levels.length !== MP_LEVELS)) throw new Error('mystery: sets differ in size; the page copy assumes one size');
+const MP_ACC = { 6: 'teal', 7: 'coral', 8: 'navy' };
 const MP_STEPS = [
-  ['Post one link', 'Each student gets their own copy of the Google Sheet. There is nothing to set up or print.'],
-  ['Answer a problem', 'Students type an answer and press Enter, or pick it from a dropdown in the Rational Number Operations set.'],
-  ['Green reveals the picture', 'A right answer turns green, uncovers another band of the hidden pixel-art picture and adds one to the SOLVED counter.'],
-  ['Red means try again', 'A wrong answer turns red, and no picture shows until it is right, so students catch their own mistakes.'],
+  ['Post one link', 'The student link in the teacher guide opens a Make a copy page, so every student gets their own Google Sheet.'],
+  ['Type and press Enter', `Students type an answer and press Enter. A right answer turns green and uncovers part of the picture.`],
+  ['The picture stays a mystery', 'Pieces appear all over the picture, so it stays a mystery until the last few answers.'],
+  ['A hint for the mistake', 'A wrong answer turns red and shows a hint written for that mistake, such as subtracting a negative.'],
+  ['A code for each level', `Solving all ${MP_PER} on a level shows a completion code you can collect.`],
 ];
 const MP_WHY = [
-  'No grading: the Sheet checks every answer, and printable answer keys come in the PDF',
-  'Two levels and two pictures in every set, so early finishers move to Level 2 without spoiling Level 1',
-  'Works on Chromebooks, laptops and tablets',
-  'Fits stations, homework, early finishers and sub days',
+  `Three levels in every set, so students start at the level that fits`,
+  'No grading: the Sheet checks every answer, and the teacher guide has worked answer keys and a printable work page',
+  'Answers check fairly: equivalent forms count, and a formula typed in the answer box is never counted',
+  'Fits practice after a lesson, early finishers, review days and sub plans',
 ];
 const MP_FAQ = [
-  { q: 'Do I need to set anything up?', a: 'No. Post the link. It makes each student their own copy of the Google Sheet, and the answer key is hidden inside it.' },
-  { q: 'What happens when a student gets one wrong?', a: 'The answer turns red and no part of the picture appears until it is right. In the Rational Number Operations set every wrong choice is a common mistake, so a wrong pick is worth a conversation.' },
-  { q: 'How many problems are in each set?', a: `${MYSTERY[0].total} problems: two levels of ${MYSTERY[0].per_level}, each level with its own picture.` },
-  { q: 'Is one free?', a: MP_FREE ? `Yes. ${MP_FREE.topic} (${MP_FREE.grade.toLowerCase()}) is free on TPT.` : 'Not at the moment.' },
+  { q: 'Do I need to set anything up?', a: 'No. Post the student link from the teacher guide. It opens a Make a copy page, so each student works in their own Google Sheet.' },
+  { q: 'What happens when a student gets one wrong?', a: 'The answer turns red and shows a hint written for that mistake, and that piece of the picture stays hidden until the answer is right.' },
+  { q: 'How many problems are in each set?', a: `${MP_TOTAL} problems: ${MP_LEVELS} levels of ${MP_PER}, each level with its own picture. Level 3 is real-world problems.` },
+  { q: 'Does it work in Excel?', a: 'No. The sets are built for Google Sheets, and each student needs a Google account.' },
+  { q: 'Is one free?', a: MP_FREE ? `Yes. ${MP_FREE.topic} (${MP_FREE.grade.toLowerCase()}) is free on TPT, in the same three-level format.` : 'Not at the moment.' },
 ];
-// A cluster code (7.NS.A.1) links the tips page for the part the set practises: integers or rationals.
+// A cluster code (7.NS.A.1) links the tips page for the part the set practises; a part code with no page of
+// its own (6.RP.A.3a) links its standard's page.
 const MP_PART = { 'Integer Operations': { '7.NS.A.1': 'b', '7.NS.A.2': 'a' }, 'Rational Number Operations': { '7.NS.A.1': 'd', '7.NS.A.2': 'c' } };
 const mpStd = (c, m) => {
-  const k = standardsMap[c] ? c : c + ((MP_PART[m.topic] || {})[c] || 'a');
-  return standardsMap[k] ? `<a href="/standards/${standardsMap[k].slug}.html">${esc(c)}</a>` : esc(c);
+  const k = [c, c + ((MP_PART[m.topic] || {})[c] || 'a'), c.replace(/[a-z]$/, '')].find(x => standardsMap[x]);
+  return k ? `<a href="/standards/${standardsMap[k].slug}.html">${esc(c)}</a>` : esc(c);
 };
-const mpName = m => `${m.topic} Mystery Pictures`;
+const mpName = m => `${m.topic} Pixel Art`;
 
 /* ---------------------------------------------------------------- /mystery-pictures.html */
 function pageMysteryPictures() {
   const crumbs = [{ name: 'Home', url: '/' }, { name: 'Mystery Pictures' }];
-  const tiles = MYSTERY.map((m, i) => wuTile({ url: m.url, external: true, img: m.img, accent: MP_ACC[i % 3], name: mpName(m),
-    kicker: `${m.grade}${m.free ? ' · free' : ''} · ${m.total} problems`, badge: m.free ? 'Free' : '', cta: m.free ? 'Get it free on TPT' : 'View on TPT' })).join('');
+  const kicker = m => `${m.grade}${m.free ? ' · free' : ''} · ${m.theme.toLowerCase()} pictures`;
+  const desc = m => `${m.levels.map(l => l.title).join(', ')}.`;
+  const tiles = MYSTERY.map(m => vidOf(m)
+    ? vidCard({ url: m.url, ...vidOf(m), accent: MP_ACC[parseInt(m.grade, 10)], name: mpName(m), kicker: kicker(m), desc: desc(m), cta: m.free ? 'Get it free on TPT' : 'View on TPT' })
+    : wuTile({ url: m.url, external: true, img: m.img, accent: MP_ACC[parseInt(m.grade, 10)], name: mpName(m), kicker: kicker(m), desc: desc(m), cta: m.free ? 'Get it free on TPT' : 'View on TPT' })).join('');
   const rows = MYSTERY.map(m => `<tr><td><a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.topic)}</a>${m.free ? ' (free)' : ''}</td><td>${esc(m.grade)}</td>`
-    + m.levels.map((l, i) => `<td>${esc(l.charAt(0).toUpperCase() + l.slice(1))}<br><small>Reveals a ${esc(m.pics[i] || '')}</small></td>`).join('')
-    + `<td>${m.dropdown ? 'Dropdown' : 'Typed'}</td><td class="cr-code">${m.codes.map(c => mpStd(c, m)).join(', ')}</td></tr>`).join('');
+    + m.levels.map(l => `<td>${esc(l.title)}<br><small>Reveals a ${esc(l.picture)}</small></td>`).join('')
+    + `<td class="cr-code">${m.codes.map(c => mpStd(c, m)).join(', ')}</td></tr>`).join('');
+  const vids = MYSTERY.filter(vidOf).map(m => ({ name: `${mpName(m)}: 20-second preview`, desc: `${m.grade} self-checking Google Sheets mystery pictures, ${MP_TOTAL} problems.`, ...vidOf(m) }));
   return head({
-    title: 'Digital Mystery Pictures | Self-Checking Google Sheets Math, 6–7',
-    desc: `Self-checking math mystery pictures in Google Sheets for 6th and 7th grade: every right answer reveals part of a hidden picture. ${MYSTERY.length} sets, one free.`,
+    title: `Math Mystery Pictures | Self-Checking Google Sheets Pixel Art, ${MP_SPAN}`,
+    desc: `Self-checking math pixel art in Google Sheets for grades ${MP_SPAN}: every right answer uncovers part of a hidden picture. ${MYSTERY.length} sets, one free.`,
     path: 'mystery-pictures.html',
     ogImage: MYSTERY[0] && MYSTERY[0].img ? SITE_URL + MYSTERY[0].img : undefined,
     jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Mystery Pictures', url: '/mystery-pictures.html' }]),
       faqSchema(MP_FAQ),
-      itemListSchema('Digital Mystery Pictures', MYSTERY.map(m => ({ url: m.url, name: m.title })))),
+      itemListSchema('Digital Mystery Pictures', MYSTERY.map(m => ({ url: m.url, name: m.title }))), ...videoSchema(vids)),
   }) + nav('mystery') + `
 <main id="main">
   ${breadcrumb(crumbs)}
-  ${crHero('Self-checking Google Sheets · grades 6–7', 'Practice that reveals a picture',
-    `Every right answer uncovers another band of a hidden pixel-art picture. Wrong answers turn red, so students fix their own mistakes, and by the last problem the whole picture is on screen and every answer has been checked. ${MYSTERY.length} sets, ${MYSTERY[0].total} problems each.`,
+  ${crHero(`Self-checking Google Sheets · grades ${MP_SPAN}`, 'Practice that reveals a picture',
+    `Every right answer uncovers part of a hidden pixel-art picture, and a wrong answer shows a hint written for that mistake. Three levels of ${MP_PER} in every set, from the basic skill to real-world problems. ${MYSTERY.length} sets, ${MP_TOTAL} problems each.`,
     `<a class="btn btn--primary" href="#sets">See the ${MYSTERY.length} sets ${ICON.arrow}</a>${MP_FREE ? `<a class="btn btn--ghost cr-btn--light" href="${esc(MP_FREE.url)}" target="_blank" rel="noopener">${esc(MP_FREE.topic)} free ${ICON.ext}</a>` : ''}`)}
 
   <section class="section">
     <div class="wrap">
-      ${secHead('How it works', 'One link, no grading', 'A live SOLVED counter shows students how far they have come.')}
+      ${secHead('How it works', 'One link, no grading', 'Students check their own work as they go, and you collect a code for each level they finish.')}
       <ol class="cr-roles">${MP_STEPS.map(([t, d], i) => `<li class="cr-role reveal"><span class="cr-role__n">${i + 1}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></li>`).join('')}</ol>
     </div>
   </section>
 
   <section class="section cr-alt" id="sets">
     <div class="wrap">
-      ${secHead('The sets', `${MYSTERY.length} topics, two pictures each`)}
-      <div class="cr-grid">${tiles}</div>
+      ${secHead('The sets', `${MYSTERY.length} topics, three pictures each`, 'Press play for a 20-second look at each set. The previews never show a finished picture: that stays a mystery for your students.')}
+      <div class="cr-grid vid-grid">${tiles}</div>
     </div>
   </section>
+  ${VID_SCRIPT}
 
   <section class="section">
     <div class="wrap">
-      ${secHead('What each set covers', 'Two levels, two pictures', 'Level 2 is the harder skill, so students who finish early move on without spoiling Level 1 for anyone still working.')}
-      <div class="cr-scroll"><table class="cr-weeks mp-table"><thead><tr><th scope="col">Set</th><th scope="col">Grade</th><th scope="col">Level 1</th><th scope="col">Level 2</th><th scope="col">Answers</th><th scope="col">Standards</th></tr></thead>
+      ${secHead('What each set covers', 'Three levels, three pictures', 'Levels 1 and 2 practise the skill; Level 3 puts it to work in real-world problems that match the set’s pictures.')}
+      <div class="cr-scroll"><table class="cr-weeks mp-table"><thead><tr><th scope="col">Set</th><th scope="col">Grade</th><th scope="col">Level 1</th><th scope="col">Level 2</th><th scope="col">Level 3</th><th scope="col">Standards</th></tr></thead>
         <tbody>${rows}</tbody></table></div>
     </div>
   </section>
@@ -6803,7 +6862,7 @@ if (fs.existsSync(SRC_SITE_IMGS)) {
 }
 
 // Warm-ups, readiness and Mistake of the Week card images (written by the state-testing exporter)
-['warmups', 'readiness', 'motw', 'ican', 'subplans', 'algebra1', 'money', 'mystery', 'activities'].forEach(dir => {
+['warmups', 'readiness', 'motw', 'ican', 'subplans', 'algebra1', 'money', 'mystery', 'activities', 'thumbs_v5'].forEach(dir => {
   const src = path.join(ROOT, 'assets', 'images', dir);
   if (!fs.existsSync(src)) return;
   fs.readdirSync(src).filter(f => /\.(jpe?g|png)$/i.test(f)).forEach(f => copy(path.join('assets/images', dir, f), path.join('assets/images', dir, f)));
@@ -6919,6 +6978,9 @@ console.log('  Site asset images bundled:', siteImgCount);
   const BANNED = [/\bsixteen\b/i, /ten-slide/i, /\b10-slide\b/i, /twelve pages/i, /editable teacher (slides|deck)/i,
     /built by a (25-year )?teacher/i, /written by one teacher/i, /is written by Greg/i, /cloze guided notes/i,
     /\bauthor of the Math Class 678\b/i, /one-teacher studio/i, /not a content farm/i, /two-color system/i];
+  // v1.19.0: grades 6-8 are v5 (7-page packet, 31-33 slide interactive deck); the v4 description can't come back.
+  // Algebra 1 is exempt until its v5 listings are uploaded.
+  const BANNED_V4 = [/14-slide/i, /fourteen-slide/i, /four-page (student )?packet/i, /notebook insert/i, /two-page answer key/i];
   const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : e.name.endsWith('.html') ? [path.join(d, e.name)] : []);
   const hits = [];
   for (const f of walk(DIST)) {
@@ -6927,6 +6989,8 @@ console.log('  Site asset images bundled:', siteImgCount);
     const ld = (fs.readFileSync(f, 'utf8').match(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g) || []).join(' ');
     const text = html.replace(/<[^>]+>/g, ' ') + ' ' + ld;
     for (const re of BANNED) if (re.test(text) || re.test(html.match(/<meta name="description" content="([^"]*)"/)?.[1] || '')) hits.push(`${path.relative(DIST, f)}: ${re}`);
+    if (!path.relative(DIST, f).startsWith('algebra-1'))
+      for (const re of BANNED_V4) if (re.test(text)) hits.push(`${path.relative(DIST, f)}: ${re} (a v4 skill sheet claim)`);
   }
   if (hits.length) { console.error('CLAIM GATE FAILED:\n  ' + hits.slice(0, 20).join('\n  ')); process.exit(1); }
   console.log('  Claim gate: clean');
