@@ -1686,6 +1686,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .a1-watch p { margin: 0; padding: .8rem 1rem; border-radius: var(--radius-sm); }
 .a1-watch__wrong { background: var(--coral-tint); border-left: 4px solid var(--coral); }
 .a1-watch__right { background: var(--teal-tint); border-left: 4px solid var(--teal); }
+/* v1.20.0 Algebra 1 v5: key formula, the worked lines of the Watch Out pair, hub list headings */
+.a1-rule__formula { font-family: var(--mono); font-size: .95rem; color: var(--forest); background: var(--white); border-radius: var(--radius-sm); padding: .45rem .7rem; display: inline-block; margin: .2rem 0 .6rem; overflow-wrap: anywhere; }
+.a1-watch__work { display: block; font-family: var(--mono); font-size: .92rem; color: var(--charcoal); margin: .3rem 0 .25rem; overflow-wrap: anywhere; }
+.a1-sub { font-family: var(--display); font-size: 1.15rem; color: var(--forest); margin: 1.3rem 0 .5rem; }
 
 /* Money Lab steps (v1.15.0) */
 .ml-steps { margin: 0; padding-left: 1.3rem; display: flex; flex-direction: column; gap: .5rem; }

@@ -410,7 +410,8 @@ const BUNDLES = [
 /* Skill Sheets v5 (live on TPT Sept 29 - Oct 3 2026): each sheet's packet and Teacher Deck numbers, thumbnail 1
    and preview video, from the listing packages (state-testing tools/site_export/mc678_skillsheets.py). Every
    number the site prints about a sheet comes from here, so the pages match the listings. */
-const SS = JSON.parse(fs.readFileSync(path.join(ROOT, 'skillsheet_data.json'), 'utf8')).by_num;
+const SS_DATA = JSON.parse(fs.readFileSync(path.join(ROOT, 'skillsheet_data.json'), 'utf8'));
+const SS = SS_DATA.by_num;
 const SS_ALL = Object.values(SS);
 const ssSame = k => { const v = new Set(SS_ALL.map(r => JSON.stringify(r[k]))); if (v.size !== 1) throw new Error(`skill sheets differ in ${k}; site copy assumes one value`); return SS_ALL[0][k]; };
 const SS_PAGES = ssSame('pages'), SS_KEYP = ssSame('key_pages').length, SS_PRACTICE = ssSame('n_practice'),
@@ -5172,7 +5173,7 @@ function wuTile(o) {
 /* A product card that plays its 20-second preview video in place (click to play, with sound), then links out to TPT. */
 function vidCard(o) {
   return `<article class="cr-tile cr-tile--${o.accent || 'forest'}${o.feature ? ' cr-tile--feature' : ''} vid-card reveal">
-    <div class="vid-card__media"><video controls playsinline preload="none" poster="${o.poster}" width="1280" height="720" aria-label="${esc(o.name)}: 20-second preview"><source src="${o.video}" type="video/mp4"></video></div>
+    <div class="vid-card__media"><video controls playsinline preload="none" poster="${o.poster}" width="1280" height="720" aria-label="${esc(o.name)}: ${o.len || '20-second'} preview"><source src="${o.video}" type="video/mp4"></video></div>
     <div class="cr-tile__body">
       ${o.kicker ? `<span class="cr-tile__kicker">${esc(o.kicker)}</span>` : ''}
       <h3 class="cr-tile__name"><a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.name)}</a></h3>
@@ -6030,73 +6031,165 @@ function pageMistakeOfTheWeek() {
 
 
 /* ============================================================================
-   ALGEBRA 1   (v1.14.0 · 2026-09-19)
-   99 4-in-1 Skill Sheets in 14 units, 14 unit bundles and the curriculum bundle -- the site linked
-   13 of them. Hub + one page per unit + one page per sheet. Data: classroom_data.json `algebra1`,
-   exported from the mc678-algebra1 repo (catalog, each sheet's config: I Can, key rule, watch-out
-   pair; each sheet's generated listing: hook, the problem it solves, what's included). Math in the
-   config text uses caret exponents, rendered by supHtml().
+   ALGEBRA 1   (v1.14.0 · 2026-09-19; v5 v1.20.0 · 2026-10-06)
+   99 4-in-1 Skill Sheets in 14 units, 14 unit bundles and the curriculum bundle. Hub + one page per unit
+   + one page per sheet. The course structure (units, sheet order, page slugs) is classroom_data.json
+   `algebra1`; everything said about the product is the v5 listing that went live on TPT Oct 4-6 2026:
+   skillsheet_data.json `alg1` (state-testing tools/site_export/mc678_skillsheets.py) carries each
+   sheet's packet and Teacher Deck numbers, live title, URL and price, the learn sentence, key rule,
+   Watch Out pair and common mistakes, its thumbnail 1 and preview video, and each bundle's new price.
    ============================================================================ */
 const A1 = CLASSROOM.algebra1;
-const A1_UNITS = A1.units.map(u => Object.assign(u, { pageUrl: `/algebra-1/unit-${u.n}-${u.slug}.html` }));
-const A1_SHEETS = A1_UNITS.flatMap(u => u.sheets.map(s => Object.assign(s, { unit: u, pageUrl: `/algebra-1/${s.slug}.html` })));
+const A1V5 = SS_DATA.alg1;
+if (!A1V5) throw new Error('skillsheet_data.json has no alg1 section: run tools/site_export/mc678_skillsheets.py --only alg1');
+const A1_UNITS = A1.units.map(u => {
+  const b = A1V5.bundles[u.code];
+  if (!b) throw new Error(`Algebra 1 ${u.code} has no v5 bundle data`);
+  return Object.assign(u, { pageUrl: `/algebra-1/unit-${u.n}-${u.slug}.html`, bundle: Object.assign({}, b, { id: String(b.id) }) });
+});
+const A1_SHEETS = A1_UNITS.flatMap(u => u.sheets.map(s => {
+  const v = A1V5.by_code[s.code];
+  if (!v) throw new Error(`Algebra 1 ${s.code} has no v5 data in skillsheet_data.json`);
+  return Object.assign(s, { unit: u, pageUrl: `/algebra-1/${s.slug}.html`, v5: v, id: String(v.listing_id), url: v.url,
+    title: v.title, free: v.free, img: v.img, ican: v.ican, codes: v.codes, ccss: v.codes.join(' · ') });
+}));
+A1_UNITS.forEach(u => {
+  if (JSON.stringify(u.sheets.map(s => s.code)) !== JSON.stringify(u.bundle.members))
+    throw new Error(`Algebra 1 Unit ${u.n}: the site's sheets ${u.sheets.map(s => s.code)} are not the bundle's ${u.bundle.members}`);
+});
+const A1_CURR = Object.assign({}, A1V5.bundles.UALL, { id: String(A1V5.bundles.UALL.id) });
+if (A1_SHEETS.length !== 99 || JSON.stringify(A1_CURR.members) !== JSON.stringify(A1_SHEETS.map(s => s.code)))
+  throw new Error('Algebra 1: the curriculum bundle and the site disagree on the 99 sheets');
 const A1_FREE = A1_SHEETS.filter(s => s.free);
+/* Numbers the hub prints once for every sheet; the build stops if the sheets ever differ. */
+const a1Same = (k, list) => { const L = list || A1_SHEETS; const v = new Set(L.map(s => JSON.stringify(s.v5[k]))); if (v.size !== 1) throw new Error(`Algebra 1 sheets differ in ${k}; the hub copy assumes one value`); return L[0].v5[k]; };
+const A1_PAGES = a1Same('pages'), A1_KEYP = a1Same('key_pages'), A1_PRACTICE = a1Same('n_practice'), A1_APPLY = a1Same('n_apply'),
+  A1_WARM = a1Same('warm'), A1_STD = a1Same('standard'), A1_STRETCH = a1Same('stretch'), A1_EXIT = a1Same('n_exit'),
+  A1_PRICE = a1Same('price', A1_SHEETS.filter(s => !s.free));
+const a1Range = (vals, f) => { const lo = Math.min(...vals), hi = Math.max(...vals); return lo === hi ? f(lo) : `${f(lo)} to ${f(hi)}`; };
+const A1_SLIDES = a1Range(A1_SHEETS.map(s => s.v5.slides), String);
+const a1Money = s => Number(String(s).replace(/[$,]/g, ''));
+const A1_UNIT_PRICES = a1Range(A1_UNITS.map(u => a1Money(u.bundle.price)), x => `$${x.toFixed(2)}`);
+const vidLen = sec => sec >= 45 ? '1-minute' : `${Math.round(sec)}-second`;
+const a1Cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+const a1N = x => NUMW[x] || String(x);
 const A1_FAQ = [
-  { q: 'What is in each Algebra 1 skill sheet?', a: 'One skill, taught start to finish: a Reference page with definitions, a worked example, a Watch Out error pair and the key rule; a Practice page; an Apply page with a word problem, a reasoning prompt and an error-analysis task; a half-page exit ticket; and a full answer key with every item worked.' },
-  { q: 'Can I try one first?', a: `Yes. ${A1_FREE.map(s => s.skill).join(' and ')} ${A1_FREE.length > 1 ? 'are' : 'is'} free, and it is the full sheet, exactly what every paid sheet looks like.` },
-  { q: 'How are the sheets organized?', a: `By unit: ${A1_UNITS.length} units that follow a typical Algebra 1 sequence, from ${A1_UNITS[0].name} to ${A1_UNITS[A1_UNITS.length - 1].name}. Each unit has its own bundle, and the curriculum bundle holds all ${A1_SHEETS.length} sheets.` },
-  { q: 'Which standards do they cover?', a: 'Each sheet is built to one Common Core high school standard, printed on the sheet and listed on its page here, so you can match sheets to your pacing guide.' },
+  { q: 'What is in each Algebra 1 skill sheet?', a: `One skill, taught start to finish. An interactive Teacher Deck of ${A1_SLIDES} slides (PowerPoint) fills in the notes one blank per click, works the example one slide per step and builds every solution a line at a time. Students follow along on a ${A1_PAGES}-page packet: guided Learn notes, ${a1N(A1_PRACTICE)} practice problems with an answer bank, Apply word problems and an error analysis, a ${a1N(A1_EXIT)}-item exit ticket, and a fully worked answer key with the common mistakes and a grading guide.` },
+  { q: 'Can I try one first?', a: `Yes. ${A1_FREE.map(s => s.skill).join(' and ')} ${A1_FREE.length > 1 ? 'are' : 'is'} free, and it is the full lesson: the Teacher Deck, the packet and the answer key, exactly what every paid sheet looks like.` },
+  { q: 'What do they cost?', a: `Each sheet is ${A1_PRICE} on TPT (${A1_FREE.map(s => s.skill).join(' and ')} ${A1_FREE.length > 1 ? 'are' : 'is'} free). Each unit has its own bundle, from ${A1_UNIT_PRICES}, and the curriculum bundle holds all ${A1_SHEETS.length} sheets for ${A1_CURR.price}.` },
+  { q: 'How are the sheets organized?', a: `By unit: ${A1_UNITS.length} units that follow a typical Algebra 1 sequence, from ${A1_UNITS[0].name} to ${A1_UNITS[A1_UNITS.length - 1].name}. Each sheet page says which sheet comes before and after it.` },
+  { q: 'Does the Teacher Deck work in Google Slides?', a: 'It is built for PowerPoint. It also opens in Google Slides (File, then Open, and upload the .pptx), though some click animations may play differently there. Every deck also comes as a completed PDF with every slide fully built, to print or post.' },
+  { q: 'Which standards do they cover?', a: 'Each sheet is built to a Common Core high school standard, printed on the sheet and listed on its page here, so you can match sheets to your pacing guide.' },
 ];
 function a1Chips(list) { return `<div class="cr-chips">${list.join('')}</div>`; }
-/* Algebra 1 text carries real <sup> tags from the export (and, in one listing, caret digits). Escape
-   everything, then allow <sup> back and let supHtml's caret rule raise any 10^8. */
-function a1Html(s) { return supHtml(String(s || '').replace(/<\/?sup>/g, m => m === '<sup>' ? '\u27e6' : '\u27e7')).replace(/\u27e6/g, '<sup>').replace(/\u27e7/g, '</sup>'); }
-const SUPDIG = { '0': '\u2070', '1': '\u00b9', '2': '\u00b2', '3': '\u00b3', '4': '\u2074', '5': '\u2075', '6': '\u2076', '7': '\u2077', '8': '\u2078', '9': '\u2079', '-': '\u207b', '\u2212': '\u207b' };
-function a1Plain(s) { return String(s || '').replace(/<sup>(.*?)<\/sup>/g, (m, x) => /^[\d\u2212-]+$/.test(x) ? [...x].map(c => SUPDIG[c] || c).join('') : '^' + x); }
+function a1Video(o, label, cls) {
+  return o.video ? `<figure class="vid-figure ${cls || 'sheet-video'}"><video controls playsinline preload="none" poster="${o.poster}" width="1280" height="720" aria-label="${esc(label)}: ${vidLen(o.video_seconds)} preview"><source src="${o.video}" type="video/mp4"></video></figure>` : '';
+}
+function a1VideoSchema(o, name, desc) {
+  return o.video ? { '@context': 'https://schema.org', '@type': 'VideoObject', name: `${name}: ${vidLen(o.video_seconds)} preview`, description: desc,
+    thumbnailUrl: SITE_URL + o.poster, contentUrl: SITE_URL + o.video, uploadDate: '2026-10-06', duration: `PT${Math.round(o.video_seconds)}S` } : null;
+}
+function a1Offer(url, price) {
+  const free = price === 'Free';
+  return { '@type': 'Offer', url, price: free ? '0' : a1Money(price).toFixed(2), priceCurrency: 'USD', availability: 'https://schema.org/InStock' };
+}
+/* The two lists every sheet page shows (the 6-8 sheet pages use the same wording) */
+function a1DeckList(v) {
+  return `<ul class="cr-list">
+            <li>The Learn page taught on screen: ${v.blanks} fill-in blanks, each filled on its own click as students write it</li>
+            <li>The worked example one slide per step (${a1N(v.we_steps)} steps), each with the reason for the step</li>
+            <li>${a1Cap(a1N(v.n_practice))} practice and ${a1N(v.n_apply)} apply problems: a your-turn slide with a think-time bar, then the solution one line per click</li>
+            <li>Jump buttons on every slide: go straight to any problem, the answer bank or the exit ticket</li>
+            <li>Speaker notes on each problem: the question to ask, the worked answer and the common error to listen for</li>
+            <li>A completed deck PDF (${v.completed_pages} pages) with every slide fully built, to print or post</li>
+          </ul>`;
+}
+function a1PacketList(v) {
+  const k1 = v.key_pages[0], k2 = v.key_pages[v.key_pages.length - 1];
+  return `<ul class="cr-list">
+            <li><strong>Learn</strong>: guided notes with ${a1N(v.n_defs)} definitions, the key rule, a worked example and a Watch Out error pair</li>
+            <li><strong>Practice</strong>: ${a1N(v.warm)} warm-up, ${a1N(v.standard)} standard and ${a1N(v.stretch)} stretch problems, with an answer bank for self-checking that hides ${a1N(v.decoys)} common-mistake decoys</li>
+            <li><strong>Apply</strong>: ${a1N(v.n_word)} word problem${v.n_word === 1 ? '' : 's'}${v.n_reason ? ', a reasoning prompt' : ''} and ${a1N(v.n_error)} error analysis</li>
+            <li><strong>Assess</strong>: an exit ticket of ${a1N(v.n_exit)} items, two per page, with an I-can self-rating</li>
+            <li>Answer key (pages ${k1}–${k2}): every problem worked step by step, ${a1N(v.n_mistakes)} common mistakes with what to do about each, and a grading guide</li>
+            <li>Color and ink-saver editions of the whole packet</li>
+          </ul>`;
+}
 
 /* ---------------------------------------------------------------- /algebra-1.html */
 function pageAlgebra1Hub() {
   const crumbs = [{ name: 'Home', url: '/' }, { name: 'Algebra 1' }];
-  const units = A1_UNITS.map(u => wuTile({ url: u.pageUrl, img: u.bundle.img || (u.sheets[0] && u.sheets[0].img), accent: 'gold',
-    name: `Unit ${u.n}: ${u.name}`, kicker: `${u.sheets.length} skill sheets`,
+  const units = A1_UNITS.map(u => wuTile({ url: u.pageUrl, img: u.bundle.img, accent: 'gold',
+    name: `Unit ${u.n}: ${u.name}`, kicker: `${u.sheets.length} lessons · bundle ${u.bundle.price}`,
     desc: u.sheets.slice(0, 4).map(s => s.skill).join(' · ') + (u.sheets.length > 4 ? ' · …' : ''), cta: 'See the unit' })).join('');
-  const inc = (A1_FREE[0] || A1_SHEETS[0]).included;
+  const free = A1_FREE[0];
+  const vids = [
+    { url: A1_CURR.url, video: A1_CURR.video, poster: A1_CURR.poster, secs: A1_CURR.video_seconds, len: vidLen(A1_CURR.video_seconds), accent: 'gold', feature: true,
+      name: 'Algebra 1 Curriculum Bundle', kicker: `All ${A1_SHEETS.length} lessons · ${A1_CURR.price}`, desc: `Every sheet in the course, ${A1_CURR.slides.toLocaleString('en-US')} Teacher Deck slides in all.`, cta: 'View the curriculum bundle' },
+    free && { url: free.url, video: free.v5.video, poster: free.v5.poster, secs: free.v5.video_seconds, len: vidLen(free.v5.video_seconds), accent: 'gold',
+      name: free.skill, kicker: `${free.code} · free`, desc: 'The full lesson, free: deck, packet and answer key.', cta: 'Get it free on TPT' },
+  ].filter(x => x && x.video);
   return head({
     title: 'Algebra 1 Worksheets | 99 Skill Sheets with Notes & Answer Keys',
-    desc: `Algebra 1 worksheets for every skill: ${A1_SHEETS.length} no-prep 4-in-1 Skill Sheets in ${A1_UNITS.length} units, each with guided notes, practice, an exit ticket and a full answer key.`,
+    desc: `Algebra 1 lessons for every skill: ${A1_SHEETS.length} skill sheets in ${A1_UNITS.length} units, each an interactive Teacher Deck plus guided notes, practice, an exit ticket and a worked key.`,
     path: 'algebra-1.html',
-    ogImage: (A1.curriculum.img || (A1_FREE[0] || A1_SHEETS[0]).img) ? SITE_URL + (A1.curriculum.img || (A1_FREE[0] || A1_SHEETS[0]).img) : undefined,
+    ogImage: SITE_URL + A1_CURR.img,
     jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Algebra 1', url: '/algebra-1.html' }]),
       faqSchema(A1_FAQ),
-      itemListSchema('Algebra 1 units', A1_UNITS.map(u => ({ url: u.pageUrl, name: `Unit ${u.n}: ${u.name}` })))),
+      itemListSchema('Algebra 1 units', A1_UNITS.map(u => ({ url: u.pageUrl, name: `Unit ${u.n}: ${u.name}` }))),
+      ...vids.map(v => a1VideoSchema({ video: v.video, poster: v.poster, video_seconds: v.secs }, v.name, v.desc))),
   }) + nav('algebra-1') + `
 <main id="main">
   ${breadcrumb(crumbs)}
   ${crHero('Algebra 1 · 4-in-1 Skill Sheets', 'Algebra 1, one skill at a time',
-    `${A1_SHEETS.length} no-prep skill sheets in ${A1_UNITS.length} units, each one skill taught start to finish: a Reference page with the key rule and the mistake to watch for, practice, application, an exit ticket and a full answer key.`,
-    `${tptBtn(A1.curriculum, 'Curriculum bundle on TPT')}${A1_FREE[0] ? `<a class="btn btn--ghost cr-btn--light" href="${A1_FREE[0].pageUrl}">Try ${esc(A1_FREE[0].skill)} free ${ICON.arrow}</a>` : ''}`)}
+    `${A1_SHEETS.length} lessons in ${A1_UNITS.length} units. Each one is an interactive Teacher Deck of ${A1_SLIDES} slides that builds every step click by click, plus a ${A1_PAGES}-page student packet with guided notes, ${A1_PRACTICE + A1_APPLY} problems, an exit ticket and a fully worked answer key.`,
+    `${tptBtn(A1_CURR, `Curriculum bundle on TPT · ${A1_CURR.price}`)}${free ? `<a class="btn btn--ghost cr-btn--light" href="${free.pageUrl}">Try ${esc(free.skill)} free ${ICON.arrow}</a>` : ''}`)}
 
-  <section class="section">
+  ${vids.length ? `<section class="section">
     <div class="wrap">
-      ${secHead('The course', `${A1_UNITS.length} units, ${A1_SHEETS.length} skills`, 'Open a unit to see every skill sheet in it, its standard and the unit bundle.')}
+      ${secHead('See inside', 'Watch a lesson come together', 'Press play for a one-minute look at the real Teacher Deck and packet pages.')}
+      <div class="cr-grid vid-grid">${vids.map(v => vidCard(v)).join('')}</div>
+    </div>
+  </section>
+  ${VID_SCRIPT}` : ''}
+
+  <section class="section cr-alt">
+    <div class="wrap">
+      ${secHead('The course', `${A1_UNITS.length} units, ${A1_SHEETS.length} skills`, `Open a unit to see every skill sheet in it, its standard and the unit bundle. Each sheet is ${A1_PRICE}; unit bundles run ${A1_UNIT_PRICES}.`)}
       <div class="cr-grid">${units}</div>
     </div>
   </section>
 
-  <section class="section cr-alt">
+  <section class="section">
     <div class="wrap cr-split">
       <div>
-        ${secHead('In every sheet', 'One skill, taught start to finish')}
-        <ul class="cr-list">${inc.map(x => `<li>${a1Html(x)}</li>`).join('')}</ul>
+        ${secHead('In every lesson', 'One skill, taught start to finish')}
+        <h3 class="a1-sub">The interactive Teacher Deck (${A1_SLIDES} slides, PowerPoint)</h3>
+        <ul class="cr-list">
+          <li>The Learn page taught on screen, each fill-in blank filled on its own click as students write it</li>
+          <li>The worked example one slide per step, each with the reason for the step</li>
+          <li>${a1Cap(a1N(A1_PRACTICE))} practice and ${a1N(A1_APPLY)} apply problems: a your-turn slide with a think-time bar, then the solution one line per click</li>
+          <li>Speaker notes on each problem: the question to ask, the worked answer and the common error to listen for</li>
+          <li>A completed deck PDF with every slide fully built, to print or post</li>
+        </ul>
+        <h3 class="a1-sub">The student packet (${A1_PAGES} pages)</h3>
+        <ul class="cr-list">
+          <li><strong>Learn</strong>: guided notes with definitions, the key rule, a worked example and a Watch Out error pair</li>
+          <li><strong>Practice</strong>: ${a1N(A1_WARM)} warm-up, ${a1N(A1_STD)} standard and ${a1N(A1_STRETCH)} stretch problems, with an answer bank that hides common-mistake decoys</li>
+          <li><strong>Apply</strong>: word problems and an error analysis, with a reasoning prompt on most sheets</li>
+          <li><strong>Assess</strong>: an exit ticket of ${a1N(A1_EXIT)} items, two per page, with an I-can self-rating</li>
+          <li>Answer key (pages ${A1_KEYP[0]}–${A1_KEYP[A1_KEYP.length - 1]}): every problem worked step by step, the common mistakes with what to do about each, and a grading guide</li>
+          <li>Color and ink-saver editions of the whole packet</li>
+        </ul>
       </div>
-      <figure class="cr-split__img reveal">${(() => { const im = A1.curriculum.img || (A1_FREE[0] || A1_SHEETS[0]).img; return im ? `<img src="${im}" alt="Algebra 1 4-in-1 Skill Sheet: reference, practice, apply and assess pages" width="640" height="640" loading="lazy" decoding="async">` : ''; })()}</figure>
+      <figure class="cr-split__img reveal"><img src="${A1_CURR.img}" alt="Algebra 1 Curriculum Bundle: 99 skill sheets, each a Teacher Deck and student packet" width="640" height="640" loading="lazy" decoding="async"></figure>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap cr-cta">
-      <div><span class="eyebrow">The whole course</span><h2>The Algebra 1 Curriculum Bundle</h2><p>All ${A1_SHEETS.length} skill sheets in one purchase, with every answer key and teacher deck.</p></div>
-      ${tptBtn(A1.curriculum, 'View the curriculum bundle')}
+      <div><span class="eyebrow">The whole course · ${A1_CURR.price}</span><h2>The Algebra 1 Curriculum Bundle</h2><p>All ${A1_SHEETS.length} lessons in one purchase, with every Teacher Deck (${A1_CURR.slides.toLocaleString('en-US')} slides in all), packet and answer key. Bought one at a time, the ${A1_CURR.paid} paid sheets cost ${A1_CURR.list}; the bundle is ${A1_CURR.price}, a saving of ${A1_CURR.save} (${A1_CURR.pct}% off).</p></div>
+      ${tptBtn(A1_CURR, 'View the curriculum bundle')}
     </div>
   </section>
 
@@ -6119,39 +6212,48 @@ function pageAlgebra1Hub() {
 
 /* ---------------------------------------------------------------- /algebra-1/unit-N-*.html */
 function pageAlgebra1Unit(u, prev, next) {
+  const b = u.bundle;
   const crumbs = [{ name: 'Home', url: '/' }, { name: 'Algebra 1', url: '/algebra-1.html' }, { name: `Unit ${u.n}` }];
-  const stds = [...new Set(u.sheets.map(s => s.ccss))];
-  let desc = `Algebra 1 Unit ${u.n}, ${u.name}: ${u.sheets.length} no-prep skill sheets (${u.sheets.slice(0, 3).map(s => s.skill).join(', ')}${u.sheets.length > 3 ? ' and more' : ''}) with notes and answer keys.`;
-  if (desc.length > 170) desc = `Algebra 1 Unit ${u.n}, ${u.name}: ${u.sheets.length} no-prep 4-in-1 skill sheets with guided notes, practice, an exit ticket and a full answer key.`;
+  const stds = [...new Set(u.sheets.flatMap(s => s.codes))];
+  const freeIn = u.sheets.filter(s => s.free);
+  let desc = `Algebra 1 Unit ${u.n}, ${u.name}: ${u.sheets.length} lessons (${u.sheets.slice(0, 3).map(s => s.skill).join(', ')}${u.sheets.length > 3 ? ' and more' : ''}), each a Teacher Deck with notes and a key.`;
+  if (desc.length > 170) desc = `Algebra 1 Unit ${u.n}, ${u.name}: ${u.sheets.length} lessons, each an interactive Teacher Deck with guided notes, practice, an exit ticket and a worked key.`;
+  if (desc.length > 170) desc = `Algebra 1 Unit ${u.n}, ${u.name}: ${u.sheets.length} lessons, each a Teacher Deck with guided notes, practice and a worked key.`;
   let title = `Algebra 1 Unit ${u.n}: ${u.name} Worksheets`;
   if (title.length > 70) title = `Algebra 1 Unit ${u.n}: ${u.name}`;
+  const vdesc = `The Algebra 1 Unit ${u.n} bundle, ${u.name}: ${u.sheets.length} lessons, each an interactive Teacher Deck and student packet.`;
   return head({
     title, desc, path: u.pageUrl.slice(1),
-    ogImage: (u.bundle.img || u.sheets[0].img) ? SITE_URL + (u.bundle.img || u.sheets[0].img) : undefined,
+    ogImage: SITE_URL + b.img,
     jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Algebra 1', url: '/algebra-1.html' }, { name: `Unit ${u.n}: ${u.name}`, url: u.pageUrl }]),
-      itemListSchema(`Algebra 1 Unit ${u.n} skill sheets`, u.sheets.map(s => ({ url: s.pageUrl, name: s.skill })))),
+      itemListSchema(`Algebra 1 Unit ${u.n} skill sheets`, u.sheets.map(s => ({ url: s.pageUrl, name: s.skill }))),
+      { '@context': 'https://schema.org', '@type': 'Product', name: `Algebra 1 Unit ${u.n}: ${u.name} Bundle`, description: vdesc, image: SITE_URL + b.img,
+        brand: { '@type': 'Brand', name: 'Math Class 678' }, offers: a1Offer(b.url, b.price) },
+      ...[a1VideoSchema(b, `Algebra 1 Unit ${u.n} bundle`, vdesc)].filter(Boolean)),
   }) + nav('algebra-1') + `
 <main id="main">
   ${breadcrumb(crumbs)}
   ${crHero(`Algebra 1 · Unit ${u.n}`, u.name,
-    `${u.sheets.length} skill sheets, one skill each: ${u.sheets.map(s => s.skill).join(', ')}.`,
-    `${tptBtn(u.bundle, 'Unit bundle on TPT')}`)}
+    `${u.sheets.length} lessons, one skill each: ${u.sheets.map(s => s.skill).join(', ')}.`,
+    `${tptBtn(b, `Unit bundle on TPT · ${b.price}`)}`)}
 
   <section class="section">
     <div class="wrap">
       ${secHead('The skills', `${u.sheets.length} sheets in this unit`, `Built to ${stds.join(', ')}.`)}
-      <div class="cr-grid">${u.sheets.map(s => wuTile({ url: s.pageUrl, img: s.img, accent: 'gold', name: s.skill, kicker: `${s.code} · ${s.ccss}${s.free ? ' · free' : ''}`, desc: s.ican ? `I can ${a1Plain(s.ican)}` : '', cta: 'See the sheet' })).join('')}</div>
+      <div class="cr-grid">${u.sheets.map(s => wuTile({ url: s.pageUrl, img: s.img, accent: 'gold', name: s.skill, kicker: `${s.code} · ${s.ccss}${s.free ? ' · free' : ''}`, desc: s.ican ? `I can ${s.ican}` : '', cta: 'See the sheet' })).join('')}</div>
     </div>
   </section>
 
   <section class="section cr-alt">
     <div class="wrap cr-split">
       <div>
-        ${secHead('Save with the bundle', `Unit ${u.n} in one purchase`, `All ${u.sheets.length} ${u.name} skill sheets, with every answer key.`)}
-        ${tptBtn(u.bundle, 'View the unit bundle')}
-        <p style="margin-top:1rem"><a class="cr-link" href="${esc(A1.curriculum.url)}" target="_blank" rel="noopener">Or the whole course: the curriculum bundle ${ICON.ext}</a></p>
+        ${secHead('Save with the bundle', `Unit ${u.n} in one purchase: ${b.price}`, `All ${u.sheets.length} ${u.name} lessons: ${u.sheets.length} interactive Teacher Decks (${b.slides.toLocaleString('en-US')} slides in all) and ${u.sheets.length} student packets with fully worked answer keys, in color and ink-saver editions.`)}
+        <p>Bought one at a time, the ${b.paid} paid sheets cost ${b.list}${freeIn.length ? ` (${freeIn.map(s => s.skill).join(' and ')} ${freeIn.length > 1 ? 'are' : 'is'} free)` : ''}; the bundle is ${b.price}, a saving of ${b.save} (${b.pct}% off).</p>
+        ${tptBtn(b, 'View the unit bundle')}
+        <p style="margin-top:1rem"><a class="cr-link" href="${esc(A1_CURR.url)}" target="_blank" rel="noopener">Or the whole course: the curriculum bundle, all ${A1_SHEETS.length} lessons for ${A1_CURR.price} ${ICON.ext}</a></p>
       </div>
-      <figure class="cr-split__img reveal">${(() => { const im = u.bundle.img || u.sheets[0].img; return im ? `<img src="${im}" alt="Algebra 1 ${esc(u.name)}: ${esc(u.sheets[0].skill)} skill sheet" width="640" height="640" loading="lazy" decoding="async">` : ''; })()}</figure>
+      ${b.video ? a1Video(b, `Algebra 1 Unit ${u.n} bundle, ${u.name}`, 'cr-split__img reveal')
+        : `<figure class="cr-split__img reveal"><img src="${b.img}" alt="Algebra 1 Unit ${u.n} bundle: ${esc(u.name)}" width="640" height="640" loading="lazy" decoding="async"></figure>`}
     </div>
   </section>
 
@@ -6175,42 +6277,50 @@ function pageAlgebra1Unit(u, prev, next) {
 
 /* ---------------------------------------------------------------- /algebra-1/<sheet>.html */
 function pageAlgebra1Sheet(s, prev, next) {
-  const u = s.unit;
+  const u = s.unit, v = s.v5;
   const crumbs = [{ name: 'Home', url: '/' }, { name: 'Algebra 1', url: '/algebra-1.html' }, { name: `Unit ${u.n}`, url: u.pageUrl }, { name: s.skill }];
-  let title = `${s.skill} | Algebra 1 Worksheet & Guided Notes (${s.ccss})`;
-  if (title.length > 70) title = `${s.skill} | Algebra 1 Worksheet (${s.ccss})`;
-  if (title.length > 70) title = `${s.skill} | Algebra 1 Worksheet`;
-  if (title.length > 70) title = `${s.skill} | Algebra 1`;
-  let desc = `${s.skill} for Algebra 1: a no-prep 4-in-1 skill sheet with guided notes, practice, an exit ticket and a full answer key. I can ${a1Plain(s.ican)}`;
-  if (desc.length > 170) desc = `${s.skill} for Algebra 1: a no-prep 4-in-1 skill sheet with guided notes, practice, an exit ticket and a full answer key, built to ${s.ccss}.`;
+  const code1 = s.codes.length === 1 ? s.codes[0] : '';
+  const titles = [code1 && `${s.skill} | Algebra 1 Worksheet & Guided Notes (${code1})`, code1 && `${s.skill} | Algebra 1 Worksheet (${code1})`,
+    `${s.skill} | Algebra 1 Worksheet & Guided Notes`, `${s.skill} | Algebra 1 Worksheet`, `${s.skill} | Algebra 1`].filter(Boolean);
+  const title = titles.find(t => t.length <= 70) || titles[titles.length - 1];
+  const probs = v.n_practice + v.n_apply;
+  const descs = [`${s.skill} for Algebra 1: a ${v.slides}-slide interactive Teacher Deck and a ${v.pages}-page packet with guided notes, ${probs} problems, an exit ticket and a worked key.`,
+    `${s.skill} for Algebra 1: a ${v.slides}-slide Teacher Deck and a ${v.pages}-page packet with notes, ${probs} problems, an exit ticket and a key.`,
+    `${s.skill}: an Algebra 1 lesson with a ${v.slides}-slide Teacher Deck and a ${v.pages}-page packet with a worked key.`];
+  let desc = descs.find(d => d.length <= 170) || descs[descs.length - 1];
   if (desc.length > 170) desc = desc.slice(0, 166).replace(/\s+\S*$/, '') + '…';
   const cta = tptBtn(s, s.free ? 'Get it free on TPT' : 'View on TPT');
+  const w = v.watch;
+  const vdesc = `The ${s.skill} Teacher Deck and student packet for Algebra 1 (${s.ccss}).`;
   return head({
     title, desc, path: s.pageUrl.slice(1), ogType: 'article',
-    ogImage: s.img ? SITE_URL + s.img : undefined,
+    ogImage: SITE_URL + s.img,
     jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Algebra 1', url: '/algebra-1.html' }, { name: `Unit ${u.n}: ${u.name}`, url: u.pageUrl }, { name: s.skill, url: s.pageUrl }]),
       { '@context': 'https://schema.org', '@type': 'LearningResource', name: `${s.skill} — Algebra 1 4-in-1 Skill Sheet`, url: SITE_URL + s.pageUrl,
-        educationalLevel: 'Algebra 1', learningResourceType: 'Worksheet', inLanguage: 'en', teaches: s.ican ? `I can ${a1Plain(s.ican)}` : s.skill,
-        educationalAlignment: { '@type': 'AlignmentObject', alignmentType: 'teaches', educationalFramework: 'Common Core State Standards', targetName: s.ccss },
-        image: s.img ? SITE_URL + s.img : undefined, provider: { '@type': 'Organization', name: 'Math Class 678', url: SITE_URL },
-        offers: { '@type': 'Offer', url: s.url, availability: 'https://schema.org/InStock' } }),
+        description: v.learn, educationalLevel: 'Algebra 1', learningResourceType: ['Worksheet', 'Presentation'], inLanguage: 'en', teaches: `I can ${s.ican}`,
+        isAccessibleForFree: !!s.free,
+        educationalAlignment: s.codes.map(c => ({ '@type': 'AlignmentObject', alignmentType: 'teaches', educationalFramework: 'Common Core State Standards', targetName: c })),
+        image: SITE_URL + s.img, provider: { '@type': 'Organization', name: 'Math Class 678', url: SITE_URL },
+        offers: a1Offer(s.url, v.price) },
+      ...[a1VideoSchema(v, s.skill, vdesc)].filter(Boolean)),
   }) + nav('algebra-1') + `
 <main id="main" class="sheet">
   ${breadcrumb(crumbs)}
   <section class="section sheet-hero">
     <div class="wrap sheet-hero__grid">
       <div class="sheet-hero__media a1-media">
-        ${s.img ? `<img src="${s.img}" alt="${esc(s.skill)}, Algebra 1 4-in-1 Skill Sheet (${esc(s.ccss)})" width="640" height="640" loading="eager" fetchpriority="high" decoding="async">` : ''}
+        <img src="${s.img}" alt="${esc(s.skill)}, Algebra 1 4-in-1 Skill Sheet and Teacher Deck (${esc(s.ccss)})" width="640" height="640" loading="eager" fetchpriority="high" decoding="async">
+        ${s.free ? '<span class="pcard__badge sheet__badge">Free</span>' : ''}
       </div>
       <div class="sheet-hero__copy">
         <div class="sheet-hero__tags">
-          <span class="sheet-chip sheet-chip--ccss">${esc(s.ccss)}</span>
+          ${s.codes.map(c => `<span class="sheet-chip sheet-chip--ccss">${esc(c)}</span>`).join('\n          ')}
           <span class="sheet-chip">Algebra 1</span>
           <span class="sheet-chip">Unit ${u.n}: ${esc(u.name)}</span>
           ${s.free ? '<span class="sheet-chip">Free</span>' : ''}
         </div>
         <h1>${esc(s.skill)}</h1>
-        ${s.ican ? `<p class="sheet-hero__ican">I can ${a1Html(s.ican)}</p>` : ''}
+        <p class="sheet-hero__ican">I can ${esc(s.ican)}</p>
         <div class="sheet-hero__cta">${cta}<a class="btn btn--ghost" href="${u.pageUrl}">Back to Unit ${u.n} ${ICON.arrow}</a></div>
       </div>
     </div>
@@ -6219,24 +6329,37 @@ function pageAlgebra1Sheet(s, prev, next) {
   <section class="section sheet-detail" style="padding-top:0">
     <div class="wrap sheet-detail__grid">
       <div class="sheet-detail__main">
-        ${s.problem ? `<div class="sheet-block"><h2>The problem this sheet solves</h2><p>${a1Html(s.problem)}</p></div>` : ''}
-        ${s.key_rule ? `<div class="sheet-block a1-rule"><h2>The key rule</h2><p class="a1-rule__rule">${a1Html(s.key_rule)}</p>${s.key_rule_hint ? `<p>${a1Html(s.key_rule_hint)}</p>` : ''}</div>` : ''}
-        ${s.watch_wrong ? `<div class="sheet-block"><h2>Watch out</h2><div class="a1-watch"><p class="a1-watch__wrong"><b>The mistake:</b> ${a1Html(s.watch_wrong)}</p><p class="a1-watch__right"><b>The fix:</b> ${a1Html(s.watch_right)}</p></div></div>` : ''}
-        <div class="sheet-block"><h2>What is included</h2><ul class="cr-list">${s.included.map(x => `<li>${a1Html(x)}</li>`).join('')}</ul></div>
+        <div class="sheet-block"><h2>What students learn</h2><p>${esc(v.learn)}</p></div>
+        ${v.video ? `<div class="sheet-block">
+          <h2>See inside</h2>
+          ${a1Video(v, `${s.skill} Teacher Deck and packet`)}
+        </div>` : ''}
+        <div class="sheet-block a1-rule"><h2>The key rule</h2><p class="a1-rule__rule">${esc(v.key_rule)}</p>${v.key_formula ? `<p class="a1-rule__formula">${esc(v.key_formula)}</p>` : ''}${v.key_rule_hint ? `<p>${esc(v.key_rule_hint)}</p>` : ''}</div>
+        <div class="sheet-block"><h2>Watch out</h2><p>${esc(w.text)}</p><div class="a1-watch"><p class="a1-watch__wrong"><b>The mistake:</b> <span class="a1-watch__work">${esc(w.wrong)}</span>${esc(w.wrong_why)}</p><p class="a1-watch__right"><b>The fix:</b> <span class="a1-watch__work">${esc(w.right)}</span>${esc(w.right_why)}</p></div></div>
+        <div class="sheet-block"><h2>The mistakes it targets</h2><ul class="cr-list">${v.mistakes.map(m => `<li>${esc(m)}</li>`).join('')}</ul></div>
+        <div class="sheet-block">
+          <h2>The interactive Teacher Deck (${v.slides} slides, PowerPoint)</h2>
+          ${a1DeckList(v)}
+        </div>
+        <div class="sheet-block">
+          <h2>The student packet (${v.pages} pages)</h2>
+          ${a1PacketList(v)}
+        </div>
       </div>
       <aside class="sheet-detail__side">
         <div class="sheet-facts">
-          <h2 class="sheet-facts__title">Standard</h2>
-          <div class="sheet-facts__ccss">${esc(s.ccss)}</div>
+          <h2 class="sheet-facts__title">Standard${s.codes.length > 1 ? 's' : ''}</h2>
+          ${s.codes.map(c => { const t = (v.standards.find(x => x.code === c) || {}).text; return `<div class="sheet-facts__ccss">${esc(c)}</div>${t ? `<p class="sheet-facts__text">${esc(t)}</p>` : ''}`; }).join('\n          ')}
           <dl class="sheet-facts__dl">
             <div><dt>Course</dt><dd>Algebra 1</dd></div>
             <div><dt>Unit</dt><dd><a href="${u.pageUrl}">Unit ${u.n}: ${esc(u.name)}</a></dd></div>
             <div><dt>Sheet</dt><dd>${esc(s.code)}</dd></div>
-            <div><dt>Format</dt><dd>4-in-1 Skill Sheet</dd></div>
+            <div><dt>Format</dt><dd>${v.pages}-page packet + ${v.slides}-slide Teacher Deck</dd></div>
+            <div><dt>Price</dt><dd>${s.free ? 'Free on TPT' : `${esc(v.price)} on TPT`}</dd></div>
           </dl>
           ${cta}
-          <p style="margin-top:1rem"><a class="cr-link" href="${esc(u.bundle.url)}" target="_blank" rel="noopener">In the Unit ${u.n} bundle ${ICON.ext}</a></p>
-          <p><a class="cr-link" href="${esc(A1.curriculum.url)}" target="_blank" rel="noopener">In the curriculum bundle ${ICON.ext}</a></p>
+          <p style="margin-top:1rem"><a class="cr-link" href="${esc(u.bundle.url)}" target="_blank" rel="noopener">In the Unit ${u.n} bundle: ${u.sheets.length} lessons for ${u.bundle.price} ${ICON.ext}</a></p>
+          <p><a class="cr-link" href="${esc(A1_CURR.url)}" target="_blank" rel="noopener">In the curriculum bundle: all ${A1_SHEETS.length} for ${A1_CURR.price} ${ICON.ext}</a></p>
         </div>
       </aside>
     </div>
@@ -6979,7 +7102,7 @@ console.log('  Site asset images bundled:', siteImgCount);
     /built by a (25-year )?teacher/i, /written by one teacher/i, /is written by Greg/i, /cloze guided notes/i,
     /\bauthor of the Math Class 678\b/i, /one-teacher studio/i, /not a content farm/i, /two-color system/i];
   // v1.19.0: grades 6-8 are v5 (7-page packet, 31-33 slide interactive deck); the v4 description can't come back.
-  // Algebra 1 is exempt until its v5 listings are uploaded.
+  // v1.20.0: Algebra 1 is v5 too (live Oct 4-6 2026), so no page is exempt.
   const BANNED_V4 = [/14-slide/i, /fourteen-slide/i, /four-page (student )?packet/i, /notebook insert/i, /two-page answer key/i];
   const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : e.name.endsWith('.html') ? [path.join(d, e.name)] : []);
   const hits = [];
@@ -6989,8 +7112,7 @@ console.log('  Site asset images bundled:', siteImgCount);
     const ld = (fs.readFileSync(f, 'utf8').match(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g) || []).join(' ');
     const text = html.replace(/<[^>]+>/g, ' ') + ' ' + ld;
     for (const re of BANNED) if (re.test(text) || re.test(html.match(/<meta name="description" content="([^"]*)"/)?.[1] || '')) hits.push(`${path.relative(DIST, f)}: ${re}`);
-    if (!path.relative(DIST, f).startsWith('algebra-1'))
-      for (const re of BANNED_V4) if (re.test(text)) hits.push(`${path.relative(DIST, f)}: ${re} (a v4 skill sheet claim)`);
+    for (const re of BANNED_V4) if (re.test(text)) hits.push(`${path.relative(DIST, f)}: ${re} (a v4 skill sheet claim)`);
   }
   if (hits.length) { console.error('CLAIM GATE FAILED:\n  ' + hits.slice(0, 20).join('\n  ')); process.exit(1); }
   console.log('  Claim gate: clean');
