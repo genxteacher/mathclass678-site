@@ -42,3 +42,12 @@ Greg does not edit source files directly.
 Forest green #1A3C34 · Gold #D4A017
 Grade accents: Teal #3FA9A2 (6th) · Coral #D85D5D (7th) · Navy #2A4A7F (8th)
 Never purple. No emojis. No exclamation points in product copy.
+
+## After each deploy: IndexNow (Bing)
+
+```
+node tools/indexnow.js            # sends pages that changed since the last send (Bing and other IndexNow engines)
+git add data/indexnow-state.json && git commit -m "IndexNow: record sent pages" && git push
+```
+
+The key lives in `data/indexnow.key` and build_site.js publishes it at `/<key>.txt`. Google does not use IndexNow; resubmit the sitemap in Search Console for Google.

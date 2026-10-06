@@ -7061,6 +7061,12 @@ if (fs.existsSync(SRC_ILEARN_IMGS)) {
 write('assets/images/favicon.svg', favicon);
 write('assets/images/thumbs/.gitkeep', '# Drop product thumbnails here.\n# Web naming: thumb1_[grade]th_[slug].jpg  e.g. thumb1_6th_understanding-ratios.jpg\n# (.png also accepted; photo-content thumbs are optimized to JPEG on intake.)\n# Cards auto-pick them up on next build; CSS art shows until then.\n');
 write('robots.txt', robots);
+// IndexNow key file (tools/indexnow.js): Bing and the other IndexNow engines fetch it to confirm
+// the site itself sent the changed URLs.
+if (fs.existsSync(path.join(ROOT, 'data', 'indexnow.key'))) {
+  const indexnowKey = fs.readFileSync(path.join(ROOT, 'data', 'indexnow.key'), 'utf8').trim();
+  write(`${indexnowKey}.txt`, indexnowKey + '\n');
+}
 write('sitemap.xml', sitemap());
 write('netlify.toml', netlifyToml);
 write('_redirects', netlifyRedirects);
