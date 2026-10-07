@@ -211,109 +211,109 @@ const CCSS_TEXT = {
 
 /* ----- Per-sheet about paragraphs (SEO body copy; authored S2, keyed by SheetNumber) ----- */
 const SHEET_ABOUT = {
-  "1": "This free 6th grade Order of Operations skill sheet walks students through evaluating numerical expressions in the correct sequence, including expressions with whole-number exponents and grouping symbols. Aligned to CCSS 6.EE.A.1, it pairs a keep-all-year reference page with guided practice, real-world application, and a built-in exit ticket so the full lesson lives on one printable.",
-  "2": "Greatest Common Factor for 6th grade gives students a clear method for finding the GCF of two whole numbers and using it to rewrite sums with the distributive property. Built on CCSS 6.NS.B.4, the sheet moves from a worked reference page through sequenced practice and word problems to a short assessment, all in one place.",
-  "3": "Least Common Multiple for 6th grade teaches students to find the LCM of two numbers and apply it to real situations like repeating events and shared schedules. Aligned to CCSS 6.NS.B.4, this 4-in-1 sheet covers the concept with a reference page, guided practice, applied problems, and an exit ticket with a full answer key.",
-  "4": "Understanding Ratios introduces 6th grade students to ratio language and what it means to compare two quantities by ratio. Aligned to CCSS 6.RP.A.1, the sheet builds from a reference page with worked examples through scaffolded practice and real-world application to a quick assessment, giving you a complete ratios lesson on a single printable.",
-  "5": "Unit Rate Concept helps 6th graders find and interpret the unit rate associated with a ratio, the foundation for proportional reasoning later. Aligned to CCSS 6.RP.A.2, this skill sheet pairs a clear reference page with a worked example, six practice problems, applied word problems, and an exit ticket so students leave with the concept secured.",
-  "6": "Ratio Reasoning Application puts 6th grade ratio and rate skills to work on real-world and mathematical problems using tables, tape diagrams, and double number lines. Built on CCSS 6.RP.A.3, the sheet carries students from a reference page through application-heavy practice to a built-in assessment, all aligned and classroom-ready.",
-  "7": "Statistical Questions teaches 6th graders to recognize a statistical question as one that expects variability in its answers, the entry point to the whole statistics strand. Aligned to CCSS 6.SP.A.1, this 4-in-1 sheet provides a reference page, guided practice sorting statistical from non-statistical questions, applied problems, and a short exit ticket.",
-  "8": "Understanding Distributions has 6th grade students describe a data set by its center, spread, and overall shape. Aligned to CCSS 6.SP.A.2, the sheet combines a reference page with worked examples, sequenced practice reading distributions, real-world application, and an assessment, keeping the full statistics lesson together on one sheet.",
-  "9": "The Coordinate Plane for 6th grade teaches students to graph points in all four quadrants and explain how the signs of the coordinates locate each point. Aligned to CCSS 6.NS.C.6b, this skill sheet pairs a reference page with guided practice plotting and naming points, applied problems, and a built-in exit ticket.",
-  "10": "Center vs Variability helps 6th graders explain the difference between a measure of center and a measure of variation and when each describes a data set best. Aligned to CCSS 6.SP.A.3, the sheet runs from a reference page through guided practice and application to a short assessment with a complete answer key.",
-  "11": "Dividing Fractions by Fractions gives 6th grade students a reliable method for dividing fractions and interpreting the quotient in context. Aligned to CCSS 6.NS.A.1, this 4-in-1 sheet builds from a reference page with visual models through six practice problems and real-world word problems to a built-in exit ticket.",
-  "12": "Multi-Digit Operations covers fluent division of multi-digit whole numbers and computation with multi-digit decimals for 6th grade. Aligned to CCSS 6.NS.B.2 and 6.NS.B.3, the sheet pairs a reference page with the standard algorithms, sequenced practice, applied decimal problems, and an assessment, all on one printable.",
-  "13": "Positive and Negative Numbers in Context teaches 6th graders to use signed numbers to represent real-world quantities such as temperature, elevation, and account balances. Aligned to CCSS 6.NS.C.5 and 6.NS.C.6a, this skill sheet moves from a reference page through guided practice and application to a short exit ticket.",
-  "14": "Rationals on the Number Line and Coordinate Plane has 6th grade students plot rational numbers on a number line and in the coordinate plane. Aligned to CCSS 6.NS.C.6c, the sheet provides a reference page, guided practice placing and reading values, real-world application, and a built-in assessment with an answer key.",
-  "15": "Comparing and Ordering Rationals and Absolute Value teaches 6th graders to compare and order rational numbers and interpret absolute value as distance from zero. Aligned to CCSS 6.NS.C.7, this 4-in-1 sheet carries the skill from a reference page through sequenced practice and application to a quick exit ticket.",
-  "16": "Exponents for 6th grade teaches students to write and evaluate numerical expressions involving whole-number exponents. Aligned to CCSS 6.EE.A.1, the sheet pairs a reference page that distinguishes a base from an exponent with guided practice, six problems, real-world application, and a built-in assessment, keeping the full lesson on one printable.",
-  "17": "Writing Algebraic Expressions helps 6th graders translate words into algebraic expressions using variables and operations. Aligned to CCSS 6.EE.A.2a, this skill sheet moves from a reference page of common phrase-to-symbol translations through guided practice and applied problems to a short exit ticket with a complete answer key.",
-  "18": "Evaluating Expressions teaches 6th grade students to evaluate algebraic expressions at specific values of their variables, including expressions drawn from real situations. Aligned to CCSS 6.EE.A.2c, the sheet pairs a reference page with worked substitutions, sequenced practice, real-world application, and a built-in assessment.",
-  "19": "Combining Like Terms is a 6th grade skill sheet that teaches students to identify like terms and combine them to write equivalent expressions. Aligned to CCSS 6.EE.A.3 and 6.EE.A.4, it is the complete 4-in-1 lesson: a reference page, guided practice, real-world application, and a built-in exit ticket with answer key.",
-  "20": "Distributive Property for 6th grade teaches students to apply the distributive property to write equivalent expressions. Aligned to CCSS 6.EE.A.3, this skill sheet builds from a reference page with worked examples through six sequenced practice problems and real-world application to a short assessment, all on one printable.",
-  "21": "Solving One-Step Equations gives 6th grade students a clear method for solving one-step equations using inverse operations. Aligned to CCSS 6.EE.B.7, the sheet pairs a reference page with a worked example, sequenced practice across addition, subtraction, multiplication, and division equations, applied word problems, and a built-in exit ticket.",
-  "22": "Real-World Problems on the Coordinate Plane has 6th graders solve problems by graphing points and finding distances between them. Aligned to CCSS 6.NS.C.8, this 4-in-1 sheet moves from a reference page through guided practice plotting and measuring to real-world application and a short assessment with a full answer key.",
-  "23": "Independent vs Dependent Variables teaches 6th grade students to identify the independent and dependent variables in a relationship and show how they relate using tables, graphs, and equations. Aligned to CCSS 6.EE.C.9, the sheet provides a reference page, guided practice, applied problems, and a built-in exit ticket.",
-  "24": "Identifying Equivalent Expressions teaches 6th graders to recognize when two expressions are equivalent for every value of the variable. Aligned to CCSS 6.EE.A.4, this skill sheet pairs a reference page with guided practice testing equivalence, sequenced problems, real-world application, and a built-in assessment with an answer key.",
-  "25": "Solutions to Equations and Writing Variables helps 6th grade students decide whether a value is a solution to an equation and use variables to represent unknown numbers. Aligned to CCSS 6.EE.B.5 and 6.EE.B.6, the sheet runs from a reference page through guided practice and application to a short exit ticket.",
-  "26": "Inequalities and Their Graphs teaches 6th graders to write an inequality for a real-world condition and graph its solutions on a number line. Aligned to CCSS 6.EE.B.8, this 4-in-1 sheet carries the skill from a reference page through sequenced practice and applied problems to a built-in assessment with a complete answer key.",
-  "27": "Quadrilaterals on the Coordinate Plane has 6th grade students draw quadrilaterals from given coordinates and use the coordinates to find side lengths. Aligned to CCSS 6.G.A.3, the sheet pairs a reference page with guided practice plotting and measuring, real-world application, and a built-in exit ticket.",
-  "28": "Polygons on the Coordinate Plane teaches 6th graders to draw polygons from given vertices and use coordinates to find side lengths. Aligned to CCSS 6.G.A.3, this skill sheet builds from a reference page through guided practice and application to a short assessment, giving you the full coordinate-geometry lesson on one printable.",
-  "29": "Data Displays covers dot plots, histograms, and box plots for 6th grade, teaching students to display numerical data in each form. Aligned to CCSS 6.SP.B.4, the sheet pairs a reference page comparing the three displays with guided practice, applied problems, and a built-in exit ticket with an answer key.",
-  "30": "Numerical Data Summaries teaches 6th grade students to find the mean, median, and mode of a data set and choose the measure that best fits the situation. Aligned to CCSS 6.SP.B.5, this 4-in-1 sheet moves from a reference page through sequenced practice and real-world application to a short assessment.",
-  "31": "Area of Polygons has 6th graders find the area of triangles and quadrilaterals by composing and decomposing them into known shapes. Aligned to CCSS 6.G.A.1, the sheet provides a reference page with the key formulas, guided practice, real-world application, and a built-in exit ticket with a complete answer key.",
-  "32": "Volume with Fractional Edge Lengths teaches 6th grade students to find the volume of right rectangular prisms with fractional edge lengths. Aligned to CCSS 6.G.A.2, this skill sheet pairs a reference page with the volume formula and worked examples, sequenced practice, applied problems, and a built-in assessment.",
-  "33": "Adding Integers gives 7th grade students a dependable method for adding positive and negative integers using absolute value, sign rules, and a number line. Aligned to CCSS 7.NS.A.1b, this 4-in-1 sheet pairs a reference page with a worked example, six sequenced practice problems, real-world application, and a built-in exit ticket with a full answer key.",
-  "34": "Subtracting Integers teaches 7th graders to subtract integers by rewriting each difference as adding the opposite. Aligned to CCSS 7.NS.A.1c, the sheet moves from a reference page that connects subtraction to distance on a number line through guided practice and applied problems to a short assessment, all on one printable.",
-  "35": "Multiplying Integers helps 7th grade students multiply positive and negative integers using the rules for signs and understand why those rules work. Aligned to CCSS 7.NS.A.2a, this skill sheet builds from a reference page through sequenced practice and real-world application to a built-in exit ticket with an answer key.",
-  "36": "Dividing Integers teaches 7th graders to divide integers and recognize when a quotient is positive or negative. Aligned to CCSS 7.NS.A.2b, the sheet pairs a reference page with the sign rules and worked examples, guided practice, applied problems, and a short assessment, keeping the full integer-division lesson together.",
-  "37": "Adding and Subtracting Rationals extends signed-number operations to all rational numbers for 7th grade, including fractions and decimals in real-world contexts. Aligned to CCSS 7.NS.A.1d, this 4-in-1 sheet provides a reference page, guided practice, six sequenced problems, application, and a built-in exit ticket with a complete answer key.",
-  "38": "Multiplying and Dividing Rationals teaches 7th grade students to multiply and divide rational numbers, including fractions and decimals, with correct signs. Aligned to CCSS 7.NS.A.2c, the sheet runs from a reference page through guided practice and real-world application to a short assessment, giving you a full lesson on one printable.",
-  "39": "Unit Rates for 7th grade teaches students to compute unit rates, including ratios of fractions, and use them to compare situations. Aligned to CCSS 7.RP.A.1, this skill sheet pairs a reference page with worked examples through guided practice, applied problems involving speeds and prices, and a built-in exit ticket with an answer key.",
-  "40": "Constant of Proportionality helps 7th graders identify the constant of proportionality in tables, graphs, and equations and write equations in y = kx form. Aligned to CCSS 7.RP.A.2, the sheet builds from a reference page through sequenced practice and real-world application to a built-in assessment, all aligned and ready to teach.",
-  "41": "Percent Problems for 7th grade covers percent of a number, percent increase, and percent decrease, the foundation for tax, tip, markup, and discount problems. Aligned to CCSS 7.RP.A.3, this 4-in-1 sheet pairs a reference page with guided practice, six problems, real-world application, and a built-in exit ticket with a full answer key.",
-  "42": "Scale Drawings teaches 7th grade students to solve problems with scale drawings, computing actual lengths and areas from a scaled figure. Aligned to CCSS 7.G.A.1, the sheet provides a reference page on scale factor, guided practice, applied problems, and a short assessment, keeping the full geometry lesson on one printable.",
-  "43": "Angle Relationships for 7th grade teaches students to use complementary, supplementary, vertical, and adjacent angles to write and solve equations for unknown angles. Aligned to CCSS 7.G.B.5, this skill sheet pairs a reference page of labeled diagrams with guided practice, applied problems, and a built-in exit ticket with an answer key.",
-  "44": "Triangle Inequality helps 7th graders decide whether three given side lengths can form a triangle and find the range of possible third sides. Aligned to CCSS 7.G.A.2, the sheet moves from a reference page through guided practice testing side-length sets to real-world application and a short assessment.",
-  "45": "Two-Step Inequalities teaches 7th grade students to solve two-step inequalities, graph the solution set, and interpret it in context. Aligned to CCSS 7.EE.B.4b, this 4-in-1 sheet pairs a reference page with the sign-flip rule and worked examples, guided practice, applied problems, and a built-in exit ticket with answer key.",
-  "46": "Rewriting Expressions teaches 7th graders to rewrite an expression in a different form to reveal how the quantities in a problem are related. Aligned to CCSS 7.EE.A.2, the sheet provides a reference page, guided practice, real-world application showing why a rewritten form is useful, and a short assessment with a complete answer key.",
-  "47": "Multi-Step Rational Problems has 7th grade students solve multi-step problems with rational numbers in any form and check answers for reasonableness. Aligned to CCSS 7.EE.B.3, this skill sheet runs from a reference page through sequenced practice and applied word problems to a built-in exit ticket, all on one printable.",
-  "48": "Combining Like Terms is a free 7th grade skill sheet that teaches students to combine like terms with rational coefficients to simplify expressions. Aligned to CCSS 7.EE.A.1, it is the complete 4-in-1 deliverable at no cost: a reference page, guided practice, real-world application, and a built-in exit ticket with a full answer key.",
-  "49": "Distributive Property for 7th grade teaches students to expand and factor linear expressions using the distributive property. Aligned to CCSS 7.EE.A.1, this skill sheet pairs a reference page with worked examples in both directions, guided practice, six sequenced problems, application, and a built-in assessment with an answer key.",
-  "50": "Experimental and Theoretical Probability teaches 7th graders to compare experimental results with theoretical probability and explain why they differ. Aligned to CCSS 7.SP.C.6, this 4-in-1 sheet pairs a reference page with guided practice collecting and comparing data, applied problems, and a built-in exit ticket with a complete answer key.",
-  "51": "Probability Models teaches 7th grade students to develop probability models and use them to find the probability of events. Aligned to CCSS 7.SP.C.7, the sheet moves from a reference page through guided practice building uniform and non-uniform models to real-world application and a short assessment.",
-  "52": "Compound Events helps 7th graders find probabilities of compound events using organized lists, tables, and tree diagrams. Aligned to CCSS 7.SP.C.8, this skill sheet pairs a reference page with worked sample spaces, guided practice, applied problems, and a built-in exit ticket with an answer key, all on one printable.",
-  "53": "Additive Inverse and Opposites teaches 7th grade students to describe opposite quantities and recognize that a number and its opposite sum to zero. Aligned to CCSS 7.NS.A.1a, the sheet provides a reference page, guided practice on a number line, real-world application, and a built-in exit ticket with a complete answer key.",
-  "54": "Terminating vs Repeating Decimals teaches 7th graders to convert between fractions, decimals, and percents, including recognizing repeating decimals. Aligned to CCSS 7.NS.A.2d, this 4-in-1 sheet pairs a reference page with the long-division method, guided practice, applied problems, and a built-in assessment with an answer key.",
-  "55": "Real-World Rational Number Problems has 7th grade students solve real situations using the four operations with rational numbers. Aligned to CCSS 7.NS.A.3, the sheet runs from a reference page through guided practice and multi-context word problems to a short exit ticket, keeping the full lesson on one printable.",
-  "56": "Probability Scale 0 to 1 teaches 7th graders to describe the probability of an event with a number from 0 to 1 and place events on a likelihood scale. Aligned to CCSS 7.SP.C.5, this skill sheet pairs a reference page with guided practice, applied problems, and a built-in exit ticket with a complete answer key.",
-  "57": "Random Sampling teaches 7th grade students to use random samples to draw inferences about a population and understand why a sample must be representative. Aligned to CCSS 7.SP.A.1, the sheet provides a reference page, guided practice, applied problems, and a built-in assessment, all aligned and classroom-ready.",
-  "58": "Inferences from Random Samples has 7th graders use data from a random sample to draw inferences about a whole population and gauge how estimates vary. Aligned to CCSS 7.SP.A.2, this 4-in-1 sheet moves from a reference page through guided practice and real-world application to a short exit ticket with an answer key.",
-  "59": "Comparing Populations Informally teaches 7th grade students to compare two populations using measures of center and variability and the visual overlap of their distributions. Aligned to CCSS 7.SP.B.3, the sheet pairs a reference page with guided practice, applied problems, and a built-in exit ticket with a complete answer key.",
-  "60": "Comparing Populations Numerically teaches 7th graders to compare two populations using measures of center and variability expressed numerically. Aligned to CCSS 7.SP.B.4, this skill sheet runs from a reference page through sequenced practice and real-world application to a short assessment, giving you a full lesson on one printable.",
-  "61": "Circumference and Area of Circles teaches 7th grade students to use the formulas for the circumference and area of a circle and understand how they relate. Aligned to CCSS 7.G.B.4, this 4-in-1 sheet pairs a reference page with labeled diagrams, guided practice, applied problems, and a built-in exit ticket with an answer key.",
-  "62": "Cross-Sections of 3D Figures teaches 7th graders to describe the two-dimensional cross sections that result from slicing three-dimensional figures. Aligned to CCSS 7.G.A.3, the sheet provides a reference page with visual examples, guided practice, applied problems, and a built-in assessment, all on one printable.",
-  "63": "Composite Area, Volume, and Surface Area has 7th grade students solve area and volume problems with composite two- and three-dimensional figures. Aligned to CCSS 7.G.B.6, this skill sheet pairs a reference page with a decomposition strategy, guided practice, applied problems, and a built-in exit ticket with a complete answer key.",
-  "64": "Identifying Parts of an Expression teaches 6th graders the vocabulary of algebra: terms, factors, coefficients, sums, and products. Aligned to CCSS 6.EE.A.2b, this 4-in-1 sheet pairs a reference page of labeled examples with guided practice naming the parts of an expression, applied problems, and a built-in exit ticket with answer key.",
-  "65": "Equations with Rational Coefficients teaches 8th grade students to solve linear equations whose coefficients are fractions or decimals. Aligned to CCSS 8.EE.C.7b, this 4-in-1 sheet pairs a reference page with strategies for clearing fractions, guided practice, six sequenced problems, application, and a built-in exit ticket with a full answer key.",
-  "66": "Writing and Solving Equations from Word Problems teaches 8th graders to translate a real situation into a linear equation and solve it. Aligned to CCSS 8.EE.C.7b, the sheet moves from a reference page through guided practice setting up equations to applied word problems and a short assessment, all on one printable.",
-  "67": "Two-Step Equations teaches 7th grade students to solve two-step equations and justify each step with the properties of operations. Aligned to CCSS 7.EE.B.4a, the sheet builds from a reference page with worked examples through guided practice, six sequenced problems, application, and a built-in exit ticket with an answer key.",
-  "68": "Rational vs Irrational Numbers teaches 8th grade students to classify numbers as rational or irrational and estimate the value of an irrational number. Aligned to CCSS 8.NS.A.1, this skill sheet pairs a reference page with examples and decimal expansions, guided practice, applied problems, and a built-in exit ticket with an answer key.",
-  "69": "Two-Way Tables teaches 8th graders to construct and interpret two-way tables and use relative frequencies to find patterns in categorical data. Aligned to CCSS 8.SP.A.4, the sheet provides a reference page, guided practice reading and building tables, real-world application, and a built-in assessment with a complete answer key.",
-  "70": "Scientific Notation Conversion teaches 8th grade students to convert between standard form and scientific notation and use it to express very large and very small numbers. Aligned to CCSS 8.EE.A.3, this 4-in-1 sheet pairs a reference page with worked conversions, guided practice, applied problems, and a built-in exit ticket with an answer key.",
-  "71": "Exponent Rules teaches 8th graders to apply the properties of integer exponents to simplify expressions, including the product, quotient, and power rules. Aligned to CCSS 8.EE.A.1, the sheet runs from a reference page through guided practice and six sequenced problems to a short assessment, keeping the full lesson on one printable.",
-  "72": "Negative and Zero Exponents teaches 8th grade students to apply the properties of integer exponents to generate equivalent expressions, including negative and zero exponents. Aligned to CCSS 8.EE.A.1, this skill sheet pairs a reference page with worked examples, guided practice, applied problems, and a built-in exit ticket with a full answer key.",
-  "73": "Functions Definition teaches 8th graders that a function assigns exactly one output to each input, and how to test relationships for this rule. Aligned to CCSS 8.F.A.1, the sheet provides a reference page with the vertical-line test and mapping diagrams, guided practice, application, and a built-in assessment with an answer key.",
-  "74": "Operations with Scientific Notation teaches 8th grade students to add, subtract, multiply, and divide numbers written in scientific notation. Aligned to CCSS 8.EE.A.4, this 4-in-1 sheet pairs a reference page with worked examples, guided practice, applied problems with appropriate units, and a built-in exit ticket with a complete answer key.",
-  "75": "Multi-Step Equations teaches 8th graders to solve linear equations that require distributing and combining like terms, then to check the solution. Aligned to CCSS 8.EE.C.7b, the sheet moves from a reference page through guided practice and six sequenced problems to a short assessment, all on one printable.",
-  "76": "One, None, or Infinite Solutions teaches 8th grade students to decide whether a linear equation has one solution, no solution, or infinitely many. Aligned to CCSS 8.EE.C.7a, this skill sheet pairs a reference page with worked examples of each case, guided practice, applied problems, and a built-in exit ticket with an answer key.",
-  "77": "Slope-Intercept Form teaches 8th graders to use similar triangles to explain slope and write linear equations in y = mx + b form. Aligned to CCSS 8.EE.B.6, the sheet provides a reference page connecting slope to rate of change, guided practice, application, and a built-in assessment with a complete answer key.",
-  "78": "Graphing Linear Equations teaches 8th grade students to identify whether a function is linear or nonlinear from its equation or graph and graph linear functions. Aligned to CCSS 8.F.A.3, this 4-in-1 sheet pairs a reference page with guided practice, applied problems, and a built-in exit ticket with a full answer key.",
-  "79": "Proportional Relationships teaches 8th graders to graph proportional relationships and interpret the unit rate as the slope of the line. Aligned to CCSS 8.EE.B.5, the sheet runs from a reference page through guided practice comparing relationships in different forms to applied problems and a short assessment.",
-  "80": "Systems by Graphing teaches 8th grade students to solve a system of two linear equations by graphing and interpret the point of intersection. Aligned to CCSS 8.EE.C.8a, this skill sheet pairs a reference page with worked examples, guided practice, applied problems, and a built-in exit ticket with an answer key, all on one printable.",
-  "81": "Square and Cube Roots teaches 8th graders to evaluate square roots and cube roots and use them to solve simple equations of the form x squared equals p and x cubed equals p. Aligned to CCSS 8.EE.A.2, the sheet provides a reference page, guided practice, application, and a built-in assessment with a complete answer key.",
-  "82": "Systems by Substitution teaches 8th grade students to solve a system of linear equations using the substitution method. Aligned to CCSS 8.EE.C.8 and 8.EE.C.8b, this 4-in-1 sheet pairs a reference page with a step-by-step worked example, guided practice, six problems, application, and a built-in exit ticket with a full answer key.",
-  "83": "Systems by Elimination teaches 8th graders to solve a system of linear equations using the elimination method. Aligned to CCSS 8.EE.C.8 and 8.EE.C.8b, the sheet moves from a reference page through guided practice and sequenced problems to applied word problems and a short assessment, all on one printable.",
-  "84": "Approximating Irrationals teaches 8th grade students to approximate irrational numbers with rational values and locate them on a number line. Aligned to CCSS 8.NS.A.2, this skill sheet pairs a reference page with an estimation strategy, guided practice, applied problems, and a built-in exit ticket with an answer key.",
-  "85": "Comparing Functions teaches 8th graders to compare two functions represented in different ways, such as a table, graph, equation, or description. Aligned to CCSS 8.F.A.2, the sheet provides a reference page, guided practice translating between representations, application, and a built-in assessment with a complete answer key.",
-  "86": "Constructing Linear Functions teaches 8th grade students to construct a linear function from a relationship and interpret its rate of change and initial value. Aligned to CCSS 8.F.B.4, this 4-in-1 sheet pairs a reference page with worked examples, guided practice, applied problems, and a built-in exit ticket with a full answer key.",
-  "87": "Qualitative Graph Features teaches 8th graders to sketch and describe a graph that models the relationship between two quantities, including increasing, decreasing, and constant intervals. Aligned to CCSS 8.F.B.5, the sheet runs from a reference page through guided practice and application to a short assessment, all on one printable.",
-  "88": "Converse of the Pythagorean Theorem teaches 8th grade students to use the converse to decide whether a triangle is a right triangle from its side lengths. Aligned to CCSS 8.G.B.6, this skill sheet pairs a reference page with worked examples, guided practice, applied problems, and a built-in exit ticket with an answer key.",
-  "89": "Translations teaches 8th graders to perform translations on the coordinate plane and describe their effect on a figure using coordinates. Aligned to CCSS 8.G.A.1, the sheet provides a reference page, guided practice sliding figures, application, and a built-in assessment with a complete answer key.",
-  "90": "Reflections teaches 8th grade students to reflect figures across lines on the coordinate plane and describe the result using coordinates. Aligned to CCSS 8.G.A.2, this 4-in-1 sheet pairs a reference page with worked examples across the axes and other lines, guided practice, application, and a built-in exit ticket with an answer key.",
-  "91": "Rotations teaches 8th graders to rotate figures about a point and describe the effect on the coordinates. Aligned to CCSS 8.G.A.3, the sheet moves from a reference page through guided practice with common rotation angles to applied problems and a short assessment, keeping the full lesson on one printable.",
-  "92": "Dilations teaches 8th grade students to perform dilations and describe how they change a figure's size while preserving its shape. Aligned to CCSS 8.G.A.4, this skill sheet pairs a reference page with scale-factor examples, guided practice, applied problems, and a built-in exit ticket with a complete answer key.",
-  "93": "Congruence through Transformations teaches 8th graders to use sequences of rigid motions to decide whether two figures are congruent. Aligned to CCSS 8.G.A.2, the sheet provides a reference page, guided practice describing transformation sequences, application, and a built-in assessment with an answer key.",
-  "94": "Similarity through Transformations teaches 8th grade students to use dilations and rigid motions to show that two figures are similar. Aligned to CCSS 8.G.A.4, this 4-in-1 sheet pairs a reference page with worked examples, guided practice, applied problems, and a built-in exit ticket with a full answer key.",
-  "95": "Angle Relationships with Parallel Lines teaches 8th graders to find angle measures created when parallel lines are cut by a transversal. Aligned to CCSS 8.G.A.5, the sheet runs from a reference page of labeled angle pairs through guided practice and application to a short assessment, all on one printable.",
-  "96": "The Pythagorean Theorem teaches 8th grade students to use the theorem to find unknown side lengths in right triangles in real-world and mathematical problems. Aligned to CCSS 8.G.B.7, this skill sheet pairs a reference page with worked examples, guided practice, applied problems, and a built-in exit ticket with a complete answer key.",
-  "97": "Distance on the Coordinate Plane teaches 8th graders to use the Pythagorean Theorem to find the distance between two points. Aligned to CCSS 8.G.B.8, the sheet provides a reference page connecting the distance to a right triangle, guided practice, application, and a built-in assessment with an answer key.",
-  "98": "Volume of Cones, Cylinders, and Spheres teaches 8th grade students to use the volume formulas for each solid to solve problems. Aligned to CCSS 8.G.C.9, this 4-in-1 sheet pairs a reference page with labeled formulas, guided practice, applied problems, and a built-in exit ticket with a full answer key.",
-  "99": "Scatter Plots teaches 8th graders to construct and interpret scatter plots and describe patterns of association such as clustering, outliers, and direction. Aligned to CCSS 8.SP.A.1, the sheet runs from a reference page through guided practice and application to a short assessment, all on one printable.",
-  "100": "Lines of Best Fit teaches 8th grade students to fit a line to data and use its slope and intercept to make predictions. Aligned to CCSS 8.SP.A.2, this skill sheet pairs a reference page with worked examples, guided practice drawing and using a trend line, applied problems, and a built-in exit ticket with an answer key.",
-  "101": "Nets and Surface Area teaches 6th grade students to use nets of three-dimensional figures to find surface area. Aligned to CCSS 6.G.A.4, the sheet provides a reference page with unfolded solids, guided practice, applied problems, and a built-in assessment with a complete answer key, keeping the full lesson on one printable.",
-  "102": "Scatter Plot Slope and Intercept teaches 8th graders to interpret the slope and intercept of a line that models scatter-plot data in context. Aligned to CCSS 8.SP.A.3, this 4-in-1 sheet pairs a reference page with worked interpretations, guided practice, applied problems, and a built-in exit ticket with a full answer key.",
-  "103": "Systems Word Problems teaches 8th grade students to write and solve a system of two linear equations from a real-world situation. Aligned to CCSS 8.EE.C.8c, the sheet moves from a reference page through guided practice setting up systems to applied word problems and a short assessment, all on one printable."
+  "1": "This free 6th grade Order of Operations skill sheet walks students through evaluating numerical expressions in the correct sequence, including expressions with whole-number exponents and grouping symbols. Aligned to CCSS 6.EE.A.1, it pairs a Learn page with guided practice, real-world application, and a built-in exit ticket, with an interactive Teacher Deck that teaches it on screen.",
+  "2": "Greatest Common Factor for 6th grade gives students a clear method for finding the GCF of two whole numbers and using it to rewrite sums with the distributive property. Built on CCSS 6.NS.B.4, the sheet moves from a guided Learn page through sequenced practice and word problems to a short assessment, all in one place.",
+  "3": "Least Common Multiple for 6th grade teaches students to find the LCM of two numbers and apply it to real situations like repeating events and shared schedules. Aligned to CCSS 6.NS.B.4, this 4-in-1 sheet covers the concept with a Learn page, guided practice, applied problems, and an exit ticket with a full answer key.",
+  "4": "Understanding Ratios introduces 6th grade students to ratio language and what it means to compare two quantities by ratio. Aligned to CCSS 6.RP.A.1, the sheet builds from a guided Learn page with worked examples through scaffolded practice and real-world application to a quick assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "5": "Unit Rate Concept helps 6th graders find and interpret the unit rate associated with a ratio, the foundation for proportional reasoning later. Aligned to CCSS 6.RP.A.2, this skill sheet pairs a guided Learn page with a worked example, six practice problems, applied word problems, and an exit ticket so students leave with the concept secured.",
+  "6": "Ratio Reasoning Application puts 6th grade ratio and rate skills to work on real-world and mathematical problems using tables, tape diagrams, and double number lines. Built on CCSS 6.RP.A.3, the sheet carries students from a guided Learn page through application-heavy practice to a built-in assessment, all aligned and classroom-ready.",
+  "7": "Statistical Questions teaches 6th graders to recognize a statistical question as one that expects variability in its answers, the entry point to the whole statistics strand. Aligned to CCSS 6.SP.A.1, this 4-in-1 sheet provides a Learn page, guided practice sorting statistical from non-statistical questions, applied problems, and a short exit ticket.",
+  "8": "Understanding Distributions has 6th grade students describe a data set by its center, spread, and overall shape. Aligned to CCSS 6.SP.A.2, the sheet combines a guided Learn page with worked examples, sequenced practice reading distributions, real-world application, and an assessment, keeping the full statistics lesson together on one sheet.",
+  "9": "The Coordinate Plane for 6th grade teaches students to graph points in all four quadrants and explain how the signs of the coordinates locate each point. Aligned to CCSS 6.NS.C.6b, this skill sheet pairs a Learn page with guided practice plotting and naming points, applied problems, and a built-in exit ticket.",
+  "10": "Center vs Variability helps 6th graders explain the difference between a measure of center and a measure of variation and when each describes a data set best. Aligned to CCSS 6.SP.A.3, the sheet runs from a Learn page through guided practice and application to a short assessment with a complete answer key.",
+  "11": "Dividing Fractions by Fractions gives 6th grade students a reliable method for dividing fractions and interpreting the quotient in context. Aligned to CCSS 6.NS.A.1, this 4-in-1 sheet builds from a guided Learn page with visual models through six practice problems and real-world word problems to a built-in exit ticket.",
+  "12": "Multi-Digit Operations covers fluent division of multi-digit whole numbers and computation with multi-digit decimals for 6th grade. Aligned to CCSS 6.NS.B.2 and 6.NS.B.3, the sheet pairs a guided Learn page with the standard algorithms, sequenced practice, applied decimal problems, and an assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "13": "Positive and Negative Numbers in Context teaches 6th graders to use signed numbers to represent real-world quantities such as temperature, elevation, and account balances. Aligned to CCSS 6.NS.C.5 and 6.NS.C.6a, this skill sheet moves from a Learn page through guided practice and application to a short exit ticket.",
+  "14": "Rationals on the Number Line and Coordinate Plane has 6th grade students plot rational numbers on a number line and in the coordinate plane. Aligned to CCSS 6.NS.C.6c, the sheet provides a Learn page, guided practice placing and reading values, real-world application, and a built-in assessment with an answer key.",
+  "15": "Comparing and Ordering Rationals and Absolute Value teaches 6th graders to compare and order rational numbers and interpret absolute value as distance from zero. Aligned to CCSS 6.NS.C.7, this 4-in-1 sheet carries the skill from a guided Learn page through sequenced practice and application to a quick exit ticket.",
+  "16": "Exponents for 6th grade teaches students to write and evaluate numerical expressions involving whole-number exponents. Aligned to CCSS 6.EE.A.1, the sheet pairs a Learn page that distinguishes a base from an exponent with guided practice, six problems, real-world application, and a built-in assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "17": "Writing Algebraic Expressions helps 6th graders translate words into algebraic expressions using variables and operations. Aligned to CCSS 6.EE.A.2a, this skill sheet moves from a Learn page of common phrase-to-symbol translations through guided practice and applied problems to a short exit ticket with a complete answer key.",
+  "18": "Evaluating Expressions teaches 6th grade students to evaluate algebraic expressions at specific values of their variables, including expressions drawn from real situations. Aligned to CCSS 6.EE.A.2c, the sheet pairs a guided Learn page with worked substitutions, sequenced practice, real-world application, and a built-in assessment.",
+  "19": "Combining Like Terms is a 6th grade skill sheet that teaches students to identify like terms and combine them to write equivalent expressions. Aligned to CCSS 6.EE.A.3 and 6.EE.A.4, it is the complete 4-in-1 lesson: a Learn page, guided practice, real-world application, and a built-in exit ticket with answer key.",
+  "20": "Distributive Property for 6th grade teaches students to apply the distributive property to write equivalent expressions. Aligned to CCSS 6.EE.A.3, this skill sheet builds from a guided Learn page with worked examples through six sequenced practice problems and real-world application to a short assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "21": "Solving One-Step Equations gives 6th grade students a clear method for solving one-step equations using inverse operations. Aligned to CCSS 6.EE.B.7, the sheet pairs a guided Learn page with a worked example, sequenced practice across addition, subtraction, multiplication, and division equations, applied word problems, and a built-in exit ticket.",
+  "22": "Real-World Problems on the Coordinate Plane has 6th graders solve problems by graphing points and finding distances between them. Aligned to CCSS 6.NS.C.8, this 4-in-1 sheet moves from a Learn page through guided practice plotting and measuring to real-world application and a short assessment with a full answer key.",
+  "23": "Independent vs Dependent Variables teaches 6th grade students to identify the independent and dependent variables in a relationship and show how they relate using tables, graphs, and equations. Aligned to CCSS 6.EE.C.9, the sheet provides a Learn page, guided practice, applied problems, and a built-in exit ticket.",
+  "24": "Identifying Equivalent Expressions teaches 6th graders to recognize when two expressions are equivalent for every value of the variable. Aligned to CCSS 6.EE.A.4, this skill sheet pairs a Learn page with guided practice testing equivalence, sequenced problems, real-world application, and a built-in assessment with an answer key.",
+  "25": "Solutions to Equations and Writing Variables helps 6th grade students decide whether a value is a solution to an equation and use variables to represent unknown numbers. Aligned to CCSS 6.EE.B.5 and 6.EE.B.6, the sheet runs from a Learn page through guided practice and application to a short exit ticket.",
+  "26": "Inequalities and Their Graphs teaches 6th graders to write an inequality for a real-world condition and graph its solutions on a number line. Aligned to CCSS 6.EE.B.8, this 4-in-1 sheet carries the skill from a guided Learn page through sequenced practice and applied problems to a built-in assessment with a complete answer key.",
+  "27": "Quadrilaterals on the Coordinate Plane has 6th grade students draw quadrilaterals from given coordinates and use the coordinates to find side lengths. Aligned to CCSS 6.G.A.3, the sheet pairs a Learn page with guided practice plotting and measuring, real-world application, and a built-in exit ticket.",
+  "28": "Polygons on the Coordinate Plane teaches 6th graders to draw polygons from given vertices and use coordinates to find side lengths. Aligned to CCSS 6.G.A.3, this skill sheet builds from a Learn page through guided practice and application to a short assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "29": "Data Displays covers dot plots, histograms, and box plots for 6th grade, teaching students to display numerical data in each form. Aligned to CCSS 6.SP.B.4, the sheet pairs a Learn page comparing the three displays with guided practice, applied problems, and a built-in exit ticket with an answer key.",
+  "30": "Numerical Data Summaries teaches 6th grade students to find the mean, median, and mode of a data set and choose the measure that best fits the situation. Aligned to CCSS 6.SP.B.5, this 4-in-1 sheet moves from a guided Learn page through sequenced practice and real-world application to a short assessment.",
+  "31": "Area of Polygons has 6th graders find the area of triangles and quadrilaterals by composing and decomposing them into known shapes. Aligned to CCSS 6.G.A.1, the sheet provides a Learn page with the key formulas, guided practice, real-world application, and a built-in exit ticket with a complete answer key.",
+  "32": "Volume with Fractional Edge Lengths teaches 6th grade students to find the volume of right rectangular prisms with fractional edge lengths. Aligned to CCSS 6.G.A.2, this skill sheet pairs a guided Learn page with the volume formula and worked examples, sequenced practice, applied problems, and a built-in assessment.",
+  "33": "Adding Integers gives 7th grade students a dependable method for adding positive and negative integers using absolute value, sign rules, and a number line. Aligned to CCSS 7.NS.A.1b, this 4-in-1 sheet pairs a guided Learn page with a worked example, six sequenced practice problems, real-world application, and a built-in exit ticket with a full answer key.",
+  "34": "Subtracting Integers teaches 7th graders to subtract integers by rewriting each difference as adding the opposite. Aligned to CCSS 7.NS.A.1c, the sheet moves from a Learn page that connects subtraction to distance on a number line through guided practice and applied problems to a short assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "35": "Multiplying Integers helps 7th grade students multiply positive and negative integers using the rules for signs and understand why those rules work. Aligned to CCSS 7.NS.A.2a, this skill sheet builds from a guided Learn page through sequenced practice and real-world application to a built-in exit ticket with an answer key.",
+  "36": "Dividing Integers teaches 7th graders to divide integers and recognize when a quotient is positive or negative. Aligned to CCSS 7.NS.A.2b, the sheet pairs a Learn page with the sign rules and worked examples, guided practice, applied problems, and a short assessment, keeping the full integer-division lesson together.",
+  "37": "Adding and Subtracting Rationals extends signed-number operations to all rational numbers for 7th grade, including fractions and decimals in real-world contexts. Aligned to CCSS 7.NS.A.1d, this 4-in-1 sheet provides a Learn page, guided practice, six sequenced problems, application, and a built-in exit ticket with a complete answer key.",
+  "38": "Multiplying and Dividing Rationals teaches 7th grade students to multiply and divide rational numbers, including fractions and decimals, with correct signs. Aligned to CCSS 7.NS.A.2c, the sheet runs from a Learn page through guided practice and real-world application to a short assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "39": "Unit Rates for 7th grade teaches students to compute unit rates, including ratios of fractions, and use them to compare situations. Aligned to CCSS 7.RP.A.1, this skill sheet pairs a Learn page with worked examples through guided practice, applied problems involving speeds and prices, and a built-in exit ticket with an answer key.",
+  "40": "Constant of Proportionality helps 7th graders identify the constant of proportionality in tables, graphs, and equations and write equations in y = kx form. Aligned to CCSS 7.RP.A.2, the sheet builds from a guided Learn page through sequenced practice and real-world application to a built-in assessment, all aligned and ready to teach.",
+  "41": "Percent Problems for 7th grade covers percent of a number, percent increase, and percent decrease, the foundation for tax, tip, markup, and discount problems. Aligned to CCSS 7.RP.A.3, this 4-in-1 sheet pairs a Learn page with guided practice, six problems, real-world application, and a built-in exit ticket with a full answer key.",
+  "42": "Scale Drawings teaches 7th grade students to solve problems with scale drawings, computing actual lengths and areas from a scaled figure. Aligned to CCSS 7.G.A.1, the sheet provides a Learn page on scale factor, guided practice, applied problems, and a short assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "43": "Angle Relationships for 7th grade teaches students to use complementary, supplementary, vertical, and adjacent angles to write and solve equations for unknown angles. Aligned to CCSS 7.G.B.5, this skill sheet pairs a Learn page of labeled diagrams with guided practice, applied problems, and a built-in exit ticket with an answer key.",
+  "44": "Triangle Inequality helps 7th graders decide whether three given side lengths can form a triangle and find the range of possible third sides. Aligned to CCSS 7.G.A.2, the sheet moves from a Learn page through guided practice testing side-length sets to real-world application and a short assessment.",
+  "45": "Two-Step Inequalities teaches 7th grade students to solve two-step inequalities, graph the solution set, and interpret it in context. Aligned to CCSS 7.EE.B.4b, this 4-in-1 sheet pairs a Learn page with the sign-flip rule and worked examples, guided practice, applied problems, and a built-in exit ticket with answer key.",
+  "46": "Rewriting Expressions teaches 7th graders to rewrite an expression in a different form to reveal how the quantities in a problem are related. Aligned to CCSS 7.EE.A.2, the sheet provides a Learn page, guided practice, real-world application showing why a rewritten form is useful, and a short assessment with a complete answer key.",
+  "47": "Multi-Step Rational Problems has 7th grade students solve multi-step problems with rational numbers in any form and check answers for reasonableness. Aligned to CCSS 7.EE.B.3, this skill sheet runs from a guided Learn page through sequenced practice and applied word problems to a built-in exit ticket, with an interactive Teacher Deck that teaches it on screen.",
+  "48": "Combining Like Terms is a free 7th grade skill sheet that teaches students to combine like terms with rational coefficients to simplify expressions. Aligned to CCSS 7.EE.A.1, it is the complete 4-in-1 deliverable at no cost: a Learn page, guided practice, real-world application, and a built-in exit ticket with a full answer key.",
+  "49": "Distributive Property for 7th grade teaches students to expand and factor linear expressions using the distributive property. Aligned to CCSS 7.EE.A.1, this skill sheet pairs a Learn page with worked examples in both directions, guided practice, six sequenced problems, application, and a built-in assessment with an answer key.",
+  "50": "Experimental and Theoretical Probability teaches 7th graders to compare experimental results with theoretical probability and explain why they differ. Aligned to CCSS 7.SP.C.6, this 4-in-1 sheet pairs a Learn page with guided practice collecting and comparing data, applied problems, and a built-in exit ticket with a complete answer key.",
+  "51": "Probability Models teaches 7th grade students to develop probability models and use them to find the probability of events. Aligned to CCSS 7.SP.C.7, the sheet moves from a Learn page through guided practice building uniform and non-uniform models to real-world application and a short assessment.",
+  "52": "Compound Events helps 7th graders find probabilities of compound events using organized lists, tables, and tree diagrams. Aligned to CCSS 7.SP.C.8, this skill sheet pairs a Learn page with worked sample spaces, guided practice, applied problems, and a built-in exit ticket with an answer key, with an interactive Teacher Deck that teaches it on screen.",
+  "53": "Additive Inverse and Opposites teaches 7th grade students to describe opposite quantities and recognize that a number and its opposite sum to zero. Aligned to CCSS 7.NS.A.1a, the sheet provides a Learn page, guided practice on a number line, real-world application, and a built-in exit ticket with a complete answer key.",
+  "54": "Terminating vs Repeating Decimals teaches 7th graders to convert between fractions, decimals, and percents, including recognizing repeating decimals. Aligned to CCSS 7.NS.A.2d, this 4-in-1 sheet pairs a Learn page with the long-division method, guided practice, applied problems, and a built-in assessment with an answer key.",
+  "55": "Real-World Rational Number Problems has 7th grade students solve real situations using the four operations with rational numbers. Aligned to CCSS 7.NS.A.3, the sheet runs from a Learn page through guided practice and multi-context word problems to a short exit ticket, with an interactive Teacher Deck that teaches it on screen.",
+  "56": "Probability Scale 0 to 1 teaches 7th graders to describe the probability of an event with a number from 0 to 1 and place events on a likelihood scale. Aligned to CCSS 7.SP.C.5, this skill sheet pairs a Learn page with guided practice, applied problems, and a built-in exit ticket with a complete answer key.",
+  "57": "Random Sampling teaches 7th grade students to use random samples to draw inferences about a population and understand why a sample must be representative. Aligned to CCSS 7.SP.A.1, the sheet provides a Learn page, guided practice, applied problems, and a built-in assessment, all aligned and classroom-ready.",
+  "58": "Inferences from Random Samples has 7th graders use data from a random sample to draw inferences about a whole population and gauge how estimates vary. Aligned to CCSS 7.SP.A.2, this 4-in-1 sheet moves from a Learn page through guided practice and real-world application to a short exit ticket with an answer key.",
+  "59": "Comparing Populations Informally teaches 7th grade students to compare two populations using measures of center and variability and the visual overlap of their distributions. Aligned to CCSS 7.SP.B.3, the sheet pairs a Learn page with guided practice, applied problems, and a built-in exit ticket with a complete answer key.",
+  "60": "Comparing Populations Numerically teaches 7th graders to compare two populations using measures of center and variability expressed numerically. Aligned to CCSS 7.SP.B.4, this skill sheet runs from a guided Learn page through sequenced practice and real-world application to a short assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "61": "Circumference and Area of Circles teaches 7th grade students to use the formulas for the circumference and area of a circle and understand how they relate. Aligned to CCSS 7.G.B.4, this 4-in-1 sheet pairs a Learn page with labeled diagrams, guided practice, applied problems, and a built-in exit ticket with an answer key.",
+  "62": "Cross-Sections of 3D Figures teaches 7th graders to describe the two-dimensional cross sections that result from slicing three-dimensional figures. Aligned to CCSS 7.G.A.3, the sheet provides a Learn page with visual examples, guided practice, applied problems, and a built-in assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "63": "Composite Area, Volume, and Surface Area has 7th grade students solve area and volume problems with composite two- and three-dimensional figures. Aligned to CCSS 7.G.B.6, this skill sheet pairs a Learn page with a decomposition strategy, guided practice, applied problems, and a built-in exit ticket with a complete answer key.",
+  "64": "Identifying Parts of an Expression teaches 6th graders the vocabulary of algebra: terms, factors, coefficients, sums, and products. Aligned to CCSS 6.EE.A.2b, this 4-in-1 sheet pairs a Learn page of labeled examples with guided practice naming the parts of an expression, applied problems, and a built-in exit ticket with answer key.",
+  "65": "Equations with Rational Coefficients teaches 8th grade students to solve linear equations whose coefficients are fractions or decimals. Aligned to CCSS 8.EE.C.7b, this 4-in-1 sheet pairs a Learn page with strategies for clearing fractions, guided practice, six sequenced problems, application, and a built-in exit ticket with a full answer key.",
+  "66": "Writing and Solving Equations from Word Problems teaches 8th graders to translate a real situation into a linear equation and solve it. Aligned to CCSS 8.EE.C.7b, the sheet moves from a Learn page through guided practice setting up equations to applied word problems and a short assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "67": "Two-Step Equations teaches 7th grade students to solve two-step equations and justify each step with the properties of operations. Aligned to CCSS 7.EE.B.4a, the sheet builds from a Learn page with worked examples through guided practice, six sequenced problems, application, and a built-in exit ticket with an answer key.",
+  "68": "Rational vs Irrational Numbers teaches 8th grade students to classify numbers as rational or irrational and estimate the value of an irrational number. Aligned to CCSS 8.NS.A.1, this skill sheet pairs a Learn page with examples and decimal expansions, guided practice, applied problems, and a built-in exit ticket with an answer key.",
+  "69": "Two-Way Tables teaches 8th graders to construct and interpret two-way tables and use relative frequencies to find patterns in categorical data. Aligned to CCSS 8.SP.A.4, the sheet provides a Learn page, guided practice reading and building tables, real-world application, and a built-in assessment with a complete answer key.",
+  "70": "Scientific Notation Conversion teaches 8th grade students to convert between standard form and scientific notation and use it to express very large and very small numbers. Aligned to CCSS 8.EE.A.3, this 4-in-1 sheet pairs a Learn page with worked conversions, guided practice, applied problems, and a built-in exit ticket with an answer key.",
+  "71": "Exponent Rules teaches 8th graders to apply the properties of integer exponents to simplify expressions, including the product, quotient, and power rules. Aligned to CCSS 8.EE.A.1, the sheet runs from a Learn page through guided practice and six sequenced problems to a short assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "72": "Negative and Zero Exponents teaches 8th grade students to apply the properties of integer exponents to generate equivalent expressions, including negative and zero exponents. Aligned to CCSS 8.EE.A.1, this skill sheet pairs a Learn page with worked examples, guided practice, applied problems, and a built-in exit ticket with a full answer key.",
+  "73": "Functions Definition teaches 8th graders that a function assigns exactly one output to each input, and how to test relationships for this rule. Aligned to CCSS 8.F.A.1, the sheet provides a Learn page with the vertical-line test and mapping diagrams, guided practice, application, and a built-in assessment with an answer key.",
+  "74": "Operations with Scientific Notation teaches 8th grade students to add, subtract, multiply, and divide numbers written in scientific notation. Aligned to CCSS 8.EE.A.4, this 4-in-1 sheet pairs a Learn page with worked examples, guided practice, applied problems with appropriate units, and a built-in exit ticket with a complete answer key.",
+  "75": "Multi-Step Equations teaches 8th graders to solve linear equations that require distributing and combining like terms, then to check the solution. Aligned to CCSS 8.EE.C.7b, the sheet moves from a Learn page through guided practice and six sequenced problems to a short assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "76": "One, None, or Infinite Solutions teaches 8th grade students to decide whether a linear equation has one solution, no solution, or infinitely many. Aligned to CCSS 8.EE.C.7a, this skill sheet pairs a Learn page with worked examples of each case, guided practice, applied problems, and a built-in exit ticket with an answer key.",
+  "77": "Slope-Intercept Form teaches 8th graders to use similar triangles to explain slope and write linear equations in y = mx + b form. Aligned to CCSS 8.EE.B.6, the sheet provides a Learn page connecting slope to rate of change, guided practice, application, and a built-in assessment with a complete answer key.",
+  "78": "Graphing Linear Equations teaches 8th grade students to identify whether a function is linear or nonlinear from its equation or graph and graph linear functions. Aligned to CCSS 8.F.A.3, this 4-in-1 sheet pairs a Learn page with guided practice, applied problems, and a built-in exit ticket with a full answer key.",
+  "79": "Proportional Relationships teaches 8th graders to graph proportional relationships and interpret the unit rate as the slope of the line. Aligned to CCSS 8.EE.B.5, the sheet runs from a Learn page through guided practice comparing relationships in different forms to applied problems and a short assessment.",
+  "80": "Systems by Graphing teaches 8th grade students to solve a system of two linear equations by graphing and interpret the point of intersection. Aligned to CCSS 8.EE.C.8a, this skill sheet pairs a Learn page with worked examples, guided practice, applied problems, and a built-in exit ticket with an answer key, with an interactive Teacher Deck that teaches it on screen.",
+  "81": "Square and Cube Roots teaches 8th graders to evaluate square roots and cube roots and use them to solve simple equations of the form x squared equals p and x cubed equals p. Aligned to CCSS 8.EE.A.2, the sheet provides a Learn page, guided practice, application, and a built-in assessment with a complete answer key.",
+  "82": "Systems by Substitution teaches 8th grade students to solve a system of linear equations using the substitution method. Aligned to CCSS 8.EE.C.8 and 8.EE.C.8b, this 4-in-1 sheet pairs a Learn page with a step-by-step worked example, guided practice, six problems, application, and a built-in exit ticket with a full answer key.",
+  "83": "Systems by Elimination teaches 8th graders to solve a system of linear equations using the elimination method. Aligned to CCSS 8.EE.C.8 and 8.EE.C.8b, the sheet moves from a Learn page through guided practice and sequenced problems to applied word problems and a short assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "84": "Approximating Irrationals teaches 8th grade students to approximate irrational numbers with rational values and locate them on a number line. Aligned to CCSS 8.NS.A.2, this skill sheet pairs a Learn page with an estimation strategy, guided practice, applied problems, and a built-in exit ticket with an answer key.",
+  "85": "Comparing Functions teaches 8th graders to compare two functions represented in different ways, such as a table, graph, equation, or description. Aligned to CCSS 8.F.A.2, the sheet provides a Learn page, guided practice translating between representations, application, and a built-in assessment with a complete answer key.",
+  "86": "Constructing Linear Functions teaches 8th grade students to construct a linear function from a relationship and interpret its rate of change and initial value. Aligned to CCSS 8.F.B.4, this 4-in-1 sheet pairs a Learn page with worked examples, guided practice, applied problems, and a built-in exit ticket with a full answer key.",
+  "87": "Qualitative Graph Features teaches 8th graders to sketch and describe a graph that models the relationship between two quantities, including increasing, decreasing, and constant intervals. Aligned to CCSS 8.F.B.5, the sheet runs from a Learn page through guided practice and application to a short assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "88": "Converse of the Pythagorean Theorem teaches 8th grade students to use the converse to decide whether a triangle is a right triangle from its side lengths. Aligned to CCSS 8.G.B.6, this skill sheet pairs a Learn page with worked examples, guided practice, applied problems, and a built-in exit ticket with an answer key.",
+  "89": "Translations teaches 8th graders to perform translations on the coordinate plane and describe their effect on a figure using coordinates. Aligned to CCSS 8.G.A.1, the sheet provides a Learn page, guided practice sliding figures, application, and a built-in assessment with a complete answer key.",
+  "90": "Reflections teaches 8th grade students to reflect figures across lines on the coordinate plane and describe the result using coordinates. Aligned to CCSS 8.G.A.2, this 4-in-1 sheet pairs a Learn page with worked examples across the axes and other lines, guided practice, application, and a built-in exit ticket with an answer key.",
+  "91": "Rotations teaches 8th graders to rotate figures about a point and describe the effect on the coordinates. Aligned to CCSS 8.G.A.3, the sheet moves from a Learn page through guided practice with common rotation angles to applied problems and a short assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "92": "Dilations teaches 8th grade students to perform dilations and describe how they change a figure's size while preserving its shape. Aligned to CCSS 8.G.A.4, this skill sheet pairs a Learn page with scale-factor examples, guided practice, applied problems, and a built-in exit ticket with a complete answer key.",
+  "93": "Congruence through Transformations teaches 8th graders to use sequences of rigid motions to decide whether two figures are congruent. Aligned to CCSS 8.G.A.2, the sheet provides a Learn page, guided practice describing transformation sequences, application, and a built-in assessment with an answer key.",
+  "94": "Similarity through Transformations teaches 8th grade students to use dilations and rigid motions to show that two figures are similar. Aligned to CCSS 8.G.A.4, this 4-in-1 sheet pairs a Learn page with worked examples, guided practice, applied problems, and a built-in exit ticket with a full answer key.",
+  "95": "Angle Relationships with Parallel Lines teaches 8th graders to find angle measures created when parallel lines are cut by a transversal. Aligned to CCSS 8.G.A.5, the sheet runs from a Learn page of labeled angle pairs through guided practice and application to a short assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "96": "The Pythagorean Theorem teaches 8th grade students to use the theorem to find unknown side lengths in right triangles in real-world and mathematical problems. Aligned to CCSS 8.G.B.7, this skill sheet pairs a Learn page with worked examples, guided practice, applied problems, and a built-in exit ticket with a complete answer key.",
+  "97": "Distance on the Coordinate Plane teaches 8th graders to use the Pythagorean Theorem to find the distance between two points. Aligned to CCSS 8.G.B.8, the sheet provides a Learn page connecting the distance to a right triangle, guided practice, application, and a built-in assessment with an answer key.",
+  "98": "Volume of Cones, Cylinders, and Spheres teaches 8th grade students to use the volume formulas for each solid to solve problems. Aligned to CCSS 8.G.C.9, this 4-in-1 sheet pairs a Learn page with labeled formulas, guided practice, applied problems, and a built-in exit ticket with a full answer key.",
+  "99": "Scatter Plots teaches 8th graders to construct and interpret scatter plots and describe patterns of association such as clustering, outliers, and direction. Aligned to CCSS 8.SP.A.1, the sheet runs from a Learn page through guided practice and application to a short assessment, with an interactive Teacher Deck that teaches it on screen.",
+  "100": "Lines of Best Fit teaches 8th grade students to fit a line to data and use its slope and intercept to make predictions. Aligned to CCSS 8.SP.A.2, this skill sheet pairs a Learn page with worked examples, guided practice drawing and using a trend line, applied problems, and a built-in exit ticket with an answer key.",
+  "101": "Nets and Surface Area teaches 6th grade students to use nets of three-dimensional figures to find surface area. Aligned to CCSS 6.G.A.4, the sheet provides a Learn page with unfolded solids, guided practice, applied problems, and a built-in assessment with a complete answer key, with an interactive Teacher Deck that teaches it on screen.",
+  "102": "Scatter Plot Slope and Intercept teaches 8th graders to interpret the slope and intercept of a line that models scatter-plot data in context. Aligned to CCSS 8.SP.A.3, this 4-in-1 sheet pairs a Learn page with worked interpretations, guided practice, applied problems, and a built-in exit ticket with a full answer key.",
+  "103": "Systems Word Problems teaches 8th grade students to write and solve a system of two linear equations from a real-world situation. Aligned to CCSS 8.EE.C.8c, the sheet moves from a Learn page through guided practice setting up systems to applied word problems and a short assessment, with an interactive Teacher Deck that teaches it on screen."
 };
 
 /* ----- Bundle catalog (authored S3): live TPT URLs + membership + SEO blurbs ----- */
@@ -322,89 +322,89 @@ const BUNDLES = [
     "blurb":"The full 6th grade Ratios and Proportional Relationships strand in one place, aligned to 6.RP. Students build ratio language, unit rates, and ratio reasoning with tables, tape diagrams, and percents. Each of the three skills is a complete 4-in-1 Skill Sheet with reference, practice, application, and a built-in assessment." },
 
   { "id":"16734427","grade":"6","tier":"strand","name":"6th Grade The Number System","slug":"6th-grade-number-system","url":"https://www.teacherspayteachers.com/Product/6th-Grade-Number-System-Bundle-GCF-LCM-Dividing-Fractions-Decimals-16734427","thumb":"thumb1_hero_6th_NumberSystem.png","sheets":[2,3,11,12],
-    "blurb":"Greatest common factor, least common multiple, dividing fractions, and multi-digit decimal operations, aligned to 6.NS. This 6th grade Number System bundle gives you four 4-in-1 Skill Sheets that each move from a color reference page through guided practice and real-world application to a built-in exit ticket." },
+    "blurb":"Greatest common factor, least common multiple, dividing fractions, and multi-digit decimal operations, aligned to 6.NS. This 6th grade Number System bundle gives you four 4-in-1 Skill Sheets that each move from a Learn page through guided practice and real-world application to a built-in exit ticket." },
 
   { "id":"16734459","grade":"6","tier":"strand","name":"6th Grade Rational Numbers","slug":"6th-grade-rational-numbers","url":"https://www.teacherspayteachers.com/Product/6th-Grade-Rational-Numbers-Bundle-Negative-Numbers-Absolute-Value-6NS-16734459","thumb":"thumb1_hero_6th_RationalNumbers.png","sheets":[13,14,15],
-    "blurb":"Negative numbers, the number line and coordinate plane, ordering, and absolute value, aligned to 6.NS.C. These three 4-in-1 Skill Sheets introduce signed numbers in real contexts and build to comparing and ordering rationals, each with a reference page, scaffolded practice, application, and an assessment." },
+    "blurb":"Negative numbers, the number line and coordinate plane, ordering, and absolute value, aligned to 6.NS.C. These three 4-in-1 Skill Sheets introduce signed numbers in real contexts and build to comparing and ordering rationals, each with a guided Learn page, scaffolded practice, application, and an assessment." },
 
   { "id":"16737021","grade":"6","tier":"topic","name":"6th Grade Coordinate Plane","slug":"6th-grade-coordinate-plane","url":"https://www.teacherspayteachers.com/Product/6th-Grade-Coordinate-Plane-Bundle-Four-Quadrants-Plotting-Points-Polygons-16737021","thumb":"thumb1_hero_6th_CoordinatePlane.png","sheets":[9,22,27,28],
-    "blurb":"A focused 6th grade coordinate plane bundle covering all four quadrants, plotting and reading points, real-world problems, and drawing polygons and quadrilaterals from coordinates. Four 4-in-1 Skill Sheets aligned to 6.NS.C and 6.G.A, each with a reference page, practice, application, and a built-in exit ticket." },
+    "blurb":"A focused 6th grade coordinate plane bundle covering all four quadrants, plotting and reading points, real-world problems, and drawing polygons and quadrilaterals from coordinates. Four 4-in-1 Skill Sheets aligned to 6.NS.C and 6.G.A, each with a guided Learn page, practice, application, and a built-in exit ticket." },
 
   { "id":"16734737","grade":"6","tier":"strand","name":"6th Grade Geometry","slug":"6th-grade-geometry","url":"https://www.teacherspayteachers.com/Product/6th-Grade-Geometry-Bundle-Area-Volume-Nets-Surface-Area-6G-Math-16734737","thumb":"thumb1_hero_6th_Geometry.png","sheets":[31,32,101],
-    "blurb":"Area of polygons, volume with fractional edge lengths, and surface area from nets, aligned to 6.G. This 6th grade Geometry bundle delivers three 4-in-1 Skill Sheets that pair clear formula references with guided practice, real-world application, and a built-in assessment on each printable." },
+    "blurb":"Area of polygons, volume with fractional edge lengths, and surface area from nets, aligned to 6.G. This 6th grade Geometry bundle delivers three 4-in-1 Skill Sheets that pair clear formula references with guided practice, real-world application, and a built-in exit ticket in each lesson." },
 
   { "id":"16734699","grade":"6","tier":"strand","name":"6th Grade Statistics & Probability","slug":"6th-grade-statistics-probability","url":"https://www.teacherspayteachers.com/Product/6th-Grade-Statistics-Data-Bundle-Dot-Plots-Histograms-Box-Plots-Mean-Median-16734699","thumb":"thumb1_hero_6th_StatisticsProbability.png","sheets":[7,8,10,29,30],
-    "blurb":"The complete 6th grade Statistics and Probability strand, aligned to 6.SP. Students learn statistical questions, distributions, center versus variability, data displays, and numerical summaries across five 4-in-1 Skill Sheets, each with a reference page, practice, real-world application, and a built-in exit ticket." },
+    "blurb":"The complete 6th grade Statistics and Probability strand, aligned to 6.SP. Students learn statistical questions, distributions, center versus variability, data displays, and numerical summaries across five 4-in-1 Skill Sheets, each with a guided Learn page, practice, real-world application, and a built-in exit ticket." },
 
 
   { "id":"16737026","grade":"6","tier":"topic","name":"6th Grade Equations & Inequalities","slug":"6th-grade-equations-inequalities","url":"https://www.teacherspayteachers.com/Product/6th-Grade-Equations-Inequalities-Bundle-One-Step-Equations-Graphs-6EE-16737026","thumb":"thumb1_hero_6th_EquationsInequalities.png","sheets":[21,25,26,23],
-    "blurb":"The equations half of 6.EE: solving one-step equations, identifying solutions and writing variable expressions, inequalities and their graphs, and independent versus dependent variables. Four 4-in-1 Skill Sheets aligned to 6.EE.B and 6.EE.C, each with a reference page, scaffolded practice, application, and a built-in assessment." },
+    "blurb":"The equations half of 6.EE: solving one-step equations, identifying solutions and writing variable expressions, inequalities and their graphs, and independent versus dependent variables. Four 4-in-1 Skill Sheets aligned to 6.EE.B and 6.EE.C, each with a guided Learn page, scaffolded practice, application, and a built-in assessment." },
 
   { "id":"16734544","grade":"6","tier":"strand","name":"6th Grade Expressions & Equations","slug":"6th-grade-expressions-equations","url":"https://www.teacherspayteachers.com/Product/6th-Grade-Expressions-Equations-Bundle-Exponents-Equations-Inequalities-6EE-16734544","thumb":"thumb1_hero_6th_ExpressionsEquations.png","sheets":[1,16,17,18,19,20,21,23,24,25,26,64],
-    "blurb":"The entire 6.EE strand in one bundle: exponents, writing and evaluating expressions, combining like terms, the distributive property, equivalent expressions, one-step equations, inequalities, and dependent and independent variables. Twelve 4-in-1 Skill Sheets, each carrying a reference page, practice, real-world application, and a built-in exit ticket." },
+    "blurb":"The entire 6.EE strand in one bundle: exponents, writing and evaluating expressions, combining like terms, the distributive property, equivalent expressions, one-step equations, inequalities, and dependent and independent variables. Twelve 4-in-1 Skill Sheets, each carrying a guided Learn page, practice, real-world application, and a built-in exit ticket." },
 
   { "id":"16464069","grade":"6","tier":"mega","name":"6th Grade Math MEGA Bundle","slug":"6th-grade-math-mega-bundle","url":"https://www.teacherspayteachers.com/Product/6th-Grade-Math-MEGA-Bundle-4-in-1-Skill-Sheets-Full-Year-Common-Core-34-Skills-16464069","thumb":"6th Grade Full Skill Sheets Bundle Hero.png","sheets":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,64,101],
-    "blurb":"Every 6th grade 4-in-1 Skill Sheet for the full year, all 34 skills across ratios and proportional relationships, the number system, expressions and equations, geometry, and statistics. A complete Common Core aligned 6th grade math curriculum of reference pages, practice, application, and built-in assessments in one bundle." },
+    "blurb":"Every 6th grade 4-in-1 Skill Sheet for the full year, all 34 skills across ratios and proportional relationships, the number system, expressions and equations, geometry, and statistics. A complete Common Core aligned 6th grade math curriculum of guided lessons, practice, application and exit tickets in one bundle." },
 
   { "id":"16694244","grade":"7","tier":"topic","name":"7th Grade Integer Operations","slug":"7th-grade-integer-operations","url":"https://www.teacherspayteachers.com/Product/Integer-Operations-Bundle-Adding-Subtracting-Multiplying-Dividing-7th-Grade-16694244","thumb":"thumb1_hero_7th_IntegerOps_strand.png","sheets":[33,34,35,36],
-    "blurb":"Adding, subtracting, multiplying, and dividing integers, aligned to 7.NS.A. This focused 7th grade integer operations bundle gives you four 4-in-1 Skill Sheets that teach the sign rules with number lines and worked examples, each with a reference page, sequenced practice, application, and a built-in exit ticket." },
+    "blurb":"Adding, subtracting, multiplying, and dividing integers, aligned to 7.NS.A. This focused 7th grade integer operations bundle gives you four 4-in-1 Skill Sheets that teach the sign rules with number lines and worked examples, each with a guided Learn page, sequenced practice, application, and a built-in exit ticket." },
 
   { "id":"16694295","grade":"7","tier":"topic","name":"7th Grade Rational Number Operations","slug":"7th-grade-rational-number-operations","url":"https://www.teacherspayteachers.com/Product/Operations-with-Rational-Numbers-Bundle-7th-Grade-Math-Worksheets-Notes-16694295","thumb":"thumb1_hero_7th_RationalOps_strand.png","sheets":[37,38,53,54,55],
-    "blurb":"Operations with rational numbers for 7th grade, aligned to 7.NS.A: adding and subtracting rationals, multiplying and dividing rationals, additive inverse and opposites, terminating and repeating decimals, and real-world rational number problems. Five 4-in-1 Skill Sheets, each with a reference page, practice, application, and an assessment." },
+    "blurb":"Operations with rational numbers for 7th grade, aligned to 7.NS.A: adding and subtracting rationals, multiplying and dividing rationals, additive inverse and opposites, terminating and repeating decimals, and real-world rational number problems. Five 4-in-1 Skill Sheets, each with a guided Learn page, practice, application, and an assessment." },
 
   { "id":"16694333","grade":"7","tier":"strand","name":"7th Grade The Number System","slug":"7th-grade-number-system","url":"https://www.teacherspayteachers.com/Product/7th-Grade-Number-System-Bundle-Integers-Rational-Numbers-7NS-Worksheets-16694333","thumb":"thumb1_hero_7th_NumberSystem_strand.png","sheets":[33,34,35,36,37,38,53,54,55],
     "blurb":"The complete 7.NS strand: integer operations, rational number operations, additive inverse, decimal conversions, and real-world problems. Nine 4-in-1 Skill Sheets that take students from signed-number rules through fluent operations with all rational numbers, each with reference, practice, application, and a built-in assessment." },
 
   { "id":"16694375","grade":"7","tier":"strand","name":"7th Grade Ratios & Proportional Relationships","slug":"7th-grade-ratios-proportional-relationships","url":"https://www.teacherspayteachers.com/Product/Ratios-Proportional-Relationships-Bundle-7th-Grade-Math-Unit-Rate-Percent-16694375","thumb":"thumb1_hero_7th_RatiosProportional_strand.png","sheets":[39,40,41],
-    "blurb":"Unit rates, the constant of proportionality, and percent problems, aligned to 7.RP. This 7th grade proportional relationships bundle delivers three 4-in-1 Skill Sheets covering the reasoning behind tax, tip, markup, and percent change, each with a reference page, practice, application, and a built-in exit ticket." },
+    "blurb":"Unit rates, the constant of proportionality, and percent problems, aligned to 7.RP. This 7th grade proportional relationships bundle delivers three 4-in-1 Skill Sheets covering the reasoning behind tax, tip, markup, and percent change, each with a guided Learn page, practice, application, and a built-in exit ticket." },
 
   { "id":"16694397","grade":"7","tier":"strand","name":"7th Grade Geometry","slug":"7th-grade-geometry","url":"https://www.teacherspayteachers.com/Product/7th-Grade-Geometry-Bundle-Circles-Angles-Scale-Drawings-Surface-Area-Volume-16694397","thumb":"thumb1_hero_7th_Geometry_strand.png","sheets":[42,43,44,61,62,63],
-    "blurb":"Scale drawings, angle relationships, triangle inequality, circles, cross sections, and composite area, volume, and surface area, aligned to 7.G. Six 4-in-1 Skill Sheets that build the full 7th grade geometry strand, each with a reference page, scaffolded practice, real-world application, and a built-in assessment." },
+    "blurb":"Scale drawings, angle relationships, triangle inequality, circles, cross sections, and composite area, volume, and surface area, aligned to 7.G. Six 4-in-1 Skill Sheets that build the full 7th grade geometry strand, each with a guided Learn page, scaffolded practice, real-world application, and a built-in assessment." },
 
   { "id":"16694417","grade":"7","tier":"strand","name":"7th Grade Expressions & Equations","slug":"7th-grade-expressions-equations","url":"https://www.teacherspayteachers.com/Product/7th-Grade-Expressions-Equations-Bundle-Two-Step-Equations-Inequalities-16694417","thumb":"thumb1_hero_7th_ExpressionsEquations_strand.png","sheets":[45,46,47,48,49,67],
-    "blurb":"Two-step equations and inequalities, combining like terms, the distributive property, rewriting expressions, and multi-step rational problems, aligned to 7.EE. Six 4-in-1 Skill Sheets, including the free Combining Like Terms sheet, each with a reference page, practice, real-world application, and a built-in exit ticket." },
+    "blurb":"Two-step equations and inequalities, combining like terms, the distributive property, rewriting expressions, and multi-step rational problems, aligned to 7.EE. Six 4-in-1 Skill Sheets, including the free Combining Like Terms sheet, each with a guided Learn page, practice, real-world application, and a built-in exit ticket." },
 
   { "id":"16694443","grade":"7","tier":"strand","name":"7th Grade Statistics & Probability","slug":"7th-grade-statistics-probability","url":"https://www.teacherspayteachers.com/Product/7th-Grade-Statistics-Probability-Bundle-Probability-Sampling-Worksheets-16694443","thumb":"thumb1_hero_7th_StatisticsProbability_strand.png","sheets":[50,51,52,56,57,58,59,60],
-    "blurb":"The full 7.SP strand: experimental and theoretical probability, probability models, compound events, the probability scale, random sampling, inferences, and comparing populations. Eight 4-in-1 Skill Sheets covering probability and inference, each with a reference page, practice, application, and a built-in assessment." },
+    "blurb":"The full 7.SP strand: experimental and theoretical probability, probability models, compound events, the probability scale, random sampling, inferences, and comparing populations. Eight 4-in-1 Skill Sheets covering probability and inference, each with a guided Learn page, practice, application, and a built-in assessment." },
 
   { "id":"16465247","grade":"7","tier":"mega","name":"7th Grade Math MEGA Bundle","slug":"7th-grade-math-mega-bundle","url":"https://www.teacherspayteachers.com/Product/7th-Grade-Math-MEGA-Bundle-4-in-1-Skill-Sheets-Full-Year-32-Skills-CCSS-16465247","thumb":"7th Grade Full Skill Sheets Bundle Hero.png","sheets":[33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,67],
-    "blurb":"Every 7th grade 4-in-1 Skill Sheet for the full year, all 32 skills across the number system, ratios and proportional relationships, expressions and equations, geometry, and statistics and probability. A complete Common Core aligned 7th grade math curriculum of reference pages, practice, application, and assessments." },
+    "blurb":"Every 7th grade 4-in-1 Skill Sheet for the full year, all 32 skills across the number system, ratios and proportional relationships, expressions and equations, geometry, and statistics and probability. A complete Common Core aligned 7th grade math curriculum of guided lessons, practice, application and exit tickets." },
 
   { "id":"16735842","grade":"8","tier":"topic","name":"8th Grade Exponents & Scientific Notation","slug":"8th-grade-exponents-scientific-notation","url":"https://www.teacherspayteachers.com/Product/Exponent-Rules-Scientific-Notation-Bundle-8th-Grade-Math-Laws-of-Exponents-16735842","thumb":"thumb1_hero_8th_ExponentsSciNotation.png","sheets":[70,71,72,74],
-    "blurb":"The laws of exponents and scientific notation, aligned to 8.EE.A: exponent rules, negative and zero exponents, scientific notation conversion, and operations in scientific notation. Four 4-in-1 Skill Sheets, each moving from a reference page through sequenced practice and real-world application to a built-in exit ticket." },
+    "blurb":"The laws of exponents and scientific notation, aligned to 8.EE.A: exponent rules, negative and zero exponents, scientific notation conversion, and operations in scientific notation. Four 4-in-1 Skill Sheets, each moving from a guided Learn page through sequenced practice and real-world application to a built-in exit ticket." },
 
   { "id":"16735847","grade":"8","tier":"topic","name":"8th Grade Linear Equations & Slope","slug":"8th-grade-linear-equations-slope","url":"https://www.teacherspayteachers.com/Product/Linear-Equations-Slope-Bundle-8th-Grade-Math-Slope-Intercept-Form-16735847","thumb":"thumb1_hero_8th_LinearEquationsSlope.png","sheets":[65,66,75,76,77,79],
-    "blurb":"Solving linear equations and understanding slope, aligned to 8.EE.B and 8.EE.C: equations with rational coefficients, word problems, multi-step equations, one-none-or-infinite solutions, slope-intercept form, and proportional relationships. Six 4-in-1 Skill Sheets, each with a reference page, practice, application, and a built-in assessment." },
+    "blurb":"Solving linear equations and understanding slope, aligned to 8.EE.B and 8.EE.C: equations with rational coefficients, word problems, multi-step equations, one-none-or-infinite solutions, slope-intercept form, and proportional relationships. Six 4-in-1 Skill Sheets, each with a guided Learn page, practice, application, and a built-in assessment." },
 
   { "id":"16735850","grade":"8","tier":"topic","name":"8th Grade Systems of Equations","slug":"8th-grade-systems-of-equations","url":"https://www.teacherspayteachers.com/Product/Systems-of-Equations-Bundle-8th-Grade-Math-Substitution-Elimination-16735850","thumb":"thumb1_hero_8th_SystemsOfEquations.png","sheets":[80,82,83,103],
-    "blurb":"Solving systems of linear equations, aligned to 8.EE.C.8: systems by graphing, substitution, and elimination, plus real-world systems word problems. Four 4-in-1 Skill Sheets that build from the meaning of a solution to fluent algebraic methods, each with a reference page, practice, application, and an assessment." },
+    "blurb":"Solving systems of linear equations, aligned to 8.EE.C.8: systems by graphing, substitution, and elimination, plus real-world systems word problems. Four 4-in-1 Skill Sheets that build from the meaning of a solution to fluent algebraic methods, each with a guided Learn page, practice, application, and an assessment." },
 
   { "id":"16735852","grade":"8","tier":"strand","name":"8th Grade Expressions & Equations","slug":"8th-grade-expressions-equations","url":"https://www.teacherspayteachers.com/Product/8th-Grade-Expressions-Equations-Bundle-Exponents-Slope-Systems-8EE-16735852","thumb":"thumb1_hero_8th_ExpressionsEquations.png","sheets":[65,66,70,71,72,74,75,76,77,79,80,82,83,103],
-    "blurb":"The entire 8.EE strand in one bundle: exponents and scientific notation, linear equations, slope, and systems of equations. Fourteen 4-in-1 Skill Sheets spanning every expressions-and-equations standard in 8th grade, each with a reference page, scaffolded practice, real-world application, and a built-in exit ticket." },
+    "blurb":"The entire 8.EE strand in one bundle: exponents and scientific notation, linear equations, slope, and systems of equations. Fourteen 4-in-1 Skill Sheets spanning every expressions-and-equations standard in 8th grade, each with a guided Learn page, scaffolded practice, real-world application, and a built-in exit ticket." },
 
   { "id":"16735840","grade":"8","tier":"strand","name":"8th Grade Functions","slug":"8th-grade-functions","url":"https://www.teacherspayteachers.com/Product/8th-Grade-Functions-Bundle-Linear-Functions-Graphing-Comparing-8F-Math-16735840","thumb":"thumb1_hero_8th_Functions.png","sheets":[73,78,85,86,87],
-    "blurb":"The full 8.F strand: defining functions, graphing linear functions, comparing functions across representations, constructing linear functions, and describing graphs qualitatively. Five 4-in-1 Skill Sheets that build function reasoning from tables, graphs, and equations, each with a reference page, practice, application, and a built-in assessment." },
+    "blurb":"The full 8.F strand: defining functions, graphing linear functions, comparing functions across representations, constructing linear functions, and describing graphs qualitatively. Five 4-in-1 Skill Sheets that build function reasoning from tables, graphs, and equations, each with a guided Learn page, practice, application, and a built-in assessment." },
 
   { "id":"16735833","grade":"8","tier":"strand","name":"8th Grade The Number System","slug":"8th-grade-number-system","url":"https://www.teacherspayteachers.com/Product/8th-Grade-Number-System-Bundle-Rational-Irrational-Numbers-Square-Roots-16735833","thumb":"thumb1_hero_8th_NumberSystem.png","sheets":[68,81,84],
-    "blurb":"Rational and irrational numbers, square and cube roots, and approximating irrationals, aligned to 8.NS and 8.EE.A.2. This 8th grade Number System bundle delivers three 4-in-1 Skill Sheets that classify and estimate real numbers, each with a reference page, practice, application, and a built-in exit ticket." },
+    "blurb":"Rational and irrational numbers, square and cube roots, and approximating irrationals, aligned to 8.NS and 8.EE.A.2. This 8th grade Number System bundle delivers three 4-in-1 Skill Sheets that classify and estimate real numbers, each with a guided Learn page, practice, application, and a built-in exit ticket." },
 
   { "id":"16735861","grade":"8","tier":"strand","name":"8th Grade Geometry","slug":"8th-grade-geometry","url":"https://www.teacherspayteachers.com/Product/8th-Grade-Geometry-Bundle-Transformations-Pythagorean-Theorem-Volume-8G-16735861","thumb":"thumb1_hero_8th_Geometry.png","sheets":[88,89,90,91,92,93,94,95,96,97,98],
     "blurb":"The complete 8.G strand: transformations, congruence and similarity, angle relationships, the Pythagorean Theorem and its converse, distance, and volume of cones, cylinders, and spheres. Eleven 4-in-1 Skill Sheets covering all of 8th grade geometry, each with reference, practice, application, and a built-in assessment." },
 
   { "id":"16735854","grade":"8","tier":"topic","name":"8th Grade Transformations & Congruence","slug":"8th-grade-transformations-congruence","url":"https://www.teacherspayteachers.com/Product/8th-Grade-Transformations-Bundle-Translations-Reflections-Rotations-Dilations-16735854","thumb":"thumb1_hero_8th_TransformationsCongruence.png","sheets":[89,90,91,92,93,94,95],
-    "blurb":"Translations, reflections, rotations, dilations, congruence, similarity, and parallel lines cut by a transversal, aligned to 8.G.A. Seven 4-in-1 Skill Sheets that teach the coordinate effects of each transformation, each with a reference page, scaffolded practice, application, and a built-in exit ticket." },
+    "blurb":"Translations, reflections, rotations, dilations, congruence, similarity, and parallel lines cut by a transversal, aligned to 8.G.A. Seven 4-in-1 Skill Sheets that teach the coordinate effects of each transformation, each with a guided Learn page, scaffolded practice, application, and a built-in exit ticket." },
 
   { "id":"16735858","grade":"8","tier":"topic","name":"8th Grade Pythagorean Theorem & Volume","slug":"8th-grade-pythagorean-theorem-volume","url":"https://www.teacherspayteachers.com/Product/Pythagorean-Theorem-Volume-Bundle-8th-Grade-Math-Distance-Cones-Cylinders-16735858","thumb":"thumb1_hero_8th_PythagoreanVolume.png","sheets":[88,96,97,98],
-    "blurb":"The Pythagorean Theorem, its converse, distance on the coordinate plane, and the volume of cones, cylinders, and spheres, aligned to 8.G.B and 8.G.C. Four 4-in-1 Skill Sheets with clear diagrams and worked examples, each with a reference page, practice, application, and a built-in assessment." },
+    "blurb":"The Pythagorean Theorem, its converse, distance on the coordinate plane, and the volume of cones, cylinders, and spheres, aligned to 8.G.B and 8.G.C. Four 4-in-1 Skill Sheets with clear diagrams and worked examples, each with a guided Learn page, practice, application, and a built-in assessment." },
 
   { "id":"16735837","grade":"8","tier":"strand","name":"8th Grade Statistics & Probability","slug":"8th-grade-statistics-probability","url":"https://www.teacherspayteachers.com/Product/8th-Grade-Statistics-Bundle-Scatter-Plots-Line-of-Best-Fit-Two-Way-Tables-16735837","thumb":"thumb1_hero_8th_StatisticsProbability.png","sheets":[69,99,100,102],
-    "blurb":"The full 8.SP strand: scatter plots, lines of best fit, interpreting slope and intercept, and two-way tables. Four 4-in-1 Skill Sheets that teach students to model and interpret bivariate data, each with a reference page, scaffolded practice, real-world application, and a built-in exit ticket." },
+    "blurb":"The full 8.SP strand: scatter plots, lines of best fit, interpreting slope and intercept, and two-way tables. Four 4-in-1 Skill Sheets that teach students to model and interpret bivariate data, each with a guided Learn page, scaffolded practice, real-world application, and a built-in exit ticket." },
 
   { "id":"16515341","grade":"8","tier":"mega","name":"8th Grade Math MEGA Bundle","slug":"8th-grade-math-mega-bundle","url":"https://www.teacherspayteachers.com/Product/8th-Grade-Math-Worksheets-MEGA-Bundle-4-in-1-Skill-Sheets-37-Sheets-16515341","thumb":"8th Grade Full Skill Sheets Bundle Hero.png","sheets":[65,66,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,102,103],
-    "blurb":"Every 8th grade 4-in-1 Skill Sheet for the full year, all 37 skills across the number system, expressions and equations, functions, geometry, and statistics and probability. A complete Common Core aligned 8th grade math curriculum of reference pages, practice, application, and built-in assessments in one bundle." },
+    "blurb":"Every 8th grade 4-in-1 Skill Sheet for the full year, all 37 skills across the number system, expressions and equations, functions, geometry, and statistics and probability. A complete Common Core aligned 8th grade math curriculum of guided lessons, practice, application and exit tickets in one bundle." },
 
   { "id":"16515388","grade":"all","tier":"ultimate","name":"Middle School Math ULTIMATE Bundle","slug":"middle-school-math-ultimate-bundle","url":"https://www.teacherspayteachers.com/Product/Middle-School-Math-ULTIMATE-Bundle-103-Skill-Sheets-Grades-6-8-16515388","thumb":"Ultimate 6-8th Skill Sheets thumb 1.png","sheets":[],
-    "blurb":"Every 4-in-1 Skill Sheet for grades 6, 7, and 8 in a single bundle, all 103 skills covering the complete Common Core middle school math sequence. From 6th grade ratios to 8th grade functions and geometry, each skill is a full reference, practice, application, and assessment on one printable." }
+    "blurb":"Every 4-in-1 Skill Sheet for grades 6, 7, and 8 in a single bundle, all 103 skills covering the complete Common Core middle school math sequence. From 6th grade ratios to 8th grade functions and geometry, each skill is a full lesson: a guided student packet and an interactive Teacher Deck." }
 ];
 
 /* Skill Sheets v5 (live on TPT Sept 29 - Oct 3 2026): each sheet's packet and Teacher Deck numbers, thumbnail 1
@@ -2373,7 +2373,7 @@ SVG.mark = `<svg viewBox="0 0 100 100" aria-hidden="true" focusable="false">
 </svg>`;
 
 // Hero signature: the four-in-one quadrant mark, labeled with the method
-SVG.heroQuad = `<svg viewBox="0 0 460 460" role="img" aria-label="The 4-in-1 method: Reference, Practice, Apply, Assess arranged as four quadrants">
+SVG.heroQuad = `<svg viewBox="0 0 460 460" role="img" aria-label="The 4-in-1 lesson: Learn, Practice, Apply and Exit Ticket arranged as four quadrants">
   <defs>
     <linearGradient id="gld" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#e6be4f"/><stop offset="1" stop-color="#D4A017"/>
@@ -2387,13 +2387,13 @@ SVG.heroQuad = `<svg viewBox="0 0 460 460" role="img" aria-label="The 4-in-1 met
     <rect x="245" y="245" width="195" height="195" rx="20" fill="#2A4A7F"/>
     <!-- labels -->
     <text x="117" y="100" text-anchor="middle" fill="#fff" font-size="15" font-family="'IBM Plex Mono',monospace" letter-spacing="2">01</text>
-    <text x="117" y="135" text-anchor="middle" fill="#fff" font-size="30" font-weight="600">Reference</text>
+    <text x="117" y="135" text-anchor="middle" fill="#fff" font-size="30" font-weight="600">Learn</text>
     <text x="342" y="100" text-anchor="middle" fill="#1A3C34" font-size="15" font-family="'IBM Plex Mono',monospace" letter-spacing="2">02</text>
     <text x="342" y="135" text-anchor="middle" fill="#1A3C34" font-size="30" font-weight="600">Practice</text>
     <text x="117" y="325" text-anchor="middle" fill="#fff" font-size="15" font-family="'IBM Plex Mono',monospace" letter-spacing="2">03</text>
     <text x="117" y="360" text-anchor="middle" fill="#fff" font-size="30" font-weight="600">Apply</text>
     <text x="342" y="325" text-anchor="middle" fill="#fff" font-size="15" font-family="'IBM Plex Mono',monospace" letter-spacing="2">04</text>
-    <text x="342" y="360" text-anchor="middle" fill="#fff" font-size="30" font-weight="600">Assess</text>
+    <text x="342" y="360" text-anchor="middle" fill="#fff" font-size="26" font-weight="600">Exit Ticket</text>
   </g>
   <!-- center seal -->
   <circle cx="230" cy="230" r="48" fill="#1A3C34" stroke="#F7F5F0" stroke-width="6"/>
@@ -2443,6 +2443,9 @@ const ICON = {
 /* ============================================================================
    shared partials
    ============================================================================ */
+/* First title that fits the 70-character search-result limit (entities count as one character). */
+function fitTitle(cands) { return cands.find(t => t.length <= 70) || cands[cands.length - 1]; }
+
 function head(opts) {
   const title = opts.title;
   const desc = opts.desc;
@@ -2550,8 +2553,8 @@ function kitHero(opts) {
         <h2>${heading}</h2>
         <p class="kit-hero__lead">${lead}</p>
         <ul class="kit-hero__list">
-          <li>A complete lesson on one printable, not a watered-down sample</li>
-          <li>Reference, practice, real-world application, and an exit ticket with answer key</li>
+          <li>A complete lesson on one skill, not a watered-down sample</li>
+          <li>Guided notes, practice, real-world application, and an exit ticket with a worked answer key</li>
           <li>A 33-slide interactive teacher deck that reveals each step one click at a time</li>
         </ul>
         <p class="kit-hero__reassure">No spam. Unsubscribe in one click anytime.</p>
@@ -2583,7 +2586,7 @@ function footer(opts) {
           <span class="brand__mark" style="width:30px;height:30px">${SVG.mark}</span>
           <span class="brand__text"><span class="brand__name">math class 678</span></span>
         </a>
-        <p>4-in-1 Skill Sheets for grades 6, 7, and 8 Common Core math. One skill, one complete lesson: Reference, Practice, Apply, Assess.</p>
+        <p>4-in-1 Skill Sheets for grades 6, 7, and 8 Common Core math. One skill, one complete lesson: a guided student packet and an interactive Teacher Deck.</p>
       </div>
       <div>
         <h4>Browse</h4>
@@ -2652,7 +2655,7 @@ function productCard(p) {
         <div class="pcard__art-body">
           <span class="pcard__art-quad">${SVG.cardQuad}</span>
           <span class="pcard__art-skill">${esc(p.name)}</span>
-          <span class="pcard__art-sub">Reference · Practice · Apply · Assess</span>
+          <span class="pcard__art-sub">Learn · Practice · Apply · Exit Ticket</span>
         </div>
         <div class="pcard__art-bottom"></div>
       </div>`;
@@ -2680,7 +2683,7 @@ function productCard(p) {
 const FAQ = [
   {
     q: 'What is a 4-in-1 Skill Sheet?',
-    a: `Each sheet covers one Common Core standard and moves a student through four phases: a guided Reference page with fill-in notes, a worked example and a Watch Out error pair; ${NUMW[SS_PRACTICE]} Practice problems from warm-up to stretch, with an answer bank for self-checking; Apply, with ${NUMW[SS_WORD]} real-world problems and an error analysis; and an Assess exit ticket with an I-can self-rating. It comes as ${SS_KIT}, with speaker notes on every problem.`
+    a: `Each sheet covers one Common Core standard and moves a student through four phases: a guided Learn page with fill-in notes, a worked example and a Watch Out error pair; ${NUMW[SS_PRACTICE]} Practice problems from warm-up to stretch, with an answer bank for self-checking; Apply, with ${NUMW[SS_WORD]} real-world problems and an error analysis; and an Exit Ticket with an I-can self-rating. It comes as ${SS_KIT}, with speaker notes on every problem.`
   },
   {
     q: 'Can I print just one standard at a time?',
@@ -2879,8 +2882,8 @@ function pageHome() {
   const ratingSchema = orgReviewSchema;
 
   return head({
-    title: 'Math Class 678 — 4-in-1 Skill Sheets for Grades 6, 7, 8 Common Core Math',
-    desc: 'A complete catalog of 4-in-1 Skill Sheets for middle school math. One skill per sheet, four learning phases: Reference, Practice, Apply, Assess. Checked by a 25-year teacher.',
+    title: 'Math Class 678 — 4-in-1 Skill Sheets for Grades 6–8 Common Core Math',
+    desc: 'Skill sheets for grades 6–8 math: one Common Core skill per lesson, with a guided student packet and an interactive Teacher Deck. Checked by a 25-year teacher.',
     path: 'index.html',
     jsonld: JSON.stringify([{
       '@context': 'https://schema.org',
@@ -2918,8 +2921,8 @@ function pageHome() {
     <div class="wrap hero__inner">
       <div class="hero__copy">
         <span class="eyebrow hero__eyebrow">${counts.all} sheets · grades 6–8 · CCSS</span>
-        <h1><span class="phase gold">Reference.</span> Practice.<br>Apply. <span class="phase">Assess.</span></h1>
-        <p class="hero__lead">Standards-aligned 4-in-1 Skill Sheets for grades 6, 7, and 8 math, checked by a teacher with 25 years in the classroom. Every skill as a full lesson: a guided reference page, ${NUMW[SS_PRACTICE]} practice problems, application problems and a built-in exit ticket, plus an interactive Teacher Deck that builds every step click by click.</p>
+        <h1><span class="phase gold">Learn.</span> Practice.<br>Apply. <span class="phase">Exit ticket.</span></h1>
+        <p class="hero__lead">Standards-aligned 4-in-1 Skill Sheets for grades 6, 7, and 8 math, checked by a teacher with 25 years in the classroom. Every skill as a full lesson: a guided Learn page, ${NUMW[SS_PRACTICE]} practice problems, application problems and a built-in exit ticket, plus an interactive Teacher Deck that builds every step click by click.</p>
         <div class="hero__cta">
           <a class="btn btn--primary" href="/catalog.html">Browse all sheets ${ICON.arrow}</a>
           <a class="btn btn--on-dark" href="/free.html">Free resources</a>
@@ -2927,7 +2930,7 @@ function pageHome() {
         <div class="hero__meta">
           <span class="hero__stat"><b>${counts.all}</b><span>Skill sheets</span></span>
           <span class="hero__stat"><b>6–8</b><span>Grade bands</span></span>
-          <span class="hero__stat"><b>4</b><span>Phases per sheet</span></span>
+          <span class="hero__stat"><b>4</b><span>Phases per lesson</span></span>
           <span class="hero__stat"><b>25 yr</b><span>Classroom-built</span></span>
         </div>
       </div>
@@ -2937,9 +2940,18 @@ function pageHome() {
 
   ${kitHero({ heading: 'Start with a free skill sheet', lead: 'Enter your email and I\u2019ll send you the Order of Operations 4-in-1 Skill Sheet for 6th grade \u2014 a complete lesson with an interactive teacher deck. See exactly how the format works before you spend a dollar.' })}
 
-  <!-- METHOD BANNER -->
-  <section class="method-banner">
-    <img src="/assets/images/method_banner.png" alt="The 4-in-1 Method: Reference, Practice, Apply, Assess — four learning phases on one skill sheet" class="method-banner__img" width="1600" height="534" fetchpriority="high" decoding="async">
+  <!-- METHOD STRIP -->
+  <section class="method-strip" aria-label="The four phases of every lesson">
+    <div class="wrap">
+      <p class="method-strip__eyebrow">The 4-in-1 lesson</p>
+      <ol class="method-strip__row">
+        <li class="method-strip__step method-strip__step--teal"><span class="method-strip__n">01</span><b>Learn</b><span>Guided notes · Key rule · Worked example</span></li>
+        <li class="method-strip__step method-strip__step--gold"><span class="method-strip__n">02</span><b>Practice</b><span>${NUMW[SS_PRACTICE].charAt(0).toUpperCase() + NUMW[SS_PRACTICE].slice(1)} problems · Answer bank</span></li>
+        <li class="method-strip__step method-strip__step--coral"><span class="method-strip__n">03</span><b>Apply</b><span>Real-world problems · Error analysis</span></li>
+        <li class="method-strip__step method-strip__step--navy"><span class="method-strip__n">04</span><b>Exit Ticket</b><span>I-can self-rating · Worked answer key</span></li>
+      </ol>
+      <p class="method-strip__note">One skill per lesson: a ${SS_PAGES}-page student packet and an interactive Teacher Deck, every standard for grades 6 to 8.</p>
+    </div>
   </section>
 
   <!-- PRODUCT SPREAD -->
@@ -2947,10 +2959,10 @@ function pageHome() {
     <div class="wrap spread__grid">
       <div class="spread__copy reveal">
         <span class="eyebrow">What's inside</span>
-        <h2>A complete lesson in one printable</h2>
+        <h2>A complete lesson on one skill</h2>
         <p>Every 4-in-1 Skill Sheet carries a full lesson on one standard — ${SS_KIT}, sequenced from first instruction to formative check. Everything you need for the skill, nothing from the next one.</p>
         <ul class="spread__list">
-          <li>A guided Reference page: words to own, the key rule, a worked example and a Watch Out error pair, filled in as you teach</li>
+          <li>A guided Learn page: words to own, the key rule, a worked example and a Watch Out error pair, filled in as you teach</li>
           <li>${NUMW[SS_PRACTICE].charAt(0).toUpperCase() + NUMW[SS_PRACTICE].slice(1)} practice problems (${NUMW[SS_WARM]} warm-up, ${NUMW[SS_STD]} standard, ${NUMW[SS_STRETCH]} stretch) with an answer bank for self-checking</li>
           <li>${NUMW[SS_WORD].charAt(0).toUpperCase() + NUMW[SS_WORD].slice(1)} real-world problems and an error analysis</li>
           <li>An exit ticket, two per page, with an I-can self-rating, and a fully worked answer key with the common mistakes</li>
@@ -2958,7 +2970,7 @@ function pageHome() {
         </ul>
       </div>
       <div class="reveal">
-        <img src="/assets/images/product_spread.jpg" alt="Four pages of a 4-in-1 Skill Sheet spread out: reference page, guided practice, real-world application, and exit ticket" class="spread__img" width="1440" height="960" loading="lazy" decoding="async">
+        <img src="/assets/images/thumbs_v5/1.jpg" alt="Order of Operations skill sheet for 6th grade: the student packet and the interactive Teacher Deck" class="spread__img spread__img--square" width="640" height="640" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
@@ -3171,8 +3183,8 @@ function pageCatalog() {
   const sorted = products.slice().sort((a, b) => (a.grade - b.grade) || (Number(a.num) - Number(b.num)));
 
   return head({
-    title: 'Middle School Math Skill Sheets — Grades 6, 7 & 8 CCSS | Math Class 678',
-    desc: `Browse all ${counts.all} 4-in-1 Skill Sheets for middle school math — grades 6, 7, and 8, aligned to Common Core. Filter by grade, strand, or standard. Every sheet links directly to Teachers Pay Teachers.`,
+    title: 'Middle School Math Skill Sheets — Grades 6–8 CCSS | Math Class 678',
+    desc: `Browse all ${counts.all} 4-in-1 Skill Sheets for grades 6, 7 and 8 math, aligned to Common Core. Filter by grade, strand or standard; each links to TPT.`,
     path: 'catalog.html',
     jsonld: breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Catalog', url: '/catalog.html' }])
   }) + nav('catalog') + `
@@ -3328,7 +3340,7 @@ function pageGrade(grade) {
 
   return head({
     title: `${gO} Grade Math Skill Sheets — ${n} CCSS-Aligned Lessons | Math Class 678`,
-    desc: `${n} printable 4-in-1 Skill Sheets for ${gO} grade math, aligned to Common Core. Reference, practice, application, and assessment on one sheet per standard.`,
+    desc: `${n} 4-in-1 Skill Sheets for ${gO} grade math, aligned to Common Core. One standard per lesson: a guided student packet plus an interactive Teacher Deck.`,
     path: `grade-${grade}.html`,
     jsonld
   }) + nav('catalog') + `
@@ -3356,7 +3368,7 @@ function pageGrade(grade) {
       <div class="hero__meta" style="margin-top:1.6rem">
         <span class="hero__stat"><b>${n}</b><span>Skill sheets</span></span>
         <span class="hero__stat"><b>${present.length}</b><span>Strands covered</span></span>
-        <span class="hero__stat"><b>4</b><span>Phases per sheet</span></span>
+        <span class="hero__stat"><b>4</b><span>Phases per lesson</span></span>
       </div>
     </div>
   </section>
@@ -3423,7 +3435,7 @@ function pageFree() {
 
   return head({
     title: 'Free Middle School Math Resources — Grades 6, 7 & 8 | Math Class 678',
-    desc:  'Free 4-in-1 Skill Sheets and classroom resources for middle school math teachers, grades 6–8. Order of Operations, Combining Like Terms, anchor charts, curriculum maps, back-to-school tools, and more.',
+    desc:  'Free skill sheets and classroom resources for grades 6–8 math: a full lesson for each grade, anchor charts, curriculum maps and back-to-school tools.',
     path:  'free.html',
     jsonld: breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Free Resources', url: '/free.html' }])
   }) + nav('free') + `
@@ -3487,7 +3499,7 @@ function pageFree() {
       <div class="method__head reveal" style="margin-bottom:1.6rem">
         <span class="eyebrow">Full catalog</span>
         <h2>Ready to go further</h2>
-        <p>103 4-in-1 Skill Sheets across grades 6\u20138. One skill per sheet, four learning phases, Common Core aligned.</p>
+        <p>${counts.all} 4-in-1 Skill Sheets across grades 6\u20138. One skill per lesson, four learning phases, Common Core aligned.</p>
       </div>
       <a class="btn btn--ghost" href="/catalog.html">Browse the full catalog ${ICON.arrow}</a>
     </div>
@@ -3519,7 +3531,7 @@ function pageAbout() {
 
   return head({
     title: 'About the Teacher — Middle School Math Skill Sheets | Math Class 678',
-    desc: 'Math Class 678 is run by Greg, a teacher with 25 years in middle school math. Every 4-in-1 Skill Sheet covers one Common Core standard for grades 6–8 and is checked by him.',
+    desc: 'Math Class 678 is run by Greg, a teacher with 25 years in middle school math. Every skill sheet covers one Common Core standard and is checked by him.',
     path: 'about.html',
     jsonld: founderSchema
   }) + nav('about') + `
@@ -3544,7 +3556,7 @@ function pageAbout() {
         </blockquote>
 
         <h2>Why one sheet per skill</h2>
-        <p>Middle-school math breaks down into discrete, teachable skills, and each Common Core standard deserves its own complete treatment. Bundle ten skills into a forty-page packet and the structure of the math disappears; the student cannot see where one idea ends and the next begins. Split a single skill across a reference sheet, a worksheet, and a separate quiz and you spend the period hunting through three files. The 4-in-1 format keeps the whole arc of a skill — see it, practice it, apply it, prove it — in one printable you can hand out in thirty seconds.</p>
+        <p>Middle-school math breaks down into discrete, teachable skills, and each Common Core standard deserves its own complete treatment. Bundle ten skills into a forty-page packet and the structure of the math disappears; the student cannot see where one idea ends and the next begins. Split a single skill across a reference sheet, a worksheet, and a separate quiz and you spend the period hunting through three files. The 4-in-1 format keeps the whole arc of a skill — learn it, practice it, apply it, prove it — in one packet you can hand out in thirty seconds, with a Teacher Deck that teaches it on screen.</p>
 
         <h2>The mistakes are the part you cannot fake</h2>
         <p>Practice problems are the easy part. What twenty-five years actually buys you is knowing exactly how a thirteen-year-old will get a problem wrong. When students distribute, a predictable share of them will multiply the first term and forget the second. When they write inequalities, they will reverse the symbol for "at least." Those specific, recurring errors are built into every sheet as a Watch Out pair on the reference page and an error-analysis problem in Apply — because the hardest part of teaching a skill is not explaining it right, it is catching it going wrong.</p>
@@ -3566,7 +3578,7 @@ function pageAbout() {
         <div class="stat-row"><b>${counts[6]}</b><span>Sixth-grade sheets</span></div>
         <div class="stat-row"><b>${counts[7]}</b><span>Seventh-grade sheets</span></div>
         <div class="stat-row"><b>${counts[8]}</b><span>Eighth-grade sheets</span></div>
-        <div class="stat-row"><b>4</b><span>Learning phases on every sheet</span></div>
+        <div class="stat-row"><b>4</b><span>Learning phases in every lesson</span></div>
         </div>
         <figure class="about__figure about__figure--secondary">
           <img src="/assets/images/about_workspace.jpg" alt="A teacher's organized desk with a stack of skill sheets, open lesson planner, calculator, and warm afternoon light" class="about__photo" width="1440" height="960" loading="lazy" decoding="async">
@@ -3684,9 +3696,9 @@ function pageGetStarted() {
       <div class="landing-hero__copy reveal">
         <span class="eyebrow">Free 4-in-1 Skill Sheet</span>
         <h1>A complete math lesson, on the house</h1>
-        <p class="landing-hero__lead">Sign up and I'll send you the <strong>Order of Operations</strong> 4-in-1 Skill Sheet for 6th grade — the full sheet, in the same format as every paid sheet. One standard, one printable, the whole lesson in your hand.</p>
+        <p class="landing-hero__lead">Sign up and I'll send you the <strong>Order of Operations</strong> 4-in-1 Skill Sheet for 6th grade — the full lesson, in the same format as every paid sheet. One standard, a 7-page packet and a Teacher Deck, the whole lesson in your hand.</p>
         <ul class="landing__list">
-          <li><strong>Reference page</strong> students keep — definitions, rules, a worked example, and a visual model</li>
+          <li><strong>A guided Learn page</strong> — definitions, the key rule, a worked example and a Watch Out error pair</li>
           <li><strong>Six scaffolded practice problems</strong> (two warm-up, two standard, two stretch) after a worked example</li>
           <li><strong>Real-world application</strong> problems that match how students actually see the skill</li>
           <li><strong>Exit ticket</strong> with a full answer key, so you know who is ready before tomorrow</li>
@@ -3711,7 +3723,7 @@ function pageGetStarted() {
     <div class="wrap landing-trust__row">
       <div class="landing-trust__item"><b>25</b><span>Years in the classroom</span></div>
       <div class="landing-trust__item"><b>${counts.all}</b><span>Skill sheets, grades 6–8</span></div>
-      <div class="landing-trust__item"><b>4</b><span>Phases on every sheet</span></div>
+      <div class="landing-trust__item"><b>4</b><span>Phases in every lesson</span></div>
       <div class="landing-trust__item"><b>CCSS</b><span>Aligned to the standards</span></div>
     </div>
   </section>
@@ -3746,7 +3758,7 @@ function sheetAlt(p) {
   const gO = gradeOrdinal(p.grade);
   const strand = (typeof STRAND_NAME !== 'undefined' && STRAND_NAME[p.strand]) ? STRAND_NAME[p.strand] : '';
   const strandPart = strand ? `${strand}, ` : '';
-  return `${gO} grade math ${p.name} 4-in-1 Skill Sheet \u2014 ${strandPart}Common Core standard ${p.ccss}. Reference, practice, application, and assessment on one printable from Math Class 678.`;
+  return `${gO} grade math ${p.name} 4-in-1 Skill Sheet \u2014 ${strandPart}Common Core standard ${p.ccss}. A guided student packet and an interactive Teacher Deck from Math Class 678.`;
 }
 
 /* Reusable breadcrumb: visible nav + matching BreadcrumbList JSON-LD.
@@ -3790,7 +3802,7 @@ function sheetJsonLd(p) {
     description: p.about,
     url: canonical,
     image: img,
-    learningResourceType: '4-in-1 Skill Sheet (Reference, Practice, Apply, Assess)',
+    learningResourceType: '4-in-1 Skill Sheet (Learn, Practice, Apply, Exit Ticket)',
     educationalUse: ['instruction', 'practice', 'assessment'],
     educationalLevel: `Grade ${p.grade}`,
     teaches: p.ccssText || p.name,
@@ -3849,6 +3861,8 @@ function pageStandard(std) {
     '7.EE.A.1': 'Like Terms & the Distributive Property',
     '6.NS.B.4': 'Greatest Common Factor & LCM',
     '6.NS.C.7': 'Comparing Rationals & Absolute Value',
+    '6.EE.B.5+B.6': 'Solutions to Equations & Variables',
+    '6.NS.C.5+C.6a': 'Positive & Negative Numbers',
   };
   const titleBase = STD_TITLE_SHORT[ccss] || std.title;
   const title    = `${titleBase} — ${ccss} | Math Class 678`;
@@ -3897,7 +3911,7 @@ function pageStandard(std) {
         <div class="std-sheet-cta__media">
           <div class="pcard__art" aria-hidden="true">
             <div class="pcard__art-top"><span class="pcard__art-eyebrow">4-in-1 Skill Sheet</span><span class="pcard__art-wm">${esc(p.gradeLabel)}</span></div>
-            <div class="pcard__art-body"><span class="pcard__art-quad">${SVG.cardQuad}</span><span class="pcard__art-skill">${esc(p.name)}</span><span class="pcard__art-sub">Reference · Practice · Apply · Assess</span></div>
+            <div class="pcard__art-body"><span class="pcard__art-quad">${SVG.cardQuad}</span><span class="pcard__art-skill">${esc(p.name)}</span><span class="pcard__art-sub">Learn · Practice · Apply · Exit Ticket</span></div>
             <div class="pcard__art-bottom"></div>
           </div>
           ${p.hasThumb ? `<img src="${p.thumbWeb}" alt="${esc(sheetAlt(p))}" width="600" height="600" loading="lazy" decoding="async" onerror="this.style.display='none'">` : ''}
@@ -4003,7 +4017,8 @@ function pageSheet(p, prev, next) {
   const ogImg = p.hasThumb ? p.thumbAbs : (SITE_URL + '/assets/images/og_image.png');
   const gO = gradeOrdinal(p.grade);
   // SEO title + meta description
-  const title = `${p.name} — ${gO} Grade Math Skill Sheet (${p.ccss}) | Math Class 678`;
+  const title = fitTitle([`${p.name} | ${gO} Grade Math Worksheet & Guided Notes (${p.ccss})`, `${p.name} | ${gO} Grade Math Worksheet (${p.ccss})`,
+    `${p.name} | ${gO} Grade Math Worksheet & Guided Notes`, `${p.name} | ${gO} Grade Math Worksheet`, `${p.name} | ${gO} Grade Math`]);
   const metaDesc = (p.about.length > 158 ? p.about.slice(0, 155).trim() + '…' : p.about);
 
   const cta = p.live
@@ -4044,7 +4059,7 @@ function pageSheet(p, prev, next) {
           <div class="pcard__art-body">
             <span class="pcard__art-quad">${SVG.cardQuad}</span>
             <span class="pcard__art-skill">${esc(p.name)}</span>
-            <span class="pcard__art-sub">Reference · Practice · Apply · Assess</span>
+            <span class="pcard__art-sub">Learn · Practice · Apply · Exit Ticket</span>
           </div>
           <div class="pcard__art-bottom"></div>
         </div>
@@ -4085,7 +4100,7 @@ ${(() => {
         <div class="sheet-block">
           <h2>The interactive Teacher Deck (${v.slides} slides, PowerPoint)</h2>
           <ul class="cr-list">
-            <li>The Reference page taught on screen: ${v.blanks} fill-in blanks, each filled on its own click as students write it</li>
+            <li>The Learn page taught on screen: ${v.blanks} fill-in blanks, each filled on its own click as students write it</li>
             <li>The worked example one slide per step (${n(v.we_steps)} steps), each with the reason for the step</li>
             <li>${n(v.n_practice).replace(/^./, c => c.toUpperCase())} practice and ${n(v.n_apply)} apply problems: a your-turn slide with a think-time bar, then the solution one line per click</li>
             <li>Speaker notes on each problem: the question to ask, the worked answer and the common error to listen for</li>
@@ -4095,7 +4110,7 @@ ${(() => {
         <div class="sheet-block">
           <h2>The student packet (${v.pages} pages)</h2>
           <ul class="cr-list">
-            <li><strong>Reference</strong>: guided notes with ${n(v.n_defs)} definitions, the key rule, a worked example and a Watch Out error pair</li>
+            <li><strong>Learn</strong>: guided notes with ${n(v.n_defs)} definitions, the key rule, a worked example and a Watch Out error pair</li>
             <li><strong>Practice</strong>: ${n(v.warm)} warm-up, ${n(v.standard)} standard and ${n(v.stretch)} stretch problems, with an answer bank for self-checking</li>
             <li><strong>Apply</strong>: ${n(v.n_word)} real-world problems and ${n(v.n_error)} error analysis</li>
             <li><strong>Assess</strong>: an exit ticket of ${n(v.n_exit)} items, two per page, with an I-can self-rating</li>
@@ -4228,7 +4243,8 @@ function bundleJsonLd(b) {
 
 function pageBundle(b, prev, next) {
   const gradeCls = b.grade === 'all' ? 'sheet--ultimate' : `sheet--${b.grade}`;
-  const title = `${b.name} Bundle — ${b.count} 4-in-1 Skill Sheets (${b.grade === 'all' ? 'Grades 6\u20138' : b.gradeLabel}) | Math Class 678`;
+  const bn = /bundle$/i.test(b.name) ? b.name : `${b.name} Bundle`;
+  const title = fitTitle([`${bn} — ${b.count} Skill Sheets | Math Class 678`, `${bn} — ${b.count} Skill Sheets`, `${bn} | Math Class 678`, bn]);
   const metaDesc = b.blurb.length > 158 ? b.blurb.slice(0, 155).trim() + '\u2026' : b.blurb;
   const cta = `<a class="btn btn--primary sheet__tpt" href="${b.url}" target="_blank" rel="noopener" aria-label="View ${esc(b.name)} bundle on Teachers Pay Teachers">View bundle on Teachers Pay Teachers ${ICON.ext}</a>`;
   const navPrev = prev ? `<a class="sheetnav__link sheetnav__prev" href="${prev.pageUrl}"><span class="sheetnav__dir">Previous bundle</span><span class="sheetnav__name">${esc(prev.name)}</span></a>` : '<span class="sheetnav__link is-empty"></span>';
@@ -4277,7 +4293,7 @@ function pageBundle(b, prev, next) {
     <div class="wrap">
       <div class="sheet-block">
         <h2>What is inside this bundle</h2>
-        <p>${b.count} complete 4-in-1 Skill Sheets. Each one is a single printable that takes students through a color Reference page, scaffolded Practice, real-world Apply problems, and an Assess exit ticket with a full answer key. Select any skill below to see its standard and details.</p>
+        <p>${b.count} complete 4-in-1 Skill Sheets. Each one is a full lesson on one skill: ${SS_KIT}. The packet takes students through a guided Learn page, scaffolded Practice, real-world Apply problems and an Exit Ticket. Select any skill below to see its standard and details.</p>
       </div>
       <div class="card-grid">
         ${b.members.map(productCard).join('\n')}
@@ -4307,8 +4323,8 @@ function pageBundles() {
     </section>`;
   };
   return head({
-    title: 'Middle School Math Skill Sheet Bundles — Grades 6, 7 & 8 | Math Class 678',
-    desc: 'Save with 4-in-1 Skill Sheet bundles for grades 6, 7, and 8: strand bundles, topic bundles, full-year MEGA bundles, and the complete 103-sheet ULTIMATE bundle. All aligned to Common Core.',
+    title: 'Middle School Math Skill Sheet Bundles — Grades 6–8 | Math Class 678',
+    desc: `Skill sheet bundles for grades 6, 7 and 8: strand and topic bundles, full-year MEGA bundles and the ${counts.all}-sheet ULTIMATE bundle, aligned to Common Core.`,
     path: 'bundles.html',
     jsonld: breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Bundles', url: '/bundles.html' }])
   }) + nav('bundles') + `
@@ -4383,8 +4399,8 @@ function pageWordWall(){
   };
   const switchLinks = GLOSSARY_GRADES.map(g => `<a class="gloss-switch__link gloss-switch__link--${GLOSSARY_ACCENT[g]}" href="#ww-${g.toLowerCase()}">${glossGradeLabel(g)}</a>`).join('');
   return head({
-    title:'Grades 5–8, Algebra 1 & Geometry Math Word Wall — Free Vocabulary Glossary | Math Class 678',
-    desc:`A free math vocabulary glossary for grades 5\u20138, Algebra 1, and Geometry \u2014 ${total} terms with student-friendly definitions, worked examples, and key rules. Printable Word Wall cards available on TPT.`,
+    title:'Math Word Wall Glossary — Grades 5–8, Algebra 1 & Geometry | Free',
+    desc:`A free math vocabulary glossary for grades 5\u20138, Algebra 1, and Geometry \u2014 ${total} terms with student-friendly definitions, worked examples and key rules.`,
     path:'word-wall.html',
     jsonld: breadcrumbSchema([{name:'Home',url:'/'},{name:'Word Wall',url:'/word-wall.html'}])
   }) + nav('word-wall') + `
@@ -4607,7 +4623,7 @@ function pageFreebie(f){
   }).replace(/</g,'\\u003c');
   const bcSchema = breadcrumbSchema([{name:'Home',url:'/'},{name:'Free Resources',url:'/free.html'},{name:f.name,url:f.pageUrl}]);
   return head({
-    title:`${f.name} \u2014 Free ${f.gradeLabel} Math Download | Math Class 678`,
+    title:(() => { const nm = f.name.replace(/\s*\(?\bFREE\b\)?\s*/g, ' ').trim(); return fitTitle([`${nm} \u2014 Free ${f.gradeLabel} Math Download | Math Class 678`, `${nm} \u2014 Free ${f.gradeLabel} Math Download`, `${nm} | Free Download`, nm]); })(),
     desc:`Get ${f.fullTitle} free. Enter your email and we\u2019ll send you straight to the download on Teachers Pay Teachers.`.slice(0,158),
     path:'free/'+f.slug+'.html',
     jsonld:'['+offer+','+bcSchema+']'
@@ -7109,7 +7125,8 @@ console.log('  Site asset images bundled:', siteImgCount);
     /\bauthor of the Math Class 678\b/i, /one-teacher studio/i, /not a content farm/i, /two-color system/i];
   // v1.19.0: grades 6-8 are v5 (7-page packet, 31-33 slide interactive deck); the v4 description can't come back.
   // v1.20.0: Algebra 1 is v5 too (live Oct 4-6 2026), so no page is exempt.
-  const BANNED_V4 = [/14-slide/i, /fourteen-slide/i, /four-page (student )?packet/i, /notebook insert/i, /two-page answer key/i];
+  const BANNED_V4 = [/14-slide/i, /fourteen-slide/i, /four-page (student )?packet/i, /notebook insert/i, /two-page answer key/i,
+    /Reference[,.]? ·? ?Practice[,.]? ·? ?Apply/i, /\bAssess (exit ticket|page)/i, /(one|single) printable/i, /color Reference page/i, /method_banner\.png/, /product_spread\.jpg/];
   const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : e.name.endsWith('.html') ? [path.join(d, e.name)] : []);
   const hits = [];
   for (const f of walk(DIST)) {
