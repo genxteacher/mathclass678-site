@@ -1308,6 +1308,17 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .gloss-where__grp{ margin-bottom:.9rem; } .gloss-where__grp h3{ font-size:var(--fs-xs); text-transform:uppercase; letter-spacing:.05em; color:var(--charcoal-soft); margin:0 0 .45rem; }
 .gloss-where__chips{ display:flex; flex-wrap:wrap; gap:.4rem; }
 .gloss-where__unit{ font-weight:600; color:var(--forest); margin:0; }
+/* --- "Teach it" band on term pages: the skill sheets that teach the term (v1.24.0) --- */
+.gloss-block--teach{ border-left:4px solid var(--gold); }
+.gloss-teach__lead{ margin:0 0 .8rem; font-size:var(--fs-sm); color:var(--charcoal-soft); }
+.gloss-teach{ list-style:none; margin:0; padding:0; display:grid; gap:.55rem; }
+.gloss-teach__item{ display:grid; grid-template-columns:1fr auto; column-gap:.75rem; align-items:center; padding:.75rem .9rem; border:1px solid var(--line); border-radius:10px; color:var(--forest); text-decoration:none; transition:border-color .15s ease, background .15s ease; }
+.gloss-teach__item:hover,.gloss-teach__item:focus-visible{ border-color:var(--gold); background:var(--offwhite-warm); }
+.gloss-teach__item svg{ grid-column:2; grid-row:1 / span 2; width:16px; height:16px; }
+.gloss-teach__name{ font-family:var(--display); font-weight:600; font-size:1.05rem; }
+.gloss-teach__meta{ font-size:var(--fs-xs); color:var(--charcoal-soft); }
+.gloss-teach__code{ font-family:var(--mono); }
+.gloss-teach__free{ color:var(--forest); font-weight:600; }
 
 /* --- Key Vocabulary retrofit chips (standards / sheet / bundle sidebars) --- */
 .keyvocab{ margin-top:1rem; } .keyvocab h3,.keyvocab .std-side-block__title{ margin-bottom:.55rem; }
