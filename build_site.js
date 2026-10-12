@@ -2662,8 +2662,6 @@ const FREE_RESOURCES = [
   { key:'smart-goals-6th',      title:'SMART Goals Worksheet',            sub:'Back to School Goal Setting',          grade:6,     gradeLabel:'6th Grade',       cat:'Back to School',        thumb:'free_smart-goals-6th.jpg',           url:'https://www.teacherspayteachers.com/Product/6th-Grade-Math-SMART-Goals-FREE-Back-to-School-Goal-Setting-Worksheet-16506706' },
   { key:'smart-goals-7th',      title:'SMART Goals Worksheet',            sub:'Back to School Goal Setting',          grade:7,     gradeLabel:'7th Grade',       cat:'Back to School',        thumb:'free_smart-goals-7th.jpg',           url:'https://www.teacherspayteachers.com/Product/7th-Grade-Math-SMART-Goals-FREE-Back-to-School-Goal-Setting-Worksheet-16506713' },
   { key:'smart-goals-8th',      title:'SMART Goals Worksheet',            sub:'Back to School Goal Setting',          grade:8,     gradeLabel:'8th Grade',       cat:'Back to School',        thumb:'free_smart-goals-8th.jpg',           url:'https://www.teacherspayteachers.com/Product/8th-Grade-Math-SMART-Goals-FREE-Back-to-School-Goal-Setting-Worksheet-16506718' },
-  { key:'about-me-6th',         title:'Math About Me Activity',           sub:'Back to School First Day',             grade:6,     gradeLabel:'6th Grade',       cat:'Back to School',        thumb:'free_about-me-6th.jpg',              url:'https://www.teacherspayteachers.com/Product/6th-Grade-Math-About-Me-Back-to-School-First-Day-Activity-FREE-16495648' },
-  { key:'about-me-7th',         title:'Math About Me Activity',           sub:'Back to School First Day',             grade:7,     gradeLabel:'7th Grade',       cat:'Back to School',        thumb:'free_about-me-7th.jpg',              url:'https://www.teacherspayteachers.com/Product/7th-Grade-Math-About-Me-Back-to-School-First-Day-Activity-FREE-16495649' },
   // Classroom & Planning
   { key:'year-at-a-glance-6th', title:'Year at a Glance',                 sub:'I Can Checklist + CCSS Curriculum Map',grade:6,     gradeLabel:'6th Grade',       cat:'Classroom & Planning',  thumb:'free_year-at-a-glance-6th.jpg',      url:'https://www.teacherspayteachers.com/Product/6th-Grade-Math-Year-at-a-Glance-FREE-I-Can-Checklist-CCSS-Curriculum-Map-16495554' },
   { key:'year-at-a-glance-7th', title:'Year at a Glance',                 sub:'I Can Checklist + CCSS Curriculum Map',grade:7,     gradeLabel:'7th Grade',       cat:'Classroom & Planning',  thumb:'free_year-at-a-glance-7th.jpg',      url:'https://www.teacherspayteachers.com/Product/7th-Grade-Math-Year-at-a-Glance-FREE-I-Can-Checklist-CCSS-Curriculum-Map-16495555' },
@@ -3314,7 +3312,7 @@ function pageFree() {
       key:    'Back to School',
       eyebrow:'Back to School',
       h2:     'Start the year strong',
-      desc:   'Diagnostic tools, goal-setting worksheets, and first-day activities — everything you need for day one and the weeks that follow.'
+      desc:   'A day-one diagnostic and goal-setting worksheets — everything you need for the first week and the weeks that follow.'
     },
     {
       key:    'Classroom & Planning',
@@ -6107,6 +6105,8 @@ const RETIRED_LINE_REDIRECTS = [
   ['/free/free-combining-like-terms-poster', '/free.html'],
   ['/free/free-pythagorean-theorem-poster', '/free.html'],
   ['/free/middle-school-math-word-wall', '/free.html'],
+  ['/free/6th-grade-math-about-me', '/free.html'],
+  ['/free/7th-grade-math-about-me', '/free.html'],
 ].flatMap(([from, to]) => [[from, to], [from + '.html', to]])
   .concat([['/money-labs/*', '/i-can/personal-finance.html']])
   .map(([from, to]) => `${from}   ${to}   301!`).join('\n') + '\n';

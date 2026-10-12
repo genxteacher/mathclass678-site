@@ -1,5 +1,5 @@
 {
-  "_about": "TPT listing ids retired on 2026-10-12 (deactivated on TPT by Greg), plus the free Mistake of the Week sampler, removed from the site with its line. build_site.js RETIRED-ID GATE fails the build if any file in dist links to one of these ids. Add ids here when more listings are deactivated.",
+  "_about": "TPT listing ids retired on 2026-10-12 (deactivated on TPT by Greg), including the free Mistake of the Week sampler. build_site.js RETIRED-ID GATE fails the build if any file in dist links to one of these ids. Add ids here when more listings are deactivated.",
   "retired_on": "2026-10-12",
   "ids": {
     "16283183": "Middle School Math Word Wall 80 Vocabulary Cards 6th 7th 8th Grade Math FREE",
@@ -8,6 +8,8 @@
     "16486130": "7th Grade Real Life Uses for Math Poster CCSS Classroom Decor",
     "16486171": "8th Grade Real Life Uses for Math Poster CCSS Classroom Decor",
     "16486264": "Real Life Uses for Math Posters Bundle Grades 6 7 8 CCSS Decor",
+    "16495648": "6th Math About Me FREE",
+    "16495649": "7th Math About Me FREE",
     "16647155": "MOTW 7th",
     "16652695": "FREE Adding Integers Anchor Chart Integer Rules Poster 7th Grade Math 7 NS",
     "16654146": "FREE Combining Like Terms Poster 6th Grade Math Anchor Chart 6 EE A 3",
@@ -116,8 +118,10 @@
     "16977845": "Compound Interest the Snowball Effect Real World Money Lab Calculator",
     "16977849": "Checking Accounts Overdrafts Don t Bounce It Money Lab Calculator",
     "16977873": "Consumer Math Essentials Bundle 10 Real World Money Labs Calculators",
+    "17096431": "Math About Me Hexagon Display",
     "17096456": "Back to School Math Escape Room The Case of the Missing Calculator",
     "17096463": "Growth Mindset Posters Middle School Math Back to School Classroom Decor",
+    "17106744": "Personal Finance I Can FREE sample TN",
     "17107153": "Standards for Mathematical Practice Posters Math Class Norms Back to School",
     "17647726": "5th Grade Math Word Wall 67 Vocabulary Cards Full Year CCSS Bulletin Board",
     "17647734": "6th Grade Math Word Wall 110 Vocabulary Cards Full Year CCSS Bulletin Board",

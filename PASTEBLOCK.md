@@ -1,13 +1,12 @@
 # PASTEBLOCK — session handoff (2026-10-12)
 
 ## Shipped this session (v1.23.0)
-- Retired product lines removed from the site (Greg deactivated 153 TPT listings Oct 12): sub plans (paid), activity packs, Mistake of the Week, Money Labs, Mystery Pictures, anchor charts/posters, every word wall. 18 pages gone, 301s in `_redirects` (`RETIRED_LINE_REDIRECTS`). See Site_Build_Log v1.23.0.
+- Retired product lines removed from the site (Greg deactivated 158 TPT listings Oct 12): sub plans (paid), activity packs, Mistake of the Week, Money Labs, Mystery Pictures, anchor charts/posters, every word wall, the free Math About Me and the free TN personal finance sample. 20 pages gone, 301s in `_redirects` (`RETIRED_LINE_REDIRECTS`). See Site_Build_Log v1.23.0.
 - Glossary kept (URLs /word-wall/ unchanged) but relabelled "Glossary" and no longer sells word walls.
 - New `retired_ids.json` + RETIRED-ID GATE in build_site.js.
 
 ## Greg's actions
 1. Pinterest: two scheduled pins point at removed pages (they 301 to /free.html, but the pin text promotes a retired freebie): "Free Middle School Math Word Wall: 80 Vocabulary Cards" (2026-09 batch, Oct 14) and "Free Combining Like Terms Poster: Anchor Chart" (2026-10 batch, Oct 24). Delete or edit them. The vocabulary pins sit on boards named "… Math Word Wall | Vocabulary Cards"; they still land on live glossary pages, rename the boards if wanted.
-2. If the free Mistake of the Week sampler (17672163) is deactivated on TPT, nothing on the site needs to change.
 
 ## Open
 - tools/pinterest/pins.mjs still names vocabulary boards "Word Wall"; change before building the next batch.
