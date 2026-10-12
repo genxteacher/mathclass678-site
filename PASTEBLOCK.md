@@ -6,7 +6,7 @@
 - New `retired_ids.json` + RETIRED-ID GATE in build_site.js.
 
 ## Greg's actions
-1. Pinterest: two scheduled pins point at removed pages (they 301 to /free.html, but the pin text promotes a retired freebie): "Free Middle School Math Word Wall: 80 Vocabulary Cards" (2026-09 batch, Oct 14) and "Free Combining Like Terms Poster: Anchor Chart" (2026-10 batch, Oct 24). Delete or edit them. The vocabulary pins sit on boards named "… Math Word Wall | Vocabulary Cards"; they still land on live glossary pages, rename the boards if wanted.
+1. Pinterest: two scheduled pins point at removed pages (they 301 to /free.html, but the pin text promotes a retired freebie): "Free Middle School Math Word Wall: 80 Vocabulary Cards" (2026-09 batch, Oct 14) and "Free Combining Like Terms Poster: Anchor Chart" (2026-10 batch, Oct 24). Also two already-published pins (2026-09 batch, Oct 2 and Oct 5): "Free Math About Me Activity" 6th and 7th grade (now 301 to /free.html). Delete or edit them. The vocabulary pins sit on boards named "… Math Word Wall | Vocabulary Cards"; they still land on live glossary pages, rename the boards if wanted.
 
 ## Open
 - tools/pinterest/pins.mjs still names vocabulary boards "Word Wall"; change before building the next batch.
