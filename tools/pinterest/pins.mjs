@@ -93,7 +93,7 @@ const SHEETS = D.catalog.filter(r => /SHIPPED/.test(r.Status)).map(r => {
 const sheetByNum = Object.fromEntries(SHEETS.map(s => [s.num, s]));
 const STANDARDS = Object.values(D.STANDARDS);
 
-// Kit-gated freebie pages: same slug rule as build_site.js (FREEBIES).
+// Freebie pages (/free/{slug}.html, link to free TPT listings): same slug rule as build_site.js (FREEBIES).
 const freeBase = {};
 D.LINKS.free_resources.forEach(f => { const b = slugify(f.name); freeBase[b] = (freeBase[b] || 0) + 1; });
 const freeUsed = {};
@@ -204,7 +204,7 @@ function freePin(f) {
   return {
     kind: 'free', g, slug, board: FREE_BOARD, link: tag(distPage(`free/${f.slug}.html`), slug),
     title: clip(`Free ${f.title}${f.sub ? ': ' + f.sub : ''} | ${gl} Math`, 100),
-    desc: clip(`A free ${f.title.toLowerCase()} for ${gl.replace('Grades', 'grades')} math${f.sub ? ` (${f.sub.toLowerCase()})` : ''}. Enter your email on the page and it sends you straight to the free download.`, 490),
+    desc: clip(`A free ${f.title.toLowerCase()} for ${gl.replace('Grades', 'grades')} math${f.sub ? ` (${f.sub.toLowerCase()})` : ''}. The page links straight to its free listing on Teachers Pay Teachers.`, 490),
     kw: `free ${f.title.toLowerCase()}, ${gl.toLowerCase()} math, free middle school math`,
     html: frame(g, `Free · ${gl} math`, `Free ${f.title}`, `
       ${f.sub ? `<p class="big center">${esc(f.sub)}</p>` : ''}

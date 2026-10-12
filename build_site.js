@@ -16,8 +16,9 @@ const SITE_URL = 'https://www.mathclass678.com';
 const TPT_STORE = 'https://www.teacherspayteachers.com/store/math-class-678';
 const CONTACT = { tpt: 'tpt@mathclass678.com', support: 'support@mathclass678.com' };
 const SOCIAL = { pinterest: 'https://www.pinterest.com/mathclass678', instagram: 'https://www.instagram.com/mathclass.678', tiktok: 'https://www.tiktok.com/@mathclass678' };
-const KIT = { uid: 'bd0030d799', url: 'https://mathclass678.kit.com/bd0030d799' };
-const KIT_SCRIPT = `<script async data-uid="bd0030d799" src="https://mathclass678.kit.com/bd0030d799/index.js"></` + `script>`;
+// The free Order of Operations sheet (#1, 6th) on TPT. No email collection anywhere on the site
+// (Oct 12 2026, owner decision): every freebie links to its own free TPT listing.
+const FREE_OOO_URL = 'https://www.teacherspayteachers.com/Product/Order-of-Operations-4-in-1-Skill-Sheet-for-6th-Grade-Math-CCSS-6EEA1-16334854';
 
 /* ----------------------------------------------------------------------------
    TPT review data — OPTIONAL, off by default.
@@ -2521,64 +2522,41 @@ function nav(active) {
 </header>`;
 }
 
-function kitSignup() {
-  return `<section class="kit-signup">
-    <div class="wrap">
-      <div class="kit-signup__inner reveal">
-        <div class="kit-signup__copy">
-          <span class="eyebrow">Free resource</span>
-          <h2>Get a free 4-in-1 Skill Sheet</h2>
-          <p>Sign up and I'll send you Order of Operations for 6th grade — a complete 4-in-1 Skill Sheet with an interactive teacher deck, no strings attached. You'll also hear when new sheets publish and when the store runs a sale.</p>
-        </div>
-        <div class="kit-signup__form">
-          ${KIT_SCRIPT}
-        </div>
-      </div>
-    </div>
-  </section>`;
-}
-
-/* High-prominence lead-magnet block. Used as the single loudest conversion
-   element on the homepage and on every sheet page. Full-bleed forest panel,
-   freebie thumbnail, benefit bullets, and the Kit form (uid bd0030d799). */
-function kitHero(opts) {
+/* High-prominence free-sheet block (homepage + every sheet page). Links straight to the
+   free Order of Operations listing on TPT; nothing is collected on the site. */
+function freeHero(opts) {
   opts = opts || {};
   const eyebrow = opts.eyebrow || 'Free 4-in-1 Skill Sheet';
   const heading = opts.heading || 'Get a complete skill sheet free';
-  const lead = opts.lead || 'Enter your email and I\u2019ll send you the Order of Operations 4-in-1 Skill Sheet for 6th grade \u2014 a 7-page student packet and a 33-slide interactive teacher deck. The full lesson, in the same format as every paid sheet.';
-  return `<section class="kit-hero" id="free-sheet">
-    <div class="wrap kit-hero__grid">
-      <div class="kit-hero__copy reveal">
+  const lead = opts.lead || 'The Order of Operations 4-in-1 Skill Sheet for 6th grade is free on Teachers Pay Teachers — a 7-page student packet and a 33-slide interactive teacher deck. The full lesson, in the same format as every paid sheet.';
+  return `<section class="free-hero" id="free-sheet">
+    <div class="wrap free-hero__grid">
+      <div class="free-hero__copy reveal">
         <span class="eyebrow">${eyebrow}</span>
         <h2>${heading}</h2>
-        <p class="kit-hero__lead">${lead}</p>
-        <ul class="kit-hero__list">
+        <p class="free-hero__lead">${lead}</p>
+        <ul class="free-hero__list">
           <li>A complete lesson on one skill, not a watered-down sample</li>
           <li>Guided notes, practice, real-world application, and an exit ticket with a worked answer key</li>
           <li>A 33-slide interactive teacher deck that reveals each step one click at a time</li>
         </ul>
-        <p class="kit-hero__reassure">No spam. Unsubscribe in one click anytime.</p>
       </div>
-      <div class="kit-hero__panel reveal">
-        <figure class="kit-hero__thumb">
+      <div class="free-hero__panel reveal">
+        <figure class="free-hero__thumb">
           <img src="/assets/images/freebies/free_ooo-sheet.jpg" alt="Free Order of Operations 4-in-1 Skill Sheet and interactive teacher deck for 6th grade math" width="900" height="900" loading="lazy" decoding="async">
         </figure>
-        <div class="kit-hero__formcard">
-          <span class="kit-hero__formlabel">Send it to my inbox</span>
-          <div class="kit-hero__form">
-            ${KIT_SCRIPT}
-          </div>
+        <div class="free-hero__card">
+          <span class="free-hero__label">Free on Teachers Pay Teachers</span>
+          <a class="btn btn--primary free-hero__btn" href="${FREE_OOO_URL}" target="_blank" rel="noopener">Get it free on TPT ${ICON.ext}</a>
+          <a class="free-hero__more" href="/free.html">See every free resource ${ICON.arrow}</a>
         </div>
       </div>
     </div>
   </section>`;
 }
 
-function footer(opts) {
-  opts = opts || {};
-  const kitBand = opts.noKit ? '' : kitSignup();
-  return `${kitBand}
-<footer class="footer">
+function footer() {
+  return `<footer class="footer">
   <div class="wrap">
     <div class="footer__grid">
       <div class="footer__brand">
@@ -2704,6 +2682,10 @@ const FAQ = [
   {
     q: 'Is there anything free to try first?',
     a: 'Yes. There are three free 4-in-1 Skill Sheets, one per grade (Order of Operations for 6th grade, Combining Like Terms for 7th grade and Multi-Step Equations for 8th grade), plus free anchor chart posters, curriculum maps, back-to-school tools, and end-of-year reviews. Start on the free resources page before spending a dollar.'
+  },
+  {
+    q: 'Do you collect my email address?',
+    a: 'No. This site does not collect email addresses and has no mailing list. Every free resource links straight to its free listing on Teachers Pay Teachers, and you download it there.'
   }
 ];
 
@@ -2745,32 +2727,10 @@ const FREE_RESOURCES = [
 ];
 
 /* ============================================================================
-   FREEBIE PAGES — Kit-gated, sourced from JSON free_resources   (S11 build)
-   Each page captures email via Kit, then continues to that freebie's TPT listing.
-   Per-freebie Kit form ids drop into FREEBIE_KIT_FORMS as Greg creates them;
-   until then every page uses the master form (email still gated) and the on-page
-   success handler forwards to the correct TPT URL.
+   FREEBIE PAGES — one per free resource, sourced from JSON free_resources
+   Each page describes the freebie and links to its own free TPT listing. No email
+   collection (Kit removed Oct 12 2026, owner decision).
    ============================================================================ */
-const FREEBIE_KIT_FORMS = {
-  'FREE-001': '875fdb8851', // Order of Operations (6th) — switched from Combining Like Terms 6th on 2026-10-01 (TPT exclusivity: CLT 6th is paid on TPT)
-  'FREE-002': '040d74c6eb', // Combining Like Terms Poster (6th)
-  'FREE-003': '3f6172755c', // 6th Grade Math About Me (6th)
-  'FREE-004': '5c8c26b69f', // 6th Grade Math End of Year Review (6th)
-  'FREE-005': 'ad7de44228', // 6th Grade Math SMART Goals (6th)
-  'FREE-007': 'b5acf5c22c', // 6th Grade Math Year at a Glance (6th)
-  'FREE-008': '18e51a9a6a', // Combining Like Terms (7th)
-  'FREE-009': '214d64c130', // 7th Grade Math About Me (7th)
-  'FREE-010': '55b3ed978d', // 7th Grade Math End of Year Review (7th)
-  'FREE-011': '90c47668a6', // 7th Grade Math SMART Goals (7th)
-  'FREE-012': '88f3a13f12', // 7th Grade Math Year at a Glance (7th)
-  'FREE-013': '2fc7e939c9', // Pythagorean Theorem Poster (8th)
-  'FREE-014': 'c529aa5601', // 8th Grade Math Pre-Algebra End of Year Review (8th)
-  'FREE-015': '99ec756eac', // 8th Grade Math SMART Goals (8th)
-  'FREE-016': '7818dac0a4', // 3-Day Emergency Math Sub Plan (Grades 6-8)
-  'FREE-017': '612e064cd9', // End of Year Math Reflection + Goals (Grades 6-8)
-  'FREE-018': 'cc703aa799', // Back to School Math Diagnostic (Grades 6-8)
-  'FREE-019': '1663af272a', // Middle School Math Word Wall (Grades 6-8)
-}; // all 18 freebies now on dedicated forms — S13
 const freeThumbByUrl = {}; FREE_RESOURCES.forEach(r => { freeThumbByUrl[r.url] = r.thumb; });
 const _freeSlugBase = {};
 (SITE_LINKS.free_resources||[]).forEach(f => { const b=slugify(f.name); _freeSlugBase[b]=(_freeSlugBase[b]||0)+1; });
@@ -2788,7 +2748,6 @@ const FREEBIES = (SITE_LINKS.free_resources||[]).map(f => {
     thumb: freeThumbByUrl[f.tpt_url] || '',
     thumbSheet: sheetMatch ? sheetMatch.thumbWeb : '',
     hasSheetThumb: !!(sheetMatch && sheetMatch.hasThumb),
-    kitFormUid: FREEBIE_KIT_FORMS[f.id] || KIT.uid,
     pageUrl:'/free/'+base+'.html'
   };
 });
@@ -2938,7 +2897,7 @@ function pageHome() {
     </div>
   </section>
 
-  ${kitHero({ heading: 'Start with a free skill sheet', lead: 'Enter your email and I\u2019ll send you the Order of Operations 4-in-1 Skill Sheet for 6th grade \u2014 a complete lesson with an interactive teacher deck. See exactly how the format works before you spend a dollar.' })}
+  ${freeHero({ heading: 'Start with a free skill sheet', lead: 'The Order of Operations 4-in-1 Skill Sheet for 6th grade is free on Teachers Pay Teachers \u2014 a complete lesson with an interactive teacher deck. See exactly how the format works before you spend a dollar.' })}
 
   <!-- METHOD STRIP -->
   <section class="method-strip" aria-label="The four phases of every lesson">
@@ -3665,9 +3624,9 @@ function page404() {
 }
 
 /* ============================================================================
-   PAGE: get-started — standalone Kit lead-magnet landing page
-   Minimal nav (brand only), single conversion focus, no Kit band in footer.
-   Destination for Pinterest pins and any future paid traffic.
+   PAGE: get-started — standalone free-sheet landing page
+   Minimal nav (brand only), single focus: the free Order of Operations listing on TPT.
+   Destination for Pinterest pins and older links. No email collection (Oct 12 2026).
    ============================================================================ */
 function navMinimal() {
   return `<header class="nav nav--minimal">
@@ -3687,7 +3646,7 @@ function navMinimal() {
 function pageGetStarted() {
   return head({
     title: 'Get a Free 4-in-1 Skill Sheet — Middle School Math | Math Class 678',
-    desc: 'Sign up and get a complete 4-in-1 Skill Sheet free: Order of Operations for 6th grade, with a 7-page packet and a 33-slide interactive teacher deck.',
+    desc: 'Get a complete 4-in-1 Skill Sheet free on TPT: Order of Operations for 6th grade, with a 7-page packet and a 33-slide interactive teacher deck.',
     path: 'get-started.html'
   }) + navMinimal() + `
 <main id="main" class="landing">
@@ -3696,7 +3655,7 @@ function pageGetStarted() {
       <div class="landing-hero__copy reveal">
         <span class="eyebrow">Free 4-in-1 Skill Sheet</span>
         <h1>A complete math lesson, on the house</h1>
-        <p class="landing-hero__lead">Sign up and I'll send you the <strong>Order of Operations</strong> 4-in-1 Skill Sheet for 6th grade — the full lesson, in the same format as every paid sheet. One standard, a 7-page packet and a Teacher Deck, the whole lesson in your hand.</p>
+        <p class="landing-hero__lead">The <strong>Order of Operations</strong> 4-in-1 Skill Sheet for 6th grade is free on Teachers Pay Teachers — the full lesson, in the same format as every paid sheet. One standard, a 7-page packet and a Teacher Deck, the whole lesson in your hand.</p>
         <ul class="landing__list">
           <li><strong>A guided Learn page</strong> — definitions, the key rule, a worked example and a Watch Out error pair</li>
           <li><strong>Six scaffolded practice problems</strong> (two warm-up, two standard, two stretch) after a worked example</li>
@@ -3704,16 +3663,14 @@ function pageGetStarted() {
           <li><strong>Exit ticket</strong> with a full answer key, so you know who is ready before tomorrow</li>
           <li><strong>A 33-slide interactive teacher deck</strong> that reveals each step one click at a time</li>
         </ul>
-        <p class="landing__reassure">No spam. You will hear from me when new sheets publish and when the store runs a sale — and you can unsubscribe in one click anytime.</p>
       </div>
-      <aside class="landing-hero__form reveal">
-        <div class="landing-form-card">
-          <span class="landing-form-card__eyebrow">Send it to my inbox</span>
-          <h2 class="landing-form-card__title">Get the free sheet</h2>
-          <p class="landing-form-card__sub">Enter your email and the Order of Operations 4-in-1 Skill Sheet is yours.</p>
-          <div class="landing-form-card__form">
-            ${KIT_SCRIPT}
-          </div>
+      <aside class="landing-hero__cta reveal">
+        <div class="landing-card">
+          <span class="landing-card__eyebrow">Free on Teachers Pay Teachers</span>
+          <h2 class="landing-card__title">Get the free sheet</h2>
+          <p class="landing-card__sub">The download is on its free TPT listing. One click takes you there.</p>
+          <a class="btn btn--primary landing-card__btn" href="${FREE_OOO_URL}" target="_blank" rel="noopener">Get it free on TPT ${ICON.ext}</a>
+          <a class="landing-card__more" href="/free.html">See every free resource ${ICON.arrow}</a>
         </div>
       </aside>
     </div>
@@ -3732,7 +3689,7 @@ function pageGetStarted() {
     <div class="wrap">
       <div class="sec-head reveal">
         <div class="sec-head__t">
-          <span class="eyebrow">Why teachers sign up</span>
+          <span class="eyebrow">Why start here</span>
           <h2>See the format before you buy a thing</h2>
           <p>The free sheet is a real, complete 4-in-1 Skill Sheet — not a sample with the good parts removed. Use it with a class, see how the four phases hold together, and decide for yourself whether the rest of the catalog earns a place in your plans.</p>
         </div>
@@ -3744,7 +3701,7 @@ function pageGetStarted() {
     </div>
   </section>
 </main>
-` + footer({ noKit: true }) + scripts();
+` + footer() + scripts();
 }
 
 /* ============================================================================
@@ -4152,7 +4109,7 @@ ${(() => {
   </section>`;
   })()}
 
-  ${kitHero({ eyebrow: 'Try before you buy', heading: 'Get a free 4-in-1 Skill Sheet', lead: 'Want to see the format in your own hands first? Enter your email and I\u2019ll send you the Order of Operations 4-in-1 Skill Sheet for 6th grade \u2014 a complete lesson with an interactive teacher deck, free.' })}
+  ${freeHero({ eyebrow: 'Try before you buy', heading: 'Get a free 4-in-1 Skill Sheet', lead: 'Want to see the format in your own hands first? The Order of Operations 4-in-1 Skill Sheet for 6th grade is free on Teachers Pay Teachers \u2014 a complete lesson with an interactive teacher deck.' })}
 
   <nav class="section sheetnav" aria-label="Browse adjacent sheets" style="padding-top:0">
     <div class="wrap sheetnav__row">
@@ -4356,7 +4313,6 @@ function pageBundles() {
 /* ============================================================================
    GLOSSARY / WORD WALL — page renderers   (S11 build)
    ============================================================================ */
-function kitFormFor(uid){ return `<script async data-uid="${uid}" src="https://mathclass678.kit.com/${uid}/index.js"></`+`script>`; }
 function glossaryChip(t){ return `<a class="gloss-chip gloss-chip--${t.accent}" href="${t.pageUrl}">${esc(t.term)}</a>`; }
 
 function wordWallCardTile(t){
@@ -4605,7 +4561,7 @@ function pageGlossaryTerm(t){
 }
 
 /* ============================================================================
-   FREEBIE PAGE — Kit-gated, one per free resource   (S11 build)
+   FREEBIE PAGE — one per free resource, links to its free TPT listing (S11 build; Kit gate removed Oct 12 2026)
    ============================================================================ */
 function pageFreebie(f){
   const accent = String(f.grade).match(/^6/)?'teal':String(f.grade).match(/^7/)?'coral':String(f.grade).match(/^8/)?'navy':'gold';
@@ -4624,7 +4580,7 @@ function pageFreebie(f){
   const bcSchema = breadcrumbSchema([{name:'Home',url:'/'},{name:'Free Resources',url:'/free.html'},{name:f.name,url:f.pageUrl}]);
   return head({
     title:(() => { const nm = f.name.replace(/\s*\(?\bFREE\b\)?\s*/g, ' ').trim(); return fitTitle([`${nm} \u2014 Free ${f.gradeLabel} Math Download | Math Class 678`, `${nm} \u2014 Free ${f.gradeLabel} Math Download`, `${nm} | Free Download`, nm]); })(),
-    desc:`Get ${f.fullTitle} free. Enter your email and we\u2019ll send you straight to the download on Teachers Pay Teachers.`.slice(0,158),
+    desc:`Get ${f.fullTitle} free. The download is on its free Teachers Pay Teachers listing.`.slice(0,158),
     path:'free/'+f.slug+'.html',
     jsonld:'['+offer+','+bcSchema+']'
   }) + nav('free') + `
@@ -4637,52 +4593,21 @@ function pageFreebie(f){
         <h1>${esc(f.name)}</h1>
         <p class="freebie__lead">${esc(f.fullTitle)}</p>
         <ul class="freebie__list">
-          <li>Enter your email and we\u2019ll take you straight to the download</li>
-          <li>Delivered through Teachers Pay Teachers \u2014 the same free listing, so your download and reviews count</li>
-          <li>You\u2019ll also hear when new sheets publish and when the store runs a sale</li>
+          <li>Free on Teachers Pay Teachers \u2014 one click to the listing</li>
+          <li>Download it there; it stays in your TPT purchases for later</li>
+          <li>From Math Class 678, the store behind the 4-in-1 Skill Sheets</li>
         </ul>
-        <p class="freebie__reassure">No spam. Unsubscribe in one click anytime.</p>
       </div>
       <div class="freebie__panel reveal">
         <figure class="freebie__thumb">${thumbHtml}</figure>
-        <div class="freebie__formcard">
-          <span class="freebie__formlabel">Enter your email to get it</span>
-          <div class="freebie-gate" data-tpt="${f.tptUrl}">
-            <div class="freebie-gate__form">${kitFormFor(f.kitFormUid)}</div>
-            <a class="btn btn--primary freebie-gate__continue" href="${f.tptUrl}" target="_blank" rel="noopener" hidden>Continue to your free download on TPT ${ICON.ext}</a>
-          </div>
+        <div class="freebie__card">
+          <a class="btn btn--primary freebie__btn" href="${f.tptUrl}" target="_blank" rel="noopener">Get it free on TPT ${ICON.ext}</a>
+          <a class="freebie__more" href="/free.html">See every free resource ${ICON.arrow}</a>
         </div>
       </div>
     </div>
   </section>
 </main>
-<script>
-(function(){
-  var gate=document.querySelector('.freebie-gate'); if(!gate) return;
-  var tpt=gate.getAttribute('data-tpt');
-  var cont=gate.querySelector('.freebie-gate__continue');
-  var done=false, submitted=false;
-  function isVisible(el){ return !!(el && el.offsetParent !== null && window.getComputedStyle(el).display !== 'none'); }
-  function success(){ if(done) return; done=true; cont.hidden=false; try{ window.location.href=tpt; }catch(e){} }
-  /* Gate on a real submit first — Kit's embed renders its own (hidden) success/error
-     containers into the DOM as soon as the script loads, before any user action, so
-     watching for those classes alone fires on page load. Require an actual form submit
-     before we ever look for a success state. */
-  gate.addEventListener('submit', function(){ submitted = true; }, true);
-  var obs=new MutationObserver(function(){
-    if(!submitted) return;
-    var hit=gate.querySelector('[data-element="success"], .formkit-alert-success, .seva-success');
-    if(hit && isVisible(hit)) success();
-  });
-  obs.observe(gate,{childList:true,subtree:true,attributes:true});
-  /* Safety net: if we can't find a match after a real submit (unexpected markup),
-     reveal the continue button rather than leaving the visitor stuck — but never
-     auto-navigate on the fallback, only on a confirmed success match above. */
-  gate.addEventListener('submit', function(){
-    setTimeout(function(){ if(!done && submitted) cont.hidden=false; }, 5000);
-  }, true);
-})();
-</script>
 ` + footer() + scripts();
 }
 
@@ -6976,7 +6901,7 @@ write('word-wall.html', pageWordWall());
 let glossaryCount = 0;
 glossary.forEach(t => { write(`word-wall/${t.slug}.html`, pageGlossaryTerm(t)); glossaryCount++; });
 
-/* Kit-gated individual freebie pages (existing free.html kept as-is) */
+/* individual freebie pages, each linking to its free TPT listing (existing free.html kept as-is) */
 let freebieCount = 0;
 FREEBIES.forEach(f => { write(`free/${f.slug}.html`, pageFreebie(f)); freebieCount++; });
 
@@ -7102,7 +7027,7 @@ console.log('  Sheet landing pages:', sheetCount);
 console.log('  Bundle landing pages:', bundleCount);
 console.log('  Standard content pages:', standardCount);
 console.log('  Word Wall hub + glossary term pages:', 1 + glossaryCount);
-console.log('  Kit-gated freebie pages:', freebieCount);
+console.log('  Freebie pages (link to free TPT listings):', freebieCount);
 console.log('  ILEARN hub + grade + listing pages:', 1 + IL_GRADES.length + ilearnCount);
 console.log('  ILEARN cover thumbnails bundled:', ilearnThumbCount);
 console.log('  Products:', products.length, '| live:', live.length, '| free:', counts.free);
@@ -7139,4 +7064,28 @@ console.log('  Site asset images bundled:', siteImgCount);
   }
   if (hits.length) { console.error('CLAIM GATE FAILED:\n  ' + hits.slice(0, 20).join('\n  ')); process.exit(1); }
   console.log('  Claim gate: clean');
+})();
+
+/* ============================================================================
+   NO-EMAIL GATE (v1.22.0 · 2026-10-12). Kit (formerly ConvertKit) was removed from the site at
+   Greg's request: the site collects no email addresses, and every freebie links to its own free
+   TPT listing. The build fails if a Kit/ConvertKit embed or URL, or any form that posts to another
+   host, reaches dist again.
+   ============================================================================ */
+(function noEmailGate() {
+  const BANNED = [/kit\.com/i, /ck\.page/i, /convertkit/i, /formkit/i, /data-uid=/i];
+  const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : /\.(html|js|css|xml|txt|toml|json)$|^_redirects$/.test(e.name) ? [path.join(d, e.name)] : []);
+  const hits = [];
+  for (const f of walk(DIST)) {
+    const text = fs.readFileSync(f, 'utf8');
+    for (const re of BANNED) if (re.test(text)) hits.push(`${path.relative(DIST, f)}: ${re}`);
+    // Any <form> posting off-site (an email service or anything else) is refused; so is any email input.
+    for (const m of text.matchAll(/<form\b[^>]*>/gi)) {
+      const action = (m[0].match(/\baction\s*=\s*["']?([^"'\s>]+)/i) || [])[1] || '';
+      if (/^(https?:)?\/\//i.test(action)) hits.push(`${path.relative(DIST, f)}: form posts to ${action}`);
+    }
+    if (/<input\b[^>]*type\s*=\s*["']?email/i.test(text)) hits.push(`${path.relative(DIST, f)}: email input`);
+  }
+  if (hits.length) { console.error('NO-EMAIL GATE FAILED:\n  ' + hits.slice(0, 20).join('\n  ')); process.exit(1); }
+  console.log('  No-email gate: clean');
 })();

@@ -18,26 +18,23 @@ Session state lives in `PASTEBLOCK.md`, not here. This file changes only when
 fundamental doctrine changes — not session to session. Sibling project to the MC678
 build project. This project does NOT build skill sheets — it builds mathclass678.com.
 
-**Rev. S14** — DEDICATED PER-FREEBIE KIT FORMS now LIVE doctrine (built + shipped S13; no
-longer "shared form only"). FREEBIE_KIT_FORMS map in build_site.js is fully populated
-— all 18 freebies route through their own dedicated Kit form with its own personalized
-confirmation-email copy, rather than one shared form with generic copy. The redirect
-mechanism itself did not change: the S12 submit-gated success-detection script remains
-the sole authority for sending visitors to the correct TPT listing, regardless of which
-Kit form is embedded — native per-form Kit redirects were deliberately not used, and
-every dedicated form stays on "Show a success message" to match the original shared-form
-behavior. Added a new locked guardrail reflecting this: never switch any per-freebie form
-to Kit's native "Redirect to an external page." Claude Code confirmed set up on Greg's
-machine as of S13 — direct push is now available going forward, alongside the GitHub
-Desktop fallback; both paths remain valid, Greg's choice per session.
+**Oct 12 2026 — NO EMAIL COLLECTION.** Kit (formerly ConvertKit) is removed from the site
+entirely (owner decision: possible TPT exclusivity issues, no subscribers). No email
+collection; freebies link to their free TPT listings (Oct 12 2026, owner decision). The
+build's NO-EMAIL GATE (end of `build_site.js`) fails if `kit.com`, `ck.page`,
+`convertkit`, `formkit`, a Kit `data-uid` embed, an email input, or a form posting to an
+external host reaches `dist/`. Never add an email form, mailing-list embed or signup band
+back without Greg explicitly asking. Claude Code can push directly; GitHub Desktop
+remains a fallback.
 
 ## Who / what
 
 Greg — 25+ yr middle-school math teacher, sole operator of Math Class 678 (TPT storefront
 math-class-678). Building mathclass678.com as a branded catalog hub for the 103
 4-in-1 Skill Sheets™ (Reference · Practice · Apply · Assess), grades 6–8 CCSS, plus a
-free math vocabulary glossary (Word Wall branch, grades 5–8 + Algebra 1 + Geometry) and a Kit-gated
-freebie funnel for growing the email list from external traffic.
+free math vocabulary glossary (Word Wall branch, grades 5–8 + Algebra 1 + Geometry) and
+free-resource pages that link to each freebie's free TPT listing. The site collects no
+email addresses.
 
 The site is a SHOWCASE + LINK-OUT hub. It sells nothing on-site. Every product button
 routes to the matching TPT listing. No checkout, no payments, no e-commerce.
@@ -138,11 +135,10 @@ Free resources (non-skill-sheet): 16 items in `FREE_RESOURCES` array — all rou
 Bundles: 30 total (all live, all URLs confirmed) — strand · topic · MEGA · ULTIMATE tiers
 Strands present: EE · NS · RP · SP · G · F
 
-Two parallel entry points for the 18 total freebies (16 free resources + 2 freebie skill
-sheets) as of S12: the existing `/free.html` hub (direct-to-TPT, no gate, unchanged
-since before S12) and 18 individual Kit-gated pages at `/free/{slug}.html`, each on its
-own dedicated Kit form as of S13 (see Freebie / Kit-gated funnel architecture below).
-These serve different traffic and are never cross-linked — see the locked decision there.
+Two entry points for the 18 total freebies (16 free resources + 2 freebie skill sheets):
+the `/free.html` hub and 18 individual pages at `/free/{slug}.html` (kept for the URLs
+that Pinterest and older links point to). Both link straight to the freebie's free TPT
+listing. The site never hosts or serves the freebie files itself (TPT exclusivity).
 
 ## Glossary / Word Wall content authority
 
@@ -211,7 +207,7 @@ four-format design remains the product a teacher buys on TPT.
 
 Generated from `build_site.js`: `/sheets/{slug}.html` (103) · `/bundles/{slug}.html` (30)
 · `/standards/{slug}.html` (93) · `/word-wall/{slug}.html` (603) · `/free/{slug}.html` (18,
-external-traffic-only, not linked from nav or `/free.html`).
+each links to that freebie's free TPT listing; not linked from nav or `/free.html`).
 
 Slug collision handling: two "Combining Like Terms" sheets (#19, #48), their matching
 glossary terms, and their matching freebie pages all get grade suffixes:
@@ -246,36 +242,17 @@ sheet/standard/bundle resolves, the page shows the unit/domain/topic name instea
 on this. The CCSS branch itself now carries the fallback, so any orphan 6–8 term is covered
 too. Never let a future edit drop the fallback and reintroduce an empty section.
 
-## Freebie / Kit-gated funnel architecture (live, built S12; dedicated forms added S13)
+## Freebies — no email collection (Oct 12 2026, owner decision)
 
-Purpose: grow the email list from cold external traffic (Pinterest, TikTok bio link,
-anywhere Claude doesn't control the source) without touching the already-working
-`/free.html` funnel.
-
-**Locked decision — do not change without Greg explicitly asking:** the 18 individual
-`/free/{slug}.html` pages are never linked from `/free.html`, primary nav, or anywhere
-else on-site. `/free.html` stays direct-to-TPT, zero friction. Rationale: TPT review
-velocity is the dominant ranking lever; warm on-site traffic converting with zero
-friction matters more than harvesting emails from people who were already going to
-download for free. Cold external traffic is the right audience for an email-gate trade.
-
-**Mechanism:** each `/free/{slug}.html` page embeds a *dedicated* per-freebie Kit form —
-`FREEBIE_KIT_FORMS` map in `build_site.js` is **fully populated as of S13**, all 18
-freebies have their own form uid and their own confirmation-email copy naming that
-specific download. A page-level script watches for a real submission and then sends the
-visitor on to that freebie's correct TPT listing (file still delivered via TPT to
-preserve download counts and review eligibility). This redirect logic is independent of
-which Kit form is embedded — it does not rely on, and never has relied on, Kit's native
-per-form redirect setting. Every dedicated form is deliberately left on "Show a success
-message" (never "Redirect to an external page") so the site's own script remains the sole
-redirect authority — do not let this drift if new freebie forms get created later.
-
-**Locked technical constraint — do not regress:** the success-detection script must
-require an actual `submit` event on the embedded form before it starts checking for a
-success state. Presence-only DOM checks against Kit's markup will false-positive on
-page load (this exact bug shipped and was fixed in S12 — see `Site_Build_Log.md` v1.5.0
-for the full postmortem if you need it). Any future edit to this script must preserve
-the submit-gate as the first check.
+No email collection; freebies link to their free TPT listings (Oct 12 2026, owner
+decision). Kit was removed entirely: no embeds, scripts, form uids, signup bands, or
+"sign up / no spam / unsubscribe" wording anywhere. Each `/free/{slug}.html` page keeps its
+URL and descriptive copy and shows a "Get it free on TPT" button to that freebie's FREE
+TPT listing (`tpt_url` from `free_resources` in `mc678_site_links.json`). The homepage and
+every sheet page carry a `freeHero()` block, and `/get-started.html` is a simple page,
+both pointing to the free Order of Operations listing (`FREE_OOO_URL`) plus `/free.html`.
+A new freebie needs only a free TPT listing and its `free_resources` entry; no form.
+The NO-EMAIL GATE at the end of `build_site.js` enforces this on every build.
 
 ## Image asset model
 
@@ -292,20 +269,6 @@ working here directly.
 
 Glossary pages never use product art — brand tiles/quadrant mark only (IP policy above).
 
-## Kit / email
-
-- Shared form uid: `bd0030d799` — script `https://mathclass678.kit.com/bd0030d799/index.js`
-- Embedded in: footer band (all pages) + Kit-hero block (homepage + all 103 sheet pages)
-  + get-started page. **Not** in the freebie-gate slot of any of the 18 freebie pages as
-  of S13 — those now use their own dedicated forms via `FREEBIE_KIT_FORMS`.
-- `FREEBIE_KIT_FORMS` map: fully populated, all 18 entries. Treat this as populated data
-  to preserve, not a template to reset.
-- Every dedicated freebie form: "Show a success message" mode, confirmation email
-  personalized to name that freebie, redirect-after-confirm pointed at
-  `https://mathclass678.com/` (not Kit's default).
-- Kit timezone: Eastern (should be Central — Greg's action in the Kit dashboard, not a
-  code change).
-
 ## Build → QA checklist (run before every commit)
 
 - Brand-color compliance: NEVER PURPLE, anywhere.
@@ -318,9 +281,11 @@ Glossary pages never use product art — brand tiles/quadrant mark only (IP poli
 - Accessibility: alt text on every image, sufficient contrast, semantic HTML,
   keyboard-navigable.
 - No console errors.
-- For any script involving a third-party embed's success/error state (Kit forms or
-  otherwise): verify it gates on a real user action first — never trust a presence-only
-  DOM check against a third party's markup.
+- No email collection: the build's NO-EMAIL GATE must report clean (no Kit/ConvertKit,
+  no email inputs, no forms posting off-site).
+- For any script involving a third-party embed's success/error state: verify it gates on
+  a real user action first — never trust a presence-only DOM check against a third
+  party's markup.
 - Confirm every file `build_site.js` reads is actually present in this repo — not just
   referenced in a past claude.ai session.
 
@@ -349,9 +314,8 @@ on-site — all purchase paths route to TPT.
 - `TPT_RATING = null` in `build_site.js` — AggregateRating schema dormant until Greg
   provides real store-wide rating + review count. 3 real attributed reviews (Lauren K.,
   Megan T., Rachel B.) already emit as `Review`/`Rating` JSON-LD regardless.
-- Kit timezone fix and TPT storefront copy corrections ("103 sheets / $505",
-  TikTok handle) are Greg's actions, not code changes — just don't forget to ask if
-  they're done when relevant.
+- TPT storefront copy corrections ("103 sheets / $505", TikTok handle) are Greg's
+  actions, not code changes — just don't forget to ask if they're done when relevant.
 
 ## Deliverables at the end of every session
 
