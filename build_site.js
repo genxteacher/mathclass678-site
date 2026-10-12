@@ -2274,43 +2274,8 @@ const normTermBase = s => normTerm(String(s||'').replace(/\([^)]*\)/g,' '));
 
 const SITE_LINKS = JSON.parse(fs.readFileSync(path.join(ROOT,'mc678_site_links.json'),'utf8'));
 
-// word_wall TPT url by grade + normalized term (prefer individual Card over Bundle/Set)
-const wwUrlByKey = {};
-(SITE_LINKS.word_wall||[]).forEach(w => {
-  const key = w.grade + '|' + normTerm(w.term);
-  if (!wwUrlByKey[key] || w.kind === 'Card') wwUrlByKey[key] = w.tpt_url;
-  const bkey = w.grade + '|~' + normTermBase(w.term);   // paren-stripped fallback index
-  if (!wwUrlByKey[bkey] || w.kind === 'Card') wwUrlByKey[bkey] = w.tpt_url;
-});
-// Algebra unit bundle URL by unit name (word_wall Bundle rows whose title names the unit)
-const algUnitBundleUrl = {};
-(SITE_LINKS.word_wall||[]).forEach(w => {
-  if (w.grade === 'Algebra' && w.kind !== 'Card' && w.full_title) {
-    algUnitBundleUrl[w.full_title] = w.tpt_url; // keyed by full title; matched loosely below
-  }
-});
-
-// Since 2026-09-13 the individual Word Wall card listings are retired on TPT; every grade is
-// sold as ONE whole-grade word wall. Term pages link to their grade's wall, not a single card.
-const WORD_WALL_GRADE_URL = {
-  '5th':      'https://www.teacherspayteachers.com/Product/5th-Grade-Math-Word-Wall-67-Vocabulary-Cards-Full-Year-CCSS-Bulletin-Board-17647726',
-  '6th':      'https://www.teacherspayteachers.com/Product/6th-Grade-Math-Word-Wall-110-Vocabulary-Cards-Full-Year-CCSS-Bulletin-Board-17647734',
-  '7th':      'https://www.teacherspayteachers.com/Product/7th-Grade-Math-Word-Wall-115-Vocabulary-Cards-Full-Year-CCSS-Bulletin-Board-17647743',
-  '8th':      'https://www.teacherspayteachers.com/Product/8th-Grade-Math-Word-Wall-120-Vocabulary-Cards-Full-Year-CCSS-Bulletin-Board-17647754',
-  'Algebra':  'https://www.teacherspayteachers.com/Product/Algebra-1-Math-Word-Wall-98-Vocabulary-Cards-8th-9th-Grade-Bulletin-Board-17647770',
-  'Geometry': 'https://www.teacherspayteachers.com/Product/Geometry-Math-Word-Wall-109-Vocabulary-Cards-9th-10th-Grade-Bulletin-Board-17647783',
-};
-
-// The free 3-card sampler for each grade's word wall (posted 2026-09-13), and the bundle of all six.
-const WORD_WALL_SAMPLER_URL = {
-  '5th':      'https://www.teacherspayteachers.com/Product/5th-Grade-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-17648377',
-  '6th':      'https://www.teacherspayteachers.com/Product/6th-Grade-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-16772218',
-  '7th':      'https://www.teacherspayteachers.com/Product/7th-Grade-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-17648382',
-  '8th':      'https://www.teacherspayteachers.com/Product/8th-Grade-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-17648384',
-  'Algebra':  'https://www.teacherspayteachers.com/Product/Algebra-1-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-8th-9th-Grade-17648391',
-  'Geometry': 'https://www.teacherspayteachers.com/Product/Geometry-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-9th-10th-Grade-17648397',
-};
-const WORD_WALL_COMPLETE_URL = 'https://www.teacherspayteachers.com/Product/Math-Word-Wall-Complete-Bundle-5th-8th-Grade-Algebra-1-Geometry-619-Cards-17647807';
+// The Word Wall product line (whole-grade walls, samplers, bundles) was deactivated on TPT on
+// 2026-10-12. The glossary stays as free reference content; it no longer links to any word wall product.
 
 const glossary = [];
 GLOSSARY_GRADES.forEach(grade => {
@@ -2320,7 +2285,6 @@ GLOSSARY_GRADES.forEach(grade => {
     const allCcss = (r.all_ccss||'').split(';').map(s=>s.trim()).filter(Boolean);
     const allStrands = (r.all_strands||'').split(';').map(s=>s.trim()).filter(Boolean);
     const related = (r.related_terms||'').split(';').map(s=>s.trim()).filter(Boolean);
-    const tptUrl = WORD_WALL_GRADE_URL[grade] || TPT_STORE;
     glossary.push({
       slug:r.slug, term:r.term, grade, accent:GLOSSARY_ACCENT[grade],
       primaryCcss:r.primary_ccss||'', allCcss,
@@ -2328,7 +2292,7 @@ GLOSSARY_GRADES.forEach(grade => {
       merged:(r.merged||'').toUpperCase()==='YES',
       definition:r.definition||'', ex1:r.example_1||'', ex2:r.example_2||'',
       keyRule:r.key_rule||'', memoryHook:r.memory_hook||'',
-      related, tptUrl,
+      related,
       pageUrl:'/word-wall/'+r.slug+'.html',
       isCcssKeyed: grade !== 'Algebra'
     });
@@ -2514,7 +2478,7 @@ function nav(active) {
       ${link('/readiness.html', 'Readiness', 'readiness')}
       ${link('/i-can.html', 'I Can', 'i-can')}
       ${link('/algebra-1.html', 'Algebra 1', 'algebra-1')}
-      ${link('/word-wall.html', 'Word Wall', 'word-wall')}
+      ${link('/word-wall.html', 'Glossary', 'word-wall')}
       ${link('/free.html', 'Free', 'free')}
       <a class="btn btn--primary btn--sm nav__cta" href="${TPT_STORE}" target="_blank" rel="noopener">TPT Store ${ICON.ext}</a>
     </nav>
@@ -2575,16 +2539,11 @@ function footer() {
           <li><a href="/warm-ups.html">Warm-Ups</a></li>
           <li><a href="/readiness.html">Readiness Checks</a></li>
           <li><a href="/i-can.html">I Can Posters</a></li>
-          <li><a href="/sub-plans.html">Sub Plans</a></li>
-          <li><a href="/activity-packs.html">Activity Packs</a></li>
-          <li><a href="/mistake-of-the-week.html">Mistake of the Week</a></li>
-          <li><a href="/money-labs.html">Money Labs</a></li>
-          <li><a href="/mystery-pictures.html">Mystery Pictures</a></li>
           <li><a href="/grade-6.html">6th Grade</a></li>
           <li><a href="/grade-7.html">7th Grade</a></li>
           <li><a href="/grade-8.html">8th Grade</a></li>
           <li><a href="/algebra-1.html">Algebra 1</a></li>
-          <li><a href="/word-wall.html">Word Wall</a></li>
+          <li><a href="/word-wall.html">Math Glossary</a></li>
           <li><a href="/free.html">Free Resources</a></li>
         </ul>
       </div>
@@ -2681,7 +2640,7 @@ const FAQ = [
   },
   {
     q: 'Is there anything free to try first?',
-    a: 'Yes. There are three free 4-in-1 Skill Sheets, one per grade (Order of Operations for 6th grade, Combining Like Terms for 7th grade and Multi-Step Equations for 8th grade), plus free anchor chart posters, curriculum maps, back-to-school tools, and end-of-year reviews. Start on the free resources page before spending a dollar.'
+    a: 'Yes. There are three free 4-in-1 Skill Sheets, one per grade (Order of Operations for 6th grade, Combining Like Terms for 7th grade and Multi-Step Equations for 8th grade), plus free curriculum maps, back-to-school tools, end-of-year reviews and a 3-day emergency sub plan. Start on the free resources page before spending a dollar.'
   },
   {
     q: 'Do you collect my email address?',
@@ -2708,16 +2667,6 @@ const FREE_RESOURCES = [
   // Classroom & Planning
   { key:'year-at-a-glance-6th', title:'Year at a Glance',                 sub:'I Can Checklist + CCSS Curriculum Map',grade:6,     gradeLabel:'6th Grade',       cat:'Classroom & Planning',  thumb:'free_year-at-a-glance-6th.jpg',      url:'https://www.teacherspayteachers.com/Product/6th-Grade-Math-Year-at-a-Glance-FREE-I-Can-Checklist-CCSS-Curriculum-Map-16495554' },
   { key:'year-at-a-glance-7th', title:'Year at a Glance',                 sub:'I Can Checklist + CCSS Curriculum Map',grade:7,     gradeLabel:'7th Grade',       cat:'Classroom & Planning',  thumb:'free_year-at-a-glance-7th.jpg',      url:'https://www.teacherspayteachers.com/Product/7th-Grade-Math-Year-at-a-Glance-FREE-I-Can-Checklist-CCSS-Curriculum-Map-16495555' },
-  { key:'clt-poster',           title:'Combining Like Terms Poster',       sub:'Anchor Chart \u00b7 6.EE.A.3',        grade:6,     gradeLabel:'6th Grade',       cat:'Classroom & Planning',  thumb:'free_clt-poster.jpg',                url:'https://www.teacherspayteachers.com/Product/FREE-Combining-Like-Terms-Poster-6th-Grade-Math-Anchor-Chart-6EEA3-16654146' },
-  { key:'pyth-poster',          title:'Pythagorean Theorem Poster',        sub:'Anchor Chart \u00b7 8.G.B.7',         grade:8,     gradeLabel:'8th Grade',       cat:'Classroom & Planning',  thumb:'free_pythagorean-theorem-poster.jpg', url:'https://www.teacherspayteachers.com/Product/FREE-Pythagorean-Theorem-Poster-8th-Grade-Math-Anchor-Chart-8GB7-16654289' },
-  // Word Walls — one free 3-card sampler per whole-grade word wall (posted 2026-09-13), plus the 80-card set
-  { key:'ww-sampler-5th', title:'5th Grade Math Word Wall Sampler', sub:'3 Free Vocabulary Cards', grade:5, gradeLabel:'5th Grade', cat:'Word Walls', thumb:'free_ww-sampler-5th.jpg', url:'https://www.teacherspayteachers.com/Product/5th-Grade-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-17648377' },
-  { key:'ww-sampler-6th', title:'6th Grade Math Word Wall Sampler', sub:'3 Free Vocabulary Cards', grade:6, gradeLabel:'6th Grade', cat:'Word Walls', thumb:'free_ww-sampler-6th.jpg', url:'https://www.teacherspayteachers.com/Product/6th-Grade-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-16772218' },
-  { key:'ww-sampler-7th', title:'7th Grade Math Word Wall Sampler', sub:'3 Free Vocabulary Cards', grade:7, gradeLabel:'7th Grade', cat:'Word Walls', thumb:'free_ww-sampler-7th.jpg', url:'https://www.teacherspayteachers.com/Product/7th-Grade-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-17648382' },
-  { key:'ww-sampler-8th', title:'8th Grade Math Word Wall Sampler', sub:'3 Free Vocabulary Cards', grade:8, gradeLabel:'8th Grade', cat:'Word Walls', thumb:'free_ww-sampler-8th.jpg', url:'https://www.teacherspayteachers.com/Product/8th-Grade-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-17648384' },
-  { key:'ww-sampler-algebra-1', title:'Algebra 1 Word Wall Sampler', sub:'3 Free Vocabulary Cards', grade:'alg', gradeLabel:'Algebra 1', cat:'Word Walls', thumb:'free_ww-sampler-algebra-1.jpg', url:'https://www.teacherspayteachers.com/Product/Algebra-1-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-8th-9th-Grade-17648391' },
-  { key:'ww-sampler-geometry', title:'Geometry Word Wall Sampler', sub:'3 Free Vocabulary Cards', grade:'geo', gradeLabel:'Geometry', cat:'Word Walls', thumb:'free_ww-sampler-geometry.jpg', url:'https://www.teacherspayteachers.com/Product/Geometry-Math-Word-Wall-FREE-3-Vocabulary-Cards-Sampler-9th-10th-Grade-17648397' },
-  { key:'word-wall',            title:'Middle School Math Word Wall',      sub:'80 Vocabulary Cards',                  grade:'all', gradeLabel:'Grades 6\u20138', cat:'Word Walls',            thumb:'free_word-wall.jpg',                 url:'https://www.teacherspayteachers.com/Product/Middle-School-Math-Word-Wall-80-Vocabulary-Cards-6th-7th-8th-Grade-Math-FREE-16283183' },
   // End of Year
   { key:'eoy-review-6th',       title:'End of Year Review',               sub:'Skills Check Worksheet',               grade:6,     gradeLabel:'6th Grade',       cat:'End of Year',           thumb:'free_eoy-review-6th.jpg',            url:'https://www.teacherspayteachers.com/Product/6th-Grade-Math-End-of-Year-Review-FREE-Skills-Check-Worksheet-Spring-2026-16213887' },
   { key:'eoy-review-7th',       title:'End of Year Review',               sub:'Skills Check Worksheet',               grade:7,     gradeLabel:'7th Grade',       cat:'End of Year',           thumb:'free_eoy-review-7th.jpg',            url:'https://www.teacherspayteachers.com/Product/7th-Grade-Math-End-of-Year-Review-FREE-Skills-Check-Worksheet-Spring-2026-16214437' },
@@ -3114,7 +3063,7 @@ function pageHome() {
     <div class="wrap ctaband__inner reveal">
       <span class="eyebrow" style="justify-content:center;color:var(--gold-soft)">No cost</span>
       <h2>Try before you buy</h2>
-      <p>Skill sheets, anchor chart posters, back-to-school tools, curriculum maps, and end-of-year reviews — all free on Teachers Pay Teachers. Start here before spending a dollar.</p>
+      <p>Skill sheets, back-to-school tools, curriculum maps, end-of-year reviews and a sub plan — all free on Teachers Pay Teachers. Start here before spending a dollar.</p>
       <div class="ctaband__btns">
         <a class="btn btn--primary" href="/free.html">Browse free resources ${ICON.arrow}</a>
         <a class="btn btn--on-dark" href="/catalog.html">Browse the catalog</a>
@@ -3342,7 +3291,7 @@ function pageGrade(grade) {
     <div class="wrap ctaband__inner reveal">
       <span class="eyebrow" style="justify-content:center;color:var(--gold-soft)">No cost</span>
       <h2>Try a ${gO}-grade sheet free</h2>
-      <p>Start with the free resources before spending a dollar — skill sheets, anchor charts, curriculum maps, and more on Teachers Pay Teachers.</p>
+      <p>Start with the free resources before spending a dollar — skill sheets, curriculum maps, warm-ups and more on Teachers Pay Teachers.</p>
       <div class="ctaband__btns">
         <a class="btn btn--primary" href="/free.html">Browse free resources ${ICON.arrow}</a>
         <a class="btn btn--on-dark" href="${TPT_STORE}" target="_blank" rel="noopener">Visit the TPT store</a>
@@ -3370,14 +3319,8 @@ function pageFree() {
     {
       key:    'Classroom & Planning',
       eyebrow:'Classroom & Planning',
-      h2:     'Resources for the wall and the plan book',
-      desc:   'Anchor chart posters to keep up all year, and year-at-a-glance curriculum maps for 6th and 7th grade.'
-    },
-    {
-      key:    'Word Walls',
-      eyebrow:'Word Walls',
-      h2:     'Try the word wall cards free',
-      desc:   'Three real cards from each whole-grade math word wall, 5th grade through Geometry, in color and grayscale \u2014 plus 80 free middle school vocabulary cards.'
+      h2:     'Resources for the plan book',
+      desc:   'Year-at-a-glance curriculum maps for 6th and 7th grade: an I Can checklist and a Common Core map for the whole year.'
     },
     {
       key:    'End of Year',
@@ -3394,7 +3337,7 @@ function pageFree() {
 
   return head({
     title: 'Free Middle School Math Resources — Grades 6, 7 & 8 | Math Class 678',
-    desc:  'Free skill sheets and classroom resources for grades 6–8 math: a full lesson for each grade, anchor charts, curriculum maps and back-to-school tools.',
+    desc:  'Free skill sheets and classroom resources for grades 6–8 math: a full lesson for each grade, curriculum maps, back-to-school tools and a 3-day sub plan.',
     path:  'free.html',
     jsonld: breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Free Resources', url: '/free.html' }])
   }) + nav('free') + `
@@ -3409,7 +3352,7 @@ function pageFree() {
         <div class="free-hero__inner">
           <span class="eyebrow" style="color:var(--gold-soft)">No cost \u00b7 ready to use</span>
           <h1>Free resources from Math Class 678</h1>
-          <p>Skill sheets, anchor chart posters, word wall samplers, back-to-school tools, curriculum maps, and end-of-year reviews \u2014 all free on Teachers Pay Teachers.</p>
+          <p>Skill sheets, back-to-school tools, curriculum maps, end-of-year reviews and a three-day emergency sub plan \u2014 all free on Teachers Pay Teachers.</p>
         </div>
         <div class="free-hero__photo">
           <img src="/assets/images/free_hero.jpg" alt="Free 4-in-1 Skill Sheet packets for 6th and 7th grade math with teal and coral accent bands" class="free-hero__img" width="1440" height="960" loading="lazy" decoding="async">
@@ -3450,7 +3393,6 @@ function pageFree() {
   </section>`;
   }).join('')}
 
-  ${MP_FREE ? `<section class="section"><div class="wrap cr-cta"><div><span class="eyebrow">Free self-checking Google Sheet</span><h2>${esc(MP_FREE.topic)} Pixel Art</h2><p>${MP_FREE.total} ${esc(MP_FREE.grade.toLowerCase())} problems in three levels: every right answer uncovers part of a hidden picture, and a wrong answer shows a hint written for that mistake.</p></div><a class="btn btn--primary" href="/mystery-pictures.html">See the Mystery Pictures ${ICON.arrow}</a></div></section>` : ''}
 
   <!-- BOTTOM CTA -->
   <section class="section gridpaper">
@@ -3959,7 +3901,7 @@ function pageStandard(std) {
           <h2 class="std-side-block__title">The skill sheet</h2>
           ${sheetCTAHtml}
         </div>` : ''}
-        ${(function(){ const terms=[...new Map((glossaryByCcss[std.ccss]||[]).map(t=>[t.slug,t])).values()]; if(!terms.length) return ''; const chips=terms.slice(0,14).map(glossaryChip).join(''); return `<div class="std-side-block keyvocab"><h2 class="std-side-block__title">Key vocabulary</h2><div class="keyvocab__chips">${chips}</div><a class="std-backlink" href="/word-wall.html#ww-${terms[0].grade.toLowerCase()}">More in the Word Wall ${ICON.arrow}</a></div>`; })()}
+        ${(function(){ const terms=[...new Map((glossaryByCcss[std.ccss]||[]).map(t=>[t.slug,t])).values()]; if(!terms.length) return ''; const chips=terms.slice(0,14).map(glossaryChip).join(''); return `<div class="std-side-block keyvocab"><h2 class="std-side-block__title">Key vocabulary</h2><div class="keyvocab__chips">${chips}</div><a class="std-backlink" href="/word-wall.html#ww-${terms[0].grade.toLowerCase()}">More in the glossary ${ICON.arrow}</a></div>`; })()}
       </aside>
     </div>
   </section>
@@ -4340,10 +4282,6 @@ function pageWordWall(){
         <span class="eyebrow eyebrow--${accent}">${esc(label)}</span>
         <h2>${esc(label)} vocabulary</h2>
         <p>${terms.length} terms, organized by ${glossGroupNoun(g)}. Each links to a full definition page with worked examples and the key rule.</p>
-        <div class="gloss-gradesec__buy">
-          <a class="btn btn--primary btn--sm" href="${WORD_WALL_GRADE_URL[g]}" target="_blank" rel="noopener">Get the ${esc(label)} word wall on TPT ${ICON.ext}</a>
-          <a class="std-backlink" href="${WORD_WALL_SAMPLER_URL[g]}" target="_blank" rel="noopener">Try 3 cards free ${ICON.arrow}</a>
-        </div>
       </div>
       ${grouped.map(grp => `
       <div class="gloss-group">
@@ -4355,20 +4293,20 @@ function pageWordWall(){
   };
   const switchLinks = GLOSSARY_GRADES.map(g => `<a class="gloss-switch__link gloss-switch__link--${GLOSSARY_ACCENT[g]}" href="#ww-${g.toLowerCase()}">${glossGradeLabel(g)}</a>`).join('');
   return head({
-    title:'Math Word Wall Glossary — Grades 5–8, Algebra 1 & Geometry | Free',
+    title:'Math Vocabulary Glossary — Grades 5–8, Algebra 1 & Geometry | Free',
     desc:`A free math vocabulary glossary for grades 5\u20138, Algebra 1, and Geometry \u2014 ${total} terms with student-friendly definitions, worked examples and key rules.`,
     path:'word-wall.html',
-    jsonld: breadcrumbSchema([{name:'Home',url:'/'},{name:'Word Wall',url:'/word-wall.html'}])
+    jsonld: breadcrumbSchema([{name:'Home',url:'/'},{name:'Glossary',url:'/word-wall.html'}])
   }) + nav('word-wall') + `
 <main id="main">
-  ${breadcrumb([{name:'Home',url:'/'},{name:'Word Wall'}])}
+  ${breadcrumb([{name:'Home',url:'/'},{name:'Glossary'}])}
   <section class="gloss-hero">
     <div class="gloss-hero__bg" role="presentation"></div>
     <div class="wrap gloss-hero__wrap">
       <div class="gloss-hero__inner reveal">
         <span class="eyebrow" style="color:var(--gold-soft)">Free math glossary</span>
-        <h1>The Math Class 678 Word Wall</h1>
-        <p>A free, searchable vocabulary reference for grades 5\u20138, Algebra 1, and Geometry \u2014 ${total} terms, each with a plain-language definition, two worked examples, and the one rule that matters. The polished, print-ready Word Wall cards for your classroom are available on Teachers Pay Teachers.</p>
+        <h1>The Math Class 678 Math Glossary</h1>
+        <p>A free, searchable vocabulary reference for grades 5\u20138, Algebra 1, and Geometry \u2014 ${total} terms, each with a plain-language definition, two worked examples, and the one rule that matters.</p>
         <div class="gloss-switch">${switchLinks}</div>
       </div>
     </div>
@@ -4377,14 +4315,11 @@ function pageWordWall(){
   <section class="section gloss-cta-band">
     <div class="wrap">
       <div class="method__head reveal" style="margin-bottom:1.6rem">
-        <span class="eyebrow" style="color:var(--gold-soft)">For your classroom wall</span>
-        <h2>Print-ready Word Wall cards</h2>
-        <p>Every grade\u2019s cards come as one print-ready word wall on Teachers Pay Teachers \u2014 color and grayscale, full-page and half-page. Or get all six in one bundle.</p>
+        <span class="eyebrow" style="color:var(--gold-soft)">From words to skills</span>
+        <h2>Teach the skill behind the word</h2>
+        <p>Every 6th, 7th and 8th grade term links to the standard and the 4-in-1 Skill Sheet where it shows up. Each sheet is one complete lesson: a guided student packet and an interactive Teacher Deck.</p>
       </div>
-      <div class="gloss-cta-grid">
-        ${GLOSSARY_GRADES.map(g => `<a class="btn btn--on-dark btn--sm" href="${WORD_WALL_GRADE_URL[g]}" target="_blank" rel="noopener">${esc(glossGradeLabel(g))} word wall ${ICON.ext}</a>`).join('')}
-      </div>
-      <a class="btn btn--primary" href="${WORD_WALL_COMPLETE_URL}" target="_blank" rel="noopener">Get all six: the Complete Bundle ${ICON.ext}</a>
+      <a class="btn btn--primary" href="/catalog.html">Browse the skill sheets ${ICON.arrow}</a>
     </div>
   </section>
 </main>
@@ -4420,8 +4355,8 @@ function glossDesc(definition, gradeLabel, code, max){
   const def = supText(definition).replace(/\s+/g,' ').trim();
   const esclen = t => t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').length;
   const tails = [
-    `${gradeLabel} math vocabulary${code ? ', ' + code : ''}. Printable Word Wall card with examples.`,
-    `${gradeLabel} math vocabulary${code ? ', ' + code : ''}. Printable Word Wall card.`,
+    `${gradeLabel} math vocabulary${code ? ', ' + code : ''}. Definition, examples and key rule.`,
+    `${gradeLabel} math vocabulary${code ? ', ' + code : ''}. Definition and examples.`,
     `${gradeLabel} math vocabulary${code ? ', ' + code : ''}.`,
     `${gradeLabel} math vocabulary.`,
   ];
@@ -4448,13 +4383,13 @@ function definedTermJsonLd(t){
   const dt = {
     '@context':'https://schema.org','@type':'DefinedTerm',
     name:t.term, description:supText(t.definition),
-    inDefinedTermSet:{ '@type':'DefinedTermSet', name:'Math Class 678 Word Wall', url:SITE_URL+'/word-wall.html' },
+    inDefinedTermSet:{ '@type':'DefinedTermSet', name:'Math Class 678 Math Glossary', url:SITE_URL+'/word-wall.html' },
     url:canonical
   };
   if (t.primaryCcss) dt.termCode = t.primaryCcss;
   const crumbs = { '@context':'https://schema.org','@type':'BreadcrumbList', itemListElement:[
     {'@type':'ListItem',position:1,name:'Home',item:SITE_URL+'/'},
-    {'@type':'ListItem',position:2,name:'Word Wall',item:SITE_URL+'/word-wall.html'},
+    {'@type':'ListItem',position:2,name:'Glossary',item:SITE_URL+'/word-wall.html'},
     {'@type':'ListItem',position:3,name:glossGradeLabel(t.grade),item:SITE_URL+'/word-wall.html#ww-'+t.grade.toLowerCase()},
     {'@type':'ListItem',position:4,name:t.term,item:canonical}
   ]};
@@ -4511,7 +4446,7 @@ function pageGlossaryTerm(t){
     jsonld: definedTermJsonLd(t)
   }) + nav('word-wall') + `
 <main id="main">
-  ${breadcrumb([{name:'Home',url:'/'},{name:'Word Wall',url:'/word-wall.html'},{name:gLabel,url:'/word-wall.html#ww-'+t.grade.toLowerCase()},{name:t.term}])}
+  ${breadcrumb([{name:'Home',url:'/'},{name:'Glossary',url:'/word-wall.html'},{name:gLabel,url:'/word-wall.html#ww-'+t.grade.toLowerCase()},{name:t.term}])}
   <section class="section gloss-term">
     <div class="wrap gloss-term__grid">
       <div class="gloss-term__main">
@@ -4543,9 +4478,9 @@ function pageGlossaryTerm(t){
       <aside class="gloss-term__side">
         <div class="gloss-side-block gloss-side-block--cta">
           <span class="gloss-cta__tile gloss-cta__tile--${t.accent}">${SVG.mark}</span>
-          <h2 class="gloss-side-block__title">Get this on your wall</h2>
-          <p>The ${esc(t.term)} card is part of the print-ready ${esc(gLabel)} Math Word Wall \u2014 every ${esc(gLabel)} term, in color and grayscale.</p>
-          <a class="btn btn--primary btn--sm" href="${t.tptUrl}" target="_blank" rel="noopener">Get the ${esc(gLabel)} word wall on TPT ${ICON.ext}</a>
+          <h2 class="gloss-side-block__title">Practice it free</h2>
+          <p>Free 4-in-1 Skill Sheets, warm-ups, readiness checks and planning tools for middle school math, all on Teachers Pay Teachers.</p>
+          <a class="btn btn--primary btn--sm" href="/free.html">See the free resources ${ICON.arrow}</a>
         </div>
         ${whereHtml}
         ${sibHtml}
@@ -5030,17 +4965,14 @@ function pageIlearnHub() {
 const CLASSROOM = JSON.parse(fs.readFileSync(path.join(ROOT, 'classroom_data.json'), 'utf8'));
 const WU = CLASSROOM.warmups;
 const RC = CLASSROOM.readiness;
-const MOTW = CLASSROOM.motw;
-// 20-second preview videos (the TPT ones, re-encoded at 720p) and the activity pack line, written by the
+// 20-second preview videos (the TPT ones, re-encoded at 720p), written by the
 // state-testing exporter tools/site_export/mc678_videos.py (v1.17.0 · 2026-09-25)
 const VIDEO = JSON.parse(fs.readFileSync(path.join(ROOT, 'video_data.json'), 'utf8'));
-const ACT = VIDEO.activities;
 const VIDEO_DATE = '2026-09-25';
 // course key -> the site's grade accent (5th is forest, Algebra 1 gold, as on the Word Wall)
 const WU_ACCENT = { G5: 'forest', G6: 'teal', G7: 'coral', G8: 'navy', GA1: 'gold' };
 const WU_GRADE_PAGE = { G6: '/grade-6.html', G7: '/grade-7.html', G8: '/grade-8.html' };
 const WU_READINESS = { G6: 'rc6', G7: 'rc7', G8: 'rc8', GA1: 'rca1' };
-const WU_MOTW = { G6: 'motw6', G7: 'motw7', G8: 'motw8' };
 const CCSS_NOTE = 'Standard codes refer to the Common Core State Standards for Mathematics. Math Class 678 is an independent publisher, not affiliated with, sponsored by, or endorsed by NGA Center or CCSSO.';
 
 const WU_ROLES = [
@@ -5160,20 +5092,6 @@ function secHead(eyebrow, h2, p) {
 function rolesBlock() {
   return `<ol class="cr-roles">${WU_ROLES.map(([t, d], i) => `<li class="cr-role reveal"><span class="cr-role__n">${i + 1}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></li>`).join('')}</ol>`;
 }
-function motwSection() {
-  const g = [['motw6', '6th Grade', 'teal'], ['motw7', '7th Grade', 'coral'], ['motw8', '8th Grade', 'navy']];
-  return `<section class="section cr-alt">
-    <div class="wrap">
-      ${secHead('Also a warm-up routine', 'Mistake of the Week', 'Once a week, students find a worked mistake, fix it and explain it. Twelve weeks per grade, with a free three-week sampler.')}
-      <p style="margin:-1.2rem 0 1.6rem"><a class="cr-link" href="/mistake-of-the-week.html">See every week for every grade ${ICON.arrow}</a></p>
-      <div class="cr-grid">
-        ${wuTile({ url: MOTW.motwfree.url, external: true, img: MOTW.motwfree.img, name: 'Mistake of the Week sampler', kicker: 'Free · grades 6–8', badge: 'Free', cta: 'Get it free on TPT' })}
-        ${g.map(([k, lab, acc]) => wuTile({ url: MOTW[k].url, external: true, img: MOTW[k].img, accent: acc, name: `Mistake of the Week, ${lab}`, kicker: '12 weeks' })).join('')}
-        ${wuTile({ url: MOTW.motwbundle.url, external: true, img: MOTW.motwbundle.img, name: 'Mistake of the Week Bundle', kicker: '6th, 7th & 8th grade · 36 weeks', feature: true })}
-      </div>
-    </div>
-  </section>`;
-}
 function noteBand() {
   return `<section class="cr-note"><div class="wrap"><p>${esc(CCSS_NOTE)} Every product is sold on <a href="${TPT_STORE}" target="_blank" rel="noopener">Teachers Pay Teachers</a>.</p></div></section>`;
 }
@@ -5183,16 +5101,14 @@ function noteBand() {
    Week, so the new pages are two clicks from the homepage and share link equity with the sheets. */
 function gradeClassroomBand(grade) {
   const key = 'G' + grade, c = WU.courses.find(x => x.key === key), acc = WU_ACCENT[key];
-  const r = RC.checks.find(x => x.key === WU_READINESS[key]), m = MOTW[WU_MOTW[key]];
+  const r = RC.checks.find(x => x.key === WU_READINESS[key]);
   if (!c) return '';
   return `<section class="section cr-alt">
     <div class="wrap">
-      ${secHead(`Also for ${c.label.replace('Grade', 'grade')}`, 'Warm-ups, a readiness check, error analysis and sub plans')}
+      ${secHead(`Also for ${c.label.replace('Grade', 'grade')}`, 'Daily warm-ups and a readiness check')}
       <div class="cr-grid">
         ${wuTile({ url: `/warm-ups/${c.slug}.html`, img: c.yr.img, accent: acc, name: `${c.label} Math Warm-Ups`, kicker: '180 days \u00b7 four problems a day', cta: 'See every week' })}
         ${r ? wuTile({ url: '/readiness.html#' + r.key, img: r.img, accent: acc, name: `${r.grade} Math Readiness Check`, kicker: `${r.prior} skills \u00b7 ${r.questions} questions`, cta: 'See what it covers' }) : ''}
-        ${m ? wuTile({ url: `/mistake-of-the-week.html#grade-${grade}`, img: m.img, accent: acc, name: `Mistake of the Week, ${c.label}`, kicker: 'Error analysis \u00b7 12 weeks', cta: 'See all 12 weeks' }) : ''}
-        ${SP['sp' + grade] ? wuTile({ url: '/sub-plans.html', img: SP['sp' + grade].img, accent: acc, name: `${c.label} Emergency Sub Plans`, kicker: `3 days \u00b7 reviews ${SP['sp' + grade].prior} skills`, cta: 'See the three days' }) : ''}
       </div>
     </div>
   </section>`;
@@ -5278,8 +5194,6 @@ function pageWarmupsHub() {
     </div>
   </section>
 
-  ${motwSection()}
-
   <section class="section">
     <div class="wrap cr-cta">
       <div><span class="eyebrow">Before the first warm-up</span><h2>Find out what they kept over the summer</h2><p>A 24-question readiness check on last year’s skills tells you which spiral topics need the most time.</p></div>
@@ -5311,7 +5225,6 @@ function pageWarmupsCourse(c) {
   if (c.first20) related.push(wuTile({ url: c.first20.url, external: true, img: c.first20.img, accent, name: `${c.label} Warm-Ups: First 20 Days`, kicker: 'Back to school · trackers included' }));
   const rk = WU_READINESS[c.key];
   if (rk) { const r = RC.checks.find(x => x.key === rk); related.push(wuTile({ url: '/readiness.html#' + rk, img: r.img, accent, name: `${r.grade} Math Readiness Check`, kicker: `${r.prior} skills · ${r.questions} questions`, cta: 'See what it covers' })); }
-  if (WU_MOTW[c.key]) { const m = MOTW[WU_MOTW[c.key]]; related.push(wuTile({ url: `/mistake-of-the-week.html#grade-${c.key.slice(1)}`, img: m.img, accent, name: `Mistake of the Week, ${c.label}`, kicker: 'Error analysis · 12 weeks', cta: 'See all 12 weeks' })); }
   if (WU_GRADE_PAGE[c.key]) related.push(wuTile({ url: WU_GRADE_PAGE[c.key], accent, name: `${c.label} 4-in-1 Skill Sheets`, kicker: 'One complete lesson per skill', cta: 'Browse the sheets' }));
   const buy = [
     wuTile({ url: c.yr.url, external: true, img: c.yr.img, accent, name: 'Full Year', kicker: '180 days · all four quarters', feature: true }),
@@ -5656,115 +5569,9 @@ function pageICanPF() {
       <div class="cr-grid">${paid.map(p => wuTile({ url: p.url, external: true, img: p.img, name: `${p.state} Personal Finance I Can Posters`, kicker: p.posters ? `${p.posters} posters` : 'High school' })).join('')}</div>
     </div>
   </section>
-  <section class="section"><div class="wrap cr-cta"><div><span class="eyebrow">Goes with the posters</span><h2>Money Labs</h2><p>Real-world consumer math for grades 7 to 10: paychecks, budgets, credit cards, loans and interest, each with a self-calculating spreadsheet.</p></div><a class="btn btn--primary" href="/money-labs.html">See the Money Labs ${ICON.arrow}</a></div></section>
   ${free.length ? `<section class="section cr-alt"><div class="wrap">${secHead('Try it first', 'Free sample')}<div class="cr-grid">${free.map(p => wuTile({ url: p.url, external: true, img: p.img, name: p.title.split('|')[0].trim(), kicker: `Free · ${p.state}`, badge: 'Free', cta: 'Get it free on TPT' })).join('')}</div></div></section>` : ''}
   <section class="cr-note"><div class="wrap"><p>State course standards are named to show alignment. Math Class 678 is an independent publisher, not affiliated with, sponsored by, or endorsed by any state education agency. Every product is sold on <a href="${TPT_STORE}" target="_blank" rel="noopener">Teachers Pay Teachers</a>.</p></div></section>
 </main>
-` + footer() + scripts();
-}
-
-
-/* ============================================================================
-   EMERGENCY SUB PLANS   (v1.12.0 · 2026-09-19)
-   Five listings (6th, 7th, 8th, the 9-day bundle and the free 3-day packet), one page. Every fact
-   below is stated in the listings' own descriptions; `prior` and page counts come from the export.
-   ============================================================================ */
-const SP = CLASSROOM.subplans;
-const SP_DAYS = [
-  ['Day 1', 'Secret Message', 'A 4-problem warm-up, then 12 problems whose answers decode a message from a 16-entry decoder. A three-level Challenge Round and a write-your-own-problem task.'],
-  ['Day 2', 'Maze Race', 'A warm-up, then a 25-cell maze with only one 13-cell route, which correct answers keep students on. A route record, a trap report and a three-level Challenge Round.'],
-  ['Day 3', 'Error Detective', 'A warm-up, then 10 students’ worked problems with 4 mistakes to find and fix. A three-level Challenge Round and a make-your-own-case task.'],
-];
-const SP_INCLUDED = [
-  'A Start Here page, and a Skills Reviewed page with the standard code for every problem',
-  'A Welcome, Substitute page for your class periods and procedures, filled in once',
-  'The plan for each day: what to hand out, what to say, and how to tell it’s working',
-  'A Substitute Report page',
-  'Answer keys that name the likely mistake behind each wrong answer',
-  'One two-sided sheet per student per day that prints clearly in black and white',
-];
-const SP_FAQ = [
-  { q: 'Can a substitute with no math background run these?', a: 'Yes. Every activity tells students whether they are right: correct answers spell a message, keep them on the only route through a maze, or add up to a printed total. The plan for each day tells the substitute what to hand out and what to say.' },
-  { q: 'Will they fit any week of the year?', a: 'Yes. Each grade’s three days review the grade before, so they never depend on where your class is in the curriculum.' },
-  { q: 'How long does each day take?', a: 'Each day is designed to fill a class period: a warm-up, the main activity and a three-level Challenge Round.' },
-  { q: 'Do students need devices?', a: 'No. Every day is one two-sided printed sheet per student, and it prints clearly in black and white.' },
-];
-
-function pageSubPlans() {
-  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Sub Plans' }];
-  const grades = [['sp6', 'teal'], ['sp7', 'coral'], ['sp8', 'navy']].map(([k, acc]) => SP[k]);
-  const acc = { sp6: 'teal', sp7: 'coral', sp8: 'navy' };
-  return head({
-    title: 'Emergency Math Sub Plans | 6th, 7th & 8th Grade, No Prep',
-    desc: 'No-prep emergency math sub plans for 6th, 7th and 8th grade: three self-checking days per grade that review the grade before, with a free 3-day packet to try first.',
-    path: 'sub-plans.html',
-    ogImage: SP.sp6.img ? SITE_URL + SP.sp6.img : undefined,
-    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Sub Plans', url: '/sub-plans.html' }]),
-      faqSchema(SP_FAQ),
-      itemListSchema('Emergency math sub plans', [SP.sp6, SP.sp7, SP.sp8, SP.spbundle, SP.spfree].map(p => ({ url: p.url, name: p.title }))),
-      ...videoSchema([SP.sp6, SP.sp7, SP.sp8, SP.spbundle, SP.spfree].map(p => ({ ...VIDEO.subplans[p.key], name: `${p.title}: 20-second preview`, desc: 'A 20-second look inside the no-prep, self-checking emergency math sub plans.' })))),
-  }) + nav('sub-plans') + `
-<main id="main">
-  ${breadcrumb(crumbs)}
-  ${crHero('Emergency sub plans', 'Sub plans that check themselves',
-    'Three no-prep days per grade for the morning you wake up sick. A substitute with no math background can run every day, because every activity tells students whether they are right: correct answers spell a message, keep them on the only route through a maze, or add up to a printed total.',
-    `<a class="btn btn--primary" href="#grades">Choose your grade ${ICON.arrow}</a><a class="btn btn--ghost cr-btn--light" href="${esc(SP.spfree.url)}" target="_blank" rel="noopener">Free 3-day packet ${ICON.ext}</a>`)}
-
-  <section class="section">
-    <div class="wrap">
-      ${secHead('Three days, one routine', 'Every grade runs the same three days', 'Review only, designed to fill a class period, and built so students see right away when an answer needs another look.')}
-      <ol class="cr-roles">${SP_DAYS.map(([d, t, x], i) => `<li class="cr-role reveal"><span class="cr-role__n">${i + 1}</span><h3>${esc(t)}</h3><p>${esc(x)}</p></li>`).join('')}</ol>
-    </div>
-  </section>
-
-  <section class="section cr-alt" id="grades">
-    <div class="wrap">
-      ${secHead('Choose your grade', 'Each grade reviews the one before', 'So the plans work in any week of the year, wherever your class is in the curriculum. Press play for a 20-second look inside each set.')}
-      <div class="cr-grid vid-grid">
-        ${grades.map(p => vidCard({ url: p.url, ...VIDEO.subplans[p.key], accent: acc[p.key], name: `${p.grade} Emergency Math Sub Plans`, kicker: `3 days · reviews ${p.prior} skills${p.pages ? ` · ${p.pages} pages` : ''}` })).join('')}
-        ${vidCard({ url: SP.spbundle.url, ...VIDEO.subplans.spbundle, feature: true, name: '6th, 7th & 8th Grade Sub Plans Bundle', kicker: '9 days · three per grade' })}
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap cr-split">
-      <div>
-        ${secHead('In every grade', 'Everything the substitute needs')}
-        <ul class="cr-list">${SP_INCLUDED.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
-      </div>
-      <figure class="cr-split__img reveal">${SP.sp7.img ? `<img src="${SP.sp7.img}" alt="7th grade emergency math sub plans: three no-prep self-checking days" width="640" height="640" loading="lazy" decoding="async">` : ''}</figure>
-    </div>
-  </section>
-
-  <section class="section cr-alt">
-    <div class="wrap cr-split">
-      <div>
-        ${secHead('Try it first', 'A free 3-day packet', `A logic detective puzzle, a math mystery that decodes a secret message and a maze race, each self-checking, with teacher directions and an answer key.${SP.spfree.pages ? ` ${SP.spfree.pages} pages, for 6th, 7th or 8th grade.` : ''}`)}
-        ${tptBtn(SP.spfree, 'Get it free on TPT')}
-      </div>
-      <figure class="cr-split__img vid-figure reveal"><video controls playsinline preload="none" poster="${VIDEO.subplans.spfree.poster}" width="1280" height="720" aria-label="Free 3-day emergency math sub plan: 20-second preview"><source src="${VIDEO.subplans.spfree.video}" type="video/mp4"></video></figure>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap cr-cta">
-      <div><span class="eyebrow">When you're back</span><h2>Pick up with the daily warm-up</h2><p>Four spiral-review problems a day, so the class settles straight back into the routine.</p></div>
-      <a class="btn btn--primary" href="/warm-ups.html">See the warm-ups ${ICON.arrow}</a>
-    </div>
-  </section>
-
-  <section class="section cr-alt">
-    <div class="wrap cr-cta">
-      <div><span class="eyebrow">Same activities, one topic at a time</span><h2>Self-checking activity packs</h2><p>A maze, a secret message and an error detective for ${ACT.packs.length} single topics, from order of operations to systems of equations, in print and as self-grading Google Forms.</p></div>
-      <a class="btn btn--primary" href="/activity-packs.html">See the activity packs ${ICON.arrow}</a>
-    </div>
-  </section>
-
-  ${faqBlock(SP_FAQ, 'Sub plan questions')}
-  ${noteBand()}
-</main>
-${VID_SCRIPT}
 ` + footer() + scripts();
 }
 
@@ -5847,126 +5654,6 @@ function pageTiktok() {
   </section>
 </main>
 ${VID_SCRIPT}
-` + footer() + scripts();
-}
-
-
-/* ============================================================================
-   MISTAKE OF THE WEEK   (v1.13.0 · 2026-09-19)
-   One page for the five listings (6th, 7th, 8th, the 36-week bundle, the free 3-week sampler).
-   The 36 weekly skills and codes and the grade 6 week 1 example come from the product's own
-   content file (mc678-motw/src/content.js) via the exporter; each week links the site's page for
-   the 4-in-1 Skill Sheet that teaches that skill. Counts in the copy are the listings' own.
-   ============================================================================ */
-const MW_SHEET_PAGE = Object.fromEntries(products.map(p => [((p.url || '').match(/(\d{7,9})$/) || [])[1], p.pageUrl]));
-const MW_ACC = { 6: 'teal', 7: 'coral', 8: 'navy' };
-const MW_INCLUDED = [
-  '12 mistake posters and 12 fix reveals, in color and black-and-white ink-saver versions',
-  '24 Now You Try check items with a full answer key',
-  'A 51-slide editable PowerPoint deck plus a Google Slides copy link',
-  'Response slips, a student Mistake Log, a 3-point rubric and sentence stems',
-  'A pacing map with CCSS codes and a 3-panel bulletin board banner',
-];
-const MW_FAQ = [
-  { q: 'How long does it take each week?', a: 'Five minutes on Monday: students find the mistake, fix it and explain the rule in their own words. On Friday, two fresh Now You Try items check whether the fix stuck.' },
-  { q: 'Why teach with wrong answers?', a: 'Students who can follow a worked example still repeat the same few mistakes on every quiz, because nobody asked them to look at a wrong answer and say why it is wrong. Explaining an error is also what constructed-response questions ask for when they say critique the reasoning.' },
-  { q: 'Does it work in Google Slides?', a: 'Yes. Every grade has a 51-slide editable PowerPoint deck and a Google Slides copy link.' },
-  { q: 'Can I try it first?', a: 'Yes. The free 3-week sampler has one complete week each for 6th, 7th and 8th grade, with response slips, a rubric and an answer key.' },
-];
-
-function pageMistakeOfTheWeek() {
-  const ex = MOTW.example;
-  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Mistake of the Week' }];
-  const gradeKey = { 6: 'motw6', 7: 'motw7', 8: 'motw8' };
-  const table = g => {
-    const ws = MOTW.weeks[g];
-    return `<section class="cr-quarter cr-quarter--${MW_ACC[g]} reveal" id="grade-${g}">
-      <div class="cr-quarter__head">
-        <div><span class="cr-quarter__n">${g}th grade</span><h3>12 weeks of ${g}th grade mistakes</h3><p>One skill a week, each tied to the 4-in-1 Skill Sheet that teaches it</p></div>
-        ${tptBtn(MOTW[gradeKey[g]], `${g}th grade on TPT`, 'btn--ghost')}
-      </div>
-      <table class="cr-weeks"><thead><tr><th scope="col">Week</th><th scope="col">Skill</th><th scope="col">Standard</th><th scope="col">Skill Sheet</th></tr></thead>
-        <tbody>${ws.map(w => {
-          const id = (w.sheetUrl.match(/(\d{7,9})$/) || [])[1];
-          const href = MW_SHEET_PAGE[id] || w.sheetUrl;
-          const ext = !MW_SHEET_PAGE[id];
-          return `<tr><td>${w.wk}</td><td>${esc(w.skill)}</td><td class="cr-code">${esc(w.ccss)}</td><td><a href="${esc(href)}"${ext ? ' target="_blank" rel="noopener"' : ''}>${esc(w.sheetName)}</a></td></tr>`;
-        }).join('')}</tbody></table>
-    </section>`;
-  };
-  return head({
-    title: 'Mistake of the Week | Math Error Analysis Warm-Ups, Grades 6–8',
-    desc: 'Math error analysis warm-ups for 6th, 7th and 8th grade: one mistake poster each Monday, five minutes to find it, fix it and explain it, for 12 weeks per grade.',
-    path: 'mistake-of-the-week.html',
-    ogImage: MOTW.motw6.img ? SITE_URL + MOTW.motw6.img : undefined,
-    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Mistake of the Week', url: '/mistake-of-the-week.html' }]),
-      faqSchema(MW_FAQ),
-      itemListSchema('Mistake of the Week', ['motw6', 'motw7', 'motw8', 'motwbundle', 'motwfree'].map(k => ({ url: MOTW[k].url, name: MOTW[k].title })))),
-  }) + nav('motw') + `
-<main id="main">
-  ${breadcrumb(crumbs)}
-  ${crHero('Error analysis warm-ups', 'Find it. Fix it. Explain it.',
-    'One mistake poster on the wall each Monday. Your class has five minutes to find the one thing that went wrong, fix it and explain the rule in their own words, and on Friday two fresh Now You Try items check whether the fix stuck. Twelve weeks per grade, for 6th, 7th and 8th grade.',
-    `<a class="btn btn--primary" href="#grades">Choose your grade ${ICON.arrow}</a><a class="btn btn--ghost cr-btn--light" href="${esc(MOTW.motwfree.url)}" target="_blank" rel="noopener">Free 3-week sampler ${ICON.ext}</a>`)}
-
-  <section class="section">
-    <div class="wrap cr-split">
-      <div>
-        ${secHead(`Week 1 · ${ex.grade}th grade · ${ex.ccss}`, 'Try one with your class')}
-        <div class="mw-poster reveal">
-          <p class="mw-poster__stem">${esc(ex.stem)}</p>
-          <p class="mw-poster__claim"><b>${esc(ex.who)} says:</b> “${esc(ex.claim)}”</p>
-          <p class="mw-poster__prompt">${esc(ex.prompt)}</p>
-          <details class="mw-poster__reveal"><summary>Show the fix</summary>
-            <p class="mw-poster__rule">${esc(ex.rule)}</p>
-            <ol>${ex.steps.map(s => `<li>${esc(s)}</li>`).join('')}</ol>
-          </details>
-        </div>
-      </div>
-      <figure class="cr-split__img reveal">${MOTW.motw6.img ? `<img src="${MOTW.motw6.img}" alt="Mistake of the Week, 6th grade math error analysis warm-ups" width="640" height="640" loading="lazy" decoding="async">` : ''}</figure>
-    </div>
-  </section>
-
-  <section class="section cr-alt" id="grades">
-    <div class="wrap">
-      ${secHead('Choose your grade', 'Twelve weeks per grade', 'Every grade runs the same five-minute Monday routine, so students arrive in 7th and 8th grade already knowing how to find, fix and explain a mistake.')}
-      <div class="cr-grid">
-        ${[6, 7, 8].map(g => wuTile({ url: MOTW[gradeKey[g]].url, external: true, img: MOTW[gradeKey[g]].img, accent: MW_ACC[g], name: `Mistake of the Week, ${g}th Grade`, kicker: '12 weeks · 24 Now You Try items' })).join('')}
-        ${wuTile({ url: MOTW.motwbundle.url, external: true, img: MOTW.motwbundle.img, feature: true, name: 'Mistake of the Week Bundle', kicker: '6th, 7th & 8th grade · 36 weeks' })}
-        ${wuTile({ url: MOTW.motwfree.url, external: true, img: MOTW.motwfree.img, name: 'Mistake of the Week sampler', kicker: 'Free · one week per grade', badge: 'Free', cta: 'Get it free on TPT' })}
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      ${secHead('In every grade', 'Posters, reveals, checks and slides')}
-      <ul class="cr-list">${MW_INCLUDED.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
-    </div>
-  </section>
-
-  <section class="section cr-alt">
-    <div class="wrap">
-      ${secHead('Every week', 'What each grade’s mistakes cover', 'Each week’s skill and standard, and the 4-in-1 Skill Sheet to reteach it when the mistake shows up in your class.')}
-      ${[6, 7, 8].map(table).join('\n')}
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap cr-cta">
-      <div><span class="eyebrow">For a department</span><h2>One routine in every room</h2><p>The bundle adds a 95-page all-grades teacher file: a department guide with a 6–8 vertical map of where each strand’s mistakes connect, a rollout plan and a 15-minute PLC protocol for sorting student slips.</p></div>
-      ${tptBtn(MOTW.motwbundle, 'View the bundle')}
-    </div>
-  </section>
-
-  ${videoGrid([6, 7, 8].map(g => ({ p: MOTW[{ 6: 'motw6', 7: 'motw7', 8: 'motw8' }[g]], name: `Mistake of the Week, ${g}th Grade`, kicker: '12 weeks', accent: MW_ACC[g] }))
-    .concat([{ p: MOTW.motwbundle, name: 'Mistake of the Week Bundle', kicker: '6th, 7th & 8th grade · 36 weeks', feature: true },
-             { p: MOTW.motwfree, name: 'Mistake of the Week sampler', kicker: 'Free · one week per grade' }]),
-    'See inside', 'Watch the routine in 20 seconds', '', true)}
-
-  ${faqBlock(MW_FAQ, 'Mistake of the Week questions')}
-  ${noteBand()}
-</main>
 ` + footer() + scripts();
 }
 
@@ -6318,421 +6005,8 @@ function pageAlgebra1Sheet(s, prev, next) {
 }
 
 
-/* ============================================================================
-   MONEY LABS   (v1.15.0 · 2026-09-19)
-   Ten real-world consumer-math labs and the Consumer Math Essentials bundle, which the site did not
-   link. Data: classroom_data.json `money`, parsed from each lab's own listing (hook, the seven steps
-   students work through, the "real math" note, print + digital, what's included, standard).
-   ============================================================================ */
-const MONEY = CLASSROOM.money;
-// House style has no exclamation points; the one in the labs' copy is a quoted sale sign (“DEAL!”).
-const ML_LABS = MONEY.labs.map(l => Object.assign(l, { pageUrl: `/money-labs/${l.slug}.html`, hook: l.hook.replace(/!(?=”|")/g, ''), summary: l.summary.replace(/!(?=”|")/g, '') }));
-const ML_FREE = ML_LABS.filter(l => l.free);
-const ML_FORMAT = [
-  ['Decode', 'Read a real document: a pay stub, a receipt, a loan quote, a credit card statement.'],
-  ['Build it by hand', 'Do the math on paper, with no calculator, and get scored on it.'],
-  ['Explore', 'Run “what-if” questions in a self-calculating spreadsheet.'],
-  ['Decide', 'Make a real decision with a surprising answer, and justify it with the numbers.'],
-  ['Prove it', 'A scored mastery check on fresh numbers, then a reality-check reflection.'],
-];
-const ML_FAQ = [
-  { q: 'What grades are the Money Labs for?', a: 'Grades 7 to 10: each lab is built on a 7th grade percent, unit rate or rational-number standard and stays accessible through high school, so it fits financial literacy, consumer math, FACS, CTE and intervention.' },
-  { q: 'Do students need devices?', a: 'No. Every lab runs print-and-go, and a Printed Calculator Readouts page lets a print-only class run the whole lab. With devices, assign the editable Word packet in Google Docs and the calculator in Google Sheets.' },
-  { q: 'Does the calculator do the math for them?', a: 'No. Students do the math by hand first and are scored on it. The spreadsheet is for exploring what-if questions afterward, never a substitute for the calculation.' },
-  { q: 'Is there a free lab?', a: `Yes. ${ML_FREE.map(l => `${l.name} (${l.topic})`).join(' and ')} is free, and it is included in the bundle as a bonus lab.` },
-];
-
-/* ---------------------------------------------------------------- /money-labs.html */
-function pageMoneyLabs() {
-  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Money Labs' }];
-  const tiles = ML_LABS.map(l => wuTile({ url: l.pageUrl, img: l.img, accent: l.free ? 'teal' : 'gold', name: l.name,
-    kicker: `${l.topic}${l.free ? ' · free' : ''}`, cta: 'See the lab' })).join('');
-  return head({
-    title: 'Money Labs | Real-World Financial Literacy Math, Grades 7–10',
-    desc: `Ten real-world money math labs for grades 7 to 10: paychecks, budgets, tax and tip, credit cards, loans and interest, each with a self-calculating spreadsheet.`,
-    path: 'money-labs.html',
-    ogImage: ML_LABS[0] && ML_LABS[0].img ? SITE_URL + ML_LABS[0].img : undefined,
-    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Money Labs', url: '/money-labs.html' }]),
-      faqSchema(ML_FAQ),
-      itemListSchema('Money Labs', ML_LABS.map(l => ({ url: l.pageUrl, name: `${l.name}: ${l.topic}` })))),
-  }) + nav('money') + `
-<main id="main">
-  ${breadcrumb(crumbs)}
-  ${crHero('Consumer math · grades 7–10', 'Real-world money math, done by hand',
-    `${ML_LABS.length} labs on the money decisions students are about to make: a first paycheck, a budget, a checkout total, a credit card, a loan, a savings goal. Each one starts from a real document, has students do the math by hand, then puts a live calculator in their hands to test a real decision.`,
-    `<a class="btn btn--primary" href="#labs">See the ${ML_LABS.length} labs ${ICON.arrow}</a>${ML_FREE[0] ? `<a class="btn btn--ghost cr-btn--light" href="${ML_FREE[0].pageUrl}">Try ${esc(ML_FREE[0].name)} free ${ICON.arrow}</a>` : ''}`)}
-
-  <section class="section">
-    <div class="wrap">
-      ${secHead('Every lab, the same format', 'Decode, build, explore, decide, prove it', 'No drill sheets: each lab ends in a decision students have to defend with their own numbers.')}
-      <ol class="cr-roles">${ML_FORMAT.map(([t, d], i) => `<li class="cr-role reveal"><span class="cr-role__n">${i + 1}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></li>`).join('')}</ol>
-    </div>
-  </section>
-
-  <section class="section cr-alt" id="labs">
-    <div class="wrap">
-      ${secHead('The labs', `${ML_LABS.length} decisions, ${ML_LABS.length} labs`)}
-      <div class="cr-grid">${tiles}</div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap cr-split">
-      <div>
-        ${secHead('In every lab', 'Print-and-go or digital')}
-        <ul class="cr-list">${(ML_LABS.find(l => !l.free) || ML_LABS[0]).included.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
-      </div>
-      <figure class="cr-split__img reveal">${ML_LABS[1] && ML_LABS[1].img ? `<img src="${ML_LABS[1].img}" alt="${esc(ML_LABS[1].name)} money lab: ${esc(ML_LABS[1].topic)}" width="640" height="640" loading="lazy" decoding="async">` : ''}</figure>
-    </div>
-  </section>
-
-  ${MONEY.bundle ? `<section class="section cr-alt"><div class="wrap cr-cta"><div><span class="eyebrow">The whole series</span><h2>${esc(MONEY.bundle.name)} Bundle</h2><p>All ${ML_LABS.length - ML_FREE.length} paid labs in one purchase, with the free ${esc(ML_FREE.map(l => l.name).join(' and '))} lab included as a bonus.</p></div>${tptBtn(MONEY.bundle, 'View the bundle')}</div></section>` : ''}
-
-  <section class="section">
-    <div class="wrap cr-cta">
-      <div><span class="eyebrow">Teaching a personal finance course?</span><h2>Personal finance I Can posters</h2><p>Learning targets for the high school personal finance standards of ${ICAN.personal_finance.filter(p => !p.free).length} states.</p></div>
-      <a class="btn btn--primary" href="/i-can/personal-finance.html">See the posters ${ICON.arrow}</a>
-    </div>
-  </section>
-
-  ${faqBlock(ML_FAQ, 'Money Lab questions')}
-  ${noteBand()}
-</main>
-` + footer() + scripts();
-}
-
-/* ============================================================================
-   DIGITAL MYSTERY PICTURES   (v1.16.0 · 2026-09-19; v2 line v1.19.0 · 2026-10-05)
-   The seven self-checking Google Sheets pixel-art sets (v2, live Oct 2 2026): three levels of 12, a picture
-   per level, a hint for each common mistake, a completion code per level. Data: classroom_data.json
-   `mystery`, written by the state-testing exporter from the sets' own build data (levels, pictures,
-   standards) and the listing kit (live id, title, level lines). Integer Operations is free. Videos:
-   video_data.json by_id.
-   ============================================================================ */
-const MYSTERY = CLASSROOM.mystery.slice().sort((a, b) => (b.free - a.free) || a.grade.localeCompare(b.grade));
-const MP_FREE = MYSTERY.find(m => m.free);
-const MP_GRADES = [...new Set(MYSTERY.map(m => parseInt(m.grade, 10)))].sort();
-const MP_SPAN = `${MP_GRADES[0]}–${MP_GRADES[MP_GRADES.length - 1]}`;
-const MP_PER = MYSTERY[0].per_level, MP_TOTAL = MYSTERY[0].total, MP_LEVELS = MYSTERY[0].levels.length;
-if (MYSTERY.some(m => m.total !== MP_TOTAL || m.per_level !== MP_PER || m.levels.length !== MP_LEVELS)) throw new Error('mystery: sets differ in size; the page copy assumes one size');
-const MP_ACC = { 6: 'teal', 7: 'coral', 8: 'navy' };
-const MP_STEPS = [
-  ['Post one link', 'The student link in the teacher guide opens a Make a copy page, so every student gets their own Google Sheet.'],
-  ['Type and press Enter', `Students type an answer and press Enter. A right answer turns green and uncovers part of the picture.`],
-  ['The picture stays a mystery', 'Pieces appear all over the picture, so it stays a mystery until the last few answers.'],
-  ['A hint for the mistake', 'A wrong answer turns red and shows a hint written for that mistake, such as subtracting a negative.'],
-  ['A code for each level', `Solving all ${MP_PER} on a level shows a completion code you can collect.`],
-];
-const MP_WHY = [
-  `Three levels in every set, so students start at the level that fits`,
-  'No grading: the Sheet checks every answer, and the teacher guide has worked answer keys and a printable work page',
-  'Answers check fairly: equivalent forms count, and a formula typed in the answer box is never counted',
-  'Fits practice after a lesson, early finishers, review days and sub plans',
-];
-const MP_FAQ = [
-  { q: 'Do I need to set anything up?', a: 'No. Post the student link from the teacher guide. It opens a Make a copy page, so each student works in their own Google Sheet.' },
-  { q: 'What happens when a student gets one wrong?', a: 'The answer turns red and shows a hint written for that mistake, and that piece of the picture stays hidden until the answer is right.' },
-  { q: 'How many problems are in each set?', a: `${MP_TOTAL} problems: ${MP_LEVELS} levels of ${MP_PER}, each level with its own picture. Level 3 is real-world problems.` },
-  { q: 'Does it work in Excel?', a: 'No. The sets are built for Google Sheets, and each student needs a Google account.' },
-  { q: 'Is one free?', a: MP_FREE ? `Yes. ${MP_FREE.topic} (${MP_FREE.grade.toLowerCase()}) is free on TPT, in the same three-level format.` : 'Not at the moment.' },
-];
-// A cluster code (7.NS.A.1) links the tips page for the part the set practises; a part code with no page of
-// its own (6.RP.A.3a) links its standard's page.
-const MP_PART = { 'Integer Operations': { '7.NS.A.1': 'b', '7.NS.A.2': 'a' }, 'Rational Number Operations': { '7.NS.A.1': 'd', '7.NS.A.2': 'c' } };
-const mpStd = (c, m) => {
-  const k = [c, c + ((MP_PART[m.topic] || {})[c] || 'a'), c.replace(/[a-z]$/, '')].find(x => standardsMap[x]);
-  return k ? `<a href="/standards/${standardsMap[k].slug}.html">${esc(c)}</a>` : esc(c);
-};
-const mpName = m => `${m.topic} Pixel Art`;
-
-/* ---------------------------------------------------------------- /mystery-pictures.html */
-function pageMysteryPictures() {
-  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Mystery Pictures' }];
-  const kicker = m => `${m.grade}${m.free ? ' · free' : ''} · ${m.theme.toLowerCase()} pictures`;
-  const desc = m => `${m.levels.map(l => l.title).join(', ')}.`;
-  const tiles = MYSTERY.map(m => vidOf(m)
-    ? vidCard({ url: m.url, ...vidOf(m), accent: MP_ACC[parseInt(m.grade, 10)], name: mpName(m), kicker: kicker(m), desc: desc(m), cta: m.free ? 'Get it free on TPT' : 'View on TPT' })
-    : wuTile({ url: m.url, external: true, img: m.img, accent: MP_ACC[parseInt(m.grade, 10)], name: mpName(m), kicker: kicker(m), desc: desc(m), cta: m.free ? 'Get it free on TPT' : 'View on TPT' })).join('');
-  const rows = MYSTERY.map(m => `<tr><td><a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.topic)}</a>${m.free ? ' (free)' : ''}</td><td>${esc(m.grade)}</td>`
-    + m.levels.map(l => `<td>${esc(l.title)}<br><small>Reveals a ${esc(l.picture)}</small></td>`).join('')
-    + `<td class="cr-code">${m.codes.map(c => mpStd(c, m)).join(', ')}</td></tr>`).join('');
-  const vids = MYSTERY.filter(vidOf).map(m => ({ name: `${mpName(m)}: 20-second preview`, desc: `${m.grade} self-checking Google Sheets mystery pictures, ${MP_TOTAL} problems.`, ...vidOf(m) }));
-  return head({
-    title: `Math Mystery Pictures | Self-Checking Google Sheets Pixel Art, ${MP_SPAN}`,
-    desc: `Self-checking math pixel art in Google Sheets for grades ${MP_SPAN}: every right answer uncovers part of a hidden picture. ${MYSTERY.length} sets, one free.`,
-    path: 'mystery-pictures.html',
-    ogImage: MYSTERY[0] && MYSTERY[0].img ? SITE_URL + MYSTERY[0].img : undefined,
-    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Mystery Pictures', url: '/mystery-pictures.html' }]),
-      faqSchema(MP_FAQ),
-      itemListSchema('Digital Mystery Pictures', MYSTERY.map(m => ({ url: m.url, name: m.title }))), ...videoSchema(vids)),
-  }) + nav('mystery') + `
-<main id="main">
-  ${breadcrumb(crumbs)}
-  ${crHero(`Self-checking Google Sheets · grades ${MP_SPAN}`, 'Practice that reveals a picture',
-    `Every right answer uncovers part of a hidden pixel-art picture, and a wrong answer shows a hint written for that mistake. Three levels of ${MP_PER} in every set, from the basic skill to real-world problems. ${MYSTERY.length} sets, ${MP_TOTAL} problems each.`,
-    `<a class="btn btn--primary" href="#sets">See the ${MYSTERY.length} sets ${ICON.arrow}</a>${MP_FREE ? `<a class="btn btn--ghost cr-btn--light" href="${esc(MP_FREE.url)}" target="_blank" rel="noopener">${esc(MP_FREE.topic)} free ${ICON.ext}</a>` : ''}`)}
-
-  <section class="section">
-    <div class="wrap">
-      ${secHead('How it works', 'One link, no grading', 'Students check their own work as they go, and you collect a code for each level they finish.')}
-      <ol class="cr-roles">${MP_STEPS.map(([t, d], i) => `<li class="cr-role reveal"><span class="cr-role__n">${i + 1}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></li>`).join('')}</ol>
-    </div>
-  </section>
-
-  <section class="section cr-alt" id="sets">
-    <div class="wrap">
-      ${secHead('The sets', `${MYSTERY.length} topics, three pictures each`, 'Press play for a 20-second look at each set. The previews never show a finished picture: that stays a mystery for your students.')}
-      <div class="cr-grid vid-grid">${tiles}</div>
-    </div>
-  </section>
-  ${VID_SCRIPT}
-
-  <section class="section">
-    <div class="wrap">
-      ${secHead('What each set covers', 'Three levels, three pictures', 'Levels 1 and 2 practise the skill; Level 3 puts it to work in real-world problems that match the set’s pictures.')}
-      <div class="cr-scroll"><table class="cr-weeks mp-table"><thead><tr><th scope="col">Set</th><th scope="col">Grade</th><th scope="col">Level 1</th><th scope="col">Level 2</th><th scope="col">Level 3</th><th scope="col">Standards</th></tr></thead>
-        <tbody>${rows}</tbody></table></div>
-    </div>
-  </section>
-
-  <section class="section cr-alt">
-    <div class="wrap cr-split">
-      <div>
-        ${secHead('Why teachers use them', 'No prep, no grading')}
-        <ul class="cr-list">${MP_WHY.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
-      </div>
-      <figure class="cr-split__img reveal">${MYSTERY[1] && MYSTERY[1].img ? `<img src="${MYSTERY[1].img}" alt="${esc(mpName(MYSTERY[1]))}, ${esc(MYSTERY[1].grade.toLowerCase())} self-checking Google Sheets" width="640" height="640" loading="lazy" decoding="async">` : ''}</figure>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap cr-cta">
-      <div><span class="eyebrow">When a mistake keeps coming back</span><h2>Mistake of the Week</h2><p>A five-minute Monday routine: students find a mistake, fix it and explain the rule, twelve weeks per grade.</p></div>
-      <a class="btn btn--primary" href="/mistake-of-the-week.html">See Mistake of the Week ${ICON.arrow}</a>
-    </div>
-  </section>
-
-  ${faqBlock(MP_FAQ, 'Mystery Picture questions')}
-  ${noteBand()}
-</main>
-` + footer() + scripts();
-}
-
-
-/* ============================================================================
-   ACTIVITY PACKS   (v1.17.0 · 2026-09-25)
-   The 14 single-topic self-checking packs, their 5 bundles and the free maze sampler, each pack with its
-   20-second preview video. Everything counted here comes from the packs' own build data via
-   tools/site_export/mc678_videos.py; nothing is typed in by hand.
-   ============================================================================ */
-const ACT_ACC = { grade6: 'teal', grade7: 'coral', grade8: 'navy', geometry: 'forest', mega: 'gold' };
-const ACT_GROUP_HEAD = {
-  grade6: ['6th grade', 'Five 6th grade topics'],
-  geometry: ['6th and 7th grade', 'Area, surface area and volume'],
-  grade7: ['7th grade', 'Three 7th grade topics'],
-  grade8: ['8th grade', 'Three 8th grade topics'],
-};
-const ACT_STEPS = [
-  ['Maze Race', 'Students solve their way along the one route through a maze. A wrong answer leads into a trap, so they know to go back.'],
-  ['Secret Message', 'Twelve problems whose answers spell a message. A wrong answer gives the wrong letter, so the mistake shows itself.'],
-  ['Error Detective', 'Ten students’ worked problems, four of them with a mistake. Students find each mistake and fix it.'],
-  ['Size It Up', 'Students put their answers in order to spell a word, then solve problems in context. Order of Operations has parentheses puzzles here instead.'],
-];
-const ACT_INCLUDED = [
-  'Four self-checking activities on one topic',
-  'A reference sheet with worked examples and the mistakes to watch for',
-  'A Quick Check exit ticket in two forms, A and B',
-  'Answer keys that name the mistake behind each wrong answer',
-  'Self-grading Google Forms for every activity and both Quick Checks',
-  'A teacher guide, with no prep beyond printing',
-];
-const ACT_FAQ = [
-  { q: 'What does self-checking mean?', a: 'Every activity tells students when an answer is wrong: a wrong turn in the maze leads to a trap, a wrong answer in the secret message gives a letter that does not fit, and the error detective cases add up to a printed total. Students fix mistakes while they work instead of after you grade.' },
-  { q: 'Do they work digitally?', a: 'Yes. Every pack includes self-grading Google Forms for its activities and both Quick Checks, with copy links, so you can assign them in Google Classroom.' },
-  { q: 'How do I use them?', a: 'As a no-prep lesson on the topic, a math station, homework, early-finisher work, test review or a sub day. Each activity stands on its own, so you can use one at a time.' },
-  { q: 'Is there a free one to try?', a: 'Yes. The free Order of Operations maze is a complete self-checking maze with its answer key.' },
-  { q: 'Are they in a bundle?', a: 'Yes. Each pack is in its grade bundle (the three geometry packs have their own), and all 14 are in the 6th-8th grade bundle.' },
-];
-
-function pageActivityPacks() {
-  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Activity Packs' }];
-  const byKey = Object.fromEntries(ACT.packs.map(p => [p.key, p]));
-  const bundle = Object.fromEntries(ACT.bundles.map(b => [b.key, b]));
-  const packCard = p => vidCard({ url: p.url, video: p.video, poster: p.poster, accent: ACT_ACC[p.bundle], name: `${p.name} Activity Pack`,
-    kicker: `${p.grade} · ${p.pages} pages`, desc: `Maze Race, Secret Message, Error Detective and ${p.act4}.` });
-  const group = key => {
-    const b = bundle[key];
-    const packs = b.members.map(m => byKey[m]).filter(p => p && p.bundle === key);
-    return `<section class="cr-quarter cr-quarter--${ACT_ACC[key]} act-group reveal" id="${key}">
-      <div class="cr-quarter__head">
-        <div><span class="cr-quarter__n">${esc(ACT_GROUP_HEAD[key][0])}</span><h3>${esc(ACT_GROUP_HEAD[key][1])}</h3><p>${esc(packs.map(p => p.name).join(', '))}</p></div>
-        ${tptBtn(b, `${b.name} on TPT`, 'btn--ghost')}
-      </div>
-      <div class="cr-grid vid-grid">${packs.map(packCard).join('')}</div>
-    </section>`;
-  };
-  const S = ACT.sampler;
-  return head({
-    title: 'Self-Checking Math Activity Packs | Mazes & Error Analysis, 6–8',
-    desc: `Self-checking math activities for 6th, 7th and 8th grade: ${ACT.packs.length} topic packs with a maze, a secret message and an error detective, in print and Google Forms.`,
-    path: 'activity-packs.html',
-    ogImage: ACT.bundles[4] ? SITE_URL + ACT.bundles[4].img : undefined,
-    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Activity Packs', url: '/activity-packs.html' }]),
-      faqSchema(ACT_FAQ),
-      itemListSchema('Self-checking math activity packs', ACT.packs.map(p => ({ url: p.url, name: p.title }))),
-      ...videoSchema(ACT.packs.map(p => ({ video: p.video, poster: p.poster, name: `${p.name} Activity Pack: 20-second preview`, desc: `A 20-second look inside the ${p.name} self-checking activity pack for ${p.grade.toLowerCase()}.` })))),
-  }) + nav('activity-packs') + `
-<main id="main">
-  ${breadcrumb(crumbs)}
-  ${crHero('Self-checking activity packs · grades 6–8', 'Activities that check themselves',
-    `${ACT.packs.length} single-topic packs, each with a maze, a secret message, an error detective and one more activity, where a wrong answer shows itself while students work. In print and as self-grading Google Forms. Press play on any pack for a 20-second look inside.`,
-    `<a class="btn btn--primary" href="#packs">See the ${ACT.packs.length} packs ${ICON.arrow}</a><a class="btn btn--ghost cr-btn--light" href="${esc(S.url)}" target="_blank" rel="noopener">Free maze to try ${ICON.ext}</a>`)}
-
-  <section class="section">
-    <div class="wrap">
-      ${secHead('Four activities in every pack', 'Wrong answers show themselves', 'So students catch a mistake the moment they make it, not a day later on a graded paper.')}
-      <ol class="cr-roles">${ACT_STEPS.map(([t, d], i) => `<li class="cr-role reveal"><span class="cr-role__n">${i + 1}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></li>`).join('')}</ol>
-    </div>
-  </section>
-
-  <section class="section cr-alt" id="packs">
-    <div class="wrap">
-      ${secHead('The packs', `${ACT.packs.length} topics, grouped by grade`)}
-      ${['grade6', 'geometry', 'grade7', 'grade8'].map(group).join('')}
-    </div>
-  </section>
-
-  <section class="section" id="bundles">
-    <div class="wrap">
-      ${secHead('Bundles', 'Every pack for your grade in one file', 'The grade bundles and the geometry bundle hold three to five packs each; the 6th-8th grade bundle holds all ' + ACT.packs.length + '.')}
-      <div class="cr-grid">${ACT.bundles.map(b => wuTile({ url: b.url, external: true, img: b.img, accent: ACT_ACC[b.key], feature: b.key === 'mega', name: b.name, kicker: `${b.members.length} packs`, desc: b.sub })).join('')}</div>
-    </div>
-  </section>
-
-  <section class="section cr-alt">
-    <div class="wrap cr-split">
-      <div>
-        ${secHead('In every pack', 'Everything for one topic')}
-        <ul class="cr-list">${ACT_INCLUDED.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
-      </div>
-      <figure class="cr-split__img vid-figure reveal"><video controls playsinline preload="none" poster="${byKey['order-of-operations'].poster}" width="1280" height="720" aria-label="Order of Operations Activity Pack: 20-second preview"><source src="${byKey['order-of-operations'].video}" type="video/mp4"></video></figure>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap cr-split">
-      <div>
-        ${secHead('Try it first', 'A free Order of Operations maze', 'A complete self-checking maze from the Order of Operations pack, with its answer key.')}
-        ${tptBtn(S, 'Get it free on TPT')}
-      </div>
-      <figure class="cr-split__img reveal"><img src="${S.img}" alt="Free order of operations self-checking maze" width="640" height="640" loading="lazy" decoding="async"></figure>
-    </div>
-  </section>
-
-  <section class="section cr-alt">
-    <div class="wrap cr-cta">
-      <div><span class="eyebrow">For a sub day</span><h2>Emergency sub plans</h2><p>Three no-prep days per grade built from the same self-checking activities, with everything the substitute needs.</p></div>
-      <a class="btn btn--primary" href="/sub-plans.html">See the sub plans ${ICON.arrow}</a>
-    </div>
-  </section>
-
-  ${faqBlock(ACT_FAQ, 'Activity pack questions')}
-  ${noteBand()}
-</main>
-${VID_SCRIPT}
-` + footer() + scripts();
-}
-
-/* ---------------------------------------------------------------- /money-labs/<lab>.html */
-function pageMoneyLab(l, prev, next) {
-  const crumbs = [{ name: 'Home', url: '/' }, { name: 'Money Labs', url: '/money-labs.html' }, { name: l.name }];
-  const code = (l.standards.match(/\d\.[A-Z]{2}\.[A-Z]\.\d/) || [''])[0];
-  let title = `${l.topic} Lesson | Real-World Money Lab, Grades 7–10`;
-  if (title.length > 70) title = `${l.topic} | Money Lab, Grades 7–10`;
-  if (title.length > 70) title = `${l.topic} | Money Lab`;
-  let desc = l.hook.split(/(?<=[.?!])\s+/).slice(0, 2).join(' ') + ` A ${l.pages}-page money lab for grades 7 to 10.`;
-  if (desc.length > 170) desc = `${l.topic}: a ${l.pages}-page real-world money lab for grades 7 to 10, with a self-calculating spreadsheet, answer key and rubric.`;
-  if (desc.length > 170) desc = desc.slice(0, 166).replace(/\s+\S*$/, '') + '…';
-  if (desc.length < 70) desc = `${l.topic}: a ${l.pages}-page real-world money lab for grades 7 to 10, with a self-calculating spreadsheet, answer key and rubric.`;
-  const cta = tptBtn(l, l.free ? 'Get it free on TPT' : 'View on TPT');
-  return head({
-    title, desc, path: l.pageUrl.slice(1), ogType: 'article',
-    ogImage: l.img ? SITE_URL + l.img : undefined,
-    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Money Labs', url: '/money-labs.html' }, { name: l.name, url: l.pageUrl }]),
-      { '@context': 'https://schema.org', '@type': 'LearningResource', name: `${l.name}: ${l.topic}`, url: SITE_URL + l.pageUrl,
-        educationalLevel: 'Grades 7-10', learningResourceType: 'Lesson', inLanguage: 'en', description: l.summary,
-        educationalAlignment: code ? { '@type': 'AlignmentObject', alignmentType: 'teaches', educationalFramework: 'Common Core State Standards', targetName: code } : undefined,
-        image: l.img ? SITE_URL + l.img : undefined, provider: { '@type': 'Organization', name: 'Math Class 678', url: SITE_URL },
-        offers: { '@type': 'Offer', url: l.url, availability: 'https://schema.org/InStock' } }),
-  }) + nav('money') + `
-<main id="main" class="sheet">
-  ${breadcrumb(crumbs)}
-  <section class="section sheet-hero">
-    <div class="wrap sheet-hero__grid">
-      <div class="sheet-hero__media a1-media">${l.img ? `<img src="${l.img}" alt="${esc(l.name)} money lab: ${esc(l.topic)}" width="640" height="640" loading="eager" fetchpriority="high" decoding="async">` : ''}</div>
-      <div class="sheet-hero__copy">
-        <div class="sheet-hero__tags">
-          ${code ? `<span class="sheet-chip sheet-chip--ccss">${esc(code)}</span>` : ''}
-          <span class="sheet-chip">${esc(l.name)} lab</span>
-          <span class="sheet-chip">Grades 7–10</span>
-          <span class="sheet-chip">${l.pages}-page lab</span>
-          ${l.free ? '<span class="sheet-chip">Free</span>' : ''}
-        </div>
-        <h1>${esc(l.topic)}</h1>
-        <p class="sheet-hero__ican">${esc(l.hook)}</p>
-        <div class="sheet-hero__cta">${cta}<a class="btn btn--ghost" href="/money-labs.html">All Money Labs ${ICON.arrow}</a></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section sheet-detail" style="padding-top:0">
-    <div class="wrap sheet-detail__grid">
-      <div class="sheet-detail__main">
-        <div class="sheet-block"><h2>The lab</h2><p>${esc(l.summary)}</p></div>
-        <div class="sheet-block"><h2>What students do</h2>
-          <ol class="ml-steps">${l.steps.map(s => `<li><b>${esc(s.step)}</b>${s.what ? ` — ${esc(s.what)}` : ''}</li>`).join('')}</ol></div>
-        ${l.realmath ? `<div class="sheet-block a1-rule"><h2>Real math, done right</h2><p>${esc(l.realmath)}</p></div>` : ''}
-        ${l.printdigital ? `<div class="sheet-block"><h2>Print or digital</h2><p>${esc(l.printdigital)}</p></div>` : ''}
-        <div class="sheet-block"><h2>What is included</h2><ul class="cr-list">${l.included.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>
-      </div>
-      <aside class="sheet-detail__side">
-        <div class="sheet-facts">
-          <h2 class="sheet-facts__title">Standard</h2>
-          <div class="sheet-facts__ccss">${esc(code || 'Personal finance')}</div>
-          <p class="sheet-facts__text">${esc(l.standards)}</p>
-          <dl class="sheet-facts__dl">
-            <div><dt>Grades</dt><dd>7–10</dd></div>
-            <div><dt>Length</dt><dd>${l.pages}-page student lab</dd></div>
-            <div><dt>Format</dt><dd>PDF, editable Word, spreadsheet</dd></div>
-          </dl>
-          ${cta}
-          ${MONEY.bundle ? `<p style="margin-top:1rem"><a class="cr-link" href="${esc(MONEY.bundle.url)}" target="_blank" rel="noopener">In the ${esc(MONEY.bundle.name)} bundle ${ICON.ext}</a></p>` : ''}
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <section class="section cr-alt">
-    <div class="wrap">
-      ${secHead('The series', 'More Money Labs')}
-      ${a1Chips(ML_LABS.filter(x => x !== l).map(x => `<a class="cr-chip cr-chip--gold" href="${x.pageUrl}">${esc(x.name)}</a>`).concat([`<a class="cr-chip" href="/money-labs.html">All Money Labs</a>`]))}
-    </div>
-  </section>
-
-  <nav class="section sheetnav" aria-label="Browse adjacent labs" style="padding-top:0">
-    <div class="wrap sheetnav__row">
-      ${prev ? `<a class="sheetnav__link sheetnav__prev" href="${prev.pageUrl}"><span class="sheetnav__dir">Previous</span><span class="sheetnav__name">${esc(prev.name)}</span></a>` : '<span class="sheetnav__link is-empty"></span>'}
-      ${next ? `<a class="sheetnav__link sheetnav__next" href="${next.pageUrl}"><span class="sheetnav__dir">Next</span><span class="sheetnav__name">${esc(next.name)}</span></a>` : '<span class="sheetnav__link is-empty"></span>'}
-    </div>
-  </nav>
-  ${noteBand()}
-</main>
-` + footer() + scripts();
-}
-
-
 function sitemap() {
-  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'sub-plans.html', 'activity-packs.html', 'mistake-of-the-week.html', 'money-labs.html', 'mystery-pictures.html', 'algebra-1.html', 'i-can.html', 'i-can/personal-finance.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
+  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'algebra-1.html', 'i-can.html', 'i-can/personal-finance.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
   const today = new Date().toISOString().slice(0, 10);
   const main = pages.map(p => `  <url><loc>${SITE_URL}/${p}</loc><lastmod>${today}</lastmod></url>`);
   const sheets = products
@@ -6746,7 +6020,6 @@ function sitemap() {
   const freebieUrls = FREEBIES.map(f => `  <url><loc>${SITE_URL}${f.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
   const warmupUrls = WU.courses.map(c => `  <url><loc>${SITE_URL}/warm-ups/${c.slug}.html</loc><lastmod>${today}</lastmod></url>`)
     .concat(ICAN_SETS.map(st => `  <url><loc>${SITE_URL}/i-can/${st.slug}.html</loc><lastmod>${today}</lastmod></url>`))
-    .concat(ML_LABS.map(x => `  <url><loc>${SITE_URL}${x.pageUrl}</loc><lastmod>${today}</lastmod></url>`))
     .concat(A1_UNITS.concat(A1_SHEETS).map(x => `  <url><loc>${SITE_URL}${x.pageUrl}</loc><lastmod>${today}</lastmod></url>`));
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -6821,7 +6094,23 @@ const RETIRED_BUNDLE_REDIRECTS = [
   ['/free/combining-like-terms-grade-7.html', '/free/combining-like-terms.html'],
   ['/free/combining-like-terms-grade-7', '/free/combining-like-terms.html'],
 ].map(([from, to]) => `${from}   ${to}   301!`).join('\n') + '\n';
-const netlifyRedirects = `/tiktok    /tiktok.html   200!\n/tiktok/   /tiktok.html   200!\n/join      ${SKOOL_JOIN_URL}   301!\n/join/*    ${SKOOL_JOIN_URL}   301!\n` + ILEARN_REDIRECTS + RETIRED_BUNDLE_REDIRECTS;
+// RETIRED LINES (2026-10-12). Greg deactivated whole product lines on TPT: interactive notebooks, money
+// labs / consumer math, activity packs / mazes / escape rooms, anchor charts and posters, the paid sub plans,
+// every word wall (free samplers too), mystery pictures and Mistake of the Week. Their pages are gone; each
+// old URL 301s to the closest live page so Google results and old pins still land somewhere useful.
+const RETIRED_LINE_REDIRECTS = [
+  ['/sub-plans', '/free.html'],                    // only the free 3-day sub plan is left; it is on /free.html
+  ['/mistake-of-the-week', '/warm-ups.html'],      // MOTW was a warm-up routine
+  ['/activity-packs', '/catalog.html'],            // same topics, taught by the 4-in-1 Skill Sheets
+  ['/mystery-pictures', '/catalog.html'],
+  ['/money-labs', '/i-can/personal-finance.html'], // the personal finance I Can posters are still live
+  ['/free/free-combining-like-terms-poster', '/free.html'],
+  ['/free/free-pythagorean-theorem-poster', '/free.html'],
+  ['/free/middle-school-math-word-wall', '/free.html'],
+].flatMap(([from, to]) => [[from, to], [from + '.html', to]])
+  .concat([['/money-labs/*', '/i-can/personal-finance.html']])
+  .map(([from, to]) => `${from}   ${to}   301!`).join('\n') + '\n';
+const netlifyRedirects = `/tiktok    /tiktok.html   200!\n/tiktok/   /tiktok.html   200!\n/join      ${SKOOL_JOIN_URL}   301!\n/join/*    ${SKOOL_JOIN_URL}   301!\n` + ILEARN_REDIRECTS + RETIRED_BUNDLE_REDIRECTS + RETIRED_LINE_REDIRECTS;
 
 /* ============================================================================
    write everything
@@ -6851,13 +6140,7 @@ write('get-started.html', pageGetStarted());
 write('warm-ups.html', pageWarmupsHub());
 WU.courses.forEach(c => write(`warm-ups/${c.slug}.html`, pageWarmupsCourse(c)));
 write('readiness.html', pageReadiness());
-write('sub-plans.html', pageSubPlans());
 write('tiktok.html', pageTiktok());
-write('activity-packs.html', pageActivityPacks());
-write('mistake-of-the-week.html', pageMistakeOfTheWeek());
-write('money-labs.html', pageMoneyLabs());
-write('mystery-pictures.html', pageMysteryPictures());
-ML_LABS.forEach((l, i) => write(l.pageUrl.slice(1), pageMoneyLab(l, ML_LABS[i - 1], ML_LABS[i + 1])));
 write('algebra-1.html', pageAlgebra1Hub());
 A1_UNITS.forEach((u, i) => write(u.pageUrl.slice(1), pageAlgebra1Unit(u, A1_UNITS[i - 1], A1_UNITS[i + 1])));
 A1_SHEETS.forEach((sh, i) => write(sh.pageUrl.slice(1), pageAlgebra1Sheet(sh, A1_SHEETS[i - 1], A1_SHEETS[i + 1])));
@@ -6896,7 +6179,7 @@ Object.values(STANDARDS_CONTENT).forEach(std => {
   standardCount++;
 });
 
-/* Word Wall glossary branch — hub + 427 term pages (6th-8th CCSS-keyed, Algebra unit-keyed) */
+/* Glossary branch (URLs keep /word-wall/) — hub + 603 term pages (6th-8th CCSS-keyed, Algebra unit-keyed) */
 write('word-wall.html', pageWordWall());
 let glossaryCount = 0;
 glossary.forEach(t => { write(`word-wall/${t.slug}.html`, pageGlossaryTerm(t)); glossaryCount++; });
@@ -6925,8 +6208,9 @@ if (fs.existsSync(SRC_SITE_IMGS)) {
     });
 }
 
-// Warm-ups, readiness and Mistake of the Week card images (written by the state-testing exporter)
-['warmups', 'readiness', 'motw', 'ican', 'subplans', 'algebra1', 'money', 'mystery', 'activities', 'thumbs_v5'].forEach(dir => {
+// Warm-ups, readiness, I Can and Algebra 1 card images (written by the state-testing exporter).
+// motw, subplans, money, mystery and activities are retired lines (2026-10-12) and are no longer copied.
+['warmups', 'readiness', 'ican', 'algebra1', 'thumbs_v5'].forEach(dir => {
   const src = path.join(ROOT, 'assets', 'images', dir);
   if (!fs.existsSync(src)) return;
   fs.readdirSync(src).filter(f => /\.(jpe?g|png)$/i.test(f)).forEach(f => copy(path.join('assets/images', dir, f), path.join('assets/images', dir, f)));
@@ -7088,4 +6372,24 @@ console.log('  Site asset images bundled:', siteImgCount);
   }
   if (hits.length) { console.error('NO-EMAIL GATE FAILED:\n  ' + hits.slice(0, 20).join('\n  ')); process.exit(1); }
   console.log('  No-email gate: clean');
+})();
+
+/* ============================================================================
+   RETIRED-ID GATE (v1.23.0 · 2026-10-12). Greg deactivated 153 TPT listings on 2026-10-12 (whole
+   lines: notebooks, money labs, activity packs, posters, paid sub plans, word walls, mystery pictures,
+   Mistake of the Week). retired_ids.json (repo root) lists every retired TPT id; the build fails if
+   any file in dist links to a TPT product with one of those ids.
+   ============================================================================ */
+(function retiredIdGate() {
+  const RETIRED_IDS = new Set(Object.keys(JSON.parse(fs.readFileSync(path.join(ROOT, 'retired_ids.json'), 'utf8')).ids));
+  const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : /\.(html|js|css|xml|txt|toml|json)$|^_redirects$/.test(e.name) ? [path.join(d, e.name)] : []);
+  const hits = [];
+  for (const f of walk(DIST)) {
+    const text = fs.readFileSync(f, 'utf8');
+    for (const m of text.matchAll(/teacherspayteachers\.com\/Product\/[^"'\s<>)]*?(\d{6,9})(?=["'\s<>)?#&]|$)/gi)) {
+      if (RETIRED_IDS.has(m[1])) hits.push(`${path.relative(DIST, f)}: ${m[1]}`);
+    }
+  }
+  if (hits.length) { console.error(`RETIRED-ID GATE FAILED (${hits.length} links to retired TPT listings):\n  ` + hits.slice(0, 30).join('\n  ')); process.exit(1); }
+  console.log(`  Retired-id gate: clean (${RETIRED_IDS.size} retired ids)`);
 })();

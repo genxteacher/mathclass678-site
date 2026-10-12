@@ -27,12 +27,30 @@ external host reaches `dist/`. Never add an email form, mailing-list embed or si
 back without Greg explicitly asking. Claude Code can push directly; GitHub Desktop
 remains a fallback.
 
+**Oct 12 2026 — RETIRED PRODUCT LINES.** Greg deactivated 153 TPT listings, whole lines at
+once: interactive notebooks / foldables, Money Labs / consumer math (Consumer Math Essentials
+bundle), activity packs / mazes / escape room, anchor charts and posters (Real Life Uses,
+Growth Mindset, Standards for Mathematical Practice, the free CLT and Pythagorean anchor
+charts), the paid Emergency Sub Plans (6th, 7th, 8th, bundle), EVERY word wall (whole-grade
+walls, MEGA and Complete bundles, the six free 3-card samplers, the free 80-card set),
+Mystery Pictures (digital and pixel art, all) and Mistake of the Week (bundle + 6th/7th/8th;
+the free MOTW sampler 17672163 went off the site with its line). Their pages
+(/sub-plans, /activity-packs, /mistake-of-the-week, /money-labs + 10 labs, /mystery-pictures,
+three /free/ pages) are gone and 301 in `_redirects` (`RETIRED_LINE_REDIRECTS`). The free
+3-day sub plan (16214563) is still live and sits on /free.html. The glossary stays (free
+reference content, URLs under /word-wall/ unchanged) but is labelled "Glossary" and never
+links to a word wall product. `retired_ids.json` (repo root) lists every retired TPT id; the
+RETIRED-ID GATE at the end of `build_site.js` fails the build if dist links to any of them.
+Never bring one of these lines back to the site unless Greg relists it on TPT; when more
+listings are deactivated, add their ids to `retired_ids.json`.
+
 ## Who / what
 
 Greg — 25+ yr middle-school math teacher, sole operator of Math Class 678 (TPT storefront
 math-class-678). Building mathclass678.com as a branded catalog hub for the 103
 4-in-1 Skill Sheets™ (Reference · Practice · Apply · Assess), grades 6–8 CCSS, plus a
-free math vocabulary glossary (Word Wall branch, grades 5–8 + Algebra 1 + Geometry) and
+free math vocabulary glossary (the former Word Wall branch, grades 5–8 + Algebra 1 +
+Geometry; the word wall products were retired Oct 12 2026) and
 free-resource pages that link to each freebie's free TPT listing. The site collects no
 email addresses.
 
@@ -123,7 +141,7 @@ pipeline exists for this yet — treat as a manual step each time until one is b
 
 `TPT_Arc_Tracker.md` — live vs pending (build project tracker, kept here for reference).
 `TPT_Listing_Reference.md` — voice/tone reference; site copy matches this register.
-`MOTW_content_master.csv` — only if a MOTW section is added (still deferred).
+`MOTW_content_master.csv` — not used: Mistake of the Week was retired Oct 12 2026.
 
 Product names on site = exact `SkillName` from CSV (`nameClean` strips FREE
 parentheticals for display; `slugify` normalizes for filenames). CCSS shown as clean
@@ -131,12 +149,14 @@ leaf codes only (strip facet tags: split on first hyphen, take left side).
 
 Catalog counts (confirmed S9): 6th 34 · 7th 32 · 8th 37 · Total 103
 Freebies (skill sheets): #19 Combining Like Terms (6th) · #48 Combining Like Terms (7th)
-Free resources (non-skill-sheet): 16 items in `FREE_RESOURCES` array — all route to `/free.html`
+Free resources (non-skill-sheet): 13 items in `FREE_RESOURCES` array — all route to `/free.html`
+(Oct 12 2026: the two anchor charts, six word wall samplers and the 80-card word wall retired)
 Bundles: 30 total (all live, all URLs confirmed) — strand · topic · MEGA · ULTIMATE tiers
 Strands present: EE · NS · RP · SP · G · F
 
-Two entry points for the 18 total freebies (16 free resources + 2 freebie skill sheets):
-the `/free.html` hub and 18 individual pages at `/free/{slug}.html` (kept for the URLs
+Two entry points for the freebies: the `/free.html` hub and 15 individual pages at
+`/free/{slug}.html` (18 until Oct 12 2026; the CLT poster, Pythagorean poster and 80-card
+word wall pages now 301 to /free.html) (kept for the URLs
 that Pinterest and older links point to). Both link straight to the freebie's free TPT
 listing. The site never hosts or serves the freebie files itself (TPT exclusivity).
 
@@ -197,7 +217,7 @@ always match the shipped card's own wording — never invented from general know
 **IP protection policy — never negotiable:** glossary pages never display the actual
 Word Wall card image or PDF. The card's teaching content is read from the card and
 re-expressed as native brand-styled HTML/SVG; the card's polished, print-ready,
-four-format design remains the product a teacher buys on TPT.
+four-format design was the product sold on TPT (retired Oct 12 2026; the policy stands).
 
 ## Site structure (v1.6.0 — built S14)
 
@@ -206,7 +226,7 @@ four-format design remains the product a teacher buys on TPT.
 `about.html`, `contact.html`, `get-started.html`, `grade-6/7/8.html`, `404.html`.
 
 Generated from `build_site.js`: `/sheets/{slug}.html` (103) · `/bundles/{slug}.html` (30)
-· `/standards/{slug}.html` (93) · `/word-wall/{slug}.html` (603) · `/free/{slug}.html` (18,
+· `/standards/{slug}.html` (93) · `/word-wall/{slug}.html` (603) · `/free/{slug}.html` (15,
 each links to that freebie's free TPT listing; not linked from nav or `/free.html`).
 
 Slug collision handling: two "Combining Like Terms" sheets (#19, #48), their matching
@@ -215,8 +235,9 @@ glossary terms, and their matching freebie pages all get grade suffixes:
 
 ## Word Wall / glossary branch — architecture (live, built S12)
 
-Positioning: not a product catalog — a free math glossary that happens to sell
-print-ready Word Wall cards. Individual term pages target long-tail search and are the
+Positioning: not a product catalog — a free math glossary. (Until Oct 12 2026 it also sold
+the print-ready Word Wall cards; that line is retired, so term pages now point to /free.html
+and the hub's closing band to the skill sheet catalog. Nav/footer/breadcrumb label: "Glossary".) Individual term pages target long-tail search and are the
 single largest evergreen SEO surface on the site.
 
 Dual-key architecture: 5th/6th/7th/8th/Geometry are CCSS-keyed (`glossaryByCcss`,
@@ -261,7 +282,7 @@ working here directly.
 
 - Product thumbnails (103): `assets/images/thumbs/thumb1_[grade]th_[slug].jpg` (or `.png`)
 - Bundle thumbnails (30): `assets/images/bundles/`, named per `BUNDLES` array `thumb` field
-- Freebie thumbnails (16): `assets/images/freebies/free_[key].jpg`
+- Freebie thumbnails (14): `assets/images/freebies/free_[key].jpg`
 - Site asset images: `assets/images/` — see `Site_Build_Log.md` for the full filename
   manifest, including three S12 images that are `.png` rather than the site's usual
   `.jpg` (source files came from ChatGPT as PNG; code was written to match rather than
