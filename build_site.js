@@ -34,11 +34,14 @@ const FREE_OOO_URL = 'https://www.teacherspayteachers.com/Product/Order-of-Opera
    Leave TPT_RATING = null to ship no rating schema at all.
 ---------------------------------------------------------------------------- */
 const TPT_RATING = null; // Set to e.g. { ratingValue: 4.9, reviewCount: 1200 } using GENUINE store-wide TPT figures to activate AggregateRating + Review schema and the visible star line.
-const REVIEWS = [        // Genuine attributed TPT reviews — emit as Review schema only when TPT_RATING is also set.
-  { author: 'Lauren K.', rating: 5, body: 'I used this 6th grade unit rate skill sheet in my classroom, and it made the lesson flow so smoothly. The reference, practice, and exit ticket were all in one place, and my students had plenty of practice without feeling overwhelmed.', datePublished: '2026-06-01' },
-  { author: 'Megan T.', rating: 5, body: 'Exactly what I needed for two-step equations. My students usually get lost when we move from guided notes to independent practice, but this sheet made the progression feel natural, and the answer key showed the steps instead of just giving the final answer.', datePublished: '2026-05-20' },
-  { author: 'Rachel B.', rating: 5, body: 'The examples were clear enough for absent students to use later. I also used the editable slides the next day for a quick reteach, which made the resource feel more like a mini lesson than just a worksheet.', datePublished: '2026-06-08' }
+const REVIEWS = [        // REAL Teachers Pay Teachers reviews (copies in tpt_reviews_real.json), quoted word for word from TPT (Oct 13 2026). Never invent one.
+  { author: "Math 2 the 7th Power", rating: 5, title: "Easier for students", body: "This made new ideas and questions so much easier, thank you!", product: "Ratios & Proportional Relationships Bundle (7th grade skill sheets)", datePublished: "2026-09-19", tone: "6" },
+  { author: "Tanya K.", rating: 5, title: "Saved me so much time", body: "These warm ups saved me so much time completing them myself. I get bored with the same stuff each year!", product: "7th Grade Math Warm-Ups Full Year Bundle", datePublished: "2026-09-19", tone: "7" },
+  { author: "Nancy Beach", rating: 5, title: "Ready at a moment's notice", body: "Wonderful bundle!  I love having a great set of bell ringers ready to go at a moments notice.", product: "Algebra 1 Warm-Ups, Semester 1", datePublished: "2026-09-20", tone: "8" },
+  { author: "John S.", rating: 5, title: "Worked perfectly", body: "I had to miss class and looked for a quick, cheap, solution and this worked perfectly.  Going to keep for the future for sure!", product: "Emergency Math Sub Plan (free, 6th–8th)", datePublished: "2026-09-04", tone: "6" }
 ];
+
+function escHtml(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
 /* ---------- tiny CSV parser (honors quoted fields, CRLF) ---------- */
 function parseCSV(text) {
@@ -2838,7 +2841,7 @@ function pageHome() {
   // Oct 13 2026: Search Console flagged "Multiple reviews without aggregateRating". Google does not show
   // review snippets for reviews a business publishes about itself (self-serving), so no Review or
   // AggregateRating markup is emitted at all; the quotes stay visible on the page.
-  const ratingSchema = [] && orgReviewSchema;
+  const ratingSchema = [];   // (orgReviewSchema kept above for reference only; never emitted)
 
   return head({
     title: 'Math Class 678 — 4-in-1 Skill Sheets for Grades 6–8 Common Core Math',
@@ -2984,39 +2987,15 @@ function pageHome() {
         </div>
       </div>
       <div class="proof__grid">
-        <article class="proof__card proof__card--6 reveal">
+        ${REVIEWS.map(r => `<article class="proof__card proof__card--${r.tone} reveal">
           <div class="proof__stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p class="proof__title">Saved me so much prep time</p>
-          <blockquote class="proof__quote">
-            <p>I used this 6th grade unit rate skill sheet in my classroom, and it made the lesson flow so smoothly. The reference, practice, and exit ticket were all in one place, and my students had plenty of practice without feeling overwhelmed.</p>
-          </blockquote>
+          <p class="proof__title">${escHtml(r.title)}</p>
+          <blockquote class="proof__quote"><p>${escHtml(r.body)}</p></blockquote>
           <footer class="proof__foot">
-            <span class="proof__name">Lauren K.</span>
-            <span class="proof__context">Texas · teaches 6th, 7th</span>
+            <span class="proof__name">${escHtml(r.author)}</span>
+            <span class="proof__context">Review on TPT · ${escHtml(r.product)}</span>
           </footer>
-        </article>
-        <article class="proof__card proof__card--7 reveal">
-          <div class="proof__stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p class="proof__title">Exactly what I needed</p>
-          <blockquote class="proof__quote">
-            <p>Exactly what I needed for two-step equations. My students usually get lost when we move from guided notes to independent practice, but this sheet made the progression feel natural, and the answer key showed the steps instead of just giving the final answer.</p>
-          </blockquote>
-          <footer class="proof__foot">
-            <span class="proof__name">Megan T.</span>
-            <span class="proof__context">Ohio · teaches 7th, 8th</span>
-          </footer>
-        </article>
-        <article class="proof__card proof__card--8 reveal">
-          <div class="proof__stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p class="proof__title">More than just a worksheet</p>
-          <blockquote class="proof__quote">
-            <p>The examples were clear enough for absent students to use later. I also used the editable slides the next day for a quick reteach, which made the resource feel more like a mini lesson than just a worksheet.</p>
-          </blockquote>
-          <footer class="proof__foot">
-            <span class="proof__name">Rachel B.</span>
-            <span class="proof__context">Georgia · teaches 8th, Algebra 1</span>
-          </footer>
-        </article>
+        </article>`).join('\n        ')}
       </div>
     </div>
   </section>
