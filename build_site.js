@@ -2835,7 +2835,10 @@ function pageHome() {
       }))
     } : {}
   )] : [];
-  const ratingSchema = orgReviewSchema;
+  // Oct 13 2026: Search Console flagged "Multiple reviews without aggregateRating". Google does not show
+  // review snippets for reviews a business publishes about itself (self-serving), so no Review or
+  // AggregateRating markup is emitted at all; the quotes stay visible on the page.
+  const ratingSchema = [] && orgReviewSchema;
 
   return head({
     title: 'Math Class 678 — 4-in-1 Skill Sheets for Grades 6–8 Common Core Math',
