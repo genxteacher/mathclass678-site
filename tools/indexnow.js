@@ -60,8 +60,9 @@ function fingerprint(html) {
 async function main() {
   execFileSync(process.execPath, [path.join(ROOT, 'build_site.js')], { stdio: 'inherit' });
   const dist = path.join(ROOT, 'dist');
-  const sitemap = fs.readFileSync(path.join(dist, 'sitemap.xml'), 'utf8');
-  const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+  // sitemap.xml is an index of sitemap-pages.xml and sitemap-glossary.xml (2026-10-17).
+  const locs = file => [...fs.readFileSync(path.join(dist, file), 'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+  const urls = locs('sitemap.xml').flatMap(u => /\.xml$/.test(u) ? locs(u.replace(ORIGIN + '/', '')) : [u]);
   const prev = fs.existsSync(STATE) ? JSON.parse(fs.readFileSync(STATE, 'utf8')) : {};
   const next = {};
   const changed = [];

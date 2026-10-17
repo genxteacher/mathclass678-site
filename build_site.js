@@ -6037,26 +6037,73 @@ function pageAlgebra1Sheet(s, prev, next) {
 }
 
 
-function sitemap() {
+/* Sitemaps (2026-10-17). Search Console showed 397 product pages Google had found but never fetched,
+   while every <lastmod> was the build date, so the dates told Google nothing. Now:
+   - sitemap.xml is an index of two sitemaps: sitemap-pages.xml (hubs, sheets, Algebra 1, bundles,
+     standards, free) and sitemap-glossary.xml (the word-wall glossary), so Search Console reports each
+     group on its own;
+   - each page's <lastmod> is the date its content last changed. data/sitemap-dates.json holds
+     url -> {hash, date}; a page whose fingerprint (same rule as tools/indexnow.js) differs from the
+     stored one gets today's date. Commit data/sitemap-dates.json after a build that changes pages, so
+     the Netlify build sees the same dates. */
+function sitemapUrls() {
   const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'algebra-1.html', 'i-can.html', 'i-can/personal-finance.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
+  const main = pages.map(p => `/${p}`)
+    .concat(WU.courses.map(c => `/warm-ups/${c.slug}.html`))
+    .concat(ICAN_SETS.map(st => `/i-can/${st.slug}.html`))
+    .concat(A1_UNITS.concat(A1_SHEETS).map(x => x.pageUrl))
+    .concat(bundles.map(b => b.pageUrl))
+    .concat(products.filter(p => p.live).map(p => p.pageUrl))
+    .concat(Object.values(STANDARDS_CONTENT).map(s => `/standards/${s.slug}.html`))
+    .concat(FREEBIES.map(f => f.pageUrl));
+  return { pages: main, glossary: glossary.map(t => t.pageUrl) };
+}
+function pageFingerprint(html) {
+  const stable = html
+    .replace(/<div class="ruler-today"[^>]*>[\s\S]*?<\/div>/g, '')
+    .replace(/<script id="site-data"[\s\S]*?<\/script>/g, '')
+    .replace(/<lastmod>[^<]*<\/lastmod>/g, '');
+  return require('crypto').createHash('sha1').update(stable).digest('hex');
+}
+function writeSitemaps() {
+  const DATES = path.join(ROOT, 'data', 'sitemap-dates.json');
   const today = new Date().toISOString().slice(0, 10);
-  const main = pages.map(p => `  <url><loc>${SITE_URL}/${p}</loc><lastmod>${today}</lastmod></url>`);
-  const sheets = products
-    .filter(p => p.live)
-    .map(p => `  <url><loc>${SITE_URL}${p.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
-  const bundleUrls = bundles
-    .map(b => `  <url><loc>${SITE_URL}${b.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
-  const standardUrls = Object.values(STANDARDS_CONTENT)
-    .map(s => `  <url><loc>${SITE_URL}/standards/${s.slug}.html</loc><lastmod>${today}</lastmod></url>`);
-  const glossaryUrls = glossary.map(t => `  <url><loc>${SITE_URL}${t.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
-  const freebieUrls = FREEBIES.map(f => `  <url><loc>${SITE_URL}${f.pageUrl}</loc><lastmod>${today}</lastmod></url>`);
-  const warmupUrls = WU.courses.map(c => `  <url><loc>${SITE_URL}/warm-ups/${c.slug}.html</loc><lastmod>${today}</lastmod></url>`)
-    .concat(ICAN_SETS.map(st => `  <url><loc>${SITE_URL}/i-can/${st.slug}.html</loc><lastmod>${today}</lastmod></url>`))
-    .concat(A1_UNITS.concat(A1_SHEETS).map(x => `  <url><loc>${SITE_URL}${x.pageUrl}</loc><lastmod>${today}</lastmod></url>`));
-  return `<?xml version="1.0" encoding="UTF-8"?>
+  const known = fs.existsSync(DATES) ? JSON.parse(fs.readFileSync(DATES, 'utf8')) : {};
+  const next = {};
+  const groups = sitemapUrls();
+  const lastmods = {}, rows = {};
+  for (const [name, urls] of Object.entries(groups)) {
+    lastmods[name] = [];
+    rows[name] = [];
+    for (const u of urls) {
+      const file = path.join(DIST, u === '/' ? 'index.html' : u.slice(1));
+      if (!fs.existsSync(file)) { console.error(`SITEMAP: ${u} is listed but was not built`); process.exit(1); }
+      const hash = pageFingerprint(fs.readFileSync(file, 'utf8'));
+      const date = known[u] && known[u].hash === hash ? known[u].date : today;
+      next[u] = { hash, date };
+      lastmods[name].push(date);
+      rows[name].push(`  <url><loc>${SITE_URL}${u}</loc><lastmod>${date}</lastmod></url>`);
+    }
+  }
+  const urlset = rows => `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${main.concat(warmupUrls, bundleUrls, sheets, standardUrls, glossaryUrls, freebieUrls).join('\n')}
-</urlset>`;
+${rows.join('\n')}
+</urlset>
+`;
+  write('sitemap-pages.xml', urlset(rows.pages));
+  write('sitemap-glossary.xml', urlset(rows.glossary));
+  const newest = name => lastmods[name].slice().sort().pop();
+  write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap><loc>${SITE_URL}/sitemap-pages.xml</loc><lastmod>${newest('pages')}</lastmod></sitemap>
+  <sitemap><loc>${SITE_URL}/sitemap-glossary.xml</loc><lastmod>${newest('glossary')}</lastmod></sitemap>
+</sitemapindex>
+`);
+  const sorted = Object.fromEntries(Object.keys(next).sort().map(k => [k, next[k]]));
+  const before = JSON.stringify(known), after = JSON.stringify(sorted);
+  if (before !== after) fs.writeFileSync(DATES, JSON.stringify(sorted, null, 1) + '\n');
+  const changed = Object.keys(next).filter(u => !known[u] || known[u].hash !== next[u].hash).length;
+  console.log(`  Sitemaps: ${groups.pages.length} pages + ${groups.glossary.length} glossary, ${changed} dated ${today}`);
 }
 const robots = `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`;
 // Community group vanity link + clean 404. /join MUST come before the /* catch-all
@@ -6326,7 +6373,7 @@ if (fs.existsSync(path.join(ROOT, 'data', 'indexnow.key'))) {
   const indexnowKey = fs.readFileSync(path.join(ROOT, 'data', 'indexnow.key'), 'utf8').trim();
   write(`${indexnowKey}.txt`, indexnowKey + '\n');
 }
-write('sitemap.xml', sitemap());
+writeSitemaps();
 write('netlify.toml', netlifyToml);
 write('_redirects', netlifyRedirects);
 
