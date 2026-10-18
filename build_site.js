@@ -34,6 +34,41 @@ const FREE_OOO_URL = 'https://www.teacherspayteachers.com/Product/Order-of-Opera
    Leave TPT_RATING = null to ship no rating schema at all.
 ---------------------------------------------------------------------------- */
 const TPT_RATING = null; // Set to e.g. { ratingValue: 4.9, reviewCount: 1200 } using GENUINE store-wide TPT figures to activate AggregateRating + Review schema and the visible star line.
+/* Featured review: a REAL TPT review of the 7th Grade Indiana ILEARN Math COMPLETE System, quoted word
+   for word (Oct 18 2026, 5 stars). Shown as a highlighted band under the homepage hero; no Review markup.
+   [[...]] = bolded by us (the band says so). Never edit the quote. */
+const FEATURED_REVIEW = {
+  author: 'ashley D.', where: '7th grade math teacher, Indiana', date: 'Oct 18, 2026',
+  title: 'Amazing and Worth every Cent!',
+  url: 'https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-COMPLETE-System-Checkpoints-Reteach-SY26-27-17457551',
+  body: 'This resource is spot on!  We just took Opportunity 1 and i had [[70 percent of my kids pass]] the 7th Grade Math Checkpoint 1.  I then used [[the reteaching pages]] and focused on targeting instruction to those questions that were most missed on the first opportunity for 2 weeks.  We then took Opportunity 2 and [[I had 82 percent total passing!]]  [[That is the most I have had passing since the Checkpoints were created!]]  If you teach 7th grade Math in Indiana, it is definitely worth the money!',
+};
+function featuredReviewBand() {
+  const R = FEATURED_REVIEW;
+  const quote = escHtml(R.body).replace(/\[\[(.*?)\]\]/g, '<strong>$1</strong>');
+  const grades = [3, 4, 5, 6, 7, 8].map(g => `<a class="rb-chip${g === 7 ? ' is-on' : ''}" href="https://statetestmath.com/indiana/grade-${g}/">Grade ${g}</a>`).join('');
+  return `
+  <!-- FEATURED REVIEW -->
+  <section class="review-band" aria-labelledby="review-band-h">
+    <div class="wrap review-band__inner">
+      <p class="rb-stars" role="img" aria-label="5 out of 5 stars">★★★★★</p>
+      <p class="rb-eyebrow">Indiana ILEARN Math · a teacher's TPT review · ${R.date}</p>
+      <h2 id="review-band-h"><span class="rb-num">70%</span> <span class="rb-arrow" aria-label="to">→</span> <span class="rb-num rb-up">82%</span> passing on Indiana's 7th grade Checkpoint 1</h2>
+      <p class="rb-sub">After two weeks with the reteach pages, between Opportunity 1 and Opportunity 2.</p>
+      <figure class="rb-quote">
+        <blockquote><p class="rb-title">“${escHtml(R.title)}”</p><p>${quote}</p></blockquote>
+        <figcaption>${escHtml(R.author)} · ${escHtml(R.where)} · ★★★★★ on Teachers Pay Teachers</figcaption>
+      </figure>
+      <div class="rb-actions">
+        <a class="btn btn--primary" href="${R.url}" target="_blank" rel="noopener">Read the full review on TPT ${ICON.arrow}</a>
+        <div class="rb-grades"><span>Indiana ILEARN practice for your grade</span><div class="rb-chips">${grades}</div></div>
+      </div>
+      <p class="rb-note">One teacher's results, in her own words (bold is ours). Every class is different.</p>
+    </div>
+  </section>
+`;
+}
+
 const REVIEWS = [        // REAL Teachers Pay Teachers reviews (copies in tpt_reviews_real.json), quoted word for word from TPT (Oct 13 2026). Never invent one.
   { author: "Math 2 the 7th Power", rating: 5, title: "Easier for students", body: "This made new ideas and questions so much easier, thank you!", product: "Ratios & Proportional Relationships Bundle (7th grade skill sheets)", datePublished: "2026-09-19", tone: "6" },
   { author: "Tanya K.", rating: 5, title: "Saved me so much time", body: "These warm ups saved me so much time completing them myself. I get bored with the same stuff each year!", product: "7th Grade Math Warm-Ups Full Year Bundle", datePublished: "2026-09-19", tone: "7" },
@@ -2899,7 +2934,7 @@ function pageHome() {
       <div class="quadmark">${SVG.heroQuad}</div>
     </div>
   </section>
-
+${featuredReviewBand()}
   ${freeHero({ heading: 'Start with a free skill sheet', lead: 'The Order of Operations 4-in-1 Skill Sheet for 6th grade is free on Teachers Pay Teachers \u2014 a complete lesson with an interactive teacher deck. See exactly how the format works before you spend a dollar.' })}
 
   <!-- METHOD STRIP -->
