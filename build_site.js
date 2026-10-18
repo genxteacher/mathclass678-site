@@ -3760,7 +3760,7 @@ function sheetJsonLd(p) {
   const out = [learning, crumbs];
   if (p.v5.video) out.push({ '@context': 'https://schema.org', '@type': 'VideoObject', name: `${p.name}: 20-second preview`,
     description: `The ${p.name} Teacher Deck and student packet for ${gradeOrdinal(p.grade)} grade (${p.ccss}).`,
-    thumbnailUrl: SITE_URL + p.v5.poster, contentUrl: SITE_URL + p.v5.video, uploadDate: '2026-10-05', duration: 'PT20S' });
+    thumbnailUrl: SITE_URL + p.v5.poster, contentUrl: SITE_URL + p.v5.video, uploadDate: videoDate('2026-10-05'), duration: 'PT20S' });
   return JSON.stringify(out).replace(/</g, '\\u003c');
 }
 
@@ -5056,7 +5056,14 @@ function itemListSchema(name, items) {
   return { '@context': 'https://schema.org', '@type': 'ItemList', name,
     itemListElement: items.map((it, i) => ({ '@type': 'ListItem', position: i + 1, url: it.url.startsWith('http') ? it.url : SITE_URL + it.url, name: it.name })) };
 }
-function jsonld(...blocks) { return JSON.stringify(blocks.length === 1 ? blocks[0] : blocks); }
+// Blocks may be objects or already-stringified JSON (breadcrumbSchema returns a string); parse strings so
+// an array never holds a JSON string as an element (Search Console: Invalid top level element "string").
+function jsonld(...blocks) {
+  const objs = blocks.map(b => (typeof b === 'string' ? JSON.parse(b) : b));
+  return JSON.stringify(objs.length === 1 ? objs[0] : objs).replace(/</g, '\\u003c');
+}
+// VideoObject.uploadDate needs a full ISO 8601 datetime with a timezone (Search Console warns on a bare date).
+function videoDate(d) { return `${d}T08:00:00-05:00`; }
 
 /* A product tile that links out to TPT. `img` falls back to the brand tile. */
 function wuTile(o) {
@@ -5104,7 +5111,7 @@ function videoGrid(items, eyebrow, heading, sub, alt) {
 }
 function videoSchema(items) {
   return items.map(v => ({ '@context': 'https://schema.org', '@type': 'VideoObject', name: v.name, description: v.desc,
-    thumbnailUrl: SITE_URL + v.poster, contentUrl: SITE_URL + v.video, uploadDate: VIDEO_DATE, duration: 'PT20S' }));
+    thumbnailUrl: SITE_URL + v.poster, contentUrl: SITE_URL + v.video, uploadDate: videoDate(VIDEO_DATE), duration: 'PT20S' }));
 }
 
 function crHero(eyebrow, h1, lead, actions) {
@@ -5746,7 +5753,7 @@ function a1Video(o, label, cls) {
 }
 function a1VideoSchema(o, name, desc) {
   return o.video ? { '@context': 'https://schema.org', '@type': 'VideoObject', name: `${name}: ${vidLen(o.video_seconds)} preview`, description: desc,
-    thumbnailUrl: SITE_URL + o.poster, contentUrl: SITE_URL + o.video, uploadDate: '2026-10-06', duration: `PT${Math.round(o.video_seconds)}S` } : null;
+    thumbnailUrl: SITE_URL + o.poster, contentUrl: SITE_URL + o.video, uploadDate: videoDate('2026-10-06'), duration: `PT${Math.round(o.video_seconds)}S` } : null;
 }
 function a1Offer(url, price) {
   const free = price === 'Free';
