@@ -2887,7 +2887,7 @@ function pageHome() {
 
   return head({
     title: 'Math Class 678 — 4-in-1 Skill Sheets for Grades 6–8 Common Core Math',
-    desc: 'Skill sheets for grades 6–8 math: one Common Core skill per lesson, with a guided student packet and an interactive Teacher Deck. Designed, reviewed, and checked by a teacher with 25+ years.',
+    desc: 'Math lessons for grades 5–8 and Algebra 1: one skill per lesson, a guided packet and a Teacher Deck. Designed, reviewed, and checked by a teacher with 25+ years.',
     path: 'index.html',
     jsonld: JSON.stringify([{
       '@context': 'https://schema.org',
