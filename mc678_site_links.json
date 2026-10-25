@@ -9223,14 +9223,6 @@
       "tpt_url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-SMART-Goals-FREE-Back-to-School-Goal-Setting-Worksheet-16506706"
     },
     {
-      "id": "FREE-007",
-      "grade": "6th",
-      "name": "6th Grade Math Year at a Glance FREE",
-      "full_title": "6th Grade Math Year at a Glance FREE | I Can Checklist + CCSS Curriculum Map",
-      "cross_listed": null,
-      "tpt_url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Year-at-a-Glance-FREE-I-Can-Checklist-CCSS-Curriculum-Map-16495554"
-    },
-    {
       "id": "FREE-008",
       "grade": "7th",
       "name": "Combining Like Terms",
@@ -9253,14 +9245,6 @@
       "full_title": "7th Grade Math SMART Goals FREE | Back to School Goal Setting Worksheet",
       "cross_listed": null,
       "tpt_url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-SMART-Goals-FREE-Back-to-School-Goal-Setting-Worksheet-16506713"
-    },
-    {
-      "id": "FREE-012",
-      "grade": "7th",
-      "name": "7th Grade Math Year at a Glance FREE",
-      "full_title": "7th Grade Math Year at a Glance FREE | I Can Checklist + CCSS Curriculum Map",
-      "cross_listed": null,
-      "tpt_url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Year-at-a-Glance-FREE-I-Can-Checklist-CCSS-Curriculum-Map-16495555"
     },
     {
       "id": "FREE-014",
@@ -9301,6 +9285,62 @@
       "full_title": "FREE Back to School Math Diagnostic | Day 1 Readiness Check Grades 6-8",
       "cross_listed": "Readiness Checks",
       "tpt_url": "https://www.teacherspayteachers.com/Product/FREE-Back-to-School-Math-Diagnostic-Day-1-Readiness-Check-Grades-6-8-16643656"
+    },
+    {
+      "id": "FREE-019",
+      "grade": "5th",
+      "name": "5th Grade Math Notation and Vocabulary Guide",
+      "full_title": "FREE 5th Grade Math Notation and Vocabulary Guide | Back to School",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/FREE-5th-Grade-Math-Notation-and-Vocabulary-Guide-Back-to-School-17223677"
+    },
+    {
+      "id": "FREE-020",
+      "grade": "6th",
+      "name": "6th Grade Math Notation and Vocabulary Guide",
+      "full_title": "FREE 6th Grade Math Notation and Vocabulary Guide | Back to School",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/FREE-6th-Grade-Math-Notation-and-Vocabulary-Guide-Back-to-School-17223421"
+    },
+    {
+      "id": "FREE-021",
+      "grade": "7th",
+      "name": "7th Grade Math Notation and Vocabulary Guide",
+      "full_title": "FREE 7th Grade Math Notation and Vocabulary Guide | Back to School",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/FREE-7th-Grade-Math-Notation-and-Vocabulary-Guide-Back-to-School-17223639"
+    },
+    {
+      "id": "FREE-022",
+      "grade": "8th",
+      "name": "Pre-Algebra Notation and Vocabulary Guide",
+      "full_title": "FREE Pre-Algebra Notation and Vocabulary Guide | 8th Grade Back to School",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/FREE-Pre-Algebra-Notation-and-Vocabulary-Guide-8th-Grade-Back-to-School-17223460"
+    },
+    {
+      "id": "FREE-023",
+      "grade": "Algebra 1",
+      "name": "Algebra 1 Notation and Vocabulary Guide",
+      "full_title": "FREE Algebra 1 Notation and Vocabulary Guide | Back to School Reference",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/FREE-Algebra-1-Notation-and-Vocabulary-Guide-Back-to-School-Reference-17215091"
+    },
+    {
+      "id": "FREE-024",
+      "grade": "5th",
+      "name": "5th Grade Math Pacing Guide",
+      "full_title": "FREE 5th Grade Math Pacing Guide | Math Curriculum Scope and Sequence",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/FREE-5th-Grade-Math-Pacing-Guide-Math-Curriculum-Scope-and-Sequence-18041192"
+    },
+    {
+      "id": "FREE-025",
+      "grade": "Algebra 1",
+      "name": "Algebra 1 Pacing Guide",
+      "full_title": "FREE Algebra 1 Pacing Guide | 180 Day & Block Schedule | Scope and Sequence",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/FREE-Algebra-1-Pacing-Guide-180-Day-Block-Schedule-Scope-and-Sequence-17886211"
+    },
+    {
+      "id": "FREE-026",
+      "grade": "5th",
+      "name": "Rounding Decimals",
+      "full_title": "Rounding Decimals Worksheet | 5th Grade Math Notes, Slides & Key",
+      "tpt_url": "https://www.teacherspayteachers.com/Product/Rounding-Decimals-Worksheet-5th-Grade-Math-Notes-Slides-Key-18037122"
     }
   ],
   "hub_pages": {

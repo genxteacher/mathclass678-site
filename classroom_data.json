@@ -1470,7 +1470,7 @@
     "slug": "common-core",
     "name": "Common Core",
     "standards": "the Common Core State Standards",
-    "hidden": false,
+    "hidden": true,
     "courses": [
      {
       "id": "17083177",
@@ -1604,7 +1604,7 @@
     "slug": "indiana",
     "name": "Indiana",
     "standards": "the 2023 Indiana Academic Standards",
-    "hidden": false,
+    "hidden": true,
     "courses": [
      {
       "id": "17083888",
@@ -1698,7 +1698,7 @@
     "slug": "texas",
     "name": "Texas",
     "standards": "the Texas TEKS",
-    "hidden": false,
+    "hidden": true,
     "courses": [
      {
       "id": "17085893",
@@ -1791,7 +1791,7 @@
     "slug": "florida",
     "name": "Florida",
     "standards": "Florida's B.E.S.T. Standards",
-    "hidden": false,
+    "hidden": true,
     "courses": [
      {
       "id": "17086192",
@@ -1885,7 +1885,7 @@
     "slug": "north-carolina",
     "name": "North Carolina",
     "standards": "the North Carolina Standard Course of Study",
-    "hidden": false,
+    "hidden": true,
     "courses": [
      {
       "id": "17626000",
@@ -1961,7 +1961,7 @@
     "slug": "south-carolina",
     "name": "South Carolina",
     "standards": "South Carolina's College- and Career-Ready Standards",
-    "hidden": false,
+    "hidden": true,
     "courses": [
      {
       "id": "17090998",
@@ -2055,7 +2055,7 @@
     "slug": "virginia",
     "name": "Virginia",
     "standards": "the Virginia Standards of Learning",
-    "hidden": false,
+    "hidden": true,
     "courses": [
      {
       "id": "17090169",
@@ -2140,7 +2140,7 @@
     "slug": "tennessee",
     "name": "Tennessee",
     "standards": "the Tennessee Academic Standards for Mathematics",
-    "hidden": false,
+    "hidden": true,
     "courses": [
      {
       "id": "17094452",
@@ -2225,7 +2225,7 @@
     "slug": "new-york",
     "name": "New York",
     "standards": "the New York State Next Generation Mathematics Learning Standards",
-    "hidden": false,
+    "hidden": true,
     "courses": [
      {
       "id": "17089542",
@@ -2310,7 +2310,7 @@
     "slug": "arizona",
     "name": "Arizona",
     "standards": "the Arizona Mathematics Standards",
-    "hidden": false,
+    "hidden": true,
     "courses": [
      {
       "id": "17094969",
@@ -2459,7 +2459,7 @@
     "slug": "oklahoma",
     "name": "Oklahoma",
     "standards": "the Oklahoma Academic Standards",
-    "hidden": false,
+    "hidden": true,
     "courses": [
      {
       "id": "17090706",
@@ -2757,7 +2757,8 @@
     "free": false,
     "img": "/assets/images/ican/17626261.jpg"
    }
-  ]
+  ],
+  "retired": "2026-10-20: every I Can listing was deactivated on TPT"
  },
  "algebra1": {
   "units": [
@@ -2768,16 +2769,16 @@
     "slug": "foundations-of-algebra",
     "bundle": {
      "id": "17385780",
-     "title": "Foundations of Algebra Bundle | Algebra 1 Worksheets, Answer Keys & Slides",
-     "url": "https://www.teacherspayteachers.com/Product/Foundations-of-Algebra-Bundle-Algebra-1-Worksheets-Answer-Keys-Slides-17385780",
+     "title": "Algebra Basics & Pre-Algebra Review | Algebra 1 Unit 1 Notes & Worksheets Bundle",
+     "url": "https://www.teacherspayteachers.com/Product/Algebra-Basics-Pre-Algebra-Review-Algebra-1-Unit-1-Notes-Worksheets-Bundle-17385780",
      "key": "U1",
      "img": null
     },
     "sheets": [
      {
       "id": "17385723",
-      "title": "Classifying Real Numbers | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Classifying-Real-Numbers-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17385723",
+      "title": "Classifying Rational & Irrational Numbers | Real Number System | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Classifying-Rational-Irrational-Numbers-Real-Number-System-Algebra-1-Notes-17385723",
       "key": "A1",
       "code": "A1",
       "num": 1,
@@ -2805,8 +2806,8 @@
      },
      {
       "id": "17385724",
-      "title": "Sums and Products of Rational and Irrational Numbers | Algebra 1 Worksheet",
-      "url": "https://www.teacherspayteachers.com/Product/Sums-and-Products-of-Rational-and-Irrational-Numbers-Algebra-1-Worksheet-17385724",
+      "title": "Sums & Products of Rational & Irrational Numbers | Closure Property | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Sums-Products-of-Rational-Irrational-Numbers-Closure-Property-Algebra-1-17385724",
       "key": "A2",
       "code": "A2",
       "num": 2,
@@ -2834,8 +2835,8 @@
      },
      {
       "id": "17385731",
-      "title": "Evaluating Algebraic Expressions | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Evaluating-Algebraic-Expressions-Algebra-1-No-Prep-Worksheet-Answer-Key-17385731",
+      "title": "Evaluating Algebraic Expressions Worksheet | Algebra 1 Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Evaluating-Algebraic-Expressions-Worksheet-Algebra-1-Notes-Slides-Key-17385731",
       "key": "A3",
       "code": "A3",
       "num": 3,
@@ -2863,8 +2864,8 @@
      },
      {
       "id": "17385733",
-      "title": "Properties of Real Numbers | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Properties-of-Real-Numbers-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17385733",
+      "title": "Properties of Real Numbers & Operations | Distributive Property | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Properties-of-Real-Numbers-Operations-Distributive-Property-Algebra-1-17385733",
       "key": "A4",
       "code": "A4",
       "num": 4,
@@ -2892,8 +2893,8 @@
      },
      {
       "id": "17385739",
-      "title": "Combining Like Terms and the Distributive Property | Algebra 1 Worksheet",
-      "url": "https://www.teacherspayteachers.com/Product/Combining-Like-Terms-and-the-Distributive-Property-Algebra-1-Worksheet-17385739",
+      "title": "Combining Like Terms & Distributive Property | Simplifying Expressions Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Combining-Like-Terms-Distributive-Property-Simplifying-Expressions-Algebra-1-17385739",
       "key": "A5",
       "code": "A5",
       "num": 5,
@@ -2921,8 +2922,8 @@
      },
      {
       "id": "17385743",
-      "title": "Translating Words into Algebraic Expressions | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Translating-Words-into-Algebraic-Expressions-Algebra-1-Worksheet-Answer-Key-17385743",
+      "title": "Translating Algebraic Expressions Worksheet | Writing Expressions | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Translating-Algebraic-Expressions-Worksheet-Writing-Expressions-Algebra-1-17385743",
       "key": "A6",
       "code": "A6",
       "num": 6,
@@ -2950,8 +2951,8 @@
      },
      {
       "id": "17385748",
-      "title": "Interpreting Parts of an Expression | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Interpreting-Parts-of-an-Expression-Algebra-1-No-Prep-Worksheet-Answer-Key-17385748",
+      "title": "Parts of an Algebraic Expression Worksheet | Interpreting Expressions Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Parts-of-an-Algebraic-Expression-Worksheet-Interpreting-Expressions-Algebra-1-17385748",
       "key": "A7",
       "code": "A7",
       "num": 7,
@@ -2979,8 +2980,8 @@
      },
      {
       "id": "17385752",
-      "title": "Units, Precision, and Quantitative Reasoning | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Units-Precision-and-Quantitative-Reasoning-Algebra-1-Worksheet-Answer-Key-17385752",
+      "title": "Dimensional Analysis Worksheet | Unit Conversions & Precision | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Dimensional-Analysis-Worksheet-Unit-Conversions-Precision-Algebra-1-Notes-17385752",
       "key": "A8",
       "code": "A8",
       "num": 8,
@@ -3015,16 +3016,16 @@
     "slug": "linear-equations-in-one-variable",
     "bundle": {
      "id": "17386111",
-     "title": "Linear Equations in One Variable Bundle | Algebra 1 Worksheets & Answer Keys",
-     "url": "https://www.teacherspayteachers.com/Product/Linear-Equations-in-One-Variable-Bundle-Algebra-1-Worksheets-Answer-Keys-17386111",
+     "title": "Solving Linear & Multi-Step Equations | Algebra 1 Unit 2 Worksheets Bundle",
+     "url": "https://www.teacherspayteachers.com/Product/Solving-Linear-Multi-Step-Equations-Algebra-1-Unit-2-Worksheets-Bundle-17386111",
      "key": "U2",
      "img": null
     },
     "sheets": [
      {
       "id": "17385961",
-      "title": "One-Step Equations | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/One-Step-Equations-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17385961",
+      "title": "Solving One-Step Equations with Integers & Decimals Worksheet | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-One-Step-Equations-with-Integers-Decimals-Worksheet-Algebra-1-Notes-17385961",
       "key": "A9",
       "code": "A9",
       "num": 9,
@@ -3052,8 +3053,8 @@
      },
      {
       "id": "17385967",
-      "title": "Two-Step Equations | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Two-Step-Equations-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17385967",
+      "title": "Solving Two-Step Equations with Integers Worksheet | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-Two-Step-Equations-with-Integers-Worksheet-Algebra-1-Notes-Key-17385967",
       "key": "A10",
       "code": "A10",
       "num": 10,
@@ -3081,8 +3082,8 @@
      },
      {
       "id": "17385969",
-      "title": "Multi-Step Equations | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Multi-Step-Equations-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17385969",
+      "title": "Solving Multi-Step Linear Equations with Distributive Property | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-Multi-Step-Linear-Equations-with-Distributive-Property-Algebra-1-Notes-17385969",
       "key": "A11",
       "code": "A11",
       "num": 11,
@@ -3110,8 +3111,8 @@
      },
      {
       "id": "17385971",
-      "title": "Equations with Variables on Both Sides | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Equations-with-Variables-on-Both-Sides-Algebra-1-Worksheet-Answer-Key-17385971",
+      "title": "Solving Equations with Variables on Both Sides Worksheet | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-Equations-with-Variables-on-Both-Sides-Worksheet-Algebra-1-Notes-Key-17385971",
       "key": "A12",
       "code": "A12",
       "num": 12,
@@ -3139,8 +3140,8 @@
      },
      {
       "id": "17386023",
-      "title": "Equations with Fractions and Decimals | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Equations-with-Fractions-and-Decimals-Algebra-1-No-Prep-Worksheet-Answer-Key-17386023",
+      "title": "Solving Equations with Fractions and Decimals Worksheet | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-Equations-with-Fractions-and-Decimals-Worksheet-Algebra-1-Notes-Key-17386023",
       "key": "A13",
       "code": "A13",
       "num": 13,
@@ -3168,8 +3169,8 @@
      },
      {
       "id": "17386035",
-      "title": "No Solution and Infinitely Many Solutions | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/No-Solution-and-Infinitely-Many-Solutions-Algebra-1-Worksheet-Answer-Key-17386035",
+      "title": "Number of Solutions | One Solution, No Solution, Infinite Solutions | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Number-of-Solutions-One-Solution-No-Solution-Infinite-Solutions-Algebra-1-17386035",
       "key": "A14",
       "code": "A14",
       "num": 14,
@@ -3197,8 +3198,8 @@
      },
      {
       "id": "17386045",
-      "title": "Justifying Each Step in a Solution | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Justifying-Each-Step-in-a-Solution-Algebra-1-No-Prep-Worksheet-Answer-Key-17386045",
+      "title": "Algebraic Proofs Worksheet | Properties of Equality | Justifying Steps Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Algebraic-Proofs-Worksheet-Properties-of-Equality-Justifying-Steps-Algebra-1-17386045",
       "key": "A15",
       "code": "A15",
       "num": 15,
@@ -3226,8 +3227,8 @@
      },
      {
       "id": "17386052",
-      "title": "Literal Equations and Rearranging Formulas | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Literal-Equations-and-Rearranging-Formulas-Algebra-1-Worksheet-Answer-Key-17386052",
+      "title": "Literal Equations Worksheet | Solving for a Variable | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Literal-Equations-Worksheet-Solving-for-a-Variable-Algebra-1-Notes-Key-17386052",
       "key": "A16",
       "code": "A16",
       "num": 16,
@@ -3255,8 +3256,8 @@
      },
      {
       "id": "17386061",
-      "title": "Writing Equations from Word Problems | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Writing-Equations-from-Word-Problems-Algebra-1-No-Prep-Worksheet-Answer-Key-17386061",
+      "title": "Writing and Solving Linear Equations from Word Problems Worksheet | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Writing-and-Solving-Linear-Equations-from-Word-Problems-Worksheet-Algebra-1-17386061",
       "key": "A17",
       "code": "A17",
       "num": 17,
@@ -3284,8 +3285,8 @@
      },
      {
       "id": "17386071",
-      "title": "Absolute Value Equations | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Absolute-Value-Equations-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17386071",
+      "title": "Solving Absolute Value Equations Worksheet | Algebra 1 Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-Absolute-Value-Equations-Worksheet-Algebra-1-Notes-Slides-Key-17386071",
       "key": "A18",
       "code": "A18",
       "num": 18,
@@ -3320,16 +3321,16 @@
     "slug": "linear-inequalities",
     "bundle": {
      "id": "17386285",
-     "title": "Linear Inequalities Bundle | Algebra 1 Worksheets, Answer Keys & Slides",
-     "url": "https://www.teacherspayteachers.com/Product/Linear-Inequalities-Bundle-Algebra-1-Worksheets-Answer-Keys-Slides-17386285",
+     "title": "Solving Linear & Compound Inequalities | Algebra 1 Unit 3 Worksheets Bundle",
+     "url": "https://www.teacherspayteachers.com/Product/Solving-Linear-Compound-Inequalities-Algebra-1-Unit-3-Worksheets-Bundle-17386285",
      "key": "U3",
      "img": null
     },
     "sheets": [
      {
       "id": "17386194",
-      "title": "One- and Two-Step Inequalities | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/One-and-Two-Step-Inequalities-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17386194",
+      "title": "Solving and Graphing Inequalities Worksheet | One & Two-Step | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-and-Graphing-Inequalities-Worksheet-One-Two-Step-Algebra-1-Notes-17386194",
       "key": "A19",
       "code": "A19",
       "num": 19,
@@ -3357,8 +3358,8 @@
      },
      {
       "id": "17386201",
-      "title": "Multi-Step Inequalities and the Reversal Rule | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Multi-Step-Inequalities-and-the-Reversal-Rule-Algebra-1-Worksheet-Answer-Key-17386201",
+      "title": "Solving Multi-Step Linear Inequalities Worksheet | Algebra 1 Notes & Answer Key",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-Multi-Step-Linear-Inequalities-Worksheet-Algebra-1-Notes-Answer-Key-17386201",
       "key": "A20",
       "code": "A20",
       "num": 20,
@@ -3386,8 +3387,8 @@
      },
      {
       "id": "17386210",
-      "title": "Compound Inequalities: AND and OR | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Compound-Inequalities-AND-and-OR-Algebra-1-No-Prep-Worksheet-Answer-Key-17386210",
+      "title": "Compound Inequalities Worksheet | Solving & Graphing And/Or | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Compound-Inequalities-Worksheet-Solving-Graphing-AndOr-Algebra-1-Notes-17386210",
       "key": "A21",
       "code": "A21",
       "num": 21,
@@ -3415,8 +3416,8 @@
      },
      {
       "id": "17386222",
-      "title": "Absolute Value Inequalities | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Absolute-Value-Inequalities-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17386222",
+      "title": "Solving Absolute Value Inequalities Worksheet | Graphing | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-Absolute-Value-Inequalities-Worksheet-Graphing-Algebra-1-Notes-Key-17386222",
       "key": "A22",
       "code": "A22",
       "num": 22,
@@ -3444,8 +3445,8 @@
      },
      {
       "id": "17386242",
-      "title": "Writing Inequalities and Constraints from Context | Algebra 1 Worksheet",
-      "url": "https://www.teacherspayteachers.com/Product/Writing-Inequalities-and-Constraints-from-Context-Algebra-1-Worksheet-17386242",
+      "title": "Inequality Word Problems | Writing Inequalities from Context | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Inequality-Word-Problems-Writing-Inequalities-from-Context-Algebra-1-Notes-17386242",
       "key": "A23",
       "code": "A23",
       "num": 23,
@@ -3473,8 +3474,8 @@
      },
      {
       "id": "17386255",
-      "title": "Graphing Linear Inequalities in Two Variables | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Graphing-Linear-Inequalities-in-Two-Variables-Algebra-1-Worksheet-Answer-Key-17386255",
+      "title": "Graphing Linear Inequalities in Two Variables Worksheet | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Graphing-Linear-Inequalities-in-Two-Variables-Worksheet-Algebra-1-Notes-Key-17386255",
       "key": "A24",
       "code": "A24",
       "num": 24,
@@ -3502,8 +3503,8 @@
      },
      {
       "id": "17386265",
-      "title": "Systems of Linear Inequalities | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Systems-of-Linear-Inequalities-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17386265",
+      "title": "Graphing Systems of Linear Inequalities Worksheet | Algebra 1 Notes & Answer Key",
+      "url": "https://www.teacherspayteachers.com/Product/Graphing-Systems-of-Linear-Inequalities-Worksheet-Algebra-1-Notes-Answer-Key-17386265",
       "key": "A25",
       "code": "A25",
       "num": 25,
@@ -3538,16 +3539,16 @@
     "slug": "introduction-to-functions",
     "bundle": {
      "id": "17386482",
-     "title": "Introduction to Functions Bundle | Algebra 1 Worksheets, Answer Keys & Slides",
-     "url": "https://www.teacherspayteachers.com/Product/Introduction-to-Functions-Bundle-Algebra-1-Worksheets-Answer-Keys-Slides-17386482",
+     "title": "Relations & Functions | Function Notation | Algebra 1 Unit 4 Worksheets Bundle",
+     "url": "https://www.teacherspayteachers.com/Product/Relations-Functions-Function-Notation-Algebra-1-Unit-4-Worksheets-Bundle-17386482",
      "key": "U4",
      "img": null
     },
     "sheets": [
      {
       "id": "17386442",
-      "title": "Relations, Domain and Range | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Relations-Domain-and-Range-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17386442",
+      "title": "Domain and Range Worksheet | Relations and Functions | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Domain-and-Range-Worksheet-Relations-and-Functions-Algebra-1-Notes-Key-17386442",
       "key": "A26",
       "code": "A26",
       "num": 26,
@@ -3575,8 +3576,8 @@
      },
      {
       "id": "17386445",
-      "title": "Identifying Functions from Mapping Diagrams | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Identifying-Functions-from-Mapping-Diagrams-Algebra-1-Worksheet-Answer-Key-17386445",
+      "title": "Is It a Function or Not? Identifying Functions | Mapping Diagrams | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Is-It-a-Function-or-Not-Identifying-Functions-Mapping-Diagrams-Algebra-1-17386445",
       "key": "A27",
       "code": "A27",
       "num": 27,
@@ -3604,8 +3605,8 @@
      },
      {
       "id": "17386447",
-      "title": "Function Notation | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Function-Notation-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17386447",
+      "title": "Function Notation Worksheet | From a Table and a Graph | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Function-Notation-Worksheet-From-a-Table-and-a-Graph-Algebra-1-Notes-Key-17386447",
       "key": "A28",
       "code": "A28",
       "num": 28,
@@ -3633,8 +3634,8 @@
      },
      {
       "id": "17386449",
-      "title": "Evaluating Functions | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Evaluating-Functions-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17386449",
+      "title": "Evaluating Functions Worksheet | Function Notation | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Evaluating-Functions-Worksheet-Function-Notation-Algebra-1-Notes-Key-17386449",
       "key": "A29",
       "code": "A29",
       "num": 29,
@@ -3662,8 +3663,8 @@
      },
      {
       "id": "17386457",
-      "title": "Writing a Function Rule from a Table | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Writing-a-Function-Rule-from-a-Table-Algebra-1-No-Prep-Worksheet-Answer-Key-17386457",
+      "title": "Writing a Function Rule from a Table Worksheet | Input Output Tables | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Writing-a-Function-Rule-from-a-Table-Worksheet-Input-Output-Tables-Algebra-1-17386457",
       "key": "A30",
       "code": "A30",
       "num": 30,
@@ -3691,8 +3692,8 @@
      },
      {
       "id": "17386460",
-      "title": "Key Features of Graphs | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Key-Features-of-Graphs-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17386460",
+      "title": "Key Features of Functions & Graphs | Interpreting & Analyzing Graphs | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Key-Features-of-Functions-Graphs-Interpreting-Analyzing-Graphs-Algebra-1-17386460",
       "key": "A31",
       "code": "A31",
       "num": 31,
@@ -3720,8 +3721,8 @@
      },
      {
       "id": "17386464",
-      "title": "Comparing Functions Across Representations | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Comparing-Functions-Across-Representations-Algebra-1-Worksheet-Answer-Key-17386464",
+      "title": "Comparing Linear Functions in Different Representations | Algebra 1 Worksheet",
+      "url": "https://www.teacherspayteachers.com/Product/Comparing-Linear-Functions-in-Different-Representations-Algebra-1-Worksheet-17386464",
       "key": "A32",
       "code": "A32",
       "num": 32,
@@ -3749,8 +3750,8 @@
      },
      {
       "id": "17386466",
-      "title": "Piecewise, Step, and Absolute Value Functions | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Piecewise-Step-and-Absolute-Value-Functions-Algebra-1-Worksheet-Answer-Key-17386466",
+      "title": "Piecewise Functions | Evaluating Step & Absolute Value Functions | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Piecewise-Functions-Evaluating-Step-Absolute-Value-Functions-Algebra-1-17386466",
       "key": "A33",
       "code": "A33",
       "num": 33,
@@ -3785,16 +3786,16 @@
     "slug": "linear-functions-and-graphing",
     "bundle": {
      "id": "17400692",
-     "title": "Linear Functions and Graphing Bundle | Algebra 1 Worksheets & Answer Keys",
-     "url": "https://www.teacherspayteachers.com/Product/Linear-Functions-and-Graphing-Bundle-Algebra-1-Worksheets-Answer-Keys-17400692",
+     "title": "Linear Functions & Graphing | Slope-Intercept Form | Algebra 1 Unit 5 Bundle",
+     "url": "https://www.teacherspayteachers.com/Product/Linear-Functions-Graphing-Slope-Intercept-Form-Algebra-1-Unit-5-Bundle-17400692",
      "key": "U5",
      "img": null
     },
     "sheets": [
      {
       "id": "17400370",
-      "title": "Rate of Change and Slope from a Graph | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Rate-of-Change-and-Slope-from-a-Graph-Algebra-1-No-Prep-Worksheet-Answer-Key-17400370",
+      "title": "Finding Slope from a Graph | Rise Over Run & Rate of Change | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Finding-Slope-from-a-Graph-Rise-Over-Run-Rate-of-Change-Algebra-1-Notes-17400370",
       "key": "A34",
       "code": "A34",
       "num": 34,
@@ -3822,8 +3823,8 @@
      },
      {
       "id": "17400377",
-      "title": "Slope from Two Points | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Slope-from-Two-Points-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17400377",
+      "title": "Slope Formula Worksheet | Finding Slope from Two Points | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Slope-Formula-Worksheet-Finding-Slope-from-Two-Points-Algebra-1-Notes-Key-17400377",
       "key": "A35",
       "code": "A35",
       "num": 35,
@@ -3851,8 +3852,8 @@
      },
      {
       "id": "17400382",
-      "title": "Graphing in Slope-Intercept Form | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Graphing-in-Slope-Intercept-Form-Algebra-1-No-Prep-Worksheet-Answer-Key-17400382",
+      "title": "Graphing Slope-Intercept Form | Graphing Linear Equations Worksheet | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Graphing-Slope-Intercept-Form-Graphing-Linear-Equations-Worksheet-Algebra-1-17400382",
       "key": "A36",
       "code": "A36",
       "num": 36,
@@ -3880,8 +3881,8 @@
      },
      {
       "id": "17400385",
-      "title": "Writing Equations in Slope-Intercept Form | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Writing-Equations-in-Slope-Intercept-Form-Algebra-1-Worksheet-Answer-Key-17400385",
+      "title": "Writing Linear Equations in Slope-Intercept Form Worksheet | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Writing-Linear-Equations-in-Slope-Intercept-Form-Worksheet-Algebra-1-Notes-17400385",
       "key": "A37",
       "code": "A37",
       "num": 37,
@@ -3909,8 +3910,8 @@
      },
      {
       "id": "17400390",
-      "title": "Point-Slope Form | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Point-Slope-Form-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17400390",
+      "title": "Writing Equations in Point-Slope Form Worksheet | Algebra 1 Notes & Answer Key",
+      "url": "https://www.teacherspayteachers.com/Product/Writing-Equations-in-Point-Slope-Form-Worksheet-Algebra-1-Notes-Answer-Key-17400390",
       "key": "A38",
       "code": "A38",
       "num": 38,
@@ -3938,8 +3939,8 @@
      },
      {
       "id": "17400392",
-      "title": "Standard Form and Graphing with Intercepts | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Standard-Form-and-Graphing-with-Intercepts-Algebra-1-Worksheet-Answer-Key-17400392",
+      "title": "Finding X and Y Intercepts Worksheet | Graphing Standard Form | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Finding-X-and-Y-Intercepts-Worksheet-Graphing-Standard-Form-Algebra-1-Notes-17400392",
       "key": "A39",
       "code": "A39",
       "num": 39,
@@ -3967,8 +3968,8 @@
      },
      {
       "id": "17400400",
-      "title": "Converting Between Forms of Linear Equations | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Converting-Between-Forms-of-Linear-Equations-Algebra-1-Worksheet-Answer-Key-17400400",
+      "title": "Converting Forms of Linear Equations | Standard to Slope-Intercept | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Converting-Forms-of-Linear-Equations-Standard-to-Slope-Intercept-Algebra-1-17400400",
       "key": "A40",
       "code": "A40",
       "num": 40,
@@ -3996,8 +3997,8 @@
      },
      {
       "id": "17400408",
-      "title": "Parallel and Perpendicular Lines | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Parallel-and-Perpendicular-Lines-Algebra-1-No-Prep-Worksheet-Answer-Key-17400408",
+      "title": "Parallel and Perpendicular Lines Worksheet | Slopes of Lines | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Parallel-and-Perpendicular-Lines-Worksheet-Slopes-of-Lines-Algebra-1-Notes-17400408",
       "key": "A41",
       "code": "A41",
       "num": 41,
@@ -4025,8 +4026,8 @@
      },
      {
       "id": "17400414",
-      "title": "Direct Variation | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Direct-Variation-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17400414",
+      "title": "Direct Variation Worksheet | Constant of Variation | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Direct-Variation-Worksheet-Constant-of-Variation-Algebra-1-Notes-Key-17400414",
       "key": "A42",
       "code": "A42",
       "num": 42,
@@ -4054,8 +4055,8 @@
      },
      {
       "id": "17400416",
-      "title": "Writing Linear Models from Tables and Contexts | Algebra 1 Worksheet",
-      "url": "https://www.teacherspayteachers.com/Product/Writing-Linear-Models-from-Tables-and-Contexts-Algebra-1-Worksheet-17400416",
+      "title": "Writing Linear Equations from Word Problems & Tables | Linear Models | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Writing-Linear-Equations-from-Word-Problems-Tables-Linear-Models-Algebra-1-17400416",
       "key": "A43",
       "code": "A43",
       "num": 43,
@@ -4083,8 +4084,8 @@
      },
      {
       "id": "17400421",
-      "title": "Interpreting Slope and Intercept in Context | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Interpreting-Slope-and-Intercept-in-Context-Algebra-1-Worksheet-Answer-Key-17400421",
+      "title": "Interpreting Slope and Y-Intercept in Context Worksheet | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Interpreting-Slope-and-Y-Intercept-in-Context-Worksheet-Algebra-1-Notes-Key-17400421",
       "key": "A44",
       "code": "A44",
       "num": 44,
@@ -4112,8 +4113,8 @@
      },
      {
       "id": "17400424",
-      "title": "Transformations of Linear Functions | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Transformations-of-Linear-Functions-Algebra-1-No-Prep-Worksheet-Answer-Key-17400424",
+      "title": "Transformations of Linear Functions | Function Transformations | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Transformations-of-Linear-Functions-Function-Transformations-Algebra-1-Notes-17400424",
       "key": "A45",
       "code": "A45",
       "num": 45,
@@ -4141,8 +4142,8 @@
      },
      {
       "id": "17400429",
-      "title": "Solving Equations Graphically | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Solving-Equations-Graphically-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17400429",
+      "title": "Solving Linear Equations by Graphing Worksheet | Algebra 1 Notes & Answer Key",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-Linear-Equations-by-Graphing-Worksheet-Algebra-1-Notes-Answer-Key-17400429",
       "key": "A46",
       "code": "A46",
       "num": 46,
@@ -4177,16 +4178,16 @@
     "slug": "systems-of-equations",
     "bundle": {
      "id": "17410199",
-     "title": "Systems of Equations Bundle | Algebra 1 Worksheets, Answer Keys & Slides",
-     "url": "https://www.teacherspayteachers.com/Product/Systems-of-Equations-Bundle-Algebra-1-Worksheets-Answer-Keys-Slides-17410199",
+     "title": "Solving Systems of Linear Equations | Algebra 1 Unit 6 Notes & Worksheets Bundle",
+     "url": "https://www.teacherspayteachers.com/Product/Solving-Systems-of-Linear-Equations-Algebra-1-Unit-6-Notes-Worksheets-Bundle-17410199",
      "key": "U6",
      "img": null
     },
     "sheets": [
      {
       "id": "17410169",
-      "title": "Solving Systems by Graphing | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Solving-Systems-by-Graphing-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17410169",
+      "title": "Solving Systems of Equations by Graphing Worksheet | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-Systems-of-Equations-by-Graphing-Worksheet-Algebra-1-Notes-Key-17410169",
       "key": "A47",
       "code": "A47",
       "num": 47,
@@ -4214,8 +4215,8 @@
      },
      {
       "id": "17410172",
-      "title": "Solving Systems by Substitution | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Solving-Systems-by-Substitution-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17410172",
+      "title": "Solving Systems of Equations by Substitution Worksheet | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-Systems-of-Equations-by-Substitution-Worksheet-Algebra-1-Notes-Key-17410172",
       "key": "A48",
       "code": "A48",
       "num": 48,
@@ -4243,8 +4244,8 @@
      },
      {
       "id": "17410173",
-      "title": "Solving Systems by Elimination | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Solving-Systems-by-Elimination-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17410173",
+      "title": "Solving Systems of Equations by Elimination Worksheet | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-Systems-of-Equations-by-Elimination-Worksheet-Algebra-1-Notes-Key-17410173",
       "key": "A49",
       "code": "A49",
       "num": 49,
@@ -4272,8 +4273,8 @@
      },
      {
       "id": "17410177",
-      "title": "Choosing a Method and Special Systems | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Choosing-a-Method-and-Special-Systems-Algebra-1-No-Prep-Worksheet-Answer-Key-17410177",
+      "title": "Solving Systems of Equations Worksheet | Special Systems | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-Systems-of-Equations-Worksheet-Special-Systems-Algebra-1-Notes-Key-17410177",
       "key": "A50",
       "code": "A50",
       "num": 50,
@@ -4301,8 +4302,8 @@
      },
      {
       "id": "17410181",
-      "title": "Systems Word Problems and Modeling | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Systems-Word-Problems-and-Modeling-Algebra-1-No-Prep-Worksheet-Answer-Key-17410181",
+      "title": "Systems of Equations Word Problems Worksheet | Writing Systems | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Systems-of-Equations-Word-Problems-Worksheet-Writing-Systems-Algebra-1-Notes-17410181",
       "key": "A51",
       "code": "A51",
       "num": 51,
@@ -4337,16 +4338,16 @@
     "slug": "sequences",
     "bundle": {
      "id": "17419884",
-     "title": "Sequences Bundle | Algebra 1 Worksheets, Answer Keys & Slides | 3 Sheets",
-     "url": "https://www.teacherspayteachers.com/Product/Sequences-Bundle-Algebra-1-Worksheets-Answer-Keys-Slides-3-Sheets-17419884",
+     "title": "Arithmetic & Geometric Sequences | Algebra 1 Unit 7 Notes & Worksheets Bundle",
+     "url": "https://www.teacherspayteachers.com/Product/Arithmetic-Geometric-Sequences-Algebra-1-Unit-7-Notes-Worksheets-Bundle-17419884",
      "key": "U7",
      "img": null
     },
     "sheets": [
      {
       "id": "17419871",
-      "title": "Arithmetic Sequences | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Arithmetic-Sequences-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17419871",
+      "title": "Arithmetic Sequences Worksheet | Arithmetic Sequence Formula | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Arithmetic-Sequences-Worksheet-Arithmetic-Sequence-Formula-Algebra-1-Notes-17419871",
       "key": "A52",
       "code": "A52",
       "num": 52,
@@ -4374,8 +4375,8 @@
      },
      {
       "id": "17419876",
-      "title": "Geometric Sequences | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Geometric-Sequences-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17419876",
+      "title": "Geometric Sequences Worksheet | Arithmetic and Geometric Sequences | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Geometric-Sequences-Worksheet-Arithmetic-and-Geometric-Sequences-Algebra-1-17419876",
       "key": "A53",
       "code": "A53",
       "num": 53,
@@ -4403,8 +4404,8 @@
      },
      {
       "id": "17419875",
-      "title": "Sequences as Functions: Recursive and Explicit | Algebra 1 Worksheet",
-      "url": "https://www.teacherspayteachers.com/Product/Sequences-as-Functions-Recursive-and-Explicit-Algebra-1-Worksheet-17419875",
+      "title": "Explicit and Recursive Formulas Worksheet | Sequences as Functions | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Explicit-and-Recursive-Formulas-Worksheet-Sequences-as-Functions-Algebra-1-17419875",
       "key": "A54",
       "code": "A54",
       "num": 54,
@@ -4439,16 +4440,16 @@
     "slug": "exponents-and-radicals",
     "bundle": {
      "id": "17452414",
-     "title": "Exponents and Radicals Bundle | Algebra 1 Worksheets, Answer Keys & Slides",
-     "url": "https://www.teacherspayteachers.com/Product/Exponents-and-Radicals-Bundle-Algebra-1-Worksheets-Answer-Keys-Slides-17452414",
+     "title": "Properties of Exponents & Radicals | Exponent Rules | Algebra 1 Unit 8 Bundle",
+     "url": "https://www.teacherspayteachers.com/Product/Properties-of-Exponents-Radicals-Exponent-Rules-Algebra-1-Unit-8-Bundle-17452414",
      "key": "U8",
      "img": null
     },
     "sheets": [
      {
       "id": "17452391",
-      "title": "Properties of Exponents | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Properties-of-Exponents-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17452391",
+      "title": "Exponent Rules Worksheet | Laws & Properties of Exponents | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Exponent-Rules-Worksheet-Laws-Properties-of-Exponents-Algebra-1-Notes-17452391",
       "key": "A55",
       "code": "A55",
       "num": 55,
@@ -4476,8 +4477,8 @@
      },
      {
       "id": "17452392",
-      "title": "Zero and Negative Exponents | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Zero-and-Negative-Exponents-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17452392",
+      "title": "Zero and Negative Exponents Worksheet | Integer Exponents | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Zero-and-Negative-Exponents-Worksheet-Integer-Exponents-Algebra-1-Notes-17452392",
       "key": "A56",
       "code": "A56",
       "num": 56,
@@ -4505,8 +4506,8 @@
      },
      {
       "id": "17452395",
-      "title": "Rational Exponents and Radical Form | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Rational-Exponents-and-Radical-Form-Algebra-1-No-Prep-Worksheet-Answer-Key-17452395",
+      "title": "Rational Exponents and Radicals Worksheet | Fractional Exponents | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Rational-Exponents-and-Radicals-Worksheet-Fractional-Exponents-Algebra-1-17452395",
       "key": "A57",
       "code": "A57",
       "num": 57,
@@ -4534,8 +4535,8 @@
      },
      {
       "id": "17452398",
-      "title": "Simplifying Radical Expressions | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Simplifying-Radical-Expressions-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17452398",
+      "title": "Simplifying Radicals Worksheet | Simplifying Square Roots | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Simplifying-Radicals-Worksheet-Simplifying-Square-Roots-Algebra-1-Notes-17452398",
       "key": "A58",
       "code": "A58",
       "num": 58,
@@ -4563,8 +4564,8 @@
      },
      {
       "id": "17452400",
-      "title": "Operations with Radicals | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Operations-with-Radicals-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17452400",
+      "title": "Operations with Radicals | Adding, Subtracting & Multiplying Radicals Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Operations-with-Radicals-Adding-Subtracting-Multiplying-Radicals-Algebra-1-17452400",
       "key": "A59",
       "code": "A59",
       "num": 59,
@@ -4592,8 +4593,8 @@
      },
      {
       "id": "17452402",
-      "title": "Scientific Notation Operations | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Scientific-Notation-Operations-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17452402",
+      "title": "Operations with Scientific Notation Worksheet | Multiplying & Dividing Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Operations-with-Scientific-Notation-Worksheet-Multiplying-Dividing-Algebra-1-17452402",
       "key": "A60",
       "code": "A60",
       "num": 60,
@@ -4628,16 +4629,16 @@
     "slug": "exponential-functions",
     "bundle": {
      "id": "17458665",
-     "title": "Exponential Functions Bundle | Algebra 1 Worksheets, Answer Keys & Slides",
-     "url": "https://www.teacherspayteachers.com/Product/Exponential-Functions-Bundle-Algebra-1-Worksheets-Answer-Keys-Slides-17458665",
+     "title": "Exponential Functions | Growth & Decay | Algebra 1 Unit 9 Worksheets Bundle",
+     "url": "https://www.teacherspayteachers.com/Product/Exponential-Functions-Growth-Decay-Algebra-1-Unit-9-Worksheets-Bundle-17458665",
      "key": "U9",
      "img": null
     },
     "sheets": [
      {
       "id": "17458623",
-      "title": "Graphing Exponential Functions | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Graphing-Exponential-Functions-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17458623",
+      "title": "Graphing Exponential Functions Worksheet | Algebra 1 Notes, Slides & Answer Key",
+      "url": "https://www.teacherspayteachers.com/Product/Graphing-Exponential-Functions-Worksheet-Algebra-1-Notes-Slides-Answer-Key-17458623",
       "key": "A61",
       "code": "A61",
       "num": 61,
@@ -4665,8 +4666,8 @@
      },
      {
       "id": "17458628",
-      "title": "Exponential Growth Models | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Exponential-Growth-Models-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17458628",
+      "title": "Exponential Growth Worksheet | Growth Models & Formula | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Exponential-Growth-Worksheet-Growth-Models-Formula-Algebra-1-Notes-Key-17458628",
       "key": "A62",
       "code": "A62",
       "num": 62,
@@ -4694,8 +4695,8 @@
      },
      {
       "id": "17458631",
-      "title": "Exponential Decay Models | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Exponential-Decay-Models-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17458631",
+      "title": "Exponential Decay Worksheet | Decay Models & Formula | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Exponential-Decay-Worksheet-Decay-Models-Formula-Algebra-1-Notes-Key-17458631",
       "key": "A63",
       "code": "A63",
       "num": 63,
@@ -4723,8 +4724,8 @@
      },
      {
       "id": "17458634",
-      "title": "Compound Interest and Rewriting Rates | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Compound-Interest-and-Rewriting-Rates-Algebra-1-No-Prep-Worksheet-Answer-Key-17458634",
+      "title": "Compound Interest Worksheet | Compound Interest Formula | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Compound-Interest-Worksheet-Compound-Interest-Formula-Algebra-1-Notes-Key-17458634",
       "key": "A64",
       "code": "A64",
       "num": 64,
@@ -4752,8 +4753,8 @@
      },
      {
       "id": "17458639",
-      "title": "Linear vs Exponential Growth | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Linear-vs-Exponential-Growth-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17458639",
+      "title": "Linear and Exponential Functions Worksheet | Linear vs Exponential | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Linear-and-Exponential-Functions-Worksheet-Linear-vs-Exponential-Algebra-1-17458639",
       "key": "A65",
       "code": "A65",
       "num": 65,
@@ -4781,8 +4782,8 @@
      },
      {
       "id": "17458644",
-      "title": "Writing Exponential Functions from Data | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Writing-Exponential-Functions-from-Data-Algebra-1-Worksheet-Answer-Key-17458644",
+      "title": "Writing Exponential Functions from Two Points & Tables Worksheet | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Writing-Exponential-Functions-from-Two-Points-Tables-Worksheet-Algebra-1-17458644",
       "key": "A66",
       "code": "A66",
       "num": 66,
@@ -4817,16 +4818,16 @@
     "slug": "polynomials",
     "bundle": {
      "id": "17461476",
-     "title": "Polynomials Bundle | Algebra 1 Worksheets, Answer Keys & Slides | 5 Sheets",
-     "url": "https://www.teacherspayteachers.com/Product/Polynomials-Bundle-Algebra-1-Worksheets-Answer-Keys-Slides-5-Sheets-17461476",
+     "title": "Adding, Subtracting & Multiplying Polynomials | Algebra 1 Unit 10 Notes Bundle",
+     "url": "https://www.teacherspayteachers.com/Product/Adding-Subtracting-Multiplying-Polynomials-Algebra-1-Unit-10-Notes-Bundle-17461476",
      "key": "U10",
      "img": null
     },
     "sheets": [
      {
       "id": "17461443",
-      "title": "Classifying Polynomials | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Classifying-Polynomials-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17461443",
+      "title": "Classifying Polynomials by Degree & Number of Terms Worksheet | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Classifying-Polynomials-by-Degree-Number-of-Terms-Worksheet-Algebra-1-Notes-17461443",
       "key": "A67",
       "code": "A67",
       "num": 67,
@@ -4854,8 +4855,8 @@
      },
      {
       "id": "17461444",
-      "title": "Adding and Subtracting Polynomials | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Adding-and-Subtracting-Polynomials-Algebra-1-No-Prep-Worksheet-Answer-Key-17461444",
+      "title": "Adding and Subtracting Polynomials Worksheet | Polynomial Operations | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Adding-and-Subtracting-Polynomials-Worksheet-Polynomial-Operations-Algebra-1-17461444",
       "key": "A68",
       "code": "A68",
       "num": 68,
@@ -4883,8 +4884,8 @@
      },
      {
       "id": "17461446",
-      "title": "Multiplying Monomials and Binomials | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Multiplying-Monomials-and-Binomials-Algebra-1-No-Prep-Worksheet-Answer-Key-17461446",
+      "title": "Multiplying Binomials Worksheet | FOIL Method | Monomials & Binomials Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Multiplying-Binomials-Worksheet-FOIL-Method-Monomials-Binomials-Algebra-1-17461446",
       "key": "A69",
       "code": "A69",
       "num": 69,
@@ -4912,8 +4913,8 @@
      },
      {
       "id": "17461448",
-      "title": "Multiplying Polynomials | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Multiplying-Polynomials-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17461448",
+      "title": "Multiplying Polynomials Worksheet | Multiplying Trinomials | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Multiplying-Polynomials-Worksheet-Multiplying-Trinomials-Algebra-1-Notes-17461448",
       "key": "A70",
       "code": "A70",
       "num": 70,
@@ -4941,8 +4942,8 @@
      },
      {
       "id": "17461455",
-      "title": "Special Products | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Special-Products-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17461455",
+      "title": "Special Products of Polynomials Worksheet | Squaring Binomials | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Special-Products-of-Polynomials-Worksheet-Squaring-Binomials-Algebra-1-Notes-17461455",
       "key": "A71",
       "code": "A71",
       "num": 71,
@@ -4977,16 +4978,16 @@
     "slug": "factoring",
     "bundle": {
      "id": "17465193",
-     "title": "Factoring Bundle | Algebra 1 Worksheets, Answer Keys & Slides | 7 Sheets",
-     "url": "https://www.teacherspayteachers.com/Product/Factoring-Bundle-Algebra-1-Worksheets-Answer-Keys-Slides-7-Sheets-17465193",
+     "title": "Factoring Polynomials, Trinomials & Quadratics | Algebra 1 Unit 11 Notes Bundle",
+     "url": "https://www.teacherspayteachers.com/Product/Factoring-Polynomials-Trinomials-Quadratics-Algebra-1-Unit-11-Notes-Bundle-17465193",
      "key": "U11",
      "img": null
     },
     "sheets": [
      {
       "id": "17465148",
-      "title": "Factoring Out the Greatest Common Factor | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Factoring-Out-the-Greatest-Common-Factor-Algebra-1-Worksheet-Answer-Key-17465148",
+      "title": "Factoring Out the GCF Worksheet | Greatest Common Factor | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Factoring-Out-the-GCF-Worksheet-Greatest-Common-Factor-Algebra-1-Notes-Key-17465148",
       "key": "A72",
       "code": "A72",
       "num": 72,
@@ -5014,8 +5015,8 @@
      },
      {
       "id": "17465151",
-      "title": "Factoring Trinomials with Leading Coefficient 1 | Algebra 1 Worksheet",
-      "url": "https://www.teacherspayteachers.com/Product/Factoring-Trinomials-with-Leading-Coefficient-1-Algebra-1-Worksheet-17465151",
+      "title": "Factoring Trinomials When a = 1 Worksheet | Factoring Quadratics | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Factoring-Trinomials-When-a-1-Worksheet-Factoring-Quadratics-Algebra-1-17465151",
       "key": "A73",
       "code": "A73",
       "num": 73,
@@ -5043,8 +5044,8 @@
      },
      {
       "id": "17465158",
-      "title": "Factoring Trinomials with a Leading Coefficient | Algebra 1 Worksheet",
-      "url": "https://www.teacherspayteachers.com/Product/Factoring-Trinomials-with-a-Leading-Coefficient-Algebra-1-Worksheet-17465158",
+      "title": "Factoring Trinomials When a Is Not 1 Worksheet | AC Method | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Factoring-Trinomials-When-a-Is-Not-1-Worksheet-AC-Method-Algebra-1-Notes-17465158",
       "key": "A74",
       "code": "A74",
       "num": 74,
@@ -5072,8 +5073,8 @@
      },
      {
       "id": "17465163",
-      "title": "Factoring the Difference of Squares | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Factoring-the-Difference-of-Squares-Algebra-1-No-Prep-Worksheet-Answer-Key-17465163",
+      "title": "Factoring Difference of Squares Worksheet | Special Cases | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Factoring-Difference-of-Squares-Worksheet-Special-Cases-Algebra-1-Notes-17465163",
       "key": "A75",
       "code": "A75",
       "num": 75,
@@ -5101,8 +5102,8 @@
      },
      {
       "id": "17465169",
-      "title": "Factoring Perfect Square Trinomials | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Factoring-Perfect-Square-Trinomials-Algebra-1-No-Prep-Worksheet-Answer-Key-17465169",
+      "title": "Factoring Perfect Square Trinomials Worksheet | Special Cases | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Factoring-Perfect-Square-Trinomials-Worksheet-Special-Cases-Algebra-1-Notes-17465169",
       "key": "A76",
       "code": "A76",
       "num": 76,
@@ -5130,8 +5131,8 @@
      },
      {
       "id": "17465174",
-      "title": "Factoring by Grouping | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Factoring-by-Grouping-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17465174",
+      "title": "Factoring Polynomials by Grouping Worksheet | Four Terms | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Factoring-Polynomials-by-Grouping-Worksheet-Four-Terms-Algebra-1-Notes-Key-17465174",
       "key": "A77",
       "code": "A77",
       "num": 77,
@@ -5159,8 +5160,8 @@
      },
      {
       "id": "17465177",
-      "title": "Choosing a Factoring Strategy | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Choosing-a-Factoring-Strategy-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17465177",
+      "title": "Factoring Polynomials Completely Worksheet | Factoring Review | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Factoring-Polynomials-Completely-Worksheet-Factoring-Review-Algebra-1-Notes-17465177",
       "key": "A78",
       "code": "A78",
       "num": 78,
@@ -5195,16 +5196,16 @@
     "slug": "quadratic-functions",
     "bundle": {
      "id": "17465575",
-     "title": "Quadratic Functions Bundle | Algebra 1 Worksheets, Answer Keys & Slides",
-     "url": "https://www.teacherspayteachers.com/Product/Quadratic-Functions-Bundle-Algebra-1-Worksheets-Answer-Keys-Slides-17465575",
+     "title": "Graphing Quadratics & Quadratic Functions | Algebra 1 Unit 12 Worksheets Bundle",
+     "url": "https://www.teacherspayteachers.com/Product/Graphing-Quadratics-Quadratic-Functions-Algebra-1-Unit-12-Worksheets-Bundle-17465575",
      "key": "U12",
      "img": null
     },
     "sheets": [
      {
       "id": "17465509",
-      "title": "Graphing Quadratics in Standard Form | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Graphing-Quadratics-in-Standard-Form-Algebra-1-No-Prep-Worksheet-Answer-Key-17465509",
+      "title": "Graphing Quadratics Worksheet | Vertex, Axis of Symmetry & Parabolas | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Graphing-Quadratics-Worksheet-Vertex-Axis-of-Symmetry-Parabolas-Algebra-1-17465509",
       "key": "A79",
       "code": "A79",
       "num": 79,
@@ -5232,8 +5233,8 @@
      },
      {
       "id": "17465515",
-      "title": "Key Features of Parabolas | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Key-Features-of-Parabolas-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17465515",
+      "title": "Key Features of Quadratic Functions Worksheet | Parabolas | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Key-Features-of-Quadratic-Functions-Worksheet-Parabolas-Algebra-1-Notes-17465515",
       "key": "A80",
       "code": "A80",
       "num": 80,
@@ -5261,8 +5262,8 @@
      },
      {
       "id": "17465521",
-      "title": "Vertex Form and Transformations | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Vertex-Form-and-Transformations-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17465521",
+      "title": "Vertex Form Worksheet | Transformations of Quadratic Functions | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Vertex-Form-Worksheet-Transformations-of-Quadratic-Functions-Algebra-1-Notes-17465521",
       "key": "A81",
       "code": "A81",
       "num": 81,
@@ -5290,8 +5291,8 @@
      },
      {
       "id": "17465528",
-      "title": "Completing the Square to Find the Vertex | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Completing-the-Square-to-Find-the-Vertex-Algebra-1-Worksheet-Answer-Key-17465528",
+      "title": "Standard Form to Vertex Form Worksheet | Completing the Square | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Standard-Form-to-Vertex-Form-Worksheet-Completing-the-Square-Algebra-1-Notes-17465528",
       "key": "A82",
       "code": "A82",
       "num": 82,
@@ -5319,8 +5320,8 @@
      },
      {
       "id": "17465534",
-      "title": "Factored Form and Zeros | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Factored-Form-and-Zeros-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17465534",
+      "title": "Factored Form of a Quadratic Worksheet | Zeros & Roots of Quadratics | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Factored-Form-of-a-Quadratic-Worksheet-Zeros-Roots-of-Quadratics-Algebra-1-17465534",
       "key": "A83",
       "code": "A83",
       "num": 83,
@@ -5348,8 +5349,8 @@
      },
      {
       "id": "17465537",
-      "title": "Average Rate of Change for Quadratics | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Average-Rate-of-Change-for-Quadratics-Algebra-1-No-Prep-Worksheet-Answer-Key-17465537",
+      "title": "Average Rate of Change Worksheet | Quadratic Functions | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Average-Rate-of-Change-Worksheet-Quadratic-Functions-Algebra-1-Notes-Key-17465537",
       "key": "A84",
       "code": "A84",
       "num": 84,
@@ -5377,8 +5378,8 @@
      },
      {
       "id": "17465557",
-      "title": "Modeling with Quadratic Functions | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Modeling-with-Quadratic-Functions-Algebra-1-No-Prep-Worksheet-Answer-Key-17465557",
+      "title": "Modeling with Quadratic Functions | First and Second Differences | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Modeling-with-Quadratic-Functions-First-and-Second-Differences-Algebra-1-17465557",
       "key": "A85",
       "code": "A85",
       "num": 85,
@@ -5413,16 +5414,16 @@
     "slug": "quadratic-equations",
     "bundle": {
      "id": "17465758",
-     "title": "Quadratic Equations Bundle | Algebra 1 Worksheets, Answer Keys & Slides",
-     "url": "https://www.teacherspayteachers.com/Product/Quadratic-Equations-Bundle-Algebra-1-Worksheets-Answer-Keys-Slides-17465758",
+     "title": "Solving Quadratic Equations | Quadratic Formula | Algebra 1 Unit 13 Notes Bundle",
+     "url": "https://www.teacherspayteachers.com/Product/Solving-Quadratic-Equations-Quadratic-Formula-Algebra-1-Unit-13-Notes-Bundle-17465758",
      "key": "U13",
      "img": null
     },
     "sheets": [
      {
       "id": "17465719",
-      "title": "Solving Quadratics by Graphing | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Solving-Quadratics-by-Graphing-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17465719",
+      "title": "Solving Quadratics by Graphing Worksheet | Zeros of a Quadratic | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-Quadratics-by-Graphing-Worksheet-Zeros-of-a-Quadratic-Algebra-1-17465719",
       "key": "A86",
       "code": "A86",
       "num": 86,
@@ -5450,8 +5451,8 @@
      },
      {
       "id": "17465725",
-      "title": "Solving by Factoring and the Zero Product Property | Algebra 1 Worksheet",
-      "url": "https://www.teacherspayteachers.com/Product/Solving-by-Factoring-and-the-Zero-Product-Property-Algebra-1-Worksheet-17465725",
+      "title": "Solving Quadratics by Factoring | Zero Product Property Worksheet | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-Quadratics-by-Factoring-Zero-Product-Property-Worksheet-Algebra-1-17465725",
       "key": "A87",
       "code": "A87",
       "num": 87,
@@ -5479,8 +5480,8 @@
      },
      {
       "id": "17465705",
-      "title": "Solving Quadratics by Square Roots | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Solving-Quadratics-by-Square-Roots-Algebra-1-No-Prep-Worksheet-Answer-Key-17465705",
+      "title": "Solving Quadratics by Square Roots Worksheet | Square Root Method | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-Quadratics-by-Square-Roots-Worksheet-Square-Root-Method-Algebra-1-17465705",
       "key": "A88",
       "code": "A88",
       "num": 88,
@@ -5508,8 +5509,8 @@
      },
      {
       "id": "17465733",
-      "title": "Solving Quadratics by Completing the Square | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Solving-Quadratics-by-Completing-the-Square-Algebra-1-Worksheet-Answer-Key-17465733",
+      "title": "Solving Quadratics by Completing the Square Worksheet | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Solving-Quadratics-by-Completing-the-Square-Worksheet-Algebra-1-Notes-Key-17465733",
       "key": "A89",
       "code": "A89",
       "num": 89,
@@ -5537,8 +5538,8 @@
      },
      {
       "id": "17465736",
-      "title": "The Quadratic Formula | Algebra 1 No Prep Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/The-Quadratic-Formula-Algebra-1-No-Prep-Worksheet-Guided-Notes-Answer-Key-17465736",
+      "title": "Quadratic Formula Worksheet | Solving Quadratic Equations | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Quadratic-Formula-Worksheet-Solving-Quadratic-Equations-Algebra-1-Notes-17465736",
       "key": "A90",
       "code": "A90",
       "num": 90,
@@ -5566,8 +5567,8 @@
      },
      {
       "id": "17465740",
-      "title": "The Discriminant and Number of Solutions | Algebra 1 Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/The-Discriminant-and-Number-of-Solutions-Algebra-1-Worksheet-Answer-Key-17465740",
+      "title": "The Discriminant and Number of Solutions of a Quadratic | Algebra 1 Worksheet",
+      "url": "https://www.teacherspayteachers.com/Product/The-Discriminant-and-Number-of-Solutions-of-a-Quadratic-Algebra-1-Worksheet-17465740",
       "key": "A91",
       "code": "A91",
       "num": 91,
@@ -5595,8 +5596,8 @@
      },
      {
       "id": "17465743",
-      "title": "Linear-Quadratic Systems | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Linear-Quadratic-Systems-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17465743",
+      "title": "Linear-Quadratic Systems Worksheet | Nonlinear Systems of Equations | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Linear-Quadratic-Systems-Worksheet-Nonlinear-Systems-of-Equations-Algebra-1-17465743",
       "key": "A92",
       "code": "A92",
       "num": 92,
@@ -5631,16 +5632,16 @@
     "slug": "statistics-and-data-analysis",
     "bundle": {
      "id": "17466117",
-     "title": "Statistics and Data Analysis Bundle | Algebra 1 Worksheets, Answer Keys & Slides",
-     "url": "https://www.teacherspayteachers.com/Product/Statistics-and-Data-Analysis-Bundle-Algebra-1-Worksheets-Answer-Keys-Slides-17466117",
+     "title": "Statistics & Data Analysis Notes | Algebra 1 Unit 14 Worksheets Bundle",
+     "url": "https://www.teacherspayteachers.com/Product/Statistics-Data-Analysis-Notes-Algebra-1-Unit-14-Worksheets-Bundle-17466117",
      "key": "U14",
      "img": null
     },
     "sheets": [
      {
       "id": "17466046",
-      "title": "Dot Plots, Histograms, and Box Plots | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Dot-Plots-Histograms-and-Box-Plots-Algebra-1-No-Prep-Worksheet-Answer-Key-17466046",
+      "title": "Histograms, Dot Plots, Box and Whisker Plots | Box Plots Worksheet | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Histograms-Dot-Plots-Box-and-Whisker-Plots-Box-Plots-Worksheet-Algebra-1-17466046",
       "key": "A93",
       "code": "A93",
       "num": 93,
@@ -5668,8 +5669,8 @@
      },
      {
       "id": "17466049",
-      "title": "Measures of Center and Spread | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Measures-of-Center-and-Spread-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17466049",
+      "title": "Standard Deviation & Interquartile Range | Measures of Center & Spread Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Standard-Deviation-Interquartile-Range-Measures-of-Center-Spread-Algebra-1-17466049",
       "key": "A94",
       "code": "A94",
       "num": 94,
@@ -5697,8 +5698,8 @@
      },
      {
       "id": "17466056",
-      "title": "Comparing Distributions and Outliers | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Comparing-Distributions-and-Outliers-Algebra-1-No-Prep-Worksheet-Answer-Key-17466056",
+      "title": "Identifying Outliers Worksheet | Comparing Distributions | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Identifying-Outliers-Worksheet-Comparing-Distributions-Algebra-1-Notes-Key-17466056",
       "key": "A95",
       "code": "A95",
       "num": 95,
@@ -5726,8 +5727,8 @@
      },
      {
       "id": "17466063",
-      "title": "Two-Way Frequency Tables | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Two-Way-Frequency-Tables-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17466063",
+      "title": "Two-Way Frequency Tables Worksheet | Conditional Relative Frequency | Algebra 1",
+      "url": "https://www.teacherspayteachers.com/Product/Two-Way-Frequency-Tables-Worksheet-Conditional-Relative-Frequency-Algebra-1-17466063",
       "key": "A96",
       "code": "A96",
       "num": 96,
@@ -5755,8 +5756,8 @@
      },
      {
       "id": "17466071",
-      "title": "Scatter Plots and Lines of Best Fit | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Scatter-Plots-and-Lines-of-Best-Fit-Algebra-1-No-Prep-Worksheet-Answer-Key-17466071",
+      "title": "Scatter Plot & Line of Best Fit Worksheet | Trend Lines | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Scatter-Plot-Line-of-Best-Fit-Worksheet-Trend-Lines-Algebra-1-Notes-Key-17466071",
       "key": "A97",
       "code": "A97",
       "num": 97,
@@ -5784,8 +5785,8 @@
      },
      {
       "id": "17466083",
-      "title": "Residuals and Goodness of Fit | Algebra 1 Worksheet, Guided Notes & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Residuals-and-Goodness-of-Fit-Algebra-1-Worksheet-Guided-Notes-Answer-Key-17466083",
+      "title": "Residuals and Residual Plots Worksheet | Goodness of Fit | Algebra 1 Notes & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Residuals-and-Residual-Plots-Worksheet-Goodness-of-Fit-Algebra-1-Notes-Key-17466083",
       "key": "A98",
       "code": "A98",
       "num": 98,
@@ -5813,8 +5814,8 @@
      },
      {
       "id": "17466088",
-      "title": "Correlation Coefficient and Causation | Algebra 1 No Prep Worksheet & Answer Key",
-      "url": "https://www.teacherspayteachers.com/Product/Correlation-Coefficient-and-Causation-Algebra-1-No-Prep-Worksheet-Answer-Key-17466088",
+      "title": "Correlation Coefficient & Causation | Correlation vs Causation | Algebra 1 Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Correlation-Coefficient-Causation-Correlation-vs-Causation-Algebra-1-Notes-17466088",
       "key": "A99",
       "code": "A99",
       "num": 99,
@@ -5845,10 +5846,1182 @@
   ],
   "curriculum": {
    "id": "17466172",
-   "title": "Algebra 1 Curriculum Bundle | 99 Worksheets, Answer Keys & Slides",
-   "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Curriculum-Bundle-99-Worksheets-Answer-Keys-Slides-17466172",
+   "title": "Algebra 1 Curriculum Bundle | Full Year Worksheets, Guided Notes & Slides",
+   "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Curriculum-Bundle-Full-Year-Worksheets-Guided-Notes-Slides-17466172",
    "key": "UALL",
    "img": null
+  }
+ },
+ "grade5": {
+  "source": "state-testing-curr-listings facts_5TH.json + links_5TH.json; live store Oct 24 2026",
+  "total_days": 167,
+  "units": [
+   {
+    "n": 1,
+    "name": "Place Value & Powers of Ten",
+    "slug": "place-value-powers-of-ten",
+    "days": 16,
+    "assessments": "Unit 1 Quiz (lessons 1-3): 10 questions, 12 points on 2 student pages, about 20 minutes. Give it after lesson 3 (skill sheet #210). Unit 1 Review: 20 questions in the test's style, lesson by lesson, with a skills checklist students rate before and after (5 student pages). Unit 1 Test, Form A: 20 questions, 30 points, one class period: 9 multiple choice, 4 select all, 5 short answer and 2 constructed response, on 4 student pages (Form B the same). Unit 1 Test, Form B: the parallel form. Question n tests the same skill and standard as Form A question n, with new numbers and contexts, so it works for retakes or a second class. Every assessment has a fully worked answer key that names the mistake behind each wrong choice, a scoring guide, and (quiz and tests) an item analysis sheet with a class grid. Color and InkSaver PDFs, plus an editable Word file of each assessment. In the Word files, every exponent is a real Word superscript (10⁴) and every fraction (1/1000) a real Word equation, so every number can be edited in place. Each Word file's answer key starts on a new page after the questions, so print only the pages before ANSWER KEY for students.",
+    "lessons": [
+     {
+      "sheet": 208,
+      "lesson": 1,
+      "skill": "Place Value Patterns",
+      "days": 2,
+      "ccss": [
+       "5.NBT.A.1"
+      ],
+      "ican": "compare what the same digit is worth in two places, in whole numbers and decimals, and tell how many times as much one is worth.",
+      "key_rule": "Find what each digit is worth. Then multiply by 10 once for every place you move: the count of places is not the number of times.",
+      "free": false,
+      "id": "18037099",
+      "title": "Place Value Worksheet | Place Value Patterns with Decimals | 5th Grade",
+      "url": "https://www.teacherspayteachers.com/Product/Place-Value-Worksheet-Place-Value-Patterns-with-Decimals-5th-Grade-18037099",
+      "img": "/assets/images/grade5/208.jpg",
+      "slides": 32,
+      "pages": 7
+     },
+     {
+      "sheet": 209,
+      "lesson": 2,
+      "skill": "Powers of 10 and Exponents",
+      "days": 2,
+      "ccss": [
+       "5.NBT.A.2"
+      ],
+      "ican": "write a power of 10 with an exponent, find its value, and use the pattern in its 0s to go from one to the other.",
+      "key_rule": "The exponent on 10 is the number of 0s in the value, not the number of digits. The 1 in front is not a 0.",
+      "free": false,
+      "id": "18037104",
+      "title": "Powers of 10 and Exponents Worksheet | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Powers-of-10-and-Exponents-Worksheet-5th-Grade-Math-Notes-Slides-Key-18037104",
+      "img": "/assets/images/grade5/209.jpg",
+      "slides": 32,
+      "pages": 7
+     },
+     {
+      "sheet": 210,
+      "lesson": 3,
+      "skill": "Multiplying and Dividing by Powers of 10",
+      "days": 2,
+      "ccss": [
+       "5.NBT.A.2"
+      ],
+      "ican": "multiply and divide whole numbers and decimals by 10, 100, 1,000 or a power of 10 by shifting every digit, and fill any gap with a 0.",
+      "key_rule": "Count the 0s, or read the little number on the 10: that is how far every digit shifts. Times makes each digit worth more; divided by makes it worth less. Never just tack 0s onto a decimal.",
+      "free": false,
+      "id": "18037106",
+      "title": "Multiplying and Dividing by Powers of 10 | Decimals | 5th Grade Math",
+      "url": "https://www.teacherspayteachers.com/Product/Multiplying-and-Dividing-by-Powers-of-10-Decimals-5th-Grade-Math-18037106",
+      "img": "/assets/images/grade5/210.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 211,
+      "lesson": 4,
+      "skill": "Decimal Place Value and Expanded Form",
+      "days": 2,
+      "ccss": [
+       "5.NBT.A.3a"
+      ],
+      "ican": "read and write decimals to thousandths with digits, with words, and in expanded form, using the place of every digit.",
+      "key_rule": "Read the digits after “and” as one number, then name the place of its last digit. A place name that ends in -ths is less than 1.",
+      "free": false,
+      "id": "18037112",
+      "title": "Decimal Place Value Worksheet | Expanded Form & Word Form | 5th Grade Math",
+      "url": "https://www.teacherspayteachers.com/Product/Decimal-Place-Value-Worksheet-Expanded-Form-Word-Form-5th-Grade-Math-18037112",
+      "img": "/assets/images/grade5/211.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 212,
+      "lesson": 5,
+      "skill": "Comparing Decimals",
+      "days": 2,
+      "ccss": [
+       "5.NBT.A.3b"
+      ],
+      "ican": "compare decimals to thousandths by lining up the points and checking place by place from the left, and put a list of decimals in order.",
+      "key_rule": "Line up the points, then check place by place from the left. The length of a decimal does not tell which number is greater.",
+      "free": false,
+      "id": "18037118",
+      "title": "Comparing Decimals Worksheet | Ordering Decimals | 5th Grade Math Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Comparing-Decimals-Worksheet-Ordering-Decimals-5th-Grade-Math-Notes-18037118",
+      "img": "/assets/images/grade5/212.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 213,
+      "lesson": 6,
+      "skill": "Rounding Decimals",
+      "days": 2,
+      "ccss": [
+       "5.NBT.A.4"
+      ],
+      "ican": "round decimals to the nearest whole number, tenth or hundredth by looking at the one digit just after the place I round to.",
+      "key_rule": "Look only at the next digit, then drop every digit past the rounding place. Never round one digit at a time from the end.",
+      "free": true,
+      "id": "18037122",
+      "title": "Rounding Decimals Worksheet | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Rounding-Decimals-Worksheet-5th-Grade-Math-Notes-Slides-Key-18037122",
+      "img": "/assets/images/grade5/213.jpg",
+      "slides": 31,
+      "pages": 7
+     }
+    ],
+    "bundle": {
+     "id": "18041423",
+     "title": "Place Value & Powers of 10 | 5th Grade Math Unit 1 Notes & Tests",
+     "url": "https://www.teacherspayteachers.com/Product/Place-Value-Powers-of-10-5th-Grade-Math-Unit-1-Notes-Tests-18041423",
+     "price": "$14.99",
+     "list": "$30.00",
+     "items": 6,
+     "img": "/assets/images/grade5/u1.jpg"
+    }
+   },
+   {
+    "n": 2,
+    "name": "Multiplying Whole Numbers",
+    "slug": "multiplying-whole-numbers",
+    "days": 15,
+    "assessments": "Unit 2 Quiz (lessons 1-3): 10 questions, 12 points on 2 student pages, about 20 minutes. Give it after lesson 3 (skill sheet #216). Unit 2 Review: 20 questions in the test's style, lesson by lesson, with a skills checklist students rate before and after (6 student pages). Unit 2 Test, Form A: 20 questions, 30 points, one class period: 9 multiple choice, 4 select all, 5 short answer and 2 constructed response, on 5 student pages (Form B the same). Unit 2 Test, Form B: the parallel form. Question n tests the same skill and standard as Form A question n, with new numbers and contexts, so it works for retakes or a second class. Every assessment has a fully worked answer key that names the mistake behind each wrong choice, a scoring guide, and (quiz and tests) an item analysis sheet with a class grid. Color and InkSaver PDFs, plus an editable Word file of each assessment. In the Word files, every area model is a picture and every product an editable line, so every number can be edited in place. Each Word file's answer key starts on a new page after the questions, so print only the pages before ANSWER KEY for students.",
+    "lessons": [
+     {
+      "sheet": 214,
+      "lesson": 1,
+      "skill": "Multiplication Area Model",
+      "days": 2,
+      "ccss": [
+       "5.NBT.B.5"
+      ],
+      "ican": "split both factors by place value, find each cell of an area model, and add the cells to multiply 2-digit and 3-digit numbers by 2-digit numbers.",
+      "key_rule": "Each part of one factor multiplies every part of the other: 2 parts by 2 parts makes 4 cells.",
+      "free": false,
+      "id": "18037127",
+      "title": "Area Model Multiplication Worksheet | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Area-Model-Multiplication-Worksheet-5th-Grade-Math-Notes-Slides-Key-18037127",
+      "img": "/assets/images/grade5/214.jpg",
+      "slides": 32,
+      "pages": 7
+     },
+     {
+      "sheet": 215,
+      "lesson": 2,
+      "skill": "Partial Products",
+      "days": 2,
+      "ccss": [
+       "5.NBT.B.5"
+      ],
+      "ican": "multiply 2-digit and 3-digit numbers by 2-digit numbers by multiplying the value of each digit, listing the partial products and adding them.",
+      "key_rule": "Multiply what each digit is worth, not the digit alone. Then add every partial product.",
+      "free": false,
+      "id": "18037128",
+      "title": "Partial Products Multiplication Worksheet | 5th Grade Math Notes & Slides",
+      "url": "https://www.teacherspayteachers.com/Product/Partial-Products-Multiplication-Worksheet-5th-Grade-Math-Notes-Slides-18037128",
+      "img": "/assets/images/grade5/215.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 216,
+      "lesson": 3,
+      "skill": "Multi-Digit Multiplication",
+      "days": 3,
+      "ccss": [
+       "5.NBT.B.5"
+      ],
+      "ican": "multiply multi-digit whole numbers with the standard method, regrouping as I go and writing a 0 to start the tens row.",
+      "key_rule": "Multiply by the ones digit, then by the tens digit, then add. Never skip the 0 that starts the tens row.",
+      "free": false,
+      "id": "18037133",
+      "title": "Multi-Digit Multiplication | Standard Algorithm Multiplication | 5th Grade Math",
+      "url": "https://www.teacherspayteachers.com/Product/Multi-Digit-Multiplication-Standard-Algorithm-Multiplication-5th-Grade-Math-18037133",
+      "img": "/assets/images/grade5/216.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 217,
+      "lesson": 4,
+      "skill": "Estimating Products",
+      "days": 2,
+      "ccss": [
+       "5.NBT.B.5"
+      ],
+      "ican": "estimate products by rounding each factor to its greatest place and writing on the 0s, and use an estimate to check whether an exact answer makes sense.",
+      "key_rule": "Round each factor, then multiply. The exact product should be about the same size as the estimate.",
+      "free": false,
+      "id": "18037135",
+      "title": "Estimating Products Worksheet | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Estimating-Products-Worksheet-5th-Grade-Math-Notes-Slides-Key-18037135",
+      "img": "/assets/images/grade5/217.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 218,
+      "lesson": 5,
+      "skill": "Multiplication Word Problems",
+      "days": 2,
+      "ccss": [
+       "5.NBT.B.5"
+      ],
+      "ican": "solve multi-step word problems by finding the equal groups, multiplying, and taking every step the question asks for.",
+      "key_rule": "Multiply to put equal groups together. Then read the question again: it may need one more step.",
+      "free": false,
+      "id": "18037241",
+      "title": "Multiplication Word Problems Worksheet | Multi-Step | 5th Grade Math",
+      "url": "https://www.teacherspayteachers.com/Product/Multiplication-Word-Problems-Worksheet-Multi-Step-5th-Grade-Math-18037241",
+      "img": "/assets/images/grade5/218.jpg",
+      "slides": 31,
+      "pages": 7
+     }
+    ],
+    "bundle": {
+     "id": "18041471",
+     "title": "Multi-Digit Multiplication & Area Model | 5th Grade Math Unit 2 Notes & Tests",
+     "url": "https://www.teacherspayteachers.com/Product/Multi-Digit-Multiplication-Area-Model-5th-Grade-Math-Unit-2-Notes-Tests-18041471",
+     "price": "$14.99",
+     "list": "$30.00",
+     "items": 5,
+     "img": "/assets/images/grade5/u2.jpg"
+    }
+   },
+   {
+    "n": 3,
+    "name": "Dividing Whole Numbers",
+    "slug": "dividing-whole-numbers",
+    "days": 16,
+    "assessments": "Unit 3 Quiz (lessons 1-3): 10 questions, 12 points on 2 student pages, about 20 minutes. Give it after lesson 3 (skill sheet #221). Unit 3 Review: 20 questions in the test's style, lesson by lesson, with a skills checklist students rate before and after (6 student pages). Unit 3 Test, Form A: 20 questions, 30 points, one class period: 9 multiple choice, 4 select all, 5 short answer and 2 constructed response, on 5 student pages (Form B the same). Unit 3 Test, Form B: the parallel form. Question n tests the same skill and standard as Form A question n, with new numbers and contexts, so it works for retakes or a second class. Every assessment has a fully worked answer key that names the mistake behind each wrong choice, a scoring guide, and (quiz and tests) an item analysis sheet with a class grid. Color and InkSaver PDFs, plus an editable Word file of each assessment. In the Word files, every area model is a picture and every quotient an editable line, so every number can be edited in place. Each Word file's answer key starts on a new page after the questions, so print only the pages before ANSWER KEY for students.",
+    "lessons": [
+     {
+      "sheet": 219,
+      "lesson": 1,
+      "skill": "Division Area Model",
+      "days": 2,
+      "ccss": [
+       "5.NBT.B.6"
+      ],
+      "ican": "use an area model to divide numbers with up to 4 digits by 2-digit numbers, building the missing side piece by piece and adding the widths.",
+      "key_rule": "Build the missing side piece by piece, until none of the area is left to cover.",
+      "free": false,
+      "id": "18037245",
+      "title": "Area Model Division Worksheet | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Area-Model-Division-Worksheet-5th-Grade-Math-Notes-Slides-Key-18037245",
+      "img": "/assets/images/grade5/219.jpg",
+      "slides": 32,
+      "pages": 7
+     },
+     {
+      "sheet": 220,
+      "lesson": 2,
+      "skill": "Partial Quotients",
+      "days": 3,
+      "ccss": [
+       "5.NBT.B.6"
+      ],
+      "ican": "divide numbers with up to 4 digits by 2-digit numbers using partial quotients, taking away easy groups of the divisor and adding up the groups.",
+      "key_rule": "Any easy partial quotient works. A little one just makes a longer list.",
+      "free": false,
+      "id": "18037251",
+      "title": "Partial Quotients Division Worksheet | 5th Grade Math Notes & Slides",
+      "url": "https://www.teacherspayteachers.com/Product/Partial-Quotients-Division-Worksheet-5th-Grade-Math-Notes-Slides-18037251",
+      "img": "/assets/images/grade5/220.jpg",
+      "slides": 32,
+      "pages": 7
+     },
+     {
+      "sheet": 221,
+      "lesson": 3,
+      "skill": "Long Division",
+      "days": 3,
+      "ccss": [
+       "5.NBT.B.6"
+      ],
+      "ican": "divide numbers with up to 4 digits by 2-digit numbers using long division, a digit at a time, writing a 0 when the divisor does not fit.",
+      "key_rule": "After the first digit, every digit you bring down gets a digit in the quotient. If the divisor does not fit, write a 0 above.",
+      "free": false,
+      "id": "18037255",
+      "title": "Long Division Worksheet | 2-Digit Divisors | 5th Grade Math Notes & Slides",
+      "url": "https://www.teacherspayteachers.com/Product/Long-Division-Worksheet-2-Digit-Divisors-5th-Grade-Math-Notes-Slides-18037255",
+      "img": "/assets/images/grade5/221.jpg",
+      "slides": 32,
+      "pages": 7
+     },
+     {
+      "sheet": 222,
+      "lesson": 4,
+      "skill": "Interpreting Remainders",
+      "days": 2,
+      "ccss": [
+       "5.NBT.B.6"
+      ],
+      "ican": "divide by 2-digit numbers and use the remainder the way a word problem asks.",
+      "key_rule": "Read what the story asks: it tells you what to do with the remainder.",
+      "free": false,
+      "id": "18037257",
+      "title": "Interpreting Remainders Worksheet | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Interpreting-Remainders-Worksheet-5th-Grade-Math-Notes-Slides-Key-18037257",
+      "img": "/assets/images/grade5/222.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 223,
+      "lesson": 5,
+      "skill": "Division Word Problems",
+      "days": 2,
+      "ccss": [
+       "5.NBT.B.6"
+      ],
+      "ican": "solve multi-step word problems by finding the amount to share or group, dividing by a 2-digit number, and taking every step the story needs.",
+      "key_rule": "Find the whole amount, divide, then answer the question that was asked.",
+      "free": false,
+      "id": "18037259",
+      "title": "Division Word Problems Worksheet | Multi-Step | 5th Grade Math Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Division-Word-Problems-Worksheet-Multi-Step-5th-Grade-Math-Notes-18037259",
+      "img": "/assets/images/grade5/223.jpg",
+      "slides": 31,
+      "pages": 7
+     }
+    ],
+    "bundle": {
+     "id": "18041487",
+     "title": "Long Division & Division Word Problems | 5th Grade Math Unit 3 Notes & Tests",
+     "url": "https://www.teacherspayteachers.com/Product/Long-Division-Division-Word-Problems-5th-Grade-Math-Unit-3-Notes-Tests-18041487",
+     "price": "$14.99",
+     "list": "$30.00",
+     "items": 5,
+     "img": "/assets/images/grade5/u3.jpg"
+    }
+   },
+   {
+    "n": 4,
+    "name": "Decimal Operations",
+    "slug": "decimal-operations",
+    "days": 21,
+    "assessments": "Unit 4 Quiz (lessons 1-4): 10 questions, 12 points on 2 student pages, about 20 minutes. Give it after lesson 4 (skill sheet #227). Unit 4 Review: 20 questions in the test's style, lesson by lesson, with a skills checklist students rate before and after (6 student pages). Unit 4 Test, Form A: 20 questions, 30 points, one class period: 9 multiple choice, 4 select all, 5 short answer and 2 constructed response, on 5 student pages (Form B the same). Unit 4 Test, Form B: the parallel form. Question n tests the same skill and standard as Form A question n, with new numbers and contexts, so it works for retakes or a second class. Every assessment has a fully worked answer key that names the mistake behind each wrong choice, a scoring guide, and (quiz and tests) an item analysis sheet with a class grid. Color and InkSaver PDFs, plus an editable Word file of each assessment. In the Word files, every decimal is an editable line, so every number can be edited in place. Each Word file's answer key starts on a new page after the questions, so print only the pages before ANSWER KEY for students.",
+    "lessons": [
+     {
+      "sheet": 224,
+      "lesson": 1,
+      "skill": "Adding and Subtracting Decimals",
+      "days": 2,
+      "ccss": [
+       "5.NBT.B.7"
+      ],
+      "ican": "add and subtract decimals to hundredths by stacking the points in one column, writing a 0 in an empty place and regrouping when I need to.",
+      "key_rule": "Line up the points, not the right edge.",
+      "free": false,
+      "id": "18037262",
+      "title": "Adding and Subtracting Decimals Worksheet | 5th Grade Math Notes & Slides",
+      "url": "https://www.teacherspayteachers.com/Product/Adding-and-Subtracting-Decimals-Worksheet-5th-Grade-Math-Notes-Slides-18037262",
+      "img": "/assets/images/grade5/224.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 225,
+      "lesson": 2,
+      "skill": "Multiplying Decimals by Whole Numbers",
+      "days": 2,
+      "ccss": [
+       "5.NBT.B.7"
+      ],
+      "ican": "multiply a decimal to hundredths by a whole number with equal groups or by splitting it by place, and place the point by counting the digits after the point in the decimal factor.",
+      "key_rule": "The product has the same number of digits after the point as the decimal factor.",
+      "free": false,
+      "id": "18037264",
+      "title": "Multiplying Decimals by Whole Numbers Worksheet | 5th Grade Math Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Multiplying-Decimals-by-Whole-Numbers-Worksheet-5th-Grade-Math-Notes-18037264",
+      "img": "/assets/images/grade5/225.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 226,
+      "lesson": 3,
+      "skill": "Multiplying Decimals",
+      "days": 3,
+      "ccss": [
+       "5.NBT.B.7"
+      ],
+      "ican": "multiply a decimal by a decimal on a hundred grid, and place the product's point by counting the digits after the point in both factors.",
+      "key_rule": "Multiply with no points. The product gets as many digits after the point as both factors have together.",
+      "free": false,
+      "id": "18037267",
+      "title": "Multiplying Decimals Worksheet | Decimal by Decimal | 5th Grade Math Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Multiplying-Decimals-Worksheet-Decimal-by-Decimal-5th-Grade-Math-Notes-18037267",
+      "img": "/assets/images/grade5/226.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 227,
+      "lesson": 4,
+      "skill": "Dividing Decimals by Whole Numbers",
+      "days": 3,
+      "ccss": [
+       "5.NBT.B.7"
+      ],
+      "ican": "divide a decimal to hundredths by a whole number by sharing the ones, then the tenths, then the hundredths, and place the quotient's point.",
+      "key_rule": "Divide one place at a time, starting with the ones. If the divisor does not fit in the ones, write 0 there.",
+      "free": false,
+      "id": "18037269",
+      "title": "Dividing Decimals by Whole Numbers Worksheet | 5th Grade Math Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Dividing-Decimals-by-Whole-Numbers-Worksheet-5th-Grade-Math-Notes-18037269",
+      "img": "/assets/images/grade5/227.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 228,
+      "lesson": 5,
+      "skill": "Dividing by Decimals",
+      "days": 3,
+      "ccss": [
+       "5.NBT.B.7"
+      ],
+      "ican": "divide by a decimal in tenths or hundredths by multiplying both numbers by 10 or 100 first, and check by multiplying back.",
+      "key_rule": "Scale both numbers by 10 or 100 until the divisor is a whole number. Then divide.",
+      "free": false,
+      "id": "18037354",
+      "title": "Dividing Decimals | Dividing by Decimals | 5th Grade Math Notes & Slides",
+      "url": "https://www.teacherspayteachers.com/Product/Dividing-Decimals-Dividing-by-Decimals-5th-Grade-Math-Notes-Slides-18037354",
+      "img": "/assets/images/grade5/228.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 229,
+      "lesson": 6,
+      "skill": "Estimating with Decimals",
+      "days": 2,
+      "ccss": [
+       "5.NBT.B.7"
+      ],
+      "ican": "estimate decimal sums, differences, products and quotients with whole numbers, and use the estimate to place the point and judge an exact answer.",
+      "key_rule": "Estimate with whole numbers first. The exact answer should be near the estimate.",
+      "free": false,
+      "id": "18037359",
+      "title": "Estimating Sums and Differences with Decimals | Products & Quotients | 5th Grade",
+      "url": "https://www.teacherspayteachers.com/Product/Estimating-Sums-and-Differences-with-Decimals-Products-Quotients-5th-Grade-18037359",
+      "img": "/assets/images/grade5/229.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 230,
+      "lesson": 7,
+      "skill": "Decimal Word Problems",
+      "days": 2,
+      "ccss": [
+       "5.NBT.B.7"
+      ],
+      "ican": "solve two-step money and measurement word problems with decimals by planning the steps, and give each answer its unit.",
+      "key_rule": "List the steps, do them in order, and give the answer its unit.",
+      "free": false,
+      "id": "18037362",
+      "title": "Decimal Word Problems Worksheet | Money & Measurement | 5th Grade Math",
+      "url": "https://www.teacherspayteachers.com/Product/Decimal-Word-Problems-Worksheet-Money-Measurement-5th-Grade-Math-18037362",
+      "img": "/assets/images/grade5/230.jpg",
+      "slides": 31,
+      "pages": 7
+     }
+    ],
+    "bundle": {
+     "id": "18041508",
+     "title": "Decimal Operations & Decimal Word Problems | 5th Grade Math Unit 4 Notes & Tests",
+     "url": "https://www.teacherspayteachers.com/Product/Decimal-Operations-Decimal-Word-Problems-5th-Grade-Math-Unit-4-Notes-Tests-18041508",
+     "price": "$20.99",
+     "list": "$42.00",
+     "items": 7,
+     "img": "/assets/images/grade5/u4.jpg"
+    }
+   },
+   {
+    "n": 5,
+    "name": "Adding & Subtracting Fractions",
+    "slug": "adding-subtracting-fractions",
+    "days": 19,
+    "assessments": "Unit 5 Quiz (lessons 1-3): 10 questions, 12 points on 2 student pages, about 20 minutes. Give it after lesson 3 (skill sheet #233). Unit 5 Review: 20 questions in the test's style, lesson by lesson, with a skills checklist students rate before and after (6 student pages). Unit 5 Test, Form A: 20 questions, 30 points, one class period: 9 multiple choice, 4 select all, 5 short answer and 2 constructed response, on 6 student pages (Form B the same). Unit 5 Test, Form B: the parallel form. Question n tests the same skill and standard as Form A question n, with new numbers and contexts, so it works for retakes or a second class. Every assessment has a fully worked answer key that names the mistake behind each wrong choice, a scoring guide, and (quiz and tests) an item analysis sheet with a class grid. Color and InkSaver PDFs, plus an editable Word file of each assessment. In the Word files, every fraction is a real Word equation (numerator over denominator), so every number can be edited in place. Each Word file's answer key starts on a new page after the questions, so print only the pages before ANSWER KEY for students.",
+    "lessons": [
+     {
+      "sheet": 231,
+      "lesson": 1,
+      "skill": "Equivalent Fractions and Common Denominators",
+      "days": 2,
+      "ccss": [
+       "5.NF.A.1"
+      ],
+      "ican": "write equivalent fractions by multiplying the numerator and the denominator by one number, and rename two fractions with a common denominator.",
+      "key_rule": "Find a number both denominators go into, then rename each fraction. Do not add the denominators.",
+      "free": false,
+      "id": "18037366",
+      "title": "Equivalent Fractions Worksheet | Finding Common Denominators | 5th Grade Math",
+      "url": "https://www.teacherspayteachers.com/Product/Equivalent-Fractions-Worksheet-Finding-Common-Denominators-5th-Grade-Math-18037366",
+      "img": "/assets/images/grade5/231.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 232,
+      "lesson": 2,
+      "skill": "Adding and Subtracting Fractions with Unlike Denominators",
+      "days": 3,
+      "ccss": [
+       "5.NF.A.1"
+      ],
+      "ican": "add and subtract fractions with unlike denominators by renaming them with a common denominator first.",
+      "key_rule": "Rename both. Then the numerators add or subtract.",
+      "free": false,
+      "id": "18037372",
+      "title": "Adding and Subtracting Fractions with Unlike Denominators | 5th Grade Math",
+      "url": "https://www.teacherspayteachers.com/Product/Adding-and-Subtracting-Fractions-with-Unlike-Denominators-5th-Grade-Math-18037372",
+      "img": "/assets/images/grade5/232.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 233,
+      "lesson": 3,
+      "skill": "Adding and Subtracting Mixed Numbers",
+      "days": 3,
+      "ccss": [
+       "5.NF.A.1"
+      ],
+      "ican": "add and subtract mixed numbers by renaming the fraction parts, then working the fractions and the whole numbers.",
+      "key_rule": "Rename the fraction parts. Work fractions and wholes separately.",
+      "free": false,
+      "id": "18037377",
+      "title": "Adding and Subtracting Mixed Numbers Worksheet | 5th Grade Math Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Adding-and-Subtracting-Mixed-Numbers-Worksheet-5th-Grade-Math-Notes-18037377",
+      "img": "/assets/images/grade5/233.jpg",
+      "slides": 32,
+      "pages": 7
+     },
+     {
+      "sheet": 234,
+      "lesson": 4,
+      "skill": "Subtracting Mixed Numbers with Regrouping",
+      "days": 3,
+      "ccss": [
+       "5.NF.A.1"
+      ],
+      "ican": "subtract mixed numbers by renaming the fractions and trading 1 whole for fraction pieces when needed.",
+      "key_rule": "Taking away a bigger fraction? Trade 1 whole.",
+      "free": false,
+      "id": "18037378",
+      "title": "Subtracting Mixed Numbers with Regrouping Worksheet | 5th Grade Math",
+      "url": "https://www.teacherspayteachers.com/Product/Subtracting-Mixed-Numbers-with-Regrouping-Worksheet-5th-Grade-Math-18037378",
+      "img": "/assets/images/grade5/234.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 235,
+      "lesson": 5,
+      "skill": "Estimating with Benchmark Fractions",
+      "days": 2,
+      "ccss": [
+       "5.NF.A.2"
+      ],
+      "ican": "estimate sums and differences of fractions and mixed numbers with the benchmark fractions 0, 1/2 and 1, and use the estimate to judge an answer.",
+      "key_rule": "Swap each fraction for 0, 1/2 or 1, whichever is nearest. Then add or subtract.",
+      "free": false,
+      "id": "18037381",
+      "title": "Benchmark Fractions | Estimating Fraction Sums & Differences | 5th Grade Math",
+      "url": "https://www.teacherspayteachers.com/Product/Benchmark-Fractions-Estimating-Fraction-Sums-Differences-5th-Grade-Math-18037381",
+      "img": "/assets/images/grade5/235.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 236,
+      "lesson": 6,
+      "skill": "Fraction Word Problems",
+      "days": 2,
+      "ccss": [
+       "5.NF.A.2"
+      ],
+      "ican": "solve one- and two-step word problems with fractions and mixed numbers by choosing to add or subtract and working every step.",
+      "key_rule": "Plan the steps: the last one answers the question.",
+      "free": false,
+      "id": "18037385",
+      "title": "Fraction Word Problems Worksheet | Adding & Subtracting | 5th Grade Math",
+      "url": "https://www.teacherspayteachers.com/Product/Fraction-Word-Problems-Worksheet-Adding-Subtracting-5th-Grade-Math-18037385",
+      "img": "/assets/images/grade5/236.jpg",
+      "slides": 31,
+      "pages": 7
+     }
+    ],
+    "bundle": {
+     "id": "18041541",
+     "title": "Adding & Subtracting Fractions | 5th Grade Math Unit 5 Notes & Tests",
+     "url": "https://www.teacherspayteachers.com/Product/Adding-Subtracting-Fractions-5th-Grade-Math-Unit-5-Notes-Tests-18041541",
+     "price": "$17.99",
+     "list": "$36.00",
+     "items": 6,
+     "img": "/assets/images/grade5/u5.jpg"
+    }
+   },
+   {
+    "n": 6,
+    "name": "Multiplying Fractions",
+    "slug": "multiplying-fractions",
+    "days": 20,
+    "assessments": "Unit 6 Quiz (lessons 1-4): 10 questions, 12 points on 2 student pages, about 20 minutes. Give it after lesson 4 (skill sheet #240). Unit 6 Review: 20 questions in the test's style, lesson by lesson, with a skills checklist students rate before and after (7 student pages). Unit 6 Test, Form A: 20 questions, 30 points, one class period: 9 multiple choice, 4 select all, 5 short answer and 2 constructed response, on 6 student pages (Form B the same). Unit 6 Test, Form B: the parallel form. Question n tests the same skill and standard as Form A question n, with new numbers and contexts, so it works for retakes or a second class. Every assessment has a fully worked answer key that names the mistake behind each wrong choice, a scoring guide, and (quiz and tests) an item analysis sheet with a class grid. Color and InkSaver PDFs, plus an editable Word file of each assessment. In the Word files, every fraction is a real Word equation (numerator over denominator), so every number can be edited in place. Each Word file's answer key starts on a new page after the questions, so print only the pages before ANSWER KEY for students.",
+    "lessons": [
+     {
+      "sheet": 237,
+      "lesson": 1,
+      "skill": "Fractions as Division",
+      "days": 2,
+      "ccss": [
+       "5.NF.B.3"
+      ],
+      "ican": "show that a fraction is a division, and solve sharing stories with fraction or mixed-number answers.",
+      "key_rule": "Division is a fraction: shares go in the denominator.",
+      "free": false,
+      "id": "18037394",
+      "title": "Fractions as Division Worksheet | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Fractions-as-Division-Worksheet-5th-Grade-Math-Notes-Slides-Key-18037394",
+      "img": "/assets/images/grade5/237.jpg",
+      "slides": 32,
+      "pages": 7
+     },
+     {
+      "sheet": 238,
+      "lesson": 2,
+      "skill": "Multiplying Fractions by Whole Numbers",
+      "days": 2,
+      "ccss": [
+       "5.NF.B.4a"
+      ],
+      "ican": "multiply a fraction by a whole number, find a fraction of a whole number, and take the wholes out of a product over 1.",
+      "key_rule": "Multiply the top; the bottom does not change.",
+      "free": false,
+      "id": "18037498",
+      "title": "Multiplying Fractions by Whole Numbers | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Multiplying-Fractions-by-Whole-Numbers-5th-Grade-Math-Notes-Slides-Key-18037498",
+      "img": "/assets/images/grade5/238.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 239,
+      "lesson": 3,
+      "skill": "Multiplying Fractions",
+      "days": 3,
+      "ccss": [
+       "5.NF.B.4a"
+      ],
+      "ican": "multiply a fraction by a fraction on a square model, and with the rule the square shows.",
+      "key_rule": "Multiply the numerators, then the denominators.",
+      "free": false,
+      "id": "18037510",
+      "title": "Multiplying Fractions Worksheet | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Multiplying-Fractions-Worksheet-5th-Grade-Math-Notes-Slides-Key-18037510",
+      "img": "/assets/images/grade5/239.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 240,
+      "lesson": 4,
+      "skill": "Area with Fractional Side Lengths",
+      "days": 2,
+      "ccss": [
+       "5.NF.B.4b"
+      ],
+      "ican": "tile with tiles like 1/2 ft by 1/4 ft, count what one tile is worth, and see that multiplying the sides gives the same area.",
+      "key_rule": "Area is length × width, even with fraction sides.",
+      "free": false,
+      "id": "18037512",
+      "title": "Area Worksheet | Fractional Side Lengths | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Area-Worksheet-Fractional-Side-Lengths-5th-Grade-Math-Notes-Slides-Key-18037512",
+      "img": "/assets/images/grade5/240.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 241,
+      "lesson": 5,
+      "skill": "Multiplication as Scaling",
+      "days": 2,
+      "ccss": [
+       "5.NF.B.5"
+      ],
+      "ican": "see where a product lands from how big the other factor is.",
+      "key_rule": "First, compare the other factor with 1.",
+      "free": false,
+      "id": "18037516",
+      "title": "Fraction Multiplication as Scaling | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Fraction-Multiplication-as-Scaling-5th-Grade-Math-Notes-Slides-Key-18037516",
+      "img": "/assets/images/grade5/241.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 242,
+      "lesson": 6,
+      "skill": "Multiplying Mixed Numbers",
+      "days": 3,
+      "ccss": [
+       "5.NF.B.6"
+      ],
+      "ican": "split mixed numbers on an area model, find every cell, and add the cells.",
+      "key_rule": "Each piece meets every piece of the other.",
+      "free": false,
+      "id": "18037523",
+      "title": "Multiplying Mixed Numbers Worksheet | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Multiplying-Mixed-Numbers-Worksheet-5th-Grade-Math-Notes-Slides-Key-18037523",
+      "img": "/assets/images/grade5/242.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 243,
+      "lesson": 7,
+      "skill": "Multiplying Fractions Word Problems",
+      "days": 2,
+      "ccss": [
+       "5.NF.B.6"
+      ],
+      "ican": "find what each fraction in a story is taken of, then multiply.",
+      "key_rule": "Is the fraction of the whole or of a part?",
+      "free": false,
+      "id": "18037527",
+      "title": "Multiplying Fractions Word Problems | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Multiplying-Fractions-Word-Problems-5th-Grade-Math-Notes-Slides-Key-18037527",
+      "img": "/assets/images/grade5/243.jpg",
+      "slides": 30,
+      "pages": 7
+     }
+    ],
+    "bundle": {
+     "id": "18041566",
+     "title": "Multiplying Fractions & Mixed Numbers | 5th Grade Math Unit 6 Notes & Tests",
+     "url": "https://www.teacherspayteachers.com/Product/Multiplying-Fractions-Mixed-Numbers-5th-Grade-Math-Unit-6-Notes-Tests-18041566",
+     "price": "$20.99",
+     "list": "$42.00",
+     "items": 7,
+     "img": "/assets/images/grade5/u6.jpg"
+    }
+   },
+   {
+    "n": 7,
+    "name": "Dividing Fractions",
+    "slug": "dividing-fractions",
+    "days": 10,
+    "assessments": "Unit 7 Quiz (lessons 1-2): 10 questions, 12 points on 3 student pages, about 20 minutes. Give it after lesson 2 (skill sheet #245). Unit 7 Review: 20 questions in the test's style, lesson by lesson, with a skills checklist students rate before and after (7 student pages). Unit 7 Test, Form A: 20 questions, 30 points, one class period: 9 multiple choice, 4 select all, 5 short answer and 2 constructed response, on 6 student pages (Form B the same). Unit 7 Test, Form B: the parallel form. Question n tests the same skill and standard as Form A question n, with new numbers and contexts, so it works for retakes or a second class. Every assessment has a fully worked answer key that names the mistake behind each wrong choice, a scoring guide, and (quiz and tests) an item analysis sheet with a class grid. Color and InkSaver PDFs, plus an editable Word file of each assessment. In the Word files, every fraction is a real Word equation (numerator over denominator), so every number can be edited in place. Each Word file's answer key starts on a new page after the questions, so print only the pages before ANSWER KEY for students.",
+    "lessons": [
+     {
+      "sheet": 244,
+      "lesson": 1,
+      "skill": "Dividing Unit Fractions by Whole Numbers",
+      "days": 2,
+      "ccss": [
+       "5.NF.B.7a"
+      ],
+      "ican": "cut a unit fraction into parts, name one part as a fraction of the whole, and check by multiplying.",
+      "key_rule": "Multiply the denominator by the divisor.",
+      "free": false,
+      "id": "18037533",
+      "title": "Dividing Fractions by Whole Numbers | Unit Fractions | 5th Grade Math Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Dividing-Fractions-by-Whole-Numbers-Unit-Fractions-5th-Grade-Math-Notes-18037533",
+      "img": "/assets/images/grade5/244.jpg",
+      "slides": 30,
+      "pages": 7
+     },
+     {
+      "sheet": 245,
+      "lesson": 2,
+      "skill": "Dividing Whole Numbers by Unit Fractions",
+      "days": 2,
+      "ccss": [
+       "5.NF.B.7b"
+      ],
+      "ican": "find how many unit-fraction pieces fit in some wholes, and check the answer by multiplying.",
+      "key_rule": "Multiply the whole number by the denominator.",
+      "free": false,
+      "id": "18037536",
+      "title": "Dividing Fractions Worksheet | Whole Numbers by Unit Fractions | 5th Grade",
+      "url": "https://www.teacherspayteachers.com/Product/Dividing-Fractions-Worksheet-Whole-Numbers-by-Unit-Fractions-5th-Grade-18037536",
+      "img": "/assets/images/grade5/245.jpg",
+      "slides": 30,
+      "pages": 7
+     },
+     {
+      "sheet": 246,
+      "lesson": 3,
+      "skill": "Dividing Fractions Word Problems",
+      "days": 2,
+      "ccss": [
+       "5.NF.B.7c"
+      ],
+      "ican": "decide whether a story shares a part or finds how many pieces are in some wholes, divide, and check the size of the answer.",
+      "key_rule": "Share a part, or fit pieces in wholes?",
+      "free": false,
+      "id": "18037542",
+      "title": "Dividing Fractions Word Problems | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Dividing-Fractions-Word-Problems-5th-Grade-Math-Notes-Slides-Key-18037542",
+      "img": "/assets/images/grade5/246.jpg",
+      "slides": 31,
+      "pages": 7
+     }
+    ],
+    "bundle": {
+     "id": "18041587",
+     "title": "Dividing Unit Fractions & Whole Numbers | 5th Grade Math Unit 7 Notes & Tests",
+     "url": "https://www.teacherspayteachers.com/Product/Dividing-Unit-Fractions-Whole-Numbers-5th-Grade-Math-Unit-7-Notes-Tests-18041587",
+     "price": "$8.99",
+     "list": "$18.00",
+     "items": 3,
+     "img": "/assets/images/grade5/u7.jpg"
+    }
+   },
+   {
+    "n": 8,
+    "name": "Expressions & Patterns",
+    "slug": "expressions-patterns",
+    "days": 12,
+    "assessments": "Unit 8 Quiz (lessons 1-2): 10 questions, 12 points on 2 student pages, about 20 minutes. Give it after lesson 2 (skill sheet #248). Unit 8 Review: 20 questions in the test's style, lesson by lesson, with a skills checklist students rate before and after (7 student pages). Unit 8 Test, Form A: 20 questions, 30 points, one class period: 9 multiple choice, 4 select all, 5 short answer and 2 constructed response, on 6 student pages (Form B the same). Unit 8 Test, Form B: the parallel form. Question n tests the same skill and standard as Form A question n, with new numbers and contexts, so it works for retakes or a second class. Every assessment has a fully worked answer key that names the mistake behind each wrong choice, a scoring guide, and (quiz and tests) an item analysis sheet with a class grid. Color and InkSaver PDFs, plus an editable Word file of each assessment. In the Word files, every expression is typed text with its ( ), [ ] and { }, so every number can be edited in place. Each Word file's answer key starts on a new page after the questions, so print only the pages before ANSWER KEY for students.",
+    "lessons": [
+     {
+      "sheet": 247,
+      "lesson": 1,
+      "skill": "Order of Operations with Grouping Symbols",
+      "days": 2,
+      "ccss": [
+       "5.OA.A.1"
+      ],
+      "ican": "find the value of an expression with ( ), [ ] and { } one pair at a time, and place ( ) to reach a value.",
+      "key_rule": "Work a pair's inside, then drop the pair.",
+      "free": false,
+      "id": "18037552",
+      "title": "Order of Operations Worksheet | Grouping Symbols | 5th Grade Math Notes & Slides",
+      "url": "https://www.teacherspayteachers.com/Product/Order-of-Operations-Worksheet-Grouping-Symbols-5th-Grade-Math-Notes-Slides-18037552",
+      "img": "/assets/images/grade5/247.jpg",
+      "slides": 32,
+      "pages": 7
+     },
+     {
+      "sheet": 248,
+      "lesson": 2,
+      "skill": "Writing Numerical Expressions",
+      "days": 2,
+      "ccss": [
+       "5.OA.A.2"
+      ],
+      "ican": "write a numerical expression from words, using ( ) to keep a sum or difference together, and tell how two expressions compare without working them out.",
+      "key_rule": "Write the steps in the order the words give them.",
+      "free": false,
+      "id": "18037558",
+      "title": "Numerical Expressions Worksheet | Writing Expressions | 5th Grade Math",
+      "url": "https://www.teacherspayteachers.com/Product/Numerical-Expressions-Worksheet-Writing-Expressions-5th-Grade-Math-18037558",
+      "img": "/assets/images/grade5/248.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 249,
+      "lesson": 3,
+      "skill": "Numerical Patterns with Two Rules",
+      "days": 2,
+      "ccss": [
+       "5.OA.B.3"
+      ],
+      "ican": "make two numerical patterns from two rules, line up the terms in the same place, and tell how each term of one compares with the term of the other.",
+      "key_rule": "Line up the terms, then compare each pair of terms.",
+      "free": false,
+      "id": "18040990",
+      "title": "Number Patterns Worksheet | Numerical Patterns with Two Rules | 5th Grade Math",
+      "url": "https://www.teacherspayteachers.com/Product/Number-Patterns-Worksheet-Numerical-Patterns-with-Two-Rules-5th-Grade-Math-18040990",
+      "img": "/assets/images/grade5/249.jpg",
+      "slides": 32,
+      "pages": 7
+     },
+     {
+      "sheet": 250,
+      "lesson": 4,
+      "skill": "Graphing Numerical Patterns",
+      "days": 2,
+      "ccss": [
+       "5.OA.B.3"
+      ],
+      "ican": "pair the terms of two patterns in the same spot, graph the pairs as points, and read the graph.",
+      "key_rule": "Pair each A term with the B term in the same spot, A term first.",
+      "free": false,
+      "id": "18041000",
+      "title": "Graphing Points Worksheet | Numerical Patterns | 5th Grade Math Notes & Slides",
+      "url": "https://www.teacherspayteachers.com/Product/Graphing-Points-Worksheet-Numerical-Patterns-5th-Grade-Math-Notes-Slides-18041000",
+      "img": "/assets/images/grade5/250.jpg",
+      "slides": 32,
+      "pages": 7
+     }
+    ],
+    "bundle": {
+     "id": "18041622",
+     "title": "Order of Operations & Writing Expressions | 5th Grade Math Unit 8 Notes & Tests",
+     "url": "https://www.teacherspayteachers.com/Product/Order-of-Operations-Writing-Expressions-5th-Grade-Math-Unit-8-Notes-Tests-18041622",
+     "price": "$11.99",
+     "list": "$24.00",
+     "items": 4,
+     "img": "/assets/images/grade5/u8.jpg"
+    }
+   },
+   {
+    "n": 9,
+    "name": "Measurement, Data & Volume",
+    "slug": "measurement-data-volume",
+    "days": 19,
+    "assessments": "Unit 9 Quiz (lessons 1-4): 10 questions, 12 points on 4 student pages, about 20 minutes. Give it after lesson 4 (skill sheet #254). Unit 9 Review: 20 questions in the test's style, lesson by lesson, with a skills checklist students rate before and after (9 student pages). Unit 9 Test, Form A: 20 questions, 30 points, one class period: 9 multiple choice, 4 select all, 5 short answer and 2 constructed response, on 7 student pages (Form B the same). Unit 9 Test, Form B: the parallel form. Question n tests the same skill and standard as Form A question n, with new numbers and contexts, so it works for retakes or a second class. Every assessment has a fully worked answer key that names the mistake behind each wrong choice, a scoring guide, and (quiz and tests) an item analysis sheet with a class grid. Color and InkSaver PDFs, plus an editable Word file of each assessment. In the Word files, every fraction is a real Word equation (numerator over denominator), so every number can be edited in place. Each Word file's answer key starts on a new page after the questions, so print only the pages before ANSWER KEY for students.",
+    "lessons": [
+     {
+      "sheet": 251,
+      "lesson": 1,
+      "skill": "Customary Unit Conversions",
+      "days": 2,
+      "ccss": [
+       "5.MD.A.1"
+      ],
+      "ican": "change a customary length, weight or amount of liquid to another unit with the right fact, and write leftover units in the smaller unit.",
+      "key_rule": "Smaller unit: multiply. Larger unit: divide.",
+      "free": false,
+      "id": "18041002",
+      "title": "Customary Unit Conversions | Converting Units of Measurement | 5th Grade Math",
+      "url": "https://www.teacherspayteachers.com/Product/Customary-Unit-Conversions-Converting-Units-of-Measurement-5th-Grade-Math-18041002",
+      "img": "/assets/images/grade5/251.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 252,
+      "lesson": 2,
+      "skill": "Metric Conversions",
+      "days": 2,
+      "ccss": [
+       "5.MD.A.1"
+      ],
+      "ican": "change a metric length, mass or liquid volume to another unit by multiplying or dividing by 10, 100 or 1,000.",
+      "key_rule": "Divide by 10, 100 or 1,000 to change to a larger unit.",
+      "free": false,
+      "id": "18041009",
+      "title": "Metric Conversions Worksheet | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Metric-Conversions-Worksheet-5th-Grade-Math-Notes-Slides-Key-18041009",
+      "img": "/assets/images/grade5/252.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 253,
+      "lesson": 3,
+      "skill": "Multi-Step Conversion Word Problems",
+      "days": 2,
+      "ccss": [
+       "5.MD.A.1"
+      ],
+      "ican": "solve a measurement story with more than one step, changing to one unit and giving the answer in the right unit.",
+      "key_rule": "Change the larger unit into the smaller unit first.",
+      "free": false,
+      "id": "18041021",
+      "title": "Multi-Step Word Problems with Unit Conversions | 5th Grade Math Notes & Slides",
+      "url": "https://www.teacherspayteachers.com/Product/Multi-Step-Word-Problems-with-Unit-Conversions-5th-Grade-Math-Notes-Slides-18041021",
+      "img": "/assets/images/grade5/253.jpg",
+      "slides": 31,
+      "pages": 7
+     },
+     {
+      "sheet": 254,
+      "lesson": 4,
+      "skill": "Line Plots with Fractions",
+      "days": 2,
+      "ccss": [
+       "5.MD.B.2"
+      ],
+      "ican": "make a line plot of data in fractions of a unit, and use it to find totals, differences and how much each gets when the total is shared.",
+      "key_rule": "For a total or a share, count each dot in a stack.",
+      "free": false,
+      "id": "18041027",
+      "title": "Line Plots with Fractions Worksheet | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Line-Plots-with-Fractions-Worksheet-5th-Grade-Math-Notes-Slides-Key-18041027",
+      "img": "/assets/images/grade5/254.jpg",
+      "slides": 32,
+      "pages": 7
+     },
+     {
+      "sheet": 255,
+      "lesson": 5,
+      "skill": "Volume with Unit Cubes",
+      "days": 2,
+      "ccss": [
+       "5.MD.C.3-4"
+      ],
+      "ican": "find the volume of a box packed with unit cubes by counting the cubes in one layer and the number of layers, and give it in cubic units.",
+      "key_rule": "Count the cubes in one layer, then multiply by how many layers.",
+      "free": false,
+      "id": "18041033",
+      "title": "Volume with Unit Cubes Worksheet | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Volume-with-Unit-Cubes-Worksheet-5th-Grade-Math-Notes-Slides-Key-18041033",
+      "img": "/assets/images/grade5/255.jpg",
+      "slides": 32,
+      "pages": 7
+     },
+     {
+      "sheet": 256,
+      "lesson": 6,
+      "skill": "Volume of Rectangular Prisms",
+      "days": 3,
+      "ccss": [
+       "5.MD.C.5a-b"
+      ],
+      "ican": "find the volume of a box or any other rectangular prism with V = l × w × h or V = B × h.",
+      "key_rule": "Multiply all three edges. Never add them.",
+      "free": false,
+      "id": "18041041",
+      "title": "Volume of Rectangular Prisms Worksheet | 5th Grade Math Notes, Slides & Key",
+      "url": "https://www.teacherspayteachers.com/Product/Volume-of-Rectangular-Prisms-Worksheet-5th-Grade-Math-Notes-Slides-Key-18041041",
+      "img": "/assets/images/grade5/256.jpg",
+      "slides": 32,
+      "pages": 7
+     },
+     {
+      "sheet": 257,
+      "lesson": 7,
+      "skill": "Volume of Composite Figures",
+      "days": 2,
+      "ccss": [
+       "5.MD.C.5c"
+      ],
+      "ican": "find the volume of a solid made of two boxes that do not overlap: find each box's volume, then put them together.",
+      "key_rule": "Find each box's volume, then add them.",
+      "free": false,
+      "id": "18041044",
+      "title": "Volume of Composite Figures Worksheet | Composite Volume | 5th Grade Math Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Volume-of-Composite-Figures-Worksheet-Composite-Volume-5th-Grade-Math-Notes-18041044",
+      "img": "/assets/images/grade5/257.jpg",
+      "slides": 32,
+      "pages": 7
+     }
+    ],
+    "bundle": {
+     "id": "18041660",
+     "title": "Volume, Unit Conversions & Line Plots | 5th Grade Math Unit 9 Notes & Tests",
+     "url": "https://www.teacherspayteachers.com/Product/Volume-Unit-Conversions-Line-Plots-5th-Grade-Math-Unit-9-Notes-Tests-18041660",
+     "price": "$20.99",
+     "list": "$42.00",
+     "items": 7,
+     "img": "/assets/images/grade5/u9.jpg"
+    }
+   },
+   {
+    "n": 10,
+    "name": "Geometry & the Coordinate Plane",
+    "slug": "geometry-the-coordinate-plane",
+    "days": 12,
+    "assessments": "Unit 10 Quiz (lessons 1-2): 10 questions, 12 points on 3 student pages, about 20 minutes. Give it after lesson 2 (skill sheet #259). Unit 10 Review: 20 questions in the test's style, lesson by lesson, with a skills checklist students rate before and after (7 student pages). Unit 10 Test, Form A: 20 questions, 30 points, one class period: 9 multiple choice, 4 select all, 5 short answer and 2 constructed response, on 7 student pages (Form B the same). Unit 10 Test, Form B: the parallel form. Question n tests the same skill and standard as Form A question n, with new numbers and contexts, so it works for retakes or a second class. Every assessment has a fully worked answer key that names the mistake behind each wrong choice, a scoring guide, and (quiz and tests) an item analysis sheet with a class grid. Color and InkSaver PDFs, plus an editable Word file of each assessment. In the Word files, every ordered pair, angle and name is typed text, so every number can be edited in place. Each Word file's answer key starts on a new page after the questions, so print only the pages before ANSWER KEY for students.",
+    "lessons": [
+     {
+      "sheet": 258,
+      "lesson": 1,
+      "skill": "Coordinate Plane: First Quadrant",
+      "days": 2,
+      "ccss": [
+       "5.G.A.1"
+      ],
+      "ican": "plot a point (x, y) by going over x and up y from (0, 0), and read a point's pair the same way.",
+      "key_rule": "Over by x, then up by y: the order matters.",
+      "free": false,
+      "id": "18041137",
+      "title": "Coordinate Plane Worksheet | First Quadrant | 5th Grade Math Notes & Slides",
+      "url": "https://www.teacherspayteachers.com/Product/Coordinate-Plane-Worksheet-First-Quadrant-5th-Grade-Math-Notes-Slides-18041137",
+      "img": "/assets/images/grade5/258.jpg",
+      "slides": 32,
+      "pages": 7
+     },
+     {
+      "sheet": 259,
+      "lesson": 2,
+      "skill": "Coordinate Plane Word Problems",
+      "days": 2,
+      "ccss": [
+       "5.G.A.2"
+      ],
+      "ican": "find how far apart two places on a map grid are, add the parts of a trip that follows the gridlines, and read what a graph's points mean.",
+      "key_rule": "Same x or y? Distance: the difference of the others.",
+      "free": false,
+      "id": "18041143",
+      "title": "Coordinate Grid Word Problems | Distance on a Coordinate Plane | 5th Grade",
+      "url": "https://www.teacherspayteachers.com/Product/Coordinate-Grid-Word-Problems-Distance-on-a-Coordinate-Plane-5th-Grade-18041143",
+      "img": "/assets/images/grade5/259.jpg",
+      "slides": 32,
+      "pages": 7
+     },
+     {
+      "sheet": 260,
+      "lesson": 3,
+      "skill": "Classifying Triangles",
+      "days": 2,
+      "ccss": [
+       "5.G.B.3-4"
+      ],
+      "ican": "name a triangle by its sides (equilateral, isosceles, scalene) and by its angles (acute, right, obtuse), then use the names together.",
+      "key_rule": "Acute means every angle is under 90°.",
+      "free": false,
+      "id": "18041151",
+      "title": "Classifying Triangles Worksheet | Types of Triangles | 5th Grade Math Notes",
+      "url": "https://www.teacherspayteachers.com/Product/Classifying-Triangles-Worksheet-Types-of-Triangles-5th-Grade-Math-Notes-18041151",
+      "img": "/assets/images/grade5/260.jpg",
+      "slides": 32,
+      "pages": 7
+     },
+     {
+      "sheet": 261,
+      "lesson": 4,
+      "skill": "Classifying Quadrilaterals (Hierarchy)",
+      "days": 2,
+      "ccss": [
+       "5.G.B.3-4"
+      ],
+      "ican": "use the quadrilateral hierarchy to give a shape all the names it earns, and tell when one kind of shape is always, sometimes or never another.",
+      "key_rule": "A shape gets every name whose rule it meets.",
+      "free": false,
+      "id": "18041156",
+      "title": "Classifying Quadrilaterals Worksheet | Hierarchy | 5th Grade Math Notes & Slides",
+      "url": "https://www.teacherspayteachers.com/Product/Classifying-Quadrilaterals-Worksheet-Hierarchy-5th-Grade-Math-Notes-Slides-18041156",
+      "img": "/assets/images/grade5/261.jpg",
+      "slides": 32,
+      "pages": 7
+     }
+    ],
+    "bundle": {
+     "id": "18041752",
+     "title": "Coordinate Plane & Classifying 2D Shapes | 5th Grade Math Unit 10 Notes & Tests",
+     "url": "https://www.teacherspayteachers.com/Product/Coordinate-Plane-Classifying-2D-Shapes-5th-Grade-Math-Unit-10-Notes-Tests-18041752",
+     "price": "$11.99",
+     "list": "$24.00",
+     "items": 4,
+     "img": "/assets/images/grade5/u10.jpg"
+    }
+   }
+  ],
+  "curriculum": {
+   "id": "18041793",
+   "title": "5th Grade Math Curriculum | 5th Grade Math Guided Notes, Slides & Unit Tests",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-Curriculum-5th-Grade-Math-Guided-Notes-Slides-Unit-Tests-18041793",
+   "price": "$134.99",
+   "list": "$318.00",
+   "items": 54,
+   "img": "/assets/images/grade5/curriculum.jpg"
+  },
+  "pacing": {
+   "id": "18041192",
+   "title": "FREE 5th Grade Math Pacing Guide | Math Curriculum Scope and Sequence",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-5th-Grade-Math-Pacing-Guide-Math-Curriculum-Scope-and-Sequence-18041192"
   }
  }
 }
