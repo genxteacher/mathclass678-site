@@ -2886,7 +2886,7 @@ function pageHome() {
   const ratingSchema = [];   // (orgReviewSchema kept above for reference only; never emitted)
 
   return head({
-    title: 'Math Class 678 — 4-in-1 Skill Sheets for Grades 6–8 Common Core Math',
+    title: 'Math Class 678 | Math Lessons & Worksheets, Grades 5–8 & Algebra 1',
     desc: 'Math lessons for grades 5–8 and Algebra 1: one skill per lesson, a guided packet and a Teacher Deck. Designed, reviewed, and checked by a teacher with 25+ years.',
     path: 'index.html',
     jsonld: JSON.stringify([{
@@ -2926,7 +2926,7 @@ function pageHome() {
       <div class="hero__copy">
         <span class="eyebrow hero__eyebrow">${counts.all} sheets · grades 6–8 · CCSS</span>
         <h1><span class="phase gold">Learn.</span> Practice.<br>Apply. <span class="phase">Exit ticket.</span></h1>
-        <p class="hero__lead">Standards-aligned 4-in-1 Skill Sheets for grades 6, 7, and 8 math, designed, reviewed, and checked by Greg, a teacher with 25+ years in the classroom. Every skill as a full lesson: a guided Learn page, ${NUMW[SS_PRACTICE]} practice problems, application problems and a built-in exit ticket, plus an interactive Teacher Deck that builds every step click by click.</p>
+        <p class="hero__lead">Standards-aligned math lessons for 5th grade, grades 6–8 and Algebra 1, designed, reviewed, and checked by Greg, a teacher with 25+ years in the classroom. Every skill as a full lesson: a guided Learn page, ${NUMW[SS_PRACTICE]} practice problems, application problems and a built-in exit ticket, plus an interactive Teacher Deck that builds every step click by click.</p>
         <div class="hero__cta">
           <a class="btn btn--primary" href="/catalog.html">Browse all sheets ${ICON.arrow}</a>
           <a class="btn btn--on-dark" href="/free.html">Free resources</a>
@@ -6585,7 +6585,19 @@ if (fs.existsSync(path.join(ROOT, 'data', 'indexnow.key'))) {
 }
 writeSitemaps();
 write('netlify.toml', netlifyToml);
-write('_redirects', netlifyRedirects);
+// Short URLs (Oct 24 2026): Netlify also serves every page at its address without ".html", and Search
+// Console showed Google indexing 56 of those as separate pages despite the canonical tag. Each short
+// address now 301s to its .html page. Exact paths only: a wildcard would also catch the .html address.
+const CLEAN_URL_REDIRECTS = (() => {
+  const root = path.join(ROOT, 'dist');
+  const taken = new Set(netlifyRedirects.split('\n').map(l => l.trim().split(/\s+/)[0]).filter(Boolean));
+  const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : e.name.endsWith('.html') ? [path.join(d, e.name)] : []);
+  return walk(root).map(f => '/' + path.relative(root, f).split(path.sep).join('/'))
+    .filter(r => !/(^|\/)(index|404)\.html$/.test(r))
+    .map(r => r.slice(0, -5)).filter(r => !taken.has(r)).sort()
+    .map(r => `${r}   ${r}.html   301!`).join('\n') + '\n';
+})();
+write('_redirects', netlifyRedirects + CLEAN_URL_REDIRECTS);
 
 /* expected thumbnail filenames manifest — marks which slots still need art */
 const manifest = products.map(p => {
