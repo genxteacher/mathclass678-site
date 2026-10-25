@@ -2887,14 +2887,14 @@ function pageHome() {
 
   return head({
     title: 'Math Class 678 — 4-in-1 Skill Sheets for Grades 6–8 Common Core Math',
-    desc: 'Skill sheets for grades 6–8 math: one Common Core skill per lesson, with a guided student packet and an interactive Teacher Deck. Checked by a 25-year teacher.',
+    desc: 'Skill sheets for grades 6–8 math: one Common Core skill per lesson, with a guided student packet and an interactive Teacher Deck. Designed, reviewed, and checked by a teacher with 25+ years.',
     path: 'index.html',
     jsonld: JSON.stringify([{
       '@context': 'https://schema.org',
       '@type': 'WebSite',
       name: 'Math Class 678',
       url: SITE_URL,
-      description: 'A complete catalog of 4-in-1 Skill Sheets for middle school math, grades 6–8, CCSS-aligned. Checked by a 25-year middle school math teacher.',
+      description: 'A complete catalog of 4-in-1 Skill Sheets for middle school math, grades 6–8, CCSS-aligned. Designed, reviewed, and checked by a math teacher with 25+ years in the classroom.',
       publisher: { '@type': 'Organization', name: 'Math Class 678', url: SITE_URL }
     }, {
       '@context': 'https://schema.org',
@@ -2926,7 +2926,7 @@ function pageHome() {
       <div class="hero__copy">
         <span class="eyebrow hero__eyebrow">${counts.all} sheets · grades 6–8 · CCSS</span>
         <h1><span class="phase gold">Learn.</span> Practice.<br>Apply. <span class="phase">Exit ticket.</span></h1>
-        <p class="hero__lead">Standards-aligned 4-in-1 Skill Sheets for grades 6, 7, and 8 math, checked by a teacher with 25 years in the classroom. Every skill as a full lesson: a guided Learn page, ${NUMW[SS_PRACTICE]} practice problems, application problems and a built-in exit ticket, plus an interactive Teacher Deck that builds every step click by click.</p>
+        <p class="hero__lead">Standards-aligned 4-in-1 Skill Sheets for grades 6, 7, and 8 math, designed, reviewed, and checked by Greg, a teacher with 25+ years in the classroom. Every skill as a full lesson: a guided Learn page, ${NUMW[SS_PRACTICE]} practice problems, application problems and a built-in exit ticket, plus an interactive Teacher Deck that builds every step click by click.</p>
         <div class="hero__cta">
           <a class="btn btn--primary" href="/catalog.html">Browse all sheets ${ICON.arrow}</a>
           <a class="btn btn--on-dark" href="/free.html">Free resources</a>
@@ -3050,7 +3050,7 @@ ${featuredReviewBand()}
       </figure>
       <div class="founder__copy reveal">
         <span class="eyebrow">Meet the teacher</span>
-        <h2>Every sheet is planned and checked by one teacher who has taught these standards for 25 years</h2>
+        <h2>Every sheet is designed, reviewed, and checked by one teacher who has taught these standards for 25+ years</h2>
         <p>I am Greg. I have spent more than twenty-five years teaching grades 6 to 8 math, and I built Math Class 678 out of the thing I always needed: one standard, one complete sheet, the whole lesson in your hand. The common-misconception callouts on every sheet are not generic — they are the exact errors I have watched students make, year after year.</p>
         <div class="founder__cta">
           <a class="btn btn--ghost" href="/about.html">Read the full story ${ICON.arrow}</a>
@@ -3510,7 +3510,7 @@ function pageAbout() {
 
   return head({
     title: 'About the Teacher — Middle School Math Skill Sheets | Math Class 678',
-    desc: 'Math Class 678 is run by Greg, a teacher with 25 years in middle school math. Every skill sheet covers one Common Core standard and is checked by him.',
+    desc: 'Math Class 678 is run by Greg, a teacher with 25+ years in middle school math. Every skill sheet covers one Common Core standard and is checked by him.',
     path: 'about.html',
     jsonld: founderSchema
   }) + nav('about') + `
@@ -3549,7 +3549,7 @@ function pageAbout() {
       <aside class="reveal">
         <figure class="about__figure">
           <img src="/assets/images/founder_portrait.jpg" alt="Greg, the founder of Math Class 678, standing in his middle school math classroom in front of anchor charts for exponent rules and the distributive property" class="about__photo about__photo--portrait" width="1100" height="1375" loading="lazy" decoding="async">
-          <figcaption class="about__caption">Greg, in his own classroom — twenty-five years teaching grades 6 to 8 math.</figcaption>
+          <figcaption class="about__caption">Greg, in his own classroom, with more than twenty-five years teaching grades 6 to 8 math.</figcaption>
         </figure>
         <div class="stat-block">
         <div class="stat-row"><b>25</b><span>Years teaching middle school math</span></div>
@@ -3843,7 +3843,7 @@ function pageStandard(std) {
   };
   const titleBase = STD_TITLE_SHORT[ccss] || std.title;
   const title    = `${titleBase} — ${ccss} | Math Class 678`;
-  const metaDesc = `Classroom-tested explanation, worked examples, and common mistakes for ${ccss} ${std.title}. Tips from a 25-year middle school math teacher.`.slice(0, 158);
+  const metaDesc = `Classroom-tested explanation, worked examples, and common mistakes for ${ccss} ${std.title}. Tips from a middle school math teacher with 25+ years in the classroom.`.slice(0, 158);
 
   // Explanation paragraphs
   const explanHtml = (std.explanation || []).map(p => `<p>${esc(p)}</p>`).join('\n          ');

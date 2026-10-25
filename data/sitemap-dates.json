@@ -1,6 +1,6 @@
 {
  "/": {
-  "hash": "8d6e461191ca433e6b37a0fc2c37b23d5e303be1",
+  "hash": "81192512d283507b60889150bc05b4db02bc72ba",
   "date": "2026-10-25"
  },
  "/5th-grade.html": {
@@ -48,7 +48,7 @@
   "date": "2026-10-25"
  },
  "/about.html": {
-  "hash": "dda30a49edb6e03601366aa5431bac635daf7880",
+  "hash": "3b0fcd32225413b602dc7c1482efae5923860d53",
   "date": "2026-10-25"
  },
  "/algebra-1.html": {
@@ -1148,375 +1148,375 @@
   "date": "2026-10-25"
  },
  "/standards/6-ee-a-1-order-of-operations.html": {
-  "hash": "048d44a02b43cb8ba8831222bc16232733890234",
+  "hash": "4a9ebb4bb4ba8198672f67d2f445f7b30818c4a4",
   "date": "2026-10-25"
  },
  "/standards/6-ee-a-2a-writing-algebraic-expressions.html": {
-  "hash": "1daa671d3219669e544011d4edd3fe31fb992453",
+  "hash": "5dda5c160d9521bc5f720028b2f83268a2ce6a6c",
   "date": "2026-10-25"
  },
  "/standards/6-ee-a-2b-identifying-parts-of-an-expression.html": {
-  "hash": "12ab9a763e3e3faf21b616a12145809b68e360cf",
+  "hash": "93ec44d945a940091412d43db20c1b45ed9080ae",
   "date": "2026-10-25"
  },
  "/standards/6-ee-a-2c-evaluating-expressions.html": {
-  "hash": "bf7c0db8eede2babf655a6672918caf3cbbd309c",
+  "hash": "47b4b01b0a4831441902022685761719a24bcb67",
   "date": "2026-10-25"
  },
  "/standards/6-ee-a-3-a-4-combining-like-terms.html": {
-  "hash": "b380bcc3b8129193f1a89ff51d350e74162b0647",
+  "hash": "ce8ec21c64a864307cde8f6954224e8bedcfd3fb",
   "date": "2026-10-25"
  },
  "/standards/6-ee-a-3-distributive-property.html": {
-  "hash": "b9542a16b53455bf2bfdbd596fd3656913a6632e",
+  "hash": "b8a4236d9e96692403a33dcd909f61559c71bd14",
   "date": "2026-10-25"
  },
  "/standards/6-ee-a-4-identifying-equivalent-expressions.html": {
-  "hash": "edc5a9c4be0307c0aea3389a20967db1ebed816c",
+  "hash": "5114aa43169eaa89ba9a2b80ca24e656e4fb8707",
   "date": "2026-10-25"
  },
  "/standards/6-ee-b-5-b-6-solutions-to-equations-writing-variables.html": {
-  "hash": "859d42252f60c31b9a9cc2fac92548426022d678",
+  "hash": "6680c87b6104e763b493a92553e804064725c72b",
   "date": "2026-10-25"
  },
  "/standards/6-ee-b-7-solving-one-step-equations.html": {
-  "hash": "8221f93ecbe3adda82208ddd0ad9a6fd33f851cc",
+  "hash": "4892781227d4bb12c1a399e862a771d0f193b84d",
   "date": "2026-10-25"
  },
  "/standards/6-ee-b-8-inequalities-their-graphs.html": {
-  "hash": "f6cf1f7fe72c10662e6af81900194741f9689ed6",
+  "hash": "bd2d41638d80bdcff0941690780c3b56bcaf49f2",
   "date": "2026-10-25"
  },
  "/standards/6-ee-c-9-independent-vs-dependent-variables.html": {
-  "hash": "d5d21b221b97f980df1404b7c539d70f4040002c",
+  "hash": "841ae3dca1f1a2e957ee4e847d594fe1f9f63110",
   "date": "2026-10-25"
  },
  "/standards/6-g-a-1-area-of-polygons.html": {
-  "hash": "77ba6b789e2f260e6269bb181170647b4e4212f6",
+  "hash": "cad4a205aac8fac956d68a328dee4f693e04be27",
   "date": "2026-10-25"
  },
  "/standards/6-g-a-2-volume-with-fractional-edge-lengths.html": {
-  "hash": "7e23113709e07cca23f61da15902f196a7d0f4be",
+  "hash": "f7b31af76bc5889d9b7bf003041b59be222689d5",
   "date": "2026-10-25"
  },
  "/standards/6-g-a-3-polygons-coordinate-plane.html": {
-  "hash": "928b06a8335bfedbeb504f59f1d5e14daa8564c6",
+  "hash": "44b8b72681775342d453cba51c3434b68ffe5653",
   "date": "2026-10-25"
  },
  "/standards/6-g-a-4-nets-surface-area.html": {
-  "hash": "6a70ef60696b3b0056e7c36ae166aa5f4dd3d59e",
+  "hash": "33dd9dfb432ef0ea05ffb1aab66bb0781230759c",
   "date": "2026-10-25"
  },
  "/standards/6-ns-a-1-dividing-fractions-by-fractions.html": {
-  "hash": "64c2ba8d209d20f4ec783f2403c95dbf2feb1116",
+  "hash": "944c9b591ca67136e8bddbee96fd29d0250e5aa6",
   "date": "2026-10-25"
  },
  "/standards/6-ns-b-2-b-3-multi-digit-operations.html": {
-  "hash": "91fb922ca87320ae4fc31f408f3083edeaa88533",
+  "hash": "4204e8cf447a81de32b28edecd8958db2d85584f",
   "date": "2026-10-25"
  },
  "/standards/6-ns-b-4-gcf-and-lcm.html": {
-  "hash": "33b602e106a1e84f267ebbbc696d84156496e5c1",
+  "hash": "783d7d21828b01ea51bf3158aae8212e9d5e11e8",
   "date": "2026-10-25"
  },
  "/standards/6-ns-c-5-c-6a-positive-negative-numbers-in-context.html": {
-  "hash": "b773c11f1690bfd750f4225981a49a56f429df5b",
+  "hash": "ff422e6b9445e3bb0e44fa2d97efe8dfa5448f36",
   "date": "2026-10-25"
  },
  "/standards/6-ns-c-6b-the-coordinate-plane.html": {
-  "hash": "a6543c55e71843fd2b254f27e953ffd0c4a47f9c",
+  "hash": "c94fee8ef7511f40ed61bec2cbb9a6d19d136db0",
   "date": "2026-10-25"
  },
  "/standards/6-ns-c-6c-rationals-on-number-line-coord-plane.html": {
-  "hash": "c866ee10077adfea310a5dd0bd718f1096b3ee1d",
+  "hash": "a745a88264c230720db77d53c36ef6ee08630537",
   "date": "2026-10-25"
  },
  "/standards/6-ns-c-7-comparing-ordering-rationals-absolute-value.html": {
-  "hash": "f358193833c1abe3f75b8ac9a16f777576f95860",
+  "hash": "63bb983ff1616b1e453a4e4787e5b76dab7bf919",
   "date": "2026-10-25"
  },
  "/standards/6-ns-c-8-real-world-problems-on-coordinate-plane.html": {
-  "hash": "fd38df347937a179e4fd4c15a2194f01b6cbf62a",
+  "hash": "a2c3939457a1e0ec55e0caa353bf3046b1d02d55",
   "date": "2026-10-25"
  },
  "/standards/6-rp-a-1-understanding-ratios.html": {
-  "hash": "f6384f57d308819a65548d62f48057feb373962d",
+  "hash": "de37f0f3bf94f541d55aae9efde616958d830050",
   "date": "2026-10-25"
  },
  "/standards/6-rp-a-2-unit-rate-concept.html": {
-  "hash": "b4bb124d75e5c71d2153f893cbacc26bac550106",
+  "hash": "e1ca74e994776590b24527f311301f24a6a81489",
   "date": "2026-10-25"
  },
  "/standards/6-rp-a-3-ratio-reasoning-application.html": {
-  "hash": "11216ad9bde53fed20a08f5272ce512ab5297944",
+  "hash": "77796a057e7eaf77b833006f7c1f6ea6282b9e40",
   "date": "2026-10-25"
  },
  "/standards/6-sp-a-1-statistical-questions.html": {
-  "hash": "7340282849cb24ceec2b914abd086e9918090b7b",
+  "hash": "0b2517acc3ae0b46adc7ddaa1ef4b1b27b7ebad5",
   "date": "2026-10-25"
  },
  "/standards/6-sp-a-2-understanding-distributions.html": {
-  "hash": "a88bdc9d4d3d0d04357486e79863dc7f0ca83324",
+  "hash": "14f3ce609344b0567e022e94156475e9a98d7c22",
   "date": "2026-10-25"
  },
  "/standards/6-sp-a-3-center-vs-variability.html": {
-  "hash": "07383428c448fbc63fd7f7ab48162c899a093628",
+  "hash": "4894b0f684b6d8ce76367b7fdca9e7c0eb3feb53",
   "date": "2026-10-25"
  },
  "/standards/6-sp-b-4-data-displays-dot-histogram-box-plots.html": {
-  "hash": "bf1b3ee3222f0366d53679e01db4a9e16e3c0e68",
+  "hash": "4972749d6274175e1b7b7869aafa0e6451b00f14",
   "date": "2026-10-25"
  },
  "/standards/6-sp-b-5-numerical-data-summaries.html": {
-  "hash": "d353385299369823a02b80162e05b022d3f74ab6",
+  "hash": "389f169fe112a531a37cda066be232e5ed26dc10",
   "date": "2026-10-25"
  },
  "/standards/7-ee-a-1-like-terms-distributive.html": {
-  "hash": "526d951dbc7ff45dbb0540b39c0e1237537fe466",
+  "hash": "77b7631a4bfab23688984a1fadf6bd2d73fda575",
   "date": "2026-10-25"
  },
  "/standards/7-ee-a-2-rewriting-expressions.html": {
-  "hash": "67b1007b41ed86f1040a18b0f967d2990741c37d",
+  "hash": "760491e6812b469f01d41d5e8d150103e379f51f",
   "date": "2026-10-25"
  },
  "/standards/7-ee-b-3-multi-step-rational-problems.html": {
-  "hash": "4fb3a1b012aadd9af1334b0f5d2e9d33a19bbe02",
+  "hash": "f78def3100ce2505af1e739b3d06930ffeef9344",
   "date": "2026-10-25"
  },
  "/standards/7-ee-b-4a-two-step-equations.html": {
-  "hash": "c1fab264abddbfaa7f7166c2734d65dbeeacb781",
+  "hash": "c8ca108546f833ccdb4c43832b6b4448afa9d4a4",
   "date": "2026-10-25"
  },
  "/standards/7-ee-b-4b-two-step-inequalities.html": {
-  "hash": "c632ce023f689b9946e762d10766d84fda0abd14",
+  "hash": "cd36291cb01ab0c3a64f20f59ffcadf58bbe613f",
   "date": "2026-10-25"
  },
  "/standards/7-g-a-1-scale-drawings.html": {
-  "hash": "8d7b5f20f3b2b7994162814df9cb8f81d3f8b747",
+  "hash": "4ca23ca546dfe6456b30b04c3282d1891a8669ff",
   "date": "2026-10-25"
  },
  "/standards/7-g-a-2-triangle-inequality.html": {
-  "hash": "e55f9770753d358874811dfd41c913a1645b79b0",
+  "hash": "6dc23d198a26858d099d140c3a627c31668ed4f6",
   "date": "2026-10-25"
  },
  "/standards/7-g-a-3-cross-sections-of-3d-figures.html": {
-  "hash": "aef36830a0eb9b9930d821847697c829a91f5cff",
+  "hash": "40ae8c9f82c1a91a66ca46ba961ef52d6c18609d",
   "date": "2026-10-25"
  },
  "/standards/7-g-b-4-circumference-area-of-circles.html": {
-  "hash": "de11aa9f4c8ff051dec8a8e3c9d6479bc3146467",
+  "hash": "969d4af8ccde7729ea740823c28bbc5722b6b8c3",
   "date": "2026-10-25"
  },
  "/standards/7-g-b-5-angle-relationships.html": {
-  "hash": "6b4d12117ad09ddd1dc0e5b9c257941a56d147bf",
+  "hash": "d67712ea240736d709c51e7bbd4941d430a6d391",
   "date": "2026-10-25"
  },
  "/standards/7-g-b-6-composite-area-volume-surface-area.html": {
-  "hash": "153ec9d9df9f861d44f3bb2e8a3aeec4807def7a",
+  "hash": "8e66f3e58fda95eb54345e0a2798e8c88a4b1513",
   "date": "2026-10-25"
  },
  "/standards/7-ns-a-1a-additive-inverse-opposites.html": {
-  "hash": "4ce6b52629ed820cf21f37b557aa7e2311e9e44b",
+  "hash": "f7af40e2bbd186e3b6ba8f874cf7c09b2a0df308",
   "date": "2026-10-25"
  },
  "/standards/7-ns-a-1b-adding-integers.html": {
-  "hash": "3db214e342f2f88f63978fd97f1e540b0bc3d6de",
+  "hash": "9d8c6e516b0647496943ece4543cb25a59c969be",
   "date": "2026-10-25"
  },
  "/standards/7-ns-a-1c-subtracting-integers.html": {
-  "hash": "78c974428302c3bc232f20870c4fff4618ce7add",
+  "hash": "ff7578936c5a28c9d3bc28c36cc5409ec343db93",
   "date": "2026-10-25"
  },
  "/standards/7-ns-a-1d-adding-subtracting-rationals.html": {
-  "hash": "562d3997582f3e58880101437797c8e56970201e",
+  "hash": "b40fb167f34a3b0b38be46a3ae4367dfd2149f68",
   "date": "2026-10-25"
  },
  "/standards/7-ns-a-2a-multiplying-integers.html": {
-  "hash": "c6b36868251e54e7bb3ad83beef99f8be07feddc",
+  "hash": "78f8219dbe0d24389a3ed3a6910f56a542fead7d",
   "date": "2026-10-25"
  },
  "/standards/7-ns-a-2b-dividing-integers.html": {
-  "hash": "61548922136176282aa28c195556039f4cc9fd21",
+  "hash": "b052952fe20b36a1378120ca667602a959142db0",
   "date": "2026-10-25"
  },
  "/standards/7-ns-a-2c-multiplying-dividing-rationals.html": {
-  "hash": "1dddfeb67aaf384eeaec28fbc597dc999251ebc6",
+  "hash": "7cdd665d73139beff8080325bf3cd0433eb319f7",
   "date": "2026-10-25"
  },
  "/standards/7-ns-a-2d-terminating-vs-repeating-decimals.html": {
-  "hash": "19e0c51f49b46a14808e6af014a65afc8a009273",
+  "hash": "e8463858d552beaab6ffe7ab920cdda68b4c7048",
   "date": "2026-10-25"
  },
  "/standards/7-ns-a-3-real-world-rational-number-problems.html": {
-  "hash": "c1bc0de07faf9caa1d80bf9f88bcc01a09ad9bcd",
+  "hash": "fcd04f7d23900d9e5e47a7f9adfe6468e38ce1f7",
   "date": "2026-10-25"
  },
  "/standards/7-rp-a-1-unit-rates.html": {
-  "hash": "09eafdf1ae3cf43ada5aaafc0f6067c96ce4168f",
+  "hash": "7e43a424ed5a56b1b77538b7ba0ca83c8efb8b20",
   "date": "2026-10-25"
  },
  "/standards/7-rp-a-2-constant-of-proportionality.html": {
-  "hash": "a8a4a04c14b83c97f3fef596f355c6006451e187",
+  "hash": "d33fda191b0622dbb9e20576bb683427b025b453",
   "date": "2026-10-25"
  },
  "/standards/7-rp-a-3-percent-problems.html": {
-  "hash": "443e0272b0334b854fdc2ac01f12cc46d5610179",
+  "hash": "88607a2eba3e2b0e68a32c2d451b57762e82b507",
   "date": "2026-10-25"
  },
  "/standards/7-sp-a-1-random-sampling.html": {
-  "hash": "69ffb1fbf2164659ec5e898c70a2392a90ad0690",
+  "hash": "820e97511273459b0c7886dd89267d6dad1f46fa",
   "date": "2026-10-25"
  },
  "/standards/7-sp-a-2-inferences-from-random-samples.html": {
-  "hash": "872ddd1e09cdf79bf1f97722bd8d393c3cdd4783",
+  "hash": "50b4d3347efd1ea826f48335a5681589f8198767",
   "date": "2026-10-25"
  },
  "/standards/7-sp-b-3-comparing-populations-informally.html": {
-  "hash": "fe90c9b33309aee96fe620b5deb8f32d410f3751",
+  "hash": "1dd716d8e2e26ce238dd52d088765fa34b846f2b",
   "date": "2026-10-25"
  },
  "/standards/7-sp-b-4-comparing-populations-numerically.html": {
-  "hash": "fa52511432d76986a304e39a264b892c351056c1",
+  "hash": "59a5b821482151c02b4ee1c9b9fa859fd4250fd1",
   "date": "2026-10-25"
  },
  "/standards/7-sp-c-5-probability-scale-0-to-1.html": {
-  "hash": "caa8894d161272a8043e1fcd5f76476edc2ceb12",
+  "hash": "a17f62274b9269f295675d7c8c6711cc8229e8a0",
   "date": "2026-10-25"
  },
  "/standards/7-sp-c-6-experimental-theoretical-probability.html": {
-  "hash": "9f6bd9023ad89f36f347fb2e56c020bd41585c9f",
+  "hash": "269fc579896bbd964fa472d5c53be1d24e6a4d92",
   "date": "2026-10-25"
  },
  "/standards/7-sp-c-7-probability-models.html": {
-  "hash": "b96ac997ea1a9dce92a47993f32259fafb64a1d2",
+  "hash": "4d9b68ce87bc47032dc92f7d0633791eeb5add3a",
   "date": "2026-10-25"
  },
  "/standards/7-sp-c-8-compound-events.html": {
-  "hash": "e7a775d40d59167597e87d62ec604575ce4c3525",
+  "hash": "1d5a39781e85ff8b9015906ccab6ac1f210caf28",
   "date": "2026-10-25"
  },
  "/standards/8-ee-a-1-exponent-rules.html": {
-  "hash": "b463ecfc80e35885b436ba300e73be4393230d13",
+  "hash": "8a8bafc2080181a78b10bb430521d124b84b23b8",
   "date": "2026-10-25"
  },
  "/standards/8-ee-a-2-square-cube-roots.html": {
-  "hash": "bb84004f26097010f4d8b7c2ece89fb0f924a827",
+  "hash": "51a70839d2fbc136a92db36f1465298c7543f5d1",
   "date": "2026-10-25"
  },
  "/standards/8-ee-a-3-scientific-notation-conversion.html": {
-  "hash": "dfab469f1d3468aeebe34da7ce1c1f16f9acdb1f",
+  "hash": "b3dbdd7fa0a035645086511166ca26b5d3578d81",
   "date": "2026-10-25"
  },
  "/standards/8-ee-a-4-operations-with-scientific-notation.html": {
-  "hash": "a15243ea2ec6a98252fb516f22c531f9f966a790",
+  "hash": "b99202d767e51e988ad3f1047dc6b4a69c645c5a",
   "date": "2026-10-25"
  },
  "/standards/8-ee-b-5-proportional-relationships.html": {
-  "hash": "ec742f0a33d193c9af2eeeb64ad274194434b991",
+  "hash": "d061fea177fba6eba00c883e414a3b91e50003e1",
   "date": "2026-10-25"
  },
  "/standards/8-ee-b-6-slope-intercept-form.html": {
-  "hash": "2358689cc5a958aa7b086df497cab251edaf9681",
+  "hash": "c6734ca054d00378fc615b14963aaffd4cbf6e01",
   "date": "2026-10-25"
  },
  "/standards/8-ee-c-7a-one-none-or-infinite-solutions.html": {
-  "hash": "347376d3c6b2c7b55b1109c57945932efd8afbb3",
+  "hash": "5d5a5749f594cdee98760d8c38edbc3741118ebf",
   "date": "2026-10-25"
  },
  "/standards/8-ee-c-7b-solving-linear-equations.html": {
-  "hash": "f1ef379c9f6b099c83ac675483b6cff81b0e78aa",
+  "hash": "76c3af51bfd30dc40763c0bb8661784d97fbfc26",
   "date": "2026-10-25"
  },
  "/standards/8-ee-c-8-solving-systems.html": {
-  "hash": "7f17423a4e6131211759968b83b75556f52ee79e",
+  "hash": "fd22761d7f6c1226f796ea38c148d0c2415d3b52",
   "date": "2026-10-25"
  },
  "/standards/8-ee-c-8a-systems-by-graphing.html": {
-  "hash": "ff81818155048508e855da4c2641dec5076ebfae",
+  "hash": "68ecefb0e888b7981383c7ac8e9310f55aa85ee8",
   "date": "2026-10-25"
  },
  "/standards/8-ee-c-8c-systems-word-problems.html": {
-  "hash": "aaf5b94fc66d1a2b5b6fa4d825a5e875f730e8f5",
+  "hash": "bc0df96254d24b5cf6b450607aac5803544f5b34",
   "date": "2026-10-25"
  },
  "/standards/8-f-a-1-functions-definition.html": {
-  "hash": "7b7995fc7e4d450c68639db3006dcc0d00779359",
+  "hash": "138913461f0e02d89781924d6d30d24e57b31f15",
   "date": "2026-10-25"
  },
  "/standards/8-f-a-2-comparing-functions.html": {
-  "hash": "b52ff5637edab0c3db32230e6c4d1b46b406f084",
+  "hash": "23b22cbfe0c2bc77af9411d1622a0095261b1d9d",
   "date": "2026-10-25"
  },
  "/standards/8-f-a-3-graphing-linear-equations.html": {
-  "hash": "085530da84850a941c4d46885f591816c606d27b",
+  "hash": "5afe214750928646bf8779bdb3d1795217e07c85",
   "date": "2026-10-25"
  },
  "/standards/8-f-b-4-constructing-linear-functions.html": {
-  "hash": "13f0d460d8c5e4b468ca115e58f08a900b64bdbf",
+  "hash": "2e7c7c446a046978e975a811dc4708ba5e7f8b0f",
   "date": "2026-10-25"
  },
  "/standards/8-f-b-5-qualitative-graph-features.html": {
-  "hash": "30361ffae50ec61c22d5f428b79c1789c5f0e6da",
+  "hash": "9d9f1a2fa1c0b0a5ff2d29fd268efb1ec7f0216b",
   "date": "2026-10-25"
  },
  "/standards/8-g-a-1-translations.html": {
-  "hash": "a22db15bddce57f305842ee7a149365745702d5c",
+  "hash": "0b0c42a5ced699c44f313b036e5f9051627a16e0",
   "date": "2026-10-25"
  },
  "/standards/8-g-a-2-reflections-congruence.html": {
-  "hash": "81969fcb94f6425e998c86db7469bcb6f0a12c0e",
+  "hash": "6d32640f033b25055c774bc4fc921c5d019d2de7",
   "date": "2026-10-25"
  },
  "/standards/8-g-a-3-rotations.html": {
-  "hash": "861308489b56f1a8f664a6335c3317e3300a802f",
+  "hash": "ced04f768f6f8c240929b64f12efdb35fd6a86ea",
   "date": "2026-10-25"
  },
  "/standards/8-g-a-4-dilations-similarity.html": {
-  "hash": "ea1e1cf7ac3884564a45b0cbdb274363bc64e3fc",
+  "hash": "5ed9f321e36b804632f5c95041f6ef12c12f70e2",
   "date": "2026-10-25"
  },
  "/standards/8-g-a-5-angle-relationships.html": {
-  "hash": "debef3a42b76940b0f1a4a0f2e3780de7419d912",
+  "hash": "486977371043193119c6475f9990a75e9d5bdcf1",
   "date": "2026-10-25"
  },
  "/standards/8-g-b-6-converse-of-pythagorean-theorem.html": {
-  "hash": "61a104a0b99d221f0e67a6558b281aaff36196b1",
+  "hash": "8c6860899d6c8ff85ebdbb9ea08faa037bd3df9d",
   "date": "2026-10-25"
  },
  "/standards/8-g-b-7-pythagorean-theorem.html": {
-  "hash": "39c1447e0e724d020dc8f69a80fc8afc9c4d1c42",
+  "hash": "69210c1dca9133c01d38d98a8ccae37d2b51806b",
   "date": "2026-10-25"
  },
  "/standards/8-g-b-8-distance-on-coordinate-plane.html": {
-  "hash": "4b57bc09093a96a2d9a47c85a9faabc3c1c1dcb2",
+  "hash": "1705b0bcb0b414e371a8004708275006b187f539",
   "date": "2026-10-25"
  },
  "/standards/8-g-c-9-volume-of-cones-cylinders-spheres.html": {
-  "hash": "f1bd5cb49e1bb47b7c04fbb28880783a0463a3ab",
+  "hash": "66f217061535c94966542d7c8a7de62f37ef1752",
   "date": "2026-10-25"
  },
  "/standards/8-ns-a-1-rational-vs-irrational-numbers.html": {
-  "hash": "72d19e2d2070de1b666f2378bf9fa66c95d8e672",
+  "hash": "102ec95f980fb0e0618d3489a5f9a39b9f87b241",
   "date": "2026-10-25"
  },
  "/standards/8-ns-a-2-approximating-irrationals.html": {
-  "hash": "94cea3f29bbc1b98f4a1546487adcdbd61194c87",
+  "hash": "a677a6b2832068be17f0154e9a59ebdfcfa4d528",
   "date": "2026-10-25"
  },
  "/standards/8-sp-a-1-scatter-plots.html": {
-  "hash": "df7a3299c22c02195677303e35a41531ece9de05",
+  "hash": "be1d76600447f10bd08baa3f546a4f5b901bc4f0",
   "date": "2026-10-25"
  },
  "/standards/8-sp-a-2-lines-of-best-fit.html": {
-  "hash": "e9ba2e30fc038e94a42014a42ecd6c373d5eedef",
+  "hash": "1031b507a71a11de9998b2fe047d7f6f3035e3b4",
   "date": "2026-10-25"
  },
  "/standards/8-sp-a-3-scatter-plot-slope-intercept.html": {
-  "hash": "4cc0a48acb7d4fb7c6623e82c4775cc3e21911e8",
+  "hash": "fd1e7f70595bf044cf7b8a2c3bd0ea4ad03c1f17",
   "date": "2026-10-25"
  },
  "/standards/8-sp-a-4-two-way-tables.html": {
-  "hash": "1cd40c8139491e2268437b30b63b755f47de0246",
+  "hash": "b2babb73f059ccb90a9f850fdf29a62be2af5e71",
   "date": "2026-10-25"
  },
  "/warm-ups.html": {
