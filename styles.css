@@ -1772,3 +1772,15 @@ a.cr-tile__cta:hover { color: var(--g, var(--forest)); }
 .rb-chip.is-on { background: var(--gold); border-color: var(--gold); color: var(--forest-deep); }
 .rb-note { margin: 0; font-size: 0.82rem; color: #a9bab4; }
 @media (max-width: 600px) { .review-band { padding: 34px 0; } .rb-quote { padding: 18px 16px; } .rb-quote blockquote { font-size: 1rem; } }
+
+/* Unit pages, grades 5-8 (Oct 29 2026): the lessons in teaching order */
+.cur-lessons { list-style: none; margin: 1.25rem 0 0; padding: 0; display: grid; gap: .7rem; }
+.cur-lesson { display: grid; gap: .2rem; padding: .85rem 1rem; background: #fff; border: 1px solid var(--line); border-left: 4px solid var(--gold); border-radius: 10px; }
+.cur-lesson__n { font: 600 .72rem/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--charcoal-soft); }
+.cur-lesson__name { font-weight: 700; font-size: 1.05rem; color: var(--forest); }
+.cur-lesson__meta { font-size: .85rem; color: var(--charcoal-soft); }
+.cur-lesson__ican { font-size: .92rem; line-height: 1.45; }
+.cur-lesson__free { margin-left: .5rem; font-size: .8rem; font-weight: 700; color: var(--forest); background: var(--gold-soft); padding: .1rem .5rem; border-radius: 999px; text-decoration: none; white-space: nowrap; }
+.std-sheet-cta__lessons { font-size: .9rem; margin: .25rem 0 .75rem; color: var(--charcoal-soft); }
+.cur-lesson__free { display: inline-flex; align-items: center; gap: .25rem; }
+.cur-lesson__free svg { display: inline-block; width: .75em; height: .75em; }

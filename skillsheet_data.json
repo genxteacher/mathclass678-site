@@ -3308,10 +3308,10 @@
  "alg1": {
   "by_code": {
    "A1": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -3369,13 +3369,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-1.jpg",
     "video": "/assets/videos/ss-a1-1.mp4",
-    "poster": "/assets/videos/ss-a1-1.jpg"
+    "poster": "/assets/videos/ss-a1-1.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A2": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -3433,13 +3438,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-2.jpg",
     "video": "/assets/videos/ss-a1-2.mp4",
-    "poster": "/assets/videos/ss-a1-2.jpg"
+    "poster": "/assets/videos/ss-a1-2.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A3": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -3497,13 +3507,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-3.jpg",
     "video": "/assets/videos/ss-a1-3.mp4",
-    "poster": "/assets/videos/ss-a1-3.jpg"
+    "poster": "/assets/videos/ss-a1-3.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A4": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -3561,13 +3576,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-4.jpg",
     "video": "/assets/videos/ss-a1-4.mp4",
-    "poster": "/assets/videos/ss-a1-4.jpg"
+    "poster": "/assets/videos/ss-a1-4.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A5": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -3625,13 +3645,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-5.jpg",
     "video": "/assets/videos/ss-a1-5.mp4",
-    "poster": "/assets/videos/ss-a1-5.jpg"
+    "poster": "/assets/videos/ss-a1-5.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A6": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -3689,13 +3714,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-6.jpg",
     "video": "/assets/videos/ss-a1-6.mp4",
-    "poster": "/assets/videos/ss-a1-6.jpg"
+    "poster": "/assets/videos/ss-a1-6.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A7": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 31,
     "completed_pages": 19,
@@ -3753,13 +3783,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-7.jpg",
     "video": "/assets/videos/ss-a1-7.mp4",
-    "poster": "/assets/videos/ss-a1-7.jpg"
+    "poster": "/assets/videos/ss-a1-7.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A8": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 31,
     "completed_pages": 19,
@@ -3827,13 +3862,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-8.jpg",
     "video": "/assets/videos/ss-a1-8.mp4",
-    "poster": "/assets/videos/ss-a1-8.jpg"
+    "poster": "/assets/videos/ss-a1-8.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A9": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -3891,13 +3931,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-9.jpg",
     "video": "/assets/videos/ss-a1-9.mp4",
-    "poster": "/assets/videos/ss-a1-9.jpg"
+    "poster": "/assets/videos/ss-a1-9.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A10": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -3955,13 +4000,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-10.jpg",
     "video": "/assets/videos/ss-a1-10.mp4",
-    "poster": "/assets/videos/ss-a1-10.jpg"
+    "poster": "/assets/videos/ss-a1-10.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A11": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -4019,13 +4069,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-11.jpg",
     "video": "/assets/videos/ss-a1-11.mp4",
-    "poster": "/assets/videos/ss-a1-11.jpg"
+    "poster": "/assets/videos/ss-a1-11.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A12": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -4083,13 +4138,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-12.jpg",
     "video": "/assets/videos/ss-a1-12.mp4",
-    "poster": "/assets/videos/ss-a1-12.jpg"
+    "poster": "/assets/videos/ss-a1-12.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A13": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -4146,13 +4206,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-13.jpg",
     "video": "/assets/videos/ss-a1-13.mp4",
-    "poster": "/assets/videos/ss-a1-13.jpg"
+    "poster": "/assets/videos/ss-a1-13.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A14": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -4210,13 +4275,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-14.jpg",
     "video": "/assets/videos/ss-a1-14.mp4",
-    "poster": "/assets/videos/ss-a1-14.jpg"
+    "poster": "/assets/videos/ss-a1-14.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A15": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 31,
     "completed_pages": 19,
@@ -4274,13 +4344,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-15.jpg",
     "video": "/assets/videos/ss-a1-15.mp4",
-    "poster": "/assets/videos/ss-a1-15.jpg"
+    "poster": "/assets/videos/ss-a1-15.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A16": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -4337,13 +4412,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-16.jpg",
     "video": "/assets/videos/ss-a1-16.mp4",
-    "poster": "/assets/videos/ss-a1-16.jpg"
+    "poster": "/assets/videos/ss-a1-16.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A17": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -4400,13 +4480,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-17.jpg",
     "video": "/assets/videos/ss-a1-17.mp4",
-    "poster": "/assets/videos/ss-a1-17.jpg"
+    "poster": "/assets/videos/ss-a1-17.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A18": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -4464,13 +4549,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-18.jpg",
     "video": "/assets/videos/ss-a1-18.mp4",
-    "poster": "/assets/videos/ss-a1-18.jpg"
+    "poster": "/assets/videos/ss-a1-18.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A19": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -4528,13 +4618,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-19.jpg",
     "video": "/assets/videos/ss-a1-19.mp4",
-    "poster": "/assets/videos/ss-a1-19.jpg"
+    "poster": "/assets/videos/ss-a1-19.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A20": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -4591,13 +4686,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-20.jpg",
     "video": "/assets/videos/ss-a1-20.mp4",
-    "poster": "/assets/videos/ss-a1-20.jpg"
+    "poster": "/assets/videos/ss-a1-20.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A21": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -4654,13 +4754,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-21.jpg",
     "video": "/assets/videos/ss-a1-21.mp4",
-    "poster": "/assets/videos/ss-a1-21.jpg"
+    "poster": "/assets/videos/ss-a1-21.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A22": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -4717,13 +4822,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-22.jpg",
     "video": "/assets/videos/ss-a1-22.mp4",
-    "poster": "/assets/videos/ss-a1-22.jpg"
+    "poster": "/assets/videos/ss-a1-22.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A23": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -4785,13 +4895,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-23.jpg",
     "video": "/assets/videos/ss-a1-23.mp4",
-    "poster": "/assets/videos/ss-a1-23.jpg"
+    "poster": "/assets/videos/ss-a1-23.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A24": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -4849,13 +4964,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-24.jpg",
     "video": "/assets/videos/ss-a1-24.mp4",
-    "poster": "/assets/videos/ss-a1-24.jpg"
+    "poster": "/assets/videos/ss-a1-24.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A25": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -4912,13 +5032,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-25.jpg",
     "video": "/assets/videos/ss-a1-25.mp4",
-    "poster": "/assets/videos/ss-a1-25.jpg"
+    "poster": "/assets/videos/ss-a1-25.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A26": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -4975,13 +5100,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-26.jpg",
     "video": "/assets/videos/ss-a1-26.mp4",
-    "poster": "/assets/videos/ss-a1-26.jpg"
+    "poster": "/assets/videos/ss-a1-26.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A27": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 31,
     "completed_pages": 19,
@@ -5038,13 +5168,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-27.jpg",
     "video": "/assets/videos/ss-a1-27.mp4",
-    "poster": "/assets/videos/ss-a1-27.jpg"
+    "poster": "/assets/videos/ss-a1-27.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A28": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 31,
     "completed_pages": 19,
@@ -5101,13 +5236,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-28.jpg",
     "video": "/assets/videos/ss-a1-28.mp4",
-    "poster": "/assets/videos/ss-a1-28.jpg"
+    "poster": "/assets/videos/ss-a1-28.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A29": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 31,
     "completed_pages": 19,
@@ -5164,13 +5304,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-29.jpg",
     "video": "/assets/videos/ss-a1-29.mp4",
-    "poster": "/assets/videos/ss-a1-29.jpg"
+    "poster": "/assets/videos/ss-a1-29.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A30": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -5227,13 +5372,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-30.jpg",
     "video": "/assets/videos/ss-a1-30.mp4",
-    "poster": "/assets/videos/ss-a1-30.jpg"
+    "poster": "/assets/videos/ss-a1-30.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A31": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 31,
     "completed_pages": 19,
@@ -5290,13 +5440,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-31.jpg",
     "video": "/assets/videos/ss-a1-31.mp4",
-    "poster": "/assets/videos/ss-a1-31.jpg"
+    "poster": "/assets/videos/ss-a1-31.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A32": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -5354,13 +5509,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-32.jpg",
     "video": "/assets/videos/ss-a1-32.mp4",
-    "poster": "/assets/videos/ss-a1-32.jpg"
+    "poster": "/assets/videos/ss-a1-32.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A33": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -5417,13 +5577,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-33.jpg",
     "video": "/assets/videos/ss-a1-33.mp4",
-    "poster": "/assets/videos/ss-a1-33.jpg"
+    "poster": "/assets/videos/ss-a1-33.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A34": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -5480,13 +5645,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-34.jpg",
     "video": "/assets/videos/ss-a1-34.mp4",
-    "poster": "/assets/videos/ss-a1-34.jpg"
+    "poster": "/assets/videos/ss-a1-34.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A35": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -5543,13 +5713,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-35.jpg",
     "video": "/assets/videos/ss-a1-35.mp4",
-    "poster": "/assets/videos/ss-a1-35.jpg"
+    "poster": "/assets/videos/ss-a1-35.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A36": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -5607,13 +5782,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-36.jpg",
     "video": "/assets/videos/ss-a1-36.mp4",
-    "poster": "/assets/videos/ss-a1-36.jpg"
+    "poster": "/assets/videos/ss-a1-36.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A37": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -5670,13 +5850,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-37.jpg",
     "video": "/assets/videos/ss-a1-37.mp4",
-    "poster": "/assets/videos/ss-a1-37.jpg"
+    "poster": "/assets/videos/ss-a1-37.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A38": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -5733,13 +5918,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-38.jpg",
     "video": "/assets/videos/ss-a1-38.mp4",
-    "poster": "/assets/videos/ss-a1-38.jpg"
+    "poster": "/assets/videos/ss-a1-38.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A39": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 31,
     "completed_pages": 19,
@@ -5796,13 +5986,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-39.jpg",
     "video": "/assets/videos/ss-a1-39.mp4",
-    "poster": "/assets/videos/ss-a1-39.jpg"
+    "poster": "/assets/videos/ss-a1-39.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A40": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -5859,13 +6054,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-40.jpg",
     "video": "/assets/videos/ss-a1-40.mp4",
-    "poster": "/assets/videos/ss-a1-40.jpg"
+    "poster": "/assets/videos/ss-a1-40.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A41": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -5922,13 +6122,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-41.jpg",
     "video": "/assets/videos/ss-a1-41.mp4",
-    "poster": "/assets/videos/ss-a1-41.jpg"
+    "poster": "/assets/videos/ss-a1-41.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A42": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -5985,13 +6190,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-42.jpg",
     "video": "/assets/videos/ss-a1-42.mp4",
-    "poster": "/assets/videos/ss-a1-42.jpg"
+    "poster": "/assets/videos/ss-a1-42.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A43": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -6048,13 +6258,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-43.jpg",
     "video": "/assets/videos/ss-a1-43.mp4",
-    "poster": "/assets/videos/ss-a1-43.jpg"
+    "poster": "/assets/videos/ss-a1-43.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A44": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -6112,13 +6327,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-44.jpg",
     "video": "/assets/videos/ss-a1-44.mp4",
-    "poster": "/assets/videos/ss-a1-44.jpg"
+    "poster": "/assets/videos/ss-a1-44.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A45": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -6175,13 +6395,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-45.jpg",
     "video": "/assets/videos/ss-a1-45.mp4",
-    "poster": "/assets/videos/ss-a1-45.jpg"
+    "poster": "/assets/videos/ss-a1-45.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A46": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -6238,13 +6463,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-46.jpg",
     "video": "/assets/videos/ss-a1-46.mp4",
-    "poster": "/assets/videos/ss-a1-46.jpg"
+    "poster": "/assets/videos/ss-a1-46.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A47": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -6301,13 +6531,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-47.jpg",
     "video": "/assets/videos/ss-a1-47.mp4",
-    "poster": "/assets/videos/ss-a1-47.jpg"
+    "poster": "/assets/videos/ss-a1-47.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A48": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -6364,13 +6599,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-48.jpg",
     "video": "/assets/videos/ss-a1-48.mp4",
-    "poster": "/assets/videos/ss-a1-48.jpg"
+    "poster": "/assets/videos/ss-a1-48.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A49": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -6427,13 +6667,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-49.jpg",
     "video": "/assets/videos/ss-a1-49.mp4",
-    "poster": "/assets/videos/ss-a1-49.jpg"
+    "poster": "/assets/videos/ss-a1-49.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A50": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -6490,13 +6735,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-50.jpg",
     "video": "/assets/videos/ss-a1-50.mp4",
-    "poster": "/assets/videos/ss-a1-50.jpg"
+    "poster": "/assets/videos/ss-a1-50.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A51": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -6553,13 +6803,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-51.jpg",
     "video": "/assets/videos/ss-a1-51.mp4",
-    "poster": "/assets/videos/ss-a1-51.jpg"
+    "poster": "/assets/videos/ss-a1-51.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A52": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -6616,13 +6871,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-52.jpg",
     "video": "/assets/videos/ss-a1-52.mp4",
-    "poster": "/assets/videos/ss-a1-52.jpg"
+    "poster": "/assets/videos/ss-a1-52.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A53": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -6680,13 +6940,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-53.jpg",
     "video": "/assets/videos/ss-a1-53.mp4",
-    "poster": "/assets/videos/ss-a1-53.jpg"
+    "poster": "/assets/videos/ss-a1-53.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A54": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -6743,13 +7008,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-54.jpg",
     "video": "/assets/videos/ss-a1-54.mp4",
-    "poster": "/assets/videos/ss-a1-54.jpg"
+    "poster": "/assets/videos/ss-a1-54.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A55": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -6806,13 +7076,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-55.jpg",
     "video": "/assets/videos/ss-a1-55.mp4",
-    "poster": "/assets/videos/ss-a1-55.jpg"
+    "poster": "/assets/videos/ss-a1-55.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A56": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -6869,13 +7144,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-56.jpg",
     "video": "/assets/videos/ss-a1-56.mp4",
-    "poster": "/assets/videos/ss-a1-56.jpg"
+    "poster": "/assets/videos/ss-a1-56.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A57": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -6937,13 +7217,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-57.jpg",
     "video": "/assets/videos/ss-a1-57.mp4",
-    "poster": "/assets/videos/ss-a1-57.jpg"
+    "poster": "/assets/videos/ss-a1-57.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A58": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -7001,13 +7286,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-58.jpg",
     "video": "/assets/videos/ss-a1-58.mp4",
-    "poster": "/assets/videos/ss-a1-58.jpg"
+    "poster": "/assets/videos/ss-a1-58.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A59": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -7064,13 +7354,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-59.jpg",
     "video": "/assets/videos/ss-a1-59.mp4",
-    "poster": "/assets/videos/ss-a1-59.jpg"
+    "poster": "/assets/videos/ss-a1-59.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A60": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -7128,13 +7423,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-60.jpg",
     "video": "/assets/videos/ss-a1-60.mp4",
-    "poster": "/assets/videos/ss-a1-60.jpg"
+    "poster": "/assets/videos/ss-a1-60.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A61": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -7192,13 +7492,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-61.jpg",
     "video": "/assets/videos/ss-a1-61.mp4",
-    "poster": "/assets/videos/ss-a1-61.jpg"
+    "poster": "/assets/videos/ss-a1-61.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A62": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -7256,13 +7561,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-62.jpg",
     "video": "/assets/videos/ss-a1-62.mp4",
-    "poster": "/assets/videos/ss-a1-62.jpg"
+    "poster": "/assets/videos/ss-a1-62.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A63": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -7321,13 +7631,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-63.jpg",
     "video": "/assets/videos/ss-a1-63.mp4",
-    "poster": "/assets/videos/ss-a1-63.jpg"
+    "poster": "/assets/videos/ss-a1-63.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A64": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -7384,13 +7699,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-64.jpg",
     "video": "/assets/videos/ss-a1-64.mp4",
-    "poster": "/assets/videos/ss-a1-64.jpg"
+    "poster": "/assets/videos/ss-a1-64.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A65": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -7453,13 +7773,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-65.jpg",
     "video": "/assets/videos/ss-a1-65.mp4",
-    "poster": "/assets/videos/ss-a1-65.jpg"
+    "poster": "/assets/videos/ss-a1-65.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A66": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -7515,13 +7840,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-66.jpg",
     "video": "/assets/videos/ss-a1-66.mp4",
-    "poster": "/assets/videos/ss-a1-66.jpg"
+    "poster": "/assets/videos/ss-a1-66.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A67": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -7579,13 +7909,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-67.jpg",
     "video": "/assets/videos/ss-a1-67.mp4",
-    "poster": "/assets/videos/ss-a1-67.jpg"
+    "poster": "/assets/videos/ss-a1-67.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A68": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -7642,13 +7977,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-68.jpg",
     "video": "/assets/videos/ss-a1-68.mp4",
-    "poster": "/assets/videos/ss-a1-68.jpg"
+    "poster": "/assets/videos/ss-a1-68.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A69": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -7705,13 +8045,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-69.jpg",
     "video": "/assets/videos/ss-a1-69.mp4",
-    "poster": "/assets/videos/ss-a1-69.jpg"
+    "poster": "/assets/videos/ss-a1-69.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A70": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -7768,13 +8113,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-70.jpg",
     "video": "/assets/videos/ss-a1-70.mp4",
-    "poster": "/assets/videos/ss-a1-70.jpg"
+    "poster": "/assets/videos/ss-a1-70.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A71": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -7831,13 +8181,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-71.jpg",
     "video": "/assets/videos/ss-a1-71.mp4",
-    "poster": "/assets/videos/ss-a1-71.jpg"
+    "poster": "/assets/videos/ss-a1-71.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A72": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -7894,13 +8249,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-72.jpg",
     "video": "/assets/videos/ss-a1-72.mp4",
-    "poster": "/assets/videos/ss-a1-72.jpg"
+    "poster": "/assets/videos/ss-a1-72.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A73": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 31,
     "completed_pages": 19,
@@ -7957,13 +8317,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-73.jpg",
     "video": "/assets/videos/ss-a1-73.mp4",
-    "poster": "/assets/videos/ss-a1-73.jpg"
+    "poster": "/assets/videos/ss-a1-73.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A74": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -8020,13 +8385,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-74.jpg",
     "video": "/assets/videos/ss-a1-74.mp4",
-    "poster": "/assets/videos/ss-a1-74.jpg"
+    "poster": "/assets/videos/ss-a1-74.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A75": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 31,
     "completed_pages": 19,
@@ -8083,13 +8453,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-75.jpg",
     "video": "/assets/videos/ss-a1-75.mp4",
-    "poster": "/assets/videos/ss-a1-75.jpg"
+    "poster": "/assets/videos/ss-a1-75.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A76": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 31,
     "completed_pages": 19,
@@ -8146,13 +8521,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-76.jpg",
     "video": "/assets/videos/ss-a1-76.mp4",
-    "poster": "/assets/videos/ss-a1-76.jpg"
+    "poster": "/assets/videos/ss-a1-76.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A77": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 31,
     "completed_pages": 19,
@@ -8209,13 +8589,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-77.jpg",
     "video": "/assets/videos/ss-a1-77.mp4",
-    "poster": "/assets/videos/ss-a1-77.jpg"
+    "poster": "/assets/videos/ss-a1-77.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A78": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 31,
     "completed_pages": 19,
@@ -8274,13 +8659,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-78.jpg",
     "video": "/assets/videos/ss-a1-78.mp4",
-    "poster": "/assets/videos/ss-a1-78.jpg"
+    "poster": "/assets/videos/ss-a1-78.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A79": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -8338,13 +8728,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-79.jpg",
     "video": "/assets/videos/ss-a1-79.mp4",
-    "poster": "/assets/videos/ss-a1-79.jpg"
+    "poster": "/assets/videos/ss-a1-79.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A80": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 31,
     "completed_pages": 19,
@@ -8402,13 +8797,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-80.jpg",
     "video": "/assets/videos/ss-a1-80.mp4",
-    "poster": "/assets/videos/ss-a1-80.jpg"
+    "poster": "/assets/videos/ss-a1-80.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A81": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 31,
     "completed_pages": 19,
@@ -8465,13 +8865,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-81.jpg",
     "video": "/assets/videos/ss-a1-81.mp4",
-    "poster": "/assets/videos/ss-a1-81.jpg"
+    "poster": "/assets/videos/ss-a1-81.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A82": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -8529,13 +8934,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-82.jpg",
     "video": "/assets/videos/ss-a1-82.mp4",
-    "poster": "/assets/videos/ss-a1-82.jpg"
+    "poster": "/assets/videos/ss-a1-82.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A83": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -8593,13 +9003,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-83.jpg",
     "video": "/assets/videos/ss-a1-83.mp4",
-    "poster": "/assets/videos/ss-a1-83.jpg"
+    "poster": "/assets/videos/ss-a1-83.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A84": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 31,
     "completed_pages": 19,
@@ -8658,13 +9073,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-84.jpg",
     "video": "/assets/videos/ss-a1-84.mp4",
-    "poster": "/assets/videos/ss-a1-84.jpg"
+    "poster": "/assets/videos/ss-a1-84.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A85": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -8723,13 +9143,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-85.jpg",
     "video": "/assets/videos/ss-a1-85.mp4",
-    "poster": "/assets/videos/ss-a1-85.jpg"
+    "poster": "/assets/videos/ss-a1-85.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A86": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -8788,13 +9213,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-86.jpg",
     "video": "/assets/videos/ss-a1-86.mp4",
-    "poster": "/assets/videos/ss-a1-86.jpg"
+    "poster": "/assets/videos/ss-a1-86.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A87": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -8853,13 +9283,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-87.jpg",
     "video": "/assets/videos/ss-a1-87.mp4",
-    "poster": "/assets/videos/ss-a1-87.jpg"
+    "poster": "/assets/videos/ss-a1-87.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A88": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -8918,13 +9353,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-88.jpg",
     "video": "/assets/videos/ss-a1-88.mp4",
-    "poster": "/assets/videos/ss-a1-88.jpg"
+    "poster": "/assets/videos/ss-a1-88.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A89": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -8983,13 +9423,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-89.jpg",
     "video": "/assets/videos/ss-a1-89.mp4",
-    "poster": "/assets/videos/ss-a1-89.jpg"
+    "poster": "/assets/videos/ss-a1-89.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A90": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -9048,13 +9493,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-90.jpg",
     "video": "/assets/videos/ss-a1-90.mp4",
-    "poster": "/assets/videos/ss-a1-90.jpg"
+    "poster": "/assets/videos/ss-a1-90.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A91": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -9113,13 +9563,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-91.jpg",
     "video": "/assets/videos/ss-a1-91.mp4",
-    "poster": "/assets/videos/ss-a1-91.jpg"
+    "poster": "/assets/videos/ss-a1-91.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A92": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -9178,13 +9633,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-92.jpg",
     "video": "/assets/videos/ss-a1-92.mp4",
-    "poster": "/assets/videos/ss-a1-92.jpg"
+    "poster": "/assets/videos/ss-a1-92.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A93": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -9243,13 +9703,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-93.jpg",
     "video": "/assets/videos/ss-a1-93.mp4",
-    "poster": "/assets/videos/ss-a1-93.jpg"
+    "poster": "/assets/videos/ss-a1-93.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A94": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -9308,13 +9773,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-94.jpg",
     "video": "/assets/videos/ss-a1-94.mp4",
-    "poster": "/assets/videos/ss-a1-94.jpg"
+    "poster": "/assets/videos/ss-a1-94.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A95": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -9373,13 +9843,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-95.jpg",
     "video": "/assets/videos/ss-a1-95.mp4",
-    "poster": "/assets/videos/ss-a1-95.jpg"
+    "poster": "/assets/videos/ss-a1-95.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A96": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -9438,13 +9913,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-96.jpg",
     "video": "/assets/videos/ss-a1-96.mp4",
-    "poster": "/assets/videos/ss-a1-96.jpg"
+    "poster": "/assets/videos/ss-a1-96.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A97": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 33,
     "completed_pages": 19,
@@ -9503,13 +9983,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-97.jpg",
     "video": "/assets/videos/ss-a1-97.mp4",
-    "poster": "/assets/videos/ss-a1-97.jpg"
+    "poster": "/assets/videos/ss-a1-97.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A98": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 32,
     "completed_pages": 19,
@@ -9568,13 +10053,18 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-98.jpg",
     "video": "/assets/videos/ss-a1-98.mp4",
-    "poster": "/assets/videos/ss-a1-98.jpg"
+    "poster": "/assets/videos/ss-a1-98.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    },
    "A99": {
-    "pages": 7,
+    "pages": 9,
     "key_pages": [
-     5,
-     6
+     6,
+     7
     ],
     "slides": 31,
     "completed_pages": 19,
@@ -9638,7 +10128,12 @@
     ],
     "img": "/assets/images/thumbs_v5/a1-99.jpg",
     "video": "/assets/videos/ss-a1-99.mp4",
-    "poster": "/assets/videos/ss-a1-99.jpg"
+    "poster": "/assets/videos/ss-a1-99.jpg",
+    "homework": {
+     "page": 5,
+     "key_page": 8,
+     "problems": 8
+    }
    }
   },
   "bundles": {

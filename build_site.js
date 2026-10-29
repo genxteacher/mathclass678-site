@@ -596,7 +596,7 @@ const STANDARDS_CONTENT = {
     explanation: [
       'At this standard, students write algebraic expressions to represent word phrases.',
       'The anchor students hold onto: Translate each phrase to its algebraic symbol. For subtraction, ORDER MATTERS — "less than" and "subtracted from" REVERSE the order of terms.',
-      'Sheet #18 Evaluating Expressions builds directly on this skill — students substitute values and compute the expressions written here. Subtraction-order patterns carry forward to equation work.',
+      'The Evaluating Expressions lesson builds directly on this skill — students substitute values and compute the expressions written here. Subtraction-order patterns carry forward to equation work.',
     ],
     examples: [
       { label: '', problem: '3 more than twice n = ?', steps: ['"twice n" → 2n; "3 more than" → +3', 'Write: 2n + 3', '2n + 3'], answer: '2n + 3' },
@@ -624,7 +624,7 @@ const STANDARDS_CONTENT = {
     explanation: [
       'At this standard, students evaluate algebraic expressions by substituting given values.',
       'The anchor students hold onto: SUBSTITUTE → then follow ORDER OF OPERATIONS. Multiply and divide BEFORE you add or subtract.',
-      'Sheet #19 Combining Like Terms simplifies expressions before evaluating — the substitution fluency here is essential for all future equation-solving work.',
+      'The Combining Like Terms lesson simplifies expressions before evaluating — the substitution fluency here is essential for all future equation-solving work.',
     ],
     examples: [
       { label: '', problem: 'Evaluate 4n + 7 when n = 3', steps: ['Substitute n = 3: 4(3) + 7', 'Multiply first: 12 + 7', '19'], answer: '19' },
@@ -638,7 +638,7 @@ const STANDARDS_CONTENT = {
     explanation: [
       'At this standard, students expand expressions by applying the distributive property.',
       'The anchor students hold onto: Distribute the outside factor to EVERY term inside the parentheses — never skip a term.',
-      'Sheet #21 Solving One-Step Equations connects directly — distribution simplifies expressions inside equations, preparing students for the inverse-operation solving strategy.',
+      'The Solving One-Step Equations lesson connects directly — distribution simplifies expressions inside equations, preparing students for the inverse-operation solving strategy.',
     ],
     examples: [
       { label: '', problem: 'Expand: 4(n + 3)', steps: ['Outside factor: 4; terms inside: n and 3', 'Multiply: 4 × n = 4n', '4 × 3 = 12 → 4n + 12'], answer: '4n + 12' },
@@ -652,7 +652,7 @@ const STANDARDS_CONTENT = {
     explanation: [
       'At this standard, students simplify expressions by identifying and combining like terms.',
       'The anchor students hold onto: Only LIKE TERMS can be combined. Constants and variable terms are DIFFERENT types — they cannot be added together.',
-      'Sheet #20 Distributive Property connects directly — CLT gathers terms (3n+2n=5n) while distribution expands them. Both skills together prepare students for writing and solving equations.',
+      'The Distributive Property lesson connects directly — CLT gathers terms (3n+2n=5n) while distribution expands them. Both skills together prepare students for writing and solving equations.',
     ],
     examples: [
       { label: '', problem: 'Simplify: 3n + 2n', steps: ['Identify like terms: 3n and 2n (same variable)', 'Add coefficients: 3 + 2 = 5', '5n'], answer: '5n' },
@@ -736,7 +736,7 @@ const STANDARDS_CONTENT = {
     explanation: [
       'At this standard, students find the area of right triangles, general triangles, parallelograms, trapezoids, and composite polygons by identifying base and perpendicular height and applying the correct area formula.',
       'The anchor students hold onto: To find the area of a polygon, identify the base and perpendicular height, then apply the correct formula for the shape.',
-      'Area of polygons (6.G.A.1) connects to finding volume of prisms with fractional edge lengths in Sheet #32.',
+      'Area of polygons (6.G.A.1) connects to finding volume of prisms with fractional edge lengths, the lesson after it.',
     ],
     examples: [
       { label: 'Right Triangle', problem: 'Find the area. b=6 cm, h=8 cm.', steps: ['A = 1/2 x base x height', 'A = 1/2 x 6 x 8', 'A = 1/2 x 48', 'A = 24 sq cm'], answer: '24 sq cm' },
@@ -750,7 +750,7 @@ const STANDARDS_CONTENT = {
     explanation: [
       'At this standard, students find the volume of right rectangular prisms with fractional edge lengths by applying V = l x w x h and V = B x h, converting mixed numbers to improper fractions, and solving real-world problems.',
       'The anchor students hold onto: To find the volume of a rectangular prism, multiply all three edge lengths: V = l x w x h. Always convert mixed numbers to improper fractions first.',
-      'Where this leads next: Nets & Surface Area (6.G.A.4, Sheet #101) — unfold 3D prisms to compute total surface area.',
+      'Where this leads next: Nets & Surface Area (6.G.A.4) — unfold 3D prisms to compute total surface area.',
     ],
     examples: [
       { label: 'V = l x w x h', problem: 'Find V: l=5/2, w=3/2, h=4 (ft).', steps: ['V = l x w x h', 'l = 2 1/2 = 5/2; w = 1 1/2 = 3/2', 'V = 5/2 x 3/2 x 4 = 15/4 x 4', 'V = 15 ft³'], answer: '15 ft³' },
@@ -864,7 +864,7 @@ const STANDARDS_CONTENT = {
     explanation: [
       'At this standard, students read the scale of a number line, plot rational numbers (fractions and decimals) on a horizontal number line, and plot and read ordered pairs with integer and rational coordinates on a coordinate plane.',
       'The anchor students hold onto: To plot a rational: find the tick value (span ÷ equal parts), then count ticks from 0. For ordered pairs: move x (horizontal) first, then y (vertical).',
-      'Plotting rationals (6.NS.C.6c) leads directly into comparing and ordering rational numbers and absolute value in Sheet #15.',
+      'Plotting rationals (6.NS.C.6c) leads directly into comparing and ordering rational numbers and absolute value.',
     ],
     examples: [
       { label: 'Plot on Number Line', problem: 'Plot 3/4. Axis: 0 to 1, 4 parts.', steps: ['Tick value: 1 ÷ 4 = 1/4 per tick', 'Count 3 ticks RIGHT of 0', 'Plot dot at 3/4'], answer: '3/4 (between 0 and 1)' },
@@ -2366,7 +2366,11 @@ let _glossSheets = null;
 function glossSheets() {
   if (_glossSheets) return _glossSheets;
   const byPath = {};
-  products.filter(p => p.live).forEach(p => { byPath[p.pageUrl] = { name: p.name, gradeLabel: p.gradeLabel, gradeKey: p.grade + 'th', codes: [p.ccss], free: p.free, url: p.pageUrl }; });
+  // Oct 29 2026: the 6-8 sheet pages are gone; a term linked to a sheet now links the unit that teaches that lesson.
+  products.filter(p => p.live).forEach(p => {
+    const u = CUR_UNIT_OF_SHEET[String(p.num)];
+    byPath[p.pageUrl] = { name: `Unit ${u.n}: ${u.name}`, gradeLabel: u.grade.name, gradeKey: p.grade + 'th', codes: [p.ccss], free: false, url: u.pageUrl };
+  });
   A1_SHEETS.forEach(s => { byPath[s.pageUrl] = { name: s.skill, gradeLabel: 'Algebra 1', gradeKey: 'Algebra', codes: s.codes, free: s.free, url: s.pageUrl }; });
   const fwd = {}, rev = {};
   Object.entries(GLOSS_SHEET_LINKS).forEach(([slug, paths]) => {
@@ -2391,12 +2395,12 @@ function glossSheets() {
   return (_glossSheets = { fwd, rev });
 }
 function glossTeachBand(t) {
-  const list = glossSheets().fwd[t.slug] || [];
+  const list = [...new Map((glossSheets().fwd[t.slug] || []).map(x => [x.url, x])).values()];
   if (!list.length) return '';
   const items = list.map(s => `<li><a class="gloss-teach__item" href="${s.url}"><span class="gloss-teach__name">${esc(s.name)}</span><span class="gloss-teach__meta">${esc(s.gradeLabel)} · <span class="gloss-teach__code">${esc(s.codes.join(' · '))}</span>${s.free ? ' · <span class="gloss-teach__free">Free</span>' : ''}</span>${ICON.arrow}</a></li>`).join('');
   return `<div class="gloss-block gloss-block--teach">
           <h2>Teach it</h2>
-          <p class="gloss-teach__lead">The 4-in-1 Skill Sheet${list.length > 1 ? 's' : ''} that teach${list.length > 1 ? '' : 'es'} it: guided notes, practice, an exit ticket and an interactive Teacher Deck.</p>
+          <p class="gloss-teach__lead">Where it is taught, with guided notes, practice, homework, an exit ticket and an interactive Teacher Deck.</p>
           <ul class="gloss-teach">${items}</ul>
         </div>`;
 }
@@ -2554,57 +2558,25 @@ function nav(active) {
       <span class="brand__mark">${SVG.mark}</span>
       <span class="brand__text">
         <span class="brand__name">math class 678</span>
-        <span class="brand__sub">4-in-1 skill sheets</span>
+        <span class="brand__sub">grades 5–8 · algebra 1</span>
       </span>
     </a>
     <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navlinks"><span></span></button>
     <nav class="nav__links" id="navlinks" aria-label="Primary">
       <a class="nav__link" href="https://statetestmath.com/">State Tests</a>
-      ${link('/catalog.html', 'Catalog', 'catalog')}
-      ${link('/bundles.html', 'Bundles', 'bundles')}
+      ${link('/5th-grade.html', '5th', 'grade-5')}
+      ${link('/grade-6.html', '6th', 'grade-6')}
+      ${link('/grade-7.html', '7th', 'grade-7')}
+      ${link('/grade-8.html', '8th', 'grade-8')}
+      ${link('/algebra-1.html', 'Algebra 1', 'algebra-1')}
       ${link('/warm-ups.html', 'Warm-Ups', 'warm-ups')}
       ${link('/readiness.html', 'Readiness', 'readiness')}
-      ${link('/5th-grade.html', '5th Grade', 'grade-5')}
-      ${link('/algebra-1.html', 'Algebra 1', 'algebra-1')}
       ${link('/word-wall.html', 'Glossary', 'word-wall')}
       ${link('/free.html', 'Free', 'free')}
       <a class="btn btn--primary btn--sm nav__cta" href="${TPT_STORE}" target="_blank" rel="noopener">TPT Store ${ICON.ext}</a>
     </nav>
   </div>
 </header>`;
-}
-
-/* High-prominence free-sheet block (homepage + every sheet page). Links straight to the
-   free Order of Operations listing on TPT; nothing is collected on the site. */
-function freeHero(opts) {
-  opts = opts || {};
-  const eyebrow = opts.eyebrow || 'Free 4-in-1 Skill Sheet';
-  const heading = opts.heading || 'Get a complete skill sheet free';
-  const lead = opts.lead || 'The Order of Operations 4-in-1 Skill Sheet for 6th grade is free on Teachers Pay Teachers — a 7-page student packet and a 33-slide interactive teacher deck. The full lesson, in the same format as every paid sheet.';
-  return `<section class="free-hero" id="free-sheet">
-    <div class="wrap free-hero__grid">
-      <div class="free-hero__copy reveal">
-        <span class="eyebrow">${eyebrow}</span>
-        <h2>${heading}</h2>
-        <p class="free-hero__lead">${lead}</p>
-        <ul class="free-hero__list">
-          <li>A complete lesson on one skill, not a watered-down sample</li>
-          <li>Guided notes, practice, real-world application, and an exit ticket with a worked answer key</li>
-          <li>A 33-slide interactive teacher deck that reveals each step one click at a time</li>
-        </ul>
-      </div>
-      <div class="free-hero__panel reveal">
-        <figure class="free-hero__thumb">
-          <img src="/assets/images/freebies/free_ooo-sheet.jpg" alt="Free Order of Operations 4-in-1 Skill Sheet and interactive teacher deck for 6th grade math" width="900" height="900" loading="lazy" decoding="async">
-        </figure>
-        <div class="free-hero__card">
-          <span class="free-hero__label">Free on Teachers Pay Teachers</span>
-          <a class="btn btn--primary free-hero__btn" href="${FREE_OOO_URL}" target="_blank" rel="noopener">Get it free on TPT ${ICON.ext}</a>
-          <a class="free-hero__more" href="/free.html">See every free resource ${ICON.arrow}</a>
-        </div>
-      </div>
-    </div>
-  </section>`;
 }
 
 function footer() {
@@ -2616,14 +2588,13 @@ function footer() {
           <span class="brand__mark" style="width:30px;height:30px">${SVG.mark}</span>
           <span class="brand__text"><span class="brand__name">math class 678</span></span>
         </a>
-        <p>4-in-1 Skill Sheets for grades 6, 7, and 8 Common Core math. One skill, one complete lesson: a guided student packet and an interactive Teacher Deck.</p>
+        <p>Math curriculum for 5th grade, grades 6–8 and Algebra 1, unit by unit: guided notes, homework, interactive Teacher Decks and unit tests.</p>
       </div>
       <div>
         <h4>Browse</h4>
         <ul class="footer__links">
           <li><a href="https://statetestmath.com/">State test practice</a></li>
-          <li><a href="/catalog.html">All Skill Sheets</a></li>
-          <li><a href="/bundles.html">Bundles</a></li>
+          <li><a href="/catalog.html">All resources</a></li>
           <li><a href="/warm-ups.html">Warm-Ups</a></li>
           <li><a href="/readiness.html">Readiness Checks</a></li>
           <li><a href="/5th-grade.html">5th Grade</a></li>
@@ -2641,7 +2612,7 @@ function footer() {
           <li><a href="/about.html">About</a></li>
           <li><a href="/contact.html">Contact</a></li>
           <li><a href="${TPT_STORE}" target="_blank" rel="noopener">TPT Store</a></li>
-          <li><a href="/get-started.html">Get a free sheet</a></li>
+          <li><a href="/get-started.html">Try a free lesson</a></li>
         </ul>
       </div>
       <div>
@@ -2656,7 +2627,7 @@ function footer() {
     </div>
     <div class="footer__bottom">
       <span>&copy; ${new Date().getFullYear()} Math Class 678. All rights reserved.</span>
-      <span>Every sheet sold on <a href="${TPT_STORE}" target="_blank" rel="noopener">Teachers Pay Teachers</a>.</span>
+      <span>Every resource sold on <a href="${TPT_STORE}" target="_blank" rel="noopener">Teachers Pay Teachers</a>.</span>
     </div>
   </div>
 </footer>`;
@@ -2706,34 +2677,22 @@ function productCard(p) {
    FAQ — homepage block + FAQPage schema. Teacher-voice questions.
    ============================================================================ */
 const FAQ = [
-  {
-    q: 'What is a 4-in-1 Skill Sheet?',
-    a: `Each sheet covers one Common Core standard and moves a student through four phases: a guided Learn page with fill-in notes, a worked example and a Watch Out error pair; ${NUMW[SS_PRACTICE]} Practice problems from warm-up to stretch, with an answer bank for self-checking; Apply, with ${NUMW[SS_WORD]} real-world problems and an error analysis; and an Exit Ticket with an I-can self-rating. It comes as ${SS_KIT}, with speaker notes on every problem.`
-  },
-  {
-    q: 'Can I print just one standard at a time?',
-    a: 'Yes. That is the whole point of one skill per sheet. When you are teaching 7.RP.A.2 this week, you print that sheet — not a forty-page packet. It keeps the structure of the standard visible and makes intervention, reteach, and spiral review easy to target.'
-  },
-  {
-    q: 'Will these work for a sub day or emergency plan?',
-    a: 'They are built for it. Because each sheet is self-contained — reference, practice, application, and an exit ticket with an answer key — a substitute can hand it out and a student can work through it without you in the room. There is also a free 3-day emergency sub plan on the free resources page.'
-  },
-  {
-    q: 'How are the sheets aligned to Common Core?',
-    a: 'Every sheet maps to exactly one CCSS standard, labeled with its clean code (for example 8.EE.B.5). The catalog is sequenced by standard so you can match what you are teaching to the sheet that covers it. Standards fluency is built into the design, not bolted on.'
-  },
-  {
-    q: 'Where do I actually buy the sheets?',
-    a: 'Every sheet lives on Teachers Pay Teachers. This site is a catalog and showcase — it sells nothing directly. Each sheet has its own page here with the standard and the skill, and the button routes you straight to the matching TPT listing to purchase and download.'
-  },
-  {
-    q: 'Is there anything free to try first?',
-    a: 'Yes. There are three free 4-in-1 Skill Sheets, one per grade (Order of Operations for 6th grade, Combining Like Terms for 7th grade and Multi-Step Equations for 8th grade), plus free curriculum maps, back-to-school tools, end-of-year reviews and a 3-day emergency sub plan. Start on the free resources page before spending a dollar.'
-  },
-  {
-    q: 'Do you collect my email address?',
-    a: 'No. This site does not collect email addresses and has no mailing list. Every free resource links straight to its free listing on Teachers Pay Teachers, and you download it there.'
-  }
+  { q: 'What do I get when I buy a unit?',
+    a: 'In grades 5 to 8, each unit is one download: every lesson in teaching order (guided notes, practice, apply problems, an exit ticket and a homework page, with fully worked answer keys and an interactive Teacher Deck), plus a quiz, a unit review and Unit Test Forms A and B in color, InkSaver and editable Word.' },
+  { q: 'Can I buy a single lesson?',
+    a: 'In Algebra 1, yes: every lesson is its own listing, and each unit and the whole year also come as bundles. In grades 5 to 8 the lessons come inside their unit download, and each grade has one full lesson free to try.' },
+  { q: 'Is there homework?',
+    a: 'Yes. Every lesson in grades 5 to 8 and Algebra 1 has a homework page of eight new problems (two warm-up, four standard and two stretch) with its own fully worked key.' },
+  { q: 'How are the lessons aligned to Common Core?',
+    a: 'Every lesson is built to the Common Core standard it teaches, printed on the lesson and listed on its unit page here, so you can match lessons to your pacing guide. The free pacing guide for each course lays out the whole year.' },
+  { q: 'Will these work for a sub day?',
+    a: 'Each lesson is self-contained, with notes, practice, an exit ticket and a worked key, so a substitute can run it. There is also a free 3-day emergency sub plan on the free resources page.' },
+  { q: 'Where do I buy?',
+    a: 'Everything is sold on Teachers Pay Teachers. This site is a guide to the curriculum and sells nothing directly; every button goes to the matching TPT listing.' },
+  { q: 'Is there anything free to try first?',
+    a: 'Yes. One full lesson from every course is free, along with the pacing guides, notation and vocabulary guides, a week of warm-ups, back-to-school diagnostics, end-of-year reviews and a 3-day emergency sub plan.' },
+  { q: 'Do you collect my email address?',
+    a: 'No. This site does not collect email addresses and has no mailing list. Every free resource links straight to its free listing on Teachers Pay Teachers, and you download it there.' }
 ];
 
 
@@ -2758,8 +2717,10 @@ const FREE_RESOURCES = [
   { key:'notation-pre-algebra', title:'Pre-Algebra Notation & Vocabulary Guide', sub:'Back to School Reference', grade:8, gradeLabel:'8th Grade', cat:'Classroom & Planning', thumb:'free_pre-algebra-notation-and-vocabulary-guide.jpg', url:'https://www.teacherspayteachers.com/Product/FREE-Pre-Algebra-Notation-and-Vocabulary-Guide-8th-Grade-Back-to-School-17223460' },
   { key:'notation-algebra-1', title:'Notation & Vocabulary Guide', sub:'Back to School Reference', grade:'all', gradeLabel:'Algebra 1', cat:'Classroom & Planning', thumb:'free_algebra-1-notation-and-vocabulary-guide.jpg', url:'https://www.teacherspayteachers.com/Product/FREE-Algebra-1-Notation-and-Vocabulary-Guide-Back-to-School-Reference-17215091' },
   { key:'pacing-5th', title:'Pacing Guide', sub:'Curriculum Scope and Sequence', grade:'all', gradeLabel:'5th Grade', cat:'Classroom & Planning', thumb:'free_5th-grade-math-pacing-guide.jpg', url:'https://www.teacherspayteachers.com/Product/FREE-5th-Grade-Math-Pacing-Guide-Math-Curriculum-Scope-and-Sequence-18041192' },
+  { key:'pacing-6th', title:'Pacing Guide', sub:'Curriculum Scope and Sequence', grade:6, gradeLabel:'6th Grade', cat:'Classroom & Planning', thumb:'free_6th-grade-math-pacing-guide.jpg', url:'https://www.teacherspayteachers.com/Product/FREE-6th-Grade-Math-Pacing-Guide-Math-Curriculum-Scope-and-Sequence-18107921' },
+  { key:'pacing-7th', title:'Pacing Guide', sub:'Curriculum Scope and Sequence', grade:7, gradeLabel:'7th Grade', cat:'Classroom & Planning', thumb:'free_7th-grade-math-pacing-guide.jpg', url:'https://www.teacherspayteachers.com/Product/FREE-7th-Grade-Math-Pacing-Guide-Math-Curriculum-Scope-and-Sequence-18112254' },
+  { key:'pacing-8th', title:'Pacing Guide', sub:'Curriculum Scope and Sequence', grade:8, gradeLabel:'8th Grade', cat:'Classroom & Planning', thumb:'free_8th-grade-math-pacing-guide.jpg', url:'https://www.teacherspayteachers.com/Product/FREE-8th-Grade-Math-Pacing-Guide-Math-Curriculum-Scope-and-Sequence-18116790' },
   { key:'pacing-algebra-1', title:'Pacing Guide', sub:'180-Day and Block Schedule', grade:'all', gradeLabel:'Algebra 1', cat:'Classroom & Planning', thumb:'free_algebra-1-pacing-guide.jpg', url:'https://www.teacherspayteachers.com/Product/FREE-Algebra-1-Pacing-Guide-180-Day-Block-Schedule-Scope-and-Sequence-17886211' },
-  { key:'lesson-rounding-decimals', title:'Rounding Decimals', sub:'A full lesson: notes, slides and key', grade:'all', gradeLabel:'5th Grade', cat:'Try a Lesson', thumb:'free_rounding-decimals.jpg', url:'https://www.teacherspayteachers.com/Product/Rounding-Decimals-Worksheet-5th-Grade-Math-Notes-Slides-Key-18037122' },
   // End of Year
   { key:'eoy-review-6th',       title:'End of Year Review',               sub:'Skills Check Worksheet',               grade:6,     gradeLabel:'6th Grade',       cat:'End of Year',           thumb:'free_eoy-review-6th.jpg',            url:'https://www.teacherspayteachers.com/Product/6th-Grade-Math-End-of-Year-Review-FREE-Skills-Check-Worksheet-Spring-2026-16213887' },
   { key:'eoy-review-7th',       title:'End of Year Review',               sub:'Skills Check Worksheet',               grade:7,     gradeLabel:'7th Grade',       cat:'End of Year',           thumb:'free_eoy-review-7th.jpg',            url:'https://www.teacherspayteachers.com/Product/7th-Grade-Math-End-of-Year-Review-FREE-Skills-Check-Worksheet-Spring-2026-16214437' },
@@ -2820,91 +2781,38 @@ function freeResourceCard(r) {
    PAGE: home
    ============================================================================ */
 function pageHome() {
-  const featured = [
-    products.find(p => p.num === '4'),   // Understanding Ratios (6)
-    products.find(p => p.num === '77'),  // Slope-Intercept (8)
-    products.find(p => p.num === '41'),  // Percent Problems (7)
-    products.find(p => p.num === '96'),  // Pythagorean Theorem (8)
-    products.find(p => p.num === '16'),  // Exponents (6)
-    products.find(p => p.num === '50')   // Experimental & Theoretical Probability (7)
-  ].filter(Boolean);
-
-  const phase = (key, n, title, body) => `<article class="phase-card reveal">
-      <span class="phase-card__n">${n}</span>
-      <span class="phase-card__ico">${SVG.phaseIcons[key]}</span>
-      <h3>${title}</h3>
-      <p>${body}</p>
-    </article>`;
-
-  const band = (g, name, blurb) => {
-    const c = counts[g];
-    const photoAlt = { 6: '6th grade math worksheet with ratio table and teal accent', 7: '7th grade coordinate plane worksheet with protractor and coral accent', 8: '8th grade graphing linear equations worksheet with navy accent' };
-    return `<a class="band band--${g} reveal" href="/grade-${g}.html">
-      <img src="/assets/images/grade_${g}_photo.jpg" alt="${photoAlt[g]}" class="band__photo" width="900" height="900" loading="lazy" decoding="async">
-      <span class="band__grade">${name}</span>
-      <h3>Grade ${g} Math</h3>
-      <p>${blurb}</p>
-      <span class="band__foot">
-        <span class="band__count"><b>${c}</b> skill sheets</span>
-        <span class="band__go">Browse ${ICON.arrow}</span>
-      </span>
-    </a>`;
-  };
-
-  // Review schema. Individual Review objects emit whenever genuine attributed
-  // reviews exist in REVIEWS (they are displayed on-page in the proof band, so
-  // this is policy-compliant). AggregateRating is added only when real
-  // store-wide TPT figures are supplied via TPT_RATING (never fabricated).
-  const orgReviewSchema = (REVIEWS.length || TPT_RATING) ? [Object.assign({
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'Math Class 678',
-    url: SITE_URL
-  },
-    TPT_RATING ? {
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: TPT_RATING.ratingValue,
-        reviewCount: TPT_RATING.reviewCount,
-        bestRating: 5,
-        worstRating: 1
-      }
-    } : {},
-    REVIEWS.length ? {
-      review: REVIEWS.map(r => ({
-        '@type': 'Review',
-        reviewRating: { '@type': 'Rating', ratingValue: r.rating, bestRating: 5, worstRating: 1 },
-        author: { '@type': 'Person', name: r.author },
-        reviewBody: r.body,
-        ...(r.datePublished ? { datePublished: r.datePublished } : {})
-      }))
-    } : {}
-  )] : [];
-  // Oct 13 2026: Search Console flagged "Multiple reviews without aggregateRating". Google does not show
-  // review snippets for reviews a business publishes about itself (self-serving), so no Review or
-  // AggregateRating markup is emitted at all; the quotes stay visible on the page.
-  const ratingSchema = [];   // (orgReviewSchema kept above for reference only; never emitted)
+  // Oct 29 2026: the site follows the store. Grades 5-8 sell as unit downloads + a year curriculum bundle;
+  // Algebra 1 as single lessons, unit bundles and the curriculum bundle. The 6-8 skill sheet line is retired.
+  const lessonsAll = CUR_GRADES.reduce((n, C) => n + C.lessons.length, 0) + A1_SHEETS.length;
+  const unitsAll = CUR_GRADES.reduce((n, C) => n + C.units.length, 0) + A1_UNITS.length;
+  const courses = CUR_GRADES.map(C => wuTile({ url: C.hub, img: C.curriculum.img, accent: C.accent, name: `${C.ord} Grade Math`,
+      kicker: `${C.units.length} units · ${C.lessons.length} lessons`, desc: `Units from ${curRange(C)}, or the whole year for ${C.curriculum.price}.`, cta: `See ${C.ord} grade` }))
+    .concat([wuTile({ url: '/algebra-1.html', img: A1_CURR.img, accent: 'gold', name: 'Algebra 1',
+      kicker: `${A1_UNITS.length} units · ${A1_SHEETS.length} lessons`, desc: `Lessons from ${A1_PRICE}, unit bundles from ${A1_UNIT_PRICES}, or the whole year for ${A1_CURR.price}.`, cta: 'See Algebra 1' })]);
+  const freeLessons = CUR_GRADES.map(C => wuTile({ url: C.free.url, external: true, img: C.free.img, accent: 'gold', name: C.free.skill,
+      kicker: `Free · ${C.ord} grade lesson`, desc: 'The full lesson: packet, homework, answer keys and Teacher Deck.', cta: 'Get it free on TPT' }))
+    .concat(A1_FREE.map(s => wuTile({ url: s.url, external: true, img: s.img, accent: 'gold', name: s.skill,
+      kicker: 'Free · Algebra 1 lesson', desc: 'The full lesson: packet, answer key and Teacher Deck.', cta: 'Get it free on TPT' })));
+  const unitImg = CUR['6'].units[0].listing.img;
+  const reviews = REVIEWS.filter(r => !/skill sheets/i.test(r.product));   // the 6-8 skill sheet bundles are retired
+  const why = (cls, h, p) => `<article class="why__card why__card--${cls} reveal"><h3>${h}</h3><p>${p}</p></article>`;
 
   return head({
-    title: 'Math Class 678 | Math Lessons & Worksheets, Grades 5–8 & Algebra 1',
-    desc: 'Math lessons for grades 5–8 and Algebra 1: one skill per lesson, a guided packet and a Teacher Deck. Designed, reviewed, and checked by a teacher with 25+ years.',
+    title: 'Math Class 678 | Math Curriculum, Grades 5–8 & Algebra 1',
+    desc: 'Math curriculum for grades 5–8 and Algebra 1: guided notes, homework, Teacher Decks and unit tests. Designed, reviewed, and checked by a teacher with 25+ years.',
     path: 'index.html',
     jsonld: JSON.stringify([{
       '@context': 'https://schema.org',
       '@type': 'WebSite',
       name: 'Math Class 678',
       url: SITE_URL,
-      description: 'A complete catalog of 4-in-1 Skill Sheets for middle school math, grades 6–8, CCSS-aligned. Designed, reviewed, and checked by a math teacher with 25+ years in the classroom.',
+      description: 'Math curriculum for 5th grade, grades 6–8 and Algebra 1, unit by unit: guided notes, homework, interactive Teacher Decks and unit tests. Designed, reviewed, and checked by a math teacher with 25+ years in the classroom.',
       publisher: { '@type': 'Organization', name: 'Math Class 678', url: SITE_URL }
     }, {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      mainEntity: FAQ.map(item => ({
-        '@type': 'Question',
-        name: item.q,
-        acceptedAnswer: { '@type': 'Answer', text: item.a }
-      }))
-    }, ...ratingSchema]).replace(/</g, '\\u003c')
+      mainEntity: FAQ.map(item => ({ '@type': 'Question', name: item.q, acceptedAnswer: { '@type': 'Answer', text: item.a } }))
+    }]).replace(/</g, '\\u003c')
   }) + nav('home') + `
 <main id="main">
   <aside class="il-homebanner" aria-label="State test practice">
@@ -2924,96 +2832,105 @@ function pageHome() {
     <div class="hero__bg">${SVG.heroBg}</div>
     <div class="wrap hero__inner">
       <div class="hero__copy">
-        <span class="eyebrow hero__eyebrow">${counts.all} sheets · grades 6–8 · CCSS</span>
+        <span class="eyebrow hero__eyebrow">Grades 5–8 · Algebra 1 · Common Core</span>
         <h1><span class="phase gold">Learn.</span> Practice.<br>Apply. <span class="phase">Exit ticket.</span></h1>
-        <p class="hero__lead">Standards-aligned math lessons for 5th grade, grades 6–8 and Algebra 1, designed, reviewed, and checked by Greg, a teacher with 25+ years in the classroom. Every skill as a full lesson: a guided Learn page, ${NUMW[SS_PRACTICE]} practice problems, application problems and a built-in exit ticket, plus an interactive Teacher Deck that builds every step click by click.</p>
+        <p class="hero__lead">A math curriculum for 5th grade, grades 6–8 and Algebra 1, designed, reviewed, and checked by Greg, a teacher with 25+ years in the classroom. Every lesson has guided notes, practice, an exit ticket, a homework page, worked answer keys and an interactive Teacher Deck that builds every step click by click. Every unit ends with a quiz, a review and two unit tests.</p>
         <div class="hero__cta">
-          <a class="btn btn--primary" href="/catalog.html">Browse all sheets ${ICON.arrow}</a>
+          <a class="btn btn--primary" href="#courses">Find your grade ${ICON.arrow}</a>
           <a class="btn btn--on-dark" href="/free.html">Free resources</a>
         </div>
         <div class="hero__meta">
-          <span class="hero__stat"><b>${counts.all}</b><span>Skill sheets</span></span>
-          <span class="hero__stat"><b>6–8</b><span>Grade bands</span></span>
-          <span class="hero__stat"><b>4</b><span>Phases per lesson</span></span>
-          <span class="hero__stat"><b>25 yr</b><span>Classroom-built</span></span>
+          <span class="hero__stat"><b>${lessonsAll}</b><span>Lessons</span></span>
+          <span class="hero__stat"><b>${unitsAll}</b><span>Units</span></span>
+          <span class="hero__stat"><b>5</b><span>Courses</span></span>
+          <span class="hero__stat"><b>25+ yr</b><span>In the classroom</span></span>
         </div>
       </div>
       <div class="quadmark">${SVG.heroQuad}</div>
     </div>
   </section>
 ${featuredReviewBand()}
-  ${freeHero({ heading: 'Start with a free skill sheet', lead: 'The Order of Operations 4-in-1 Skill Sheet for 6th grade is free on Teachers Pay Teachers \u2014 a complete lesson with an interactive teacher deck. See exactly how the format works before you spend a dollar.' })}
-
-  <!-- METHOD STRIP -->
-  <section class="method-strip" aria-label="The four phases of every lesson">
+  <!-- COURSES -->
+  <section class="section gridpaper" id="courses">
     <div class="wrap">
-      <p class="method-strip__eyebrow">The 4-in-1 lesson</p>
-      <ol class="method-strip__row">
-        <li class="method-strip__step method-strip__step--teal"><span class="method-strip__n">01</span><b>Learn</b><span>Guided notes · Key rule · Worked example</span></li>
-        <li class="method-strip__step method-strip__step--gold"><span class="method-strip__n">02</span><b>Practice</b><span>${NUMW[SS_PRACTICE].charAt(0).toUpperCase() + NUMW[SS_PRACTICE].slice(1)} problems · Answer bank</span></li>
-        <li class="method-strip__step method-strip__step--coral"><span class="method-strip__n">03</span><b>Apply</b><span>Real-world problems · Error analysis</span></li>
-        <li class="method-strip__step method-strip__step--navy"><span class="method-strip__n">04</span><b>Exit Ticket</b><span>I-can self-rating · Worked answer key</span></li>
-      </ol>
-      <p class="method-strip__note">One skill per lesson: a ${SS_PAGES}-page student packet and an interactive Teacher Deck, every standard for grades 6 to 8.</p>
+      ${secHead('By grade', 'Find your course', 'Each course is a full year in units. Buy one unit at a time, or the whole year in the curriculum bundle.')}
+      <div class="cr-grid">${courses.join('')}</div>
     </div>
   </section>
 
-  <!-- PRODUCT SPREAD -->
+  <!-- METHOD STRIP -->
+  <section class="method-strip" aria-label="The four parts of every lesson">
+    <div class="wrap">
+      <p class="method-strip__eyebrow">Every lesson</p>
+      <ol class="method-strip__row">
+        <li class="method-strip__step method-strip__step--teal"><span class="method-strip__n">01</span><b>Learn</b><span>Guided notes · Key rule · Worked example</span></li>
+        <li class="method-strip__step method-strip__step--gold"><span class="method-strip__n">02</span><b>Practice</b><span>Warm-up to stretch · Answer bank</span></li>
+        <li class="method-strip__step method-strip__step--coral"><span class="method-strip__n">03</span><b>Apply</b><span>Real-world problems · Error analysis</span></li>
+        <li class="method-strip__step method-strip__step--navy"><span class="method-strip__n">04</span><b>Exit Ticket</b><span>I-can self-rating · Worked answer key</span></li>
+      </ol>
+      <p class="method-strip__note">Then a homework page of eight new problems with its own worked key, and an interactive Teacher Deck for the whole lesson.</p>
+    </div>
+  </section>
+
+  <!-- WHAT'S IN A UNIT -->
   <section class="spread section">
     <div class="wrap spread__grid">
       <div class="spread__copy reveal">
         <span class="eyebrow">What's inside</span>
-        <h2>A complete lesson on one skill</h2>
-        <p>Every 4-in-1 Skill Sheet carries a full lesson on one standard — ${SS_KIT}, sequenced from first instruction to formative check. Everything you need for the skill, nothing from the next one.</p>
+        <h2>A whole unit in one download</h2>
+        <p>Each unit in grades 5–8 is one download on Teachers Pay Teachers, with the lessons in teaching order and every assessment for the unit.</p>
         <ul class="spread__list">
-          <li>A guided Learn page: words to own, the key rule, a worked example and a Watch Out error pair, filled in as you teach</li>
-          <li>${NUMW[SS_PRACTICE].charAt(0).toUpperCase() + NUMW[SS_PRACTICE].slice(1)} practice problems (${NUMW[SS_WARM]} warm-up, ${NUMW[SS_STD]} standard, ${NUMW[SS_STRETCH]} stretch) with an answer bank for self-checking</li>
-          <li>${NUMW[SS_WORD].charAt(0).toUpperCase() + NUMW[SS_WORD].slice(1)} real-world problems and an error analysis</li>
-          <li>An exit ticket, two per page, with an I-can self-rating, and a fully worked answer key with the common mistakes</li>
-          <li>An interactive Teacher Deck of ${SS_SLIDES} slides: a your-turn slide for every problem, then the solution one line per click</li>
+          <li>Student packets in color and InkSaver: guided notes, practice, apply problems, an exit ticket and a homework page for every lesson</li>
+          <li>Answer keys for every page, each problem worked step by step, with the common mistakes and what to do about each</li>
+          <li>An interactive Teacher Deck for every lesson, in PowerPoint with speaker notes, plus a completed deck PDF</li>
+          <li>A quiz, a unit review and Unit Test Forms A and B, each with a worked key, in color, InkSaver and editable Word</li>
+          <li>A unit overview with the days for each lesson, matched to the free pacing guide</li>
         </ul>
       </div>
       <div class="reveal">
-        <img src="/assets/images/thumbs_v5/1.jpg" alt="Order of Operations skill sheet for 6th grade: the student packet and the interactive Teacher Deck" class="spread__img spread__img--square" width="640" height="640" loading="lazy" decoding="async">
+        <img src="${unitImg}" alt="${esc(CUR['6'].units[0].listing.title)}" class="spread__img spread__img--square" width="640" height="640" loading="lazy" decoding="async">
       </div>
     </div>
   </section>
 
-  <!-- WHY ONE SHEET PER SKILL -->
+  <!-- WHY -->
   <section class="section why">
     <div class="wrap">
       <div class="sec-head reveal">
         <div class="sec-head__t">
-          <span class="eyebrow">Why one sheet per skill</span>
-          <h2>Built for how the day actually goes</h2>
-          <p>Most worksheet packets bury one skill inside forty pages. After twenty-five years in the classroom, I designed these the other way around: one standard, one complete sheet, so the right resource is always the one already in your hand.</p>
+          <span class="eyebrow">Built for the real school day</span>
+          <h2>What a unit does for you</h2>
+          <p>After twenty-five years in the classroom, I design each unit around the parts of the day that take the most planning: the first lesson, the homework and the test.</p>
         </div>
       </div>
       <div class="why__grid">
-        <article class="why__card why__card--6 reveal">
-          <h3>Bell-ringers and warm-ups</h3>
-          <p>Pull the reference page or a handful of practice problems for a five-minute opener that lands exactly on the standard you are teaching this week — no hunting, no editing out off-topic problems.</p>
-        </article>
-        <article class="why__card why__card--7 reveal">
-          <h3>Intervention and small groups</h3>
-          <p>When a student needs one specific skill retaught, hand them that one sheet. The progression from the worked example to independent practice does the heavy lifting while you work the table.</p>
-        </article>
-        <article class="why__card why__card--8 reveal">
-          <h3>Sub days and emergencies</h3>
-          <p>Each sheet is self-contained — reference, practice, application, and an exit ticket with an answer key. A substitute can run it without you, and you come back to formative data instead of a lost day.</p>
-        </article>
-        <article class="why__card why__card--6 reveal">
-          <h3>Spiral review and test prep</h3>
-          <p>Because every sheet maps to a single standard, building a spiral review or a targeted prep set is a matter of pulling the standards you need — not rewriting a packet to fit.</p>
-        </article>
-        <article class="why__card why__card--7 reveal">
-          <h3>First instruction</h3>
-          <p>The guided reference page and the interactive Teacher Deck carry a full lesson, so a sheet can anchor your direct instruction, not just the practice that follows it.</p>
-        </article>
-        <article class="why__card why__card--8 reveal">
-          <h3>Formative checks</h3>
-          <p>The built-in exit ticket tells you who is ready to move on and who needs another pass — before you have planned tomorrow, while there is still time to adjust.</p>
-        </article>
+        ${why('6', 'First instruction', 'The Teacher Deck carries the lesson: it fills in the notes one blank per click, works the example a step at a time and builds every solution a line at a time, with speaker notes on what to ask.')}
+        ${why('7', 'Homework that matches', 'Every lesson has a homework page of eight new problems, from warm-up to stretch, with its own fully worked key to grade from or post for students.')}
+        ${why('8', 'Formative checks', 'The exit ticket, two per page, with an I-can self-rating, tells you who is ready to move on before you plan tomorrow.')}
+        ${why('6', 'Tests you can edit', 'Each unit has a quiz, a review and two parallel test forms, with item analysis sheets, in color, InkSaver and editable Word.')}
+        ${why('7', 'Pacing done', 'A free pacing guide for each course puts every lesson, quiz, review and test on the calendar, and each unit overview gives the days for each lesson.')}
+        ${why('8', 'Try one first', 'Each course has a full lesson free on TPT, the same packet, homework, keys and Teacher Deck as every paid lesson.')}
+      </div>
+    </div>
+  </section>
+
+  <!-- FREE LESSONS -->
+  <section class="section cr-alt">
+    <div class="wrap">
+      ${secHead('Free', 'Try a full lesson free', 'One complete lesson from each course, free on Teachers Pay Teachers.')}
+      <div class="cr-grid">${freeLessons.join('')}</div>
+      <p style="margin-top:1.25rem"><a class="btn btn--ghost" href="/free.html">See every free resource ${ICON.arrow}</a></p>
+    </div>
+  </section>
+
+  <!-- ALSO -->
+  <section class="section">
+    <div class="wrap">
+      ${secHead('Also for your classroom', 'Warm-ups, readiness checks and a glossary')}
+      <div class="cr-grid">
+        ${wuTile({ url: '/warm-ups.html', img: (() => { const c = WU.courses.find(x => x.slug === 'grade-6') || {}; return (c.yr && c.yr.img) || ''; })(), accent: 'teal', name: 'Daily Math Warm-Ups', kicker: 'Grades 5–8 · Algebra 1', desc: 'A full year of bell ringers: four problems a day, a slide to project and a page to print.', cta: 'See the warm-ups' })}
+        ${wuTile({ url: '/readiness.html', img: '', accent: 'coral', name: 'Readiness Checks', kicker: 'Beginning of the year', desc: 'A diagnostic for 6th, 7th, 8th grade and Algebra 1, to see what students bring with them.', cta: 'See the readiness checks' })}
+        ${wuTile({ url: '/word-wall.html', img: '', accent: 'navy', name: 'Math Glossary', kicker: 'Free reference', desc: 'Kid-friendly definitions for grades 5–8, Algebra 1 and Geometry, each tied to its standard.', cta: 'Open the glossary' })}
       </div>
     </div>
   </section>
@@ -3025,11 +2942,10 @@ ${featuredReviewBand()}
         <div class="sec-head__t">
           <span class="eyebrow">From teachers</span>
           <h2>What teachers are saying</h2>
-          ${TPT_RATING ? `<p class="proof__rating"><span class="proof__stars" aria-hidden="true">★★★★★</span> <strong>${TPT_RATING.ratingValue}</strong> average across <strong>${TPT_RATING.reviewCount.toLocaleString()}</strong> ratings on Teachers Pay Teachers</p>` : ''}
         </div>
       </div>
       <div class="proof__grid">
-        ${REVIEWS.map(r => `<article class="proof__card proof__card--${r.tone} reveal">
+        ${reviews.map(r => `<article class="proof__card proof__card--${r.tone} reveal">
           <div class="proof__stars" aria-label="5 out of 5 stars">★★★★★</div>
           <p class="proof__title">${escHtml(r.title)}</p>
           <blockquote class="proof__quote"><p>${escHtml(r.body)}</p></blockquote>
@@ -3050,63 +2966,11 @@ ${featuredReviewBand()}
       </figure>
       <div class="founder__copy reveal">
         <span class="eyebrow">Meet the teacher</span>
-        <h2>Every sheet is designed, reviewed, and checked by one teacher who has taught these standards for 25+ years</h2>
-        <p>I am Greg. I have spent more than twenty-five years teaching grades 6 to 8 math, and I built Math Class 678 out of the thing I always needed: one standard, one complete sheet, the whole lesson in your hand. The common-misconception callouts on every sheet are not generic — they are the exact errors I have watched students make, year after year.</p>
+        <h2>Every lesson is designed, reviewed, and checked by one teacher who has taught these standards for 25+ years</h2>
+        <p>I am Greg. I have spent more than twenty-five years in the math classroom, and I built Math Class 678 out of the thing I always needed: the whole lesson in your hand, from the first example to the homework and the unit test. The common-misconception callouts in every lesson are not generic. They are the exact errors I have watched students make, year after year.</p>
         <div class="founder__cta">
           <a class="btn btn--ghost" href="/about.html">Read the full story ${ICON.arrow}</a>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- GRADE BANDS -->
-  <section class="section gridpaper">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div class="sec-head__t">
-          <span class="eyebrow">By grade</span>
-          <h2>Find your grade band</h2>
-          <p>Aligned to Common Core, sequenced by standard, color-coded by grade so you can find the exact skill you are teaching this week.</p>
-        </div>
-        <a class="btn btn--ghost" href="/catalog.html">See full catalog ${ICON.arrow}</a>
-      </div>
-      <div class="bands__grid">
-        ${band('6', '6th grade', 'Ratios, the number system, expressions and equations, statistics, and geometry — the full sixth-grade arc.')}
-        ${band('7', '7th grade', 'Proportional relationships, rational-number operations, probability, sampling, and geometry across the seventh-grade standards.')}
-        ${band('8', '8th grade', 'Linear functions, systems, exponents and scientific notation, transformations, and the Pythagorean Theorem.')}
-      </div>
-    </div>
-  </section>
-
-  <!-- BUNDLES BAND -->
-  <section class="section bundles-band">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div class="sec-head__t">
-          <span class="eyebrow">Buy in bulk</span>
-          <h2>Bundles for every strand and the full year</h2>
-          <p>Grab a whole strand, a single topic, or an entire grade at once. ${bundles.length} bundles across grades 6 to 8, including the complete 103-sheet ULTIMATE bundle.</p>
-        </div>
-        <a class="btn btn--ghost reveal" href="/bundles.html">See all bundles ${ICON.arrow}</a>
-      </div>
-      <div class="card-grid">
-        ${bundles.filter(b => ['6th-grade-math-mega-bundle','7th-grade-math-mega-bundle','8th-grade-math-mega-bundle','middle-school-math-ultimate-bundle'].includes(b.slug)).map(bundleCard).join('\n')}
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURED -->
-  <section class="section">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div class="sec-head__t">
-          <span class="eyebrow">A look inside</span>
-          <h2>Featured skill sheets</h2>
-          <p>A sample from across the catalog. Each card opens its own page with the standard, the skill, and a direct link to Teachers Pay Teachers.</p>
-        </div>
-      </div>
-      <div class="card-grid">
-        ${featured.map(productCard).join('\n')}
       </div>
     </div>
   </section>
@@ -3135,10 +2999,10 @@ ${featuredReviewBand()}
     <div class="wrap ctaband__inner reveal">
       <span class="eyebrow" style="justify-content:center;color:var(--gold-soft)">No cost</span>
       <h2>Try before you buy</h2>
-      <p>Skill sheets, back-to-school tools, curriculum maps, end-of-year reviews and a sub plan — all free on Teachers Pay Teachers. Start here before spending a dollar.</p>
+      <p>A full lesson from every course, pacing guides, notation guides, warm-ups, end-of-year reviews and a sub plan, all free on Teachers Pay Teachers.</p>
       <div class="ctaband__btns">
         <a class="btn btn--primary" href="/free.html">Browse free resources ${ICON.arrow}</a>
-        <a class="btn btn--on-dark" href="/catalog.html">Browse the catalog</a>
+        <a class="btn btn--on-dark" href="/catalog.html">See everything</a>
       </div>
     </div>
   </section>
@@ -3150,235 +3014,47 @@ ${featuredReviewBand()}
    PAGE: catalog
    ============================================================================ */
 function pageCatalog() {
-  // strands present, in canonical order
-  const order = ['EE', 'NS', 'RP', 'SP', 'G', 'F'];
-  const present = order.filter(s => products.some(p => p.strand === s));
-  const strandChip = s =>
-    `<button class="chip" data-filter-strand="${s}" aria-pressed="false">${STRAND_NAME[s]}</button>`;
-
-  const gradeChip = (val, label) =>
-    `<button class="chip${val === 'all' ? ' is-active' : ''}" data-filter-grade="${val}"${val !== 'all' ? ` data-grade="${val}"` : ''} aria-pressed="${val === 'all'}">${label}</button>`;
-
-  // sort: grade then sheet number
-  const sorted = products.slice().sort((a, b) => (a.grade - b.grade) || (Number(a.num) - Number(b.num)));
-
-  return head({
-    title: 'Middle School Math Skill Sheets — Grades 6–8 CCSS | Math Class 678',
-    desc: `Browse all ${counts.all} 4-in-1 Skill Sheets for grades 6, 7 and 8 math, aligned to Common Core. Filter by grade, strand or standard; each links to TPT.`,
-    path: 'catalog.html',
-    jsonld: breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Catalog', url: '/catalog.html' }])
-  }) + nav('catalog') + `
-<main id="main">
-  ${breadcrumb([{ name: 'Home', url: '/' }, { name: 'Catalog' }])}
-  <section class="page-hero catalog-page-hero">
-    <div class="wrap page-hero__inner">
-      <span class="eyebrow">The catalog</span>
-      <h1>Every skill sheet, one place</h1>
-      <p>All ${counts.all} 4-in-1 Skill Sheets across grades 6 to 8, sequenced by Common Core standard. Filter by grade or strand, or search by skill. Each card opens a page with the standard, the skill, and a link to Teachers Pay Teachers.</p>
-      <p class="catalog-hero__gradelinks">Or jump to a grade hub: <a href="/grade-6.html">6th grade</a> · <a href="/grade-7.html">7th grade</a> · <a href="/grade-8.html">8th grade</a> · <a href="/algebra-1.html">Algebra 1</a></p>
-    </div>
-  </section>
+  // Oct 29 2026: everything on sale, by course. The old filterable grid of 103 skill sheets is retired with the sheets.
+  const course = (eyebrow, h, p, tiles, more) => `<section class="section">
     <div class="wrap">
-      <div class="catbar__row">
-        <div class="filtergroup" role="group" aria-label="Filter by grade">
-          <span class="filtergroup__label">Grade</span>
-          ${gradeChip('all', 'All')}
-          ${gradeChip('6', '6th')}
-          ${gradeChip('7', '7th')}
-          ${gradeChip('8', '8th')}
-        </div>
-        <div class="search">
-          ${ICON.search}
-          <input type="search" id="catalog-search" placeholder="Search a skill or standard…" aria-label="Search skill sheets">
-        </div>
-      </div>
-      <div class="catbar__row" style="margin-top:.8rem">
-        <div class="filtergroup" role="group" aria-label="Filter by strand">
-          <span class="filtergroup__label">Strand</span>
-          <button class="chip is-active" data-filter-strand="all" aria-pressed="true">All strands</button>
-          ${present.map(strandChip).join('\n          ')}
-        </div>
-        <span class="catbar__count" id="catalog-count"><b>${counts.all}</b> sheets</span>
-      </div>
-    </div>
-  </div>
-
-  <section class="section" style="padding-top:0">
-    <div class="wrap">
-      <div class="card-grid" id="catalog-grid">
-        ${sorted.map(productCard).join('\n')}
-      </div>
-      <div class="catalog-empty" id="catalog-empty">
-        <h3>No sheets match those filters</h3>
-        <p>Try clearing the search or choosing a different grade.</p>
-      </div>
-    </div>
-  </section>
-</main>
-` + footer() + scripts();
-}
-
-/* ============================================================================
-   PAGE: per-grade landing pages — /grade-6.html, /grade-7.html, /grade-8.html
-   Real SEO pages (not filtered catalog views): grade-specific hero, strand
-   breakdown, full sheet grid grouped by strand, grade bundles, free CTA.
-   ============================================================================ */
-const GRADE_INTRO = {
-  '6': {
-    hero: 'Sixth grade is where arithmetic becomes algebra. Students meet ratios and unit rates, extend the number system to negatives and absolute value, write and evaluate expressions, solve one-step equations, and build the statistics and geometry foundations the next two years depend on.',
-    strands: 'Across the sixth-grade catalog you will find every domain Common Core asks for: Ratios & Proportional Relationships, The Number System, Expressions & Equations, Statistics & Probability, and Geometry.'
-  },
-  '7': {
-    hero: 'Seventh grade is the proportional-reasoning year. Students operate fluently with rational numbers and integers, work with proportional relationships and percent, solve two-step equations and inequalities, and move into probability, sampling, and the geometry of circles, angles, and scale.',
-    strands: 'The seventh-grade catalog covers The Number System, Ratios & Proportional Relationships, Expressions & Equations, Statistics & Probability, and Geometry — sequenced the way the standards build.'
-  },
-  '8': {
-    hero: 'Eighth grade is pre-algebra in everything but name. Students work with exponents and scientific notation, master slope and linear equations, solve systems, formalize the idea of a function, and tackle transformations, the Pythagorean Theorem, and bivariate data.',
-    strands: 'The eighth-grade catalog spans Expressions & Equations, Functions, The Number System, Geometry, and Statistics & Probability — the full bridge into high-school algebra.'
-  }
-};
-
-function pageGrade(grade) {
-  const gO = gradeOrdinal(grade);
-  const intro = GRADE_INTRO[grade] || { hero: '', strands: '' };
-  const gradeSheets = products
-    .filter(p => String(p.grade) === String(grade))
-    .sort((a, b) => Number(a.num) - Number(b.num));
-  const n = gradeSheets.length;
-
-  // group by strand, in canonical order
-  const strandOrder = ['RP', 'NS', 'EE', 'F', 'G', 'SP'];
-  const present = strandOrder.filter(s => gradeSheets.some(p => p.strand === s));
-
-  const strandSections = present.map(s => {
-    const inStrand = gradeSheets.filter(p => p.strand === s);
-    return `<section class="section grade-strand" style="padding-top:0">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div class="sec-head__t">
-          <span class="eyebrow">${esc(STRAND_NAME[s])}</span>
-          <h2>${esc(STRAND_NAME[s])}</h2>
-          <p>${inStrand.length} ${inStrand.length === 1 ? 'skill sheet' : 'skill sheets'} in this strand for ${gO} grade.</p>
-        </div>
-      </div>
-      <div class="card-grid">
-        ${inStrand.map(productCard).join('\n        ')}
-      </div>
+      ${secHead(eyebrow, h, p)}
+      <div class="cr-grid">${tiles.join('')}</div>
+      ${more || ''}
     </div>
   </section>`;
-  }).join('\n');
-
-  // grade bundles (exclude the all-grades ULTIMATE)
-  const gradeBundles = bundles.filter(b => String(b.grade) === String(grade));
-  const bundleSection = gradeBundles.length ? `<section class="section bundles-band">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div class="sec-head__t">
-          <span class="eyebrow">Buy in bulk</span>
-          <h2>${gO} grade bundles</h2>
-          <p>Grab a whole strand, a single topic, or the entire ${gO}-grade year at once — each a single download on Teachers Pay Teachers.</p>
-        </div>
-        <a class="btn btn--ghost reveal" href="/bundles.html">See all bundles ${ICON.arrow}</a>
-      </div>
-      <div class="card-grid">
-        ${gradeBundles.map(bundleCard).join('\n        ')}
-      </div>
-    </div>
-  </section>` : '';
-
-  const accentName = { '6': 'teal', '7': 'coral', '8': 'navy' }[grade] || '';
-
-  // schema: CollectionPage + ItemList + breadcrumb
-  const itemList = {
-    '@context': 'https://schema.org',
-    '@type': 'CollectionPage',
-    name: `${gO} Grade Math Skill Sheets`,
-    description: `${n} CCSS-aligned 4-in-1 Skill Sheets for ${gO} grade math.`,
-    url: `${SITE_URL}/grade-${grade}.html`,
-    isPartOf: { '@type': 'WebSite', name: 'Math Class 678', url: SITE_URL },
-    mainEntity: {
-      '@type': 'ItemList',
-      numberOfItems: n,
-      itemListElement: gradeSheets.map((p, i) => ({
-        '@type': 'ListItem',
-        position: i + 1,
-        url: SITE_URL + p.pageUrl,
-        name: p.name
-      }))
-    }
-  };
-  const crumbs = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL + '/' },
-      { '@type': 'ListItem', position: 2, name: 'Catalog', item: SITE_URL + '/catalog.html' },
-      { '@type': 'ListItem', position: 3, name: `Grade ${grade}`, item: `${SITE_URL}/grade-${grade}.html` }
-    ]
-  };
-  const jsonld = JSON.stringify([itemList, crumbs]).replace(/</g, '\\u003c');
-
+  const curBlock = C => course(`${C.ord} grade · ${C.units.length} units`, `${C.ord} Grade Math`,
+    `${C.lessons.length} lessons, one download per unit from ${curRange(C)}, or the whole year for ${C.curriculum.price}.`,
+    C.units.map(curUnitTile).concat([wuTile({ url: C.curriculum.url, external: true, img: C.curriculum.img, accent: 'gold', name: C.curriculum.title.split(' | ')[0],
+      kicker: `All ${C.units.length} units · ${C.curriculum.price}`, desc: 'Every unit download in one purchase.', cta: 'View on TPT' })]),
+    `<p style="margin-top:1rem"><a class="cr-link" href="${C.hub}">More about ${C.ord} grade ${ICON.arrow}</a></p>`);
   return head({
-    title: `${gO} Grade Math Skill Sheets — ${n} CCSS-Aligned Lessons | Math Class 678`,
-    desc: `${n} 4-in-1 Skill Sheets for ${gO} grade math, aligned to Common Core. One standard per lesson: a guided student packet plus an interactive Teacher Deck.`,
-    path: `grade-${grade}.html`,
-    jsonld
+    title: 'All Math Resources: Grades 5–8 & Algebra 1 | Math Class 678',
+    desc: 'Every Math Class 678 resource on one page: the 5th-8th grade math units and curriculum bundles, Algebra 1 lessons and bundles, warm-ups and readiness checks.',
+    path: 'catalog.html',
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'All resources', url: '/catalog.html' }])),
   }) + nav('catalog') + `
-<main id="main" class="grade-page grade-page--${grade}">
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    <div class="wrap">
-      <ol>
-        <li><a href="/">Home</a></li>
-        <li><a href="/catalog.html">Catalog</a></li>
-        <li aria-current="page">${gO} Grade</li>
-      </ol>
-    </div>
-  </nav>
-
-  <section class="page-hero grade-hero grade-hero--${accentName}">
-    <div class="wrap page-hero__inner">
-      <span class="eyebrow">${gO} grade math · CCSS</span>
-      <h1>${gO} Grade Math Skill Sheets</h1>
-      <p>${esc(intro.hero)}</p>
-      <p class="grade-hero__strands">${esc(intro.strands)}</p>
-      <div class="hero__cta" style="margin-top:1.4rem">
-        <a class="btn btn--primary" href="/catalog.html?grade=${grade}">Filter the catalog ${ICON.arrow}</a>
-        <a class="btn btn--ghost" href="/free.html">Free ${gO}-grade resources</a>
-      </div>
-      <div class="hero__meta" style="margin-top:1.6rem">
-        <span class="hero__stat"><b>${n}</b><span>Skill sheets</span></span>
-        <span class="hero__stat"><b>${present.length}</b><span>Strands covered</span></span>
-        <span class="hero__stat"><b>4</b><span>Phases per lesson</span></span>
-      </div>
-    </div>
-  </section>
-
-  ${strandSections}
-
-  ${bundleSection}
-
-  ${gradeClassroomBand(grade)}
-
-  <section class="ctaband">
-    <div class="wrap ctaband__inner reveal">
-      <span class="eyebrow" style="justify-content:center;color:var(--gold-soft)">No cost</span>
-      <h2>Try a ${gO}-grade sheet free</h2>
-      <p>Start with the free resources before spending a dollar — skill sheets, curriculum maps, warm-ups and more on Teachers Pay Teachers.</p>
-      <div class="ctaband__btns">
-        <a class="btn btn--primary" href="/free.html">Browse free resources ${ICON.arrow}</a>
-        <a class="btn btn--on-dark" href="${TPT_STORE}" target="_blank" rel="noopener">Visit the TPT store</a>
-      </div>
-    </div>
-  </section>
+<main id="main">
+  ${breadcrumb([{ name: 'Home', url: '/' }, { name: 'All resources' }])}
+  ${crHero('Everything in the store', 'All math resources, by course', 'Grades 5 to 8 come as one download per unit and a curriculum bundle for the year. Algebra 1 comes lesson by lesson, by unit or for the whole year. Every button goes to Teachers Pay Teachers.', '')}
+  ${CUR_GRADES.map(curBlock).join('')}
+  ${course(`Algebra 1 · ${A1_UNITS.length} units`, 'Algebra 1', `${A1_SHEETS.length} lessons from ${A1_PRICE} each, unit bundles from ${A1_UNIT_PRICES}, or the curriculum bundle for ${A1_CURR.price}.`,
+    A1_UNITS.map(u => wuTile({ url: u.pageUrl, img: u.bundle.img, accent: 'gold', name: `Unit ${u.n}: ${u.name}`, kicker: `${u.sheets.length} lessons · bundle ${u.bundle.price}`, desc: u.sheets.map(x => x.skill).join(', '), cta: 'See the unit' })),
+    `<p style="margin-top:1rem"><a class="cr-link" href="/algebra-1.html">More about Algebra 1 ${ICON.arrow}</a></p>`)}
+  ${course('Every day', 'Warm-ups and readiness checks', 'Daily bell ringers for every course, and a beginning-of-year diagnostic for 6th, 7th, 8th grade and Algebra 1.', [
+    wuTile({ url: '/warm-ups.html', img: (() => { const c = WU.courses.find(x => x.slug === 'grade-6') || {}; return (c.yr && c.yr.img) || ''; })(), accent: 'teal', name: 'Math Warm-Ups', kicker: 'Grades 5–8 · Algebra 1', desc: 'Four problems a day for the whole year.', cta: 'See the warm-ups' }),
+    wuTile({ url: '/readiness.html', img: '', accent: 'coral', name: 'Readiness Checks', kicker: 'Beginning of the year', desc: 'What students bring with them, skill by skill.', cta: 'See the readiness checks' }),
+    wuTile({ url: '/free.html', img: '', accent: 'gold', name: 'Free resources', kicker: 'Free on TPT', desc: 'A full lesson from every course, pacing guides and more.', cta: 'See the free resources' })])}
+  ${noteBand()}
 </main>
 ` + footer() + scripts();
 }
 
-/* ============================================================================
-   PAGE: free
-   ============================================================================ */
 function pageFree() {
-  const frees = products.filter(p => p.free).sort((a, b) => a.grade - b.grade);
+  // Oct 29 2026: one free lesson per course (the free 6-8 skill sheets are now the free lessons of the 6-8 curricula)
+  const freeLessons = CUR_GRADES.map(C => wuTile({ url: C.free.url, external: true, img: C.free.img, accent: 'gold', name: C.free.skill,
+      kicker: `${C.ord} grade · Unit ${C.free.unit}`, desc: 'The full lesson: packet, homework, answer keys and Teacher Deck.', cta: 'Get it free on TPT' }))
+    .concat(A1_FREE.map(s => wuTile({ url: s.url, external: true, img: s.img, accent: 'gold', name: s.skill,
+      kicker: `Algebra 1 · Unit ${s.unit.n}`, desc: 'The full lesson: packet, answer key and Teacher Deck.', cta: 'Get it free on TPT' })));
 
   // Group FREE_RESOURCES by category in defined order
   const CAT_DEFS = [
@@ -3392,13 +3068,7 @@ function pageFree() {
       key:    'Classroom & Planning',
       eyebrow:'Classroom & Planning',
       h2:     'Resources for the plan book',
-      desc:   'Notation and vocabulary guides from 5th grade to Algebra 1, and full-year pacing guides for 5th grade and Algebra 1.'
-    },
-    {
-      key:    'Try a Lesson',
-      eyebrow:'Try a Lesson',
-      h2:     'A full 5th grade lesson, free',
-      desc:   'One complete lesson from the 5th grade curriculum: guided notes, practice, an exit ticket, the answer key and the click-by-click Teacher Deck.'
+      desc:   'Notation and vocabulary guides from 5th grade to Algebra 1, and a full-year pacing guide for every course.'
     },
     {
       key:    'End of Year',
@@ -3433,23 +3103,21 @@ function pageFree() {
           <p>Full lessons, notation and pacing guides, back-to-school tools, end-of-year reviews and a three-day emergency sub plan \u2014 all free on Teachers Pay Teachers.</p>
         </div>
         <div class="free-hero__photo">
-          <img src="/assets/images/free_hero.jpg" alt="Free 4-in-1 Skill Sheet packets for 6th and 7th grade math with teal and coral accent bands" class="free-hero__img" width="1440" height="960" loading="lazy" decoding="async">
+          <img src="/assets/images/free_hero.jpg" alt="Math Class 678 lesson packets for 6th and 7th grade math with teal and coral accent bands" class="free-hero__img" width="1440" height="960" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FREE SKILL SHEETS (featured) -->
+  <!-- FREE LESSONS (featured) -->
   <section class="section">
     <div class="wrap">
       <div class="rcat__head reveal">
-        <span class="eyebrow">Free 4-in-1 Skill Sheets</span>
-        <h2>The full method, no cost</h2>
-        <p>${NUMW[frees.length].charAt(0).toUpperCase() + NUMW[frees.length].slice(1)} complete 4-in-1 Skill Sheets, one per grade \u2014 the same as every paid sheet: ${SS_KIT}. Nothing stripped out.</p>
+        <span class="eyebrow">Try a lesson</span>
+        <h2>A full lesson from every course</h2>
+        <p>One complete lesson from each course, the same as every paid lesson: guided notes, practice, an exit ticket, worked answer keys and the click-by-click Teacher Deck. Nothing stripped out.</p>
       </div>
-      <div class="free-grid">
-        ${frees.map(productCard).join('\n')}
-      </div>
+      <div class="cr-grid">${freeLessons.join('')}</div>
     </div>
   </section>
 
@@ -3476,11 +3144,11 @@ function pageFree() {
   <section class="section gridpaper">
     <div class="wrap">
       <div class="method__head reveal" style="margin-bottom:1.6rem">
-        <span class="eyebrow">Full catalog</span>
+        <span class="eyebrow">Everything</span>
         <h2>Ready to go further</h2>
-        <p>${counts.all} 4-in-1 Skill Sheets across grades 6\u20138. One skill per lesson, four learning phases, Common Core aligned.</p>
+        <p>Full-year math for 5th grade, grades 6\u20138 and Algebra 1, one unit at a time or the whole year in a curriculum bundle.</p>
       </div>
-      <a class="btn btn--ghost" href="/catalog.html">Browse the full catalog ${ICON.arrow}</a>
+      <a class="btn btn--ghost" href="/catalog.html">See all resources ${ICON.arrow}</a>
     </div>
   </section>
 
@@ -3509,8 +3177,8 @@ function pageAbout() {
   }).replace(/</g, '\\u003c');
 
   return head({
-    title: 'About the Teacher — Middle School Math Skill Sheets | Math Class 678',
-    desc: 'Math Class 678 is run by Greg, a teacher with 25+ years in middle school math. Every skill sheet covers one Common Core standard and is checked by him.',
+    title: 'About the Teacher | Math Class 678',
+    desc: 'Math Class 678 is run by Greg, a teacher with 25+ years in middle school math. Every lesson is built to one Common Core standard and checked by him.',
     path: 'about.html',
     jsonld: founderSchema
   }) + nav('about') + `
@@ -3528,23 +3196,23 @@ function pageAbout() {
       <div class="prose reveal">
         <p>I am Greg, and I have taught middle-school math for more than twenty-five years. In that time I have taught the same standards hundreds of times over — ratios in sixth grade, proportional reasoning in seventh, slope and linear functions in eighth — and watched class after class hit the same walls in the same places. <strong>Math Class 678</strong> is everything I learned in those years, turned into the resource I always wished I could hand a new teacher down the hall.</p>
 
-        <p>The idea started the way most good classroom ideas do: out of frustration. I would find a reference chart I liked from one place, a practice worksheet from another, and a quiz from a third — and spend a prep period stitching three mismatched files into something coherent, only to do it again for the next skill the next week. So I planned the thing I actually needed. One standard, one sheet, the whole lesson in one place.</p>
+        <p>The idea started the way most good classroom ideas do: out of frustration. I would find a reference chart I liked from one place, a practice worksheet from another, and a quiz from a third — and spend a prep period stitching three mismatched files into something coherent, only to do it again for the next skill the next week. So I planned the thing I actually needed: the whole lesson in one place, and then the whole unit, from the first example to the homework and the test.</p>
 
         <blockquote class="about-pull">
           <p>I did not set out to make worksheets. I set out to stop reinventing the same lesson every Sunday night.</p>
         </blockquote>
 
-        <h2>Why one sheet per skill</h2>
-        <p>Middle-school math breaks down into discrete, teachable skills, and each Common Core standard deserves its own complete treatment. Bundle ten skills into a forty-page packet and the structure of the math disappears; the student cannot see where one idea ends and the next begins. Split a single skill across a reference sheet, a worksheet, and a separate quiz and you spend the period hunting through three files. The 4-in-1 format keeps the whole arc of a skill — learn it, practice it, apply it, prove it — in one packet you can hand out in thirty seconds, with a Teacher Deck that teaches it on screen.</p>
+        <h2>Why one lesson per skill</h2>
+        <p>Middle-school math breaks down into discrete, teachable skills, and each Common Core standard deserves its own complete treatment. Bundle ten skills into a forty-page packet and the structure of the math disappears; the student cannot see where one idea ends and the next begins. Split a single skill across a reference sheet, a worksheet, and a separate quiz and you spend the period hunting through three files. Each lesson keeps the whole arc of a skill — learn it, practice it, apply it, prove it — in one packet you can hand out in thirty seconds, with a homework page to follow and a Teacher Deck that teaches it on screen. Each unit puts those lessons in teaching order and ends with a quiz, a review and a test.</p>
 
         <h2>The mistakes are the part you cannot fake</h2>
-        <p>Practice problems are the easy part. What twenty-five years actually buys you is knowing exactly how a thirteen-year-old will get a problem wrong. When students distribute, a predictable share of them will multiply the first term and forget the second. When they write inequalities, they will reverse the symbol for "at least." Those specific, recurring errors are built into every sheet as a Watch Out pair on the reference page and an error-analysis problem in Apply — because the hardest part of teaching a skill is not explaining it right, it is catching it going wrong.</p>
+        <p>Practice problems are the easy part. What twenty-five years actually buys you is knowing exactly how a thirteen-year-old will get a problem wrong. When students distribute, a predictable share of them will multiply the first term and forget the second. When they write inequalities, they will reverse the symbol for "at least." Those specific, recurring errors are built into every lesson as a Watch Out pair on the Learn page and an error-analysis problem in Apply — because the hardest part of teaching a skill is not explaining it right, it is catching it going wrong.</p>
 
         <h2>Designed to survive your copier</h2>
-        <p>Every sheet comes with an ink-saver edition, so each line stays legible after a pass through a tired school Xerox at 7:40 in the morning. The layouts assume the realities of the job: the sub day, the fire drill, the kid who was absent, the copier that only does black and white. These are not decorative documents. They are made to be used hard.</p>
+        <p>Every packet and test comes with an InkSaver edition, so each line stays legible after a pass through a tired school Xerox at 7:40 in the morning. The layouts assume the realities of the job: the sub day, the fire drill, the kid who was absent, the copier that only does black and white. These are not decorative documents. They are made to be used hard.</p>
 
-        <h2>How the catalog works</h2>
-        <p>This site is a showcase and a directory. It sells nothing on its own — every resource lives on <a href="${TPT_STORE}" target="_blank" rel="noopener">Teachers Pay Teachers</a>, and every button here routes you straight to the listing. Browse the <a href="/catalog.html">full catalog</a>, jump to your <a href="/grade-7.html">grade</a>, or start with the <a href="/free.html">free resources</a> before spending a dollar.</p>
+        <h2>How this site works</h2>
+        <p>This site is a showcase and a directory. It sells nothing on its own — every resource lives on <a href="${TPT_STORE}" target="_blank" rel="noopener">Teachers Pay Teachers</a>, and every button here routes you straight to the listing. See <a href="/catalog.html">everything by course</a>, jump to <a href="/5th-grade.html">5th</a>, <a href="/grade-6.html">6th</a>, <a href="/grade-7.html">7th</a> or <a href="/grade-8.html">8th grade</a> or <a href="/algebra-1.html">Algebra 1</a>, or start with the <a href="/free.html">free resources</a> before spending a dollar.</p>
       </div>
       <aside class="reveal">
         <figure class="about__figure">
@@ -3552,16 +3220,15 @@ function pageAbout() {
           <figcaption class="about__caption">Greg, in his own classroom, with more than twenty-five years teaching grades 6 to 8 math.</figcaption>
         </figure>
         <div class="stat-block">
-        <div class="stat-row"><b>25</b><span>Years teaching middle school math</span></div>
-        <div class="stat-row"><b>${counts.all}</b><span>4-in-1 Skill Sheets across the catalog</span></div>
-        <div class="stat-row"><b>${counts[6]}</b><span>Sixth-grade sheets</span></div>
-        <div class="stat-row"><b>${counts[7]}</b><span>Seventh-grade sheets</span></div>
-        <div class="stat-row"><b>${counts[8]}</b><span>Eighth-grade sheets</span></div>
-        <div class="stat-row"><b>4</b><span>Learning phases in every lesson</span></div>
+        <div class="stat-row"><b>25+</b><span>Years teaching middle school math</span></div>
+        <div class="stat-row"><b>${CUR_GRADES.reduce((n, C) => n + C.lessons.length, 0) + A1_SHEETS.length}</b><span>Lessons, 5th grade to Algebra 1</span></div>
+        <div class="stat-row"><b>${CUR_GRADES.reduce((n, C) => n + C.units.length, 0) + A1_UNITS.length}</b><span>Units</span></div>
+        <div class="stat-row"><b>5</b><span>Full-year courses</span></div>
+        <div class="stat-row"><b>4</b><span>Parts in every lesson, plus homework</span></div>
         </div>
         <figure class="about__figure about__figure--secondary">
-          <img src="/assets/images/about_workspace.jpg" alt="A teacher's organized desk with a stack of skill sheets, open lesson planner, calculator, and warm afternoon light" class="about__photo" width="1440" height="960" loading="lazy" decoding="async">
-          <figcaption class="about__caption">The studio where every sheet starts.</figcaption>
+          <img src="/assets/images/about_workspace.jpg" alt="A teacher's organized desk with a stack of lesson packets, open lesson planner, calculator, and warm afternoon light" class="about__photo" width="1440" height="960" loading="lazy" decoding="async">
+          <figcaption class="about__caption">The desk where every lesson starts.</figcaption>
         </figure>
       </aside>
     </div>
@@ -3569,10 +3236,10 @@ function pageAbout() {
 
   <section class="ctaband">
     <div class="wrap ctaband__inner reveal">
-      <h2>Browse the full collection</h2>
-      <p>Every sheet, sequenced by standard and color-coded by grade.</p>
+      <h2>See everything by course</h2>
+      <p>Every unit and lesson in teaching order, from 5th grade to Algebra 1.</p>
       <div class="ctaband__btns">
-        <a class="btn btn--primary" href="/catalog.html">Open the catalog ${ICON.arrow}</a>
+        <a class="btn btn--primary" href="/catalog.html">See all resources ${ICON.arrow}</a>
         <a class="btn btn--on-dark" href="${TPT_STORE}" target="_blank" rel="noopener">Visit the TPT store</a>
       </div>
     </div>
@@ -3593,7 +3260,7 @@ function pageContact() {
     </article>`;
   return head({
     title: 'Contact — Math Class 678',
-    desc: 'Questions or custom requests for Math Class 678? Reach the studio by email, or follow along on Pinterest and Instagram for new 4-in-1 Skill Sheet launches.',
+    desc: 'Questions or custom requests for Math Class 678? Reach the studio by email, or follow along on Pinterest and Instagram for new releases.',
     path: 'contact.html'
   }) + nav('contact') + `
 <main id="main">
@@ -3601,19 +3268,19 @@ function pageContact() {
     <div class="wrap page-hero__inner">
       <span class="eyebrow">Contact</span>
       <h1>Questions or a custom request</h1>
-      <p>Reach out any time — about a specific skill, a custom sheet, or anything you would like to see added to the catalog. Every message reaches the teacher behind the studio.</p>
+      <p>Reach out any time — about a specific lesson, a custom request, or anything you would like to see added. Every message reaches the teacher behind the studio.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
       <div class="contact-grid">
-        ${card(ICON.mail, 'Support', 'Help with a sheet you have downloaded, or a question about the method.', 'mailto:' + CONTACT.support, CONTACT.support)}
-        ${card(ICON.mail, 'Custom requests', 'Want a sheet for a skill not yet in the catalog? Tell me what you need.', 'mailto:' + CONTACT.tpt, CONTACT.tpt)}
-        ${card(ICON.store, 'TPT store', 'Every sheet, with previews and reviews, on Teachers Pay Teachers.', TPT_STORE, 'Visit the store')}
+        ${card(ICON.mail, 'Support', 'Help with a resource you have downloaded, or a question about a lesson.', 'mailto:' + CONTACT.support, CONTACT.support)}
+        ${card(ICON.mail, 'Custom requests', 'Want a lesson for a skill you do not see yet? Tell me what you need.', 'mailto:' + CONTACT.tpt, CONTACT.tpt)}
+        ${card(ICON.store, 'TPT store', 'Every resource, with previews and reviews, on Teachers Pay Teachers.', TPT_STORE, 'Visit the store')}
         ${card(ICON.pin, 'Pinterest', 'New launches, classroom ideas, and printable previews.', SOCIAL.pinterest, '@mathclass678')}
-        ${card(ICON.ext, 'Instagram', 'Behind the sheets and new releases as they go live.', SOCIAL.instagram, '@mathclass.678')}
-        ${card(ICON.ext, 'TikTok', 'Quick classroom tips and a look at the sheets in action.', SOCIAL.tiktok, '@mathclass678')}
+        ${card(ICON.ext, 'Instagram', 'Behind the lessons and new releases as they go live.', SOCIAL.instagram, '@mathclass.678')}
+        ${card(ICON.ext, 'TikTok', 'Quick classroom tips and a look at the lessons in action.', SOCIAL.tiktok, '@mathclass678')}
       </div>
     </div>
   </section>
@@ -3632,9 +3299,9 @@ function page404() {
     <div class="wrap">
       <span class="eyebrow" style="justify-content:center">Error 404</span>
       <h1 style="font-size:var(--fs-h1); margin-top:1rem">That page wandered off</h1>
-      <p style="color:var(--charcoal-soft); max-width:46ch; margin:1rem auto 2rem">The page you were looking for is not here. Head back to the catalog or the homepage.</p>
+      <p style="color:var(--charcoal-soft); max-width:46ch; margin:1rem auto 2rem">The page you were looking for is not here. See everything by course, or head back to the homepage.</p>
       <div style="display:flex; gap:.8rem; justify-content:center; flex-wrap:wrap">
-        <a class="btn btn--primary" href="/catalog.html">Browse the catalog ${ICON.arrow}</a>
+        <a class="btn btn--primary" href="/catalog.html">See all resources ${ICON.arrow}</a>
         <a class="btn btn--ghost" href="/">Go home</a>
       </div>
     </div>
@@ -3655,53 +3322,56 @@ function navMinimal() {
       <span class="brand__mark">${SVG.mark}</span>
       <span class="brand__text">
         <span class="brand__name">math class 678</span>
-        <span class="brand__sub">4-in-1 skill sheets</span>
+        <span class="brand__sub">grades 5–8 · algebra 1</span>
       </span>
     </a>
-    <a class="nav__link" href="/catalog.html">Browse the catalog ${ICON.arrow}</a>
+    <a class="nav__link" href="/catalog.html">See everything ${ICON.arrow}</a>
   </div>
 </header>`;
 }
 
 function pageGetStarted() {
+  // Oct 29 2026: one free lesson from every course (it was the free 6th grade Order of Operations sheet only).
+  const tiles = CUR_GRADES.map(C => wuTile({ url: C.free.url, external: true, img: C.free.img, accent: 'gold', name: C.free.skill,
+      kicker: `${C.ord} grade · free`, desc: 'Packet, homework, answer keys and Teacher Deck.', cta: 'Get it free on TPT' }))
+    .concat(A1_FREE.map(s => wuTile({ url: s.url, external: true, img: s.img, accent: 'gold', name: s.skill,
+      kicker: 'Algebra 1 · free', desc: 'Packet, answer key and Teacher Deck.', cta: 'Get it free on TPT' })));
   return head({
-    title: 'Get a Free 4-in-1 Skill Sheet — Middle School Math | Math Class 678',
-    desc: 'Get a complete 4-in-1 Skill Sheet free on TPT: Order of Operations for 6th grade, with a 7-page packet and a 33-slide interactive teacher deck.',
+    title: 'Try a Free Math Lesson: Grades 5–8 & Algebra 1 | Math Class 678',
+    desc: 'A complete math lesson free on TPT for 5th, 6th, 7th, 8th grade and Algebra 1: guided notes, practice, an exit ticket, worked keys and a Teacher Deck.',
     path: 'get-started.html'
   }) + navMinimal() + `
 <main id="main" class="landing">
   <section class="landing-hero">
     <div class="wrap landing-hero__grid">
       <div class="landing-hero__copy reveal">
-        <span class="eyebrow">Free 4-in-1 Skill Sheet</span>
+        <span class="eyebrow">Free lesson</span>
         <h1>A complete math lesson, on the house</h1>
-        <p class="landing-hero__lead">The <strong>Order of Operations</strong> 4-in-1 Skill Sheet for 6th grade is free on Teachers Pay Teachers — the full lesson, in the same format as every paid sheet. One standard, a 7-page packet and a Teacher Deck, the whole lesson in your hand.</p>
+        <p class="landing-hero__lead">Every course has one full lesson free on Teachers Pay Teachers, the same as every paid lesson. Pick your grade:</p>
         <ul class="landing__list">
-          <li><strong>A guided Learn page</strong> — definitions, the key rule, a worked example and a Watch Out error pair</li>
-          <li><strong>Six scaffolded practice problems</strong> (two warm-up, two standard, two stretch) after a worked example</li>
-          <li><strong>Real-world application</strong> problems that match how students actually see the skill</li>
-          <li><strong>Exit ticket</strong> with a full answer key, so you know who is ready before tomorrow</li>
-          <li><strong>A 33-slide interactive teacher deck</strong> that reveals each step one click at a time</li>
+          <li><strong>A guided Learn page</strong>: definitions, the key rule, a worked example and a Watch Out error pair</li>
+          <li><strong>Practice</strong> from warm-up to stretch, with an answer bank for self-checking</li>
+          <li><strong>Real-world application</strong> problems and an error analysis</li>
+          <li><strong>An exit ticket</strong> and a fully worked answer key, so you know who is ready before tomorrow</li>
+          <li><strong>An interactive Teacher Deck</strong> that builds each step one click at a time</li>
         </ul>
       </div>
       <aside class="landing-hero__cta reveal">
         <div class="landing-card">
           <span class="landing-card__eyebrow">Free on Teachers Pay Teachers</span>
-          <h2 class="landing-card__title">Get the free sheet</h2>
-          <p class="landing-card__sub">The download is on its free TPT listing. One click takes you there.</p>
-          <a class="btn btn--primary landing-card__btn" href="${FREE_OOO_URL}" target="_blank" rel="noopener">Get it free on TPT ${ICON.ext}</a>
+          <h2 class="landing-card__title">Start with 6th grade</h2>
+          <p class="landing-card__sub">${esc(CUR['6'].free.skill)}, a full lesson from 6th grade Unit ${CUR['6'].free.unit}. The other grades are below.</p>
+          <a class="btn btn--primary landing-card__btn" href="${esc(CUR['6'].free.url)}" target="_blank" rel="noopener">Get it free on TPT ${ICON.ext}</a>
           <a class="landing-card__more" href="/free.html">See every free resource ${ICON.arrow}</a>
         </div>
       </aside>
     </div>
   </section>
 
-  <section class="landing-trust">
-    <div class="wrap landing-trust__row">
-      <div class="landing-trust__item"><b>25</b><span>Years in the classroom</span></div>
-      <div class="landing-trust__item"><b>${counts.all}</b><span>Skill sheets, grades 6–8</span></div>
-      <div class="landing-trust__item"><b>4</b><span>Phases in every lesson</span></div>
-      <div class="landing-trust__item"><b>CCSS</b><span>Aligned to the standards</span></div>
+  <section class="section">
+    <div class="wrap">
+      ${secHead('Free', 'One free lesson from every course')}
+      <div class="cr-grid">${tiles.join('')}</div>
     </div>
   </section>
 
@@ -3711,12 +3381,12 @@ function pageGetStarted() {
         <div class="sec-head__t">
           <span class="eyebrow">Why start here</span>
           <h2>See the format before you buy a thing</h2>
-          <p>The free sheet is a real, complete 4-in-1 Skill Sheet — not a sample with the good parts removed. Use it with a class, see how the four phases hold together, and decide for yourself whether the rest of the catalog earns a place in your plans.</p>
+          <p>The free lesson is a real, complete lesson, not a sample with the good parts removed. Use it with a class, see how the parts hold together, and decide for yourself whether the units earn a place in your plans.</p>
         </div>
       </div>
       <div class="ctaband__btns" style="justify-content:flex-start">
         <a class="btn btn--ghost" href="/free.html">See all free resources ${ICON.arrow}</a>
-        <a class="btn btn--ghost" href="/catalog.html">Browse the full catalog</a>
+        <a class="btn btn--ghost" href="/catalog.html">See all resources</a>
       </div>
     </div>
   </section>
@@ -3879,27 +3549,20 @@ function pageStandard(std) {
             </div>` : ''}
           </div>`).join('') : '';
 
-  // Skill-sheet CTA cards
-  const sheetCTAHtml = linkedProducts.map(p => {
-    const cta = p.live
-      ? `<a class="btn btn--primary" href="${p.pageUrl}" aria-label="See the ${esc(p.name)} 4-in-1 Skill Sheet">See the 4-in-1 Skill Sheet ${ICON.arrow}</a>`
-      : `<span class="btn btn--ghost is-disabled" aria-disabled="true">Coming soon</span>`;
-    return `<div class="std-sheet-cta">
-        <div class="std-sheet-cta__media">
-          <div class="pcard__art" aria-hidden="true">
-            <div class="pcard__art-top"><span class="pcard__art-eyebrow">4-in-1 Skill Sheet</span><span class="pcard__art-wm">${esc(p.gradeLabel)}</span></div>
-            <div class="pcard__art-body"><span class="pcard__art-quad">${SVG.cardQuad}</span><span class="pcard__art-skill">${esc(p.name)}</span><span class="pcard__art-sub">Learn · Practice · Apply · Exit Ticket</span></div>
-            <div class="pcard__art-bottom"></div>
-          </div>
-          ${p.hasThumb ? `<img src="${p.thumbWeb}" alt="${esc(sheetAlt(p))}" width="600" height="600" loading="lazy" decoding="async" onerror="this.style.display='none'">` : ''}
-        </div>
+  // The units that teach it (Oct 29 2026: the 6-8 skill sheet pages are gone; each lesson now sells inside its unit)
+  const stdCodes = (() => { const [f, ...r] = String(ccss).split('+'); const stem = f.split('.').slice(0, 2).join('.'); return [f, ...r.map(x => `${stem}.${x}`)]; })();
+  const stdUnits = [...new Set(linkedProducts.map(p => CUR_UNIT_OF_SHEET[String(p.num)])
+    .concat(CUR_GRADES.flatMap(C => C.units.filter(u => u.lessons.some(l => l.ccss.some(c => stdCodes.includes(c))))))
+    .filter(Boolean))];
+  const sheetCTAHtml = stdUnits.map(u => `<div class="std-sheet-cta">
+        <div class="std-sheet-cta__media"><img src="${u.listing.img}" alt="${esc(u.listing.title)}" width="600" height="600" loading="lazy" decoding="async"></div>
         <div class="std-sheet-cta__body">
-          <div class="std-sheet-cta__meta"><span class="sheet-chip sheet-chip--ccss">${esc(p.ccss)}</span><span class="sheet-chip">${esc(p.gradeLabel)}</span></div>
-          <h3 class="std-sheet-cta__name">${esc(p.name)}</h3>
-          ${cta}
+          <div class="std-sheet-cta__meta"><span class="sheet-chip">${esc(u.grade.name)}</span><span class="sheet-chip">Unit ${u.n}</span></div>
+          <h3 class="std-sheet-cta__name">${esc(u.name)}</h3>
+          <p class="std-sheet-cta__lessons">${u.lessons.filter(l => l.ccss.some(c => stdCodes.includes(c))).map(l => esc(l.skill)).join(', ')}</p>
+          <a class="btn btn--primary" href="${u.pageUrl}" aria-label="See ${esc(u.grade.name)} Unit ${u.n}: ${esc(u.name)}">See the unit ${ICON.arrow}</a>
         </div>
-      </div>`;
-  }).join('');
+      </div>`).join('');
 
   // JSON-LD
   const jsonLd = JSON.stringify({
@@ -3921,14 +3584,13 @@ function pageStandard(std) {
     title, desc: metaDesc,
     path: `standards/${std.slug}.html`,
     jsonld: jsonLd
-  }) + nav('catalog') + `
+  }) + nav(`grade-${grade}`) + `
 <main id="main" class="std-page ${gradeCls}">
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <div class="wrap">
       <ol>
         <li><a href="/">Home</a></li>
-        <li><a href="/catalog.html">Catalog</a></li>
-        <li><a href="/catalog.html?grade=${grade}">${gO} Grade</a></li>
+        <li><a href="${CUR[String(grade)].hub}">${gO} Grade</a></li>
         <li aria-current="page">${esc(ccss)}</li>
       </ol>
     </div>
@@ -3976,7 +3638,7 @@ function pageStandard(std) {
 
       <aside class="std-content__side">
         ${sheetCTAHtml ? `<div class="std-side-block">
-          <h2 class="std-side-block__title">The skill sheet</h2>
+          <h2 class="std-side-block__title">Where it is taught</h2>
           ${sheetCTAHtml}
         </div>` : ''}
         ${(function(){ const terms=[...new Map((glossaryByCcss[std.ccss]||[]).map(t=>[t.slug,t])).values()]; if(!terms.length) return ''; const chips=terms.slice(0,14).map(glossaryChip).join(''); return `<div class="std-side-block keyvocab"><h2 class="std-side-block__title">Key vocabulary</h2><div class="keyvocab__chips">${chips}</div><a class="std-backlink" href="/word-wall.html#ww-${terms[0].grade.toLowerCase()}">More in the glossary ${ICON.arrow}</a></div>`; })()}
@@ -3989,350 +3651,12 @@ function pageStandard(std) {
 }
 
 
-function pageSheet(p, prev, next) {
-  const imgPath = p.thumbWeb;
-  const ogImg = p.hasThumb ? p.thumbAbs : (SITE_URL + '/assets/images/og_image.png');
-  const gO = gradeOrdinal(p.grade);
-  // SEO title + meta description
-  const title = fitTitle([`${p.name} | ${gO} Grade Math Worksheet & Guided Notes (${p.ccss})`, `${p.name} | ${gO} Grade Math Worksheet (${p.ccss})`,
-    `${p.name} | ${gO} Grade Math Worksheet & Guided Notes`, `${p.name} | ${gO} Grade Math Worksheet`, `${p.name} | ${gO} Grade Math`]);
-  const metaDesc = (p.about.length > 158 ? p.about.slice(0, 155).trim() + '…' : p.about);
-
-  const cta = p.live
-    ? `<a class="btn btn--primary sheet__tpt" href="${p.url}" target="_blank" rel="noopener" aria-label="${esc(p.free ? 'Get this free sheet' : 'View')} ${esc(p.name)} on Teachers Pay Teachers">${p.free ? 'Get it free on TPT' : 'View on Teachers Pay Teachers'} ${ICON.ext}</a>`
-    : `<span class="btn btn--ghost is-disabled" aria-disabled="true">Coming soon</span>`;
-
-  const navPrev = prev ? `<a class="sheetnav__link sheetnav__prev" href="${prev.pageUrl}"><span class="sheetnav__dir">Previous</span><span class="sheetnav__name">${esc(prev.name)}</span></a>` : '<span class="sheetnav__link is-empty"></span>';
-  const navNext = next ? `<a class="sheetnav__link sheetnav__next" href="${next.pageUrl}"><span class="sheetnav__dir">Next</span><span class="sheetnav__name">${esc(next.name)}</span></a>` : '<span class="sheetnav__link is-empty"></span>';
-
-  return head({
-    title,
-    desc: metaDesc,
-    path: `sheets/${p.pageSlug}.html`,
-    ogImage: ogImg,
-    ogType: 'article',
-    jsonld: sheetJsonLd(p)
-  }) + nav('catalog') + `
-<main id="main" class="sheet sheet--${p.grade}">
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    <div class="wrap">
-      <ol>
-        <li><a href="/">Home</a></li>
-        <li><a href="/catalog.html">Catalog</a></li>
-        <li><a href="/catalog.html?grade=${p.grade}">Grade ${p.grade}</a></li>
-        <li aria-current="page">${esc(p.name)}</li>
-      </ol>
-    </div>
-  </nav>
-
-  <section class="section sheet-hero">
-    <div class="wrap sheet-hero__grid">
-      <div class="sheet-hero__media">
-        <div class="pcard__art" aria-hidden="true">
-          <div class="pcard__art-top">
-            <span class="pcard__art-eyebrow">4-in-1 Skill Sheet</span>
-            <span class="pcard__art-wm">${p.grade}th grade</span>
-          </div>
-          <div class="pcard__art-body">
-            <span class="pcard__art-quad">${SVG.cardQuad}</span>
-            <span class="pcard__art-skill">${esc(p.name)}</span>
-            <span class="pcard__art-sub">Learn · Practice · Apply · Exit Ticket</span>
-          </div>
-          <div class="pcard__art-bottom"></div>
-        </div>
-        ${p.hasThumb ? `<img src="${imgPath}" alt="${esc(sheetAlt(p))}" width="600" height="600" loading="eager" fetchpriority="high" decoding="async" onerror="this.style.display='none'">` : ''}
-        ${p.free ? '<span class="pcard__badge sheet__badge">Free</span>' : ''}
-      </div>
-      <div class="sheet-hero__copy">
-        <div class="sheet-hero__tags">
-          <span class="sheet-chip sheet-chip--ccss">${esc(p.ccss)}</span>
-          <span class="sheet-chip">Grade ${p.grade}</span>
-          <span class="sheet-chip">${esc(p.strandName)}</span>
-        </div>
-        <h1>${esc(p.name)}</h1>
-        ${p.desc ? `<p class="sheet-hero__ican">${esc(p.desc)}</p>` : ''}
-        <div class="sheet-hero__cta">
-          ${cta}
-          <a class="btn btn--ghost" href="/catalog.html?grade=${p.grade}">Back to ${gO} grade ${ICON.arrow}</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section sheet-detail" style="padding-top:0">
-    <div class="wrap sheet-detail__grid">
-      <div class="sheet-detail__main">
-        <div class="sheet-block">
-          <h2>About this skill sheet</h2>
-          <p>${esc(p.about)}</p>
-        </div>
-${(() => {
-          const v = p.v5, n = x => NUMW[x] || String(x);
-          const k1 = v.key_pages[0], k2 = v.key_pages[v.key_pages.length - 1];
-          const vid = v.video ? `<figure class="vid-figure sheet-video"><video controls playsinline preload="none" poster="${v.poster}" width="1280" height="720" aria-label="${esc(p.name)} Teacher Deck and packet: 20-second preview"><source src="${v.video}" type="video/mp4"></video></figure>` : '';
-          return `<div class="sheet-block">
-          <h2>See inside</h2>
-          ${vid}
-        </div>
-        <div class="sheet-block">
-          <h2>The interactive Teacher Deck (${v.slides} slides, PowerPoint)</h2>
-          <ul class="cr-list">
-            <li>The Learn page taught on screen: ${v.blanks} fill-in blanks, each filled on its own click as students write it</li>
-            <li>The worked example one slide per step (${n(v.we_steps)} steps), each with the reason for the step</li>
-            <li>${n(v.n_practice).replace(/^./, c => c.toUpperCase())} practice and ${n(v.n_apply)} apply problems: a your-turn slide with a think-time bar, then the solution one line per click</li>
-            <li>Speaker notes on each problem: the question to ask, the worked answer and the common error to listen for</li>
-            <li>A completed deck PDF (${v.completed_pages} pages) with every slide fully built, to print or post</li>
-          </ul>
-        </div>
-        <div class="sheet-block">
-          <h2>The student packet (${v.pages} pages)</h2>
-          <ul class="cr-list">
-            <li><strong>Learn</strong>: guided notes with ${n(v.n_defs)} definitions, the key rule, a worked example and a Watch Out error pair</li>
-            <li><strong>Practice</strong>: ${n(v.warm)} warm-up, ${n(v.standard)} standard and ${n(v.stretch)} stretch problems, with an answer bank for self-checking</li>
-            <li><strong>Apply</strong>: ${n(v.n_word)} real-world problems and ${n(v.n_error)} error analysis</li>
-            <li><strong>Assess</strong>: an exit ticket of ${n(v.n_exit)} items, two per page, with an I-can self-rating</li>
-            <li>Answer key (pages ${k1}–${k2}): every problem worked step by step, plus ${n(v.n_mistakes)} common mistakes and what to do about each</li>
-            <li>Color and ink-saver editions of the whole packet</li>
-          </ul>
-        </div>`;
-        })()}
-      </div>
-      <aside class="sheet-detail__side">
-        <div class="sheet-facts">
-          <h2 class="sheet-facts__title">Standard</h2>
-          <div class="sheet-facts__ccss">${esc(p.ccss)}</div>
-          ${p.ccssText ? `<p class="sheet-facts__text">${esc(p.ccssText)}</p>` : ''}
-          ${standardsMap[p.ccss] ? `<a class="std-backlink" href="/standards/${standardsMap[p.ccss].slug}.html">Teaching tips for ${esc(p.ccss)} ${ICON.arrow}</a>` : ''}
-          ${sheetVocabLine(p.pageUrl, 'h3')}
-          <dl class="sheet-facts__dl">
-            <div><dt>Grade</dt><dd>${esc(p.gradeLabel)}</dd></div>
-            <div><dt>Strand</dt><dd>${esc(p.strandName)}</dd></div>
-            <div><dt>Format</dt><dd>${p.v5.pages}-page packet + ${p.v5.slides}-slide Teacher Deck</dd></div>
-            ${p.free ? '<div><dt>Price</dt><dd>Free on TPT</dd></div>' : ''}
-          </dl>
-          ${cta}
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  ${(() => {
-    const inB = bundlesBySheet[String(p.num)] || [];
-    if (!inB.length) return '';
-    const chips = inB.map(b => `<a class="bundle-chip" href="${b.pageUrl}">${esc(b.name)} <span class="bundle-chip__n">${b.count}</span></a>`).join('');
-    return `<section class="section sheet-bundles" style="padding-top:0">
-    <div class="wrap">
-      <h2 class="sheet-bundles__title">Save with a bundle</h2>
-      <p class="sheet-bundles__lead">This skill sheet is included in these bundles. Buy the bundle to get this skill plus related ones in one download.</p>
-      <div class="bundle-chips">${chips}</div>
-    </div>
-  </section>`;
-  })()}
-
-  ${freeHero({ eyebrow: 'Try before you buy', heading: 'Get a free 4-in-1 Skill Sheet', lead: 'Want to see the format in your own hands first? The Order of Operations 4-in-1 Skill Sheet for 6th grade is free on Teachers Pay Teachers \u2014 a complete lesson with an interactive teacher deck.' })}
-
-  <nav class="section sheetnav" aria-label="Browse adjacent sheets" style="padding-top:0">
-    <div class="wrap sheetnav__row">
-      ${navPrev}
-      ${navNext}
-    </div>
-  </nav>
-</main>
-` + footer() + scripts();
-}
 const favicon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
 <rect x="4" y="4" width="42" height="42" rx="8" fill="#1A3C34"/>
 <rect x="54" y="4" width="42" height="42" rx="8" fill="#D4A017"/>
 <rect x="4" y="54" width="42" height="42" rx="8" fill="#3FA9A2"/>
 <rect x="54" y="54" width="42" height="42" rx="8" fill="#D85D5D"/></svg>`;
 
-/* ============================================================================
-   BUNDLE pages: /bundles.html section + one landing page per bundle
-   ============================================================================ */
-function bundleTierLabel(b) {
-  return ({ mega: 'Full-year bundle', ultimate: 'Everything bundle', strand: 'Strand bundle', topic: 'Topic bundle' })[b.tier] || 'Bundle';
-}
-
-function bundleCard(b) {
-  const cls = `pcard bcard bcard--${b.grade === 'all' ? 'all' : b.grade}${b.tier === 'mega' || b.tier === 'ultimate' ? ' bcard--feature' : ''}`;
-  const search = (b.name + ' ' + b.gradeLabel + ' bundle').toLowerCase();
-  return `<article class="${cls}" data-grade="${b.grade}" data-search="${esc(search)}">
-      <div class="pcard__media bcard__media">
-        <div class="pcard__art" aria-hidden="true">
-          <div class="pcard__art-top"><span class="pcard__art-eyebrow">${bundleTierLabel(b)}</span><span class="pcard__art-wm">${esc(b.gradeLabel)}</span></div>
-          <div class="pcard__art-body"><span class="pcard__art-quad">${SVG.cardQuad}</span><span class="pcard__art-skill">${esc(b.name)}</span></div>
-          <div class="pcard__art-bottom"></div>
-        </div>
-        ${b.hasThumb ? `<img src="${b.thumbWeb}" alt="${esc(b.name)} — ${b.count} 4-in-1 Skill Sheets" width="600" height="600" loading="lazy" decoding="async" onerror="this.style.display='none'">` : ''}
-        <span class="pcard__badge bcard__badge">${b.count} sheets</span>
-      </div>
-      <div class="pcard__body">
-        <div class="pcard__meta"><span class="pcard__grade">${esc(b.gradeLabel)}</span><span class="pcard__strand">${bundleTierLabel(b)}</span></div>
-        <h3 class="pcard__name">${esc(b.name)}</h3>
-        <div class="pcard__foot">
-          <span class="pcard__bundle">${b.count} skill sheets</span>
-          <a class="pcard__tpt pcard__cta" href="${b.pageUrl}" aria-label="View ${esc(b.name)} (${b.count} sheets)">View bundle ${ICON.arrow}</a>
-        </div>
-      </div>
-    </article>`;
-}
-
-function bundleJsonLd(b) {
-  const canonical = SITE_URL + b.pageUrl;
-  const parts = b.members.map(p => ({
-    '@type': 'LearningResource',
-    name: `${p.name} — 4-in-1 Skill Sheet`,
-    url: SITE_URL + p.pageUrl,
-    educationalLevel: `Grade ${p.grade}`,
-    educationalAlignment: {
-      '@type': 'AlignmentObject', alignmentType: 'teaches',
-      educationalFramework: 'Common Core State Standards',
-      targetName: `CCSS.MATH.CONTENT.${p.ccss}`
-    }
-  }));
-  const collection = {
-    '@context': 'https://schema.org',
-    '@type': 'LearningResource',
-    name: `${b.name} — 4-in-1 Skill Sheets Bundle`,
-    description: b.blurb,
-    url: canonical,
-    image: b.thumbAbs,
-    learningResourceType: 'Skill sheet bundle',
-    educationalUse: ['instruction', 'practice', 'assessment'],
-    educationalLevel: b.grade === 'all' ? 'Grades 6-8' : `Grade ${b.grade}`,
-    inLanguage: 'en',
-    isAccessibleForFree: false,
-    audience: { '@type': 'EducationalAudience', educationalRole: 'teacher' },
-    provider: { '@type': 'Organization', name: 'Math Class 678', url: SITE_URL },
-    hasPart: parts
-  };
-  const crumbs = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL + '/' },
-      { '@type': 'ListItem', position: 2, name: 'Bundles', item: SITE_URL + '/bundles.html' },
-      { '@type': 'ListItem', position: 3, name: b.name, item: canonical }
-    ]
-  };
-  return JSON.stringify([collection, crumbs]).replace(/</g, '\\u003c');
-}
-
-function pageBundle(b, prev, next) {
-  const gradeCls = b.grade === 'all' ? 'sheet--ultimate' : `sheet--${b.grade}`;
-  const bn = /bundle$/i.test(b.name) ? b.name : `${b.name} Bundle`;
-  const title = fitTitle([`${bn} — ${b.count} Skill Sheets | Math Class 678`, `${bn} — ${b.count} Skill Sheets`, `${bn} | Math Class 678`, bn]);
-  const metaDesc = b.blurb.length > 158 ? b.blurb.slice(0, 155).trim() + '\u2026' : b.blurb;
-  const cta = `<a class="btn btn--primary sheet__tpt" href="${b.url}" target="_blank" rel="noopener" aria-label="View ${esc(b.name)} bundle on Teachers Pay Teachers">View bundle on Teachers Pay Teachers ${ICON.ext}</a>`;
-  const navPrev = prev ? `<a class="sheetnav__link sheetnav__prev" href="${prev.pageUrl}"><span class="sheetnav__dir">Previous bundle</span><span class="sheetnav__name">${esc(prev.name)}</span></a>` : '<span class="sheetnav__link is-empty"></span>';
-  const navNext = next ? `<a class="sheetnav__link sheetnav__next" href="${next.pageUrl}"><span class="sheetnav__dir">Next bundle</span><span class="sheetnav__name">${esc(next.name)}</span></a>` : '<span class="sheetnav__link is-empty"></span>';
-
-  return head({
-    title, desc: metaDesc, path: `bundles/${b.slug}.html`,
-    ogImage: b.thumbAbs, ogType: 'product', jsonld: bundleJsonLd(b)
-  }) + nav('bundles') + `
-<main id="main" class="sheet ${gradeCls}">
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    <div class="wrap"><ol>
-      <li><a href="/">Home</a></li>
-      <li><a href="/bundles.html">Bundles</a></li>
-      <li aria-current="page">${esc(b.name)}</li>
-    </ol></div>
-  </nav>
-
-  <section class="section sheet-hero">
-    <div class="wrap sheet-hero__grid">
-      <div class="sheet-hero__media">
-        <div class="pcard__art" aria-hidden="true">
-          <div class="pcard__art-top"><span class="pcard__art-eyebrow">${bundleTierLabel(b)}</span><span class="pcard__art-wm">${esc(b.gradeLabel)}</span></div>
-          <div class="pcard__art-body"><span class="pcard__art-quad">${SVG.cardQuad}</span><span class="pcard__art-skill">${esc(b.name)}</span></div>
-          <div class="pcard__art-bottom"></div>
-        </div>
-        ${b.hasThumb ? `<img src="${b.thumbWeb}" alt="${esc(b.name)} — ${b.count} 4-in-1 Skill Sheets bundle for ${b.grade === 'all' ? 'grades 6 to 8' : b.gradeLabel} math" width="600" height="600" loading="eager" fetchpriority="high" decoding="async" onerror="this.style.display='none'">` : ''}
-      </div>
-      <div class="sheet-hero__copy">
-        <div class="sheet-hero__tags">
-          <span class="sheet-chip sheet-chip--ccss">${b.count} skill sheets</span>
-          <span class="sheet-chip">${esc(b.gradeLabel)}</span>
-          <span class="sheet-chip">${bundleTierLabel(b)}</span>
-        </div>
-        <h1>${esc(b.name)}</h1>
-        <p class="sheet-hero__ican">${esc(b.blurb)}</p>
-        <div class="sheet-hero__cta">
-          ${cta}
-          <a class="btn btn--ghost" href="/bundles.html">All bundles ${ICON.arrow}</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section sheet-detail" style="padding-top:0">
-    <div class="wrap">
-      <div class="sheet-block">
-        <h2>What is inside this bundle</h2>
-        <p>${b.count} complete 4-in-1 Skill Sheets. Each one is a full lesson on one skill: ${SS_KIT}. The packet takes students through a guided Learn page, scaffolded Practice, real-world Apply problems and an Exit Ticket. Select any skill below to see its standard and details.</p>
-      </div>
-      <div class="card-grid">
-        ${b.members.map(productCard).join('\n')}
-      </div>
-    </div>
-  </section>
-
-  <nav class="section sheetnav" aria-label="Browse adjacent bundles" style="padding-top:0">
-    <div class="wrap sheetnav__row">${navPrev}${navNext}</div>
-  </nav>
-</main>
-` + footer() + scripts();
-}
-
-function pageBundles() {
-  const feature = bundles.filter(b => b.tier === 'mega' || b.tier === 'ultimate')
-    .sort((a, b) => (b.tier === 'ultimate') - (a.tier === 'ultimate') || a.grade.localeCompare(b.grade));
-  const byGrade = g => bundles.filter(b => b.grade === g && b.tier !== 'mega');
-  const section = (gradeNum, label) => {
-    const items = byGrade(gradeNum);
-    if (!items.length) return '';
-    return `<section class="section bundles-grade" style="padding-top:0">
-      <div class="wrap">
-        <div class="bundles-grade__head"><h2>${label}</h2><a class="bundles-grade__all" href="/catalog.html?grade=${gradeNum}">Browse ${gradeNum}th grade catalog ${ICON.arrow}</a></div>
-        <div class="card-grid">${items.map(bundleCard).join('\n')}</div>
-      </div>
-    </section>`;
-  };
-  return head({
-    title: 'Middle School Math Skill Sheet Bundles — Grades 6–8 | Math Class 678',
-    desc: `Skill sheet bundles for grades 6, 7 and 8: strand and topic bundles, full-year MEGA bundles and the ${counts.all}-sheet ULTIMATE bundle, aligned to Common Core.`,
-    path: 'bundles.html',
-    jsonld: breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Bundles', url: '/bundles.html' }])
-  }) + nav('bundles') + `
-<main id="main">
-  ${breadcrumb([{ name: 'Home', url: '/' }, { name: 'Bundles' }])}
-  <section class="section catalog-hero" style="background-image:linear-gradient(180deg, rgba(26,60,52,.86), rgba(26,60,52,.92)), url('/assets/images/catalog_header.png')">
-    <div class="wrap">
-      <span class="eyebrow eyebrow--light">Bundles</span>
-      <h1>Buy by strand, topic, or the full year</h1>
-      <p>Every 4-in-1 Skill Sheet, grouped into bundles so you can grab a whole strand or a full year at once. ${bundles.length} bundles across grades 6 to 8, each a single download on Teachers Pay Teachers. Open any bundle to see exactly which skills are inside.</p>
-    </div>
-  </section>
-
-  <section class="section" style="padding-top:2.4rem">
-    <div class="wrap">
-      <div class="bundles-grade__head"><h2>Full-year and complete bundles</h2></div>
-      <div class="card-grid">${feature.map(bundleCard).join('\n')}</div>
-    </div>
-  </section>
-
-  ${section('6', '6th Grade Bundles')}
-  ${section('7', '7th Grade Bundles')}
-  ${section('8', '8th Grade Bundles')}
-</main>
-` + footer() + scripts();
-}
-
-
-/* ============================================================================
-   GLOSSARY / WORD WALL — page renderers   (S11 build)
-   ============================================================================ */
 function glossaryChip(t){ return `<a class="gloss-chip gloss-chip--${t.accent}" href="${t.pageUrl}">${esc(t.term)}</a>`; }
 
 function wordWallCardTile(t){
@@ -4395,9 +3719,9 @@ function pageWordWall(){
       <div class="method__head reveal" style="margin-bottom:1.6rem">
         <span class="eyebrow" style="color:var(--gold-soft)">From words to skills</span>
         <h2>Teach the skill behind the word</h2>
-        <p>Every 6th, 7th and 8th grade term links to the standard and the 4-in-1 Skill Sheet where it shows up. Each sheet is one complete lesson: a guided student packet and an interactive Teacher Deck.</p>
+        <p>Every 6th, 7th and 8th grade term links to its standard and the unit that teaches it. Each lesson has guided notes, practice, homework and an interactive Teacher Deck.</p>
       </div>
-      <a class="btn btn--primary" href="/catalog.html">Browse the skill sheets ${ICON.arrow}</a>
+      <a class="btn btn--primary" href="/catalog.html">See the units ${ICON.arrow}</a>
     </div>
   </section>
 </main>
@@ -4480,19 +3804,17 @@ function pageGlossaryTerm(t){
   // WHERE THIS SHOWS UP
   let whereHtml = '';
   if (t.isCcssKeyed) {
-    const stdLinks = [], sheetLinks = [], bundleSet = {};
+    const stdLinks = [], unitLinks = [];
     t.allCcss.forEach(code => {
       if (standardsMap[code]) stdLinks.push(`<a class="sheet-chip sheet-chip--ccss" href="/standards/${standardsMap[code].slug}.html">${esc(code)} \u00b7 teaching tips</a>`);
-      products.filter(pp => pp.ccss === code && pp.live).forEach(pp => {
-        sheetLinks.push(`<a class="sheet-chip" href="${pp.pageUrl}">${esc(pp.name)}</a>`);
-        (bundlesBySheet[String(pp.num)]||[]).forEach(b => { bundleSet[b.slug] = b; });
-      });
+      // Oct 29 2026: the units that teach the standard (the 6-8 sheet and bundle pages are gone)
+      CUR_GRADES.forEach(C => C.units.filter(u => u.lessons.some(l => l.ccss.includes(code))).forEach(u => {
+        unitLinks.push(`<a class="sheet-chip" href="${u.pageUrl}">${esc(C.ord)} Grade Unit ${u.n}: ${esc(u.name)}</a>`);
+      }));
     });
-    const bundleLinks = Object.values(bundleSet).map(b => `<a class="sheet-chip" href="${b.pageUrl}">${esc(b.name)}</a>`);
     const blocks = [];
     if (stdLinks.length)   blocks.push(`<div class="gloss-where__grp"><h3>Standard</h3><div class="gloss-where__chips">${[...new Set(stdLinks)].join('')}</div></div>`);
-    if (sheetLinks.length) blocks.push(`<div class="gloss-where__grp"><h3>Skill sheets</h3><div class="gloss-where__chips">${[...new Set(sheetLinks)].join('')}</div></div>`);
-    if (bundleLinks.length)blocks.push(`<div class="gloss-where__grp"><h3>In these bundles</h3><div class="gloss-where__chips">${[...new Set(bundleLinks)].join('')}</div></div>`);
+    if (unitLinks.length)  blocks.push(`<div class="gloss-where__grp"><h3>Taught in</h3><div class="gloss-where__chips">${[...new Set(unitLinks)].join('')}</div></div>`);
     if (blocks.length) {
       whereHtml = `<div class="gloss-side-block"><h2 class="gloss-side-block__title">Where this shows up</h2>${blocks.join('')}</div>`;
     } else {
@@ -4558,7 +3880,7 @@ function pageGlossaryTerm(t){
         <div class="gloss-side-block gloss-side-block--cta">
           <span class="gloss-cta__tile gloss-cta__tile--${t.accent}">${SVG.mark}</span>
           <h2 class="gloss-side-block__title">Practice it free</h2>
-          <p>Free 4-in-1 Skill Sheets, warm-ups, readiness checks and planning tools for middle school math, all on Teachers Pay Teachers.</p>
+          <p>A full lesson from every course, warm-ups, pacing guides and planning tools, all free on Teachers Pay Teachers.</p>
           <a class="btn btn--primary btn--sm" href="/free.html">See the free resources ${ICON.arrow}</a>
         </div>
         ${whereHtml}
@@ -4609,7 +3931,7 @@ function pageFreebie(f){
         <ul class="freebie__list">
           <li>Free on Teachers Pay Teachers \u2014 one click to the listing</li>
           <li>Download it there; it stays in your TPT purchases for later</li>
-          <li>From Math Class 678, the store behind the 4-in-1 Skill Sheets</li>
+          <li>From Math Class 678, math curriculum for grades 5 to 8 and Algebra 1</li>
         </ul>
       </div>
       <div class="freebie__panel reveal">
@@ -5311,7 +4633,10 @@ function pageWarmupsCourse(c) {
   if (c.first20) related.push(wuTile({ url: c.first20.url, external: true, img: c.first20.img, accent, name: `${c.label} Warm-Ups: First 20 Days`, kicker: 'Back to school · trackers included' }));
   const rk = WU_READINESS[c.key];
   if (rk) { const r = RC.checks.find(x => x.key === rk); related.push(wuTile({ url: '/readiness.html#' + rk, img: r.img, accent, name: `${r.grade} Math Readiness Check`, kicker: `${r.prior} skills · ${r.questions} questions`, cta: 'See what it covers' })); }
-  if (WU_GRADE_PAGE[c.key]) related.push(wuTile({ url: WU_GRADE_PAGE[c.key], accent, name: `${c.label} 4-in-1 Skill Sheets`, kicker: 'One complete lesson per skill', cta: 'Browse the sheets' }));
+  // Oct 29 2026: the course's curriculum (the 6-8 skill sheet line is retired)
+  const curC = CUR[String(c.key).replace(/^G/, '')];
+  if (curC) related.push(wuTile({ url: curC.hub, img: curC.curriculum.img, accent, name: `${curC.ord} Grade Math Curriculum`, kicker: `${curC.units.length} units · ${curC.lessons.length} lessons`, cta: 'See the units' }));
+  else if (c.key === 'GA1') related.push(wuTile({ url: '/algebra-1.html', img: A1_CURR.img, accent, name: 'Algebra 1 Lessons', kicker: `${A1_UNITS.length} units · ${A1_SHEETS.length} lessons`, cta: 'See Algebra 1' }));
   const buy = [
     wuTile({ url: c.yr.url, external: true, img: c.yr.img, accent, name: 'Full Year', kicker: '180 days · all four quarters', feature: true }),
     wuTile({ url: c.s1.url, external: true, img: c.s1.img, accent, name: 'Semester 1', kicker: 'Quarters 1 and 2 · 90 days' }),
@@ -5786,6 +5111,7 @@ const A1_EXTRA_TXT = (() => {
 function a1Nw(x) { return ['zero','one','two','three','four','five','six'][x] || String(x); }
 /* Numbers the hub prints once for every sheet; the build stops if the sheets ever differ. */
 const a1Same = (k, list) => { const L = list || A1_SHEETS; const v = new Set(L.map(s => JSON.stringify(s.v5[k]))); if (v.size !== 1) throw new Error(`Algebra 1 sheets differ in ${k}; the hub copy assumes one value`); return L[0].v5[k]; };
+const A1_HW = a1Same('homework');
 const A1_PAGES = a1Same('pages'), A1_KEYP = a1Same('key_pages'), A1_PRACTICE = a1Same('n_practice'), A1_APPLY = a1Same('n_apply'),
   A1_WARM = a1Same('warm'), A1_STD = a1Same('standard'), A1_STRETCH = a1Same('stretch'), A1_EXIT = a1Same('n_exit'),
   A1_PRICE = a1Same('price', A1_SHEETS.filter(s => !s.free));
@@ -5797,12 +5123,13 @@ const vidLen = sec => sec >= 45 ? '1-minute' : `${Math.round(sec)}-second`;
 const a1Cap = s => s.charAt(0).toUpperCase() + s.slice(1);
 const a1N = x => NUMW[x] || String(x);
 const A1_FAQ = [
-  { q: 'What is in each Algebra 1 skill sheet?', a: `One skill, taught start to finish. An interactive Teacher Deck of ${A1_SLIDES} slides (PowerPoint) fills in the notes one blank per click, works the example one slide per step and builds every solution a line at a time. Students follow along on a ${A1_PAGES}-page packet: guided Learn notes, ${a1N(A1_PRACTICE)} practice problems with an answer bank, Apply word problems and an error analysis, a ${a1N(A1_EXIT)}-item exit ticket, and a fully worked answer key with the common mistakes and a grading guide.` },
-  { q: 'Can I try one first?', a: `Yes. ${A1_FREE.map(s => s.skill).join(' and ')} ${A1_FREE.length > 1 ? 'are' : 'is'} free, and it is the full lesson: the Teacher Deck, the packet and the answer key, exactly what every paid sheet looks like.` },
-  { q: 'What do they cost?', a: `Each sheet is ${A1_PRICE} on TPT (${A1_FREE.map(s => s.skill).join(' and ')} ${A1_FREE.length > 1 ? 'are' : 'is'} free). Each unit has its own bundle, from ${A1_UNIT_PRICES}, and the curriculum bundle holds all ${A1_SHEETS.length} sheets${A1_EXTRA_TXT ? `, plus ${A1_EXTRA_TXT},` : ''} for ${A1_CURR.price}.` },
-  { q: 'How are the sheets organized?', a: `By unit: ${A1_UNITS.length} units that follow a typical Algebra 1 sequence, from ${A1_UNITS[0].name} to ${A1_UNITS[A1_UNITS.length - 1].name}. Each sheet page says which sheet comes before and after it.` },
+  { q: 'What is in each Algebra 1 lesson?', a: `One skill, taught start to finish. An interactive Teacher Deck of ${A1_SLIDES} slides (PowerPoint) fills in the notes one blank per click, works the example one slide per step and builds every solution a line at a time. Students follow along on a ${A1_PAGES}-page packet: guided Learn notes, ${a1N(A1_PRACTICE)} practice problems with an answer bank, Apply word problems and an error analysis, a ${a1N(A1_EXIT)}-item exit ticket, a fully worked answer key with the common mistakes and a grading guide, and a homework page of eight new problems with its own worked key.` },
+  { q: 'Can I try one first?', a: `Yes. ${A1_FREE.map(s => s.skill).join(' and ')} ${A1_FREE.length > 1 ? 'are' : 'is'} free, and it is the full lesson: the Teacher Deck, the packet, the homework and the answer keys, exactly what every paid lesson looks like.` },
+  { q: 'What do they cost?', a: `Each lesson is ${A1_PRICE} on TPT (${A1_FREE.map(s => s.skill).join(' and ')} ${A1_FREE.length > 1 ? 'are' : 'is'} free). Each unit has its own bundle, from ${A1_UNIT_PRICES}, which adds the unit's quiz, review and two unit tests, and the curriculum bundle holds all ${A1_SHEETS.length} lessons${A1_EXTRA_TXT ? `, plus ${A1_EXTRA_TXT},` : ''} for ${A1_CURR.price}.` },
+  { q: 'Do the bundles come as one download?', a: 'Yes. Each unit bundle has a bonus file with the whole unit in one folder: a unit overview, every lesson\'s student pages and answer keys in one PDF each, all the Teacher Decks, and the mid-unit quiz, unit review and Unit Test Forms A and B in color, InkSaver and editable Word. The curriculum bundle\'s bonus file holds all 14 units, the Semester 1 Exam and the Final Exam, and the pacing guide.' },
+  { q: 'How are the lessons organized?', a: `By unit: ${A1_UNITS.length} units that follow a typical Algebra 1 sequence, from ${A1_UNITS[0].name} to ${A1_UNITS[A1_UNITS.length - 1].name}. Each lesson page says which lesson comes before and after it.` },
   { q: 'Does the Teacher Deck work in Google Slides?', a: 'It is built for PowerPoint. It also opens in Google Slides (File, then Open, and upload the .pptx), though some click animations may play differently there. Every deck also comes as a completed PDF with every slide fully built, to print or post.' },
-  { q: 'Which standards do they cover?', a: 'Each sheet is built to a Common Core high school standard, printed on the sheet and listed on its page here, so you can match sheets to your pacing guide.' },
+  { q: 'Which standards do they cover?', a: 'Each lesson is built to a Common Core high school standard, printed on the lesson and listed on its page here, so you can match lessons to your pacing guide.' },
 ];
 function a1Chips(list) { return `<div class="cr-chips">${list.join('')}</div>`; }
 function a1Video(o, label, cls) {
@@ -5834,7 +5161,8 @@ function a1PacketList(v) {
             <li><strong>Practice</strong>: ${a1N(v.warm)} warm-up, ${a1N(v.standard)} standard and ${a1N(v.stretch)} stretch problems, with an answer bank for self-checking that hides ${a1N(v.decoys)} common-mistake decoys</li>
             <li><strong>Apply</strong>: ${a1N(v.n_word)} word problem${v.n_word === 1 ? '' : 's'}${v.n_reason ? ', a reasoning prompt' : ''} and ${a1N(v.n_error)} error analysis</li>
             <li><strong>Assess</strong>: an exit ticket of ${a1N(v.n_exit)} items, two per page, with an I-can self-rating</li>
-            <li>Answer key (pages ${k1}–${k2}): every problem worked step by step, ${a1N(v.n_mistakes)} common mistakes with what to do about each, and a grading guide</li>
+            <li><strong>Homework</strong> (page ${v.homework.page}): eight new problems, two warm-up, four standard and two stretch</li>
+            <li>Answer key (pages ${k1}–${k2}): every problem worked step by step, ${a1N(v.n_mistakes)} common mistakes with what to do about each, and a grading guide, plus the homework key (page ${v.homework.key_page})</li>
             <li>Color and ink-saver editions of the whole packet</li>
           </ul>`;
 }
@@ -5848,13 +5176,13 @@ function pageAlgebra1Hub() {
   const free = A1_FREE[0];
   const vids = [
     { url: A1_CURR.url, video: A1_CURR.video, poster: A1_CURR.poster, secs: A1_CURR.video_seconds, len: vidLen(A1_CURR.video_seconds), accent: 'gold', feature: true,
-      name: 'Algebra 1 Curriculum Bundle', kicker: `All ${A1_SHEETS.length} lessons · ${A1_CURR.price}`, desc: `Every sheet in the course, ${A1_CURR.slides.toLocaleString('en-US')} Teacher Deck slides in all.`, cta: 'View the curriculum bundle' },
+      name: 'Algebra 1 Curriculum Bundle', kicker: `All ${A1_SHEETS.length} lessons · ${A1_CURR.price}`, desc: `Every lesson in the course, ${A1_CURR.slides.toLocaleString('en-US')} Teacher Deck slides in all.`, cta: 'View the curriculum bundle' },
     free && { url: free.url, video: free.v5.video, poster: free.v5.poster, secs: free.v5.video_seconds, len: vidLen(free.v5.video_seconds), accent: 'gold',
       name: free.skill, kicker: `${free.code} · free`, desc: 'The full lesson, free: deck, packet and answer key.', cta: 'Get it free on TPT' },
   ].filter(x => x && x.video);
   return head({
-    title: 'Algebra 1 Worksheets | 99 Skill Sheets with Notes & Answer Keys',
-    desc: `Algebra 1 lessons for every skill: ${A1_SHEETS.length} skill sheets in ${A1_UNITS.length} units, each an interactive Teacher Deck plus guided notes, practice, an exit ticket and a worked key.`,
+    title: 'Algebra 1 Worksheets | 99 Lessons with Notes, Homework & Answer Keys',
+    desc: `Algebra 1 lessons for every skill: ${A1_SHEETS.length} lessons in ${A1_UNITS.length} units, each an interactive Teacher Deck with guided notes, practice, an exit ticket, homework and worked keys.`,
     path: 'algebra-1.html',
     ogImage: SITE_URL + A1_CURR.img,
     jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Algebra 1', url: '/algebra-1.html' }]),
@@ -5864,7 +5192,7 @@ function pageAlgebra1Hub() {
   }) + nav('algebra-1') + `
 <main id="main">
   ${breadcrumb(crumbs)}
-  ${crHero('Algebra 1 · 4-in-1 Skill Sheets', 'Algebra 1, one skill at a time',
+  ${crHero('Algebra 1 · Lessons', 'Algebra 1, one skill at a time',
     `${A1_SHEETS.length} lessons in ${A1_UNITS.length} units. Each one is an interactive Teacher Deck of ${A1_SLIDES} slides that builds every step click by click, plus a ${A1_PAGES}-page student packet with guided notes, ${A1_PRACTICE + A1_APPLY} problems, an exit ticket and a fully worked answer key.`,
     `${tptBtn(A1_CURR, `Curriculum bundle on TPT · ${A1_CURR.price}`)}${free ? `<a class="btn btn--ghost cr-btn--light" href="${free.pageUrl}">Try ${esc(free.skill)} free ${ICON.arrow}</a>` : ''}`)}
 
@@ -5878,7 +5206,7 @@ function pageAlgebra1Hub() {
 
   <section class="section cr-alt">
     <div class="wrap">
-      ${secHead('The course', `${A1_UNITS.length} units, ${A1_SHEETS.length} skills`, `Open a unit to see every skill sheet in it, its standard and the unit bundle. Each sheet is ${A1_PRICE}; unit bundles run ${A1_UNIT_PRICES}.`)}
+      ${secHead('The course', `${A1_UNITS.length} units, ${A1_SHEETS.length} skills`, `Open a unit to see every lesson in it, its standard and the unit bundle. Each lesson is ${A1_PRICE}; unit bundles run ${A1_UNIT_PRICES}.`)}
       <div class="cr-grid">${units}</div>
     </div>
   </section>
@@ -5899,19 +5227,20 @@ function pageAlgebra1Hub() {
         <ul class="cr-list">
           <li><strong>Learn</strong>: guided notes with definitions, the key rule, a worked example and a Watch Out error pair</li>
           <li><strong>Practice</strong>: ${a1N(A1_WARM)} warm-up, ${a1N(A1_STD)} standard and ${a1N(A1_STRETCH)} stretch problems, with an answer bank that hides common-mistake decoys</li>
-          <li><strong>Apply</strong>: word problems and an error analysis, with a reasoning prompt on most sheets</li>
+          <li><strong>Apply</strong>: word problems and an error analysis, with a reasoning prompt in most lessons</li>
           <li><strong>Assess</strong>: an exit ticket of ${a1N(A1_EXIT)} items, two per page, with an I-can self-rating</li>
-          <li>Answer key (pages ${A1_KEYP[0]}–${A1_KEYP[A1_KEYP.length - 1]}): every problem worked step by step, the common mistakes with what to do about each, and a grading guide</li>
+          <li><strong>Homework</strong> (page ${A1_HW.page}): eight new problems, two warm-up, four standard and two stretch</li>
+          <li>Answer key (pages ${A1_KEYP[0]}–${A1_KEYP[A1_KEYP.length - 1]}): every problem worked step by step, the common mistakes with what to do about each, and a grading guide, plus the homework key (page ${A1_HW.key_page})</li>
           <li>Color and ink-saver editions of the whole packet</li>
         </ul>
       </div>
-      <figure class="cr-split__img reveal"><img src="${A1_CURR.img}" alt="Algebra 1 Curriculum Bundle: 99 skill sheets, each a Teacher Deck and student packet" width="640" height="640" loading="lazy" decoding="async"></figure>
+      <figure class="cr-split__img reveal"><img src="${A1_CURR.img}" alt="Algebra 1 Curriculum Bundle: 99 lessons, each a Teacher Deck and student packet" width="640" height="640" loading="lazy" decoding="async"></figure>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap cr-cta">
-      <div><span class="eyebrow">The whole course · ${A1_CURR.price}</span><h2>The Algebra 1 Curriculum Bundle</h2><p>All ${A1_SHEETS.length} lessons in one purchase, with every Teacher Deck (${A1_CURR.slides.toLocaleString('en-US')} slides in all), packet and answer key. ${A1_EXTRA_TXT ? ` It also includes ${A1_EXTRA_TXT}.` : ''} Bought one at a time, everything in it costs ${A1_CURR.list}; the bundle is ${A1_CURR.price}, a saving of ${A1_CURR.save} (${A1_CURR.pct}% off).</p></div>
+      <div><span class="eyebrow">The whole course · ${A1_CURR.price}</span><h2>The Algebra 1 Curriculum Bundle</h2><p>All ${A1_SHEETS.length} lessons in one purchase, with every Teacher Deck (${A1_CURR.slides.toLocaleString('en-US')} slides in all), packet with homework and answer key, and the year in one download: all 14 complete units with their quizzes, reviews and unit tests, the Semester 1 Exam and the Final Exam, and the pacing guide.${A1_EXTRA_TXT ? ` It also includes ${A1_EXTRA_TXT}.` : ''} Bought one at a time, everything in it costs ${A1_CURR.list}; the bundle is ${A1_CURR.price}, a saving of ${A1_CURR.save} (${A1_CURR.pct}% off).</p></div>
       ${tptBtn(A1_CURR, 'View the curriculum bundle')}
     </div>
   </section>
@@ -5949,7 +5278,7 @@ function pageAlgebra1Unit(u, prev, next) {
     title, desc, path: u.pageUrl.slice(1),
     ogImage: SITE_URL + b.img,
     jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Algebra 1', url: '/algebra-1.html' }, { name: `Unit ${u.n}: ${u.name}`, url: u.pageUrl }]),
-      itemListSchema(`Algebra 1 Unit ${u.n} skill sheets`, u.sheets.map(s => ({ url: s.pageUrl, name: s.skill }))),
+      itemListSchema(`Algebra 1 Unit ${u.n} lessons`, u.sheets.map(s => ({ url: s.pageUrl, name: s.skill }))),
       { '@context': 'https://schema.org', '@type': 'Product', name: `Algebra 1 Unit ${u.n}: ${u.name} Bundle`, description: vdesc, image: SITE_URL + b.img,
         brand: { '@type': 'Brand', name: 'Math Class 678' }, offers: a1Offer(b.url, b.price) },
       ...[a1VideoSchema(b, `Algebra 1 Unit ${u.n} bundle`, vdesc)].filter(Boolean)),
@@ -5962,16 +5291,16 @@ function pageAlgebra1Unit(u, prev, next) {
 
   <section class="section">
     <div class="wrap">
-      ${secHead('The skills', `${u.sheets.length} sheets in this unit`, `Built to ${stds.join(', ')}.`)}
-      <div class="cr-grid">${u.sheets.map(s => wuTile({ url: s.pageUrl, img: s.img, accent: 'gold', name: s.skill, kicker: `${s.code} · ${s.ccss}${s.free ? ' · free' : ''}`, desc: s.ican ? `I can ${s.ican}` : '', cta: 'See the sheet' })).join('')}</div>
+      ${secHead('The skills', `${u.sheets.length} lessons in this unit`, `Built to ${stds.join(', ')}.`)}
+      <div class="cr-grid">${u.sheets.map(s => wuTile({ url: s.pageUrl, img: s.img, accent: 'gold', name: s.skill, kicker: `${s.code} · ${s.ccss}${s.free ? ' · free' : ''}`, desc: s.ican ? `I can ${s.ican}` : '', cta: 'See the lesson' })).join('')}</div>
     </div>
   </section>
 
   <section class="section cr-alt">
     <div class="wrap cr-split">
       <div>
-        ${secHead('Save with the bundle', `Unit ${u.n} in one purchase: ${b.price}`, `All ${u.sheets.length} ${u.name} lessons: ${u.sheets.length} interactive Teacher Decks (${b.slides.toLocaleString('en-US')} slides in all) and ${u.sheets.length} student packets with fully worked answer keys, in color and ink-saver editions.`)}
-        <p>Bought one at a time, the ${b.paid} paid sheets cost ${b.list}${freeIn.length ? ` (${freeIn.map(s => s.skill).join(' and ')} ${freeIn.length > 1 ? 'are' : 'is'} free)` : ''}; the bundle is ${b.price}, a saving of ${b.save} (${b.pct}% off).</p>
+        ${secHead('Save with the bundle', `Unit ${u.n} in one purchase: ${b.price}`, `All ${u.sheets.length} ${u.name} lessons: ${u.sheets.length} interactive Teacher Decks (${b.slides.toLocaleString('en-US')} slides in all) and ${u.sheets.length} student packets with homework and fully worked answer keys, in color and ink-saver editions. Its bonus file is the whole unit in one download, with the mid-unit quiz, unit review and Unit Test Forms A and B in color, InkSaver and editable Word.`)}
+        <p>Bought one at a time, the ${b.paid} paid lessons cost ${b.list}${freeIn.length ? ` (${freeIn.map(s => s.skill).join(' and ')} ${freeIn.length > 1 ? 'are' : 'is'} free)` : ''}; the bundle is ${b.price}, a saving of ${b.save} (${b.pct}% off).</p>
         ${tptBtn(b, 'View the unit bundle')}
         <p style="margin-top:1rem"><a class="cr-link" href="${esc(A1_CURR.url)}" target="_blank" rel="noopener">Or the whole course: the curriculum bundle, all ${A1_SHEETS.length} lessons for ${A1_CURR.price} ${ICON.ext}</a></p>
       </div>
@@ -5999,133 +5328,208 @@ function pageAlgebra1Unit(u, prev, next) {
 }
 
 /* ============================================================================
-   5TH GRADE   (Oct 24 2026)
-   The 5th grade curriculum went live on TPT Oct 21-22 2026: 54 lessons in 10 units, 10 unit bundles, the
-   curriculum bundle and a free pacing guide. Hub + one page per unit; every lesson links to its TPT listing.
-   classroom_data.json `grade5` (state-testing tools/site_export/mc678_live_refresh.py: the curriculum facts
-   + live titles, URLs, prices and covers).
+   GRADES 5-8 CURRICULA   (Oct 29 2026)
+   Since Oct 27-29 2026 every grade 5-8 sells on TPT as one download per unit (all the unit's lessons with
+   homework, plus the quiz, unit review and Unit Test Forms A and B), the year curriculum bundle of those units,
+   a free pacing guide and one free lesson. The single-lesson listings and the old skill sheet bundles were
+   deactivated, so the old /sheets/ and /bundles/ pages 301 to the unit or grade that now carries them.
+   One hub per grade and one page per unit, from classroom_data.json `curricula`
+   (state-testing tools/site_export/mc678_curricula.py: the curriculum facts + live titles, URLs, prices, covers).
    ============================================================================ */
-const G5 = CLASSROOM.grade5;
-if (!G5) throw new Error('classroom_data.json has no grade5 section: run tools/site_export/mc678_live_refresh.py');
-const G5_UNITS = G5.units.map(u => Object.assign(u, { pageUrl: `/5th-grade/unit-${u.n}-${u.slug}.html` }));
-const G5_LESSONS = G5_UNITS.flatMap(u => u.lessons.map(l => Object.assign(l, { unit: u })));
-G5_UNITS.forEach(u => {
-  if (!/Quiz/.test(u.assessments) || !/Review/.test(u.assessments) || !/Form A/.test(u.assessments) || !/Form B/.test(u.assessments))
-    throw new Error(`5th Unit ${u.n}: the unit bundle's assessments are not the quiz, review and Forms A and B the page describes`);
-  if (u.bundle.items !== u.lessons.length) throw new Error(`5th Unit ${u.n}: bundle holds ${u.bundle.items}, the site lists ${u.lessons.length}`);
+const CURRICULA = CLASSROOM.curricula;
+if (!CURRICULA) throw new Error('classroom_data.json has no curricula section: run tools/site_export/mc678_curricula.py');
+const CUR_GRADES = ['5', '6', '7', '8'].map(g => {
+  const C = CURRICULA[g];
+  if (!C) throw new Error(`classroom_data.json curricula has no grade ${g}`);
+  C.name = `${C.ord} Grade`;
+  C.accent = WU_ACCENT['G' + g];
+  C.navKey = `grade-${g}`;
+  C.units.forEach(u => {
+    u.pageUrl = `/${C.dir}/unit-${u.n}-${u.slug}.html`;
+    u.grade = C;
+    u.lessons.forEach(l => { l.unit = u; });
+    if (!/Quiz/.test(u.assessments) || !/Review/.test(u.assessments) || !/Form A/.test(u.assessments) || !/Form B/.test(u.assessments))
+      throw new Error(`${C.name} Unit ${u.n}: the unit's assessments are not the quiz, review and Forms A and B the page describes`);
+  });
+  C.lessons = C.units.flatMap(u => u.lessons);
+  C.freeLesson = C.lessons.find(l => l.free);
+  if (!C.freeLesson || C.freeLesson.skill !== C.free.skill) throw new Error(`${C.name}: the free lesson in the facts is not the free listing`);
+  if (C.curriculum.items !== C.units.length) throw new Error(`${C.name} curriculum bundle holds ${C.curriculum.items} items, the site lists ${C.units.length} units`);
+  return C;
 });
-const G5_CURR = G5.curriculum;
-if (G5_CURR.items !== G5_LESSONS.length) throw new Error(`5th curriculum holds ${G5_CURR.items}, the site lists ${G5_LESSONS.length} lessons`);
-const G5_FREE = G5_LESSONS.filter(l => l.free);
-const G5_EACH = 'guided notes, practice, an exit ticket, a worked answer key and a click-by-click Teacher Deck';
-const G5_ADDS = 'a mid-unit quiz, a unit review and Unit Test Forms A and B, each with a fully worked answer key, in color, InkSaver and editable Word';
-const g5Lesson = l => wuTile({ url: l.url, external: true, img: l.img, accent: 'forest', name: l.skill,
-  kicker: `Lesson ${l.lesson} · ${l.ccss.join(', ')}${l.free ? ' · free' : ''}`, desc: l.ican ? `I can ${l.ican}` : '', cta: l.free ? 'Get it free on TPT' : 'See it on TPT' });
-const G5_FAQ = [
-  { q: 'What is in each 5th grade lesson?', a: `One skill, taught start to finish: ${G5_EACH}.` },
-  { q: 'How is the year organized?', a: `${G5_UNITS.length} units and ${G5_LESSONS.length} lessons, about ${G5.total_days} days with the quizzes, reviews and tests, from ${G5_UNITS[0].name} to ${G5_UNITS[G5_UNITS.length - 1].name}. The free pacing guide lays the year out day by day.` },
-  { q: 'What do the unit bundles add?', a: `Each unit bundle holds that unit's lessons plus ${G5_ADDS}.` },
-  { q: 'Can I try one first?', a: G5_FREE.length ? `Yes. ${G5_FREE.map(l => l.skill).join(' and ')} ${G5_FREE.length > 1 ? 'are' : 'is'} free, and it is the full lesson.` : 'Start with the free pacing guide.' },
+const CUR = Object.fromEntries(CUR_GRADES.map(C => [String(C.grade), C]));
+/* old 6-8 skill sheet number -> the unit that teaches that lesson now (redirects, glossary, standards pages) */
+const CUR_UNIT_OF_SHEET = {};
+CUR_GRADES.forEach(C => C.lessons.forEach(l => { CUR_UNIT_OF_SHEET[String(l.sheet)] = l.unit; }));
+/* standards pages that exist for a set of lesson codes ('6.EE.B.5+B.6' pages count for both codes) */
+const STD_PAGE_OF_CODE = {};
+Object.values(STANDARDS_CONTENT).forEach(std => {
+  const [first, ...rest] = String(std.ccss).split('+');
+  const stem = first.split('.').slice(0, 2).join('.');
+  [first, ...rest.map(r => `${stem}.${r}`)].forEach(c => { STD_PAGE_OF_CODE[c] = STD_PAGE_OF_CODE[c] || std; });
+});
+const curStdPages = codes => [...new Map(codes.map(c => STD_PAGE_OF_CODE[c]).filter(Boolean).map(s => [s.slug, s])).values()];
+const CUR_EACH = 'guided notes, practice, an exit ticket, a homework page, worked answer keys and a click-by-click Teacher Deck';
+const CUR_ADDS = 'a quiz, a unit review and Unit Test Forms A and B, each with a fully worked answer key, in color, InkSaver and editable Word';
+const curA = C => (C.grade === 8 || C.grade === '8' ? 'An' : 'A');   // an 8th grade
+const curMoney = s => Number(String(s).replace(/[$,]/g, ''));
+const curRange = C => { const v = C.units.map(u => curMoney(u.listing.price)); const lo = Math.min(...v), hi = Math.max(...v); return lo === hi ? `$${lo.toFixed(2)}` : `$${lo.toFixed(2)} to $${hi.toFixed(2)}`; };
+const curUnitsTotal = C => C.units.reduce((n, u) => n + curMoney(u.listing.price), 0);
+const curFaq = C => [
+  { q: `What is in each ${C.ord} grade unit?`, a: `The whole unit in one download: every lesson (${CUR_EACH}), plus ${CUR_ADDS}. A unit overview lists the lessons in teaching order with the days for each.` },
+  { q: 'How is the year organized?', a: `${C.units.length} units and ${C.lessons.length} lessons, about ${C.total_days} days with the quizzes, reviews and tests, from ${C.units[0].name} to ${C.units[C.units.length - 1].name}. The free pacing guide lays the year out day by day.` },
+  { q: 'What does it cost?', a: `Each unit is its own download on TPT, from ${curRange(C)}. The ${C.ord} Grade Math Curriculum bundle holds all ${C.units.length} units for ${C.curriculum.price}; bought one at a time they come to $${curUnitsTotal(C).toFixed(2)}.` },
+  { q: 'Is there homework?', a: 'Yes. Every lesson has a homework page of eight new problems (two warm-up, four standard and two stretch), with its own fully worked key, so you can grade it quickly or post the key for students to check their own work.' },
+  { q: 'Can I try one first?', a: `Yes. ${C.free.skill} is free on TPT, and it is the full lesson: the Teacher Deck, the packet, the homework and the answer keys. The pacing guide is free too.` },
+  { q: 'Does the Teacher Deck work in Google Slides?', a: 'It is built for PowerPoint. It also opens in Google Slides (File, then Open, and upload the .pptx), though some click animations may play differently there. Every deck also comes as a completed PDF with every slide fully built.' },
 ];
+const curUnitTile = u => wuTile({ url: u.pageUrl, img: u.listing.img, accent: u.grade.accent, name: `Unit ${u.n}: ${u.name}`,
+  kicker: `${u.lessons.length} lessons · ${u.days} days · ${u.listing.price}`, desc: u.lessons.map(l => l.skill).join(', '), cta: 'See the unit' });
+const curLessonList = u => `<ol class="cur-lessons">${u.lessons.map(l => `<li class="cur-lesson">
+          <span class="cur-lesson__n">Lesson ${l.lesson}</span>
+          <span class="cur-lesson__name">${esc(l.skill)}${l.free ? ` <a class="cur-lesson__free" href="${esc(u.grade.free.url)}" target="_blank" rel="noopener">Free on TPT ${ICON.ext}</a>` : ''}</span>
+          <span class="cur-lesson__meta">${esc(l.ccss.join(', '))} · ${l.days} day${l.days === 1 ? '' : 's'}</span>
+          ${l.ican ? `<span class="cur-lesson__ican">I can ${esc(l.ican)}</span>` : ''}
+        </li>`).join('')}</ol>`;
+const curStdChips = (codes, C) => {
+  const list = curStdPages(codes);
+  return list.length ? a1Chips(list.map(s => `<a class="cr-chip" href="/standards/${s.slug}.html">${esc(s.ccss)}: ${esc(s.title)}</a>`)) : '';
+};
 
-/* ---------------------------------------------------------------- /5th-grade.html */
-function page5thHub() {
-  const free = G5_FREE[0];
+/* ---------------------------------------------------------------- /5th-grade.html, /grade-6.html, /grade-7.html, /grade-8.html */
+function pageCurHub(C) {
+  const free = C.free, path_ = C.hub.slice(1);
+  const title = fitTitle([`${C.ord} Grade Math Curriculum: Notes, Homework & Unit Tests | Math Class 678`, `${C.ord} Grade Math Curriculum | Math Class 678`]);
+  const codes = [...new Set(C.lessons.flatMap(l => l.ccss))];
+  const wuCourse = WU.courses.find(x => x.slug === `grade-${C.grade}`) || {};
+  const wuImg = (wuCourse.yr && wuCourse.yr.img) || ((wuCourse.quarters || [])[0] || {}).img || '';
   return head({
-    title: '5th Grade Math Curriculum: Guided Notes, Slides & Unit Tests | Math Class 678'.length <= 70
-      ? '5th Grade Math Curriculum: Guided Notes, Slides & Unit Tests | Math Class 678' : '5th Grade Math Curriculum | Math Class 678',
-    desc: `A 5th grade math curriculum in ${G5_UNITS.length} units: ${G5_LESSONS.length} lessons, each with guided notes, practice, an exit ticket, a worked key and a Teacher Deck.`,
-    path: '5th-grade.html',
-    ogImage: SITE_URL + G5_CURR.img,
-    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: '5th Grade', url: '/5th-grade.html' }]), faqSchema(G5_FAQ),
-      itemListSchema('5th grade math units', G5_UNITS.map(u => ({ url: u.pageUrl, name: `Unit ${u.n}: ${u.name}` }))),
-      { '@context': 'https://schema.org', '@type': 'Product', name: '5th Grade Math Curriculum Bundle', image: SITE_URL + G5_CURR.img,
-        description: `All ${G5_LESSONS.length} 5th grade lessons and every unit's quiz, review and tests.`, brand: { '@type': 'Brand', name: 'Math Class 678' }, offers: a1Offer(G5_CURR.url, G5_CURR.price) }),
-  }) + nav('grade-5') + `
+    title,
+    desc: `${curA(C)} ${C.ord} grade math curriculum in ${C.units.length} units: ${C.lessons.length} lessons with guided notes, homework, Teacher Decks and unit tests, one download per unit.`,
+    path: path_,
+    ogImage: SITE_URL + C.curriculum.img,
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: C.name, url: C.hub }]), faqSchema(curFaq(C)),
+      itemListSchema(`${C.ord} grade math units`, C.units.map(u => ({ url: u.pageUrl, name: `Unit ${u.n}: ${u.name}` }))),
+      { '@context': 'https://schema.org', '@type': 'Product', name: C.curriculum.title, image: SITE_URL + C.curriculum.img,
+        description: `All ${C.units.length} ${C.ord} grade math units: ${C.lessons.length} lessons with homework, and every unit's quiz, review and tests.`,
+        brand: { '@type': 'Brand', name: 'Math Class 678' }, offers: a1Offer(C.curriculum.url, C.curriculum.price) }),
+  }) + nav(C.navKey) + `
 <main id="main">
-  ${breadcrumb([{ name: 'Home', url: '/' }, { name: '5th Grade' }])}
-  ${crHero('5th Grade Math', 'A 5th grade math curriculum, lesson by lesson',
-    `${G5_LESSONS.length} lessons in ${G5_UNITS.length} units, from place value to the coordinate plane. Every lesson has ${G5_EACH}.`,
-    `${tptBtn(G5_CURR, `Curriculum bundle on TPT · ${G5_CURR.price}`)}${free ? `<a class="btn btn--ghost cr-btn--light" href="${esc(free.url)}" target="_blank" rel="noopener">Try ${esc(free.skill)} free ${ICON.ext}</a>` : ''}`)}
+  ${breadcrumb([{ name: 'Home', url: '/' }, { name: C.name }])}
+  ${crHero(`${C.ord} Grade Math`, `${curA(C)} ${C.ord} grade math curriculum, unit by unit`,
+    `${C.lessons.length} lessons in ${C.units.length} units, from ${C.units[0].name} to ${C.units[C.units.length - 1].name}. Each unit is one download: every lesson with ${CUR_EACH}, plus the quiz, review and two unit tests.`,
+    `${tptBtn(C.curriculum, `Curriculum bundle on TPT · ${C.curriculum.price}`)}<a class="btn btn--ghost cr-btn--light" href="${esc(free.url)}" target="_blank" rel="noopener">Try ${esc(free.skill)} free ${ICON.ext}</a>`)}
 
   <section class="section">
     <div class="wrap">
-      ${secHead('The year', `${G5_UNITS.length} units`, 'Each unit page lists its lessons, the standards they teach and what the unit bundle adds.')}
-      <div class="cr-grid">${G5_UNITS.map(u => wuTile({ url: u.pageUrl, img: u.bundle.img, accent: 'forest', name: `Unit ${u.n}: ${u.name}`,
-        kicker: `${u.lessons.length} lessons · ${u.days} days`, desc: u.lessons.map(l => l.skill).join(', '), cta: 'See the unit' })).join('')}</div>
+      ${secHead('The year', `${C.units.length} units`, 'Each unit page lists its lessons, the standards they teach and the assessments that come with them.')}
+      <div class="cr-grid">${C.units.map(curUnitTile).join('')}</div>
     </div>
   </section>
 
   <section class="section cr-alt">
     <div class="wrap cr-split">
       <div>
-        ${secHead('The whole year · ' + G5_CURR.price, 'The 5th Grade Math Curriculum Bundle',
-          `All ${G5_LESSONS.length} lessons in one purchase, with every unit's quiz, review and Unit Test Forms A and B. Bought one at a time, the lessons list at ${G5_CURR.list}; the curriculum is ${G5_CURR.price}.`)}
-        ${tptBtn(G5_CURR, 'View the curriculum bundle')}
+        ${secHead('The whole year · ' + C.curriculum.price, C.curriculum.title.split(' | ')[0],
+          `All ${C.units.length} unit downloads in one purchase: ${C.lessons.length} lessons with homework, and every unit's quiz, review and Unit Test Forms A and B. Bought one at a time, the units come to $${curUnitsTotal(C).toFixed(2)}.`)}
+        ${tptBtn(C.curriculum, 'View the curriculum bundle')}
       </div>
-      <figure class="cr-split__img reveal"><img src="${G5_CURR.img}" alt="5th Grade Math Curriculum Bundle" width="640" height="640" loading="lazy" decoding="async"></figure>
+      <figure class="cr-split__img reveal"><img src="${C.curriculum.img}" alt="${esc(C.curriculum.title)}" width="640" height="640" loading="lazy" decoding="async"></figure>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
-      ${secHead('Free', 'Plan the year before you buy')}
+      ${secHead('In every unit', 'What each download holds')}
+      <ul class="cr-list">
+        <li><strong>The lessons</strong>, in teaching order: guided notes with a worked example, practice from warm-up to stretch, apply problems with an error analysis, and an exit ticket</li>
+        <li><strong>A homework page for every lesson</strong>: eight new problems, with its own fully worked key</li>
+        <li><strong>Answer keys</strong> for every page, each problem worked step by step, with the common mistakes and what to do about each</li>
+        <li><strong>An interactive Teacher Deck</strong> for every lesson (PowerPoint, with speaker notes) and a completed deck PDF</li>
+        <li><strong>The assessments</strong>: ${CUR_ADDS}</li>
+        <li><strong>A unit overview</strong> with the days for each lesson from the pacing guide</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section cr-alt">
+    <div class="wrap">
+      ${secHead('Free', 'Try it before you buy')}
       <div class="cr-grid">
-        ${G5.pacing ? wuTile({ url: G5.pacing.url, external: true, img: '/assets/images/freebies/free_5th-grade-math-pacing-guide.jpg', accent: 'gold', name: '5th Grade Math Pacing Guide', kicker: 'Free', desc: 'Every lesson, quiz, review and unit test on the calendar.', cta: 'Get it free on TPT' }) : ''}
-        ${free ? wuTile({ url: free.url, external: true, img: free.img, accent: 'gold', name: free.skill, kicker: 'Free · a full lesson', desc: free.ican ? `I can ${free.ican}` : '', cta: 'Get it free on TPT' }) : ''}
-        ${wuTile({ url: '/warm-ups/grade-5.html', img: (() => { const c = WU.courses.find(x => x.slug === 'grade-5') || {}; return (c.yr && c.yr.img) || ((c.quarters || [])[0] || {}).img || ''; })(), accent: 'forest', name: '5th Grade Math Warm-Ups', kicker: 'Daily bell ringers', desc: 'Four problems a day, a slide to project and a page to print.', cta: 'See the warm-ups' })}
+        ${wuTile({ url: free.url, external: true, img: free.img, accent: 'gold', name: free.skill, kicker: `Free · a full lesson from Unit ${free.unit}`, desc: 'The packet, homework, answer keys and Teacher Deck, exactly like every lesson in the units.', cta: 'Get it free on TPT' })}
+        ${wuTile({ url: C.pacing.url, external: true, img: C.pacing.img, accent: 'gold', name: `${C.ord} Grade Math Pacing Guide`, kicker: 'Free', desc: 'Every lesson, quiz, review and unit test on the calendar.', cta: 'Get it free on TPT' })}
+        ${wuImg ? wuTile({ url: `/warm-ups/grade-${C.grade}.html`, img: wuImg, accent: C.accent, name: `${C.ord} Grade Math Warm-Ups`, kicker: 'Daily bell ringers', desc: 'Four problems a day, a slide to project and a page to print.', cta: 'See the warm-ups' }) : ''}
       </div>
     </div>
   </section>
-  ${faqBlock(G5_FAQ, '5th grade curriculum questions')}
+  ${codes.some(c => STD_PAGE_OF_CODE[c]) ? `<section class="section">
+    <div class="wrap">
+      ${secHead('Teaching notes', `${C.ord} grade standards, explained`, 'How to explain each standard, worked examples and the mistakes students make.')}
+      ${curStdChips(codes, C)}
+    </div>
+  </section>` : ''}
+  ${faqBlock(curFaq(C), `${C.ord} grade curriculum questions`)}
   ${noteBand()}
 </main>
 ` + footer() + scripts();
 }
 
-/* ---------------------------------------------------------------- /5th-grade/unit-<n>-<slug>.html */
-function page5thUnit(u, prev, next) {
-  const b = u.bundle;
+/* ---------------------------------------------------------------- /<grade dir>/unit-<n>-<slug>.html */
+function pageCurUnit(u, prev, next) {
+  const C = u.grade, L = u.listing;
   const stds = [...new Set(u.lessons.flatMap(l => l.ccss))];
-  let title = `5th Grade Math Unit ${u.n}: ${u.name}`;
-  if (title.length > 70) title = `5th Grade Unit ${u.n}: ${u.name}`;
-  let desc = `5th grade math Unit ${u.n}, ${u.name}: ${u.lessons.length} lessons (${u.lessons.slice(0, 3).map(l => l.skill).join(', ')}${u.lessons.length > 3 ? ' and more' : ''}) with notes, slides and tests.`;
-  if (desc.length > 170) desc = `5th grade math Unit ${u.n}, ${u.name}: ${u.lessons.length} lessons with guided notes, Teacher Decks, a quiz, a review and two unit tests.`;
-  if (desc.length > 170) desc = `5th grade math Unit ${u.n}: ${u.lessons.length} lessons with guided notes, Teacher Decks, a quiz, a review and two unit tests.`;
+  const title = fitTitle([`${C.ord} Grade Math Unit ${u.n}: ${u.name}`, `${C.ord} Grade Unit ${u.n}: ${u.name}`, `${C.ord} Grade Math Unit ${u.n} | Math Class 678`]);
+  const descs = [
+    `${C.ord} grade math Unit ${u.n}, ${u.name}: ${u.lessons.length} lessons (${u.lessons.slice(0, 3).map(l => l.skill).join(', ')}${u.lessons.length > 3 ? ' and more' : ''}) with homework and unit tests.`,
+    `${C.ord} grade math Unit ${u.n}, ${u.name}: ${u.lessons.length} lessons with notes, homework, Teacher Decks, a quiz, a review and two unit tests.`,
+    `${C.ord} grade math Unit ${u.n}: ${u.lessons.length} lessons with guided notes, homework, Teacher Decks, a quiz, a review and two unit tests.`];
+  const desc = descs.find(d => d.length <= 170) || descs[descs.length - 1];
   return head({
-    title, desc, path: u.pageUrl.slice(1), ogImage: SITE_URL + b.img,
-    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: '5th Grade', url: '/5th-grade.html' }, { name: `Unit ${u.n}: ${u.name}`, url: u.pageUrl }]),
-      itemListSchema(`5th grade Unit ${u.n} lessons`, u.lessons.map(l => ({ url: l.url, name: l.skill }))),
-      { '@context': 'https://schema.org', '@type': 'Product', name: b.title, image: SITE_URL + b.img, description: desc,
-        brand: { '@type': 'Brand', name: 'Math Class 678' }, offers: a1Offer(b.url, b.price) }),
-  }) + nav('grade-5') + `
+    title, desc, path: u.pageUrl.slice(1), ogImage: SITE_URL + L.img,
+    jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: C.name, url: C.hub }, { name: `Unit ${u.n}: ${u.name}`, url: u.pageUrl }]),
+      { '@context': 'https://schema.org', '@type': 'Product', name: L.title, image: SITE_URL + L.img, description: desc,
+        brand: { '@type': 'Brand', name: 'Math Class 678' }, offers: a1Offer(L.url, L.price) }),
+  }) + nav(C.navKey) + `
 <main id="main">
-  ${breadcrumb([{ name: 'Home', url: '/' }, { name: '5th Grade', url: '/5th-grade.html' }, { name: `Unit ${u.n}` }])}
-  ${crHero(`5th Grade · Unit ${u.n}`, u.name, `${u.lessons.length} lessons, about ${u.days} days with the quiz, review and test: ${u.lessons.map(l => l.skill).join(', ')}.`,
-    `${tptBtn(b, `Unit bundle on TPT · ${b.price}`)}`)}
+  ${breadcrumb([{ name: 'Home', url: '/' }, { name: C.name, url: C.hub }, { name: `Unit ${u.n}` }])}
+  ${crHero(`${C.ord} Grade · Unit ${u.n}`, u.name, `${u.lessons.length} lessons, about ${u.days} days with the quiz, review and test, in one download: ${u.lessons.map(l => l.skill).join(', ')}.`,
+    `${tptBtn(L, `Unit ${u.n} on TPT · ${L.price}`)}`)}
 
   <section class="section">
-    <div class="wrap">
-      ${secHead('The lessons', `${u.lessons.length} lessons in this unit`, `Built to ${stds.join(', ')}. Each has ${G5_EACH}.`)}
-      <div class="cr-grid">${u.lessons.map(g5Lesson).join('')}</div>
+    <div class="wrap cr-split">
+      <div>
+        ${secHead('The lessons', `${u.lessons.length} lessons, in teaching order`, `Built to ${stds.join(', ')}. Each lesson has ${CUR_EACH}.`)}
+        ${curLessonList(u)}
+      </div>
+      <figure class="cr-split__img reveal"><img src="${L.img}" alt="${esc(L.title)}" width="640" height="640" loading="lazy" decoding="async"></figure>
     </div>
   </section>
 
   <section class="section cr-alt">
-    <div class="wrap cr-split">
-      <div>
-        ${secHead('The unit bundle', `Unit ${u.n} in one purchase: ${b.price}`, `All ${u.lessons.length} lessons, plus ${G5_ADDS}. The lessons alone list at ${b.list}.`)}
-        ${tptBtn(b, 'View the unit bundle')}
-        <p style="margin-top:1rem"><a class="cr-link" href="${esc(G5_CURR.url)}" target="_blank" rel="noopener">Or the whole year: the curriculum bundle, all ${G5_LESSONS.length} lessons for ${G5_CURR.price} ${ICON.ext}</a></p>
-      </div>
-      <figure class="cr-split__img reveal"><img src="${b.img}" alt="${esc(b.title)}" width="640" height="640" loading="lazy" decoding="async"></figure>
+    <div class="wrap">
+      ${secHead('One download · ' + L.price, `Everything for Unit ${u.n}`)}
+      <ul class="cr-list">
+        <li><strong>Student packets</strong>, color and InkSaver, with all ${u.lessons.length} lessons in teaching order: notes, practice, apply, an exit ticket and a homework page for each</li>
+        <li><strong>Answer keys</strong>: every problem worked step by step, the common mistakes, and a key for every homework page</li>
+        <li><strong>Teacher Decks</strong>: an interactive PowerPoint deck with speaker notes for each lesson, plus a completed deck PDF</li>
+        <li><strong>Assessments</strong>: ${CUR_ADDS}</li>
+        <li><strong>A unit overview</strong>: the lessons in teaching order and the days for each</li>
+      </ul>
+      <p style="margin-top:1.25rem">${tptBtn(L, 'View Unit ' + u.n + ' on TPT')}</p>
+      <p style="margin-top:1rem"><a class="cr-link" href="${esc(C.curriculum.url)}" target="_blank" rel="noopener">Or the whole year: the ${esc(C.ord)} Grade Math Curriculum bundle, all ${C.units.length} units for ${C.curriculum.price} ${ICON.ext}</a></p>
     </div>
   </section>
+  ${curStdPages(stds).length ? `<section class="section">
+    <div class="wrap">
+      ${secHead('Teaching notes', 'The standards in this unit', 'How to explain each one, worked examples and the mistakes students make.')}
+      ${curStdChips(stds, C)}
+    </div>
+  </section>` : ''}
 
   <section class="section">
     <div class="wrap">
-      ${secHead('Other units', 'The rest of the year')}
-      ${a1Chips(G5_UNITS.filter(x => x !== u).map(x => `<a class="cr-chip" href="${x.pageUrl}">Unit ${x.n}: ${esc(x.name)}</a>`).concat([`<a class="cr-chip" href="/5th-grade.html">All of 5th grade</a>`]))}
+      ${secHead('Other units', `The rest of ${C.ord} grade`)}
+      ${a1Chips(C.units.filter(x => x !== u).map(x => `<a class="cr-chip" href="${x.pageUrl}">Unit ${x.n}: ${esc(x.name)}</a>`).concat([`<a class="cr-chip" href="${C.hub}">All of ${C.ord} grade</a>`]))}
     </div>
   </section>
 
@@ -6161,7 +5565,7 @@ function pageAlgebra1Sheet(s, prev, next) {
     title, desc, path: s.pageUrl.slice(1), ogType: 'article',
     ogImage: SITE_URL + s.img,
     jsonld: jsonld(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Algebra 1', url: '/algebra-1.html' }, { name: `Unit ${u.n}: ${u.name}`, url: u.pageUrl }, { name: s.skill, url: s.pageUrl }]),
-      { '@context': 'https://schema.org', '@type': 'LearningResource', name: `${s.skill} — Algebra 1 4-in-1 Skill Sheet`, url: SITE_URL + s.pageUrl,
+      { '@context': 'https://schema.org', '@type': 'LearningResource', name: `${s.skill} — Algebra 1 lesson`, url: SITE_URL + s.pageUrl,
         description: v.learn, educationalLevel: 'Algebra 1', learningResourceType: ['Worksheet', 'Presentation'], inLanguage: 'en', teaches: `I can ${s.ican}`,
         isAccessibleForFree: !!s.free,
         educationalAlignment: s.codes.map(c => ({ '@type': 'AlignmentObject', alignmentType: 'teaches', educationalFramework: 'Common Core State Standards', targetName: c })),
@@ -6174,7 +5578,7 @@ function pageAlgebra1Sheet(s, prev, next) {
   <section class="section sheet-hero">
     <div class="wrap sheet-hero__grid">
       <div class="sheet-hero__media a1-media">
-        <img src="${s.img}" alt="${esc(s.skill)}, Algebra 1 4-in-1 Skill Sheet and Teacher Deck (${esc(s.ccss)})" width="640" height="640" loading="eager" fetchpriority="high" decoding="async">
+        <img src="${s.img}" alt="${esc(s.skill)}, Algebra 1 lesson packet and Teacher Deck (${esc(s.ccss)})" width="640" height="640" loading="eager" fetchpriority="high" decoding="async">
         ${s.free ? '<span class="pcard__badge sheet__badge">Free</span>' : ''}
       </div>
       <div class="sheet-hero__copy">
@@ -6218,7 +5622,7 @@ function pageAlgebra1Sheet(s, prev, next) {
           <dl class="sheet-facts__dl">
             <div><dt>Course</dt><dd>Algebra 1</dd></div>
             <div><dt>Unit</dt><dd><a href="${u.pageUrl}">Unit ${u.n}: ${esc(u.name)}</a></dd></div>
-            <div><dt>Sheet</dt><dd>${esc(s.code)}</dd></div>
+            <div><dt>Lesson</dt><dd>${esc(s.code)}</dd></div>
             <div><dt>Format</dt><dd>${v.pages}-page packet + ${v.slides}-slide Teacher Deck</dd></div>
             <div><dt>Price</dt><dd>${s.free ? 'Free on TPT' : `${esc(v.price)} on TPT`}</dd></div>
           </dl>
@@ -6231,7 +5635,7 @@ function pageAlgebra1Sheet(s, prev, next) {
     </div>
   </section>
 
-  <nav class="section sheetnav" aria-label="Browse adjacent sheets" style="padding-top:0">
+  <nav class="section sheetnav" aria-label="Browse adjacent lessons" style="padding-top:0">
     <div class="wrap sheetnav__row">
       ${prev ? `<a class="sheetnav__link sheetnav__prev" href="${prev.pageUrl}"><span class="sheetnav__dir">Previous</span><span class="sheetnav__name">${esc(prev.skill)}</span></a>` : '<span class="sheetnav__link is-empty"></span>'}
       ${next ? `<a class="sheetnav__link sheetnav__next" href="${next.pageUrl}"><span class="sheetnav__dir">Next</span><span class="sheetnav__name">${esc(next.skill)}</span></a>` : '<span class="sheetnav__link is-empty"></span>'}
@@ -6253,14 +5657,12 @@ function pageAlgebra1Sheet(s, prev, next) {
      stored one gets today's date. Commit data/sitemap-dates.json after a build that changes pages, so
      the Netlify build sees the same dates. */
 function sitemapUrls() {
-  const pages = ['', 'catalog.html', 'bundles.html', 'warm-ups.html', 'readiness.html', 'algebra-1.html', '5th-grade.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
+  const pages = ['', 'catalog.html', 'warm-ups.html', 'readiness.html', 'algebra-1.html', '5th-grade.html', 'word-wall.html', 'grade-6.html', 'grade-7.html', 'grade-8.html', 'free.html', 'get-started.html', 'about.html', 'contact.html'];
   const main = pages.map(p => `/${p}`)
     .concat(WU.courses.map(c => `/warm-ups/${c.slug}.html`))
     .concat(ICAN_SETS.map(st => `/i-can/${st.slug}.html`))
     .concat(A1_UNITS.concat(A1_SHEETS).map(x => x.pageUrl))
-    .concat(G5_UNITS.map(u => u.pageUrl))
-    .concat(bundles.map(b => b.pageUrl))
-    .concat(products.filter(p => p.live).map(p => p.pageUrl))
+    .concat(CUR_GRADES.flatMap(C => C.units.map(u => u.pageUrl)))
     .concat(Object.values(STANDARDS_CONTENT).map(s => `/standards/${s.slug}.html`))
     .concat(FREEBIES.map(f => f.pageUrl));
   return { pages: main, glossary: glossary.map(t => t.pageUrl) };
@@ -6372,8 +5774,6 @@ const ILEARN_REDIRECTS = ilearnRules.map(([from, to]) => `${from}   ${to}   301!
 // live bundle that now carries its sheets, so a Google result or an old pin still lands somewhere useful.
 const RETIRED_BUNDLE_REDIRECTS = [
   // 6th Grade Expressions (16737025) was folded into 6th Grade Expressions & Equations (16734544).
-  ['/bundles/6th-grade-expressions', '/bundles/6th-grade-expressions-equations.html'],
-  ['/bundles/6th-grade-expressions.html', '/bundles/6th-grade-expressions-equations.html'],
   // 2026-10-01: the free 6th grade sheet became Order of Operations (TPT exclusivity); CLT 6th is paid on TPT.
   ['/free/combining-like-terms-grade-6.html', '/free/order-of-operations.html'],
   ['/free/combining-like-terms-grade-6', '/free/order-of-operations.html'],
@@ -6401,7 +5801,19 @@ const RETIRED_LINE_REDIRECTS = [
 ].flatMap(([from, to]) => [[from, to], [from + '.html', to]])
   .concat([['/money-labs/*', '/'], ['/i-can/*', '/']])
   .map(([from, to]) => `${from}   ${to}   301!`).join('\n') + '\n';
-const netlifyRedirects = `/tiktok    /tiktok.html   200!\n/tiktok/   /tiktok.html   200!\n/join      ${SKOOL_JOIN_URL}   301!\n/join/*    ${SKOOL_JOIN_URL}   301!\n` + ILEARN_REDIRECTS + RETIRED_BUNDLE_REDIRECTS + RETIRED_LINE_REDIRECTS;
+// SHEETS AND BUNDLES (2026-10-30). Grades 6-8 now sell as unit downloads + the year curriculum; the single
+// skill sheet listings and the skill sheet bundles were deactivated. Each old sheet page 301s to the unit page that
+// teaches that lesson now; each old bundle page to its grade (the 6-8 ULTIMATE bundle and /bundles.html to /catalog.html).
+const SHEET_BUNDLE_REDIRECTS = products.map(p => {
+  const u = CUR_UNIT_OF_SHEET[String(p.num)];
+  if (!u) throw new Error(`sheet #${p.num} ${p.name} is in no unit: no page to send /sheets/${p.pageSlug}.html to`);
+  return [`/sheets/${p.pageSlug}`, u.pageUrl];
+}).concat(bundles.map(b => [b.pageUrl.replace(/\.html$/, ''), CUR[String(b.grade)] ? CUR[String(b.grade)].hub : '/catalog.html']))
+  .concat([['/bundles', '/catalog.html']])
+  .flatMap(([from, to]) => [[from, to], [from + '.html', to]])
+  .concat([['/sheets/*', '/catalog.html'], ['/bundles/*', '/catalog.html']])
+  .map(([from, to]) => `${from}   ${to}   301!`).join('\n') + '\n';
+const netlifyRedirects = `/tiktok    /tiktok.html   200!\n/tiktok/   /tiktok.html   200!\n/join      ${SKOOL_JOIN_URL}   301!\n/join/*    ${SKOOL_JOIN_URL}   301!\n` + ILEARN_REDIRECTS + RETIRED_LINE_REDIRECTS + SHEET_BUNDLE_REDIRECTS;
 
 /* ============================================================================
    write everything
@@ -6422,7 +5834,6 @@ fs.mkdirSync(DIST, { recursive: true });
 
 write('index.html', pageHome());
 write('catalog.html', pageCatalog());
-write('bundles.html', pageBundles());
 write('free.html', pageFree());
 write('about.html', pageAbout());
 write('contact.html', pageContact());
@@ -6436,32 +5847,15 @@ write('algebra-1.html', pageAlgebra1Hub());
 A1_UNITS.forEach((u, i) => write(u.pageUrl.slice(1), pageAlgebra1Unit(u, A1_UNITS[i - 1], A1_UNITS[i + 1])));
 A1_SHEETS.forEach((sh, i) => write(sh.pageUrl.slice(1), pageAlgebra1Sheet(sh, A1_SHEETS[i - 1], A1_SHEETS[i + 1])));
 // I Can posters: every listing deactivated Oct 20 2026; /i-can* 301s (RETIRED_LINE_REDIRECTS)
-write('5th-grade.html', page5thHub());
-G5_UNITS.forEach((u, i) => write(u.pageUrl.slice(1), page5thUnit(u, G5_UNITS[i - 1], G5_UNITS[i + 1])));
-
-/* per-grade landing pages — SEO hubs for "Nth grade math skill sheets" */
-['6', '7', '8'].forEach(g => write(`grade-${g}.html`, pageGrade(g)));
-
-/* individual bundle landing pages — ordered for prev/next (features first, then by grade) */
-const bundleOrder = bundles.slice().sort((a, b) => {
-  const rank = x => x.tier === 'ultimate' ? 0 : x.tier === 'mega' ? 1 : 2;
-  return rank(a) - rank(b) || String(a.grade).localeCompare(String(b.grade)) || a.name.localeCompare(b.name);
-});
-let bundleCount = 0;
-bundleOrder.forEach((b, i) => {
-  write(`bundles/${b.slug}.html`, pageBundle(b, bundleOrder[i - 1], bundleOrder[i + 1]));
-  bundleCount++;
+/* grades 5-8: one hub + one page per unit (Oct 29 2026; the 6-8 hubs keep their /grade-N.html addresses) */
+CUR_GRADES.forEach(C => {
+  write(C.hub.slice(1), pageCurHub(C));
+  C.units.forEach((u, i) => write(u.pageUrl.slice(1), pageCurUnit(u, C.units[i - 1], C.units[i + 1])));
 });
 
-/* individual sheet landing pages — ordered grade then sheet number, with prev/next */
-const sheetOrder = products
-  .filter(p => p.live) // live-gate: no page for pending products
-  .sort((a, b) => (a.grade - b.grade) || (Number(a.num) - Number(b.num)));
-let sheetCount = 0;
-sheetOrder.forEach((p, i) => {
-  write(`sheets/${p.pageSlug}.html`, pageSheet(p, sheetOrder[i - 1], sheetOrder[i + 1]));
-  sheetCount++;
-});
+/* The 6-8 skill sheet pages and bundle pages are gone (Oct 29 2026): their listings were deactivated when the
+   grades moved to unit downloads. Each old address 301s (SHEET_BUNDLE_REDIRECTS). */
+const sheetCount = 0, bundleCount = 0;
 
 /* individual standard content pages */
 let standardCount = 0;
@@ -6499,9 +5893,10 @@ if (fs.existsSync(SRC_SITE_IMGS)) {
     });
 }
 
-// Warm-ups, readiness, Algebra 1 and 5th grade card images (written by the state-testing exporters).
-// motw, subplans, money, mystery and activities are retired lines (2026-10-12) and are no longer copied.
-['warmups', 'readiness', 'algebra1', 'thumbs_v5', 'grade5'].forEach(dir => {   // ican: line retired Oct 20 2026
+// Warm-ups, readiness, Algebra 1, lesson covers and the grade 5-8 unit covers (written by the state-testing exporters).
+// motw, subplans, money, mystery and activities are retired lines (2026-10-12) and are no longer copied; ican since
+// Oct 20 2026; grade5 since Oct 29 2026 (replaced by curricula).
+['warmups', 'readiness', 'algebra1', 'thumbs_v5', 'curricula'].forEach(dir => {
   const src = path.join(ROOT, 'assets', 'images', dir);
   if (!fs.existsSync(src)) return;
   fs.readdirSync(src).filter(f => /\.(jpe?g|png)$/i.test(f)).forEach(f => copy(path.join('assets/images', dir, f), path.join('assets/images', dir, f)));
@@ -6695,4 +6090,24 @@ console.log('  Site asset images bundled:', siteImgCount);
   }
   if (hits.length) { console.error(`RETIRED-ID GATE FAILED (${hits.length} links to retired TPT listings):\n  ` + hits.slice(0, 30).join('\n  ')); process.exit(1); }
   console.log(`  Retired-id gate: clean (${RETIRED_IDS.size} retired ids)`);
+})();
+
+/* ============================================================================
+   LIVE-ID GATE (Oct 29 2026). Every TPT product link in dist must be a listing that was live when the data was
+   exported: live_ids.json (repo root) is written by state-testing tools/site_export/mc678_curricula.py from the
+   store pages plus each bundle's own product page. Stricter than the retired-id gate: a listing deactivated later
+   fails the next build after a fresh export, without anyone having to list it.
+   ============================================================================ */
+(function liveIdGate() {
+  const LIVE = new Set(JSON.parse(fs.readFileSync(path.join(ROOT, 'live_ids.json'), 'utf8')).ids);
+  const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : /\.(html|js|xml|txt|toml|json)$|^_redirects$/.test(e.name) ? [path.join(d, e.name)] : []);
+  const hits = [];
+  for (const f of walk(DIST)) {
+    const text = fs.readFileSync(f, 'utf8');
+    for (const m of text.matchAll(/teacherspayteachers\.com\/Product\/[^"'\s<>)]*?(\d{6,9})(?=["'\s<>)?#&]|$)/gi)) {
+      if (!LIVE.has(m[1])) hits.push(`${path.relative(DIST, f)}: ${m[1]}`);
+    }
+  }
+  if (hits.length) { console.error(`LIVE-ID GATE FAILED (${hits.length} links to listings that are not live):\n  ` + [...new Set(hits)].slice(0, 40).join('\n  ')); process.exit(1); }
+  console.log(`  Live-id gate: clean (${LIVE.size} live ids)`);
 })();

@@ -45,11 +45,22 @@ RETIRED-ID GATE at the end of `build_site.js` fails the build if dist links to a
 Never bring one of these lines back to the site unless Greg relists it on TPT; when more
 listings are deactivated, add their ids to `retired_ids.json`.
 
+**Oct 29 2026 — GRADES 5-8 SELL BY UNIT.** Every grade 5-8 now sells on TPT as one download per unit (the
+unit's lessons with homework, plus the quiz, unit review and Unit Test Forms A and B), the year curriculum bundle,
+a free pacing guide and one free lesson. The 6-8 single skill sheet listings and every skill sheet bundle were
+deactivated, so /sheets/* and /bundles/* are gone and 301 (SHEET_BUNDLE_REDIRECTS: each sheet to the unit page that
+teaches that lesson, each bundle to its grade). Pages: /5th-grade.html, /grade-6.html, /grade-7.html, /grade-8.html
+(hubs) and /<5th-grade|grade-N>/unit-<n>-<slug>.html, built from classroom_data.json `curricula` (state-testing
+tools/site_export/mc678_curricula.py STORE_JSON PAGES_JSON, which also writes live_ids.json and the Algebra 1 live
+prices + homework facts). Algebra 1 still sells lesson by lesson, by unit bundle and as the curriculum bundle.
+LIVE-ID GATE: the build fails if dist links a TPT id missing from live_ids.json; re-run the exporter after any
+listing change. The Middle School Math ULTIMATE bundle (16515388) is still live on TPT but is not shown here.
+
 ## Who / what
 
 Greg — 25+ yr middle-school math teacher, sole operator of Math Class 678 (TPT storefront
-math-class-678). Building mathclass678.com as a branded catalog hub for the 103
-4-in-1 Skill Sheets™ (Reference · Practice · Apply · Assess), grades 6–8 CCSS, plus a
+math-class-678). Building mathclass678.com as a branded catalog hub for the
+math curriculum (5th-8th grade by unit, Algebra 1 by lesson, unit and year; see the Oct 29 2026 note above), plus a
 free math vocabulary glossary (the former Word Wall branch, grades 5–8 + Algebra 1 +
 Geometry; the word wall products were retired Oct 12 2026) and
 free-resource pages that link to each freebie's free TPT listing. The site collects no
