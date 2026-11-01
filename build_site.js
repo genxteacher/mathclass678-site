@@ -2821,7 +2821,7 @@ function pageHome() {
         <span class="il-homebanner__flag">State testing</span>
         <div class="il-homebanner__copy">
           <strong>State test math practice now lives at State Test Math</strong>
-          <span>Indiana ILEARN, Georgia, Florida, Texas and North Carolina practice for grades 3&ndash;8 and Algebra 1 &mdash; checkpoints, reteach and full-year sets.</span>
+          <span>Indiana ILEARN, Georgia, Florida, Texas, North Carolina and Ohio practice for grades 3&ndash;8 and Algebra 1: practice tests, reteach and full-year sets.</span>
         </div>
         <span class="il-homebanner__cta">Visit State Test Math ${ICON.arrow}</span>
       </div>
