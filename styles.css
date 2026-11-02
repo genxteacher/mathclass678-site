@@ -1743,6 +1743,18 @@ a.cr-tile__cta:hover { color: var(--g, var(--forest)); }
   .soc #videos { padding-top: 1.6rem; }
 }
 .soc .cr-tile__media img { object-position: top; }
+/* Nov 2 2026: Checkpoint 2 grade picker at the top of /tiktok */
+.soc-cp2 { background: var(--forest-tint); }
+.soc-cp2__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: .8rem; }
+.soc-cp2__row { display: grid; grid-template-columns: auto 1fr; grid-template-areas: "g b" "g s" "g n"; column-gap: 1rem; row-gap: .3rem; align-items: center; background: var(--white); border: 1px solid var(--line); border-left: 5px solid var(--gold); border-radius: var(--radius); padding: .9rem 1rem; box-shadow: var(--shadow-sm); }
+.soc-cp2__grade { grid-area: g; font-family: var(--display); font-size: 2rem; line-height: 1; color: var(--forest); text-align: center; min-width: 3.2ch; }
+.soc-cp2__grade small { display: block; font-family: var(--body, inherit); font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: .08em; color: var(--charcoal-soft); margin-top: .25rem; }
+.soc-cp2__row .btn { grid-area: b; justify-self: start; }
+.soc-cp2__row .btn svg, .soc-cp2__set svg { width: 14px; height: 14px; }
+.soc-cp2__set { grid-area: s; font-size: var(--fs-sm); color: var(--forest); text-decoration: underline; text-underline-offset: 3px; }
+.soc-cp2__n { grid-area: n; font-size: var(--fs-xs); color: var(--charcoal-soft); }
+.soc-cp2__note { font-size: var(--fs-xs); color: var(--charcoal-soft); margin: 1rem 0 0; }
+
 /* v1.19.0 skill sheet page: the 20-second preview above the deck and packet lists */
 .sheet-video { max-width:720px; border-radius:var(--radius, 12px); overflow:hidden; }
 .sheet-block .cr-list { max-width:62ch; color:var(--charcoal-soft); line-height:1.55; }

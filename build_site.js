@@ -5016,6 +5016,36 @@ function socPost(p) {
   </article>`;
 }
 
+/* Nov 2 2026: the Checkpoint 2 TikTok (Drive Uploads/tiktok-ilearn-cp2-2026-11-02) sends viewers here from the bio
+   link. One row per grade: the free grade screener straight to TPT, and the grade's full Checkpoint 2 page on
+   statetestmath.com. Items per screener from the Oct 4 build (sampler:g3cp2..g8cp2). */
+const TIKTOK_CP2 = [
+  [3, '3rd', 14, '3rd-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837003'],
+  [4, '4th', 14, '4th-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837004'],
+  [5, '5th', 12, '5th-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837006'],
+  [6, '6th', 14, '6th-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837008'],
+  [7, '7th', 12, '7th-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837012'],
+  [8, '8th', 12, '8th-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837014'],
+];
+function tiktokCp2() {
+  const row = ([g, name, n, slug]) => `
+        <li class="soc-cp2__row">
+          <span class="soc-cp2__grade">${name}<small>grade</small></span>
+          <a class="btn btn--primary" href="https://www.teacherspayteachers.com/Product/${slug}" target="_blank" rel="noopener">Free screener ${ICON.ext}</a>
+          <a class="soc-cp2__set" href="https://statetestmath.com/indiana/grade-${g}/checkpoint-2/" target="_blank" rel="noopener">Full Checkpoint 2 set ${ICON.arrow}</a>
+          <span class="soc-cp2__n">${n} questions</span>
+        </li>`;
+  return `
+  <section class="section soc-cp2" id="checkpoint-2">
+    <div class="wrap">
+      ${secHead('Indiana ILEARN · Checkpoint 2', 'Pick your grade', 'Start with the free screener: two questions per Checkpoint 2 standard, worked answers, and a chart that tells you which reteach page each student needs. The window runs November 16 to February 5.')}
+      <ul class="soc-cp2__list">${TIKTOK_CP2.map(row).join('')}
+      </ul>
+      <p class="soc-cp2__note">Independent resource. Not affiliated with, sponsored by, or endorsed by the Indiana Department of Education.</p>
+    </div>
+  </section>`;
+}
+
 function pageTiktok() {
   const freeTile = k => { const f = SOCIAL_DATA.free[k];
     return wuTile({ url: f.url, external: true, img: f.img, name: f.name, desc: f.sub, kicker: 'Free on TPT', cta: 'Get it free on TPT' }); };
@@ -5035,6 +5065,7 @@ function pageTiktok() {
       <div class="soc-hero__actions"><a class="btn btn--primary" href="#videos">Find your video ${ICON.arrow}</a><a class="btn btn--ghost cr-btn--light" href="#free">All free resources</a></div>
     </div>
   </section>
+${tiktokCp2()}
 
   <section class="section" id="videos">
     <div class="wrap">
