@@ -5030,7 +5030,7 @@ const TIKTOK_CP2 = [
 function tiktokCp2() {
   const row = ([g, name, n, slug]) => `
         <li class="soc-cp2__row">
-          <span class="soc-cp2__grade">${name}<small>grade</small></span>
+          <a class="soc-cp2__grade" href="https://www.teacherspayteachers.com/Product/${slug}" target="_blank" rel="noopener"><img src="/assets/social/free/cp2-g${g}.jpg" alt="${name} Grade Indiana ILEARN Math Checkpoint 2 Free Screener" width="320" height="320" loading="lazy"></a>
           <a class="btn btn--primary" href="https://www.teacherspayteachers.com/Product/${slug}" target="_blank" rel="noopener">Free screener ${ICON.ext}</a>
           <a class="soc-cp2__set" href="https://statetestmath.com/indiana/grade-${g}/checkpoint-2/" target="_blank" rel="noopener">Full Checkpoint 2 set ${ICON.arrow}</a>
           <span class="soc-cp2__n">${n} questions</span>
