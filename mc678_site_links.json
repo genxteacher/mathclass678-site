@@ -161,7 +161,7 @@
    "ccss": "6.EE.A.1",
    "price": "$5.00",
    "status": "Live",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/Order-of-Operations-4-in-1-Skill-Sheet-for-6th-Grade-Math-CCSS-6EEA1-16334854"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/Order-of-Operations-Worksheet-6th-Grade-Math-Notes-Slides-Answer-Key-16334854"
   },
   {
    "id": "SS-014",
@@ -403,7 +403,7 @@
    "ccss": "7.EE.A.1",
    "price": "$5.00",
    "status": "Live",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/Combining-Like-Terms-4-in-1-Skill-Sheet-for-7th-Grade-Math-CCSS-7EEA1-16337315"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/Combining-Like-Terms-Simplifying-Algebraic-Expressions-Worksheet-7th-Grade-16337315"
   },
   {
    "id": "SS-036",
@@ -766,7 +766,7 @@
    "ccss": "8.EE.C.7b",
    "price": "$5.00",
    "status": "Live",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/Multi-Step-Equations-8th-Grade-Math-Worksheet-Combine-Like-Terms-16514621"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/Solving-Multi-Step-Equations-with-Variables-on-Both-Sides-Worksheet-8th-Grade-16514621"
   },
   {
    "id": "SS-069",
@@ -1217,7 +1217,7 @@
    "name": "6th Skill Sheets Bundle",
    "full_title": "6th Skill Sheets Bundle",
    "tier": "Grade",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-MEGA-Bundle-4-in-1-Skill-Sheets-Full-Year-Common-Core-34-Skills-16464069"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Curriculum-6th-Grade-Math-Guided-Notes-Slides-Unit-Tests-16464069"
   },
   {
    "id": "BUN-010",
@@ -1265,7 +1265,7 @@
    "name": "7th Skills Sheets Bundle",
    "full_title": "7th Skills Sheets Bundle",
    "tier": "Grade",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-MEGA-Bundle-4-in-1-Skill-Sheets-Full-Year-32-Skills-CCSS-16465247"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Curriculum-Guided-Notes-Homework-Slides-Unit-Tests-16465247"
   },
   {
    "id": "BUN-016",
@@ -1345,7 +1345,7 @@
    "name": "8th Skills Sheet Bundle",
    "full_title": "8th Skills Sheet Bundle",
    "tier": "Grade",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Worksheets-MEGA-Bundle-4-in-1-Skill-Sheets-37-Sheets-16515341"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Curriculum-Guided-Notes-Homework-Slides-Unit-Tests-16515341"
   },
   {
    "id": "BUN-026",
@@ -1385,7 +1385,7 @@
    "name": "6-8th Skills Sheet ultimate bundle",
    "full_title": "6-8th Skills Sheet ultimate bundle",
    "tier": "Ultimate",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/Middle-School-Math-ULTIMATE-Bundle-103-Skill-Sheets-Grades-6-8-16515388"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/Middle-School-Math-Curriculum-ULTIMATE-Bundle-6th-7th-8th-Grade-Full-Year-16515388"
   }
  ],
  "warmups": [
@@ -1394,133 +1394,133 @@
    "grade": "6th",
    "name": "Warmups 6th Q1",
    "type": "Individual",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Q1-CCSS-Spiral-Review-Bell-Ringers-Answer-Deck-16471750"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Q1-Ratios-Rates-Bell-Ringers-Spiral-Review-16471750"
   },
   {
    "id": "WU-002",
    "grade": "6th",
    "name": "Warmups 6th Q2",
    "type": "Individual",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Quarter-2-CCSS-Spiral-Review-Bell-Ringers-Answer-Key-16471956"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Q2-Number-System-Bell-Ringers-Spiral-Review-16471956"
   },
   {
    "id": "WU-003",
    "grade": "6th",
    "name": "Warmups 6th Q3",
    "type": "Individual",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/Expressions-Equations-45-days-4-daily-problems-CCSS-spiral-answer-deck-16472163"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Q3-Expressions-Equations-Bell-Ringers-Spiral-Review-16472163"
   },
   {
    "id": "WU-004",
    "grade": "6th",
    "name": "Warmups 6th Q4",
    "type": "Individual",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Q4-CCSS-Spiral-Review-Bell-Ringers-Answer-Deck-16472879"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Q4-Geometry-Statistics-Bell-Ringers-Spiral-Review-16472879"
   },
   {
    "id": "WU-005",
    "grade": "6th",
    "name": "Warmups 6th Bundle",
    "type": "Bundle",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Full-Year-Bundle-Quarters-14-CCSS-Spiral-Review-16473089"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Full-Year-Bundle-180-Days-Spiral-Review-CCSS-16473089"
   },
   {
    "id": "WU-006",
    "grade": "7th",
    "name": "Warmups 7th Q1",
    "type": "Individual",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Q1-CCSS-Spiral-Review-Bell-Ringers-Answer-Deck-16483322"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Q1-Ratios-Proportions-Bell-Ringers-Spiral-Review-16483322"
   },
   {
    "id": "WU-007",
    "grade": "7th",
    "name": "Warmups 7th Q2",
    "type": "Individual",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Q2-CCSS-Spiral-Review-Bell-Ringers-Answer-Deck-16483561"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Q2-Integers-Rational-Numbers-Bell-Ringers-16483561"
   },
   {
    "id": "WU-008",
    "grade": "7th",
    "name": "Warmups 7th Q3",
    "type": "Individual",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Q3-CCSS-Spiral-Review-Bell-Ringers-Answer-Deck-16483423"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Q3-Expressions-Equations-Bell-Ringers-Spiral-Review-16483423"
   },
   {
    "id": "WU-009",
    "grade": "7th",
    "name": "Warmups 7th Q4",
    "type": "Individual",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Q4-CCSS-Spiral-Review-Bell-Ringers-Answer-Deck-16483554"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Q4-Geometry-Statistics-Bell-Ringers-Spiral-Review-16483554"
   },
   {
    "id": "WU-010",
    "grade": "7th",
    "name": "Warmups 7th Bundle",
    "type": "Bundle",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Full-Year-Bundle-Quarters-14-CCSS-Spiral-Review-16483678"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Full-Year-Bundle-180-Days-Spiral-Review-CCSS-16483678"
   },
   {
    "id": "WU-011",
    "grade": "8th",
    "name": "Warmups 8th Q1",
    "type": "Individual",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Q1-CCSS-Spiral-Review-Bell-Ringers-Answer-Deck-16487837"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Q1-Exponents-Real-Numbers-Bell-Ringers-Spiral-Review-16487837"
   },
   {
    "id": "WU-012",
    "grade": "8th",
    "name": "Warmups 8th Q2",
    "type": "Individual",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Q2-CCSS-Spiral-Review-Bell-Ringers-Answer-Deck-16487956"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Q2-Linear-Equations-Functions-Bell-Ringers-16487956"
   },
   {
    "id": "WU-013",
    "grade": "8th",
    "name": "Warmups 8th Q3",
    "type": "Individual",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Q3-CCSS-Spiral-Review-Bell-Ringers-Answer-Deck-16488011"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Q3-Transformations-Pythagorean-Bell-Ringers-16488011"
   },
   {
    "id": "WU-014",
    "grade": "8th",
    "name": "Warmups 8th Q4",
    "type": "Individual",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Q4-CCSS-Spiral-Review-Bell-Ringers-Answer-Deck-16488075"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Q4-Volume-Scatter-Plots-Bell-Ringers-CCSS-16488075"
   },
   {
    "id": "WU-015",
    "grade": "8th",
    "name": "Warmups 8th Bundle",
    "type": "Bundle",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Full-Year-Bundle-Quarters-1-4-CCSS-Spiral-Review-16488236"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Full-Year-Bundle-180-Days-Spiral-Review-CCSS-16488236"
   },
   {
    "id": "WU-016",
    "grade": "Algebra",
    "name": "Warmups Algebra Q1",
    "type": "Individual",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/Algebra-1-Bell-Ringers-Q1-Daily-Warm-Ups-Spiral-Review-Answer-Deck-16513182"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-Quarter-1-Bell-Ringers-Expressions-Equations-PPT-Slides-16513182"
   },
   {
    "id": "WU-017",
    "grade": "Algebra",
    "name": "Warmups Algebra Q2",
    "type": "Individual",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/Algebra-1-Bell-Ringers-Q2-Daily-Warm-Ups-Spiral-Review-Answer-Deck-16513186"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-Quarter-2-Bell-Ringers-Functions-Graphing-PPT-Google-Slides-16513186"
   },
   {
    "id": "WU-018",
    "grade": "Algebra",
    "name": "Warmups Algebra Q3",
    "type": "Individual",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/Algebra-1-Bell-Ringers-Q3-Daily-Warm-Ups-Spiral-Review-Answer-Deck-16513191"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-Quarter-3-Bell-Ringers-Polynomials-Quadratics-PPT-Slides-16513191"
   },
   {
    "id": "WU-019",
    "grade": "Algebra",
    "name": "Warmups Algebra Q4",
    "type": "Individual",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/Algebra-1-Bell-Ringers-Q4-Daily-Warm-Ups-Spiral-Review-Answer-Deck-16513194"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-Quarter-4-Bell-Ringers-Exponents-Statistics-PPT-Slides-16513194"
   },
   {
    "id": "WU-020",
@@ -1534,7 +1534,7 @@
    "grade": "6-8",
    "name": "Warmups 6-8 Ultimate",
    "type": "Bundle",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/Middle-School-Math-Warm-Ups-Complete-Bundle-Grades-6-8-CCSS-Spiral-Review-16488350"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/6th-7th-8th-Grade-Math-Warm-Ups-Bundle-540-Daily-Bell-Ringers-Spiral-Review-16488350"
   }
  ],
  "posters_anchor_charts": [
@@ -9150,14 +9150,14 @@
    "grade": "6-8",
    "name": "6-8th Bundle Math Readiness Check",
    "type": "Bundle",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/Grades-6-8-Math-Readiness-Check-Bundle-Beginning-of-Year-Diagnostic-16643670"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/6th-7th-8th-Grade-Math-Diagnostic-Beginning-of-Year-Readiness-Pre-Assessment-16643670"
   },
   {
    "id": "RC-006",
    "grade": null,
    "name": "1 day mini Math Readiness Check",
    "type": "Individual",
-   "tpt_url": "https://www.teacherspayteachers.com/Product/FREE-Back-to-School-Math-Diagnostic-Day-1-Readiness-Check-Grades-6-8-16643656"
+   "tpt_url": "https://www.teacherspayteachers.com/Product/Back-to-School-Math-Diagnostic-FREE-6th-7th-8th-Grade-Beginning-of-Year-16643656"
   }
  ],
  "i_can_target_posters": [

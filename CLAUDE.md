@@ -56,6 +56,13 @@ prices + homework facts). Algebra 1 still sells lesson by lesson, by unit bundle
 LIVE-ID GATE: the build fails if dist links a TPT id missing from live_ids.json; re-run the exporter after any
 listing change. The Middle School Math ULTIMATE bundle (16515388) is still live on TPT but is not shown here.
 
+**Nov 7 2026 — LIVE STORE MAP + TPT-URL GATE.** `data/live_tpt.json` (id -> title, url, price, list, pages) is the
+site's record of the live TPT store, written with live_ids.json and retired_ids.json by `node tools/live_refresh.js
+<live_all.json>` from a full store crawl (a listing not in the crawl is not live). write() puts every TPT product link on
+its current URL by id, and the TPT-URL GATE fails the build on a link that is not live or not current. Prices shown must
+equal the live price (bundles: the bundle price). The ILEARN Checkpoint 2 band (home + /tiktok) is `ILEARN_CP2` in
+build_site.js: set `show: false` to retire it (it also drops itself after Feb 5 2027).
+
 ## Who / what
 
 Greg — 25+ yr middle-school math teacher, sole operator of Math Class 678 (TPT storefront

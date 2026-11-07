@@ -1796,3 +1796,33 @@ a.cr-tile__cta:hover { color: var(--g, var(--forest)); }
 .std-sheet-cta__lessons { font-size: .9rem; margin: .25rem 0 .75rem; color: var(--charcoal-soft); }
 .cur-lesson__free { display: inline-flex; align-items: center; gap: .25rem; }
 .cur-lesson__free svg { display: inline-block; width: .75em; height: .75em; }
+
+/* ---- ILEARN Checkpoint 2 band (home + /tiktok), Nov 7 2026; retire with ILEARN_CP2.show = false ---- */
+.cp2 { background: var(--forest-tint); border-top: 5px solid var(--gold); }
+.cp2-frees { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 1rem; margin-bottom: 2rem; }
+.cp2-free { display: grid; grid-template-columns: 132px 1fr; gap: 1.1rem; align-items: start; background: var(--white); border: 1px solid var(--line); border-left: 5px solid var(--gold); border-radius: var(--radius); padding: 1rem; box-shadow: var(--shadow-sm); }
+.cp2-free__img { display: block; border-radius: var(--radius-sm); overflow: hidden; box-shadow: var(--shadow-sm); }
+.cp2-free__img img, .cp2-grade__img img { display: block; width: 100%; height: auto; }
+.cp2-free h3 { font-size: 1.15rem; margin: .25rem 0 .4rem; }
+.cp2-free h3 a { color: var(--forest); text-decoration: none; }
+.cp2-free p { font-size: var(--fs-sm); color: var(--charcoal-soft); margin: 0 0 .8rem; }
+.cp2-kicker { font-family: var(--mono); font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; color: var(--forest-soft); font-weight: 600; }
+.cp2-sub { font-size: 1.25rem; margin: 0 0 .9rem; }
+.cp2-grades { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: 1rem; }
+.cp2-grade { display: flex; flex-direction: column; gap: .8rem; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem; box-shadow: var(--shadow-sm); }
+.cp2-grade__top { display: grid; grid-template-columns: 96px 1fr; gap: .9rem; align-items: center; }
+.cp2-grade__img { display: block; border-radius: var(--radius-sm); overflow: hidden; box-shadow: var(--shadow-sm); }
+.cp2-grade h3 { font-size: 1.3rem; margin: 0 0 .2rem; }
+.cp2-grade__free { font-size: var(--fs-xs); color: var(--charcoal-soft); margin: 0 0 .5rem; }
+.cp2-grade .btn svg, .cp2-free .btn svg, .cp2-grade__stm svg { width: 14px; height: 14px; }
+.cp2-lines { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.cp2-lines li { border-bottom: 1px solid var(--line); }
+.cp2-lines a { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .1rem .8rem; padding: .55rem .1rem; text-decoration: none; color: var(--charcoal); }
+.cp2-lines a:hover .cp2-line__name { color: var(--forest); text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 3px; }
+.cp2-line__name { font-weight: 600; font-size: var(--fs-sm); }
+.cp2-line__meta { font-size: var(--fs-xs); color: var(--charcoal-soft); }
+.cp2-line__meta b { color: var(--forest); font-size: .9rem; }
+.cp2-grade__stm { margin-top: auto; font-size: var(--fs-sm); font-weight: 600; color: var(--forest); text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: 3px; display: inline-flex; align-items: center; gap: .35rem; }
+.cp2-note { font-size: var(--fs-xs); color: var(--charcoal-soft); margin: 1.4rem 0 0; max-width: 70ch; }
+.cp2-note a { color: var(--forest); text-decoration: underline; text-decoration-color: var(--gold); }
+@media (max-width: 520px) { .cp2-free { grid-template-columns: 1fr; } .cp2-free__img { max-width: 180px; } }

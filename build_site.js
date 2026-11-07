@@ -18,7 +18,14 @@ const CONTACT = { tpt: 'tpt@mathclass678.com', support: 'support@mathclass678.co
 const SOCIAL = { pinterest: 'https://www.pinterest.com/mathclass678', instagram: 'https://www.instagram.com/mathclass.678', tiktok: 'https://www.tiktok.com/@mathclass678' };
 // The free Order of Operations sheet (#1, 6th) on TPT. No email collection anywhere on the site
 // (Oct 12 2026, owner decision): every freebie links to its own free TPT listing.
-const FREE_OOO_URL = 'https://www.teacherspayteachers.com/Product/Order-of-Operations-4-in-1-Skill-Sheet-for-6th-Grade-Math-CCSS-6EEA1-16334854';
+/* The live TPT store (Nov 7 2026): data/live_tpt.json, written by tools/live_refresh.js from a crawl of every live
+   listing (id -> title, url, price, list, pages, kind, free). A listing that is not in it is not live. write() puts
+   every TPT product link on the listing's current URL, and the TPT-URL GATE at the end checks it. */
+const LIVE_TPT = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'live_tpt.json'), 'utf8')).items;
+const TPT_PRODUCT_RE = /https:\/\/www\.teacherspayteachers\.com\/Product\/[^"'\s<>)]*?-(\d{6,9})(?=["'\s<>)?#&]|$)/g;
+const liveTpt = id => { const l = LIVE_TPT[String(id)]; if (!l) throw new Error(`TPT ${id} is not live (data/live_tpt.json)`); return l; };
+const canonTpt = html => html.replace(TPT_PRODUCT_RE, (u, id) => (LIVE_TPT[id] ? LIVE_TPT[id].url : u));
+const FREE_OOO_URL = liveTpt('16334854').url;
 
 /* ----------------------------------------------------------------------------
    TPT review data — OPTIONAL, off by default.
@@ -40,7 +47,7 @@ const TPT_RATING = null; // Set to e.g. { ratingValue: 4.9, reviewCount: 1200 } 
 const FEATURED_REVIEW = {
   author: 'ashley D.', where: '7th grade math teacher, Indiana', date: 'Oct 18, 2026',
   title: 'Amazing and Worth every Cent!',
-  url: 'https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-COMPLETE-System-Checkpoints-Reteach-SY26-27-17457551',
+  url: liveTpt('17457551').url,
   body: 'This resource is spot on!  We just took Opportunity 1 and i had [[70 percent of my kids pass]] the 7th Grade Math Checkpoint 1.  I then used [[the reteaching pages]] and focused on targeting instruction to those questions that were most missed on the first opportunity for 2 weeks.  We then took Opportunity 2 and [[I had 82 percent total passing!]]  [[That is the most I have had passing since the Checkpoints were created!]]  If you teach 7th grade Math in Indiana, it is definitely worth the money!',
 };
 function featuredReviewBand() {
@@ -2849,6 +2856,7 @@ function pageHome() {
       <div class="quadmark">${SVG.heroQuad}</div>
     </div>
   </section>
+${cp2Band('home')}
 ${featuredReviewBand()}
   <!-- COURSES -->
   <section class="section gridpaper" id="courses">
@@ -5016,32 +5024,97 @@ function socPost(p) {
   </article>`;
 }
 
-/* Nov 2 2026: the Checkpoint 2 TikTok (Drive Uploads/tiktok-ilearn-cp2-2026-11-02) sends viewers here from the bio
-   link. One row per grade: the free grade screener straight to TPT, and the grade's full Checkpoint 2 page on
-   statetestmath.com. Items per screener from the Oct 4 build (sampler:g3cp2..g8cp2). */
-const TIKTOK_CP2 = [
-  [3, '3rd', 14, '3rd-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837003'],
-  [4, '4th', 14, '4th-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837004'],
-  [5, '5th', 12, '5th-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837006'],
-  [6, '6th', 14, '6th-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837008'],
-  [7, '7th', 12, '7th-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837012'],
-  [8, '8th', 12, '8th-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837014'],
-];
-function tiktokCp2() {
-  const row = ([g, name, n, slug]) => `
-        <li class="soc-cp2__row">
-          <a class="soc-cp2__grade" href="https://www.teacherspayteachers.com/Product/${slug}" target="_blank" rel="noopener"><img src="/assets/social/free/cp2-g${g}.jpg" alt="${name} Grade Indiana ILEARN Math Checkpoint 2 Free Screener" width="320" height="320" loading="lazy"></a>
-          <a class="btn btn--primary" href="https://www.teacherspayteachers.com/Product/${slug}" target="_blank" rel="noopener">Free screener ${ICON.ext}</a>
-          <a class="soc-cp2__set" href="https://statetestmath.com/indiana/grade-${g}/checkpoint-2/" target="_blank" rel="noopener">Full Checkpoint 2 set ${ICON.arrow}</a>
-          <span class="soc-cp2__n">${n} questions</span>
-        </li>`;
+/* ============================================================================
+   ILEARN CHECKPOINT 2 BAND (Nov 7 2026) — on the home page and on /tiktok (the Checkpoint 2 TikTok sends viewers
+   there from the bio link). Indiana's Checkpoint 2 window: Monday Nov 16 2026 to Friday Feb 5 2027.
+   Free first (the two grade-band sets, then each grade's screener), then each grade's Checkpoint 2 Practice,
+   Intervention & Reteach and Checkpoint 2 Bundle, with live prices and TPT page counts from data/live_tpt.json
+   (found by title; the build stops if one is missing). Each grade also links its Checkpoint 2 page on
+   statetestmath.com, which carries the full Indiana line.
+   TO RETIRE: set show: false. The band also leaves on its own from any build after `closes`.
+   ============================================================================ */
+const ILEARN_CP2 = {
+  show: true,
+  opens: '2026-11-16', closes: '2027-02-05',
+  opensLong: 'Monday, November 16, 2026', closesLong: 'Friday, February 5, 2027',
+  // questions in each grade's free screener (two per Checkpoint 2 standard; from the Oct 4 build, sampler:g3cp2..g8cp2)
+  screenerItems: { 3: 14, 4: 14, 5: 12, 6: 14, 7: 12, 8: 12 },
+};
+const CP2_ON = ILEARN_CP2.show && new Date().toISOString().slice(0, 10) <= ILEARN_CP2.closes;
+const CP2_ORD = { 3: '3rd', 4: '4th', 5: '5th', 6: '6th', 7: '7th', 8: '8th' };
+function cp2Find(re, what) {
+  const hits = Object.entries(LIVE_TPT).filter(([, l]) => re.test(l.title));
+  if (hits.length !== 1) throw new Error(`ILEARN Checkpoint 2: expected one live listing for ${what}, found ${hits.length}`);
+  const [id, l] = hits[0];
+  return Object.assign({ id }, l);
+}
+const CP2 = CP2_ON ? {
+  bands: ['3-5', '6-8'].map(b => Object.assign(cp2Find(new RegExp(`^Grades ${b} Indiana ILEARN Math Checkpoint 2 FREE Practice`), `Grades ${b} free practice`), { band: b })),
+  grades: [3, 4, 5, 6, 7, 8].map(g => {
+    const pre = `^${CP2_ORD[g]} Grade Indiana ILEARN Math Checkpoint 2 `;
+    return {
+      g, ord: CP2_ORD[g],
+      screener: cp2Find(new RegExp(pre + 'FREE Screener'), `grade ${g} screener`),
+      practice: cp2Find(new RegExp(pre + 'Practice \\|'), `grade ${g} practice`),
+      reteach: cp2Find(new RegExp(pre + 'Intervention & Reteach'), `grade ${g} reteach`),
+      bundle: cp2Find(new RegExp(pre + 'Bundle'), `grade ${g} bundle`),
+    };
+  }),
+} : null;
+if (CP2) CP2.grades.forEach(G => {
+  if (!G.screener.free || !(G.practice.price > 0) || !(G.reteach.price > 0) || !(G.bundle.price > 0)) throw new Error(`ILEARN Checkpoint 2 grade ${G.g}: free/paid status is not what the band says`);
+});
+if (CP2) CP2.bands.forEach(B => { if (!B.free) throw new Error(`ILEARN Checkpoint 2 grades ${B.band} practice is not free`); });
+const cp2Money = v => '$' + Number(v).toFixed(2);
+function cp2Band(where) {
+  if (!CP2) return '';
+  const today = new Date().toISOString().slice(0, 10);
+  const open = today >= ILEARN_CP2.opens;
+  const ext = ' target="_blank" rel="noopener"';
+  const band = B => `
+        <article class="cp2-free reveal">
+          <a class="cp2-free__img" href="${B.url}"${ext} tabindex="-1" aria-hidden="true"><img src="/assets/social/free/screener-cp2-${B.band}.jpg" alt="" width="320" height="320" loading="lazy" decoding="async"></a>
+          <div class="cp2-free__body">
+            <span class="cp2-kicker">Free · Grades ${B.band.replace('-', '&ndash;')} · ${B.pages} pages</span>
+            <h3><a href="${B.url}"${ext}>Checkpoint 2 Practice, Grades ${B.band.replace('-', '&ndash;')}</a></h3>
+            <p>For the whole team: two items on every Checkpoint 2 standard for each grade, one Approaching and one At Proficiency, with worked keys and a Where to Start tracker for each grade.</p>
+            <a class="btn btn--primary" href="${B.url}"${ext}>Get it free on TPT ${ICON.ext}</a>
+          </div>
+        </article>`;
+  const line = (name, p, extra) => `<li><a href="${p.url}"${ext}><span class="cp2-line__name">${name}</span><span class="cp2-line__meta"><b>${cp2Money(p.price)}</b> · ${p.pages} pages${extra ? ' · ' + extra : ''}</span></a></li>`;
+  const grade = G => `
+        <article class="cp2-grade reveal">
+          <div class="cp2-grade__top">
+            <a class="cp2-grade__img" href="${G.screener.url}"${ext}><img src="/assets/social/free/cp2-g${G.g}.jpg" alt="${G.ord} Grade Indiana ILEARN Math Checkpoint 2 Free Screener cover" width="320" height="320" loading="lazy" decoding="async"></a>
+            <div>
+              <h3>Grade ${G.g}</h3>
+              <p class="cp2-grade__free">Free screener: ${ILEARN_CP2.screenerItems[G.g]} questions, ${G.screener.pages} pages</p>
+              <a class="btn btn--primary" href="${G.screener.url}"${ext}>Free screener ${ICON.ext}</a>
+            </div>
+          </div>
+          <ul class="cp2-lines">
+            ${line('Checkpoint 2 Practice', G.practice)}
+            ${line('Intervention &amp; Reteach', G.reteach)}
+            ${line('Bundle: Practice + Reteach', G.bundle, `${cp2Money(G.bundle.list)} bought separately`)}
+          </ul>
+          <a class="cp2-grade__stm" href="https://statetestmath.com/indiana/grade-${G.g}/checkpoint-2/">Grade ${G.g} Checkpoint 2 on State Test Math ${ICON.arrow}</a>
+        </article>`;
+  const h2 = open ? `Checkpoint 2 is open through February 5` : `Checkpoint 2 opens Monday, November 16`;
   return `
-  <section class="section soc-cp2" id="checkpoint-2">
+  <!-- ILEARN CHECKPOINT 2 (retire: ILEARN_CP2.show = false) -->
+  <section class="section cp2" id="checkpoint-2" aria-labelledby="cp2-h">
     <div class="wrap">
-      ${secHead('Indiana ILEARN · Checkpoint 2', 'Pick your grade', 'Start with the free screener: two questions per Checkpoint 2 standard, worked answers, and a chart that tells you which reteach page each student needs. The window runs November 16 to February 5.')}
-      <ul class="soc-cp2__list">${TIKTOK_CP2.map(row).join('')}
-      </ul>
-      <p class="soc-cp2__note">Independent resource. Not affiliated with, sponsored by, or endorsed by the Indiana Department of Education.</p>
+      <div class="sec-head"><div class="sec-head__t">
+        <span class="eyebrow">Indiana ILEARN Math · Checkpoint 2</span>
+        <h2 id="cp2-h">${h2}</h2>
+        <p>Indiana&rsquo;s Checkpoint 2 window runs ${ILEARN_CP2.opensLong.replace(/^\w+, /, '')} to ${ILEARN_CP2.closesLong.replace(/^\w+, /, '')}, across winter break. Start free: a screener for your grade, or the grade-band practice for your whole team. Then pick the practice set, the reteach packet, or the bundle with both.</p>
+      </div></div>
+      <div class="cp2-frees">${CP2.bands.map(band).join('')}
+      </div>
+      <h3 class="cp2-sub">${where === 'tiktok' ? 'Pick your grade' : 'By grade'}</h3>
+      <div class="cp2-grades">${CP2.grades.map(grade).join('')}
+      </div>
+      <p class="cp2-note">Designed, reviewed, and checked by Greg &middot; 25+ years in the classroom. Prices and page counts are the ones on TPT. Every grade, checkpoint and bundle is on <a href="https://statetestmath.com/indiana/">State Test Math</a>. Independent resource, not affiliated with, sponsored by, or endorsed by the Indiana Department of Education.</p>
     </div>
   </section>`;
 }
@@ -5065,7 +5138,7 @@ function pageTiktok() {
       <div class="soc-hero__actions"><a class="btn btn--primary" href="#videos">Find your video ${ICON.arrow}</a><a class="btn btn--ghost cr-btn--light" href="#free">All free resources</a></div>
     </div>
   </section>
-${tiktokCp2()}
+${cp2Band('tiktok')}
 
   <section class="section" id="videos">
     <div class="wrap">
@@ -5853,7 +5926,7 @@ function rmrf(p) { if (fs.existsSync(p)) fs.rmSync(p, { recursive: true, force: 
 function write(rel, content) {
   const full = path.join(DIST, rel);
   fs.mkdirSync(path.dirname(full), { recursive: true });
-  fs.writeFileSync(full, content);
+  fs.writeFileSync(full, /\.html$/.test(rel) ? canonTpt(content) : content);
 }
 function copy(srcRel, destRel) {
   fs.mkdirSync(path.dirname(path.join(DIST, destRel)), { recursive: true });
@@ -6141,4 +6214,25 @@ console.log('  Site asset images bundled:', siteImgCount);
   }
   if (hits.length) { console.error(`LIVE-ID GATE FAILED (${hits.length} links to listings that are not live):\n  ` + [...new Set(hits)].slice(0, 40).join('\n  ')); process.exit(1); }
   console.log(`  Live-id gate: clean (${LIVE.size} live ids)`);
+})();
+
+/* ============================================================================
+   TPT-URL GATE (Nov 7 2026). Every TPT product link in dist must be the listing's CURRENT URL in data/live_tpt.json
+   (tools/live_refresh.js, from a crawl of the live store). TPT changes a listing's URL when its title changes; the
+   old one still redirects, but the site should never lean on that. write() already rewrites links by id, so this
+   fails only on a link that is not live at all or one written outside write().
+   ============================================================================ */
+(function tptUrlGate() {
+  const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : /\.html$/.test(e.name) ? [path.join(d, e.name)] : []);
+  const hits = []; let n = 0;
+  for (const f of walk(DIST)) {
+    for (const m of fs.readFileSync(f, 'utf8').matchAll(TPT_PRODUCT_RE)) {
+      n++;
+      const l = LIVE_TPT[m[1]];
+      if (!l) hits.push(`${path.relative(DIST, f)}: ${m[1]} not live`);
+      else if (m[0] !== l.url) hits.push(`${path.relative(DIST, f)}: ${m[1]} not its current URL`);
+    }
+  }
+  if (hits.length) { console.error(`TPT-URL GATE FAILED (${hits.length}):\n  ` + [...new Set(hits)].slice(0, 40).join('\n  ')); process.exit(1); }
+  console.log(`  TPT-URL gate: clean (${n} TPT product links, all on their current URL)`);
 })();

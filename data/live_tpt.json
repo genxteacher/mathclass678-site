@@ -1,0 +1,4507 @@
+{
+ "source": "TPT store crawl (live_all.json), written by tools/live_refresh.js",
+ "crawled": "2026-11-07",
+ "count": 500,
+ "items": {
+  "16163674": {
+   "title": "6th Grade Math Warm-Ups First 20 Days | Bell Ringers | Printable + Google Slides",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-First-20-Days-Bell-Ringers-Printable-Google-Slides-16163674",
+   "price": 4.5,
+   "list": 4.5,
+   "pages": 50,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16163730": {
+   "title": "7th Grade Math Warm-Ups First 20 Days | Bell Ringers | Printable + Google Slides",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-First-20-Days-Bell-Ringers-Printable-Google-Slides-16163730",
+   "price": 4.5,
+   "list": 4.5,
+   "pages": 50,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16164424": {
+   "title": "8th Grade Math Warm-Ups First 20 Days | Bell Ringers | Printable + Google Slides",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-First-20-Days-Bell-Ringers-Printable-Google-Slides-16164424",
+   "price": 4.5,
+   "list": 4.5,
+   "pages": 50,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16164456": {
+   "title": "Back to School Math Warm-Ups Bell Ringers | 6th 7th 8th Grade Bell Work Do Now",
+   "url": "https://www.teacherspayteachers.com/Product/Back-to-School-Math-Warm-Ups-Bell-Ringers-6th-7th-8th-Grade-Bell-Work-Do-Now-16164456",
+   "price": 9.99,
+   "list": 13.5,
+   "pages": 150,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "16213887": {
+   "title": "6th Grade End of Year Math Assessment FREE | Final Review Skills Check Test",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-End-of-Year-Math-Assessment-FREE-Final-Review-Skills-Check-Test-16213887",
+   "price": 0,
+   "list": 0,
+   "pages": 10,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "16214437": {
+   "title": "7th Grade End of Year Math Assessment FREE | Final Review Skills Check Test",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-End-of-Year-Math-Assessment-FREE-Final-Review-Skills-Check-Test-16214437",
+   "price": 0,
+   "list": 0,
+   "pages": 10,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "16214461": {
+   "title": "8th Grade End of Year Math Assessment FREE | Final Review Skills Check Test",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-End-of-Year-Math-Assessment-FREE-Final-Review-Skills-Check-Test-16214461",
+   "price": 0,
+   "list": 0,
+   "pages": 10,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "16214563": {
+   "title": "Emergency Sub Plans Middle School Math FREE | 6th 7th 8th Grade 3 Day Packet",
+   "url": "https://www.teacherspayteachers.com/Product/Emergency-Sub-Plans-Middle-School-Math-FREE-6th-7th-8th-Grade-3-Day-Packet-16214563",
+   "price": 0,
+   "list": 0,
+   "pages": 8,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "16214595": {
+   "title": "End of Year Math Reflection + Goals | Middle School 6th 7th 8th | FREE",
+   "url": "https://www.teacherspayteachers.com/Product/End-of-Year-Math-Reflection-Goals-Middle-School-6th-7th-8th-FREE-16214595",
+   "price": 0,
+   "list": 0,
+   "pages": 8,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "16334854": {
+   "title": "Order of Operations Worksheet | 6th Grade Math Notes, Slides & Answer Key",
+   "url": "https://www.teacherspayteachers.com/Product/Order-of-Operations-Worksheet-6th-Grade-Math-Notes-Slides-Answer-Key-16334854",
+   "price": 0,
+   "list": 0,
+   "pages": 28,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "16337315": {
+   "title": "Combining Like Terms & Simplifying Algebraic Expressions Worksheet | 7th Grade",
+   "url": "https://www.teacherspayteachers.com/Product/Combining-Like-Terms-Simplifying-Algebraic-Expressions-Worksheet-7th-Grade-16337315",
+   "price": 0,
+   "list": 0,
+   "pages": 9,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "16464069": {
+   "title": "6th Grade Math Curriculum | 6th Grade Math Guided Notes, Slides & Unit Tests",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Curriculum-6th-Grade-Math-Guided-Notes-Slides-Unit-Tests-16464069",
+   "price": 179.99,
+   "list": 215.91,
+   "pages": 952,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "16465247": {
+   "title": "7th Grade Math Curriculum | Guided Notes, Homework, Slides & Unit Tests",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Curriculum-Guided-Notes-Homework-Slides-Unit-Tests-16465247",
+   "price": 167.99,
+   "list": 197.91,
+   "pages": 896,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "16471750": {
+   "title": "6th Grade Math Warm-Ups Q1 | Ratios & Rates Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Q1-Ratios-Rates-Bell-Ringers-Spiral-Review-16471750",
+   "price": 8,
+   "list": 8,
+   "pages": 157,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16471956": {
+   "title": "6th Grade Math Warm-Ups Q2 | Number System Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Q2-Number-System-Bell-Ringers-Spiral-Review-16471956",
+   "price": 8,
+   "list": 8,
+   "pages": 158,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16472163": {
+   "title": "6th Grade Math Warm-Ups Q3 | Expressions & Equations Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Q3-Expressions-Equations-Bell-Ringers-Spiral-Review-16472163",
+   "price": 8,
+   "list": 8,
+   "pages": 157,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16472879": {
+   "title": "6th Grade Math Warm-Ups Q4 | Geometry & Statistics Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Q4-Geometry-Statistics-Bell-Ringers-Spiral-Review-16472879",
+   "price": 8,
+   "list": 8,
+   "pages": 158,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16473089": {
+   "title": "6th Grade Math Warm-Ups Full Year Bundle | 180 Days Spiral Review CCSS",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Full-Year-Bundle-180-Days-Spiral-Review-CCSS-16473089",
+   "price": 25.99,
+   "list": 32,
+   "pages": 630,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "16483322": {
+   "title": "7th Grade Math Warm-Ups Q1 | Ratios & Proportions Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Q1-Ratios-Proportions-Bell-Ringers-Spiral-Review-16483322",
+   "price": 8,
+   "list": 8,
+   "pages": 157,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16483423": {
+   "title": "7th Grade Math Warm-Ups Q3 | Expressions & Equations Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Q3-Expressions-Equations-Bell-Ringers-Spiral-Review-16483423",
+   "price": 8,
+   "list": 8,
+   "pages": 157,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16483554": {
+   "title": "7th Grade Math Warm-Ups Q4 | Geometry & Statistics Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Q4-Geometry-Statistics-Bell-Ringers-Spiral-Review-16483554",
+   "price": 8,
+   "list": 8,
+   "pages": 157,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16483561": {
+   "title": "7th Grade Math Warm-Ups Q2 | Integers & Rational Numbers Bell Ringers",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Q2-Integers-Rational-Numbers-Bell-Ringers-16483561",
+   "price": 8,
+   "list": 8,
+   "pages": 157,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16483678": {
+   "title": "7th Grade Math Warm-Ups Full Year Bundle | 180 Days Spiral Review CCSS",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Full-Year-Bundle-180-Days-Spiral-Review-CCSS-16483678",
+   "price": 25.99,
+   "list": 32,
+   "pages": 628,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "16487837": {
+   "title": "8th Grade Math Warm-Ups Q1 | Exponents & Real Numbers Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Q1-Exponents-Real-Numbers-Bell-Ringers-Spiral-Review-16487837",
+   "price": 8,
+   "list": 8,
+   "pages": 160,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16487956": {
+   "title": "8th Grade Math Warm-Ups Q2 | Linear Equations & Functions Bell Ringers",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Q2-Linear-Equations-Functions-Bell-Ringers-16487956",
+   "price": 8,
+   "list": 8,
+   "pages": 160,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16488011": {
+   "title": "8th Grade Math Warm-Ups Q3 | Transformations & Pythagorean Bell Ringers",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Q3-Transformations-Pythagorean-Bell-Ringers-16488011",
+   "price": 8,
+   "list": 8,
+   "pages": 160,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16488075": {
+   "title": "8th Grade Math Warm-Ups Q4 | Volume & Scatter Plots Bell Ringers CCSS",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Q4-Volume-Scatter-Plots-Bell-Ringers-CCSS-16488075",
+   "price": 8,
+   "list": 8,
+   "pages": 160,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16488236": {
+   "title": "8th Grade Math Warm-Ups Full Year Bundle | 180 Days Spiral Review CCSS",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Full-Year-Bundle-180-Days-Spiral-Review-CCSS-16488236",
+   "price": 25.99,
+   "list": 32,
+   "pages": 640,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "16488350": {
+   "title": "6th 7th 8th Grade Math Warm-Ups Bundle | 540 Daily Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/6th-7th-8th-Grade-Math-Warm-Ups-Bundle-540-Daily-Bell-Ringers-Spiral-Review-16488350",
+   "price": 67.99,
+   "list": 96,
+   "pages": 1898,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "16506706": {
+   "title": "6th Grade Math SMART Goals FREE | Back to School Goal Setting Worksheet",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-SMART-Goals-FREE-Back-to-School-Goal-Setting-Worksheet-16506706",
+   "price": 0,
+   "list": 0,
+   "pages": 3,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "16506713": {
+   "title": "7th Grade Math SMART Goals FREE | Back to School Goal Setting Worksheet",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-SMART-Goals-FREE-Back-to-School-Goal-Setting-Worksheet-16506713",
+   "price": 0,
+   "list": 0,
+   "pages": 3,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "16506718": {
+   "title": "8th Grade Math SMART Goals FREE | Back to School Goal Setting Worksheet",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-SMART-Goals-FREE-Back-to-School-Goal-Setting-Worksheet-16506718",
+   "price": 0,
+   "list": 0,
+   "pages": 3,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "16513182": {
+   "title": "Algebra 1 Warm-Ups Quarter 1 Bell Ringers Expressions Equations PPT Slides",
+   "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-Quarter-1-Bell-Ringers-Expressions-Equations-PPT-Slides-16513182",
+   "price": 8,
+   "list": 8,
+   "pages": 160,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16513186": {
+   "title": "Algebra 1 Warm-Ups Quarter 2 Bell Ringers Functions Graphing PPT Google Slides",
+   "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-Quarter-2-Bell-Ringers-Functions-Graphing-PPT-Google-Slides-16513186",
+   "price": 8,
+   "list": 8,
+   "pages": 161,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16513191": {
+   "title": "Algebra 1 Warm-Ups Quarter 3 Bell Ringers Polynomials Quadratics PPT Slides",
+   "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-Quarter-3-Bell-Ringers-Polynomials-Quadratics-PPT-Slides-16513191",
+   "price": 8,
+   "list": 8,
+   "pages": 161,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16513194": {
+   "title": "Algebra 1 Warm-Ups Quarter 4 Bell Ringers Exponents Statistics PPT Slides",
+   "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-Quarter-4-Bell-Ringers-Exponents-Statistics-PPT-Slides-16513194",
+   "price": 8,
+   "list": 8,
+   "pages": 161,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16514621": {
+   "title": "Solving Multi-Step Equations with Variables on Both Sides Worksheet | 8th Grade",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Multi-Step-Equations-with-Variables-on-Both-Sides-Worksheet-8th-Grade-16514621",
+   "price": 0,
+   "list": 0,
+   "pages": 28,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "16515341": {
+   "title": "8th Grade Math Curriculum | Guided Notes, Homework, Slides & Unit Tests",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Curriculum-Guided-Notes-Homework-Slides-Unit-Tests-16515341",
+   "price": 159.99,
+   "list": 197.9,
+   "pages": 518,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "16515388": {
+   "title": "Middle School Math Curriculum ULTIMATE Bundle | 6th 7th 8th Grade Full Year",
+   "url": "https://www.teacherspayteachers.com/Product/Middle-School-Math-Curriculum-ULTIMATE-Bundle-6th-7th-8th-Grade-Full-Year-16515388",
+   "price": 399.99,
+   "list": 611.72,
+   "pages": 1442,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "16643645": {
+   "title": "7th Grade Math Readiness Check | Beginning of Year Diagnostic Pre-Assessment",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Readiness-Check-Beginning-of-Year-Diagnostic-Pre-Assessment-16643645",
+   "price": 5,
+   "list": 5,
+   "pages": 11,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16643647": {
+   "title": "8th Grade Math Readiness Check | Beginning of Year Diagnostic Pre-Assessment",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Readiness-Check-Beginning-of-Year-Diagnostic-Pre-Assessment-16643647",
+   "price": 5,
+   "list": 5,
+   "pages": 11,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16643650": {
+   "title": "Algebra 1 Math Readiness Check | Beginning of Year Diagnostic Pre-Assessment",
+   "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Math-Readiness-Check-Beginning-of-Year-Diagnostic-Pre-Assessment-16643650",
+   "price": 5,
+   "list": 5,
+   "pages": 11,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "16643656": {
+   "title": "Back to School Math Diagnostic FREE | 6th 7th 8th Grade Beginning of Year",
+   "url": "https://www.teacherspayteachers.com/Product/Back-to-School-Math-Diagnostic-FREE-6th-7th-8th-Grade-Beginning-of-Year-16643656",
+   "price": 0,
+   "list": 0,
+   "pages": 8,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "16643670": {
+   "title": "6th 7th 8th Grade Math Diagnostic | Beginning of Year Readiness Pre-Assessment",
+   "url": "https://www.teacherspayteachers.com/Product/6th-7th-8th-Grade-Math-Diagnostic-Beginning-of-Year-Readiness-Pre-Assessment-16643670",
+   "price": 11.99,
+   "list": 15,
+   "pages": 33,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "16992249": {
+   "title": "Algebra 1 Warm-Ups Semester 1 Bundle Quarters 1-2 Bell Ringers PPT Google Slides",
+   "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-Semester-1-Bundle-Quarters-1-2-Bell-Ringers-PPT-Google-Slides-16992249",
+   "price": 13.99,
+   "list": 16,
+   "pages": 321,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "16992256": {
+   "title": "Algebra 1 Warm-Ups Semester 2 Bundle Quarters 3-4 Bell Ringers PPT Google Slides",
+   "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-Semester-2-Bundle-Quarters-3-4-Bell-Ringers-PPT-Google-Slides-16992256",
+   "price": 13.99,
+   "list": 16,
+   "pages": 322,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "16992279": {
+   "title": "Algebra 1 Warm-Ups FULL YEAR Bundle Daily Bell Ringers PPT Google Slides Growing",
+   "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Warm-Ups-FULL-YEAR-Bundle-Daily-Bell-Ringers-PPT-Google-Slides-Growing-16992279",
+   "price": 25.99,
+   "list": 32,
+   "pages": 643,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "16995274": {
+   "title": "6th Grade Math Warm-Ups Semester 1 Bundle | Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Semester-1-Bundle-Bell-Ringers-Spiral-Review-16995274",
+   "price": 13.99,
+   "list": 16,
+   "pages": 315,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "16995277": {
+   "title": "6th Grade Math Warm-Ups Semester 2 Bundle | Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Warm-Ups-Semester-2-Bundle-Bell-Ringers-Spiral-Review-16995277",
+   "price": 13.99,
+   "list": 16,
+   "pages": 315,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "16998900": {
+   "title": "7th Grade Math Warm-Ups Semester 1 Bundle | Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Semester-1-Bundle-Bell-Ringers-Spiral-Review-16998900",
+   "price": 13.99,
+   "list": 16,
+   "pages": 314,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "16998901": {
+   "title": "7th Grade Math Warm-Ups Semester 2 Bundle | Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Math-Warm-Ups-Semester-2-Bundle-Bell-Ringers-Spiral-Review-16998901",
+   "price": 13.99,
+   "list": 16,
+   "pages": 314,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17011023": {
+   "title": "8th Grade Math Warm-Ups Semester 1 Bundle | Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Semester-1-Bundle-Bell-Ringers-Spiral-Review-17011023",
+   "price": 13.99,
+   "list": 16,
+   "pages": 320,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17011037": {
+   "title": "8th Grade Math Warm-Ups Semester 2 Bundle | Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Math-Warm-Ups-Semester-2-Bundle-Bell-Ringers-Spiral-Review-17011037",
+   "price": 13.99,
+   "list": 16,
+   "pages": 320,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17012377": {
+   "title": "5th Grade Math Warm-Ups Q4 Bell Ringers | Measurement Geometry Volume & Data",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-Warm-Ups-Q4-Bell-Ringers-Measurement-Geometry-Volume-Data-17012377",
+   "price": 8,
+   "list": 8,
+   "pages": 158,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17012378": {
+   "title": "5th Grade Math Warm-Ups Q3 Bell Ringers | Add Subtract Multiply Divide Fractions",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-Warm-Ups-Q3-Bell-Ringers-Add-Subtract-Multiply-Divide-Fractions-17012378",
+   "price": 8,
+   "list": 8,
+   "pages": 158,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17012384": {
+   "title": "5th Grade Math Warm-Ups Q1 Bell Ringers | Place Value Decimals & Multiplication",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-Warm-Ups-Q1-Bell-Ringers-Place-Value-Decimals-Multiplication-17012384",
+   "price": 8,
+   "list": 8,
+   "pages": 157,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17012386": {
+   "title": "5th Grade Math Warm-Ups Q2 Bell Ringers | Division & Decimal Operations",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-Warm-Ups-Q2-Bell-Ringers-Division-Decimal-Operations-17012386",
+   "price": 8,
+   "list": 8,
+   "pages": 157,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17012394": {
+   "title": "5th Grade Math Warm-Ups Semester 1 Bundle | Q1-Q2 Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-Warm-Ups-Semester-1-Bundle-Q1-Q2-Bell-Ringers-Spiral-Review-17012394",
+   "price": 13.99,
+   "list": 16,
+   "pages": 314,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17012400": {
+   "title": "5th Grade Math Warm-Ups Semester 2 Bundle | Q3-Q4 Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-Warm-Ups-Semester-2-Bundle-Q3-Q4-Bell-Ringers-Spiral-Review-17012400",
+   "price": 13.99,
+   "list": 16,
+   "pages": 316,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17012411": {
+   "title": "5th Grade Math Warm-Ups FULL YEAR Bundle | 720 Daily Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-Warm-Ups-FULL-YEAR-Bundle-720-Daily-Bell-Ringers-Spiral-Review-17012411",
+   "price": 25.99,
+   "list": 32,
+   "pages": 630,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17172936": {
+   "title": "FREE 6th Grade Math Warm-Ups | Week 1 Daily Spiral Review Bell Ringers",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-6th-Grade-Math-Warm-Ups-Week-1-Daily-Spiral-Review-Bell-Ringers-17172936",
+   "price": 0,
+   "list": 0,
+   "pages": 18,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17173206": {
+   "title": "FREE 7th Grade Math Warm-Ups | Week 1 Daily Spiral Review Bell Ringers",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-7th-Grade-Math-Warm-Ups-Week-1-Daily-Spiral-Review-Bell-Ringers-17173206",
+   "price": 0,
+   "list": 0,
+   "pages": 18,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17173207": {
+   "title": "FREE 8th Grade Math Warm-Ups | Week 1 Daily Spiral Review Bell Ringers",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-8th-Grade-Math-Warm-Ups-Week-1-Daily-Spiral-Review-Bell-Ringers-17173207",
+   "price": 0,
+   "list": 0,
+   "pages": 18,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17173208": {
+   "title": "FREE Algebra 1 Warm-Ups | Week 1 Daily Bell Ringers Spiral Review",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-Algebra-1-Warm-Ups-Week-1-Daily-Bell-Ringers-Spiral-Review-17173208",
+   "price": 0,
+   "list": 0,
+   "pages": 18,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17215091": {
+   "title": "FREE Algebra 1 Notation and Vocabulary Guide | Back to School Reference",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-Algebra-1-Notation-and-Vocabulary-Guide-Back-to-School-Reference-17215091",
+   "price": 0,
+   "list": 0,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17223421": {
+   "title": "FREE 6th Grade Math Notation and Vocabulary Guide | Back to School",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-6th-Grade-Math-Notation-and-Vocabulary-Guide-Back-to-School-17223421",
+   "price": 0,
+   "list": 0,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17223460": {
+   "title": "FREE Pre-Algebra Notation and Vocabulary Guide | 8th Grade Back to School",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-Pre-Algebra-Notation-and-Vocabulary-Guide-8th-Grade-Back-to-School-17223460",
+   "price": 0,
+   "list": 0,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17223639": {
+   "title": "FREE 7th Grade Math Notation and Vocabulary Guide | Back to School",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-7th-Grade-Math-Notation-and-Vocabulary-Guide-Back-to-School-17223639",
+   "price": 0,
+   "list": 0,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17223677": {
+   "title": "FREE 5th Grade Math Notation and Vocabulary Guide | Back to School",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-5th-Grade-Math-Notation-and-Vocabulary-Guide-Back-to-School-17223677",
+   "price": 0,
+   "list": 0,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17252013": {
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 1 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-1-Practice-Test-Prep-Review-SY26-27-17252013",
+   "price": 12,
+   "list": 12,
+   "pages": 40,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17252029": {
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 1 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Practice-Test-Prep-Review-SY26-27-17252029",
+   "price": 12,
+   "list": 12,
+   "pages": 40,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17252052": {
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 1 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Practice-Test-Prep-Review-SY26-27-17252052",
+   "price": 10,
+   "list": 10,
+   "pages": 40,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17252079": {
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 1 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Practice-Test-Prep-Review-SY26-27-17252079",
+   "price": 14,
+   "list": 14,
+   "pages": 42,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17252104": {
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 1 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Practice-Test-Prep-Review-SY26-27-17252104",
+   "price": 14,
+   "list": 14,
+   "pages": 44,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17252110": {
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 1 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Practice-Test-Prep-Review-SY26-27-17252110",
+   "price": 12,
+   "list": 12,
+   "pages": 39,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17258265": {
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 2 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Practice-Test-Prep-Review-SY26-27-17258265",
+   "price": 14,
+   "list": 14,
+   "pages": 68,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17258275": {
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 3 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Practice-Test-Prep-Review-SY26-27-17258275",
+   "price": 12,
+   "list": 12,
+   "pages": 57,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17258291": {
+   "title": "7th Grade Indiana ILEARN Math Summative Practice | Test Prep & Year Review 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Summative-Practice-Test-Prep-Year-Review-26-27-17258291",
+   "price": 18,
+   "list": 18,
+   "pages": 97,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17258320": {
+   "title": "7th Grade Indiana ILEARN Math Full-Year Bundle | 4 Practice Tests Only SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Full-Year-Bundle-4-Practice-Tests-Only-SY26-27-17258320",
+   "price": 45.99,
+   "list": 58,
+   "pages": 266,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17289990": {
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 2 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-2-Practice-Test-Prep-Review-SY26-27-17289990",
+   "price": 15,
+   "list": 15,
+   "pages": 64,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17290018": {
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 3 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-3-Practice-Test-Prep-Review-SY26-27-17290018",
+   "price": 14,
+   "list": 14,
+   "pages": 69,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17290039": {
+   "title": "3rd Grade Indiana ILEARN Math Summative Practice Test | Test Prep SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Summative-Practice-Test-Test-Prep-SY26-27-17290039",
+   "price": 9,
+   "list": 9,
+   "pages": 23,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17290059": {
+   "title": "3rd Grade Indiana ILEARN Math Full-Year Bundle | 4 Practice Tests Only SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Full-Year-Bundle-4-Practice-Tests-Only-SY26-27-17290059",
+   "price": 39.49,
+   "list": 50,
+   "pages": 196,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17292156": {
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 2 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Practice-Test-Prep-Review-SY26-27-17292156",
+   "price": 15.5,
+   "list": 15.5,
+   "pages": 77,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17292171": {
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 3 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Practice-Test-Prep-Review-SY26-27-17292171",
+   "price": 16,
+   "list": 16,
+   "pages": 82,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17292189": {
+   "title": "4th Grade Indiana ILEARN Math Summative Practice Test | Test Prep SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Summative-Practice-Test-Test-Prep-SY26-27-17292189",
+   "price": 9,
+   "list": 9,
+   "pages": 24,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17292203": {
+   "title": "4th Grade Indiana ILEARN Math Full-Year Bundle | 4 Practice Tests Only SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Full-Year-Bundle-4-Practice-Tests-Only-SY26-27-17292203",
+   "price": 41.49,
+   "list": 52.5,
+   "pages": 223,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17296475": {
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 2 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Practice-Test-Prep-Review-SY26-27-17296475",
+   "price": 14,
+   "list": 14,
+   "pages": 70,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17296476": {
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 3 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Practice-Test-Prep-Review-SY26-27-17296476",
+   "price": 17,
+   "list": 17,
+   "pages": 81,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17296484": {
+   "title": "5th Grade Indiana ILEARN Math Summative Practice Test | Test Prep SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Summative-Practice-Test-Test-Prep-SY26-27-17296484",
+   "price": 9,
+   "list": 9,
+   "pages": 24,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17296487": {
+   "title": "5th Grade Indiana ILEARN Math Full-Year Bundle | 4 Practice Tests Only SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Full-Year-Bundle-4-Practice-Tests-Only-SY26-27-17296487",
+   "price": 39.49,
+   "list": 50,
+   "pages": 215,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17304777": {
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 2 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Practice-Test-Prep-Review-SY26-27-17304777",
+   "price": 21,
+   "list": 21,
+   "pages": 71,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17304778": {
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 3 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Practice-Test-Prep-Review-SY26-27-17304778",
+   "price": 13,
+   "list": 13,
+   "pages": 49,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17304780": {
+   "title": "6th Grade Indiana ILEARN Math Summative Practice Test | Test Prep SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Summative-Practice-Test-Test-Prep-SY26-27-17304780",
+   "price": 9,
+   "list": 9,
+   "pages": 20,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17304790": {
+   "title": "6th Grade Indiana ILEARN Math Full-Year Bundle | 4 Practice Tests Only SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Full-Year-Bundle-4-Practice-Tests-Only-SY26-27-17304790",
+   "price": 45.49,
+   "list": 57,
+   "pages": 182,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17305535": {
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 2 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Practice-Test-Prep-Review-SY26-27-17305535",
+   "price": 14,
+   "list": 14,
+   "pages": 75,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17305536": {
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 3 Practice | Test Prep & Review SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Practice-Test-Prep-Review-SY26-27-17305536",
+   "price": 12,
+   "list": 12,
+   "pages": 71,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17305537": {
+   "title": "8th Grade Indiana ILEARN Math Summative Practice | Test Prep & Year Review 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Summative-Practice-Test-Prep-Year-Review-26-27-17305537",
+   "price": 18,
+   "list": 18,
+   "pages": 83,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17305541": {
+   "title": "8th Grade Indiana ILEARN Math Full-Year Bundle | 4 Practice Tests Only SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Full-Year-Bundle-4-Practice-Tests-Only-SY26-27-17305541",
+   "price": 44.49,
+   "list": 56,
+   "pages": 268,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17305919": {
+   "title": "Grades 3-5 Indiana ILEARN Math Practice Tests Bundle | All 3 Grades SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/Grades-3-5-Indiana-ILEARN-Math-Practice-Tests-Bundle-All-3-Grades-SY26-27-17305919",
+   "price": 106.49,
+   "list": 152.5,
+   "pages": 634,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17305934": {
+   "title": "Grades 6-8 Indiana ILEARN Math Practice Tests Bundle | All 3 Grades SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/Grades-6-8-Indiana-ILEARN-Math-Practice-Tests-Bundle-All-3-Grades-SY26-27-17305934",
+   "price": 119.49,
+   "list": 171,
+   "pages": 716,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17305954": {
+   "title": "Grades 3-8 Indiana ILEARN Math Practice Tests Bundle | All 6 Grades SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/Grades-3-8-Indiana-ILEARN-Math-Practice-Tests-Bundle-All-6-Grades-SY26-27-17305954",
+   "price": 209.99,
+   "list": 323.5,
+   "pages": 1350,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17310122": {
+   "title": "6th Grade FAST Math PM1 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-FAST-Math-PM1-Practice-Test-Review-Florida-BEST-Test-Prep-17310122",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 168,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17314437": {
+   "title": "3rd Grade FAST Math PM1 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-FAST-Math-PM1-Practice-Test-Review-Florida-BEST-Test-Prep-17314437",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 149,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17314438": {
+   "title": "4th Grade FAST Math PM1 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-FAST-Math-PM1-Practice-Test-Review-Florida-BEST-Test-Prep-17314438",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 163,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17314439": {
+   "title": "5th Grade FAST Math PM1 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-FAST-Math-PM1-Practice-Test-Review-Florida-BEST-Test-Prep-17314439",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 159,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17314450": {
+   "title": "3rd 4th 5th Grade Florida FAST Math PM1 Practice Test Bundle | BEST Review Prep",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-4th-5th-Grade-Florida-FAST-Math-PM1-Practice-Test-Bundle-BEST-Review-Prep-17314450",
+   "price": 42.99,
+   "list": 53.97,
+   "pages": 468,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17322173": {
+   "title": "7th Grade FAST Math PM1 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-FAST-Math-PM1-Practice-Test-Review-Florida-BEST-Test-Prep-17322173",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 139,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17322336": {
+   "title": "8th Grade FAST Math PM1 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-FAST-Math-PM1-Practice-Test-Review-Florida-BEST-Test-Prep-17322336",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 173,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17322777": {
+   "title": "6th 7th 8th Grade Florida FAST Math PM1 Practice Test Bundle | BEST Review Prep",
+   "url": "https://www.teacherspayteachers.com/Product/6th-7th-8th-Grade-Florida-FAST-Math-PM1-Practice-Test-Bundle-BEST-Review-Prep-17322777",
+   "price": 42.99,
+   "list": 53.97,
+   "pages": 480,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17371117": {
+   "title": "7th, 8th & Algebra 1 Math Readiness Check Bundle | Beginning of Year Diagnostic",
+   "url": "https://www.teacherspayteachers.com/Product/7th-8th-Algebra-1-Math-Readiness-Check-Bundle-Beginning-of-Year-Diagnostic-17371117",
+   "price": 11.99,
+   "list": 15,
+   "pages": 33,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17385723": {
+   "title": "Classifying Rational & Irrational Numbers | Real Number System | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Classifying-Rational-Irrational-Numbers-Real-Number-System-Algebra-1-Notes-17385723",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17385724": {
+   "title": "Sums & Products of Rational & Irrational Numbers | Closure Property | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Sums-Products-of-Rational-Irrational-Numbers-Closure-Property-Algebra-1-17385724",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17385731": {
+   "title": "Evaluating Algebraic Expressions Worksheet | Algebra 1 Notes, Slides & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Evaluating-Algebraic-Expressions-Worksheet-Algebra-1-Notes-Slides-Key-17385731",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17385733": {
+   "title": "Properties of Real Numbers & Operations | Distributive Property | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Properties-of-Real-Numbers-Operations-Distributive-Property-Algebra-1-17385733",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17385739": {
+   "title": "Combining Like Terms & Distributive Property | Simplifying Expressions Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Combining-Like-Terms-Distributive-Property-Simplifying-Expressions-Algebra-1-17385739",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17385743": {
+   "title": "Translating Algebraic Expressions Worksheet | Writing Expressions | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Translating-Algebraic-Expressions-Worksheet-Writing-Expressions-Algebra-1-17385743",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17385748": {
+   "title": "Parts of an Algebraic Expression Worksheet | Interpreting Expressions Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Parts-of-an-Algebraic-Expression-Worksheet-Interpreting-Expressions-Algebra-1-17385748",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17385752": {
+   "title": "Dimensional Analysis Worksheet | Unit Conversions & Precision | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Dimensional-Analysis-Worksheet-Unit-Conversions-Precision-Algebra-1-Notes-17385752",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17385780": {
+   "title": "Algebra Basics & Pre-Algebra Review | Algebra 1 Unit 1 Notes & Worksheets Bundle",
+   "url": "https://www.teacherspayteachers.com/Product/Algebra-Basics-Pre-Algebra-Review-Algebra-1-Unit-1-Notes-Worksheets-Bundle-17385780",
+   "price": 23.99,
+   "list": 48,
+   "pages": 168,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17385961": {
+   "title": "Solving One-Step Equations with Integers & Decimals Worksheet | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-One-Step-Equations-with-Integers-Decimals-Worksheet-Algebra-1-Notes-17385961",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17385967": {
+   "title": "Solving Two-Step Equations with Integers Worksheet | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Two-Step-Equations-with-Integers-Worksheet-Algebra-1-Notes-Key-17385967",
+   "price": 0,
+   "list": 0,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17385969": {
+   "title": "Solving Multi-Step Linear Equations with Distributive Property | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Multi-Step-Linear-Equations-with-Distributive-Property-Algebra-1-Notes-17385969",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17385971": {
+   "title": "Solving Equations with Variables on Both Sides Worksheet | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Equations-with-Variables-on-Both-Sides-Worksheet-Algebra-1-Notes-Key-17385971",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386023": {
+   "title": "Solving Equations with Fractions and Decimals Worksheet | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Equations-with-Fractions-and-Decimals-Worksheet-Algebra-1-Notes-Key-17386023",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386035": {
+   "title": "Number of Solutions | One Solution, No Solution, Infinite Solutions | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Number-of-Solutions-One-Solution-No-Solution-Infinite-Solutions-Algebra-1-17386035",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386045": {
+   "title": "Algebraic Proofs Worksheet | Properties of Equality | Justifying Steps Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Algebraic-Proofs-Worksheet-Properties-of-Equality-Justifying-Steps-Algebra-1-17386045",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386052": {
+   "title": "Literal Equations Worksheet | Solving for a Variable | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Literal-Equations-Worksheet-Solving-for-a-Variable-Algebra-1-Notes-Key-17386052",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386061": {
+   "title": "Writing and Solving Linear Equations from Word Problems Worksheet | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Writing-and-Solving-Linear-Equations-from-Word-Problems-Worksheet-Algebra-1-17386061",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386071": {
+   "title": "Solving Absolute Value Equations Worksheet | Algebra 1 Notes, Slides & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Absolute-Value-Equations-Worksheet-Algebra-1-Notes-Slides-Key-17386071",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386111": {
+   "title": "Solving Linear & Multi-Step Equations | Algebra 1 Unit 2 Worksheets Bundle",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Linear-Multi-Step-Equations-Algebra-1-Unit-2-Worksheets-Bundle-17386111",
+   "price": 26.99,
+   "list": 54,
+   "pages": 210,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17386194": {
+   "title": "Solving and Graphing Inequalities Worksheet | One & Two-Step | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-and-Graphing-Inequalities-Worksheet-One-Two-Step-Algebra-1-Notes-17386194",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386201": {
+   "title": "Solving Multi-Step Linear Inequalities Worksheet | Algebra 1 Notes & Answer Key",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Multi-Step-Linear-Inequalities-Worksheet-Algebra-1-Notes-Answer-Key-17386201",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386210": {
+   "title": "Compound Inequalities Worksheet | Solving & Graphing And/Or | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Compound-Inequalities-Worksheet-Solving-Graphing-AndOr-Algebra-1-Notes-17386210",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386222": {
+   "title": "Solving Absolute Value Inequalities Worksheet | Graphing | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Absolute-Value-Inequalities-Worksheet-Graphing-Algebra-1-Notes-Key-17386222",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386242": {
+   "title": "Inequality Word Problems | Writing Inequalities from Context | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Inequality-Word-Problems-Writing-Inequalities-from-Context-Algebra-1-Notes-17386242",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386255": {
+   "title": "Graphing Linear Inequalities in Two Variables Worksheet | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Graphing-Linear-Inequalities-in-Two-Variables-Worksheet-Algebra-1-Notes-Key-17386255",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386265": {
+   "title": "Graphing Systems of Linear Inequalities Worksheet | Algebra 1 Notes & Answer Key",
+   "url": "https://www.teacherspayteachers.com/Product/Graphing-Systems-of-Linear-Inequalities-Worksheet-Algebra-1-Notes-Answer-Key-17386265",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386285": {
+   "title": "Solving Linear & Compound Inequalities | Algebra 1 Unit 3 Worksheets Bundle",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Linear-Compound-Inequalities-Algebra-1-Unit-3-Worksheets-Bundle-17386285",
+   "price": 20.99,
+   "list": 42,
+   "pages": 147,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17386442": {
+   "title": "Domain and Range Worksheet | Relations and Functions | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Domain-and-Range-Worksheet-Relations-and-Functions-Algebra-1-Notes-Key-17386442",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386445": {
+   "title": "Is It a Function or Not? Identifying Functions | Mapping Diagrams | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Is-It-a-Function-or-Not-Identifying-Functions-Mapping-Diagrams-Algebra-1-17386445",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386447": {
+   "title": "Function Notation Worksheet | From a Table and a Graph | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Function-Notation-Worksheet-From-a-Table-and-a-Graph-Algebra-1-Notes-Key-17386447",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386449": {
+   "title": "Evaluating Functions Worksheet | Function Notation | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Evaluating-Functions-Worksheet-Function-Notation-Algebra-1-Notes-Key-17386449",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386457": {
+   "title": "Writing a Function Rule from a Table Worksheet | Input Output Tables | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Writing-a-Function-Rule-from-a-Table-Worksheet-Input-Output-Tables-Algebra-1-17386457",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386460": {
+   "title": "Key Features of Functions & Graphs | Interpreting & Analyzing Graphs | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Key-Features-of-Functions-Graphs-Interpreting-Analyzing-Graphs-Algebra-1-17386460",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386464": {
+   "title": "Comparing Linear Functions in Different Representations | Algebra 1 Worksheet",
+   "url": "https://www.teacherspayteachers.com/Product/Comparing-Linear-Functions-in-Different-Representations-Algebra-1-Worksheet-17386464",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386466": {
+   "title": "Piecewise Functions | Evaluating Step & Absolute Value Functions | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Piecewise-Functions-Evaluating-Step-Absolute-Value-Functions-Algebra-1-17386466",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17386482": {
+   "title": "Relations & Functions | Function Notation | Algebra 1 Unit 4 Worksheets Bundle",
+   "url": "https://www.teacherspayteachers.com/Product/Relations-Functions-Function-Notation-Algebra-1-Unit-4-Worksheets-Bundle-17386482",
+   "price": 23.99,
+   "list": 48,
+   "pages": 168,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17400370": {
+   "title": "Finding Slope from a Graph | Rise Over Run & Rate of Change | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Finding-Slope-from-a-Graph-Rise-Over-Run-Rate-of-Change-Algebra-1-Notes-17400370",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17400377": {
+   "title": "Slope Formula Worksheet | Finding Slope from Two Points | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Slope-Formula-Worksheet-Finding-Slope-from-Two-Points-Algebra-1-Notes-Key-17400377",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17400382": {
+   "title": "Graphing Slope-Intercept Form | Graphing Linear Equations Worksheet | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Graphing-Slope-Intercept-Form-Graphing-Linear-Equations-Worksheet-Algebra-1-17400382",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17400385": {
+   "title": "Writing Linear Equations in Slope-Intercept Form Worksheet | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Writing-Linear-Equations-in-Slope-Intercept-Form-Worksheet-Algebra-1-Notes-17400385",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17400390": {
+   "title": "Writing Equations in Point-Slope Form Worksheet | Algebra 1 Notes & Answer Key",
+   "url": "https://www.teacherspayteachers.com/Product/Writing-Equations-in-Point-Slope-Form-Worksheet-Algebra-1-Notes-Answer-Key-17400390",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17400392": {
+   "title": "Finding X and Y Intercepts Worksheet | Graphing Standard Form | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Finding-X-and-Y-Intercepts-Worksheet-Graphing-Standard-Form-Algebra-1-Notes-17400392",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17400400": {
+   "title": "Converting Forms of Linear Equations | Standard to Slope-Intercept | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Converting-Forms-of-Linear-Equations-Standard-to-Slope-Intercept-Algebra-1-17400400",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17400408": {
+   "title": "Parallel and Perpendicular Lines Worksheet | Slopes of Lines | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Parallel-and-Perpendicular-Lines-Worksheet-Slopes-of-Lines-Algebra-1-Notes-17400408",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17400414": {
+   "title": "Direct Variation Worksheet | Constant of Variation | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Direct-Variation-Worksheet-Constant-of-Variation-Algebra-1-Notes-Key-17400414",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17400416": {
+   "title": "Writing Linear Equations from Word Problems & Tables | Linear Models | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Writing-Linear-Equations-from-Word-Problems-Tables-Linear-Models-Algebra-1-17400416",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17400421": {
+   "title": "Interpreting Slope and Y-Intercept in Context Worksheet | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Interpreting-Slope-and-Y-Intercept-in-Context-Worksheet-Algebra-1-Notes-Key-17400421",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17400424": {
+   "title": "Transformations of Linear Functions | Function Transformations | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Transformations-of-Linear-Functions-Function-Transformations-Algebra-1-Notes-17400424",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17400429": {
+   "title": "Solving Linear Equations by Graphing Worksheet | Algebra 1 Notes & Answer Key",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Linear-Equations-by-Graphing-Worksheet-Algebra-1-Notes-Answer-Key-17400429",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17400692": {
+   "title": "Linear Functions & Graphing | Slope-Intercept Form | Algebra 1 Unit 5 Bundle",
+   "url": "https://www.teacherspayteachers.com/Product/Linear-Functions-Graphing-Slope-Intercept-Form-Algebra-1-Unit-5-Bundle-17400692",
+   "price": 38.99,
+   "list": 78,
+   "pages": 273,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17410169": {
+   "title": "Solving Systems of Equations by Graphing Worksheet | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Systems-of-Equations-by-Graphing-Worksheet-Algebra-1-Notes-Key-17410169",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17410172": {
+   "title": "Solving Systems of Equations by Substitution Worksheet | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Systems-of-Equations-by-Substitution-Worksheet-Algebra-1-Notes-Key-17410172",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17410173": {
+   "title": "Solving Systems of Equations by Elimination Worksheet | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Systems-of-Equations-by-Elimination-Worksheet-Algebra-1-Notes-Key-17410173",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17410177": {
+   "title": "Solving Systems of Equations Worksheet | Special Systems | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Systems-of-Equations-Worksheet-Special-Systems-Algebra-1-Notes-Key-17410177",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17410181": {
+   "title": "Systems of Equations Word Problems Worksheet | Writing Systems | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Systems-of-Equations-Word-Problems-Worksheet-Writing-Systems-Algebra-1-Notes-17410181",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17410199": {
+   "title": "Solving Systems of Linear Equations | Algebra 1 Unit 6 Notes & Worksheets Bundle",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Systems-of-Linear-Equations-Algebra-1-Unit-6-Notes-Worksheets-Bundle-17410199",
+   "price": 14.99,
+   "list": 30,
+   "pages": 105,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17419871": {
+   "title": "Arithmetic Sequences Worksheet | Arithmetic Sequence Formula | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Arithmetic-Sequences-Worksheet-Arithmetic-Sequence-Formula-Algebra-1-Notes-17419871",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17419875": {
+   "title": "Explicit and Recursive Formulas Worksheet | Sequences as Functions | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Explicit-and-Recursive-Formulas-Worksheet-Sequences-as-Functions-Algebra-1-17419875",
+   "price": 6,
+   "list": 6,
+   "pages": null,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17419876": {
+   "title": "Geometric Sequences Worksheet | Arithmetic and Geometric Sequences | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Geometric-Sequences-Worksheet-Arithmetic-and-Geometric-Sequences-Algebra-1-17419876",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17419884": {
+   "title": "Arithmetic & Geometric Sequences | Algebra 1 Unit 7 Notes & Worksheets Bundle",
+   "url": "https://www.teacherspayteachers.com/Product/Arithmetic-Geometric-Sequences-Algebra-1-Unit-7-Notes-Worksheets-Bundle-17419884",
+   "price": 8.99,
+   "list": 18,
+   "pages": 63,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17442330": {
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 1 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Intervention-Reteach-SY26-27-17442330",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 35,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17442345": {
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 2 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Intervention-Reteach-SY26-27-17442345",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 57,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17442366": {
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 3 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Intervention-Reteach-SY26-27-17442366",
+   "price": 19.49,
+   "list": 19.49,
+   "pages": 71,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17442408": {
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 1 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Bundle-Practice-Reteach-SY26-27-17442408",
+   "price": 19.49,
+   "list": 24.99,
+   "pages": 75,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17442414": {
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 2 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Bundle-Practice-Reteach-SY26-27-17442414",
+   "price": 25.49,
+   "list": 31.99,
+   "pages": 127,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17442423": {
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 3 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Bundle-Practice-Reteach-SY26-27-17442423",
+   "price": 28.99,
+   "list": 36.49,
+   "pages": 152,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17442464": {
+   "title": "5th Grade Indiana ILEARN Math COMPLETE System | Practice Tests + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-COMPLETE-System-Practice-Tests-Reteach-SY26-27-17442464",
+   "price": 76.49,
+   "list": 102.47,
+   "pages": 378,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17450012": {
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 1 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-1-Intervention-Reteach-SY26-27-17450012",
+   "price": 16.49,
+   "list": 16.49,
+   "pages": 42,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17450029": {
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 1 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-1-Bundle-Practice-Reteach-SY26-27-17450029",
+   "price": 22.49,
+   "list": 28.49,
+   "pages": 82,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17450048": {
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 2 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-2-Intervention-Reteach-SY26-27-17450048",
+   "price": 19.49,
+   "list": 19.49,
+   "pages": 61,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17450068": {
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 2 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-2-Bundle-Practice-Reteach-SY26-27-17450068",
+   "price": 27.49,
+   "list": 34.49,
+   "pages": 125,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17450081": {
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 3 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-3-Intervention-Reteach-SY26-27-17450081",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 58,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17450105": {
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 3 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-3-Bundle-Practice-Reteach-SY26-27-17450105",
+   "price": 25.49,
+   "list": 31.99,
+   "pages": 127,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17450133": {
+   "title": "3rd Grade Indiana ILEARN Math COMPLETE System | Practice Tests + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-COMPLETE-System-Practice-Tests-Reteach-SY26-27-17450133",
+   "price": 76.99,
+   "list": 103.97,
+   "pages": 357,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17452391": {
+   "title": "Exponent Rules Worksheet | Laws & Properties of Exponents | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Exponent-Rules-Worksheet-Laws-Properties-of-Exponents-Algebra-1-Notes-17452391",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17452392": {
+   "title": "Zero and Negative Exponents Worksheet | Integer Exponents | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Zero-and-Negative-Exponents-Worksheet-Integer-Exponents-Algebra-1-Notes-17452392",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17452395": {
+   "title": "Rational Exponents and Radicals Worksheet | Fractional Exponents | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Rational-Exponents-and-Radicals-Worksheet-Fractional-Exponents-Algebra-1-17452395",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17452398": {
+   "title": "Simplifying Radicals Worksheet | Simplifying Square Roots | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Simplifying-Radicals-Worksheet-Simplifying-Square-Roots-Algebra-1-Notes-17452398",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17452400": {
+   "title": "Operations with Radicals | Adding, Subtracting & Multiplying Radicals Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Operations-with-Radicals-Adding-Subtracting-Multiplying-Radicals-Algebra-1-17452400",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17452402": {
+   "title": "Operations with Scientific Notation Worksheet | Multiplying & Dividing Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Operations-with-Scientific-Notation-Worksheet-Multiplying-Dividing-Algebra-1-17452402",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17452414": {
+   "title": "Properties of Exponents & Radicals | Exponent Rules | Algebra 1 Unit 8 Bundle",
+   "url": "https://www.teacherspayteachers.com/Product/Properties-of-Exponents-Radicals-Exponent-Rules-Algebra-1-Unit-8-Bundle-17452414",
+   "price": 17.99,
+   "list": 36,
+   "pages": 126,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17455538": {
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 1 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Intervention-Reteach-SY26-27-17455538",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 46,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17455558": {
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 1 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Bundle-Practice-Reteach-SY26-27-17455558",
+   "price": 25.49,
+   "list": 31.99,
+   "pages": 88,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17455585": {
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 2 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Intervention-Reteach-SY26-27-17455585",
+   "price": 19.49,
+   "list": 19.49,
+   "pages": 58,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17455625": {
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 2 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Bundle-Practice-Reteach-SY26-27-17455625",
+   "price": 31.99,
+   "list": 40.49,
+   "pages": 129,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17455652": {
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 3 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Intervention-Reteach-SY26-27-17455652",
+   "price": 16.49,
+   "list": 16.49,
+   "pages": 41,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17455676": {
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 3 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Bundle-Practice-Reteach-SY26-27-17455676",
+   "price": 23.49,
+   "list": 29.49,
+   "pages": 90,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17455718": {
+   "title": "6th Grade Indiana ILEARN Math COMPLETE System | Checkpoints & Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-COMPLETE-System-Checkpoints-Reteach-SY26-27-17455718",
+   "price": 80.99,
+   "list": 110.97,
+   "pages": 327,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17456701": {
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 1 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Intervention-Reteach-SY26-27-17456701",
+   "price": 16.49,
+   "list": 16.49,
+   "pages": 42,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17456719": {
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 1 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Bundle-Practice-Reteach-SY26-27-17456719",
+   "price": 22.49,
+   "list": 28.49,
+   "pages": 82,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17456738": {
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 2 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Intervention-Reteach-SY26-27-17456738",
+   "price": 19.49,
+   "list": 19.49,
+   "pages": 66,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17456746": {
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 2 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Bundle-Practice-Reteach-SY26-27-17456746",
+   "price": 27.49,
+   "list": 34.99,
+   "pages": 143,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17456797": {
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 3 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Intervention-Reteach-SY26-27-17456797",
+   "price": 19.49,
+   "list": 19.49,
+   "pages": 67,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17456809": {
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 3 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Bundle-Practice-Reteach-SY26-27-17456809",
+   "price": 27.99,
+   "list": 35.49,
+   "pages": 149,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17456828": {
+   "title": "4th Grade Indiana ILEARN Math COMPLETE System | Practice Tests + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-COMPLETE-System-Practice-Tests-Reteach-SY26-27-17456828",
+   "price": 79.49,
+   "list": 107.97,
+   "pages": 398,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17457433": {
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 1 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Intervention-Reteach-SY26-27-17457433",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 46,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17457449": {
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 1 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Bundle-Practice-Reteach-SY26-27-17457449",
+   "price": 25.49,
+   "list": 31.99,
+   "pages": 90,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17457475": {
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 2 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Intervention-Reteach-SY26-27-17457475",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 55,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17457507": {
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 2 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Bundle-Practice-Reteach-SY26-27-17457507",
+   "price": 25.49,
+   "list": 31.99,
+   "pages": 123,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17457519": {
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 3 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Intervention-Reteach-SY26-27-17457519",
+   "price": 16.49,
+   "list": 16.49,
+   "pages": 44,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17457531": {
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 3 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Bundle-Practice-Reteach-SY26-27-17457531",
+   "price": 22.49,
+   "list": 28.49,
+   "pages": 101,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17457551": {
+   "title": "7th Grade Indiana ILEARN Math COMPLETE System | Practice Tests + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-COMPLETE-System-Practice-Tests-Reteach-SY26-27-17457551",
+   "price": 82.49,
+   "list": 110.47,
+   "pages": 411,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17458623": {
+   "title": "Graphing Exponential Functions Worksheet | Algebra 1 Notes, Slides & Answer Key",
+   "url": "https://www.teacherspayteachers.com/Product/Graphing-Exponential-Functions-Worksheet-Algebra-1-Notes-Slides-Answer-Key-17458623",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17458628": {
+   "title": "Exponential Growth Worksheet | Growth Models & Formula | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Exponential-Growth-Worksheet-Growth-Models-Formula-Algebra-1-Notes-Key-17458628",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17458631": {
+   "title": "Exponential Decay Worksheet | Decay Models & Formula | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Exponential-Decay-Worksheet-Decay-Models-Formula-Algebra-1-Notes-Key-17458631",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17458634": {
+   "title": "Compound Interest Worksheet | Compound Interest Formula | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Compound-Interest-Worksheet-Compound-Interest-Formula-Algebra-1-Notes-Key-17458634",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17458639": {
+   "title": "Linear and Exponential Functions Worksheet | Linear vs Exponential | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Linear-and-Exponential-Functions-Worksheet-Linear-vs-Exponential-Algebra-1-17458639",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17458644": {
+   "title": "Writing Exponential Functions from Two Points & Tables Worksheet | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Writing-Exponential-Functions-from-Two-Points-Tables-Worksheet-Algebra-1-17458644",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17458665": {
+   "title": "Exponential Functions | Growth & Decay | Algebra 1 Unit 9 Worksheets Bundle",
+   "url": "https://www.teacherspayteachers.com/Product/Exponential-Functions-Growth-Decay-Algebra-1-Unit-9-Worksheets-Bundle-17458665",
+   "price": 17.99,
+   "list": 36,
+   "pages": 126,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17459558": {
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 1 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Intervention-Reteach-SY26-27-17459558",
+   "price": 16.49,
+   "list": 16.49,
+   "pages": 39,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17459578": {
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 1 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-1-Bundle-Practice-Reteach-SY26-27-17459578",
+   "price": 22.49,
+   "list": 28.49,
+   "pages": 78,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17459593": {
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 2 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Intervention-Reteach-SY26-27-17459593",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 59,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17459604": {
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 2 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-2-Bundle-Practice-Reteach-SY26-27-17459604",
+   "price": 25.49,
+   "list": 31.99,
+   "pages": 134,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17459623": {
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 3 Intervention & Reteach | SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Intervention-Reteach-SY26-27-17459623",
+   "price": 16.49,
+   "list": 16.49,
+   "pages": 52,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17459634": {
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 3 Bundle | Practice + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-3-Bundle-Practice-Reteach-SY26-27-17459634",
+   "price": 22.49,
+   "list": 28.49,
+   "pages": 123,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17459656": {
+   "title": "8th Grade Indiana ILEARN Math COMPLETE System | Practice Tests + Reteach SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-COMPLETE-System-Practice-Tests-Reteach-SY26-27-17459656",
+   "price": 79.99,
+   "list": 106.97,
+   "pages": 418,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17461443": {
+   "title": "Classifying Polynomials by Degree & Number of Terms Worksheet | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Classifying-Polynomials-by-Degree-Number-of-Terms-Worksheet-Algebra-1-Notes-17461443",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17461444": {
+   "title": "Adding and Subtracting Polynomials Worksheet | Polynomial Operations | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Adding-and-Subtracting-Polynomials-Worksheet-Polynomial-Operations-Algebra-1-17461444",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17461446": {
+   "title": "Multiplying Binomials Worksheet | FOIL Method | Monomials & Binomials Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Multiplying-Binomials-Worksheet-FOIL-Method-Monomials-Binomials-Algebra-1-17461446",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17461448": {
+   "title": "Multiplying Polynomials Worksheet | Multiplying Trinomials | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Multiplying-Polynomials-Worksheet-Multiplying-Trinomials-Algebra-1-Notes-17461448",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17461455": {
+   "title": "Special Products of Polynomials Worksheet | Squaring Binomials | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Special-Products-of-Polynomials-Worksheet-Squaring-Binomials-Algebra-1-Notes-17461455",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17461476": {
+   "title": "Adding, Subtracting & Multiplying Polynomials | Algebra 1 Unit 10 Notes Bundle",
+   "url": "https://www.teacherspayteachers.com/Product/Adding-Subtracting-Multiplying-Polynomials-Algebra-1-Unit-10-Notes-Bundle-17461476",
+   "price": 14.99,
+   "list": 30,
+   "pages": 105,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17465148": {
+   "title": "Factoring Out the GCF Worksheet | Greatest Common Factor | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Factoring-Out-the-GCF-Worksheet-Greatest-Common-Factor-Algebra-1-Notes-Key-17465148",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465151": {
+   "title": "Factoring Trinomials When a = 1 Worksheet | Factoring Quadratics | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Factoring-Trinomials-When-a-1-Worksheet-Factoring-Quadratics-Algebra-1-17465151",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465158": {
+   "title": "Factoring Trinomials When a Is Not 1 Worksheet | AC Method | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Factoring-Trinomials-When-a-Is-Not-1-Worksheet-AC-Method-Algebra-1-Notes-17465158",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465163": {
+   "title": "Factoring Difference of Squares Worksheet | Special Cases | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Factoring-Difference-of-Squares-Worksheet-Special-Cases-Algebra-1-Notes-17465163",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465169": {
+   "title": "Factoring Perfect Square Trinomials Worksheet | Special Cases | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Factoring-Perfect-Square-Trinomials-Worksheet-Special-Cases-Algebra-1-Notes-17465169",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465174": {
+   "title": "Factoring Polynomials by Grouping Worksheet | Four Terms | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Factoring-Polynomials-by-Grouping-Worksheet-Four-Terms-Algebra-1-Notes-Key-17465174",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465177": {
+   "title": "Factoring Polynomials Completely Worksheet | Factoring Review | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Factoring-Polynomials-Completely-Worksheet-Factoring-Review-Algebra-1-Notes-17465177",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465193": {
+   "title": "Factoring Polynomials, Trinomials & Quadratics | Algebra 1 Unit 11 Notes Bundle",
+   "url": "https://www.teacherspayteachers.com/Product/Factoring-Polynomials-Trinomials-Quadratics-Algebra-1-Unit-11-Notes-Bundle-17465193",
+   "price": 20.99,
+   "list": 42,
+   "pages": 147,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17465509": {
+   "title": "Graphing Quadratics Worksheet | Vertex, Axis of Symmetry & Parabolas | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Graphing-Quadratics-Worksheet-Vertex-Axis-of-Symmetry-Parabolas-Algebra-1-17465509",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465515": {
+   "title": "Key Features of Quadratic Functions Worksheet | Parabolas | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Key-Features-of-Quadratic-Functions-Worksheet-Parabolas-Algebra-1-Notes-17465515",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465521": {
+   "title": "Vertex Form Worksheet | Transformations of Quadratic Functions | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Vertex-Form-Worksheet-Transformations-of-Quadratic-Functions-Algebra-1-Notes-17465521",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465528": {
+   "title": "Standard Form to Vertex Form Worksheet | Completing the Square | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Standard-Form-to-Vertex-Form-Worksheet-Completing-the-Square-Algebra-1-Notes-17465528",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465534": {
+   "title": "Factored Form of a Quadratic Worksheet | Zeros & Roots of Quadratics | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Factored-Form-of-a-Quadratic-Worksheet-Zeros-Roots-of-Quadratics-Algebra-1-17465534",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465537": {
+   "title": "Average Rate of Change Worksheet | Quadratic Functions | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Average-Rate-of-Change-Worksheet-Quadratic-Functions-Algebra-1-Notes-Key-17465537",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465557": {
+   "title": "Modeling with Quadratic Functions | First and Second Differences | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Modeling-with-Quadratic-Functions-First-and-Second-Differences-Algebra-1-17465557",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465575": {
+   "title": "Graphing Quadratics & Quadratic Functions | Algebra 1 Unit 12 Worksheets Bundle",
+   "url": "https://www.teacherspayteachers.com/Product/Graphing-Quadratics-Quadratic-Functions-Algebra-1-Unit-12-Worksheets-Bundle-17465575",
+   "price": 20.99,
+   "list": 42,
+   "pages": 147,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17465705": {
+   "title": "Solving Quadratics by Square Roots Worksheet | Square Root Method | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Quadratics-by-Square-Roots-Worksheet-Square-Root-Method-Algebra-1-17465705",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465719": {
+   "title": "Solving Quadratics by Graphing Worksheet | Zeros of a Quadratic | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Quadratics-by-Graphing-Worksheet-Zeros-of-a-Quadratic-Algebra-1-17465719",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465725": {
+   "title": "Solving Quadratics by Factoring | Zero Product Property Worksheet | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Quadratics-by-Factoring-Zero-Product-Property-Worksheet-Algebra-1-17465725",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465733": {
+   "title": "Solving Quadratics by Completing the Square Worksheet | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Quadratics-by-Completing-the-Square-Worksheet-Algebra-1-Notes-Key-17465733",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465736": {
+   "title": "Quadratic Formula Worksheet | Solving Quadratic Equations | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Quadratic-Formula-Worksheet-Solving-Quadratic-Equations-Algebra-1-Notes-17465736",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465740": {
+   "title": "The Discriminant and Number of Solutions of a Quadratic | Algebra 1 Worksheet",
+   "url": "https://www.teacherspayteachers.com/Product/The-Discriminant-and-Number-of-Solutions-of-a-Quadratic-Algebra-1-Worksheet-17465740",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465743": {
+   "title": "Linear-Quadratic Systems Worksheet | Nonlinear Systems of Equations | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Linear-Quadratic-Systems-Worksheet-Nonlinear-Systems-of-Equations-Algebra-1-17465743",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17465758": {
+   "title": "Solving Quadratic Equations | Quadratic Formula | Algebra 1 Unit 13 Notes Bundle",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Quadratic-Equations-Quadratic-Formula-Algebra-1-Unit-13-Notes-Bundle-17465758",
+   "price": 20.99,
+   "list": 42,
+   "pages": 147,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17466046": {
+   "title": "Histograms, Dot Plots, Box and Whisker Plots | Box Plots Worksheet | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Histograms-Dot-Plots-Box-and-Whisker-Plots-Box-Plots-Worksheet-Algebra-1-17466046",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17466049": {
+   "title": "Standard Deviation & Interquartile Range | Measures of Center & Spread Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Standard-Deviation-Interquartile-Range-Measures-of-Center-Spread-Algebra-1-17466049",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17466056": {
+   "title": "Identifying Outliers Worksheet | Comparing Distributions | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Identifying-Outliers-Worksheet-Comparing-Distributions-Algebra-1-Notes-Key-17466056",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17466063": {
+   "title": "Two-Way Frequency Tables Worksheet | Conditional Relative Frequency | Algebra 1",
+   "url": "https://www.teacherspayteachers.com/Product/Two-Way-Frequency-Tables-Worksheet-Conditional-Relative-Frequency-Algebra-1-17466063",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17466071": {
+   "title": "Scatter Plot & Line of Best Fit Worksheet | Trend Lines | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Scatter-Plot-Line-of-Best-Fit-Worksheet-Trend-Lines-Algebra-1-Notes-Key-17466071",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17466083": {
+   "title": "Residuals and Residual Plots Worksheet | Goodness of Fit | Algebra 1 Notes & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Residuals-and-Residual-Plots-Worksheet-Goodness-of-Fit-Algebra-1-Notes-Key-17466083",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17466088": {
+   "title": "Correlation Coefficient & Causation | Correlation vs Causation | Algebra 1 Notes",
+   "url": "https://www.teacherspayteachers.com/Product/Correlation-Coefficient-Causation-Correlation-vs-Causation-Algebra-1-Notes-17466088",
+   "price": 6,
+   "list": 6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17466117": {
+   "title": "Statistics & Data Analysis Notes | Algebra 1 Unit 14 Worksheets Bundle",
+   "url": "https://www.teacherspayteachers.com/Product/Statistics-Data-Analysis-Notes-Algebra-1-Unit-14-Worksheets-Bundle-17466117",
+   "price": 20.99,
+   "list": 42,
+   "pages": 147,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17466172": {
+   "title": "Algebra 1 Curriculum Bundle | Full Year Worksheets, Guided Notes & Slides",
+   "url": "https://www.teacherspayteachers.com/Product/Algebra-1-Curriculum-Bundle-Full-Year-Worksheets-Guided-Notes-Slides-17466172",
+   "price": 249.99,
+   "list": 625,
+   "pages": 2079,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17492125": {
+   "title": "3rd Grade Georgia Milestones Math Review | Numerical Reasoning GMAS Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Georgia-Milestones-Math-Review-Numerical-Reasoning-GMAS-Test-Prep-17492125",
+   "price": 7.6,
+   "list": 7.6,
+   "pages": 19,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17492147": {
+   "title": "3rd Grade Georgia Milestones Math Review & Test Prep | Patterning & Algebraic",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Georgia-Milestones-Math-Review-Test-Prep-Patterning-Algebraic-17492147",
+   "price": 10,
+   "list": 10,
+   "pages": 22,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17492170": {
+   "title": "3rd Grade Georgia Milestones Math Review & Test Prep | Measurement & Data",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Georgia-Milestones-Math-Review-Test-Prep-Measurement-Data-17492170",
+   "price": 6,
+   "list": 6,
+   "pages": 16,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17492198": {
+   "title": "3rd Grade Georgia Milestones Math Review & Test Prep | Geometric & Spatial",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Georgia-Milestones-Math-Review-Test-Prep-Geometric-Spatial-17492198",
+   "price": 7.6,
+   "list": 7.6,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17492221": {
+   "title": "3rd Grade Georgia Milestones Math Practice Test | GMAS Review & Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Georgia-Milestones-Math-Practice-Test-GMAS-Review-Test-Prep-17492221",
+   "price": 7,
+   "list": 7,
+   "pages": 25,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17492233": {
+   "title": "3rd Grade Georgia Milestones Math Review Bundle | GMAS Practice Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Georgia-Milestones-Math-Review-Bundle-GMAS-Practice-Test-Prep-17492233",
+   "price": 30.49,
+   "list": 38.2,
+   "pages": 92,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17492779": {
+   "title": "4th Grade Georgia Milestones Math Review | Numerical Reasoning GMAS Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Georgia-Milestones-Math-Review-Numerical-Reasoning-GMAS-Test-Prep-17492779",
+   "price": 14,
+   "list": 14,
+   "pages": 30,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17492811": {
+   "title": "4th Grade Georgia Milestones Math Review & Test Prep | Patterning & Algebraic",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Georgia-Milestones-Math-Review-Test-Prep-Patterning-Algebraic-17492811",
+   "price": 4.8,
+   "list": 4.8,
+   "pages": 10,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17492829": {
+   "title": "4th Grade Georgia Milestones Math Review & Test Prep | Geometric & Spatial",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Georgia-Milestones-Math-Review-Test-Prep-Geometric-Spatial-17492829",
+   "price": 7.2,
+   "list": 7.2,
+   "pages": 20,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17492842": {
+   "title": "4th Grade Georgia Milestones Math Practice Test | GMAS Review & Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Georgia-Milestones-Math-Practice-Test-GMAS-Review-Test-Prep-17492842",
+   "price": 7,
+   "list": 7,
+   "pages": 24,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17492847": {
+   "title": "4th Grade Georgia Milestones Math Review & Test Prep | Measurement & Data",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Georgia-Milestones-Math-Review-Test-Prep-Measurement-Data-17492847",
+   "price": 5.2,
+   "list": 5.2,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17492851": {
+   "title": "4th Grade Georgia Milestones Math Review Bundle | GMAS Practice Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Georgia-Milestones-Math-Review-Bundle-GMAS-Practice-Test-Prep-17492851",
+   "price": 30.49,
+   "list": 38.2,
+   "pages": 90,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17528855": {
+   "title": "3rd Grade Indiana ILEARN Math Spiral Review Q1 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Spiral-Review-Q1-Daily-Morning-Work-SY26-27-17528855",
+   "price": 11.99,
+   "list": 11.99,
+   "pages": 32,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17528856": {
+   "title": "3rd Grade Indiana ILEARN Math Spiral Review Q3 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Spiral-Review-Q3-Daily-Morning-Work-SY26-27-17528856",
+   "price": 11.99,
+   "list": 11.99,
+   "pages": 33,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17528859": {
+   "title": "3rd Grade Indiana ILEARN Math Spiral Review Q2 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Spiral-Review-Q2-Daily-Morning-Work-SY26-27-17528859",
+   "price": 11.99,
+   "list": 11.99,
+   "pages": 33,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17528860": {
+   "title": "3rd Grade Indiana ILEARN Math Spiral Review Q4 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Spiral-Review-Q4-Daily-Morning-Work-SY26-27-17528860",
+   "price": 11.99,
+   "list": 11.99,
+   "pages": 34,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17528871": {
+   "title": "3rd Grade Indiana ILEARN Math Spiral Review | FULL YEAR Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Spiral-Review-FULL-YEAR-Morning-Work-SY26-27-17528871",
+   "price": 37.99,
+   "list": 47.96,
+   "pages": 132,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17529054": {
+   "title": "4th Grade Indiana ILEARN Math Spiral Review Q1 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q1-Daily-Morning-Work-SY26-27-17529054",
+   "price": 12,
+   "list": 12,
+   "pages": 34,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17529057": {
+   "title": "4th Grade Indiana ILEARN Math Spiral Review Q2 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q2-Daily-Morning-Work-SY26-27-17529057",
+   "price": 12,
+   "list": 12,
+   "pages": 35,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17529060": {
+   "title": "4th Grade Indiana ILEARN Math Spiral Review Q3 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q3-Daily-Morning-Work-SY26-27-17529060",
+   "price": 12,
+   "list": 12,
+   "pages": 34,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17529063": {
+   "title": "4th Grade Indiana ILEARN Math Spiral Review Q4 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q4-Daily-Morning-Work-SY26-27-17529063",
+   "price": 12,
+   "list": 12,
+   "pages": 37,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17529072": {
+   "title": "4th Grade Indiana ILEARN Math Spiral Review | FULL YEAR Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Spiral-Review-FULL-YEAR-Morning-Work-SY26-27-17529072",
+   "price": 37.99,
+   "list": 48,
+   "pages": 140,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17529126": {
+   "title": "5th Grade Indiana ILEARN Math Spiral Review Q1 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q1-Daily-Morning-Work-SY26-27-17529126",
+   "price": 12,
+   "list": 12,
+   "pages": 34,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17529127": {
+   "title": "5th Grade Indiana ILEARN Math Spiral Review Q2 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q2-Daily-Morning-Work-SY26-27-17529127",
+   "price": 12,
+   "list": 12,
+   "pages": 34,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17529129": {
+   "title": "5th Grade Indiana ILEARN Math Spiral Review Q3 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q3-Daily-Morning-Work-SY26-27-17529129",
+   "price": 12,
+   "list": 12,
+   "pages": 34,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17529130": {
+   "title": "5th Grade Indiana ILEARN Math Spiral Review Q4 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q4-Daily-Morning-Work-SY26-27-17529130",
+   "price": 12,
+   "list": 12,
+   "pages": 34,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17529134": {
+   "title": "5th Grade Indiana ILEARN Math Spiral Review | FULL YEAR Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Spiral-Review-FULL-YEAR-Morning-Work-SY26-27-17529134",
+   "price": 37.99,
+   "list": 48,
+   "pages": 136,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17529179": {
+   "title": "6th Grade Indiana ILEARN Math Spiral Review Q1 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q1-Daily-Morning-Work-SY26-27-17529179",
+   "price": 12,
+   "list": 12,
+   "pages": 36,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17529206": {
+   "title": "6th Grade Indiana ILEARN Math Spiral Review Q2 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q2-Daily-Morning-Work-SY26-27-17529206",
+   "price": 12,
+   "list": 12,
+   "pages": 35,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17529207": {
+   "title": "6th Grade Indiana ILEARN Math Spiral Review Q3 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q3-Daily-Morning-Work-SY26-27-17529207",
+   "price": 12,
+   "list": 12,
+   "pages": 34,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17529209": {
+   "title": "6th Grade Indiana ILEARN Math Spiral Review Q4 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q4-Daily-Morning-Work-SY26-27-17529209",
+   "price": 12,
+   "list": 12,
+   "pages": 34,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17529216": {
+   "title": "6th Grade Indiana ILEARN Math Spiral Review | FULL YEAR Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Spiral-Review-FULL-YEAR-Morning-Work-SY26-27-17529216",
+   "price": 37.99,
+   "list": 48,
+   "pages": 139,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17531585": {
+   "title": "7th Grade Indiana ILEARN Math Spiral Review Q1 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q1-Daily-Morning-Work-SY26-27-17531585",
+   "price": 12,
+   "list": 12,
+   "pages": 34,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17531595": {
+   "title": "7th Grade Indiana ILEARN Math Spiral Review Q2 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q2-Daily-Morning-Work-SY26-27-17531595",
+   "price": 12,
+   "list": 12,
+   "pages": 34,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17531599": {
+   "title": "7th Grade Indiana ILEARN Math Spiral Review Q3 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q3-Daily-Morning-Work-SY26-27-17531599",
+   "price": 12,
+   "list": 12,
+   "pages": 34,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17531608": {
+   "title": "7th Grade Indiana ILEARN Math Spiral Review Q4 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q4-Daily-Morning-Work-SY26-27-17531608",
+   "price": 12,
+   "list": 12,
+   "pages": 36,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17531620": {
+   "title": "7th Grade Indiana ILEARN Math Spiral Review | FULL YEAR Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Spiral-Review-FULL-YEAR-Morning-Work-SY26-27-17531620",
+   "price": 37.99,
+   "list": 48,
+   "pages": 138,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17531622": {
+   "title": "8th Grade Indiana ILEARN Math Spiral Review Q1 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q1-Daily-Morning-Work-SY26-27-17531622",
+   "price": 12,
+   "list": 12,
+   "pages": 33,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17531629": {
+   "title": "8th Grade Indiana ILEARN Math Spiral Review Q2 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q2-Daily-Morning-Work-SY26-27-17531629",
+   "price": 12,
+   "list": 12,
+   "pages": 34,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17531634": {
+   "title": "8th Grade Indiana ILEARN Math Spiral Review Q3 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q3-Daily-Morning-Work-SY26-27-17531634",
+   "price": 12,
+   "list": 12,
+   "pages": 34,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17531636": {
+   "title": "8th Grade Indiana ILEARN Math Spiral Review Q4 | Daily Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Spiral-Review-Q4-Daily-Morning-Work-SY26-27-17531636",
+   "price": 12,
+   "list": 12,
+   "pages": 34,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17531645": {
+   "title": "8th Grade Indiana ILEARN Math Spiral Review | FULL YEAR Morning Work SY26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Spiral-Review-FULL-YEAR-Morning-Work-SY26-27-17531645",
+   "price": 37.99,
+   "list": 48,
+   "pages": 135,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17533870": {
+   "title": "5th Grade Georgia Milestones Math Review | Numerical Reasoning GMAS Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Georgia-Milestones-Math-Review-Numerical-Reasoning-GMAS-Test-Prep-17533870",
+   "price": 17.2,
+   "list": 17.2,
+   "pages": 39,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17533881": {
+   "title": "5th Grade Georgia Milestones Math Review & Test Prep | Patterning & Algebraic",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Georgia-Milestones-Math-Review-Test-Prep-Patterning-Algebraic-17533881",
+   "price": 4.04,
+   "list": 4.04,
+   "pages": 10,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17533895": {
+   "title": "5th Grade Georgia Milestones Math Review & Test Prep | Measurement & Data",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Georgia-Milestones-Math-Review-Test-Prep-Measurement-Data-17533895",
+   "price": 4.8,
+   "list": 4.8,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17533913": {
+   "title": "5th Grade Georgia Milestones Math Review & Test Prep | Geometric & Spatial",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Georgia-Milestones-Math-Review-Test-Prep-Geometric-Spatial-17533913",
+   "price": 4.8,
+   "list": 4.8,
+   "pages": 14,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17533937": {
+   "title": "5th Grade Georgia Milestones Math Practice Test | GMAS Review & Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Georgia-Milestones-Math-Practice-Test-GMAS-Review-Test-Prep-17533937",
+   "price": 7,
+   "list": 7,
+   "pages": 24,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17533955": {
+   "title": "5th Grade Georgia Milestones Math Review Bundle | GMAS Practice Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Georgia-Milestones-Math-Review-Bundle-GMAS-Practice-Test-Prep-17533955",
+   "price": 30.49,
+   "list": 37.84,
+   "pages": 100,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17589643": {
+   "title": "6th Grade Georgia Milestones Math Review | Numerical Reasoning GMAS Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Georgia-Milestones-Math-Review-Numerical-Reasoning-GMAS-Test-Prep-17589643",
+   "price": 13.6,
+   "list": 13.6,
+   "pages": 34,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17589645": {
+   "title": "6th Grade Georgia Milestones Math Review & Test Prep | Patterning & Algebraic",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Georgia-Milestones-Math-Review-Test-Prep-Patterning-Algebraic-17589645",
+   "price": 10.8,
+   "list": 10.8,
+   "pages": 27,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17589649": {
+   "title": "6th Grade Georgia Milestones Math Practice Test | GMAS Review & Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Georgia-Milestones-Math-Practice-Test-GMAS-Review-Test-Prep-17589649",
+   "price": 7,
+   "list": 7,
+   "pages": 26,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17589666": {
+   "title": "6th Grade Georgia Milestones Math Review & Test Prep | Geometric & Spatial",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Georgia-Milestones-Math-Review-Test-Prep-Geometric-Spatial-17589666",
+   "price": 4.8,
+   "list": 4.8,
+   "pages": 16,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17589674": {
+   "title": "6th Grade Georgia Milestones Math Review Bundle | GMAS Practice Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Georgia-Milestones-Math-Review-Bundle-GMAS-Practice-Test-Prep-17589674",
+   "price": 28.99,
+   "list": 36.2,
+   "pages": 103,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17589851": {
+   "title": "7th Grade Georgia Milestones Math Review | Numerical Reasoning GMAS Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Georgia-Milestones-Math-Review-Numerical-Reasoning-GMAS-Test-Prep-17589851",
+   "price": 6.8,
+   "list": 6.8,
+   "pages": 14,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17589867": {
+   "title": "7th Grade Georgia Milestones Math Review & Test Prep | Patterning & Algebraic",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Georgia-Milestones-Math-Review-Test-Prep-Patterning-Algebraic-17589867",
+   "price": 13.2,
+   "list": 13.2,
+   "pages": 32,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17589872": {
+   "title": "7th Grade Georgia Milestones Math Review & Test Prep | Geometric & Spatial",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Georgia-Milestones-Math-Review-Test-Prep-Geometric-Spatial-17589872",
+   "price": 5.6,
+   "list": 5.6,
+   "pages": 15,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17589890": {
+   "title": "7th Grade Georgia Milestones Math Review | Probability Reasoning GMAS Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Georgia-Milestones-Math-Review-Probability-Reasoning-GMAS-Test-Prep-17589890",
+   "price": 5.6,
+   "list": 5.6,
+   "pages": 15,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17589895": {
+   "title": "7th Grade Georgia Milestones Math Practice Test | GMAS Review & Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Georgia-Milestones-Math-Practice-Test-GMAS-Review-Test-Prep-17589895",
+   "price": 7,
+   "list": 7,
+   "pages": 25,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17589902": {
+   "title": "7th Grade Georgia Milestones Math Review Bundle | GMAS Practice Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Georgia-Milestones-Math-Review-Bundle-GMAS-Practice-Test-Prep-17589902",
+   "price": 30.49,
+   "list": 38.2,
+   "pages": 101,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17590112": {
+   "title": "8th Grade Georgia Milestones Math Review | Numerical Reasoning GMAS Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Georgia-Milestones-Math-Review-Numerical-Reasoning-GMAS-Test-Prep-17590112",
+   "price": 6.4,
+   "list": 6.4,
+   "pages": 16,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17590125": {
+   "title": "8th Grade Georgia Milestones Math Review & Test Prep | Patterning & Algebraic",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Georgia-Milestones-Math-Review-Test-Prep-Patterning-Algebraic-17590125",
+   "price": 8.4,
+   "list": 8.4,
+   "pages": 21,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17590133": {
+   "title": "8th Grade Georgia Milestones Math Review & Test Prep | Functional & Graphical",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Georgia-Milestones-Math-Review-Test-Prep-Functional-Graphical-17590133",
+   "price": 11.2,
+   "list": 11.2,
+   "pages": 30,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17590138": {
+   "title": "8th Grade Georgia Milestones Math Review & Test Prep | Geometric & Spatial",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Georgia-Milestones-Math-Review-Test-Prep-Geometric-Spatial-17590138",
+   "price": 5.2,
+   "list": 5.2,
+   "pages": 15,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17590141": {
+   "title": "8th Grade Georgia Milestones Math Practice Test | GMAS Review & Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Georgia-Milestones-Math-Practice-Test-GMAS-Review-Test-Prep-17590141",
+   "price": 7,
+   "list": 7,
+   "pages": 29,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17590151": {
+   "title": "8th Grade Georgia Milestones Math Review Bundle | GMAS Practice Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Georgia-Milestones-Math-Review-Bundle-GMAS-Practice-Test-Prep-17590151",
+   "price": 30.49,
+   "list": 38.2,
+   "pages": 111,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17591003": {
+   "title": "Georgia Milestones Algebra 1 EOC Review & Test Prep | Geometric & Spatial",
+   "url": "https://www.teacherspayteachers.com/Product/Georgia-Milestones-Algebra-1-EOC-Review-Test-Prep-Geometric-Spatial-17591003",
+   "price": 4.4,
+   "list": 4.4,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17591005": {
+   "title": "Georgia Milestones Algebra 1 EOC Review | Numerical Reasoning Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/Georgia-Milestones-Algebra-1-EOC-Review-Numerical-Reasoning-Test-Prep-17591005",
+   "price": 4.4,
+   "list": 4.4,
+   "pages": 9,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17591007": {
+   "title": "Georgia Milestones Algebra 1 EOC Review & Test Prep | Patterning & Algebraic",
+   "url": "https://www.teacherspayteachers.com/Product/Georgia-Milestones-Algebra-1-EOC-Review-Test-Prep-Patterning-Algebraic-17591007",
+   "price": 9.6,
+   "list": 9.6,
+   "pages": 24,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17591010": {
+   "title": "Georgia Milestones Algebra 1 EOC Review & Test Prep | Functional & Graphical",
+   "url": "https://www.teacherspayteachers.com/Product/Georgia-Milestones-Algebra-1-EOC-Review-Test-Prep-Functional-Graphical-17591010",
+   "price": 10.4,
+   "list": 10.4,
+   "pages": 24,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17591014": {
+   "title": "Georgia Milestones Algebra 1 EOC Review | Data & Statistical Reasoning Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/Georgia-Milestones-Algebra-1-EOC-Review-Data-Statistical-Reasoning-Test-Prep-17591014",
+   "price": 4.4,
+   "list": 4.4,
+   "pages": 11,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17591021": {
+   "title": "Georgia Milestones Algebra 1 EOC Practice Test | Full Mock, Review & Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/Georgia-Milestones-Algebra-1-EOC-Practice-Test-Full-Mock-Review-Test-Prep-17591021",
+   "price": 7,
+   "list": 7,
+   "pages": 27,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17591033": {
+   "title": "Georgia Milestones Algebra 1 EOC Review Bundle | Full-Year Practice Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/Georgia-Milestones-Algebra-1-EOC-Review-Bundle-Full-Year-Practice-Test-Prep-17591033",
+   "price": 31.99,
+   "list": 40.2,
+   "pages": 107,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17591253": {
+   "title": "3rd 4th 5th Grade Georgia Milestones Math Review Bundle | Practice Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-4th-5th-Grade-Georgia-Milestones-Math-Review-Bundle-Practice-Test-Prep-17591253",
+   "price": 79.49,
+   "list": 114.24,
+   "pages": 299,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17591262": {
+   "title": "6th 7th 8th Grade Georgia Milestones Math Review Bundle | Practice Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/6th-7th-8th-Grade-Georgia-Milestones-Math-Review-Bundle-Practice-Test-Prep-17591262",
+   "price": 78.49,
+   "list": 112.6,
+   "pages": 215,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17591272": {
+   "title": "Georgia Milestones 8th Grade Math + Algebra 1 EOC Review Bundle | Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/Georgia-Milestones-8th-Grade-Math-Algebra-1-EOC-Review-Bundle-Test-Prep-17591272",
+   "price": 54.49,
+   "list": 78.4,
+   "pages": 218,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17592765": {
+   "title": "Florida B.E.S.T. Algebra 1 EOC Review | Expressions, Functions & Data Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/Florida-BEST-Algebra-1-EOC-Review-Expressions-Functions-Data-Test-Prep-17592765",
+   "price": 12.49,
+   "list": 12.49,
+   "pages": 38,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17592779": {
+   "title": "Florida B.E.S.T. Algebra 1 EOC Review | Linear Relationships Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/Florida-BEST-Algebra-1-EOC-Review-Linear-Relationships-Test-Prep-17592779",
+   "price": 11.49,
+   "list": 11.49,
+   "pages": 35,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17592787": {
+   "title": "Florida B.E.S.T. Algebra 1 EOC Review | Non-Linear Relationships Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/Florida-BEST-Algebra-1-EOC-Review-Non-Linear-Relationships-Test-Prep-17592787",
+   "price": 12.49,
+   "list": 12.49,
+   "pages": 39,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17592789": {
+   "title": "Florida B.E.S.T. Algebra 1 EOC Practice Test | Full Mock, Review & Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/Florida-BEST-Algebra-1-EOC-Practice-Test-Full-Mock-Review-Test-Prep-17592789",
+   "price": 7.49,
+   "list": 7.49,
+   "pages": 28,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17592798": {
+   "title": "Florida B.E.S.T. Algebra 1 EOC Review Bundle | Full-Course Practice Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/Florida-BEST-Algebra-1-EOC-Review-Bundle-Full-Course-Practice-Test-Prep-17592798",
+   "price": 35.49,
+   "list": 43.96,
+   "pages": null,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17611381": {
+   "title": "Grades 3-5 Indiana ILEARN Math Checkpoint 1 FREE Practice | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/Grades-3-5-Indiana-ILEARN-Math-Checkpoint-1-FREE-Practice-Test-Prep-26-27-17611381",
+   "price": 0,
+   "list": 0,
+   "pages": 18,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17611384": {
+   "title": "Grades 6-8 Indiana ILEARN Math Checkpoint 1 FREE Practice | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/Grades-6-8-Indiana-ILEARN-Math-Checkpoint-1-FREE-Practice-Test-Prep-26-27-17611384",
+   "price": 0,
+   "list": 0,
+   "pages": 20,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17620895": {
+   "title": "6th Grade Math Readiness Check Beginning of Year Diagnostic Pre-Assessment",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Math-Readiness-Check-Beginning-of-Year-Diagnostic-Pre-Assessment-17620895",
+   "price": 5,
+   "list": 5,
+   "pages": 10,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17651851": {
+   "title": "3rd Grade Texas TEKS Math Review & Practice Test | for STAAR® Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Texas-TEKS-Math-Review-Practice-Test-for-STAAR-Test-Prep-17651851",
+   "price": 34.99,
+   "list": 34.99,
+   "pages": 172,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17651861": {
+   "title": "4th Grade Texas TEKS Math Review & Practice Test | for STAAR® Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Texas-TEKS-Math-Review-Practice-Test-for-STAAR-Test-Prep-17651861",
+   "price": 32.99,
+   "list": 32.99,
+   "pages": 166,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17651867": {
+   "title": "5th Grade Texas TEKS Math Review & Practice Test | for STAAR® Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Texas-TEKS-Math-Review-Practice-Test-for-STAAR-Test-Prep-17651867",
+   "price": 29.99,
+   "list": 29.99,
+   "pages": 152,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17651878": {
+   "title": "6th Grade Texas TEKS Math Review & Practice Test | for STAAR® Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Texas-TEKS-Math-Review-Practice-Test-for-STAAR-Test-Prep-17651878",
+   "price": 34.99,
+   "list": 34.99,
+   "pages": 191,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17651883": {
+   "title": "7th Grade Texas TEKS Math Review & Practice Test | for STAAR® Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Texas-TEKS-Math-Review-Practice-Test-for-STAAR-Test-Prep-17651883",
+   "price": 29.99,
+   "list": 29.99,
+   "pages": 159,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17651888": {
+   "title": "8th Grade Texas TEKS Math Review & Practice Test | for STAAR® Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Texas-TEKS-Math-Review-Practice-Test-for-STAAR-Test-Prep-17651888",
+   "price": 29.99,
+   "list": 29.99,
+   "pages": 166,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17651900": {
+   "title": "Texas Algebra 1 TEKS Review & Practice Test | for STAAR® Algebra I EOC Prep",
+   "url": "https://www.teacherspayteachers.com/Product/Texas-Algebra-1-TEKS-Review-Practice-Test-for-STAAR-Algebra-I-EOC-Prep-17651900",
+   "price": 39.99,
+   "list": 39.99,
+   "pages": 217,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17658342": {
+   "title": "3rd Grade NC EOG Math Review & Practice Test | North Carolina Check-Ins Prep",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-NC-EOG-Math-Review-Practice-Test-North-Carolina-Check-Ins-Prep-17658342",
+   "price": 29.99,
+   "list": 29.99,
+   "pages": 133,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17658356": {
+   "title": "4th Grade NC EOG Math Review & Practice Test | North Carolina Check-Ins Prep",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-NC-EOG-Math-Review-Practice-Test-North-Carolina-Check-Ins-Prep-17658356",
+   "price": 32.99,
+   "list": 32.99,
+   "pages": 151,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17658369": {
+   "title": "5th Grade NC EOG Math Review & Practice Test | North Carolina Check-Ins Prep",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-NC-EOG-Math-Review-Practice-Test-North-Carolina-Check-Ins-Prep-17658369",
+   "price": 29.99,
+   "list": 29.99,
+   "pages": 128,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17658380": {
+   "title": "6th Grade NC EOG Math Review & Practice Test | North Carolina Check-Ins Prep",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-NC-EOG-Math-Review-Practice-Test-North-Carolina-Check-Ins-Prep-17658380",
+   "price": 29.99,
+   "list": 29.99,
+   "pages": 126,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17658388": {
+   "title": "7th Grade NC EOG Math Review & Practice Test | North Carolina Check-Ins Prep",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-NC-EOG-Math-Review-Practice-Test-North-Carolina-Check-Ins-Prep-17658388",
+   "price": 29.99,
+   "list": 29.99,
+   "pages": 130,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17658398": {
+   "title": "8th Grade NC EOG Math Review & Practice Test | North Carolina Check-Ins Prep",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-NC-EOG-Math-Review-Practice-Test-North-Carolina-Check-Ins-Prep-17658398",
+   "price": 29.99,
+   "list": 29.99,
+   "pages": 149,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17658667": {
+   "title": "3rd 4th 5th Grade NC EOG Math Review Bundle | Check-Ins & Practice Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-4th-5th-Grade-NC-EOG-Math-Review-Bundle-Check-Ins-Practice-Test-Prep-17658667",
+   "price": 74.99,
+   "list": 92.97,
+   "pages": 413,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17658672": {
+   "title": "6th 7th 8th Grade NC EOG Math Review Bundle | Check-Ins & Practice Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/6th-7th-8th-Grade-NC-EOG-Math-Review-Bundle-Check-Ins-Practice-Test-Prep-17658672",
+   "price": 69.99,
+   "list": 89.97,
+   "pages": 416,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17658695": {
+   "title": "3rd 4th 5th Grade Texas TEKS Math Review Bundle | for STAAR® Practice Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-4th-5th-Grade-Texas-TEKS-Math-Review-Bundle-for-STAAR-Practice-Test-Prep-17658695",
+   "price": 79.99,
+   "list": 97.97,
+   "pages": 493,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17658717": {
+   "title": "6th 7th 8th Grade Texas TEKS Math Review Bundle | for STAAR® Practice Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/6th-7th-8th-Grade-Texas-TEKS-Math-Review-Bundle-for-STAAR-Practice-Test-Prep-17658717",
+   "price": 74.99,
+   "list": 94.97,
+   "pages": 518,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17735881": {
+   "title": "Grades 3-5 Indiana ILEARN Math Checkpoint 2 FREE Practice | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/Grades-3-5-Indiana-ILEARN-Math-Checkpoint-2-FREE-Practice-Test-Prep-26-27-17735881",
+   "price": 0,
+   "list": 0,
+   "pages": 29,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17735882": {
+   "title": "Grades 6-8 Indiana ILEARN Math Checkpoint 2 FREE Practice | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/Grades-6-8-Indiana-ILEARN-Math-Checkpoint-2-FREE-Practice-Test-Prep-26-27-17735882",
+   "price": 0,
+   "list": 0,
+   "pages": 27,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17744668": {
+   "title": "FREE Indiana ILEARN Math Planning Guide 2026-27 | Grades 3-8 Testing Calendar",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-Indiana-ILEARN-Math-Planning-Guide-2026-27-Grades-3-8-Testing-Calendar-17744668",
+   "price": 0,
+   "list": 0,
+   "pages": 14,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17770129": {
+   "title": "3rd Grade FAST Math PM2 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-FAST-Math-PM2-Practice-Test-Review-Florida-BEST-Test-Prep-17770129",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 149,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17770131": {
+   "title": "4th Grade FAST Math PM2 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-FAST-Math-PM2-Practice-Test-Review-Florida-BEST-Test-Prep-17770131",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 137,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17770132": {
+   "title": "5th Grade FAST Math PM2 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-FAST-Math-PM2-Practice-Test-Review-Florida-BEST-Test-Prep-17770132",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 146,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17770142": {
+   "title": "3rd 4th 5th Grade Florida FAST Math PM2 Practice Test Bundle | BEST Review Prep",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-4th-5th-Grade-Florida-FAST-Math-PM2-Practice-Test-Bundle-BEST-Review-Prep-17770142",
+   "price": 42.99,
+   "list": 53.97,
+   "pages": 439,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17781154": {
+   "title": "6th Grade FAST Math PM2 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-FAST-Math-PM2-Practice-Test-Review-Florida-BEST-Test-Prep-17781154",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 179,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17815197": {
+   "title": "7th Grade FAST Math PM2 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-FAST-Math-PM2-Practice-Test-Review-Florida-BEST-Test-Prep-17815197",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 176,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17815205": {
+   "title": "8th Grade FAST Math PM2 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-FAST-Math-PM2-Practice-Test-Review-Florida-BEST-Test-Prep-17815205",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 227,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17816766": {
+   "title": "6th 7th 8th Grade Florida FAST Math PM2 Practice Test Bundle | BEST Review Prep",
+   "url": "https://www.teacherspayteachers.com/Product/6th-7th-8th-Grade-Florida-FAST-Math-PM2-Practice-Test-Bundle-BEST-Review-Prep-17816766",
+   "price": 42.99,
+   "list": 53.97,
+   "pages": 583,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17837003": {
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 2 FREE Screener | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837003",
+   "price": 0,
+   "list": 0,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17837004": {
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 2 FREE Screener | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837004",
+   "price": 0,
+   "list": 0,
+   "pages": 14,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17837006": {
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 2 FREE Screener | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837006",
+   "price": 0,
+   "list": 0,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17837008": {
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 2 FREE Screener | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837008",
+   "price": 0,
+   "list": 0,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17837012": {
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 2 FREE Screener | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837012",
+   "price": 0,
+   "list": 0,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17837014": {
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 2 FREE Screener | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-2-FREE-Screener-Test-Prep-26-27-17837014",
+   "price": 0,
+   "list": 0,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17837773": {
+   "title": "Grades 3-5 Indiana ILEARN Math Checkpoint 3 FREE Practice | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/Grades-3-5-Indiana-ILEARN-Math-Checkpoint-3-FREE-Practice-Test-Prep-26-27-17837773",
+   "price": 0,
+   "list": 0,
+   "pages": 33,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17837775": {
+   "title": "Grades 6-8 Indiana ILEARN Math Checkpoint 3 FREE Practice | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/Grades-6-8-Indiana-ILEARN-Math-Checkpoint-3-FREE-Practice-Test-Prep-26-27-17837775",
+   "price": 0,
+   "list": 0,
+   "pages": 27,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17837776": {
+   "title": "3rd Grade Indiana ILEARN Math Checkpoint 3 FREE Screener | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Indiana-ILEARN-Math-Checkpoint-3-FREE-Screener-Test-Prep-26-27-17837776",
+   "price": 0,
+   "list": 0,
+   "pages": 13,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17837780": {
+   "title": "4th Grade Indiana ILEARN Math Checkpoint 3 FREE Screener | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Indiana-ILEARN-Math-Checkpoint-3-FREE-Screener-Test-Prep-26-27-17837780",
+   "price": 0,
+   "list": 0,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17837785": {
+   "title": "5th Grade Indiana ILEARN Math Checkpoint 3 FREE Screener | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Indiana-ILEARN-Math-Checkpoint-3-FREE-Screener-Test-Prep-26-27-17837785",
+   "price": 0,
+   "list": 0,
+   "pages": 14,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17837790": {
+   "title": "6th Grade Indiana ILEARN Math Checkpoint 3 FREE Screener | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Indiana-ILEARN-Math-Checkpoint-3-FREE-Screener-Test-Prep-26-27-17837790",
+   "price": 0,
+   "list": 0,
+   "pages": 9,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17837794": {
+   "title": "8th Grade Indiana ILEARN Math Checkpoint 3 FREE Screener | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Indiana-ILEARN-Math-Checkpoint-3-FREE-Screener-Test-Prep-26-27-17837794",
+   "price": 0,
+   "list": 0,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17837814": {
+   "title": "7th Grade Indiana ILEARN Math Checkpoint 3 FREE Screener | Test Prep 26-27",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Indiana-ILEARN-Math-Checkpoint-3-FREE-Screener-Test-Prep-26-27-17837814",
+   "price": 0,
+   "list": 0,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "17864728": {
+   "title": "6th Grade FAST Math PM3 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-FAST-Math-PM3-Practice-Test-Review-Florida-BEST-Test-Prep-17864728",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 208,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17864751": {
+   "title": "7th Grade FAST Math PM3 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-FAST-Math-PM3-Practice-Test-Review-Florida-BEST-Test-Prep-17864751",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 195,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17864772": {
+   "title": "8th Grade FAST Math PM3 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-FAST-Math-PM3-Practice-Test-Review-Florida-BEST-Test-Prep-17864772",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 251,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17865117": {
+   "title": "6th 7th 8th Grade Florida FAST Math PM3 Practice Test Bundle | BEST Review Prep",
+   "url": "https://www.teacherspayteachers.com/Product/6th-7th-8th-Grade-Florida-FAST-Math-PM3-Practice-Test-Bundle-BEST-Review-Prep-17865117",
+   "price": 42.99,
+   "list": 53.97,
+   "pages": 654,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17865251": {
+   "title": "3rd Grade FAST Math PM3 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-FAST-Math-PM3-Practice-Test-Review-Florida-BEST-Test-Prep-17865251",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 182,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17865252": {
+   "title": "4th Grade FAST Math PM3 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-FAST-Math-PM3-Practice-Test-Review-Florida-BEST-Test-Prep-17865252",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 184,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17865284": {
+   "title": "5th Grade FAST Math PM3 Practice Test & Review | Florida B.E.S.T. Test Prep",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-FAST-Math-PM3-Practice-Test-Review-Florida-BEST-Test-Prep-17865284",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 177,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "17865301": {
+   "title": "3rd 4th 5th Grade Florida FAST Math PM3 Practice Test Bundle | BEST Review Prep",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-4th-5th-Grade-Florida-FAST-Math-PM3-Practice-Test-Bundle-BEST-Review-Prep-17865301",
+   "price": 42.99,
+   "list": 53.97,
+   "pages": 543,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "17886211": {
+   "title": "FREE Algebra 1 Pacing Guide | 180 Day & Block Schedule | Scope and Sequence",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-Algebra-1-Pacing-Guide-180-Day-Block-Schedule-Scope-and-Sequence-17886211",
+   "price": 0,
+   "list": 0,
+   "pages": 17,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "18037122": {
+   "title": "Rounding Decimals Worksheet | 5th Grade Math Notes, Slides & Key",
+   "url": "https://www.teacherspayteachers.com/Product/Rounding-Decimals-Worksheet-5th-Grade-Math-Notes-Slides-Key-18037122",
+   "price": 0,
+   "list": 0,
+   "pages": 9,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "18041192": {
+   "title": "FREE 5th Grade Math Pacing Guide | Math Curriculum Scope and Sequence",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-5th-Grade-Math-Pacing-Guide-Math-Curriculum-Scope-and-Sequence-18041192",
+   "price": 0,
+   "list": 0,
+   "pages": null,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "18041793": {
+   "title": "5th Grade Math Curriculum | 5th Grade Math Guided Notes, Slides & Unit Tests",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Math-Curriculum-5th-Grade-Math-Guided-Notes-Slides-Unit-Tests-18041793",
+   "price": 134.99,
+   "list": 158.9,
+   "pages": 791,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "18074898": {
+   "title": "October Sky Movie Guide | Math Connection Worksheet | Grades 6-8 Movie Day",
+   "url": "https://www.teacherspayteachers.com/Product/October-Sky-Movie-Guide-Math-Connection-Worksheet-Grades-6-8-Movie-Day-18074898",
+   "price": 4.99,
+   "list": 4.99,
+   "pages": 17,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18076644": {
+   "title": "NC Math 1 EOC Review & Practice Test | North Carolina Check-Ins Prep",
+   "url": "https://www.teacherspayteachers.com/Product/NC-Math-1-EOC-Review-Practice-Test-North-Carolina-Check-Ins-Prep-18076644",
+   "price": 29.99,
+   "list": 29.99,
+   "pages": 253,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107137": {
+   "title": "Place Value & Powers of 10 | 5th Grade Math Unit 1 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Place-Value-Powers-of-10-5th-Grade-Math-Unit-1-Notes-Homework-Tests-18107137",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 82,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107155": {
+   "title": "Multi-Digit Multiplication | 5th Grade Math Unit 2 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Multi-Digit-Multiplication-5th-Grade-Math-Unit-2-Notes-Homework-Tests-18107155",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 74,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107174": {
+   "title": "Long Division Word Problems | 5th Grade Math Unit 3 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Long-Division-Word-Problems-5th-Grade-Math-Unit-3-Notes-Homework-Tests-18107174",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 77,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107191": {
+   "title": "Decimal Operations | 5th Grade Math Unit 4 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Decimal-Operations-5th-Grade-Math-Unit-4-Notes-Homework-Tests-18107191",
+   "price": 20.99,
+   "list": 20.99,
+   "pages": 93,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107209": {
+   "title": "Adding & Subtracting Fractions | 5th Grade Math Unit 5 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Adding-Subtracting-Fractions-5th-Grade-Math-Unit-5-Notes-Homework-Tests-18107209",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 88,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107254": {
+   "title": "Multiplying Fractions | 5th Grade Math Unit 6 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Multiplying-Fractions-5th-Grade-Math-Unit-6-Notes-Homework-Tests-18107254",
+   "price": 20.99,
+   "list": 20.99,
+   "pages": 96,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107264": {
+   "title": "Dividing Unit Fractions | 5th Grade Math Unit 7 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Dividing-Unit-Fractions-5th-Grade-Math-Unit-7-Notes-Homework-Tests-18107264",
+   "price": 8.99,
+   "list": 8.99,
+   "pages": 66,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107284": {
+   "title": "Order of Operations, Expressions | 5th Grade Math Unit 8 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Order-of-Operations-Expressions-5th-Grade-Math-Unit-8-Notes-Homework-Tests-18107284",
+   "price": 11.99,
+   "list": 11.99,
+   "pages": 72,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107303": {
+   "title": "Volume, Conversions & Line Plots | 5th Grade Math Unit 9 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Volume-Conversions-Line-Plots-5th-Grade-Math-Unit-9-Notes-Homework-Tests-18107303",
+   "price": 20.99,
+   "list": 20.99,
+   "pages": 102,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107318": {
+   "title": "Coordinate Plane & 2D Shapes | 5th Grade Math Unit 10 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Coordinate-Plane-2D-Shapes-5th-Grade-Math-Unit-10-Notes-Homework-Tests-18107318",
+   "price": 11.99,
+   "list": 11.99,
+   "pages": 75,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107798": {
+   "title": "Decimal Operations, GCF & LCM | 6th Grade Math Unit 1 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Decimal-Operations-GCF-LCM-6th-Grade-Math-Unit-1-Notes-Homework-Tests-18107798",
+   "price": 23.99,
+   "list": 23.99,
+   "pages": 98,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107815": {
+   "title": "Multiplying & Dividing Fractions | 6th Grade Math Unit 2 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Multiplying-Dividing-Fractions-6th-Grade-Math-Unit-2-Notes-Homework-Tests-18107815",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 85,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107824": {
+   "title": "Ratios, Rates & Unit Rate | 6th Grade Math Unit 3 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Ratios-Rates-Unit-Rate-6th-Grade-Math-Unit-3-Notes-Homework-Tests-18107824",
+   "price": 26.99,
+   "list": 26.99,
+   "pages": 109,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107847": {
+   "title": "Percents & Unit Conversions | 6th Grade Math Unit 4 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Percents-Unit-Conversions-6th-Grade-Math-Unit-4-Notes-Homework-Tests-18107847",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 82,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107857": {
+   "title": "Integers & the Coordinate Plane | 6th Grade Math Unit 5 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Integers-the-Coordinate-Plane-6th-Grade-Math-Unit-5-Notes-Homework-Tests-18107857",
+   "price": 23.99,
+   "list": 23.99,
+   "pages": 99,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107872": {
+   "title": "Expressions, Order of Operations | 6th Grade Math Unit 6 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Expressions-Order-of-Operations-6th-Grade-Math-Unit-6-Notes-Homework-Tests-18107872",
+   "price": 26.99,
+   "list": 26.99,
+   "pages": 114,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107884": {
+   "title": "One-Step Equations, Inequalities | 6th Grade Math Unit 7 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/One-Step-Equations-Inequalities-6th-Grade-Math-Unit-7-Notes-Homework-Tests-18107884",
+   "price": 23.99,
+   "list": 23.99,
+   "pages": 99,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107896": {
+   "title": "Area, Surface Area & Volume | 6th Grade Math Unit 8 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Area-Surface-Area-Volume-6th-Grade-Math-Unit-8-Notes-Homework-Tests-18107896",
+   "price": 26.99,
+   "list": 26.99,
+   "pages": 109,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107914": {
+   "title": "Mean, Median, Mode & Box Plots | 6th Grade Math Unit 9 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Mean-Median-Mode-Box-Plots-6th-Grade-Math-Unit-9-Notes-Homework-Tests-18107914",
+   "price": 26.99,
+   "list": 26.99,
+   "pages": 108,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18107921": {
+   "title": "FREE 6th Grade Math Pacing Guide | Math Curriculum Scope and Sequence",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-6th-Grade-Math-Pacing-Guide-Math-Curriculum-Scope-and-Sequence-18107921",
+   "price": 0,
+   "list": 0,
+   "pages": null,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "18112177": {
+   "title": "Integer Operations & Rules | 7th Grade Math Unit 1 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Integer-Operations-Rules-7th-Grade-Math-Unit-1-Notes-Homework-Tests-18112177",
+   "price": 20.99,
+   "list": 20.99,
+   "pages": 90,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18112193": {
+   "title": "Rational Number Operations | 7th Grade Math Unit 2 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Rational-Number-Operations-7th-Grade-Math-Unit-2-Notes-Homework-Tests-18112193",
+   "price": 20.99,
+   "list": 20.99,
+   "pages": 94,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18112201": {
+   "title": "Simplify Expressions, Like Terms | 7th Grade Math Unit 3 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Simplify-Expressions-Like-Terms-7th-Grade-Math-Unit-3-Notes-Homework-Tests-18112201",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 86,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18112213": {
+   "title": "Two-Step Equations, Inequalities | 7th Grade Math Unit 4 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Two-Step-Equations-Inequalities-7th-Grade-Math-Unit-4-Notes-Homework-Tests-18112213",
+   "price": 26.99,
+   "list": 26.99,
+   "pages": 107,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18112220": {
+   "title": "Proportional Relationships | 7th Grade Math Unit 5 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Proportional-Relationships-7th-Grade-Math-Unit-5-Notes-Homework-Tests-18112220",
+   "price": 23.99,
+   "list": 23.99,
+   "pages": 103,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18112225": {
+   "title": "Percent Change & Simple Interest | 7th Grade Math Unit 6 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Percent-Change-Simple-Interest-7th-Grade-Math-Unit-6-Notes-Homework-Tests-18112225",
+   "price": 20.99,
+   "list": 20.99,
+   "pages": 93,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18112235": {
+   "title": "Scale Drawings, Circles & Volume | 7th Grade Math Unit 7 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Scale-Drawings-Circles-Volume-7th-Grade-Math-Unit-7-Notes-Homework-Tests-18112235",
+   "price": 32.99,
+   "list": 32.99,
+   "pages": 127,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18112241": {
+   "title": "Random Sampling & Box Plots | 7th Grade Math Unit 8 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Random-Sampling-Box-Plots-7th-Grade-Math-Unit-8-Notes-Homework-Tests-18112241",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 88,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18112246": {
+   "title": "Probability & Tree Diagrams | 7th Grade Math Unit 9 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Probability-Tree-Diagrams-7th-Grade-Math-Unit-9-Notes-Homework-Tests-18112246",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 86,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18112254": {
+   "title": "FREE 7th Grade Math Pacing Guide | Math Curriculum Scope and Sequence",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-7th-Grade-Math-Pacing-Guide-Math-Curriculum-Scope-and-Sequence-18112254",
+   "price": 0,
+   "list": 0,
+   "pages": null,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "18116576": {
+   "title": "Real Number System, Square Roots | 8th Grade Math Unit 1 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Real-Number-System-Square-Roots-8th-Grade-Math-Unit-1-Notes-Homework-Tests-18116576",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 77,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18116591": {
+   "title": "Exponents & Scientific Notation | 8th Grade Math Unit 2 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Exponents-Scientific-Notation-8th-Grade-Math-Unit-2-Notes-Homework-Tests-18116591",
+   "price": 23.99,
+   "list": 23.99,
+   "pages": 99,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18116608": {
+   "title": "Solving Multi-Step Equations | 8th Grade Math Unit 3 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Multi-Step-Equations-8th-Grade-Math-Unit-3-Notes-Homework-Tests-18116608",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 84,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18116694": {
+   "title": "Slope & Slope Intercept Form | 8th Grade Math Unit 4 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Slope-Slope-Intercept-Form-8th-Grade-Math-Unit-4-Notes-Homework-Tests-18116694",
+   "price": 20.99,
+   "list": 20.99,
+   "pages": 97,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18116711": {
+   "title": "Linear Functions & Graphs | 8th Grade Math Unit 5 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Linear-Functions-Graphs-8th-Grade-Math-Unit-5-Notes-Homework-Tests-18116711",
+   "price": 23.99,
+   "list": 23.99,
+   "pages": 104,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18116725": {
+   "title": "Solving Systems of Equations | 8th Grade Math Unit 6 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Solving-Systems-of-Equations-8th-Grade-Math-Unit-6-Notes-Homework-Tests-18116725",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 86,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18116734": {
+   "title": "Transformations & Congruence | 8th Grade Math Unit 7 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Transformations-Congruence-8th-Grade-Math-Unit-7-Notes-Homework-Tests-18116734",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 90,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18116754": {
+   "title": "Dilations & Similar Triangles | 8th Grade Math Unit 8 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Dilations-Similar-Triangles-8th-Grade-Math-Unit-8-Notes-Homework-Tests-18116754",
+   "price": 17.99,
+   "list": 17.99,
+   "pages": 92,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18116763": {
+   "title": "Pythagorean Theorem & Volume | 8th Grade Math Unit 9 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Pythagorean-Theorem-Volume-8th-Grade-Math-Unit-9-Notes-Homework-Tests-18116763",
+   "price": 29.99,
+   "list": 29.99,
+   "pages": 121,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18116780": {
+   "title": "Scatter Plots & Two-Way Tables | 8th Grade Math Unit 10 Notes, Homework & Tests",
+   "url": "https://www.teacherspayteachers.com/Product/Scatter-Plots-Two-Way-Tables-8th-Grade-Math-Unit-10-Notes-Homework-Tests-18116780",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 89,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18116790": {
+   "title": "FREE 8th Grade Math Pacing Guide | Math Curriculum Scope and Sequence",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-8th-Grade-Math-Pacing-Guide-Math-Curriculum-Scope-and-Sequence-18116790",
+   "price": 0,
+   "list": 0,
+   "pages": null,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "18154166": {
+   "title": "3rd Grade Ohio State Test Math Practice Tests | OST Test Prep Forms A & B",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Ohio-State-Test-Math-Practice-Tests-OST-Test-Prep-Forms-A-B-18154166",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 58,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18154182": {
+   "title": "3rd Grade Ohio State Test Math Review | OST Practice & Reteach by Category",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Ohio-State-Test-Math-Review-OST-Practice-Reteach-by-Category-18154182",
+   "price": 19.99,
+   "list": 19.99,
+   "pages": 187,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18154191": {
+   "title": "3rd Grade Ohio State Test Math Review | 20-Day OST Test Prep Countdown",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Ohio-State-Test-Math-Review-20-Day-OST-Test-Prep-Countdown-18154191",
+   "price": 11.99,
+   "list": 11.99,
+   "pages": 53,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18154221": {
+   "title": "FREE 3rd Grade Ohio State Test Math Screener | OST Diagnostic & Where to Start",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-3rd-Grade-Ohio-State-Test-Math-Screener-OST-Diagnostic-Where-to-Start-18154221",
+   "price": 0,
+   "list": 0,
+   "pages": 10,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "18154242": {
+   "title": "3rd Grade Ohio State Test Math Prep Bundle | OST Practice Tests, Review, Reteach",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-Grade-Ohio-State-Test-Math-Prep-Bundle-OST-Practice-Tests-Review-Reteach-18154242",
+   "price": 36.99,
+   "list": 46.97,
+   "pages": 298,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "18154336": {
+   "title": "4th Grade Ohio State Test Math Practice Tests | OST Test Prep Forms A & B",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Ohio-State-Test-Math-Practice-Tests-OST-Test-Prep-Forms-A-B-18154336",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 60,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18154367": {
+   "title": "4th Grade Ohio State Test Math Review | OST Practice & Reteach by Category",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Ohio-State-Test-Math-Review-OST-Practice-Reteach-by-Category-18154367",
+   "price": 19.99,
+   "list": 19.99,
+   "pages": 190,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18154393": {
+   "title": "4th Grade Ohio State Test Math Review | 20-Day OST Test Prep Countdown",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Ohio-State-Test-Math-Review-20-Day-OST-Test-Prep-Countdown-18154393",
+   "price": 11.99,
+   "list": 11.99,
+   "pages": 56,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18154413": {
+   "title": "FREE 4th Grade Ohio State Test Math Screener | OST Diagnostic & Where to Start",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-4th-Grade-Ohio-State-Test-Math-Screener-OST-Diagnostic-Where-to-Start-18154413",
+   "price": 0,
+   "list": 0,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "18154437": {
+   "title": "4th Grade Ohio State Test Math Prep Bundle | OST Practice Tests, Review, Reteach",
+   "url": "https://www.teacherspayteachers.com/Product/4th-Grade-Ohio-State-Test-Math-Prep-Bundle-OST-Practice-Tests-Review-Reteach-18154437",
+   "price": 36.99,
+   "list": 46.97,
+   "pages": 306,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "18154542": {
+   "title": "5th Grade Ohio State Test Math Practice Tests | OST Test Prep Forms A & B",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Ohio-State-Test-Math-Practice-Tests-OST-Test-Prep-Forms-A-B-18154542",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 60,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18154569": {
+   "title": "5th Grade Ohio State Test Math Review | OST Practice & Reteach by Category",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Ohio-State-Test-Math-Review-OST-Practice-Reteach-by-Category-18154569",
+   "price": 19.99,
+   "list": 19.99,
+   "pages": 185,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18154599": {
+   "title": "5th Grade Ohio State Test Math Review | 20-Day OST Test Prep Countdown",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Ohio-State-Test-Math-Review-20-Day-OST-Test-Prep-Countdown-18154599",
+   "price": 11.99,
+   "list": 11.99,
+   "pages": 56,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18154619": {
+   "title": "FREE 5th Grade Ohio State Test Math Screener | OST Diagnostic & Where to Start",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-5th-Grade-Ohio-State-Test-Math-Screener-OST-Diagnostic-Where-to-Start-18154619",
+   "price": 0,
+   "list": 0,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "18154651": {
+   "title": "5th Grade Ohio State Test Math Prep Bundle | OST Practice Tests, Review, Reteach",
+   "url": "https://www.teacherspayteachers.com/Product/5th-Grade-Ohio-State-Test-Math-Prep-Bundle-OST-Practice-Tests-Review-Reteach-18154651",
+   "price": 36.99,
+   "list": 46.97,
+   "pages": 301,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "18154681": {
+   "title": "3rd-5th Grade Ohio State Test Math Prep Bundle | OST Practice Tests & Review",
+   "url": "https://www.teacherspayteachers.com/Product/3rd-5th-Grade-Ohio-State-Test-Math-Prep-Bundle-OST-Practice-Tests-Review-18154681",
+   "price": 99.99,
+   "list": 140.91,
+   "pages": 905,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "18155240": {
+   "title": "6th Grade Ohio State Test Math Practice Tests | OST Test Prep Forms A & B",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Ohio-State-Test-Math-Practice-Tests-OST-Test-Prep-Forms-A-B-18155240",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 58,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18155256": {
+   "title": "6th Grade Ohio State Test Math Review | OST Practice & Reteach by Category",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Ohio-State-Test-Math-Review-OST-Practice-Reteach-by-Category-18155256",
+   "price": 19.99,
+   "list": 19.99,
+   "pages": 208,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18155267": {
+   "title": "6th Grade Ohio State Test Math Review | 20-Day OST Test Prep Countdown",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Ohio-State-Test-Math-Review-20-Day-OST-Test-Prep-Countdown-18155267",
+   "price": 11.99,
+   "list": 11.99,
+   "pages": 56,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18155283": {
+   "title": "FREE 6th Grade Ohio State Test Math Screener | OST Diagnostic & Where to Start",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-6th-Grade-Ohio-State-Test-Math-Screener-OST-Diagnostic-Where-to-Start-18155283",
+   "price": 0,
+   "list": 0,
+   "pages": 11,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "18155297": {
+   "title": "6th Grade Ohio State Test Math Prep Bundle | OST Practice Tests, Review, Reteach",
+   "url": "https://www.teacherspayteachers.com/Product/6th-Grade-Ohio-State-Test-Math-Prep-Bundle-OST-Practice-Tests-Review-Reteach-18155297",
+   "price": 36.99,
+   "list": 46.97,
+   "pages": 322,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "18155434": {
+   "title": "7th Grade Ohio State Test Math Practice Tests | OST Test Prep Forms A & B",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Ohio-State-Test-Math-Practice-Tests-OST-Test-Prep-Forms-A-B-18155434",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 64,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18155445": {
+   "title": "7th Grade Ohio State Test Math Review | OST Practice & Reteach by Category",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Ohio-State-Test-Math-Review-OST-Practice-Reteach-by-Category-18155445",
+   "price": 19.99,
+   "list": 19.99,
+   "pages": 180,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18155458": {
+   "title": "7th Grade Ohio State Test Math Review | 20-Day OST Test Prep Countdown",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Ohio-State-Test-Math-Review-20-Day-OST-Test-Prep-Countdown-18155458",
+   "price": 11.99,
+   "list": 11.99,
+   "pages": 59,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18155467": {
+   "title": "FREE 7th Grade Ohio State Test Math Screener | OST Diagnostic & Where to Start",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-7th-Grade-Ohio-State-Test-Math-Screener-OST-Diagnostic-Where-to-Start-18155467",
+   "price": 0,
+   "list": 0,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "18155485": {
+   "title": "7th Grade Ohio State Test Math Prep Bundle | OST Practice Tests, Review, Reteach",
+   "url": "https://www.teacherspayteachers.com/Product/7th-Grade-Ohio-State-Test-Math-Prep-Bundle-OST-Practice-Tests-Review-Reteach-18155485",
+   "price": 36.99,
+   "list": 46.97,
+   "pages": 303,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "18155639": {
+   "title": "8th Grade Ohio State Test Math Practice Tests | OST Test Prep Forms A & B",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Ohio-State-Test-Math-Practice-Tests-OST-Test-Prep-Forms-A-B-18155639",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 80,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18155646": {
+   "title": "8th Grade Ohio State Test Math Review | OST Practice & Reteach by Category",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Ohio-State-Test-Math-Review-OST-Practice-Reteach-by-Category-18155646",
+   "price": 19.99,
+   "list": 19.99,
+   "pages": 247,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18155656": {
+   "title": "8th Grade Ohio State Test Math Review | 20-Day OST Test Prep Countdown",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Ohio-State-Test-Math-Review-20-Day-OST-Test-Prep-Countdown-18155656",
+   "price": 11.99,
+   "list": 11.99,
+   "pages": 58,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18155662": {
+   "title": "FREE 8th Grade Ohio State Test Math Screener | OST Diagnostic & Where to Start",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-8th-Grade-Ohio-State-Test-Math-Screener-OST-Diagnostic-Where-to-Start-18155662",
+   "price": 0,
+   "list": 0,
+   "pages": 11,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "18155669": {
+   "title": "8th Grade Ohio State Test Math Prep Bundle | OST Practice Tests, Review, Reteach",
+   "url": "https://www.teacherspayteachers.com/Product/8th-Grade-Ohio-State-Test-Math-Prep-Bundle-OST-Practice-Tests-Review-Reteach-18155669",
+   "price": 36.99,
+   "list": 46.97,
+   "pages": 385,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "18155933": {
+   "title": "Ohio State Test Algebra I Practice Tests | OST Algebra 1 EOC Prep Forms A & B",
+   "url": "https://www.teacherspayteachers.com/Product/Ohio-State-Test-Algebra-I-Practice-Tests-OST-Algebra-1-EOC-Prep-Forms-A-B-18155933",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 70,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18155938": {
+   "title": "Ohio State Test Algebra I Review | OST Algebra 1 EOC Practice & Reteach",
+   "url": "https://www.teacherspayteachers.com/Product/Ohio-State-Test-Algebra-I-Review-OST-Algebra-1-EOC-Practice-Reteach-18155938",
+   "price": 19.99,
+   "list": 19.99,
+   "pages": 289,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18155940": {
+   "title": "Ohio State Test Algebra I Review | 20-Day OST Algebra 1 EOC Countdown",
+   "url": "https://www.teacherspayteachers.com/Product/Ohio-State-Test-Algebra-I-Review-20-Day-OST-Algebra-1-EOC-Countdown-18155940",
+   "price": 11.99,
+   "list": 11.99,
+   "pages": 61,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18155945": {
+   "title": "FREE Ohio State Test Algebra I Screener | OST Algebra 1 EOC Diagnostic",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-Ohio-State-Test-Algebra-I-Screener-OST-Algebra-1-EOC-Diagnostic-18155945",
+   "price": 0,
+   "list": 0,
+   "pages": 12,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "18155952": {
+   "title": "Ohio State Test Algebra I Prep Bundle | OST Algebra 1 EOC Tests & Review",
+   "url": "https://www.teacherspayteachers.com/Product/Ohio-State-Test-Algebra-I-Prep-Bundle-OST-Algebra-1-EOC-Tests-Review-18155952",
+   "price": 36.99,
+   "list": 46.97,
+   "pages": 420,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "18155992": {
+   "title": "6th-8th Grade and Algebra 1 Ohio State Test Math Prep Bundle | OST Review",
+   "url": "https://www.teacherspayteachers.com/Product/6th-8th-Grade-and-Algebra-1-Ohio-State-Test-Math-Prep-Bundle-OST-Review-18155992",
+   "price": 129.99,
+   "list": 187.88,
+   "pages": 1430,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "18218710": {
+   "title": "Tennessee TCAP Math Practice Tests, 3rd Grade | TCAP Test Prep Forms A & B",
+   "url": "https://www.teacherspayteachers.com/Product/Tennessee-TCAP-Math-Practice-Tests-3rd-Grade-TCAP-Test-Prep-Forms-A-B-18218710",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 52,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18218722": {
+   "title": "Tennessee TCAP Math Review, 3rd Grade | Practice & Reteach by Category",
+   "url": "https://www.teacherspayteachers.com/Product/Tennessee-TCAP-Math-Review-3rd-Grade-Practice-Reteach-by-Category-18218722",
+   "price": 19.99,
+   "list": 19.99,
+   "pages": 187,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18218733": {
+   "title": "Tennessee TCAP Math Review, 3rd Grade | 20-Day TCAP Test Prep Countdown",
+   "url": "https://www.teacherspayteachers.com/Product/Tennessee-TCAP-Math-Review-3rd-Grade-20-Day-TCAP-Test-Prep-Countdown-18218733",
+   "price": 11.99,
+   "list": 11.99,
+   "pages": 55,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18218744": {
+   "title": "FREE Tennessee TCAP Math Screener, 3rd Grade | Diagnostic & Where to Start",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-Tennessee-TCAP-Math-Screener-3rd-Grade-Diagnostic-Where-to-Start-18218744",
+   "price": 0,
+   "list": 0,
+   "pages": 8,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "18218757": {
+   "title": "Tennessee TCAP Math Test Prep Bundle, 3rd Grade | Tests, Review, Reteach",
+   "url": "https://www.teacherspayteachers.com/Product/Tennessee-TCAP-Math-Test-Prep-Bundle-3rd-Grade-Tests-Review-Reteach-18218757",
+   "price": 36.99,
+   "list": 46.97,
+   "pages": 292,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "18218768": {
+   "title": "Tennessee TCAP Math Practice Tests, 4th Grade | TCAP Test Prep Forms A & B",
+   "url": "https://www.teacherspayteachers.com/Product/Tennessee-TCAP-Math-Practice-Tests-4th-Grade-TCAP-Test-Prep-Forms-A-B-18218768",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 55,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18218780": {
+   "title": "Tennessee TCAP Math Review, 4th Grade | Practice & Reteach by Category",
+   "url": "https://www.teacherspayteachers.com/Product/Tennessee-TCAP-Math-Review-4th-Grade-Practice-Reteach-by-Category-18218780",
+   "price": 19.99,
+   "list": 19.99,
+   "pages": 192,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18218791": {
+   "title": "Tennessee TCAP Math Review, 4th Grade | 20-Day TCAP Test Prep Countdown",
+   "url": "https://www.teacherspayteachers.com/Product/Tennessee-TCAP-Math-Review-4th-Grade-20-Day-TCAP-Test-Prep-Countdown-18218791",
+   "price": 11.99,
+   "list": 11.99,
+   "pages": 57,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18218793": {
+   "title": "FREE Tennessee TCAP Math Screener, 4th Grade | Diagnostic & Where to Start",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-Tennessee-TCAP-Math-Screener-4th-Grade-Diagnostic-Where-to-Start-18218793",
+   "price": 0,
+   "list": 0,
+   "pages": 9,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "18218804": {
+   "title": "Tennessee TCAP Math Test Prep Bundle, 4th Grade | Tests, Review, Reteach",
+   "url": "https://www.teacherspayteachers.com/Product/Tennessee-TCAP-Math-Test-Prep-Bundle-4th-Grade-Tests-Review-Reteach-18218804",
+   "price": 36.99,
+   "list": 46.97,
+   "pages": 302,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "18218811": {
+   "title": "Tennessee TCAP Math Practice Tests, 5th Grade | TCAP Test Prep Forms A & B",
+   "url": "https://www.teacherspayteachers.com/Product/Tennessee-TCAP-Math-Practice-Tests-5th-Grade-TCAP-Test-Prep-Forms-A-B-18218811",
+   "price": 14.99,
+   "list": 14.99,
+   "pages": 59,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18218821": {
+   "title": "Tennessee TCAP Math Review, 5th Grade | Practice & Reteach by Category",
+   "url": "https://www.teacherspayteachers.com/Product/Tennessee-TCAP-Math-Review-5th-Grade-Practice-Reteach-by-Category-18218821",
+   "price": 19.99,
+   "list": 19.99,
+   "pages": 193,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18218827": {
+   "title": "Tennessee TCAP Math Review, 5th Grade | 20-Day TCAP Test Prep Countdown",
+   "url": "https://www.teacherspayteachers.com/Product/Tennessee-TCAP-Math-Review-5th-Grade-20-Day-TCAP-Test-Prep-Countdown-18218827",
+   "price": 11.99,
+   "list": 11.99,
+   "pages": 59,
+   "kind": "DigitalDownloadResource",
+   "free": false
+  },
+  "18218836": {
+   "title": "FREE Tennessee TCAP Math Screener, 5th Grade | Diagnostic & Where to Start",
+   "url": "https://www.teacherspayteachers.com/Product/FREE-Tennessee-TCAP-Math-Screener-5th-Grade-Diagnostic-Where-to-Start-18218836",
+   "price": 0,
+   "list": 0,
+   "pages": 10,
+   "kind": "DigitalDownloadResource",
+   "free": true
+  },
+  "18218852": {
+   "title": "Tennessee TCAP Math Test Prep Bundle, 5th Grade | Tests, Review, Reteach",
+   "url": "https://www.teacherspayteachers.com/Product/Tennessee-TCAP-Math-Test-Prep-Bundle-5th-Grade-Tests-Review-Reteach-18218852",
+   "price": 36.99,
+   "list": 46.97,
+   "pages": 309,
+   "kind": "BundleResource",
+   "free": false
+  },
+  "18218861": {
+   "title": "Tennessee TCAP Math Test Prep Bundle, 3rd-5th Grade | Practice Tests & Review",
+   "url": "https://www.teacherspayteachers.com/Product/Tennessee-TCAP-Math-Test-Prep-Bundle-3rd-5th-Grade-Practice-Tests-Review-18218861",
+   "price": 99.99,
+   "list": 140.91,
+   "pages": 903,
+   "kind": "BundleResource",
+   "free": false
+  }
+ }
+}
