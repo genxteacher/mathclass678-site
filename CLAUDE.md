@@ -63,6 +63,13 @@ its current URL by id, and the TPT-URL GATE fails the build on a link that is no
 equal the live price (bundles: the bundle price). The ILEARN Checkpoint 2 band (home + /tiktok) is `ILEARN_CP2` in
 build_site.js: set `show: false` to retire it (it also drops itself after Feb 5 2027).
 
+**Nov 9 2026 — REST-OF-YEAR BUNDLES + NEWEST MEDIA.** Each grade card in the Checkpoint 2 band also offers that grade's
+ILEARN Rest-of-Year Bundle (Checkpoints 2-3 + Summative, for a class starting after Checkpoint 1; the COMPLETE System
+is the pick when Checkpoint 1 is wanted too), found by title in live_tpt.json, cover assets/social/roy-gN.jpg (320px
+from the TPT photo cover). Grades 7 and 8 Summatives are a "Summative practice set" (not a practice or mock test);
+grades 3-6 Summatives are practice tests. Every hosted preview video must be the newest TPT video (720p web copy,
+crf 27/96k, Algebra 1 crf 33/64k, poster at 2.9 s) and every product image must equal the listing's live TPT image 1.
+
 ## Who / what
 
 Greg — 25+ yr middle-school math teacher, sole operator of Math Class 678 (TPT storefront

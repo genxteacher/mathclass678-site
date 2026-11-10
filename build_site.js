@@ -5028,7 +5028,8 @@ function socPost(p) {
    ILEARN CHECKPOINT 2 BAND (Nov 7 2026) — on the home page and on /tiktok (the Checkpoint 2 TikTok sends viewers
    there from the bio link). Indiana's Checkpoint 2 window: Monday Nov 16 2026 to Friday Feb 5 2027.
    Free first (the two grade-band sets, then each grade's screener), then each grade's Checkpoint 2 Practice,
-   Intervention & Reteach and Checkpoint 2 Bundle, with live prices and TPT page counts from data/live_tpt.json
+   Intervention & Reteach and Checkpoint 2 Bundle, then the Rest-of-Year Bundle (Nov 9 2026; cover assets/social/roy-gN.jpg,
+   320px from the TPT photo cover), with live prices and TPT page counts from data/live_tpt.json
    (found by title; the build stops if one is missing). Each grade also links its Checkpoint 2 page on
    statetestmath.com, which carries the full Indiana line.
    TO RETIRE: set show: false. The band also leaves on its own from any build after `closes`.
@@ -5058,11 +5059,15 @@ const CP2 = CP2_ON ? {
       practice: cp2Find(new RegExp(pre + 'Practice \\|'), `grade ${g} practice`),
       reteach: cp2Find(new RegExp(pre + 'Intervention & Reteach'), `grade ${g} reteach`),
       bundle: cp2Find(new RegExp(pre + 'Bundle'), `grade ${g} bundle`),
+      // Rest-of-Year Bundle (Nov 9 2026): CP2 + CP3 practice, both reteach packets and the Summative, for a class
+      // starting after Checkpoint 1; the COMPLETE System adds the Checkpoint 1 pair.
+      roy: cp2Find(new RegExp(`^${CP2_ORD[g]} Grade Indiana ILEARN Math Rest-of-Year Bundle`), `grade ${g} rest-of-year bundle`),
+      system: cp2Find(new RegExp(`^${CP2_ORD[g]} Grade Indiana ILEARN Math COMPLETE System`), `grade ${g} COMPLETE System`),
     };
   }),
 } : null;
 if (CP2) CP2.grades.forEach(G => {
-  if (!G.screener.free || !(G.practice.price > 0) || !(G.reteach.price > 0) || !(G.bundle.price > 0)) throw new Error(`ILEARN Checkpoint 2 grade ${G.g}: free/paid status is not what the band says`);
+  if (!G.screener.free || !(G.practice.price > 0) || !(G.reteach.price > 0) || !(G.bundle.price > 0) || !(G.roy.price > 0) || !(G.system.price > 0)) throw new Error(`ILEARN Checkpoint 2 grade ${G.g}: free/paid status is not what the band says`);
 });
 if (CP2) CP2.bands.forEach(B => { if (!B.free) throw new Error(`ILEARN Checkpoint 2 grades ${B.band} practice is not free`); });
 const cp2Money = v => '$' + Number(v).toFixed(2);
@@ -5097,6 +5102,15 @@ function cp2Band(where) {
             ${line('Intervention &amp; Reteach', G.reteach)}
             ${line('Bundle: Practice + Reteach', G.bundle, `${cp2Money(G.bundle.list)} bought separately`)}
           </ul>
+          <div class="cp2-roy">
+            <a class="cp2-roy__img" href="${G.roy.url}"${ext} tabindex="-1" aria-hidden="true"><img src="/assets/social/roy-g${G.g}.jpg" alt="" width="320" height="320" loading="lazy" decoding="async"></a>
+            <div>
+              <span class="cp2-kicker">Rest of the year</span>
+              <a class="cp2-roy__name" href="${G.roy.url}"${ext}>Rest-of-Year Bundle: Checkpoints 2&ndash;3 + Summative</a>
+              <span class="cp2-line__meta"><b>${cp2Money(G.roy.price)}</b> · ${G.roy.pages} pages · ${cp2Money(G.roy.list)} bought separately</span>
+              <p>For a class starting after Checkpoint 1: both practice sets, both reteach packets and the Summative ${G.g >= 7 ? 'practice set' : 'practice test'}. Want Checkpoint 1 too? The <a href="${G.system.url}"${ext}>COMPLETE System</a> has it all.</p>
+            </div>
+          </div>
           <a class="cp2-grade__stm" href="https://statetestmath.com/indiana/grade-${G.g}/checkpoint-2/">Grade ${G.g} Checkpoint 2 on State Test Math ${ICON.arrow}</a>
         </article>`;
   const h2 = open ? `Checkpoint 2 is open through February 5` : `Checkpoint 2 opens Monday, November 16`;
@@ -5107,7 +5121,7 @@ function cp2Band(where) {
       <div class="sec-head"><div class="sec-head__t">
         <span class="eyebrow">Indiana ILEARN Math · Checkpoint 2</span>
         <h2 id="cp2-h">${h2}</h2>
-        <p>Indiana&rsquo;s Checkpoint 2 window runs ${ILEARN_CP2.opensLong.replace(/^\w+, /, '')} to ${ILEARN_CP2.closesLong.replace(/^\w+, /, '')}, across winter break. Start free: a screener for your grade, or the grade-band practice for your whole team. Then pick the practice set, the reteach packet, or the bundle with both.</p>
+        <p>Indiana&rsquo;s Checkpoint 2 window runs ${ILEARN_CP2.opensLong.replace(/^\w+, /, '')} to ${ILEARN_CP2.closesLong.replace(/^\w+, /, '')}, across winter break. Start free: a screener for your grade, or the grade-band practice for your whole team. Then pick the practice set, the reteach packet, or the bundle with both. Starting after Checkpoint 1? Each grade&rsquo;s Rest-of-Year Bundle runs from Checkpoint 2 to the Summative.</p>
       </div></div>
       <div class="cp2-frees">${CP2.bands.map(band).join('')}
       </div>
@@ -5302,7 +5316,7 @@ function pageAlgebra1Hub() {
 
   ${vids.length ? `<section class="section">
     <div class="wrap">
-      ${secHead('See inside', 'Watch a lesson come together', 'Press play for a one-minute look at the real Teacher Deck and packet pages.')}
+      ${secHead('See inside', 'Watch a lesson come together', `Press play for a ${vidLen(A1_CURR.video_seconds)} look at the real Teacher Deck and packet pages.`)}
       <div class="cr-grid vid-grid">${vids.map(v => vidCard(v)).join('')}</div>
     </div>
   </section>

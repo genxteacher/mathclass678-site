@@ -1,12 +1,12 @@
-# PASTEBLOCK — session handoff (2026-11-07)
+# PASTEBLOCK — session handoff (2026-11-09)
 
-## Shipped this session (v1.26.0, branch `site-refresh-nov7`, NOT pushed)
-- Live-store refresh from the Nov 7 crawl of all 500 live TPT math listings: `node tools/live_refresh.js <live_all.json>` writes data/live_tpt.json, live_ids.json (500), retired_ids.json (+821 not-live ids the repo still names) and patches the data JSON. Re-run it after any TPT listing change, then rebuild.
-- Every TPT link is put on its current URL at write time; new TPT-URL GATE fails the build otherwise.
-- ILEARN Checkpoint 2 band on the home page (under the hero) and /tiktok: free band sets, free screener per grade, then practice / reteach / bundle with live prices and pages. Retire with `ILEARN_CP2.show = false` in build_site.js (auto-off after Feb 5 2027).
+## Shipped this session (v1.27.0, on main, NOT pushed)
+- Live-store refresh from the Nov 9 crawl (527 live listings). Checkpoint 2 band: each grade also offers its ILEARN Rest-of-Year Bundle (cover assets/social/roy-gN.jpg). Grades 7-8 Summative = "Summative practice set".
+- 145 hosted preview videos replaced with the newest TPT videos; every product image verified equal to live TPT image 1.
+- Not replaced: wu-alg1-q3 (newest Drive file 16513191 5-preview.mp4 is unreadable, no moov atom); wu-free-g6/g7/g8/alg1 and rc-mini (ids 17172936/17173206/17173207/17173208/16643656 have no entry in the newest-video map); the /tiktok social clip ilearn-g7.mp4 is not a TPT preview.
 
 ## Greg's actions
-1. Review and push `site-refresh-nov7` (merge to main); then `node tools/indexnow.js` and commit data/indexnow-state.json.
+1. Review and push main; then `node tools/indexnow.js` and commit data/indexnow-state.json.
 
 ## Open
 - The state-testing exporter (tools/site_export/mc678_curricula.py) also writes live_ids.json; if it runs again, re-run tools/live_refresh.js after it.
